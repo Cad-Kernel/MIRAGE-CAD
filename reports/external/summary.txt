@@ -1,0 +1,27 @@
+==========================================================================
+external comparison sample manifest
+==========================================================================
+
+  N_total                    400
+  N_with_point_cloud         400
+  N_with_GT_step             400
+  N_with_GT_mesh             0
+  N_MIRAGE_prediction        400
+  N_CADRecode_prediction     0
+  N_MIRAGE_valid_mesh        0
+  N_CADRecode_valid_mesh     0
+  N_paired_valid_mesh        0
+  N_CD_eligible              0
+  N_IoU_eligible             0
+
+  the two accountings this manifest exists to keep separate:
+    unconditional denominator   400  (every common input id; a failure to produce geometry is a system failure, not a missing datum)
+    paired-valid denominator    0  (the only rows on which CD and IoU can be compared at all)
+
+  missing artefacts, which are the work list rather than errors:
+    gt_mesh_not_tessellated    400
+
+  No ground-truth meshes exist yet, so per-sample CD floors could not be
+  computed. The STEP sources are present; tessellating them is the next step,
+  and its tolerance is a protocol parameter because the same meshes feed BOTH
+  the metric and CAD-Recode's own input pipeline.

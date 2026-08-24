@@ -1,0 +1,64 @@
+==============================================================================
+CAD-Recode over the external Fusion360 set -- factual summary
+==============================================================================
+
+1. COVERAGE, denominator = every common input id
+   N total                     400
+   manifests present           400
+   generation completed        400
+   code extracted              400
+   isolated execution ok       392
+   STEP exported               392
+   common remesh ok            392
+
+   pipeline_status distribution, failures NOT dropped from the denominator:
+     SUCCESS                    392
+     EXECUTION_FAILED           8
+
+2. CD, conditional.  n = 392 of 400
+   median 0.1864   mean 1.3129
+   p25 0.0766   p75 0.3788
+   CD / that part's own sampling floor:
+     median 1.243   p25 1.022   p75 3.108
+     at or below 1x floor  36/392
+     at or below 2x floor  261/392
+   The ratio matters more than the raw median: the floor varies about
+   fiftyfold across these shapes, so one global figure would not say
+   whether a CD is near the metric's resolution or far from it.
+
+3. IoU, conditional.  n = 379 of 400
+   median 0.938035   mean 0.829598
+   p25 0.790779   p75 0.983583
+   IoU evaluator failures among otherwise-successful parts: 13
+   Never set to zero: a boolean failure is not a reconstruction of volume 0.
+     f360_114351_14d3d46e_0000  boolean_failed
+     f360_25211_336c083f_0001  boolean_failed
+     f360_131367_7cfc5499_0000  boolean_failed
+     f360_56167_90101372_0010  boolean_failed
+     f360_56065_00bbe5da_0017  boolean_failed
+     f360_122515_758d8b70_0008  boolean_failed
+     f360_25284_3364996e_0000  boolean_failed
+     f360_27725_5cceaeb7_0013  boolean_failed
+     f360_24267_8a216138_0001  boolean_failed
+     f360_23745_974d01fa_0000  boolean_failed
+     ... and 3 more
+
+   CD and IoU have DIFFERENT DENOMINATORS by design (frozen contract). Any
+   table must state each metric's own n.
+
+4. AUDITS
+   duplicate manifests         0
+   non-terminal manifests      0  (should be 0)
+   generation seconds          median 1.71, max 12.47
+   first half vs second half   1.56 vs 1.83
+   A large drift between halves would suggest thermal or driver trouble
+
+5. QUALITATIVE EXAMPLES, chosen by the rule fixed before these results existed
+   median IoU        f360_31962_e5291336_0005  (0.9380)
+   25th percentile   f360_121262_f4a03dbc_0000  (0.7908)
+   failure case      f360_34781_4f8a4759_0017
+   Not the prettiest reconstruction: a figure chosen after the fact
+   illustrates the choosing, not the method.
+
+No aggregate 'geometry score' is computed. Coverage plus conditional geometry
+says what happened; a blended number would hide which half moved.

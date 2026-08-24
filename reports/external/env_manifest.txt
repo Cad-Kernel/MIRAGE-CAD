@@ -1,0 +1,7 @@
+env_name=external_eval
+created_by=src/scratch/external_eval_env.sh
+trimesh_pin=4.5.3
+manifold3d_pin=3.0.0
+purpose=score the CAD-Recode external comparison; scores BOTH arms
+note=no torch, no CUDA, no model. pytorch3d and open3d deliberately absent:
+note=pytorch3d is inference-preprocessing only (FPS), open3d is the demo renderer only.

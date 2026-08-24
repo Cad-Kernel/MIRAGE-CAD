@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# large artefacts that do not belong in the source tree
+*.safetensors
+*.bin
+*.npy
+*.pk

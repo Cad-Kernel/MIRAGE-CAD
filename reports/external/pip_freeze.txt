@@ -1,0 +1,8 @@
+manifold3d==3.0.0
+numpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1786330619/work/dist/numpy-2.5.2-cp312-cp312-linux_x86_64.whl#sha256=4a453944a01935c571c5e676b3728c689f3276057187ed3df17f5f028ff18e20
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1785888127/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy-split_1781912125494/work/dist/scipy-1.18.0-cp312-cp312-linux_x86_64.whl#sha256=51c513d9d74b4588e22f8f3076c680b742e0421b3376f64052850d77f3849c34
+setuptools==84.0.0
+trimesh==4.5.3
+wheel==0.48.0
+

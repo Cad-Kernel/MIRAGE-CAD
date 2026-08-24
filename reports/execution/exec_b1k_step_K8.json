@@ -1,0 +1,15 @@
+{
+  "input_jsonl": "C:\\tmp\\MIRAGE\\exec_eval\\input.jsonl",
+  "rows": 500,
+  "runtime_seconds": 47.78,
+  "syntax_ok_rate": 0.934,
+  "exec_ok_rate": 0.684,
+  "build_ok_rate": 0.684,
+  "solid_valid_rate": 0.684,
+  "step_export_ok_rate": 0.68,
+  "syntax_ok_count": 467,
+  "exec_ok_count": 342,
+  "build_ok_count": 342,
+  "solid_valid_count": 342,
+  "step_export_ok_count": 340
+}

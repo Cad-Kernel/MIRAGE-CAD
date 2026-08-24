@@ -1,0 +1,16 @@
+{
+  "input_jsonl": "C:\\tmp\\MIRAGE\\exec_eval\\exec_ext_point_genplan\\input.jsonl",
+  "rows": 400,
+  "runtime_seconds": 6.144,
+  "syntax_ok_rate": 0.9925,
+  "exec_ok_rate": 0.5925,
+  "build_ok_rate": 0.5925,
+  "solid_valid_rate": 0.5925,
+  "step_export_ok_rate": 0.58,
+  "syntax_ok_count": 397,
+  "exec_ok_count": 237,
+  "build_ok_count": 237,
+  "solid_valid_count": 237,
+  "step_export_ok_count": 232,
+  "kernel_crash_count": 1
+}
