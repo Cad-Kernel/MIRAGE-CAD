@@ -1,0 +1,67 @@
+{
+  "status": "SIX_CASE_ASSISTANT_VISUAL_RECHECK_SEALED_AUTHOR_SIGNOFF_PENDING",
+  "created_utc": "2026-10-22T19:42:52.172033+00:00",
+  "parent_seal_sha256": "0c9dc031ba49f8ae6eaadf8c7ca98679ada6d9761ef132576de2828eb631bb33",
+  "parent_files_unchanged": 5750,
+  "files": {
+    "07_main_case_visual_review.md": {
+      "sha256": "5a809401a12e0d83dab819cffaa80b70531af961794d6d5d9755850b35823533",
+      "bytes": 7924
+    },
+    "main_review_support/build_main_review.py": {
+      "sha256": "641277e74dfb966807f5a95bd85daf7f40fbba79b764e79788f2526be5b3a6b1",
+      "bytes": 22000
+    },
+    "main_review_support/seal_main_review.py": {
+      "sha256": "c2bda52c483763913abb03227dbdab2c12f0862d6aad91e8baa2042108eb55eb",
+      "bytes": 1724
+    },
+    "main_review_v1/author_signoff_template_v1.json": {
+      "sha256": "22be5895ace99d86d7b54f54d9a7783aa5ea3b480eea571d6fafd07da50f0fb3",
+      "bytes": 1826
+    },
+    "main_review_v1/caption_drafts_en.md": {
+      "sha256": "99d0eebcf80dc60a1cfc876b9df11542a69e78a88e9deec941e6e8ae5b1ebd75",
+      "bytes": 2531
+    },
+    "main_review_v1/cases/M01.md": {
+      "sha256": "4fd1e4ad40996767790ea32bc29e84c64d1dc7cfca0aca8772a040b7f2ef27ed",
+      "bytes": 4810
+    },
+    "main_review_v1/cases/M02.md": {
+      "sha256": "0fae2a134037981c25b31b0d81f5a3f4b326a72d7911dcee736a862477023922",
+      "bytes": 4626
+    },
+    "main_review_v1/cases/M03.md": {
+      "sha256": "77996a8dcbf1a93d933ab70a224fd27fca9bff06610b3bb19f294278068f49cd",
+      "bytes": 3611
+    },
+    "main_review_v1/cases/M04.md": {
+      "sha256": "dc34d02db1a00f92cf562ae106adb59268a2beb302ef85a259f4fd8bb0c0e55c",
+      "bytes": 3532
+    },
+    "main_review_v1/cases/M05.md": {
+      "sha256": "d2b40f6d90ba4d42c68455d4574ca4f205cea6018a7527a70a3dda337a112b75",
+      "bytes": 4779
+    },
+    "main_review_v1/cases/M06.md": {
+      "sha256": "0e87c0dc2b7eca97aec375c838533e1698c3adaed776bb3bab41297a8187b3eb",
+      "bytes": 3496
+    },
+    "main_review_v1/index.html": {
+      "sha256": "120e76ca9e3bb10ebc118dca14fcbd585a1308923b9fd988e1c66e15875ba8c4",
+      "bytes": 11419
+    },
+    "main_review_v1/main_review_records_v1.json": {
+      "sha256": "f336c7f203a7222465c0d00585614844d719fb03ca510785b0cf799398c65eae",
+      "bytes": 66874
+    },
+    "main_review_v1/validation_v1.json": {
+      "sha256": "08ff864208ec42b95050b8e6d59cdac8322ec4e69dee53f9b59749fb0efc9f3a",
+      "bytes": 542
+    }
+  },
+  "author_confirmation": null,
+  "no_training_prediction_execution_scoring_or_new_rendering": true,
+  "Review07_started": false
+}

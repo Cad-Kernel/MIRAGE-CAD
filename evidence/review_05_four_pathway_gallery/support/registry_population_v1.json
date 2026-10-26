@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-22T17:19:10.569Z",
+  "status": "PASS_CSV_POPULATED_AND_ROUNDTRIP_VERIFIED",
+  "rows": 24,
+  "columns": 63,
+  "main_candidates": 8,
+  "appendix_candidates": 16,
+  "csv": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\qualitative_case_registry.csv",
+    "bytes": 73589,
+    "sha256": "bc8319304ee12faab152a39038442da9043b4ee451ac3395e5bb1c029d029afe"
+  },
+  "input_payload_sha256": "d6c96b965e0d95eeaa763fdc1c1fac93b93f1322ea30fe4a32bf2d699e913769",
+  "builder_sha256": "7faca34c0284073d372904104891a0216c2495235b6b51cf1876bfae8d1f724d",
+  "engine": "@oai/artifact-tool",
+  "arrays": "JSON strings",
+  "booleans": "true/false",
+  "missing_values": "blank -> null, not zero",
+  "no_model_CAD_execution": true,
+  "no_case_marked_visually_selected": true
+}

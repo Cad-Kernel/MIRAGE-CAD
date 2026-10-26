@@ -1,0 +1,435 @@
+{
+  "records_checked": 44,
+  "matched": 44,
+  "entries": [
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "gen_scripts/train_soft_prefix_ir.py",
+      "expected_original_sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/gen_scripts/train_soft_prefix_ir.py",
+        "training/source_snapshots/development_source/src/gen_scripts/train_soft_prefix_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "scratch/repair_face_extrude_alias.py",
+      "expected_original_sha256": "baeedbec121bc2cea3888fc15256c0fa739273440b325479992362883c01ec75",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/scratch/repair_face_extrude_alias.py",
+        "training/source_snapshots/development_source/src/scratch/repair_face_extrude_alias.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "train_alignment.py",
+      "expected_original_sha256": "bb0dcfc3059c0ee82cd21745d5405870d0a2d9c7acba336fe9ff9d4b59589d19",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_alignment.py",
+        "training/source_snapshots/development_source/src/train_alignment.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "train_latent_prior.py",
+      "expected_original_sha256": "4b333fd99b323b63d82278b9e80712ef0085992ae5939c05cfe89041facb120f",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_latent_prior.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "train_program_lora.py",
+      "expected_original_sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_program_lora.py",
+        "training/source_snapshots/development_source/src/train_program_lora.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "training_25k/cag_b0_b2_fullstack_actuals.py",
+      "expected_original_sha256": "fb89241688fd1df5441eeacd2fa8c2cbdc74facdebcdb8c2c48494ca319f2b85",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_b0_b2_fullstack_actuals.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_b0_b2_fullstack_actuals.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "training_25k/cag_prepare_b0_b2_seed_geometry.py",
+      "expected_original_sha256": "73a2865dec970940138309bfd8465de2c8bec84b5aaf708ead74395858991bab",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "training_25k/cag_run_b0_b2_fullstack_seed.sh",
+      "expected_original_sha256": "e32ba4bdf5afff97107c966750a3a61f55426e8f54eb6a8db05f0c847c62dc55",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh",
+        "training/source_snapshots/development_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "training_25k/scripts/build_stage4b_mix.py",
+      "expected_original_sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/build_stage4b_mix.py",
+        "training/source_snapshots/development_source/src/training_25k/scripts/build_stage4b_mix.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_code_from_predicted_ir.py",
+      "expected_original_sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_code_from_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s1/cag_b0_b2_seed_1_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_predicted_ir.py",
+      "expected_original_sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "gen_scripts/train_soft_prefix_ir.py",
+      "expected_original_sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/gen_scripts/train_soft_prefix_ir.py",
+        "training/source_snapshots/development_source/src/gen_scripts/train_soft_prefix_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "scratch/repair_face_extrude_alias.py",
+      "expected_original_sha256": "baeedbec121bc2cea3888fc15256c0fa739273440b325479992362883c01ec75",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/scratch/repair_face_extrude_alias.py",
+        "training/source_snapshots/development_source/src/scratch/repair_face_extrude_alias.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "train_alignment.py",
+      "expected_original_sha256": "bb0dcfc3059c0ee82cd21745d5405870d0a2d9c7acba336fe9ff9d4b59589d19",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_alignment.py",
+        "training/source_snapshots/development_source/src/train_alignment.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "train_latent_prior.py",
+      "expected_original_sha256": "4b333fd99b323b63d82278b9e80712ef0085992ae5939c05cfe89041facb120f",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_latent_prior.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "train_program_lora.py",
+      "expected_original_sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_program_lora.py",
+        "training/source_snapshots/development_source/src/train_program_lora.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "training_25k/cag_b0_b2_fullstack_actuals.py",
+      "expected_original_sha256": "fb89241688fd1df5441eeacd2fa8c2cbdc74facdebcdb8c2c48494ca319f2b85",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_b0_b2_fullstack_actuals.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_b0_b2_fullstack_actuals.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "training_25k/cag_prepare_b0_b2_seed_geometry.py",
+      "expected_original_sha256": "73a2865dec970940138309bfd8465de2c8bec84b5aaf708ead74395858991bab",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "training_25k/cag_run_b0_b2_fullstack_seed.sh",
+      "expected_original_sha256": "e32ba4bdf5afff97107c966750a3a61f55426e8f54eb6a8db05f0c847c62dc55",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh",
+        "training/source_snapshots/development_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "training_25k/scripts/build_stage4b_mix.py",
+      "expected_original_sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/build_stage4b_mix.py",
+        "training/source_snapshots/development_source/src/training_25k/scripts/build_stage4b_mix.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_code_from_predicted_ir.py",
+      "expected_original_sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_code_from_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s2/cag_b0_b2_seed_2_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_predicted_ir.py",
+      "expected_original_sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "gen_scripts/train_soft_prefix_ir.py",
+      "expected_original_sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/gen_scripts/train_soft_prefix_ir.py",
+        "training/source_snapshots/development_source/src/gen_scripts/train_soft_prefix_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "scratch/repair_face_extrude_alias.py",
+      "expected_original_sha256": "baeedbec121bc2cea3888fc15256c0fa739273440b325479992362883c01ec75",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/scratch/repair_face_extrude_alias.py",
+        "training/source_snapshots/development_source/src/scratch/repair_face_extrude_alias.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "train_alignment.py",
+      "expected_original_sha256": "bb0dcfc3059c0ee82cd21745d5405870d0a2d9c7acba336fe9ff9d4b59589d19",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_alignment.py",
+        "training/source_snapshots/development_source/src/train_alignment.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "train_latent_prior.py",
+      "expected_original_sha256": "4b333fd99b323b63d82278b9e80712ef0085992ae5939c05cfe89041facb120f",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_latent_prior.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "train_program_lora.py",
+      "expected_original_sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_program_lora.py",
+        "training/source_snapshots/development_source/src/train_program_lora.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "training_25k/cag_b0_b2_fullstack_actuals.py",
+      "expected_original_sha256": "fb89241688fd1df5441eeacd2fa8c2cbdc74facdebcdb8c2c48494ca319f2b85",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_b0_b2_fullstack_actuals.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_b0_b2_fullstack_actuals.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "training_25k/cag_prepare_b0_b2_seed_geometry.py",
+      "expected_original_sha256": "73a2865dec970940138309bfd8465de2c8bec84b5aaf708ead74395858991bab",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "training_25k/cag_run_b0_b2_fullstack_seed.sh",
+      "expected_original_sha256": "e32ba4bdf5afff97107c966750a3a61f55426e8f54eb6a8db05f0c847c62dc55",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh",
+        "training/source_snapshots/development_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "training_25k/scripts/build_stage4b_mix.py",
+      "expected_original_sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/build_stage4b_mix.py",
+        "training/source_snapshots/development_source/src/training_25k/scripts/build_stage4b_mix.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_code_from_predicted_ir.py",
+      "expected_original_sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_code_from_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s3/cag_b0_b2_seed_3_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_predicted_ir.py",
+      "expected_original_sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "gen_scripts/train_soft_prefix_ir.py",
+      "expected_original_sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/gen_scripts/train_soft_prefix_ir.py",
+        "training/source_snapshots/development_source/src/gen_scripts/train_soft_prefix_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "scratch/repair_face_extrude_alias.py",
+      "expected_original_sha256": "baeedbec121bc2cea3888fc15256c0fa739273440b325479992362883c01ec75",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/scratch/repair_face_extrude_alias.py",
+        "training/source_snapshots/development_source/src/scratch/repair_face_extrude_alias.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "train_alignment.py",
+      "expected_original_sha256": "bb0dcfc3059c0ee82cd21745d5405870d0a2d9c7acba336fe9ff9d4b59589d19",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_alignment.py",
+        "training/source_snapshots/development_source/src/train_alignment.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "train_latent_prior.py",
+      "expected_original_sha256": "4b333fd99b323b63d82278b9e80712ef0085992ae5939c05cfe89041facb120f",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_latent_prior.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "train_program_lora.py",
+      "expected_original_sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/train_program_lora.py",
+        "training/source_snapshots/development_source/src/train_program_lora.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "training_25k/cag_b0_b2_fullstack_actuals.py",
+      "expected_original_sha256": "fb89241688fd1df5441eeacd2fa8c2cbdc74facdebcdb8c2c48494ca319f2b85",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_b0_b2_fullstack_actuals.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_b0_b2_fullstack_actuals.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "training_25k/cag_prepare_b0_b2_seed_geometry.py",
+      "expected_original_sha256": "73a2865dec970940138309bfd8465de2c8bec84b5aaf708ead74395858991bab",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py",
+        "training/source_snapshots/development_source/src/training_25k/cag_prepare_b0_b2_seed_geometry.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "training_25k/cag_run_b0_b2_fullstack_seed.sh",
+      "expected_original_sha256": "e32ba4bdf5afff97107c966750a3a61f55426e8f54eb6a8db05f0c847c62dc55",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh",
+        "training/source_snapshots/development_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "training_25k/scripts/build_stage4b_mix.py",
+      "expected_original_sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/build_stage4b_mix.py",
+        "training/source_snapshots/development_source/src/training_25k/scripts/build_stage4b_mix.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_code_from_predicted_ir.py",
+      "expected_original_sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_code_from_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    },
+    {
+      "record": "training/run_records/b0_b2_fullstack_s4/cag_b0_b2_seed_4_actuals.json",
+      "source_identifier": "training_25k/scripts/gen_predicted_ir.py",
+      "expected_original_sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098",
+      "recovered_source_copies": [
+        "training/source_snapshots/run_source/src/training_25k/scripts/gen_predicted_ir.py"
+      ],
+      "exact_original_source_hash_recovered": true
+    }
+  ],
+  "note": "Unmatched hashes remain provenance gaps; no original guard or historical hash is rewritten."
+}

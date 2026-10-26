@@ -1,0 +1,139 @@
+{
+  "sample_id": "f360_25474_5422a377_0011",
+  "method": "nn",
+  "classification": {
+    "primary_outcome": "CD_SCOREABLE",
+    "verified_failure_class": null,
+    "reason_subtype": "NOT_APPLICABLE",
+    "reason_detail": null,
+    "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+    "reported_error": null,
+    "native_traceback": null,
+    "cd_scoreable": true,
+    "iou_scoreable": true,
+    "CD": 35.58018158498516,
+    "IoU": 0.12204795423885928,
+    "iou_outcome": "IOU_AVAILABLE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 253,
+    "json_pointer": "/rows/253/native_records/nn"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_25474_5422a377_0011\\score_manifest.json",
+      "sha256": "9f0d9585be56f60be8dffc09e226167de8b20d157fe20b7f41e6492fd46666e4",
+      "bytes": 1339
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "sha256": "63044e8ef41902f60fb6e3b3ec20b958dbd7bc9b1b53bade095269bb4a8fff32",
+      "bytes": 62046
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\export_rows.jsonl",
+      "sha256": "24bf68462b5fa07690e35cb2e2c6a57d520fe9a25320805bf012c254c833766c",
+      "bytes": 198985
+    }
+  ],
+  "physical_JSONL_locators": {
+    "nn_gate": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "line_1based": 254,
+      "line_bytes_sha256": "36efccc5de85e739cd4394ebcac9da78615d15d23f62440dcd31a232afb780ea",
+      "file_sha256": "63044e8ef41902f60fb6e3b3ec20b958dbd7bc9b1b53bade095269bb4a8fff32"
+    },
+    "nn_export": {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\export_rows.jsonl",
+      "line_1based": 254,
+      "line_bytes_sha256": "b90c24bca046ce7aa3191531fa4b59b9e3a63c9e1794c4010f6cbfdd04075f69",
+      "file_sha256": "24bf68462b5fa07690e35cb2e2c6a57d520fe9a25320805bf012c254c833766c"
+    }
+  },
+  "original_native_record": {
+    "sample_id": "f360_25474_5422a377_0011",
+    "arm": "point_nnir",
+    "terminal": true,
+    "memory_cap": "RLIMIT_AS=8192MB",
+    "gt_verified": true,
+    "cd_status": "ok",
+    "iou_status": "ok",
+    "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+    "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_25474_5422a377_0011/candidate.step",
+    "gt_mesh_triangles": 3244,
+    "prediction_step_diagnostics": {
+      "n_solids": 1,
+      "n_faces": 1,
+      "faces_per_solid": [
+        1
+      ],
+      "first_solid_bbox": [
+        14.180000505174004,
+        7.640000066485312,
+        12.180000505176004
+      ]
+    },
+    "evaluation": {
+      "pred_mesh_triangles": 968188,
+      "pred_mesh_watertight": false,
+      "remesh_status": "ok",
+      "cd_x1000": 35.58018158498516,
+      "cd_floor_gt": 0.13243984644375198,
+      "cd_status": "ok",
+      "iou": 0.12204795423885928,
+      "iou_status": "ok",
+      "gt_self_iou": 1.0000000293180777,
+      "gt_self_iou_dev": 2.9318077743312188e-08,
+      "iou_eligible": true
+    },
+    "cd_floor_ratio": 268.65163725553157,
+    "pipeline_status": "SUCCESS",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "gate_check": "match",
+    "seconds": 39.54
+  },
+  "original_gate": {
+    "sample_id": "f360_25474_5422a377_0011",
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": true,
+    "error": ""
+  },
+  "original_export_record": {
+    "sample_id": "f360_25474_5422a377_0011",
+    "arm": "point_nnir",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "error": "",
+    "status": "OK",
+    "seconds": 0.02,
+    "tempdir_calls": 1,
+    "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_25474_5422a377_0011\\candidate.step",
+    "step_bytes": 5467,
+    "step_sha256": "cbc8e4b91dfaf9b625b9219374b56968750720a1c47fff09c0ac56910630535d",
+    "gate_check": "match"
+  },
+  "original_CADR_execution_texts": {},
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

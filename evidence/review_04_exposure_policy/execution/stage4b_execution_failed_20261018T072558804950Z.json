@@ -1,0 +1,9 @@
+{
+  "action": "preflight",
+  "arm": null,
+  "created_utc": "2026-10-18T07:25:58.804979+00:00",
+  "error": "Stage4b budget drift",
+  "status": "FAILED_NO_AUTOMATIC_RESUME",
+  "type": "ValueError",
+  "version": "review04_stage4b_execution_v1"
+}

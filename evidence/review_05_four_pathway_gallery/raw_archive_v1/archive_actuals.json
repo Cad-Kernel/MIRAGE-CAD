@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE_BYTE_EXACT_RAW_ARCHIVE",
+  "created_utc": "2026-10-22T18:09:19.122891+00:00",
+  "case_count": 24,
+  "unique_targets": 22,
+  "registered_full_sources": 55,
+  "original_asset_roles_per_case": 8,
+  "source_paths": 231,
+  "unique_objects": 230,
+  "archived_bytes": 507222420,
+  "prior_seals_unchanged": {
+    "candidate": 385,
+    "render": 370,
+    "review04": 17
+  },
+  "model_training_or_CAD_execution": false,
+  "scope_limit": "Registered qualitative source files and all selected target/input assets, not the entire raw training corpus or full model environment",
+  "retention": "Full research archive retained regardless of manuscript/submission figure reduction"
+}

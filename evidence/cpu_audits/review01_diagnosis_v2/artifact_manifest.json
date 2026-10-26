@@ -1,0 +1,77 @@
+[
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/b2p_train_source.jsonl",
+    "bytes": 142854168,
+    "sha256": "09cf50de9c85a0f5c0f91798d64debddab51d560775a791711d1cfb151088260"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/per_sample_tokens_labels.jsonl",
+    "bytes": 29527447,
+    "sha256": "4d3a39e6e510d82c057cf326b01ac714590ee373b972400a3d7f028b3ff2ef64"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/program_source_manifest.jsonl",
+    "bytes": 5375000,
+    "sha256": "8332cafb77a8ab4688b715042237f5bfa000b1ca8030257c035a8440ad5faf73"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/train_source.jsonl",
+    "bytes": 64001980,
+    "sha256": "991e0a6d811b5927d9316fed50c7cc09472719af1726b8c92017c3fbb86906ca"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/source_snapshots/a1e_historical.py",
+    "bytes": 29205,
+    "sha256": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/source_snapshots/b2p_recorded_hash_match.py",
+    "bytes": 12149,
+    "sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/source_snapshots/data.py",
+    "bytes": 22661,
+    "sha256": "3ebca2ab8de767719ea440ade1b4f44b7ba9bb4278a0e831a8f4bfa3f5258ee0"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/source_snapshots/gen_prompts.py",
+    "bytes": 11008,
+    "sha256": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/tokenizer_snapshot/config.json",
+    "bytes": 660,
+    "sha256": "984abd4b3f21edb957012c7dc4352c462b08e15ffe8384b6d55990885e9dcc9a"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/tokenizer_snapshot/merges.txt",
+    "bytes": 1671839,
+    "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/tokenizer_snapshot/tokenizer.json",
+    "bytes": 7031645,
+    "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/tokenizer_snapshot/tokenizer_config.json",
+    "bytes": 7308,
+    "sha256": "4a917e4772d9b246ef600e1c5d7d81e3a81ae9f3f2d10d78ccb02c86e5fb184a"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_dataset_v1/tokenizer_snapshot/vocab.json",
+    "bytes": 2776833,
+    "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_diagnosis_v2/step_feature_source_archive.jsonl",
+    "bytes": 57219126,
+    "sha256": "cde317deca2ab3bb49f56d029edbbdbc83ec03c908248c6774b82b81c2e23596"
+  },
+  {
+    "path": "__EVIDENCE_SOURCE_ROOT__/09_cpu_preparation/review01_diagnosis_v2/summary.json",
+    "bytes": 6013,
+    "sha256": "cf5ade6b2ff7dcf790789a100ab3d1f0939f3f596f5136cbf101c74c1bdea5dc"
+  }
+]

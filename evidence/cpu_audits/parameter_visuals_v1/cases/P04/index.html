@@ -1,0 +1,31 @@
+<!doctype html><meta charset="utf-8"><title>P04 parameter evidence</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:24px auto;color:#172536}img{max-width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f9;padding:16px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}</style>
+<a href="../../index.html">All cases</a><h1>P04 — flluma_0091127</h1>
+<p>referenced_no_change; hole_radius: 2.01 → 2.5124999999999997. Author semantic confirmation PENDING.</p>
+<img src="panel.png"><p>Historical record: rebuilt_no_change. These are current CPU re-exports, not recovered historical STEP bytes.</p>
+<p><a href="case.json">Original case metadata and literal examples</a> · <a href="change.diff">Exact code difference</a> · <a href="render_record.json">Camera and geometry diagnostics</a></p>
+<div class="cols"><section><h2>Before</h2><a href="before/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;hole_radius&#x27;, 2.01, min=0.8, max=5.0, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_length&#x27;, 21.1, min=6.0, max=40.0, semantic_type=&#x27;pocket_length&#x27;)
+params.add(&#x27;pocket_width&#x27;, 10.14, min=4.0, max=26.0, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 5.0, min=3.0, max=16.0, semantic_type=&#x27;thickness&#x27;)
+
+part = Part(&#x27;flluma_0005100&#x27;, category=&#x27;stepped_profile_mount&#x27;, parameters=params, seed=20265614, sample_id=&#x27;flluma_0005100&#x27;, units=&#x27;mm&#x27;)
+sketch = part.sketch_polygon(name=&#x27;stepped_outer_profile&#x27;, points=[[-50.45, -13.63], [-12.13, -13.63], [-12.13, -4.81], [18.34, -4.81], [18.34, -15.06], [50.45, -15.06], [50.45, 13.34], [22.02, 13.34], [22.02, 4.52], [-18.34, 4.52], [-18.34, 15.06], [-50.45, 15.06]], closed=True, semantic_type=&#x27;extrude_profile&#x27;)
+solid = part.extrude(name=&#x27;extrude_stepped_mount&#x27;, profile=sketch, height=params[&#x27;thickness&#x27;], semantic_type=&#x27;extruded_plate&#x27;)
+holes = part.hole_pattern(name=&#x27;stepped_mount_holes&#x27;, target=solid.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-34.21, -8.22], [34.21, 7.53]], semantic_type=&#x27;mounting_hole&#x27;)
+pocket = part.rectangular_pocket(name=&#x27;stepped_mount_recess&#x27;, target=holes.top_face(), length=params[&#x27;pocket_length&#x27;], width=params[&#x27;pocket_width&#x27;], depth=1.44, semantic_type=&#x27;pocket&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section><section><h2>After</h2><a href="after/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;hole_radius&#x27;, 2.5125, min=0.8, max=5.0, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_length&#x27;, 21.1, min=6.0, max=40.0, semantic_type=&#x27;pocket_length&#x27;)
+params.add(&#x27;pocket_width&#x27;, 10.14, min=4.0, max=26.0, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 5.0, min=3.0, max=16.0, semantic_type=&#x27;thickness&#x27;)
+
+part = Part(&#x27;flluma_0005100&#x27;, category=&#x27;stepped_profile_mount&#x27;, parameters=params, seed=20265614, sample_id=&#x27;flluma_0005100&#x27;, units=&#x27;mm&#x27;)
+sketch = part.sketch_polygon(name=&#x27;stepped_outer_profile&#x27;, points=[[-50.45, -13.63], [-12.13, -13.63], [-12.13, -4.81], [18.34, -4.81], [18.34, -15.06], [50.45, -15.06], [50.45, 13.34], [22.02, 13.34], [22.02, 4.52], [-18.34, 4.52], [-18.34, 15.06], [-50.45, 15.06]], closed=True, semantic_type=&#x27;extrude_profile&#x27;)
+solid = part.extrude(name=&#x27;extrude_stepped_mount&#x27;, profile=sketch, height=params[&#x27;thickness&#x27;], semantic_type=&#x27;extruded_plate&#x27;)
+holes = part.hole_pattern(name=&#x27;stepped_mount_holes&#x27;, target=solid.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-34.21, -8.22], [34.21, 7.53]], semantic_type=&#x27;mounting_hole&#x27;)
+pocket = part.rectangular_pocket(name=&#x27;stepped_mount_recess&#x27;, target=holes.top_face(), length=params[&#x27;pocket_length&#x27;], width=params[&#x27;pocket_width&#x27;], depth=1.44, semantic_type=&#x27;pocket&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section></div>

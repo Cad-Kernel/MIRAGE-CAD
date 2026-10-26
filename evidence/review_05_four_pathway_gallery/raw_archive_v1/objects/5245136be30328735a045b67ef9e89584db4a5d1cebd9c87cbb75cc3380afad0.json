@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0097267",
+  "part_name": "flluma_0097267",
+  "category": "trapezoid_profile_foot",
+  "seed": 20357781,
+  "units": "mm",
+  "parameters": {
+    "height": {
+      "value": 58.7,
+      "min": 18.0,
+      "max": 84.0,
+      "semantic_type": "overall_height"
+    },
+    "hole_radius": {
+      "value": 1.9,
+      "min": 0.8,
+      "max": 5.0,
+      "semantic_type": "hole_radius"
+    },
+    "pocket_length": {
+      "value": 12.21,
+      "min": 6.0,
+      "max": 42.0,
+      "semantic_type": "pocket_length"
+    },
+    "pocket_width": {
+      "value": 13.79,
+      "min": 4.0,
+      "max": 26.0,
+      "semantic_type": "pocket_width"
+    },
+    "thickness": {
+      "value": 9.1,
+      "min": 3.0,
+      "max": 18.0,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 51.3,
+      "min": 26.0,
+      "max": 120.0,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "sketch_001",
+      "name": "trapezoid_outer_profile",
+      "type": "SketchFeature",
+      "category": "sketch",
+      "semantic_type": "extrude_profile",
+      "parameters": {
+        "profile_type": "polygon",
+        "points": [
+          [
+            -25.65,
+            -23.48
+          ],
+          [
+            25.65,
+            -23.48
+          ],
+          [
+            19.57,
+            23.48
+          ],
+          [
+            -19.57,
+            23.48
+          ]
+        ],
+        "closed": true
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "extrude_001",
+      "name": "extrude_trapezoid_foot",
+      "type": "Extrude",
+      "category": "additive",
+      "semantic_type": "extruded_solid",
+      "parameters": {
+        "height": {
+          "parameter": "thickness",
+          "value": 9.1
+        },
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "dependencies": [
+        "sketch_001"
+      ],
+      "topology_references": {
+        "profile": {
+          "feature_id": "sketch_001"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "hole_001",
+      "name": "trapezoid_foot_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "mounting_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 2,
+        "positions": [
+          [
+            -12.31,
+            -10.57
+          ],
+          [
+            12.31,
+            -10.57
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 1.9
+        }
+      },
+      "dependencies": [
+        "extrude_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "extrude_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "extrude_001:top_face:b9ec9b032ae6"
+        }
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "pocket_001",
+      "name": "trapezoid_top_recess",
+      "type": "RectangularPocket",
+      "category": "subtractive",
+      "semantic_type": "pocket",
+      "parameters": {
+        "length": {
+          "parameter": "pocket_length",
+          "value": 12.21
+        },
+        "width": {
+          "parameter": "pocket_width",
+          "value": 13.79
+        },
+        "depth": 2.275,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "length": {
+              "parameter": "pocket_length",
+              "value": 12.21
+            },
+            "width": {
+              "parameter": "pocket_width",
+              "value": 13.79
+            },
+            "centered": true
+          },
+          {
+            "op": "ProfileCut",
+            "depth": 2.275,
+            "offset_mode": "face"
+          }
+        ]
+      },
+      "dependencies": [
+        "hole_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "hole_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "hole_001:top_face:9014e73e3f7b"
+        }
+      },
+      "rebuild_order": 4
+    }
+  ]
+}

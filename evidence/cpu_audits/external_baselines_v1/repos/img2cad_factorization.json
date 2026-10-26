@@ -1,0 +1,56 @@
+{
+  "repo": "qq456cvb/Img2CAD",
+  "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+  "default_branch": "master",
+  "commit": "afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3",
+  "commit_date": "2026-10-05T13:15:49Z",
+  "api_license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "tree_truncated": false,
+  "tree_blob_count": 29,
+  "metric_inference_candidate_paths": [
+    "TrAssembler/eval.py"
+  ],
+  "files": [
+    {
+      "path": "CITATION.cff",
+      "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/CITATION.cff",
+      "status": 200,
+      "sha256": "4d284be679fd5803059199a754888cc947572dcc3015be569fc2b4a50dbb747b",
+      "saved_path": "responses/img2cad_factorization_file_00.body"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/LICENSE",
+      "status": 200,
+      "sha256": "5a19d9ad1780ae06a3f219df1f3ae18172baf31cb2d2fcf708cfc99d4a2349d0",
+      "saved_path": "responses/img2cad_factorization_file_01.body"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/README.md",
+      "status": 200,
+      "sha256": "843f0f52c205d2197cad89a1adcc5deb241161bd0801e34f1f22b873a05c166b",
+      "saved_path": "responses/img2cad_factorization_file_02.body"
+    },
+    {
+      "path": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/requirements.txt",
+      "status": 200,
+      "sha256": "a1c8dd8deea5ea33a9766006022275e2495c688f6cc27eff169164a9aa36d6a8",
+      "saved_path": "responses/img2cad_factorization_file_03.body"
+    },
+    {
+      "path": "TrAssembler/eval.py",
+      "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/TrAssembler/eval.py",
+      "status": 200,
+      "sha256": "e189b8f3a06f7fa6e75c8241dfac90562abcc3b7ae6027041794c51b215a5600",
+      "saved_path": "responses/img2cad_factorization_file_04.body"
+    }
+  ]
+}

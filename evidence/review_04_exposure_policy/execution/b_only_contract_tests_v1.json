@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-17T12:01:43.797465+00:00",
+  "errors": 0,
+  "failures": 0,
+  "scope": "CPU/stub call-graph and guard contracts, no real model forward/backward/training/generation",
+  "sources": {
+    "cag_exposure_policy_b_only.py": {
+      "bytes": 17501,
+      "path": "__DEV_ROOT__/src/training_25k/cag_exposure_policy_b_only.py",
+      "sha256": "9ee5e9205a46a7a9b3889f2329565e70e34c469fd5bca9d2c9637612dee369b9"
+    },
+    "cag_run_exposure_policy_b_only.sh": {
+      "bytes": 695,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_policy_b_only.sh",
+      "sha256": "b194b9e244058e1b2100ddd74f81269d6f4d49d81dc2643a72da1ddcffae1294"
+    }
+  },
+  "status": "PASS",
+  "test_source": {
+    "bytes": 9391,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_b_only_continuation.py",
+    "sha256": "c81b1dcc656faff4d47bfd00689b53ba494045f517a6a2a5d38c5ea20b828839"
+  },
+  "tests_run": 20,
+  "training_started": false
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0091975",
+  "part_name": "flluma_0091975",
+  "category": "control_plate",
+  "seed": 20352489,
+  "units": "mm",
+  "parameters": {
+    "chamfer_distance": {
+      "value": 0.11,
+      "min": 0.1,
+      "max": 2.0,
+      "semantic_type": "chamfer_distance"
+    },
+    "height": {
+      "value": 28.2,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_radius": {
+      "value": 2.17,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "hole_spacing": {
+      "value": 24.99,
+      "min": 5.0,
+      "max": 45.0,
+      "expression": "width * 0.294",
+      "semantic_type": "hole_spacing"
+    },
+    "thickness": {
+      "value": 6,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 85.0,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "plate_001",
+      "name": "control_base_plate",
+      "type": "Plate",
+      "category": "additive",
+      "semantic_type": "base_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 85.0
+        },
+        "height": {
+          "parameter": "height",
+          "value": 28.2
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 6
+        },
+        "centered": true,
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "width": {
+              "parameter": "width",
+              "value": 85.0
+            },
+            "height": {
+              "parameter": "height",
+              "value": 28.2
+            },
+            "centered": true
+          },
+          {
+            "op": "Extrude",
+            "height": {
+              "parameter": "thickness",
+              "value": 6
+            },
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "hole_001",
+      "name": "control_clearance_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "clearance_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 8.0,
+        "count": 3,
+        "positions": [
+          [
+            -24.99,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            24.99,
+            0.0
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 2.17
+        }
+      },
+      "dependencies": [
+        "plate_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "plate_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "plate_001:top_face:4a4118f35d38"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "chamfer_001",
+      "name": "outer_chamfer",
+      "type": "Chamfer",
+      "category": "modification",
+      "semantic_type": "outer_edge_break",
+      "parameters": {
+        "distance": {
+          "parameter": "chamfer_distance",
+          "value": 0.11
+        }
+      },
+      "dependencies": [
+        "hole_001"
+      ],
+      "topology_references": {
+        "target_edges": {
+          "feature_id": "hole_001",
+          "kind": "edge_set",
+          "selector": "top_outer_edges",
+          "query": "outer top",
+          "reference_id": "hole_001:top_outer_edges:65ada682b55b"
+        }
+      },
+      "rebuild_order": 3
+    }
+  ]
+}

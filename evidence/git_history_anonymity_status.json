@@ -1,0 +1,12 @@
+{
+  "local_history_policy": "SINGLE_ANONYMOUS_ROOT_COMMIT",
+  "local_old_database": "REMOVED_FROM_RELEASE_REPOSITORY",
+  "private_recovery_backup": "VERIFIED_AND_OUTSIDE_RELEASE",
+  "root_author_and_committer": "Anonymous Authors <anonymous@example.invalid>",
+  "scientific_data_and_results": "UNCHANGED",
+  "historical_source_hashes": "RETAINED_AS_SCIENTIFIC_PROVENANCE",
+  "remote_history": "UNCHANGED_NOT_PUSHED_NOT_CERTIFIED",
+  "remote_tracking_refs_in_new_local_database": 0,
+  "fetch_warning": "Fetching the old remote can reintroduce identifying historical objects.",
+  "zip_policy": "Git metadata excluded; archive and receipt are held outside the release tree."
+}

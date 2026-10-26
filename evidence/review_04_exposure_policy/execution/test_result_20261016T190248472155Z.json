@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-16T19:02:48.472155+00:00",
+  "errors": 0,
+  "execution_hashes": {
+    "cag_exposure_policy.py": "24119e5d6aa249321097bb9c4f7f3f2ad61d3041b90776cc8b21285e6179e251",
+    "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+    "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+  },
+  "failures": 0,
+  "scope": "CPU contracts + adapter-only save; no train/backward/optimizer step",
+  "status": "PASS",
+  "tests_run": 14,
+  "training_started": false
+}

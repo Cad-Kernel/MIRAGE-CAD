@@ -1,0 +1,25 @@
+{
+  "case_id": "P01",
+  "side": "before",
+  "status": "CPU_DISPLAY_MESH_CREATED",
+  "step_sha256": "07532eaee50186a2059534bbdeca6a4fd60b700e40656037d4e0e250b864bbe5",
+  "mesh_sha256": "ab76ab511cd7d519594bc3b8ca995eb60e6223982149e2db2497cc77893604dc",
+  "vertices": 436,
+  "triangles": 884,
+  "bbox_min": [
+    -35.84999847412,
+    -24.35000038147,
+    -4.00000018240176
+  ],
+  "bbox_max": [
+    35.849998474121,
+    24.35000038147,
+    36.840000152588
+  ],
+  "brep_volume_current": 35986.90958243193,
+  "brep_area_current": 11292.523088858212,
+  "display_tolerance_mm": 0.03,
+  "angular_tolerance_rad": 0.3,
+  "old_metrics_recomputed": false,
+  "cadquery": "2.5.0.dev0"
+}

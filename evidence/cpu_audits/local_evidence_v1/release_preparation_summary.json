@@ -1,0 +1,44 @@
+{
+  "status": "INVENTORY_ONLY_NOT_ANONYMOUS_RELEASE",
+  "claimed_release_locations_checked": [
+    {
+      "path": "__LOCAL_WORKSPACE__\\Project\\Paper\\OpenSource\\MIRAGE-CAD",
+      "exists": false
+    },
+    {
+      "path": "__LOCAL_WORKSPACE__\\OpenSource\\MIRAGE-CAD",
+      "exists": false
+    },
+    {
+      "path": "__LOCAL_WORKSPACE__\\Project\\OpenSource\\MIRAGE-CAD",
+      "exists": false
+    },
+    {
+      "path": "__DEV_ROOT__\\OpenSource\\MIRAGE-CAD",
+      "exists": false
+    }
+  ],
+  "source_files_in_scoped_inventory": 224,
+  "possible_identity_line_hits": 130,
+  "license_files_under_repo_root": [],
+  "git": {
+    "head": {
+      "returncode": 0,
+      "output": "052392b6c7dc0305d04033b1f56d19b12fffb0a2\n",
+      "error": ""
+    },
+    "working_tree_status": {
+      "returncode": 0,
+      "output": " M src/gen_scripts/train_soft_prefix_ir.py\n?? final/ComputersGraphics/\n?? final/ComputersGraphics_final/\n?? final/ComputersGraphics_version2/\n?? final/arxiv/MIRAGE/main.aux\n?? final/arxiv/MIRAGE/main.blg\n?? final/arxiv/MIRAGE/main.fdb_latexmk\n?? final/arxiv/MIRAGE/main.fls\n?? final/arxiv/MIRAGE/main.log\n?? final/arxiv/MIRAGE/main.out\n?? final/arxiv/MIRAGE/main.pdf\n?? final/arxiv/MIRAGE/main.spl\n?? final/arxiv/MIRAGE/main.synctex.gz\n?? linkin/\n?? scratch/cag_seed_1_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_2_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_3_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_4_a1e_b2p_eval_summary.json\n?? scratch/exec_b0b2_step_B0_s1/\n?? scratch/exec_b0b2_step_B0_s2/\n?? scratch/exec_b0b2_step_B0_s3/\n?? scratch/exec_b0b2_step_B0_s4/\n?? scratch/exec_b0b2_step_B2_s1/\n?? scratch/exec_b0b2_step_B2_s2/\n?? scratch/exec_b0b2_step_B2_s3/\n?? scratch/exec_b0b2_step_B2_s4/\n?? scratch/exec_cd_step_B2P_CD/\n?? scratch/exec_cd_step_NN_DESC_TRAIN/\n?? scratch/exec_e1_step_A1E_s1/\n?? scratch/exec_e1_step_A1E_s2/\n?? scratch/exec_e1_step_A1E_s3/\n?? scratch/exec_e1_step_A1E_s4/\n?? scratch/exec_e1_step_B2P_s1/\n?? scratch/exec_e1_step_B2P_s2/\n?? scratch/exec_e1_step_B2P_s3/\n?? scratch/exec_e1_step_B2P_s4/\n?? scratch/exec_r04_image_A/\n?? scratch/exec_r04_image_B/\n?? scratch/exec_r04_point_A/\n?? scratch/exec_r04_point_B/\n?? scratch/exec_r04_step_A/\n?? scratch/exec_r04_step_B/\n?? scratch/exec_r04_text_A/\n?? scratch/exec_r04_text_B/\n?? scratch/geom_b0b2_step_B0_s1/\n?? scratch/geom_b0b2_step_B0_s2/\n?? scratch/geom_b0b2_step_B0_s3/\n?? scratch/geom_b0b2_step_B0_s4/\n?? scratch/geom_b0b2_step_B2_s1/\n?? scratch/geom_b0b2_step_B2_s2/\n?? scratch/geom_b0b2_step_B2_s3/\n?? scratch/geom_b0b2_step_B2_s4/\n?? scratch/geom_cd_step_B2P_CD/\n?? scratch/geom_cd_step_NN_DESC_TRAIN/\n?? scratch/geom_e1_step_A1E_s1/\n?? scratch/geom_e1_step_A1E_s2/\n?? scratch/geom_e1_step_A1E_s3/\n?? scratch/geom_e1_step_A1E_s4/\n?? scratch/geom_e1_step_B2P_s1/\n?? scratch/geom_e1_step_B2P_s2/\n?? scratch/geom_e1_step_B2P_s3/\n?? scratch/geom_e1_step_B2P_s4/\n?? scratch/geom_r04_image_A/\n?? scratch/geom_r04_image_B/\n?? scratch/geom_r04_point_A/\n?? scratch/geom_r04_point_B/\n?? scratch/geom_r04_step_A/\n?? scratch/geom_r04_step_B/\n?? scratch/geom_r04_text_A/\n?? scratch/geom_r04_text_B/\n?? src/scratch/cag_a1e_b2p_actuals.py\n?? src/training_25k/cag_archive_partial_a1e_b2p.sh\n?? src/training_25k/cag_b0_b2_fullstack_actuals.py\n?? src/training_25k/cag_build_construction_disjoint_split.py\n?? src/training_25k/cag_exposure_inference.py\n?? src/training_25k/cag_exposure_policy.py\n?? src/training_25k/cag_exposure_policy_b_only.py\n?? src/training_25k/cag_exposure_policy_core.py\n?? src/training_25k/cag_gen_cd_step_nn_descriptor_baseline.py\n?? src/training_25k/cag_preflight_stage4b_packing.py\n?? src/training_25k/cag_prepare_a1e_b2p_seed_geometry.py\n?? src/training_25k/cag_prepare_b0_b2_seed_geometry.py\n?? src/training_25k/cag_prepare_construction_disjoint_geometry.py\n?? src/training_25k/cag_prepare_frozen_a1e_b2p_eval_seed.sh\n?? src/training_25k/cag_run_b0_b2_fullstack_seed.sh\n?? src/training_25k/cag_run_construction_disjoint_nn_baseline.sh\n?? src/training_25k/cag_run_construction_disjoint_step_b2p_training.sh\n?? src/training_25k/cag_run_exposure_inference.sh\n?? src/training_25k/cag_run_exposure_policy.sh\n?? src/training_25k/cag_run_exposure_policy_b_only.sh\n?? src/training_25k/cag_run_frozen_a1e_b2p_seed.sh\n?? src/training_25k/cag_run_stage4b_only.sh\n?? src/training_25k/cag_stage4b_execution.py\n?? src/training_25k/cag_stage4b_packing_v1.py\n?? src/training_25k/cag_summarize_a1e_b2p_seed_eval.py\n?? src/training_25k/cag_summarize_b0_b2_fullstack_eval.py\n",
+      "error": ""
+    }
+  },
+  "open_items": [
+    "Locate/verify actual claimed 439-file release base; none is assumed",
+    "Third-party code/data/checkpoint license verification",
+    "Review-specific exact source/result mappings",
+    "Anonymous staging copy and portable path transforms",
+    "Small reproduction smoke test",
+    "Author platform/publication decision and logged-out access test"
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0091123",
+  "part_name": "flluma_0091123",
+  "category": "pipe_clamp",
+  "seed": 20351637,
+  "units": "mm",
+  "parameters": {
+    "clamp_jaw_height": {
+      "value": 17.05,
+      "min": 5.0,
+      "max": 28.0,
+      "expression": "thickness * 1.55",
+      "semantic_type": "clamp_jaw_height"
+    },
+    "clamp_jaw_width": {
+      "value": 16.8,
+      "min": 6.0,
+      "max": 28.0,
+      "expression": "width * 0.279",
+      "semantic_type": "clamp_jaw_width"
+    },
+    "height": {
+      "value": 61.7,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_radius": {
+      "value": 2.9,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "pocket_width": {
+      "value": 23.08,
+      "min": 8.0,
+      "max": 40.0,
+      "expression": "height * 0.374",
+      "semantic_type": "pocket_width"
+    },
+    "thickness": {
+      "value": 11,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 60.2,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "plate_001",
+      "name": "clamp_base",
+      "type": "Plate",
+      "category": "additive",
+      "semantic_type": "base_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 60.2
+        },
+        "height": {
+          "parameter": "height",
+          "value": 61.7
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 11
+        },
+        "centered": true,
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "width": {
+              "parameter": "width",
+              "value": 60.2
+            },
+            "height": {
+              "parameter": "height",
+              "value": 61.7
+            },
+            "centered": true
+          },
+          {
+            "op": "Extrude",
+            "height": {
+              "parameter": "thickness",
+              "value": 11
+            },
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "pocket_001",
+      "name": "pipe_clearance_channel",
+      "type": "RectangularPocket",
+      "category": "subtractive",
+      "semantic_type": "pocket",
+      "parameters": {
+        "length": 37.324,
+        "width": {
+          "parameter": "pocket_width",
+          "value": 23.08
+        },
+        "depth": 2.75,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "length": 37.324,
+            "width": {
+              "parameter": "pocket_width",
+              "value": 23.08
+            },
+            "centered": true
+          },
+          {
+            "op": "ProfileCut",
+            "depth": 2.75,
+            "offset_mode": "face"
+          }
+        ]
+      },
+      "dependencies": [
+        "plate_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "plate_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "plate_001:top_face:4a4118f35d38"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "hole_001",
+      "name": "clamp_bolt_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "bolt_hole_pattern",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 2,
+        "positions": [
+          [
+            -13.244000000000002,
+            0.0
+          ],
+          [
+            14.448,
+            7.404
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 2.9
+        }
+      },
+      "dependencies": [
+        "pocket_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "pocket_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "pocket_001:top_face:6bc5ae6c80c5"
+        }
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "box_001",
+      "name": "clamp_jaw_seed",
+      "type": "Box",
+      "category": "additive",
+      "semantic_type": "clamp_jaw",
+      "parameters": {
+        "length": {
+          "parameter": "clamp_jaw_width",
+          "value": 16.8
+        },
+        "width": {
+          "parameter": "height",
+          "value": 61.7
+        },
+        "height": {
+          "parameter": "clamp_jaw_height",
+          "value": 17.05
+        },
+        "centered": true
+      },
+      "rebuild_order": 4
+    },
+    {
+      "id": "translate_001",
+      "name": "place_clamp_jaw",
+      "type": "Translate",
+      "category": "modification",
+      "semantic_type": "placement",
+      "parameters": {
+        "offset": [
+          21.700000000000003,
+          0.0,
+          13.825000000000001
+        ]
+      },
+      "dependencies": [
+        "box_001"
+      ],
+      "rebuild_order": 5
+    },
+    {
+      "id": "mirror_001",
+      "name": "mirror_clamp_jaw",
+      "type": "Mirror",
+      "category": "pattern",
+      "semantic_type": "pattern",
+      "parameters": {
+        "axis": "X",
+        "plane": null,
+        "include_original": true
+      },
+      "dependencies": [
+        "translate_001"
+      ],
+      "rebuild_order": 6
+    },
+    {
+      "id": "join_001",
+      "name": "join_clamp_jaws",
+      "type": "BooleanJoin",
+      "category": "additive",
+      "semantic_type": "mirrored_clamp_jaw",
+      "parameters": {},
+      "dependencies": [
+        "hole_001",
+        "mirror_001"
+      ],
+      "topology_references": {
+        "target": {
+          "feature_id": "hole_001"
+        },
+        "tool": {
+          "feature_id": "mirror_001"
+        }
+      },
+      "rebuild_order": 7
+    }
+  ]
+}

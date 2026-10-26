@@ -1,0 +1,155 @@
+{
+  "sample_id": "f360_141665_0564e852_0002",
+  "method": "cadr",
+  "classification": {
+    "primary_outcome": "CD_SCOREABLE",
+    "verified_failure_class": null,
+    "reason_subtype": "NOT_APPLICABLE",
+    "reason_detail": null,
+    "classification_rule": "CADR_NATIVE_CD_OK",
+    "reported_error": null,
+    "native_traceback": null,
+    "cd_scoreable": true,
+    "iou_scoreable": true,
+    "CD": 0.09464757175318836,
+    "IoU": 0.9193303837669243,
+    "iou_outcome": "IOU_AVAILABLE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 166,
+    "json_pointer": "/rows/166/native_records/cadr"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_141665_0564e852_0002\\run_manifest.json",
+      "sha256": "c7c6478908aa8e3f8142b336271259b15243e3f1540c63d9e18f778168962512",
+      "bytes": 3596
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_141665_0564e852_0002\\execution_result.json",
+      "sha256": "bb96cc4f3b119743c298496de8284c96c15c9e9fd061ace2eb4bc34e60431ebe",
+      "bytes": 166
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_141665_0564e852_0002\\execution_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_141665_0564e852_0002\\execution_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "physical_JSONL_locators": {},
+  "original_native_record": {
+    "sample_id": "f360_141665_0564e852_0002",
+    "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/141665_0564e852_0002.step",
+    "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+    "pipeline_status": "SUCCESS",
+    "terminal": true,
+    "cd_status": "ok",
+    "iou_status": "ok",
+    "input": {
+      "source_step_sha256": "a8f238c228b36fa8d226242c7c4227ea374b31b53d6f5d1ca86eb6be43ee3fa0",
+      "alpha": 1e-06,
+      "angular_deflection": 0.3,
+      "canonical_mesh_sha256": "52f69fb3af7834d59f04bf4240bb419e20a79e15c3f2ef69618ecfd4372a668c/71f53e61d20a42d73cf481838fe2b3e1e78e4b9960ef46c5d254c34a3e485950",
+      "mesh_vertex_count": 12,
+      "mesh_triangle_count": 20,
+      "mesh_watertight": true,
+      "bbox_before_normalization": [
+        1400.0,
+        30.0,
+        800.0
+      ],
+      "normalization_target_extent": 2.0,
+      "normalization_scale": 0.0014285714285714286,
+      "sampling_seed": 0,
+      "n_pre_points": 8192,
+      "cloud_8192_sha256": "9cd1fd12c77bb9d6b903a818032efea9ad61bb92370cdad1b08d1540af879232",
+      "fps_indices_sha256": "22493ec45e46620ea1986d1afdf9c9b6632b7a658ebe78c9a2c7eae2566160dc",
+      "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+      "cloud_256_sha256": "d62ab895777956d9b9b1b84507b7e6985db8f8ed9e64d94e83c05eec4c5e239b"
+    },
+    "model": {
+      "checkpoint": "filapro/cad-recode-v1.5",
+      "tokenizer": "Qwen/Qwen2-1.5B",
+      "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+      "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+      "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+      "torch": "2.7.0+cu128",
+      "device": "cuda",
+      "device_capability": "sm_120",
+      "n_parameters": 1543794176,
+      "generation": {
+        "strategy": "greedy",
+        "num_candidates": 1,
+        "max_new_tokens": 768
+      },
+      "transformers": "4.47.1"
+    },
+    "generation": {
+      "seconds": 1.2,
+      "raw_chars": 2765,
+      "raw_sha256": "14b50a0f8554a865116f831814f8e7f7269e086522717cd255d8762c2116d374"
+    },
+    "extraction_status": "ok",
+    "extracted_code_sha256": "f7b7a4b823fb4437d4d68e7b09282e28eae9d25676aca119f2b4312b3b2d3896",
+    "extracted_code_lines": 3,
+    "unsafe_patterns_found": [],
+    "execution": {
+      "timeout_s": 60,
+      "wall_seconds": 0.83,
+      "timed_out": false,
+      "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_141665_0564e852_0002",
+      "return_code": 0,
+      "runner_result": {
+        "status": "SUCCESS",
+        "generated_stdout": "",
+        "shape_type": "Solid",
+        "is_valid": true,
+        "bbox": [
+          200.0,
+          4.0,
+          114.0
+        ],
+        "step_bytes": 16976
+      }
+    },
+    "artifacts": {
+      "prediction_step": "__DEV_ROOT__/scratch/cadrecode_runs/f360_141665_0564e852_0002/prediction.step",
+      "prediction_step_sha256": "1733f77d2c6fd0c0d3de4a24335383cce3104be9226725d7c3d50869f782ad30",
+      "prediction_step_bytes": 16976
+    },
+    "evaluation": {
+      "pred_mesh_triangles": 232,
+      "pred_mesh_watertight": true,
+      "remesh_status": "ok",
+      "cd_x1000": 0.09464757175318836,
+      "cd_floor_gt": 0.09202320128115832,
+      "cd_status": "ok",
+      "iou": 0.9193303837669243,
+      "iou_status": "ok",
+      "gt_self_iou": 1.0000012287256466,
+      "gt_self_iou_dev": 1.2287256465626228e-06,
+      "iou_eligible": true
+    },
+    "cd_floor_ratio": 1.0285185739627967
+  },
+  "original_gate": null,
+  "original_export_record": null,
+  "original_CADR_execution_texts": {
+    "execution_stdout.txt": "",
+    "execution_stderr.txt": ""
+  },
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

@@ -1,0 +1,47 @@
+<!doctype html><meta charset="utf-8"><title>P01 parameter evidence</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:24px auto;color:#172536}img{max-width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f9;padding:16px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}</style>
+<a href="../../index.html">All cases</a><h1>P01 — flluma_0090123</h1>
+<p>responsive_positive; flange_height: 36.94 → 40.634. Author semantic confirmation PENDING.</p>
+<img src="panel.png"><p>Historical record: rebuilt_and_moved. These are current CPU re-exports, not recovered historical STEP bytes.</p>
+<p><a href="case.json">Original case metadata and literal examples</a> · <a href="change.diff">Exact code difference</a> · <a href="render_record.json">Camera and geometry diagnostics</a></p>
+<div class="cols"><section><h2>Before</h2><a href="before/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;flange_height&#x27;, 36.94, min=12.0, max=80.0, expression=&#x27;height * 0.757&#x27;, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;flange_radius&#x27;, 10.11, min=4.0, max=24.0, expression=&#x27;width * 0.142&#x27;, semantic_type=&#x27;flange_radius&#x27;)
+params.add(&#x27;flange_width&#x27;, 46.1, min=20.0, max=120.0, expression=&#x27;length * 0.648&#x27;, semantic_type=&#x27;overall_width&#x27;)
+params.add(&#x27;height&#x27;, 48.7, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_radius&#x27;, 2.11, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_width&#x27;, 16.01, min=8.0, max=40.0, expression=&#x27;width * 0.34&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 8, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 71.7, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0001001&#x27;, category=&#x27;l_bracket&#x27;, parameters=params, seed=20261515, sample_id=&#x27;flluma_0001001&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_plate&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;raised_flange_seed&#x27;, radius=params[&#x27;flange_radius&#x27;], height=params[&#x27;flange_height&#x27;], semantic_type=&#x27;flange&#x27;)
+moved = part.translate(name=&#x27;place_raised_flange&#x27;, target=cylinder, offset=[0.0, 0.0, 18.37], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_flange_to_base&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+pocket = part.box(name=&#x27;flange_recess_seed&#x27;, length=params[&#x27;flange_width&#x27;], width=params[&#x27;pocket_width&#x27;], height=params[&#x27;flange_height&#x27;], semantic_type=&#x27;pocket&#x27;)
+moved_2 = part.translate(name=&#x27;place_flange_recess&#x27;, target=pocket, offset=[0.0, -21.02, 18.335], semantic_type=&#x27;placement&#x27;)
+pocket_2 = part.boolean_cut(name=&#x27;cut_flange_recess&#x27;, target=join, tool=moved_2, semantic_type=&#x27;pocket&#x27;)
+holes = part.hole_pattern(name=&#x27;flange_bolt_holes&#x27;, target=pocket_2.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-19.82, -12.175], [19.82, -12.175], [-19.82, 12.175], [19.82, 12.175]], semantic_type=&#x27;bolt_hole_pattern&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section><section><h2>After</h2><a href="after/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;flange_height&#x27;, 40.634, min=12.0, max=80.0, expression=&#x27;height * 0.757&#x27;, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;flange_radius&#x27;, 10.11, min=4.0, max=24.0, expression=&#x27;width * 0.142&#x27;, semantic_type=&#x27;flange_radius&#x27;)
+params.add(&#x27;flange_width&#x27;, 46.1, min=20.0, max=120.0, expression=&#x27;length * 0.648&#x27;, semantic_type=&#x27;overall_width&#x27;)
+params.add(&#x27;height&#x27;, 48.7, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_radius&#x27;, 2.11, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_width&#x27;, 16.01, min=8.0, max=40.0, expression=&#x27;width * 0.34&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 8, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 71.7, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0001001&#x27;, category=&#x27;l_bracket&#x27;, parameters=params, seed=20261515, sample_id=&#x27;flluma_0001001&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_plate&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;raised_flange_seed&#x27;, radius=params[&#x27;flange_radius&#x27;], height=params[&#x27;flange_height&#x27;], semantic_type=&#x27;flange&#x27;)
+moved = part.translate(name=&#x27;place_raised_flange&#x27;, target=cylinder, offset=[0.0, 0.0, 18.37], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_flange_to_base&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+pocket = part.box(name=&#x27;flange_recess_seed&#x27;, length=params[&#x27;flange_width&#x27;], width=params[&#x27;pocket_width&#x27;], height=params[&#x27;flange_height&#x27;], semantic_type=&#x27;pocket&#x27;)
+moved_2 = part.translate(name=&#x27;place_flange_recess&#x27;, target=pocket, offset=[0.0, -21.02, 18.335], semantic_type=&#x27;placement&#x27;)
+pocket_2 = part.boolean_cut(name=&#x27;cut_flange_recess&#x27;, target=join, tool=moved_2, semantic_type=&#x27;pocket&#x27;)
+holes = part.hole_pattern(name=&#x27;flange_bolt_holes&#x27;, target=pocket_2.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-19.82, -12.175], [19.82, -12.175], [-19.82, 12.175], [19.82, 12.175]], semantic_type=&#x27;bolt_hole_pattern&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section></div>

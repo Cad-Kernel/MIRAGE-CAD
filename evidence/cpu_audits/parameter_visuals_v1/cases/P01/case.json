@@ -1,0 +1,65 @@
+{
+  "case_id": "P01",
+  "bucket": "responsive_positive",
+  "sample_id": "flluma_0090123",
+  "historical_result": {
+    "kind": "result",
+    "sample_id": "flluma_0090123",
+    "param": "flange_height",
+    "delta": 0.1,
+    "from": 36.94,
+    "to": 40.634,
+    "clamped_to_bound": false,
+    "outcome": "rebuilt_and_moved",
+    "error": ""
+  },
+  "historical_baseline": {
+    "kind": "row",
+    "sample_id": "flluma_0090123",
+    "modality": "step",
+    "coverage": {
+      "n_declared": 8,
+      "n_declared_referenced": 8,
+      "n_declared_unreferenced": 0,
+      "unreferenced_names": [],
+      "n_param_references": 9,
+      "n_inlined_literals": 15,
+      "parametric_coverage": 0.375
+    },
+    "baseline": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true,
+      "error": ""
+    }
+  },
+  "before_sha256": "b1945d3a3e5d99573a803f6d8d61c7c8b4ccea53b0d50f49f05515e092e532b8",
+  "after_sha256": "44d7d8f42c8a36ded04369712275969cd4c53245136e7a803e9aa30c6746fea6",
+  "declared_parameter": {
+    "value": 36.94,
+    "min": 12.0,
+    "max": 80.0
+  },
+  "params_reference_lines": [
+    13,
+    16
+  ],
+  "direct_literal_argument_examples": [
+    {
+      "line": 11,
+      "argument": "seed",
+      "source": "20261515",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 14,
+      "argument": "offset",
+      "source": "[0.0, 0.0, 18.37]",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    }
+  ],
+  "author_semantic_review": "PENDING",
+  "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+}

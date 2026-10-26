@@ -1,0 +1,51 @@
+<!doctype html><meta charset="utf-8"><title>P06 parameter evidence</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:24px auto;color:#172536}img{max-width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f9;padding:16px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}</style>
+<a href="../../index.html">All cases</a><h1>P06 — flluma_0093632</h1>
+<p>execution_failure; path_height: 9.1 → 11.375. Author semantic confirmation PENDING.</p>
+<img src="panel.png"><p>Historical record: broke_at_exec_ok. These are current CPU re-exports, not recovered historical STEP bytes.</p>
+<p><a href="case.json">Original case metadata and literal examples</a> · <a href="change.diff">Exact code difference</a> · <a href="render_record.json">Camera and geometry diagnostics</a></p>
+<div class="cols"><section><h2>Before</h2><a href="before/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;chamfer_distance&#x27;, 0.1, min=0.05, max=1.0, semantic_type=&#x27;chamfer_distance&#x27;)
+params.add(&#x27;flange_length&#x27;, 15.1, min=8.0, max=32.0, semantic_type=&#x27;primitive_length&#x27;)
+params.add(&#x27;flange_thickness&#x27;, 3.4, min=2.0, max=8.0, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;flange_width&#x27;, 14.4, min=6.0, max=26.0, semantic_type=&#x27;primitive_width&#x27;)
+params.add(&#x27;hole_radius&#x27;, 1.1, min=0.5, max=4.0, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;path_height&#x27;, 9.1, min=4.0, max=28.0, semantic_type=&#x27;path_height&#x27;)
+params.add(&#x27;path_length&#x27;, 20.1, min=10.0, max=45.0, semantic_type=&#x27;path_length&#x27;)
+params.add(&#x27;path_mid_length&#x27;, 11.14, min=5.0, max=35.0, expression=&#x27;path_length * 0.552&#x27;, semantic_type=&#x27;path_mid_length&#x27;)
+params.add(&#x27;path_offset&#x27;, 6.1, min=2.0, max=18.0, semantic_type=&#x27;path_offset&#x27;)
+params.add(&#x27;tube_radius&#x27;, 1.1, min=0.6, max=4.0, semantic_type=&#x27;sweep_radius&#x27;)
+
+part = Part(&#x27;flluma_0006100&#x27;, category=&#x27;swept_pipe_bracket&#x27;, parameters=params, seed=20266614, sample_id=&#x27;flluma_0006100&#x27;, units=&#x27;mm&#x27;)
+sweep_tube = part.sweep_tube(name=&#x27;swept_pipe_body&#x27;, radius=params[&#x27;tube_radius&#x27;], path_length=params[&#x27;path_length&#x27;], path_mid_length=params[&#x27;path_mid_length&#x27;], path_offset=params[&#x27;path_offset&#x27;], path_height=params[&#x27;path_height&#x27;], profile_segments=16, semantic_type=&#x27;sweep_tube&#x27;)
+box = part.box(name=&#x27;pipe_flange_seed&#x27;, length=params[&#x27;flange_length&#x27;], width=params[&#x27;flange_width&#x27;], height=params[&#x27;flange_thickness&#x27;], semantic_type=&#x27;flange&#x27;)
+moved = part.translate(name=&#x27;place_start_flange&#x27;, target=box, offset=[0.0, 0.0, -0.495], semantic_type=&#x27;placement&#x27;)
+moved_2 = part.translate(name=&#x27;place_end_flange&#x27;, target=box, offset=[20.1, 6.1, 9.05], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_start_flange&#x27;, target=sweep_tube, tool=moved, semantic_type=&#x27;flange&#x27;)
+join_2 = part.boolean_join(name=&#x27;join_end_flange&#x27;, target=join, tool=moved_2, semantic_type=&#x27;flange&#x27;)
+holes = part.hole_pattern(name=&#x27;pipe_flange_bolt_holes&#x27;, target=join_2.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-3.62, 0.0], [3.62, 0.0]], semantic_type=&#x27;bolt_hole_pattern&#x27;)
+chamfer = part.chamfer(name=&#x27;pipe_bracket_edge_chamfer&#x27;, target=holes.top_outer_edges(), distance=params[&#x27;chamfer_distance&#x27;], semantic_type=&#x27;outer_chamfer&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section><section><h2>After</h2><a href="after/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;chamfer_distance&#x27;, 0.1, min=0.05, max=1.0, semantic_type=&#x27;chamfer_distance&#x27;)
+params.add(&#x27;flange_length&#x27;, 15.1, min=8.0, max=32.0, semantic_type=&#x27;primitive_length&#x27;)
+params.add(&#x27;flange_thickness&#x27;, 3.4, min=2.0, max=8.0, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;flange_width&#x27;, 14.4, min=6.0, max=26.0, semantic_type=&#x27;primitive_width&#x27;)
+params.add(&#x27;hole_radius&#x27;, 1.1, min=0.5, max=4.0, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;path_height&#x27;, 11.375, min=4.0, max=28.0, semantic_type=&#x27;path_height&#x27;)
+params.add(&#x27;path_length&#x27;, 20.1, min=10.0, max=45.0, semantic_type=&#x27;path_length&#x27;)
+params.add(&#x27;path_mid_length&#x27;, 11.14, min=5.0, max=35.0, expression=&#x27;path_length * 0.552&#x27;, semantic_type=&#x27;path_mid_length&#x27;)
+params.add(&#x27;path_offset&#x27;, 6.1, min=2.0, max=18.0, semantic_type=&#x27;path_offset&#x27;)
+params.add(&#x27;tube_radius&#x27;, 1.1, min=0.6, max=4.0, semantic_type=&#x27;sweep_radius&#x27;)
+
+part = Part(&#x27;flluma_0006100&#x27;, category=&#x27;swept_pipe_bracket&#x27;, parameters=params, seed=20266614, sample_id=&#x27;flluma_0006100&#x27;, units=&#x27;mm&#x27;)
+sweep_tube = part.sweep_tube(name=&#x27;swept_pipe_body&#x27;, radius=params[&#x27;tube_radius&#x27;], path_length=params[&#x27;path_length&#x27;], path_mid_length=params[&#x27;path_mid_length&#x27;], path_offset=params[&#x27;path_offset&#x27;], path_height=params[&#x27;path_height&#x27;], profile_segments=16, semantic_type=&#x27;sweep_tube&#x27;)
+box = part.box(name=&#x27;pipe_flange_seed&#x27;, length=params[&#x27;flange_length&#x27;], width=params[&#x27;flange_width&#x27;], height=params[&#x27;flange_thickness&#x27;], semantic_type=&#x27;flange&#x27;)
+moved = part.translate(name=&#x27;place_start_flange&#x27;, target=box, offset=[0.0, 0.0, -0.495], semantic_type=&#x27;placement&#x27;)
+moved_2 = part.translate(name=&#x27;place_end_flange&#x27;, target=box, offset=[20.1, 6.1, 9.05], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_start_flange&#x27;, target=sweep_tube, tool=moved, semantic_type=&#x27;flange&#x27;)
+join_2 = part.boolean_join(name=&#x27;join_end_flange&#x27;, target=join, tool=moved_2, semantic_type=&#x27;flange&#x27;)
+holes = part.hole_pattern(name=&#x27;pipe_flange_bolt_holes&#x27;, target=join_2.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-3.62, 0.0], [3.62, 0.0]], semantic_type=&#x27;bolt_hole_pattern&#x27;)
+chamfer = part.chamfer(name=&#x27;pipe_bracket_edge_chamfer&#x27;, target=holes.top_outer_edges(), distance=params[&#x27;chamfer_distance&#x27;], semantic_type=&#x27;outer_chamfer&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section></div>

@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0095386",
+  "part_name": "flluma_0095386",
+  "category": "ribbed_support_plate",
+  "seed": 20355900,
+  "units": "mm",
+  "parameters": {
+    "height": {
+      "value": 37.2,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_radius": {
+      "value": 2.04,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "rib_height": {
+      "value": 7.72,
+      "min": 2.0,
+      "max": 18.0,
+      "expression": "thickness * 0.965",
+      "semantic_type": "rib_height"
+    },
+    "rib_length": {
+      "value": 53.5,
+      "min": 12.0,
+      "max": 100.0,
+      "expression": "width * 0.721",
+      "semantic_type": "rib_length"
+    },
+    "rib_offset_y": {
+      "value": 5.25,
+      "min": 2.0,
+      "max": 24.0,
+      "expression": "height * 0.141",
+      "semantic_type": "rib_offset"
+    },
+    "rib_width": {
+      "value": 3.27,
+      "min": 2.0,
+      "max": 12.0,
+      "expression": "max(2.0, height * 0.088)",
+      "semantic_type": "rib_width"
+    },
+    "thickness": {
+      "value": 8,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 74.2,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "ribbed_support_plate_001",
+      "name": "ribbed_support_plate_body",
+      "type": "RibbedSupportPlate",
+      "category": "additive",
+      "semantic_type": "ribbed_support_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 74.2
+        },
+        "height": {
+          "parameter": "height",
+          "value": 37.2
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 8
+        },
+        "hole_radius": {
+          "parameter": "hole_radius",
+          "value": 2.04
+        },
+        "hole_positions": [
+          [
+            -20.776000000000003,
+            -9.3
+          ],
+          [
+            20.776000000000003,
+            -9.3
+          ],
+          [
+            -20.776000000000003,
+            9.3
+          ],
+          [
+            20.776000000000003,
+            9.3
+          ]
+        ],
+        "rib_length": {
+          "parameter": "rib_length",
+          "value": 53.5
+        },
+        "rib_width": {
+          "parameter": "rib_width",
+          "value": 3.27
+        },
+        "rib_height": {
+          "parameter": "rib_height",
+          "value": 7.72
+        },
+        "rib_offset_y": {
+          "parameter": "rib_offset_y",
+          "value": 5.25
+        },
+        "lowering": [
+          {
+            "op": "Plate",
+            "width": {
+              "parameter": "width",
+              "value": 74.2
+            },
+            "height": {
+              "parameter": "height",
+              "value": 37.2
+            },
+            "thickness": {
+              "parameter": "thickness",
+              "value": 8
+            }
+          },
+          {
+            "op": "HolePattern",
+            "radius": {
+              "parameter": "hole_radius",
+              "value": 2.04
+            },
+            "positions": [
+              [
+                -20.776000000000003,
+                -9.3
+              ],
+              [
+                20.776000000000003,
+                -9.3
+              ],
+              [
+                -20.776000000000003,
+                9.3
+              ],
+              [
+                20.776000000000003,
+                9.3
+              ]
+            ]
+          },
+          {
+            "op": "RibPair",
+            "length": {
+              "parameter": "rib_length",
+              "value": 53.5
+            },
+            "width": {
+              "parameter": "rib_width",
+              "value": 3.27
+            },
+            "height": {
+              "parameter": "rib_height",
+              "value": 7.72
+            },
+            "offset_y": {
+              "parameter": "rib_offset_y",
+              "value": 5.25
+            }
+          }
+        ]
+      },
+      "rebuild_order": 1
+    }
+  ]
+}

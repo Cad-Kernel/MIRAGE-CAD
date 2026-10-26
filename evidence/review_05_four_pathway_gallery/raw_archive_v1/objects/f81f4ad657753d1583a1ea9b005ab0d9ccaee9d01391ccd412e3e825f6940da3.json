@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0091927",
+  "part_name": "flluma_0091927",
+  "category": "sphere_stock",
+  "seed": 20352441,
+  "units": "mm",
+  "parameters": {
+    "radius": {
+      "value": 6.21,
+      "min": 1.5,
+      "max": 16.0,
+      "semantic_type": "sphere_radius"
+    }
+  },
+  "features": [
+    {
+      "id": "sphere_001",
+      "name": "sphere_stock_body",
+      "type": "Sphere",
+      "category": "additive",
+      "semantic_type": "primitive_stock",
+      "parameters": {
+        "radius": {
+          "parameter": "radius",
+          "value": 6.21
+        },
+        "resolution": 64
+      },
+      "rebuild_order": 1
+    }
+  ]
+}

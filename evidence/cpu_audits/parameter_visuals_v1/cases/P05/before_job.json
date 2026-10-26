@@ -1,0 +1,8 @@
+{
+  "case_id": "P05",
+  "side": "before",
+  "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\before",
+  "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\before.py",
+  "code_sha256": "ad8ccffbb5d4816f6ea009be823a244d6f729cfd0a1001b15329a4bf5260b5d1",
+  "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca"
+}

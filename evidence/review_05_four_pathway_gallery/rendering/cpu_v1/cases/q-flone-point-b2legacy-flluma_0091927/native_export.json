@@ -1,0 +1,48 @@
+{
+  "case_id": "q-flone-point-b2legacy-flluma_0091927",
+  "started_utc": "2026-10-22T17:45:26.894328+00:00",
+  "code_sha256": "406847ca56f010bd10f5189e786e51a92f2813a4c65036766dac01f2cd637db1",
+  "training": false,
+  "model_forward": false,
+  "additional_program_repair": false,
+  "historical_metrics_changed": false,
+  "python": "3.11.11 (main, Jan 11 2026, 14:22:57) [MSC v.1950 64 bit (AMD64)]",
+  "validation": "{'valid_solid': True, 'single_body': True, 'node_count': 1, 'triangle_count': 306, 'mesh_vertex_count': 168, 'mesh_face_count': 306, 'mesh_index_count': 918, 'bbox': {'min': [-1.211313605, -1.211313605, -1.230000019], 'max': [1.221031904, 1.211313605, 1.230000019]}, 'bbox_size': [2.43234551, 2.422627211, 2.460000038], 'surface_area': 18.584544996, 'volume': 7.428601048, 'mesh_valid': True, 'mesh_indexed': True, 'mesh_manifold': True, 'raw_mesh_closed': False, 'mesh_closed': True, 'mesh_closed_after_weld': True, 'mesh_closure_policy': 'coordinate_welded', 'mesh_weld_vertex_count': 154, 'mesh_weld_face_count': 304, 'brep': {'success': True, 'shape_type': 'SOLID', 'brep_valid': True, 'solid_count': 1, 'shell_count': 1, 'face_count': 1, 'wire_count': 1, 'edge_count': 3, 'vertex_count': 2, 'bbox': {'min': [-1.288478942, -1.288478942, -1.307165406], 'max': [1.298197321, 1.288478942, 1.307165406], 'size': [2.586676264, 2.576957885, 2.614330813]}, 'surface_area': 19.011662692, 'volume': 7.794781825}, 'topology_references': {'valid': True, 'checked': 4, 'errors': [], 'checks': [{'valid': True, 'owner_feature': 'sphere_001', 'field': 'output_topology.all_faces', 'reference_id': 'sphere_001:all_faces:059153c6eb4f', 'expected_hash': '80be291d9f92265c6d550d4c567de6be1d47bbc13523b4ac9923122b2f1b028f', 'actual_hash': '80be291d9f92265c6d550d4c567de6be1d47bbc13523b4ac9923122b2f1b028f', 'hash_match': True, 'expected_count': 1, 'actual_count': 1, 'expected_ids': ['face_a9850613e8de91df'], 'actual_ids': ['face_a9850613e8de91df'], 'id_match': True, 'diff': {'missing_ids': [], 'unexpected_ids': [], 'missing_native_keys': {}, 'unexpected_native_keys': {}, 'expected_only_count': 0, 'actual_only_count': 0}, 'actual': {'schema': 'topology_selection_v2', 'reference_id': 'sphere_001:all_faces:059153c6eb4f', 'kind': 'face_set', 'query': 'all', 'count': 1, 'indices': [1], 'persistent_ids': ['face_a9850613e8de91df'], 'items': [{'stable_index': 1, 'stable_id': 'face_a9850613e8de91df', 'geometry': {'center': [-0.0, 0.0, -0.0], 'area': 19.011662692, 'length': 0.0, 'planar': False, 'curved': True, 'normal_axis': [1.0, 0.0, 0.0]}, 'occurrence': 1, 'native_canonical_key': 'face|center=0,0,0|normal_axis=1,0,0|area=19.011662692|planar=0|curved=1', 'native_canonical_id': 'face_a9850613e8de91df'}], 'hash': '80be291d9f92265c6d550d4c567de6be1d47bbc13523b4ac9923122b2f1b028f'}, 'error': None}, {'valid': True, 'owner_feature': 'sphere_001', 'field': 'output_topology.top_faces', 'reference_id': 'sphere_001:top_faces:213ebc3bece4', 'expected_hash': 'ed8395261c3d42d89e986d1e550022526b0283b0f122d9b02cd5e5442b2c4eea', 'actual_hash': 'ed8395261c3d42d89e986d1e550022526b0283b0f122d9b02cd5e5442b2c4eea', 'hash_match': True, 'expected_count': 1, 'actual_count': 1, 'expected_ids': ['face_1ab5d6a373a7e669'], 'actual_ids': ['face_1ab5d6a373a7e669'], 'id_match': True, 'diff': {'missing_ids': [], 'unexpected_ids': [], 'missing_native_keys': {}, 'unexpected_native_keys': {}, 'expected_only_count': 0, 'actual_only_count': 0}, 'actual': {'schema': 'topology_selection_v2', 'reference_id': 'sphere_001:top_faces:213ebc3bece4', 'kind': 'face_set', 'query': '>Z |Z', 'count': 1, 'indices': [1], 'persistent_ids': ['face_1ab5d6a373a7e669'], 'items': [{'stable_index': 1, 'stable_id': 'face_1ab5d6a373a7e669', 'geometry': {'center': [-0.0, 0.0, 1.230000019], 'area': 19.011662692, 'length': 0.0, 'planar': False, 'curved': True, 'normal_axis': [0.0, 0.0, 1.0]}, 'occurrence': 1, 'native_canonical_key': 'face|center=0,0,1.230000019|normal_axis=0,0,1|area=19.011662692|planar=0|curved=1', 'native_canonical_id': 'face_1ab5d6a373a7e669'}], 'hash': 'ed8395261c3d42d89e986d1e550022526b0283b0f122d9b02cd5e5442b2c4eea'}, 'error': None}, {'valid': True, 'owner_feature': 'sphere_001', 'field': 'output_topology.bottom_faces', 'reference_id': 'sphere_001:bottom_faces:83017c29c3f2', 'expected_hash': 'b1da2c67fce0cb81c9980c07c9a006bf437fe6a979f13f77f7dbc787bc9943c7', 'actual_hash': 'b1da2c67fce0cb81c9980c07c9a006bf437fe6a979f13f77f7dbc787bc9943c7', 'hash_match': True, 'expected_count': 1, 'actual_count': 1, 'expected_ids': ['face_cb7b1cd5ed757e26'], 'actual_ids': ['face_cb7b1cd5ed757e26'], 'id_match': True, 'diff': {'missing_ids': [], 'unexpected_ids': [], 'missing_native_keys': {}, 'unexpected_native_keys': {}, 'expected_only_count': 0, 'actual_only_count': 0}, 'actual': {'schema': 'topology_selection_v2', 'reference_id': 'sphere_001:bottom_faces:83017c29c3f2', 'kind': 'face_set', 'query': '<Z |Z', 'count': 1, 'indices': [1], 'persistent_ids': ['face_cb7b1cd5ed757e26'], 'items': [{'stable_index': 1, 'stable_id': 'face_cb7b1cd5ed757e26', 'geometry': {'center': [-0.0, 0.0, -1.230000019], 'area': 19.011662692, 'length': 0.0, 'planar': False, 'curved': True, 'normal_axis': [0.0, 0.0, 1.0]}, 'occurrence': 1, 'native_canonical_key': 'face|center=0,0,-1.230000019|normal_axis=0,0,1|area=19.011662692|planar=0|curved=1', 'native_canonical_id': 'face_cb7b1cd5ed757e26'}], 'hash': 'b1da2c67fce0cb81c9980c07c9a006bf437fe6a979f13f77f7dbc787bc9943c7'}, 'error': None}, {'valid': True, 'owner_feature': 'sphere_001', 'field': 'output_topology.all_edges', 'reference_id': 'sphere_001:all_edges:9118c14d4b52', 'expected_hash': '9b676fc2148d2e95c8ec8457cc10ea40e79020ef4f0c444c5b3245708717e5b7', 'actual_hash': '9b676fc2148d2e95c8ec8457cc10ea40e79020ef4f0c444c5b3245708717e5b7', 'hash_match': True, 'expected_count': 1, 'actual_count': 1, 'expected_ids': ['edge_3334dfac83454161'], 'actual_ids': ['edge_3334dfac83454161'], 'id_match': True, 'diff': {'missing_ids': [], 'unexpected_ids': [], 'missing_native_keys': {}, 'unexpected_native_keys': {}, 'expected_only_count': 0, 'actual_only_count': 0}, 'actual': {'schema': 'topology_selection_v2', 'reference_id': 'sphere_001:all_edges:9118c14d4b52', 'kind': 'edge_set', 'query': 'all', 'count': 1, 'indices': [1], 'persistent_ids': ['edge_3334dfac83454161'], 'items': [{'stable_index': 1, 'stable_id': 'edge_3334dfac83454161', 'geometry': {'center': [1.230000019, -0.0, -0.0], 'area': 0.0, 'length': 3.864159024, 'planar': False, 'curved': True, 'tangent_axis': [0.0, 0.0, 1.0]}, 'occurrence': 1, 'native_canonical_key': 'edge|center=1.230000019,0,0|tangent_axis=0,0,1|length=3.864159024|planar=0|curved=1', 'native_canonical_id': 'edge_3334dfac83454161'}], 'hash': '9b676fc2148d2e95c8ec8457cc10ea40e79020ef4f0c444c5b3245708717e5b7'}, 'error': None}]}, 'constrained_sketches': {'schema': 'constrained_sketch_manifest_v1', 'valid': True, 'count': 0, 'features': [], 'errors': [], 'hash': '9bafe15d7b8683f1bf278026cd84dd42bccebe2d293f5652ba462c26353f865b'}, 'error': None}",
+  "native_step_info": {
+    "success": true,
+    "shape_type": "SOLID",
+    "brep_valid": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 1,
+    "wire_count": 1,
+    "edge_count": 3,
+    "vertex_count": 2,
+    "bbox": {
+      "min": [
+        -1.230000019073,
+        -1.230000019073,
+        -1.230000019073
+      ],
+      "max": [
+        1.230000019073,
+        1.230000019073,
+        1.230000019073
+      ],
+      "size": [
+        2.460000038146,
+        2.460000038146,
+        2.460000038146
+      ]
+    },
+    "surface_area": 19.01166269207283,
+    "volume": 7.794781824619675
+  },
+  "status": "EXPORTED_LOCKED_PREDICTION",
+  "step": {
+    "path": "rendering/cpu_v1/cases/q-flone-point-b2legacy-flluma_0091927/prediction.step",
+    "bytes": 2149,
+    "sha256": "8429fc35f1b94a4be65bbe30a00ed4de8a36c754bac7f9c42fc9a73baf9433f6"
+  },
+  "completed_utc": "2026-10-22T17:45:26.914360+00:00"
+}

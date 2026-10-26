@@ -1,0 +1,18 @@
+{
+  "sample_id": "f360_24032_d6172503_0031",
+  "arm": "point_genplan",
+  "terminal": true,
+  "pipeline_status": "NO_GEOMETRY",
+  "reason": "this arm produced no STEP for this part: exec error: Part.cylinder() got an unexpected keyword argument 'center'",
+  "gt_verified": null,
+  "cd_status": null,
+  "iou_status": null,
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": false,
+    "build_ok": false,
+    "solid_valid": false,
+    "step_export_ok": false
+  },
+  "gate_check": "match"
+}

@@ -1,0 +1,190 @@
+{
+  "extra_sources": [
+    {
+      "label": "text2cad_extra_01",
+      "source_path": "Cad_VLM/test_user_input.py",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/test_user_input.py",
+      "status": 200,
+      "saved_path": "responses/text2cad_extra_01.body",
+      "sha256": "1578596cc27cba8668ddf3d9c7f460c3d4b9207a96f58aa304ebd70a160e1557"
+    },
+    {
+      "label": "text2cad_extra_00",
+      "source_path": "Cad_VLM/test.py",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/test.py",
+      "status": 200,
+      "saved_path": "responses/text2cad_extra_00.body",
+      "sha256": "83670a69c8b972cfcea5998d40665fedd2ac89b3a1d29e57ac3e7a804faebcbb"
+    },
+    {
+      "label": "text2cad_extra_02",
+      "source_path": "CadSeqProc/cad_sequence.py",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/CadSeqProc/cad_sequence.py",
+      "status": 200,
+      "saved_path": "responses/text2cad_extra_02.body",
+      "sha256": "188f745e7dd1025065265a7a416333f8933c8094f1414f38f5fc1eb2974a1604"
+    },
+    {
+      "label": "text2cad_extra_03",
+      "source_path": "CadSeqProc/utility/utils.py",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/CadSeqProc/utility/utils.py",
+      "status": 200,
+      "saved_path": "responses/text2cad_extra_03.body",
+      "sha256": "794d0e208b640c1a9bc1f39eabbf161121da14e84a2ff20b4861d281bb4800cf"
+    },
+    {
+      "label": "gencad3d_extra_00",
+      "source_path": "diffusion/evaluation/run_reconstruction_evaluations.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/run_reconstruction_evaluations.py",
+      "status": 200,
+      "saved_path": "responses/gencad3d_extra_00.body",
+      "sha256": "3fab80666b6d8d52e89590ff3a3448520591b4dc2ece144f6e08b2eeb9136ca7"
+    },
+    {
+      "label": "gencad3d_extra_01",
+      "source_path": "autoencoder/evaluation/run_autoencoder_reconstruction.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/run_autoencoder_reconstruction.py",
+      "status": 200,
+      "saved_path": "responses/gencad3d_extra_01.body",
+      "sha256": "dd60ae540472bdc3fe486abf9e64362a6e04ac6c66221fd631713c6f671511fb"
+    },
+    {
+      "label": "gencad3d_extra_02",
+      "source_path": "paths.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/paths.py",
+      "status": 200,
+      "saved_path": "responses/gencad3d_extra_02.body",
+      "sha256": "e6006fef92c48e2d383f73b9078498ec5829da8922d80fd919c558b764ef596e"
+    },
+    {
+      "label": "cadbench_extra_00",
+      "source_path": "DATASET_LICENSE.md",
+      "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/DATASET_LICENSE.md",
+      "status": 200,
+      "saved_path": "responses/cadbench_extra_00.body",
+      "sha256": "95fbec063db2ef935d64d4bc940fb6a6cfdb7c4fefd491f2061a72c4188e0464"
+    },
+    {
+      "label": "cadbench_extra_01",
+      "source_path": "scripts/download_from_hf.py",
+      "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/scripts/download_from_hf.py",
+      "status": 200,
+      "saved_path": "responses/cadbench_extra_01.body",
+      "sha256": "04e1f2f90c1957ae2860e5e86591d3b08ee2d68680c3d98e05ac42d3e3004839"
+    },
+    {
+      "label": "cadbench_extra_02",
+      "source_path": "tested_models/cadrecode/README.md",
+      "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/tested_models/cadrecode/README.md",
+      "status": 200,
+      "saved_path": "responses/cadbench_extra_02.body",
+      "sha256": "48b17320be57a62062367a128a6e063ae8f58f54f0e99e844c66486e77b2f572"
+    },
+    {
+      "label": "cadrecode_extra_00",
+      "source_path": "CHANGELOG.md",
+      "url": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/CHANGELOG.md",
+      "status": 200,
+      "saved_path": "responses/cadrecode_extra_00.body",
+      "sha256": "7742e3f581994f9f9d9b4c8cf59364d8c5a4e79ce9aea93016f1c315943cc0ee"
+    },
+    {
+      "label": "pointercad_extra_00",
+      "source_path": "test.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/test.py",
+      "status": 200,
+      "saved_path": "responses/pointercad_extra_00.body",
+      "sha256": "56769b8f239b984f4656e1b8af1ae7b4eeda7c95ece7d0abec532a914d7a603f"
+    },
+    {
+      "label": "cadrecode_extra_01",
+      "source_path": "Dockerfile",
+      "url": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/Dockerfile",
+      "status": 200,
+      "saved_path": "responses/cadrecode_extra_01.body",
+      "sha256": "8f5657d5333256cf3d9ca25e9e45da7f0a4a812b4dc30c326cefe00af8dccd77"
+    }
+  ],
+  "pointer_author_public_model_ids": [],
+  "pointer_github_release_count": 0,
+  "pointer_weight_related_issues": [
+    {
+      "number": 19,
+      "title": "Could you release a trained model?",
+      "url": "https://github.com/Snitro/Pointer-CAD/issues/19",
+      "comment_count_captured": 0
+    },
+    {
+      "number": 16,
+      "title": "Dataset Release",
+      "url": "https://github.com/Snitro/Pointer-CAD/issues/16",
+      "comment_count_captured": 1
+    },
+    {
+      "number": 15,
+      "title": "Tracking: Code release checklist",
+      "url": "https://github.com/Snitro/Pointer-CAD/issues/15",
+      "comment_count_captured": 0
+    },
+    {
+      "number": 13,
+      "title": "Request: Dataset release details and annotation pipeline reproducibility",
+      "url": "https://github.com/Snitro/Pointer-CAD/issues/13",
+      "comment_count_captured": 1
+    }
+  ],
+  "weight_object_bodies_downloaded": false,
+  "head_checks": [
+    {
+      "label": "gencad_Autoencoder.zip",
+      "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Autoencoder.zip",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 200,
+      "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/7fdfbd3de29c8c99048190165a7203ef04ac66442b13d05415dea22566f511da",
+      "headers": {
+        "Content-Length": "149267169",
+        "Content-Type": "application/zip",
+        "Content-Disposition": "inline; filename*=UTF-8''Autoencoder.zip; filename=\"Autoencoder.zip\";",
+        "ETag": "\"7fdfbd3de29c8c99048190165a7203ef04ac66442b13d05415dea22566f511da\""
+      }
+    },
+    {
+      "label": "gencad_Contrastive.zip",
+      "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Contrastive.zip",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 200,
+      "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/619e479a014cb693d62cfb453254a8bab6643b407df7247dc388e900b83e26d1",
+      "headers": {
+        "Content-Length": "513922220",
+        "Content-Type": "application/zip",
+        "Content-Disposition": "inline; filename*=UTF-8''Contrastive.zip; filename=\"Contrastive.zip\";",
+        "ETag": "\"619e479a014cb693d62cfb453254a8bab6643b407df7247dc388e900b83e26d1\""
+      }
+    },
+    {
+      "label": "gencad_Diffusion.zip",
+      "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Diffusion.zip",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 200,
+      "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/5e0d4d870432c6df44e41e0dad5a06b4abd5785bba4ec8688f623e8e4946659d",
+      "headers": {
+        "Content-Length": "4681412235",
+        "Content-Type": "application/zip",
+        "Content-Disposition": "inline; filename*=UTF-8''Diffusion.zip; filename=\"Diffusion.zip\";",
+        "ETag": "\"5e0d4d870432c6df44e41e0dad5a06b4abd5785bba4ec8688f623e8e4946659d\""
+      }
+    },
+    {
+      "label": "text2cad_v1_weight",
+      "requested_url": "https://huggingface.co/datasets/SadilKhan/Text2CAD/resolve/422d4c93198c3cd98d5c2092c0ab214b3a76a68d/text2cad_v1.0/Text2CAD_1.0.pth",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 401,
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    }
+  ],
+  "remote_code_executed": false
+}

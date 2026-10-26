@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-17T12:04:24.055425+00:00",
+  "policy": {
+    "acceptance_report": {
+      "bytes": 5729,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight/preflight_actuals.json",
+      "sha256": "74289542996a6e7efe8207b474bd6a3fa5905e7b0e527ea716bf892083371324"
+    },
+    "amendment_fingerprint": "efc5ea52d9ab2b9b3aa46661a0a4f46805e09c0b466b9162f3962d9dee335fd1",
+    "amendment_id": "R04-S4B-PACK-01",
+    "identity": {
+      "implementation": {
+        "bytes": 6636,
+        "path": "__DEV_ROOT__/src/training_25k/cag_stage4b_packing_v1.py",
+        "sha256": "611a21ef38c3086bdfa05d57d77726b0ea115d570f2750d7e274903d085d5b8c"
+      },
+      "parent_fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+      "policy": "stage4b_preserve_full_code_truncate_construction_plan_v1",
+      "prompt_builder": {
+        "bytes": 11008,
+        "path": "__RUN_SOURCE_ROOT__/miragecad/gen_prompts.py",
+        "sha256": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+      },
+      "tokenizer_files": {
+        "tokenizer.json": {
+          "bytes": 11421892,
+          "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer.json",
+          "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+        },
+        "tokenizer_config.json": {
+          "bytes": 666,
+          "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer_config.json",
+          "sha256": "8bf20d1ba8531aff9e2eac813845e87f07cb2684b68e1de521ca84871f24cdbe"
+        }
+      }
+    },
+    "parent_fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+    "scope": "all Stage4b construction-plan fields, GT/predicted, train/validation",
+    "scope_confirmation": "operator confirmed before B-only implementation",
+    "stage4b_training_authorized": false
+  }
+}

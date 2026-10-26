@@ -1,0 +1,11 @@
+PART flluma_0007100 CAT heat_sink_base UNITS mm SEED 20267614
+PARAM height 50.1 MIN 12 MAX 80 SEM overall_height
+PARAM hole_radius 1.53 MIN 1 MAX 8 SEM hole_radius
+PARAM thickness 7.7 MIN 3 MAX 25 SEM thickness
+PARAM width 52.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP plate_001 TARGET plate_001.top_face PARAMS count=4 depth=THROUGH positions=[[-14.588,-12.525],[14.588,-12.525],[-14.588,12.525],[14.588,12.525]] radius=@hole_radius
+F box_001 OP_BOX SEM heat_sink_base ROLE secondary_feature PARAMS height=@thickness length=@width width=@height
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,21.55,3.85]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP hole_001,translate_001 TARGET hole_001,translate_001
+END

@@ -1,0 +1,322 @@
+{
+  "case_id": "q-flone-step-b2legacy-flluma_0096700",
+  "created_utc": "2026-10-22T17:18:03.259923+00:00",
+  "source_split": "test",
+  "experiment": "legacy_deployed_B2_Table7_repaired",
+  "selection_policy": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/03_candidate_selection_policy.md",
+    "bytes": 8259,
+    "sha256": "8da7f31552706b6cfee99e4f9fb1c7522cb799392d1ad464bd4ffb2dcde667de"
+  },
+  "cohort": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/selection/cohort_v1.jsonl",
+    "bytes": 8044228,
+    "sha256": "6634c9f2ca5b230fe1ed7aa3f81e220ffabda8de7bb8f933e8b287a67d58317a"
+  },
+  "selection": {
+    "sample_id": "flluma_0096700",
+    "case_type": "near_median",
+    "placement": "appendix",
+    "reason": "Nearest complete-scoreable-cohort cd percentile0.5, then f1 percentile0.5; already registered IDs excluded",
+    "detail": {}
+  },
+  "cohort_row": {
+    "sample_id": "flluma_0096700",
+    "modality": "step",
+    "source_split": "test",
+    "scoreable": true,
+    "cd": 2.7168994386918053,
+    "f1": 0.20648640661938533,
+    "complexity_tier": "L3",
+    "template_family": "rounded_slot_profile_plate",
+    "operation_count": 4,
+    "operation_set": [
+      "OP_EXTRUDE",
+      "OP_HOLE_PATTERN",
+      "OP_RECTANGULAR_POCKET",
+      "OP_SKETCH"
+    ],
+    "gate_status": "pass",
+    "gate_error": "",
+    "geometry_error": "",
+    "gate_flags": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "geometry_gate_flags": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "eligible": true,
+    "ineligible_reasons": [],
+    "prediction_line_1based": 1839,
+    "cd_percentile": 0.5003073140749846,
+    "f1_percentile": 0.5356484326982176
+  },
+  "checkout": {
+    "path": "__RUN_SOURCE_ROOT__",
+    "commit": null,
+    "status_porcelain": null,
+    "git_status": "UNAVAILABLE_OR_NOT_A_REPOSITORY",
+    "git_error": "fatal: not a git repository (or any of the parent directories): .git",
+    "canonical_windows_repository": {
+      "path": "__DEV_ROOT__",
+      "commit": "052392b6c7dc0305d04033b1f56d19b12fffb0a2",
+      "status_porcelain": " M .gitignore\n M figures/svg/TomodifyMain.txt\n M final/arxiv/MIRAGE/main.bbl\n M final/arxiv/MIRAGE/references.bib\n M final/elsarticle/main.bbl\n M final/elsarticle/references.bib\n M review/11.txt\n M scratch/ext_inventory/external_prep_inventory.txt\n M scratch/external_manifest/manifest.csv\n M scratch/overnight_20260804_235106/run.log\n M scratch/probe_step_import.txt\n M scratch/probe_step_pointcloud.txt\n M src/gen_scripts/train_soft_prefix_ir.py\n?? .claude/\n?? final/ComputersGraphics/\n?? final/ComputersGraphics_version2/\n?? final/arxiv/MIRAGE/main.aux\n?? final/arxiv/MIRAGE/main.blg\n?? final/arxiv/MIRAGE/main.fdb_latexmk\n?? final/arxiv/MIRAGE/main.fls\n?? final/arxiv/MIRAGE/main.log\n?? final/arxiv/MIRAGE/main.out\n?? final/arxiv/MIRAGE/main.pdf\n?? final/arxiv/MIRAGE/main.spl\n?? final/arxiv/MIRAGE/main.synctex.gz\n?? linkin/\n?? scratch/cag_seed_1_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_2_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_3_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_4_a1e_b2p_eval_summary.json\n?? scratch/exec_b0b2_step_B0_s1/\n?? scratch/exec_b0b2_step_B0_s2/\n?? scratch/exec_b0b2_step_B0_s3/\n?? scratch/exec_b0b2_step_B0_s4/\n?? scratch/exec_b0b2_step_B2_s1/\n?? scratch/exec_b0b2_step_B2_s2/\n?? scratch/exec_b0b2_step_B2_s3/\n?? scratch/exec_b0b2_step_B2_s4/\n?? scratch/exec_cd_step_B2P_CD/\n?? scratch/exec_cd_step_NN_DESC_TRAIN/\n?? scratch/exec_e1_step_A1E_s1/\n?? scratch/exec_e1_step_A1E_s2/\n?? scratch/exec_e1_step_A1E_s3/\n?? scratch/exec_e1_step_A1E_s4/\n?? scratch/exec_e1_step_B2P_s1/\n?? scratch/exec_e1_step_B2P_s2/\n?? scratch/exec_e1_step_B2P_s3/\n?? scratch/exec_e1_step_B2P_s4/\n?? scratch/exec_r04_image_A/\n?? scratch/exec_r04_image_B/\n?? scratch/exec_r04_point_A/\n?? scratch/exec_r04_point_B/\n?? scratch/exec_r04_step_A/\n?? scratch/exec_r04_step_B/\n?? scratch/exec_r04_text_A/\n?? scratch/exec_r04_text_B/\n?? scratch/geom_b0b2_step_B0_s1/\n?? scratch/geom_b0b2_step_B0_s2/\n?? scratch/geom_b0b2_step_B0_s3/\n?? scratch/geom_b0b2_step_B0_s4/\n?? scratch/geom_b0b2_step_B2_s1/\n?? scratch/geom_b0b2_step_B2_s2/\n?? scratch/geom_b0b2_step_B2_s3/\n?? scratch/geom_b0b2_step_B2_s4/\n?? scratch/geom_cd_step_B2P_CD/\n?? scratch/geom_cd_step_NN_DESC_TRAIN/\n?? scratch/geom_e1_step_A1E_s1/\n?? scratch/geom_e1_step_A1E_s2/\n?? scratch/geom_e1_step_A1E_s3/\n?? scratch/geom_e1_step_A1E_s4/\n?? scratch/geom_e1_step_B2P_s1/\n?? scratch/geom_e1_step_B2P_s2/\n?? scratch/geom_e1_step_B2P_s3/\n?? scratch/geom_e1_step_B2P_s4/\n?? scratch/geom_r04_image_A/\n?? scratch/geom_r04_image_B/\n?? scratch/geom_r04_point_A/\n?? scratch/geom_r04_point_B/\n?? scratch/geom_r04_step_A/\n?? scratch/geom_r04_step_B/\n?? scratch/geom_r04_text_A/\n?? scratch/geom_r04_text_B/\n?? src/scratch/cag_a1e_b2p_actuals.py\n?? src/training_25k/cag_archive_partial_a1e_b2p.sh\n?? src/training_25k/cag_b0_b2_fullstack_actuals.py\n?? src/training_25k/cag_build_construction_disjoint_split.py\n?? src/training_25k/cag_exposure_inference.py\n?? src/training_25k/cag_exposure_policy.py\n?? src/training_25k/cag_exposure_policy_b_only.py\n?? src/training_25k/cag_exposure_policy_core.py\n?? src/training_25k/cag_gen_cd_step_nn_descriptor_baseline.py\n?? src/training_25k/cag_preflight_stage4b_packing.py\n?? src/training_25k/cag_prepare_a1e_b2p_seed_geometry.py\n?? src/training_25k/cag_prepare_b0_b2_seed_geometry.py\n?? src/training_25k/cag_prepare_construction_disjoint_geometry.py\n?? src/training_25k/cag_prepare_frozen_a1e_b2p_eval_seed.sh\n?? src/training_25k/cag_run_b0_b2_fullstack_seed.sh\n?? src/training_25k/cag_run_construction_disjoint_nn_baseline.sh\n?? src/training_25k/cag_run_construction_disjoint_step_b2p_training.sh\n?? src/training_25k/cag_run_exposure_inference.sh\n?? src/training_25k/cag_run_exposure_policy.sh\n?? src/training_25k/cag_run_exposure_policy_b_only.sh\n?? src/training_25k/cag_run_frozen_a1e_b2p_seed.sh\n?? src/training_25k/cag_run_stage4b_only.sh\n?? src/training_25k/cag_stage4b_execution.py\n?? src/training_25k/cag_stage4b_packing_v1.py\n?? src/training_25k/cag_summarize_a1e_b2p_seed_eval.py\n?? src/training_25k/cag_summarize_b0_b2_fullstack_eval.py\n",
+      "git_status": "OBSERVED_CURRENT_CHECKOUT",
+      "git_error": null
+    },
+    "note": "Source/data root may be an unversioned copied tree. Never substitute the canonical Windows repository commit as a commit of that root. Current observations do not attest historical executed tree bytes; exact inspected source hashes retained"
+  },
+  "source_locators": {
+    "test": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/data/25k/test.jsonl",
+        "bytes": 6400450,
+        "sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "f7faf1e64ff5410a965b33cef143292d42fe5b1d1105c6b2084b8634732c54c9",
+      "stable_key": {
+        "sample_id": "flluma_0096700"
+      }
+    },
+    "raw_plan": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step.jsonl",
+        "bytes": 7890645,
+        "sha256": "bc9f76f80fcea23c10f40cf2b1702d3c105c51912cbb049c6a02b7fdf6fd80fb"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "e31bb1d5f2f043de9c2ddbdffbd2c0fa4c09382bf3645c92dbf9aa33665fbcb3",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    },
+    "used_plan": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step_p1a.jsonl",
+        "bytes": 7891299,
+        "sha256": "ee11c0a5fa3cd4c94f90b69877be47413f73888fa813fd735b15d55dbf9987c9"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "e31bb1d5f2f043de9c2ddbdffbd2c0fa4c09382bf3645c92dbf9aa33665fbcb3",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    },
+    "raw_code": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b.jsonl",
+        "bytes": 16795880,
+        "sha256": "4b48a8706d0c5a82c387b24523c5e0bce5f56993733945735d751f3f18c1855d"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "0e2e87f97f09ee54cadbfc639c907868668cae6fc4da202352cfdde234d01972",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    },
+    "intermediate_code": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired.jsonl",
+        "bytes": 16795818,
+        "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "0e2e87f97f09ee54cadbfc639c907868668cae6fc4da202352cfdde234d01972",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    },
+    "prediction": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired_p0.jsonl",
+        "bytes": 16795818,
+        "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "0e2e87f97f09ee54cadbfc639c907868668cae6fc4da202352cfdde234d01972",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    },
+    "geometry_input": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_step_stage3b.jsonl",
+        "bytes": 5091076,
+        "sha256": "1d9190cd3c1d0b2231ccd84673afa597245f222b3f174e7a588286b4a637ab7b"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "097115ec3f1a484ec77a0c0dd1245fdc66765df88252c21cbf3ae70e984dd72b",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    },
+    "gate": {
+      "file": {
+        "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_step/execution_rows.jsonl",
+        "bytes": 416945,
+        "sha256": "d65bc8e5ebce7b20eb3ae29c17aed57fa808065a74145bc8ccacfa36f794ef54"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "5c414910f6343150d37e3028024575c89e45a50b9e6a49bddf22ba187a034295",
+      "stable_key": {
+        "sample_id": "flluma_0096700"
+      }
+    },
+    "geometry": {
+      "file": {
+        "path": "__DEV_ROOT__/scratch/geom_stage3b_step_stage3b/geometry_nbest_rows.jsonl",
+        "bytes": 1032832,
+        "sha256": "5dc02742f3ef9b34944fb777f6523026995f58ceed3423afc2b6f0967220158f"
+      },
+      "line_1based": 1839,
+      "line_bytes_sha256": "2daf392a9e267667dc8624136caeb9f77a655ec47bb76d1094d1883ef05224dc",
+      "stable_key": {
+        "sample_id": "flluma_0096700",
+        "modality": "step"
+      }
+    }
+  },
+  "extracted_fields": {
+    "exact_text": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/input/exact_text.txt",
+      "bytes": 141,
+      "sha256": "39673b005b15f8ba396393c259b5e7b44a43483c12cd6c873112edf1f9ceb6b7"
+    },
+    "raw_plan": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/plans/raw.txt",
+      "bytes": 981,
+      "sha256": "6c513bd334f299fd15c24b552638e90aab1433c66476f52c6ba926beb26a20d6"
+    },
+    "used_plan": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/plans/canonicalized.txt",
+      "bytes": 981,
+      "sha256": "6c513bd334f299fd15c24b552638e90aab1433c66476f52c6ba926beb26a20d6"
+    },
+    "raw_code": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/code/raw_prediction.py",
+      "bytes": 1258,
+      "sha256": "8404d13e35c9ceafab59c7074cc293d2e7e1a1bc66c43770de494df8157886ea"
+    },
+    "intermediate_code": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/code/extrude_repaired.py",
+      "bytes": 1258,
+      "sha256": "8404d13e35c9ceafab59c7074cc293d2e7e1a1bc66c43770de494df8157886ea"
+    },
+    "executed_code": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/code/prediction.py",
+      "bytes": 1258,
+      "sha256": "8404d13e35c9ceafab59c7074cc293d2e7e1a1bc66c43770de494df8157886ea"
+    },
+    "code_excerpt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/code/excerpt.txt",
+      "bytes": 1337,
+      "sha256": "6dfc00e7a3d67070d20fbbf1c068c61e20574d75b3843a18fba96536995ff5b4"
+    },
+    "reference_ir": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/reference/training_ir.txt",
+      "bytes": 981,
+      "sha256": "d60cc4913a1847d90d76b411f0a4d361f8871d4c04a0e8a4fcf6884bffbed5be"
+    },
+    "reference_code": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/cases/q-flone-step-b2legacy-flluma_0096700/reference/program.py",
+      "bytes": 1265,
+      "sha256": "2531be5604292ca1898ad2728cd6dcd0464d217df55919cb736c418dfb28ff8e"
+    }
+  },
+  "original_assets": {
+    "reference_step": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/model.step",
+      "bytes": 55713,
+      "sha256": "56111e1b51b4b3127eec8a32e59dba2b8a3288cee96a606b3365fd7e495db0d9"
+    },
+    "reference_point": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/point_cloud.npz",
+      "bytes": 18662,
+      "sha256": "7320ca1696027e1b6a65ca1036283b6e8cd571d054e76812e4e42a1d92268974"
+    },
+    "input_image": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/images/canonical/06_iso_posx_posy_posz.png",
+      "bytes": 1559,
+      "sha256": "87641a2873e57c38b2bafa3dea54bf0485d9b345f85089705b761e47d68b81a7"
+    },
+    "step_descriptor": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/step_features/flluma_0096700.json",
+      "bytes": 1771,
+      "sha256": "5bc18ac2e8a0702f7d0715ff096b71b61fb51125df5be8c145f720682be90294"
+    },
+    "reference_ir_source": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/training_ir.txt",
+      "bytes": 991,
+      "sha256": "ce7cbc21f276674205271fc4bed9d1f681e0d47ff2e28c780a5c1b9dc53e2cf3"
+    },
+    "reference_code_source": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/program.py",
+      "bytes": 1278,
+      "sha256": "f7c83fe712a0792a37e381c0bbb25bb4102e0798d17147d9c7e509d32619c737"
+    },
+    "reference_feature_tree": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/feature_tree.json",
+      "bytes": 4875,
+      "sha256": "d6a7718a7a8248c4bb457a500f538533cd29ac98d8b0b37468b20e46f97920b6"
+    },
+    "reference_metadata": {
+      "path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0096/flluma_0096700/metadata.json",
+      "bytes": 11627,
+      "sha256": "f849578cfa7cbffe4d580977ae0e04c375de54627c98dbd643f8885377e88e5d"
+    }
+  },
+  "current_checkpoint_observations": {
+    "plan_adapter": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/adapter_model.safetensors",
+      "bytes": 36981072,
+      "sha256": "e7ea0acadc1c4225070dc0836de3bbdd55e1ba338a244ea789a666db6894632e"
+    },
+    "plan_prefix": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix.pt",
+      "bytes": 40932549,
+      "sha256": "13e457593dba6c3a51d726b121fb8e31ab993fe0544908577b25e20c0da8cf1b"
+    },
+    "code_adapter": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/adapter_model.safetensors",
+      "bytes": 73911112,
+      "sha256": "db0d88b6971b51f81d4e75dfa017feb669a24987b01b2f38b611c56a2442a1f6"
+    },
+    "plan_report": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix_training_report.json",
+      "bytes": 438,
+      "sha256": "c1e571dfad8602be14a96629e24e2bc5c4198d0ad12b0a782745bcd8a454ac66"
+    },
+    "code_report": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/training_report.json",
+      "bytes": 197,
+      "sha256": "5ec8e7c00e69ae758023f750b9988f20f9ed8428670c00aad751ff0cbb560dc3"
+    }
+  },
+  "historical_checkpoint_binding": "UNATTESTED_IN_LEGACY_RUN_METADATA",
+  "training_seed": null,
+  "training_seed_note": "Default inference seed42 is not proof of historical training seed; do not invent a run attestation",
+  "program_repair": true,
+  "repair_sequence": [
+    "repair_extrude_on_face",
+    "repair_profile_cut_offset_P0"
+  ],
+  "plan_canonicalization": "P1a face/extrude alias",
+  "model_or_CAD_execution_during_packaging": false,
+  "point_input_note": "Original NPZ source; normalized1024-FPS tensor not re-created or claimed identical here",
+  "standalone_and_geometry_gates_agree": true
+}

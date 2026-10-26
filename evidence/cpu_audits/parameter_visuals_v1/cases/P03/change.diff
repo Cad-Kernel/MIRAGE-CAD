@@ -1,0 +1,11 @@
+--- before.py
++++ after.py
+@@ -1,7 +1,7 @@
+ params = Parameters()
+ params.add('clamp_jaw_height', 18.58, min=5.0, max=28.0, expression='thickness * 1.27', semantic_type='clamp_jaw_height')
+ params.add('clamp_jaw_width', 15.12, min=6.0, max=28.0, expression='width * 0.227', semantic_type='clamp_jaw_width')
+-params.add('clamp_length', 25.1, min=8.0, max=40.0, expression='width * 0.38', semantic_type='overall_length')
++params.add('clamp_length', 31.375, min=8.0, max=40.0, expression='width * 0.38', semantic_type='overall_length')
+ params.add('clamp_thickness', 12.6, min=3.0, max=25.0, expression='thickness * 1.05', semantic_type='thickness')
+ params.add('height', 43.2, min=12, max=80, semantic_type='overall_height')
+ params.add('hole_radius', 2.14, min=1, max=8, semantic_type='hole_radius')

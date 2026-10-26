@@ -1,0 +1,92 @@
+{
+  "reference": {
+    "original_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\121262_f4a03dbc_0000.step",
+    "exists": true,
+    "sha256": "e9e7fc0708b847c37de06b0d01eca6372b6c8ed8cf7e4e92fbd9056f7dbcbdde",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\e9e7fc0708b847c37de06b0d01eca6372b6c8ed8cf7e4e92fbd9056f7dbcbdde.step"
+  },
+  "point": {
+    "original_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\121262_f4a03dbc_0000.npz",
+    "exists": true,
+    "sha256": "7dc54cdbff67efb9400dc47697da766dde9351b93912df1c2e73a22ec60462dc",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\7dc54cdbff67efb9400dc47697da766dde9351b93912df1c2e73a22ec60462dc.npz"
+  },
+  "step_descriptor": {
+    "original_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_features\\f360_121262_f4a03dbc_0000.json",
+    "exists": true,
+    "sha256": "d9f6108b33845086f394470216535aa753211b8519042b7dade9091226dfcbca",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\d9f6108b33845086f394470216535aa753211b8519042b7dade9091226dfcbca.json"
+  },
+  "step_descriptor_index_copy": {
+    "original_path": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_121262_f4a03dbc_0000.json",
+    "exists": true,
+    "sha256": "d9f6108b33845086f394470216535aa753211b8519042b7dade9091226dfcbca",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\d9f6108b33845086f394470216535aa753211b8519042b7dade9091226dfcbca.json"
+  },
+  "cadr_raw_generation.txt": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\raw_generation.txt",
+    "exists": true,
+    "sha256": "ffed1f91520221767c98cf9116cdc7a49317d2c094cc296aca58d49a01522bc6",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\ffed1f91520221767c98cf9116cdc7a49317d2c094cc296aca58d49a01522bc6.txt"
+  },
+  "cadr_extracted_code.py": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\extracted_code.py",
+    "exists": true,
+    "sha256": "461001ddd3d5c86f96a65f94cec3c7bdb3cb7db1a9db4a1290c037b09c7b2f31",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\461001ddd3d5c86f96a65f94cec3c7bdb3cb7db1a9db4a1290c037b09c7b2f31.py"
+  },
+  "cadr_execution_result.json": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\execution_result.json",
+    "exists": true,
+    "sha256": "8f83bc0eab38896a968c3881f1e00204cadf6053b7c07fe502e8147c52b8b4f9",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\8f83bc0eab38896a968c3881f1e00204cadf6053b7c07fe502e8147c52b8b4f9.json"
+  },
+  "cadr_execution_stdout.txt": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\execution_stdout.txt",
+    "exists": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt"
+  },
+  "cadr_execution_stderr.txt": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\execution_stderr.txt",
+    "exists": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt"
+  },
+  "cadr_cloud_256.npy": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\cloud_256.npy",
+    "exists": true,
+    "sha256": "9d3f56c7f961761c11c704bca6ee5480075f37cb30c04bcea882eb616630f2b9",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\9d3f56c7f961761c11c704bca6ee5480075f37cb30c04bcea882eb616630f2b9.npy"
+  },
+  "cadr_step": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\prediction.step",
+    "exists": true,
+    "sha256": "f85f29c57d54cb9ac7ad6ce9fa55af1fd3f53527ef04b9bde3b9c803795a7499",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\f85f29c57d54cb9ac7ad6ce9fa55af1fd3f53527ef04b9bde3b9c803795a7499.step"
+  },
+  "mirage_step": {
+    "original_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_121262_f4a03dbc_0000\\candidate.step",
+    "exists": true,
+    "sha256": "129d92872b39d312d9ce2636e7d311681972d07a058a86d41447b351bf7cc2f9",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\129d92872b39d312d9ce2636e7d311681972d07a058a86d41447b351bf7cc2f9.step"
+  },
+  "mirage_original_geometry_target_cloud": {
+    "original_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\121262_f4a03dbc_0000.npz",
+    "exists": true,
+    "sha256": "7dc54cdbff67efb9400dc47697da766dde9351b93912df1c2e73a22ec60462dc",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\7dc54cdbff67efb9400dc47697da766dde9351b93912df1c2e73a22ec60462dc.npz"
+  },
+  "nn_step": {
+    "original_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_121262_f4a03dbc_0000\\candidate.step",
+    "exists": true,
+    "sha256": "4f8f9af25a12c20fd3da29f45cc3abfd55f84547da3183029b082d086500c863",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\4f8f9af25a12c20fd3da29f45cc3abfd55f84547da3183029b082d086500c863.step"
+  },
+  "nn_original_geometry_target_cloud": {
+    "original_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\121262_f4a03dbc_0000.npz",
+    "exists": true,
+    "sha256": "7dc54cdbff67efb9400dc47697da766dde9351b93912df1c2e73a22ec60462dc",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\7dc54cdbff67efb9400dc47697da766dde9351b93912df1c2e73a22ec60462dc.npz"
+  }
+}

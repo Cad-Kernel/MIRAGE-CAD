@@ -1,0 +1,22 @@
+PART flluma_0096516 CAT face_recursive_mount UNITS mm SEED 20357030
+PARAM boss_height 18.81 MIN 6 MAX 36 EXPR height*0.409 SEM boss_height
+PARAM boss_lift 5.73 MIN 2 MAX 16 EXPR thickness*0.573 SEM boss_height
+PARAM boss_width 34.44 MIN 8 MAX 50 EXPR width*0.378 SEM boss_width
+PARAM cut_depth 3.72 MIN 0.5 MAX 12 EXPR boss_lift*0.649 SEM pocket_depth
+PARAM fillet_radius 0.65 MIN 0.1 MAX 2 SEM fillet_radius
+PARAM height 46 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_x 29.152 MIN 4 MAX 45 EXPR width*0.32 SEM hole_spacing
+PARAM hole_offset_y 12.88 MIN 3 MAX 35 EXPR height*0.28 SEM hole_spacing
+PARAM hole_radius 1.8 MIN 1 MAX 8 SEM hole_radius
+PARAM slot_height 5.66 MIN 1 MAX 22 EXPR boss_height*0.301 SEM pocket_width
+PARAM slot_width 12.64 MIN 4 MAX 32 EXPR boss_width*0.367 SEM pocket_width
+PARAM thickness 10 MIN 3 MAX 25 SEM thickness
+PARAM width 91.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP plate_001 TARGET plate_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+F face_sketch_001 OP_SKETCH_ON_FACE SEM boss_profile ROLE profile_definition DEP hole_001 TARGET hole_001.top_face PARAMS center=[0,0] centered=1 height=@boss_height profile_type=rectangle width=@boss_width workplane={feature_id:hole_001,selector:top_face,source:target_face}
+F face_add_001 OP_FACE_EXTRUDE_ADD SEM boss ROLE functional_feature DEP hole_001,face_sketch_001 TARGET face_sketch_001,hole_001.top_face PARAMS height=@boss_lift operation=join
+F face_sketch_002 OP_SKETCH_ON_FACE SEM pocket_profile ROLE profile_definition DEP face_add_001 TARGET face_add_001.top_face PARAMS center=[0,0] centered=1 height=@slot_height profile_type=rectangle width=@slot_width workplane={feature_id:face_add_001,selector:top_face,source:target_face}
+F face_cut_001 OP_FACE_EXTRUDE_CUT SEM pocket ROLE functional_cut DEP face_add_001,face_sketch_002 TARGET face_sketch_002,face_add_001.top_face PARAMS depth=@cut_depth operation=cut
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP face_cut_001 TARGET face_cut_001.top_outer_edges PARAMS radius=@fillet_radius
+END

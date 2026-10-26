@@ -1,0 +1,21 @@
+{
+  "status": "PASS_FOR_CAPTURE_AND_REGISTRY_ONLY",
+  "created_utc": "2026-10-25T13:51:45.318242+00:00",
+  "receipt_bodies_sha256_verified": 129,
+  "github_commits_pinned": 6,
+  "hf_metadata_repositories": 8,
+  "weight_head_checks": 4,
+  "head_body_bytes_read": 0,
+  "paper_table_checks": 6,
+  "parsed_metric_sources": 9,
+  "metric_contracts": 8,
+  "registry_entries": 8,
+  "synthetic_formula_demo": "PASS",
+  "preparation_note": "Initial table extraction missed span-based LaTeXML table cells; corrected to capture ltx_table figures. Existing identical registry artifacts preserved, not overwritten.",
+  "training_run": false,
+  "model_inference_run": false,
+  "remote_code_executed": false,
+  "weights_downloaded": false,
+  "common_protocol_experiment": "NOT_RUN",
+  "reviewer_requirement_closed": false
+}

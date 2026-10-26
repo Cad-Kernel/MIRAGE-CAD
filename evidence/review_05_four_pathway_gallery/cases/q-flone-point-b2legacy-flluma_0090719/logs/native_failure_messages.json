@@ -1,0 +1,7 @@
+{
+  "sample_id": "flluma_0090719",
+  "modality": "point",
+  "gate_error": "exec error: target must be a FeatureHandle",
+  "geometry_error": "exec error: target must be a FeatureHandle",
+  "note": "Original native error summaries, not an invented full traceback or visual feature diagnosis"
+}

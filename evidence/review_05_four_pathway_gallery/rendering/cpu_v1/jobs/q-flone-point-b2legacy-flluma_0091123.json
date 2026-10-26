@@ -1,0 +1,13 @@
+{
+  "case_id": "q-flone-point-b2legacy-flluma_0091123",
+  "sample_id": "flluma_0091123",
+  "modality": "point",
+  "historical_scoreable": true,
+  "case_snapshot_sha256": "96f440ab0d7c01504f354493fa375a1cdbc89e3db806c0c35702ace3028950d6",
+  "code_path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\code\\prediction.py",
+  "code_sha256": "0eee5a4db0e385ec2184e548851e89c6c9c6a4536dd9b89d35d68849063074ae",
+  "reference_step_path": "__FLLUMA_ROOT__One\\FllumaOne-100K\\shard_0091\\flluma_0091123\\model.step",
+  "reference_step_sha256": "9e367d025bc4c3de2a6be9680a6fb7115a3fa17dc1c8420f9727a57680822134",
+  "output_dir": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\rendering\\cpu_v1\\cases\\q-flone-point-b2legacy-flluma_0091123",
+  "failure_evidence": null
+}

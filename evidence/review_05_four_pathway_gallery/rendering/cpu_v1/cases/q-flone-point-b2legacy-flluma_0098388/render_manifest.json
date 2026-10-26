@@ -1,0 +1,252 @@
+{
+  "case_id": "q-flone-point-b2legacy-flluma_0098388",
+  "created_utc": "2026-10-22T17:48:32.268219+00:00",
+  "status": "RENDERED_CANDIDATE_NOT_FINAL_SELECTION",
+  "renders": [
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-point-b2legacy-flluma_0098388/reference_iso_pos.png",
+        "bytes": 12337,
+        "sha256": "11098132ba84852e25e604bebbc4aa080eeb68704c2e0b156d9c044640d7a166"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.000444502911705e-13,
+          6.042500197887501
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -3.6684895734966183
+        ],
+        "span_mm": 41.19604123377157,
+        "pixels_per_mm": 12.73908813281265,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 117348,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 124,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        116,
+        582,
+        524
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-point-b2legacy-flluma_0098388/prediction_iso_pos.png",
+        "bytes": 14064,
+        "sha256": "f4532abf00a7237ad84c2be9bdc2bb2160f372b74edea7a456b011ed7db03e99"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.000444502911705e-13,
+          6.042500197887501
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -3.6684895734966183
+        ],
+        "span_mm": 41.19604123377157,
+        "pixels_per_mm": 12.73908813281265,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 97975,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 128,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        125,
+        75,
+        515,
+        477
+      ],
+      "blank": false,
+      "kind": "prediction"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-point-b2legacy-flluma_0098388/reference_iso_neg.png",
+        "bytes": 12295,
+        "sha256": "600b10cf3d7755cf9f77da6664c824acbc4da9e4ae214d1677afe1c7c6d36ead"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.000444502911705e-13,
+          6.042500197887501
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -3.668489573496821
+        ],
+        "span_mm": 41.19604123377156,
+        "pixels_per_mm": 12.739088132812652,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 117343,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 124,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        116,
+        582,
+        524
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-point-b2legacy-flluma_0098388/prediction_iso_neg.png",
+        "bytes": 13866,
+        "sha256": "fe20f452e2c1ed9d9f2e0d33d893db821bcf5aff919c4cbbc87e066b66e790cc"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.000444502911705e-13,
+          6.042500197887501
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -3.668489573496821
+        ],
+        "span_mm": 41.19604123377156,
+        "pixels_per_mm": 12.739088132812652,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 97733,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 128,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        125,
+        75,
+        515,
+        477
+      ],
+      "blank": false,
+      "kind": "prediction"
+    }
+  ],
+  "historical_scoreable": true,
+  "supplemental_union_frame": false,
+  "protocol_sha256": "e31082441244ea5dca021a66e8a054f2bafbea21730e83d9dda3f0d0a4733250",
+  "adapter_sha256": "d2e72fc361a364ea7c5f9f9a53d35ac4a034893a9b8d2531d82e0b1ad2f067e8",
+  "rasterizer_path": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\image_export.py",
+  "rasterizer_sha256": "2a61e3597b53a06fa48c2698274e68f99287cff45c172cb22fbaf7f45cfb6099",
+  "failure_evidence_path": null,
+  "metrics": "unchanged historical values in locked case.json",
+  "panel": {
+    "path": "rendering/cpu_v1/cases/q-flone-point-b2legacy-flluma_0098388/panel.png",
+    "bytes": 87074,
+    "sha256": "4a68f7ce34c85dbc098cbb6e5f0bde538898aab10ff9a1b0dc038e49b95dea0b"
+  }
+}

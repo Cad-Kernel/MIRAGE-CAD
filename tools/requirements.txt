@@ -1,0 +1,11 @@
+torch
+transformers
+accelerate
+peft
+safetensors
+numpy
+pillow
+tqdm
+pyarrow
+pandas
+

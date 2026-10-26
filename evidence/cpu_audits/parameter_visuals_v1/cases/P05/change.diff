@@ -1,0 +1,10 @@
+--- before.py
++++ after.py
+@@ -1,6 +1,6 @@
+ params = Parameters()
+ params.add('boss_height', 4.98, min=3.0, max=24.0, expression='thickness * 0.82', semantic_type='boss_height')
+-params.add('boss_radius', 10.14, min=3.0, max=18.0, expression='hole_radius * 3.1', semantic_type='boss_radius')
++params.add('boss_radius', 12.675, min=3.0, max=18.0, expression='hole_radius * 3.1', semantic_type='boss_radius')
+ params.add('fillet_radius', 1.01, min=0.1, max=2.4, semantic_type='fillet_radius')
+ params.add('height', 45.8, min=12, max=80, semantic_type='overall_height')
+ params.add('hole_offset_x', 17.22, min=4.0, max=45.0, expression='width * 0.308', semantic_type='hole_spacing')

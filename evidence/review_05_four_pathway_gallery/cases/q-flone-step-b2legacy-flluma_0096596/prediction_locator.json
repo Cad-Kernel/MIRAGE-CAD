@@ -1,0 +1,121 @@
+{
+  "sample_id": "flluma_0096596",
+  "modality": "step",
+  "locators": {
+    "test": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/data/25k/test.jsonl",
+        "bytes": 6400450,
+        "sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "37177f71473178b7c61a0a8db70cd75c65f15b3b839cc0eeedd34e89dcbcf4c9",
+      "stable_key": {
+        "sample_id": "flluma_0096596"
+      }
+    },
+    "raw_plan": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step.jsonl",
+        "bytes": 7890645,
+        "sha256": "bc9f76f80fcea23c10f40cf2b1702d3c105c51912cbb049c6a02b7fdf6fd80fb"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "accc9f4fff20b943ed541b10226418f2e1b263f06e913fa1663ecc40fc4f89d1",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    },
+    "used_plan": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step_p1a.jsonl",
+        "bytes": 7891299,
+        "sha256": "ee11c0a5fa3cd4c94f90b69877be47413f73888fa813fd735b15d55dbf9987c9"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "accc9f4fff20b943ed541b10226418f2e1b263f06e913fa1663ecc40fc4f89d1",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    },
+    "raw_code": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b.jsonl",
+        "bytes": 16795880,
+        "sha256": "4b48a8706d0c5a82c387b24523c5e0bce5f56993733945735d751f3f18c1855d"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "9fcf2b2ff715fd8676e3c4f6dbc33660234e126aad9becda283b31e0d8e85a4f",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    },
+    "intermediate_code": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired.jsonl",
+        "bytes": 16795818,
+        "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "9fcf2b2ff715fd8676e3c4f6dbc33660234e126aad9becda283b31e0d8e85a4f",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    },
+    "prediction": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired_p0.jsonl",
+        "bytes": 16795818,
+        "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "9fcf2b2ff715fd8676e3c4f6dbc33660234e126aad9becda283b31e0d8e85a4f",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    },
+    "geometry_input": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_step_stage3b.jsonl",
+        "bytes": 5091076,
+        "sha256": "1d9190cd3c1d0b2231ccd84673afa597245f222b3f174e7a588286b4a637ab7b"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "3a73cde0400166996cb028e5daa44f5c7d2c6eae9646570d7482c0fd85b7abd5",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    },
+    "gate": {
+      "file": {
+        "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_step/execution_rows.jsonl",
+        "bytes": 416945,
+        "sha256": "d65bc8e5ebce7b20eb3ae29c17aed57fa808065a74145bc8ccacfa36f794ef54"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "1dcd288e89191c77a924b4b8c0b2b8490d017ca53be06d13f1d130b7799a6e55",
+      "stable_key": {
+        "sample_id": "flluma_0096596"
+      }
+    },
+    "geometry": {
+      "file": {
+        "path": "__DEV_ROOT__/scratch/geom_stage3b_step_stage3b/geometry_nbest_rows.jsonl",
+        "bytes": 1032832,
+        "sha256": "5dc02742f3ef9b34944fb777f6523026995f58ceed3423afc2b6f0967220158f"
+      },
+      "line_1based": 1759,
+      "line_bytes_sha256": "68c259ffcde8caec21aa309f9b5f1b9647a71b2fc337e29c987433848522a1e8",
+      "stable_key": {
+        "sample_id": "flluma_0096596",
+        "modality": "step"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+params = Parameters()
+params.add('hole_radius', 1.41, min=0.8, max=5.0, semantic_type='hole_radius')
+params.add('pocket_length', 10.1, min=6.0, max=42.0, semantic_type='pocket_length')
+params.add('pocket_width', 12.1, min=4.0, max=26.0, semantic_type='pocket_width')
+params.add('thickness', 7.1, min=3.0, max=18.0, semantic_type='thickness')
+
+part = Part('flluma_0005000', category='mounting_block_with_counterbores', parameters=params, seed=20265514, sample_id='flluma_0005000', units='mm')
+plate = part.box(name='machined_mounting_block', length=params['thickness'], width=params['thickness'], height=params['thickness'], semantic_type='base_plate')
+holes = part.hole_pattern(name='through_bolt_holes', target=plate.top_face(), radius=params['hole_radius'], depth='through', positions=[[-2.84, -3.025], [2.84, -3.025], [-2.84, 3.025], [2.84, 3.025]], semantic_type='mounting_hole')
+pocket = part.rectangular_pocket(name='weight_relief_pocket', target=holes.top_face(), length=params['pocket_length'], width=params['pocket_width'], depth=1.795, semantic_type='pocket')
+
+__all__ = ['part']

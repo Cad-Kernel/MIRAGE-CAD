@@ -1,0 +1,17 @@
+PART flluma_0090719 CAT linear_ribbed_heat_sink_mount UNITS mm SEED 20351233
+PARAM height 45.2 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_x 21.59 MIN 4 MAX 44 EXPR width*0.28 SEM hole_spacing
+PARAM hole_offset_y 11.3 MIN 3 MAX 32 EXPR height*0.25 SEM hole_spacing
+PARAM hole_radius 1.33 MIN 1 MAX 8 SEM hole_radius
+PARAM rib_height 12.6 MIN 3 MAX 24 EXPR thickness*1.8 SEM rib_height
+PARAM rib_step 10.69 MIN 4 MAX 24 SEM rib_offset
+PARAM rib_width 2.28 MIN 0.8 MAX 5 SEM rib_width
+PARAM thickness 7 MIN 3 MAX 25 SEM thickness
+PARAM width 77.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F box_001 OP_BOX SEM rib ROLE secondary_feature PARAMS height=@rib_height length=@rib_width width=@height
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[-37.41,0,9.6]
+F linear_pattern_001 OP_LINEAR_PATTERN SEM linear_pattern ROLE pattern_feature DEP translate_001 PARAMS count=8 step=[@rib_step,0,0]
+F join_001 OP_BOOLEAN_JOIN SEM support_rib ROLE secondary_feature DEP plate_001,linear_pattern_001 TARGET plate_001,linear_pattern_001
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+END

@@ -1,0 +1,48 @@
+{
+  "sample_id": "f360_134473_a132313a_0000",
+  "arm": "point_genplan",
+  "terminal": true,
+  "memory_cap": "RLIMIT_AS=8192MB",
+  "gt_verified": true,
+  "cd_status": "ok",
+  "iou_status": "ok",
+  "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+  "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_134473_a132313a_0000/candidate.step",
+  "gt_mesh_triangles": 532,
+  "prediction_step_diagnostics": {
+    "n_solids": 1,
+    "n_faces": 3,
+    "faces_per_solid": [
+      3
+    ],
+    "first_solid_bbox": [
+      10.199999809266,
+      10.199999809266,
+      20.300000190736
+    ]
+  },
+  "evaluation": {
+    "pred_mesh_triangles": 334538,
+    "pred_mesh_watertight": false,
+    "remesh_status": "ok",
+    "cd_x1000": 31.259358767184345,
+    "cd_floor_gt": 0.07167869191535968,
+    "cd_status": "ok",
+    "iou": 0.07366564051691377,
+    "iou_status": "ok",
+    "gt_self_iou": 1.000001267867393,
+    "gt_self_iou_dev": 1.2678673930732742e-06,
+    "iou_eligible": true
+  },
+  "cd_floor_ratio": 436.1039233820885,
+  "pipeline_status": "SUCCESS",
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": true
+  },
+  "gate_check": "match",
+  "seconds": 14.81
+}

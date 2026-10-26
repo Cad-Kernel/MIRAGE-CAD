@@ -1,0 +1,1430 @@
+[
+  {
+    "url": "https://api.github.com/repos/SadilKhan/Text2CAD",
+    "label": "text2cad_repo",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.235858+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/SadilKhan/Text2CAD",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5411",
+      "ETag": "W/\"128bb6fc4a339e13d9264f89300ed9ac2b0dbd1b01a5d18b233e6806817cd4ba\"",
+      "Last-Modified": "Sat, 24 Oct 2026 13:00:19 GMT",
+      "X-RateLimit-Remaining": "58"
+    },
+    "bytes": 5411,
+    "sha256": "1d802de3b8982997a3b5e8446b63efe7370ce4cc56448c2217a9d0c610a861cd",
+    "saved_path": "responses/text2cad_repo.body"
+  },
+  {
+    "url": "https://api.github.com/repos/anniedoris/CADBench",
+    "label": "cadbench_repo",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.235858+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/anniedoris/CADBench",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5207",
+      "ETag": "W/\"ab258401a648b747b46a8a21367564db66a85433f2fd5961f74a53c12192a90a\"",
+      "Last-Modified": "Fri, 16 Oct 2026 07:05:09 GMT",
+      "X-RateLimit-Remaining": "56"
+    },
+    "bytes": 5207,
+    "sha256": "70c0ee7ec472d8ec77e5b5c6e3fcd0338cc9682f89e3ce5d3f4e9a1cb27df8ed",
+    "saved_path": "responses/cadbench_repo.body"
+  },
+  {
+    "url": "https://api.github.com/repos/yunomi-git/GenCAD-3D",
+    "label": "gencad3d_repo",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.235858+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/yunomi-git/GenCAD-3D",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5381",
+      "ETag": "W/\"cdf161e2ce83e535a35d1c6b0c3746d2067859c789da3ace14a0583dac3a9015\"",
+      "Last-Modified": "Wed, 21 Oct 2026 03:26:40 GMT",
+      "X-RateLimit-Remaining": "55"
+    },
+    "bytes": 5381,
+    "sha256": "2011063cccc03c54a46e988e9b1a3fd8f3756e07a0407aab0db2d7af189f612e",
+    "saved_path": "responses/gencad3d_repo.body"
+  },
+  {
+    "url": "https://api.github.com/repos/Snitro/Pointer-CAD",
+    "label": "pointercad_repo",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.235858+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/Snitro/Pointer-CAD",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5005",
+      "ETag": "W/\"8e09481de10f4191a25939bc042c327b6d5856719857622028c8cca8237cbb68\"",
+      "Last-Modified": "Mon, 12 Oct 2026 05:15:02 GMT",
+      "X-RateLimit-Remaining": "57"
+    },
+    "bytes": 5005,
+    "sha256": "4428c3e293d23c3eb7137d31928f92a168fd35362775f67bb1a699e90abde87e",
+    "saved_path": "responses/pointercad_repo.body"
+  },
+  {
+    "url": "https://api.github.com/repos/SadilKhan/Text2CAD/commits/main",
+    "label": "text2cad_head",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.533398+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/SadilKhan/Text2CAD/commits/main",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "2781",
+      "ETag": "W/\"38d5ca22e1ff2c8be6a6b5a113805334e99694c2b3a9198c42539809da3090ce\"",
+      "Last-Modified": "Thu, 15 May 2025 15:53:20 GMT",
+      "X-RateLimit-Remaining": "54"
+    },
+    "bytes": 2781,
+    "sha256": "bb90d42589625c390d7e808f313cd58af6db12f3a85de9924cf0ca8dbefdd264",
+    "saved_path": "responses/text2cad_head.body"
+  },
+  {
+    "url": "https://api.github.com/repos/Snitro/Pointer-CAD/commits/main",
+    "label": "pointercad_head",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.555575+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/Snitro/Pointer-CAD/commits/main",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "4210",
+      "ETag": "W/\"9d262690711e958428de66ca14ef5b052713c619909c21f4a92c573cfb95f0ab\"",
+      "Last-Modified": "Sat, 08 Aug 2026 04:24:05 GMT",
+      "X-RateLimit-Remaining": "53"
+    },
+    "bytes": 4210,
+    "sha256": "93051c313cb38644d3fc1f034eaff347c1775edc0d110b45e40597d943467a6b",
+    "saved_path": "responses/pointercad_head.body"
+  },
+  {
+    "url": "https://api.github.com/repos/anniedoris/CADBench/commits/main",
+    "label": "cadbench_head",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.548611+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/anniedoris/CADBench/commits/main",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "7030",
+      "ETag": "W/\"5c7f39994acad238dce0ecf02735016d2cfe12a54e70a6b7031764816fca69a2\"",
+      "Last-Modified": "Thu, 18 Jun 2026 00:40:44 GMT",
+      "X-RateLimit-Remaining": "51"
+    },
+    "bytes": 7030,
+    "sha256": "96a49f85b16ce609ca8dc147d9eafa86393610dec9e83a44475068f698268139",
+    "saved_path": "responses/cadbench_head.body"
+  },
+  {
+    "url": "https://api.github.com/repos/yunomi-git/GenCAD-3D/commits/main",
+    "label": "gencad3d_head",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.555575+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/yunomi-git/GenCAD-3D/commits/main",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5187",
+      "ETag": "W/\"c5f6f7c3eda4702e05a3f8dfedd56f08cd4045a68e0953d6fa5a5642818282c3\"",
+      "Last-Modified": "Mon, 22 Sep 2025 21:52:15 GMT",
+      "X-RateLimit-Remaining": "52"
+    },
+    "bytes": 5187,
+    "sha256": "bfdd4136684e5bc17817f058ac90590477be87aae4d59926f1fd200402b9fc81",
+    "saved_path": "responses/gencad3d_head.body"
+  },
+  {
+    "url": "https://api.github.com/repos/SadilKhan/Text2CAD/git/trees/669a81472ede2269837c22a4d00070eaac360c82?recursive=1",
+    "label": "text2cad_tree",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.814822+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/SadilKhan/Text2CAD/git/trees/669a81472ede2269837c22a4d00070eaac360c82",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "ETag": "W/\"13ef3bf9efeccfa1c23f8663b84250b39b176f7cac35e831d4db40ca63fdae62\"",
+      "Last-Modified": "Sat, 24 Oct 2026 13:00:19 GMT",
+      "X-RateLimit-Remaining": "50"
+    },
+    "bytes": 18659,
+    "sha256": "547463d4afb075206024aca96efcfa6a346298e3dde95fb7c1878001d88041c0",
+    "saved_path": "responses/text2cad_tree.body"
+  },
+  {
+    "url": "https://api.github.com/repos/Snitro/Pointer-CAD/git/trees/a5c32d702f9569565d89a94de44b3af0020bcab0?recursive=1",
+    "label": "pointercad_tree",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.837771+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/Snitro/Pointer-CAD/git/trees/a5c32d702f9569565d89a94de44b3af0020bcab0",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "ETag": "W/\"c41c2f311d0db045af271402b33a9331b456e00287920378699bfdcaa6aaacfd\"",
+      "Last-Modified": "Mon, 12 Oct 2026 05:15:02 GMT",
+      "X-RateLimit-Remaining": "49"
+    },
+    "bytes": 10762,
+    "sha256": "b38634e36f0c1d4a1f03c8b1004e3e4f075499850db06b2d6b6bcdd67ee836c3",
+    "saved_path": "responses/pointercad_tree.body"
+  },
+  {
+    "url": "https://api.github.com/repos/yunomi-git/GenCAD-3D/git/trees/50bf5133c5f895b183fed8dac1df43aa7c1aab1f?recursive=1",
+    "label": "gencad3d_tree",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.896464+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/yunomi-git/GenCAD-3D/git/trees/50bf5133c5f895b183fed8dac1df43aa7c1aab1f",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "ETag": "W/\"03da92de3632ccc8e7dd0794332c76b8bcdec79efb32498527851c445cf53e28\"",
+      "Last-Modified": "Wed, 21 Oct 2026 03:26:40 GMT",
+      "X-RateLimit-Remaining": "47"
+    },
+    "bytes": 40196,
+    "sha256": "0efdac7f6a2fb17697598450a078425abd7a90337716d7839830517fab7e395c",
+    "saved_path": "responses/gencad3d_tree.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/LICENSE",
+    "label": "text2cad_file_00",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.095888+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/LICENSE",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1561",
+      "ETag": "\"e3082c959efd88338989e40245ce886f4ca1207cce583c30d9ed41145c32d33b\""
+    },
+    "bytes": 1561,
+    "sha256": "00a59345b70fc28ed27db6319b2f61a7dc552f8db03d01cf9f75382c292e4bfe",
+    "saved_path": "responses/text2cad_file_00.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/README.md",
+    "label": "pointercad_file_00",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.099863+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "7621",
+      "ETag": "\"6d5d10ac66516e24fce42b31a5e8411fd0503f5b47d51b8f1324976f8f037591\""
+    },
+    "bytes": 7621,
+    "sha256": "7e26906e6b40e4eb009fafa796a2c86c4c2c566b54d6fa840b38949dd7a293b5",
+    "saved_path": "responses/pointercad_file_00.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/LICENSE",
+    "label": "gencad3d_file_00",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.166587+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/LICENSE",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1064",
+      "ETag": "\"a28dd5e45657b78562b7b4d10ef30831c2a31751c8a2987a8b87f360797e93b6\""
+    },
+    "bytes": 1064,
+    "sha256": "b3fa9502c7c107d9f3dc42e9dcb7f5fd00b43705d2a10980ddac08ddcf64c5b8",
+    "saved_path": "responses/gencad3d_file_00.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/README.md",
+    "label": "text2cad_file_01",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.299561+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "7221",
+      "ETag": "\"b8ef3a0aa4b93cbb9507f3b4edf4f73676a0acd4fce3888a50ff4b6a8faa26c0\""
+    },
+    "bytes": 7221,
+    "sha256": "4a0a57cae756bf0fcb46a1e1adc04455d1b96ed811646cddfb59355e96ce0199",
+    "saved_path": "responses/text2cad_file_01.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/eval.py",
+    "label": "pointercad_file_01",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.349402+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/eval.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4306",
+      "ETag": "\"48e65711eac4e93cf410616bb2ab3163a5e1a3c08113aa6b60f8359883db0f9e\""
+    },
+    "bytes": 4306,
+    "sha256": "5549d5d18533f352bb9184de7d7413c5f417e5e66ebe325637eb10ff128518b4",
+    "saved_path": "responses/pointercad_file_01.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/README.md",
+    "label": "gencad3d_file_01",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.400011+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "6218",
+      "ETag": "\"f49a0e71a79c78159a418e36174a03f0e02d13111df89a56f98f82a455d98270\""
+    },
+    "bytes": 6218,
+    "sha256": "a69414de2cedc6d0b98b4542712074ee5ec0d2aa168b9d5ab4437f48f43a5a08",
+    "saved_path": "responses/gencad3d_file_01.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/environment.yml",
+    "label": "text2cad_file_02",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.520696+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/environment.yml",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "732",
+      "ETag": "\"607e3667ee6cd22e316544fe0791b9a5e88151933cbc5150235fc4fadee45df3\""
+    },
+    "bytes": 732,
+    "sha256": "ca6fee30654c8e94cf5c9d86f960c94acf27326276893c579f927e30bca5b215",
+    "saved_path": "responses/text2cad_file_02.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/config/test.yaml",
+    "label": "pointercad_file_02",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.554370+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/config/test.yaml",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "729",
+      "ETag": "\"7efac37232789c1acbc0f59df1d3ca8472a23d43d92be1c2f613434c7bde9bbd\""
+    },
+    "bytes": 729,
+    "sha256": "db907124a5e66f4c5fd0d8ddba4bb3f3df719dd7e803bccc8136274664d5e6f2",
+    "saved_path": "responses/pointercad_file_02.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/requirements.txt",
+    "label": "gencad3d_file_02",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.621971+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/requirements.txt",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "461",
+      "ETag": "\"12a33eae694b41adb5053e13bd9b7d3ae5c3be87326c66cc9289af2495e1e913\""
+    },
+    "bytes": 461,
+    "sha256": "0acd82dc801bf675e5fdf23116e67b44726d0652cf74c6a0a13342a07e80420c",
+    "saved_path": "responses/gencad3d_file_02.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Evaluation/eval_seq.py",
+    "label": "text2cad_file_03",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.734939+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Evaluation/eval_seq.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4993",
+      "ETag": "\"c530b4cc4a3283595e227f6990c5822aae3a8f272c9c82ec4776b3e2dece444c\""
+    },
+    "bytes": 4993,
+    "sha256": "3cc7db249303155d20b5526a02da042370e5fa4db75f0cace53a3f3f2ddd1770",
+    "saved_path": "responses/text2cad_file_03.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/chamfer_distance.py",
+    "label": "pointercad_file_03",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.800366+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/chamfer_distance.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1539",
+      "ETag": "\"7c14929cc4d46da0133447da2ef7c796ea375938e42241ba03278167b30d80ef\""
+    },
+    "bytes": 1539,
+    "sha256": "7d56fdbcef4a8ab4e27e5b9a4c2bb54fa0073dd92e13ee4c637bcb455a9d2525",
+    "saved_path": "responses/pointercad_file_03.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/evaluation/eval_contrastive_retrieval.py",
+    "label": "gencad3d_file_03",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.831342+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/evaluation/eval_contrastive_retrieval.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "25127",
+      "ETag": "\"655eadf2369a096326f0e2caa6381c409a53286fd40767565d16dd44ef43f008\""
+    },
+    "bytes": 25127,
+    "sha256": "1ccd799fa391a6982551407b5fbaa496344864e2bb1f91f0c26f2f6d8cd37997",
+    "saved_path": "responses/gencad3d_file_03.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/models/metrics.py",
+    "label": "text2cad_file_04",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:20.954556+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/models/metrics.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2134",
+      "ETag": "\"72ddf797e657a043768bd96cfb114a163bf58c36a52e71581322a01c74305fe3\""
+    },
+    "bytes": 2134,
+    "sha256": "eafee5e81464a842bdeb19d341f3a41267417cbb7c9841901e50935f3a4102a9",
+    "saved_path": "responses/text2cad_file_04.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/config/web.yaml",
+    "label": "pointercad_file_04",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.027759+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/config/web.yaml",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "315",
+      "ETag": "\"75f59ac9a2d7c733ee13be6cfbeebda1ea00df2d9441b9131726269017394e4d\""
+    },
+    "bytes": 315,
+    "sha256": "393c36f3a97cc00231b1e29d2499ce9ed8f22945d78b2ad4c41f9d07ae068d38",
+    "saved_path": "responses/pointercad_file_04.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/__init__.py",
+    "label": "gencad3d_file_04",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.067147+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "0",
+      "ETag": "\"aae1d56222a9cafc63743594c537cd2e698c0090a4e3f7d75bd425ddd0a66100\""
+    },
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_path": "responses/gencad3d_file_04.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/config/inference.yaml",
+    "label": "text2cad_file_05",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.167446+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/config/inference.yaml",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2425",
+      "ETag": "\"6301d29b8777e211adb1c88d83f54df39f3e95a9221a991f47d3e855e48f3ddd\""
+    },
+    "bytes": 2425,
+    "sha256": "4847e3a668ba5e32145a1cd396a6a2e328bf54bdfe9be3a8d7919493d5d607a7",
+    "saved_path": "responses/text2cad_file_05.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/metrics/metrics.py",
+    "label": "pointercad_file_05",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.250618+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/metrics/metrics.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "8868",
+      "ETag": "\"1a97cc1c82bb409d06a760e19893bf55bf53340a836fc4903185b84bf68d379b\""
+    },
+    "bytes": 8868,
+    "sha256": "8225fd29be809770d0021cdca087f7d8747824f3627e62d03f0ee70ceb2b9172",
+    "saved_path": "responses/pointercad_file_05.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/__init__.py",
+    "label": "gencad3d_file_05",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.318192+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "0",
+      "ETag": "\"aae1d56222a9cafc63743594c537cd2e698c0090a4e3f7d75bd425ddd0a66100\""
+    },
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_path": "responses/gencad3d_file_05.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/config/inference_user_input.yaml",
+    "label": "text2cad_file_06",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.390400+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/config/inference_user_input.yaml",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2040",
+      "ETag": "\"d211a487724751e86aee5fc7de89b62117ac2f1665c785f19b0e45e5d367b251\""
+    },
+    "bytes": 2040,
+    "sha256": "097160e5b6760845471924125c6303814080761ba223bc6d4bd2ed6d71a0b201",
+    "saved_path": "responses/text2cad_file_06.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/metrics/criterion.py",
+    "label": "pointercad_file_06",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.467521+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/metrics/criterion.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "5934",
+      "ETag": "\"25138b8248e96b2d408e4e50747f58146988142fb1ddcac57ab8e26d563534a5\""
+    },
+    "bytes": 5934,
+    "sha256": "9d90df49f1052cac6ce1049ae2bee50690970c4e7cbce1f31b4a3dd24af5bbb7",
+    "saved_path": "responses/pointercad_file_06.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/evaluation/__init__.py",
+    "label": "gencad3d_file_06",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.539530+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/evaluation/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "0",
+      "ETag": "\"aae1d56222a9cafc63743594c537cd2e698c0090a4e3f7d75bd425ddd0a66100\""
+    },
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_path": "responses/gencad3d_file_06.body"
+  },
+  {
+    "url": "https://api.github.com/repos/filapro/cad-recode",
+    "label": "cadrecode_repo",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.599845+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/filapro/cad-recode",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5216",
+      "ETag": "W/\"237bb0f604d2040ee030241c6649f3836850937d939273fa801aed9f15ea607e\"",
+      "Last-Modified": "Thu, 22 Oct 2026 05:43:26 GMT",
+      "X-RateLimit-Remaining": "46"
+    },
+    "bytes": 5216,
+    "sha256": "31323ac80c6ee216f921828329db14292ac592a556ece92f6832ac058cc7c276",
+    "saved_path": "responses/cadrecode_repo.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/f1_score.py",
+    "label": "pointercad_file_07",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.683392+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/f1_score.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "7299",
+      "ETag": "\"aee4268965db9723f74d11318b669633345ebe6afe7e22f66feede46df6443d3\""
+    },
+    "bytes": 7299,
+    "sha256": "34ca429c6433cff90cbb34c9e6ba9e52c43f772f79dfbbe5a5275a9d23936b8b",
+    "saved_path": "responses/pointercad_file_07.body"
+  },
+  {
+    "url": "https://api.github.com/repos/anniedoris/CADBench/git/trees/99e41a2eeb351f04611e83980f9f23cb0ca216c7?recursive=1",
+    "label": "cadbench_tree",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:19.866262+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/anniedoris/CADBench/git/trees/99e41a2eeb351f04611e83980f9f23cb0ca216c7",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "ETag": "W/\"69e1a1abe0818cfcbfc7cdae408ace686de6742ec61c170342d1fee4d4e4b030\"",
+      "Last-Modified": "Fri, 16 Oct 2026 07:05:09 GMT",
+      "X-RateLimit-Remaining": "48"
+    },
+    "bytes": 1434440,
+    "sha256": "c02530a976b9b55610bfb7221435ecc6b1151d188adcc3ef89d1ed360cd117be",
+    "saved_path": "responses/cadbench_tree.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/eval_kmeans.py",
+    "label": "gencad3d_file_07",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.750458+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/eval_kmeans.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "3568",
+      "ETag": "\"29b3c637421016abd11916a1bc6911a1f287a39cd363ae027abc75412103355f\""
+    },
+    "bytes": 3568,
+    "sha256": "167c40493b159da4fefa7e435876d4913261a81e64e5fcf2c6a6336b2b4cd835",
+    "saved_path": "responses/gencad3d_file_07.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/watertightness.py",
+    "label": "pointercad_file_08",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.916586+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/watertightness.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "172",
+      "ETag": "\"fa9473cee126b2de097a11e202d373f0f7eae778db7d01012b63942dc4ef5a52\""
+    },
+    "bytes": 172,
+    "sha256": "cabe989fc5ab54985d2938e071b9ba4a229fb94507830543e4fa1fd4a550358f",
+    "saved_path": "responses/pointercad_file_08.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/LICENSE",
+    "label": "cadbench_file_00",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.983223+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/LICENSE",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1067",
+      "ETag": "\"a0f51eaa6a36016077f56164aeb1438140a3f960b0e4b8195c330b755e6bdefd\""
+    },
+    "bytes": 1067,
+    "sha256": "2eac03af00b1c9e140bce2d386c37bf30f30f8f1eefe0cfa94ab0fe2036dce6b",
+    "saved_path": "responses/cadbench_file_00.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_IOU.py",
+    "label": "gencad3d_file_08",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.983223+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_IOU.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4758",
+      "ETag": "\"c2d5ebba4a235ab034809d116e7d65c4268fab313a9003f2104d32733ac32f78\""
+    },
+    "bytes": 4758,
+    "sha256": "68238b9b925c01fc35a075d129bd2af73f5e4fb81fb63a08dc193f5a855366a8",
+    "saved_path": "responses/gencad3d_file_08.body"
+  },
+  {
+    "url": "https://api.github.com/repos/filapro/cad-recode/commits/main",
+    "label": "cadrecode_head",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:21.883576+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/filapro/cad-recode/commits/main",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5666",
+      "ETag": "W/\"c9054a001de2e41d6bbda4bda4e0784d04ff0150127e196b6ad46f4a5abfaa11\"",
+      "Last-Modified": "Sun, 16 Nov 2025 14:34:14 GMT",
+      "X-RateLimit-Remaining": "45"
+    },
+    "bytes": 5666,
+    "sha256": "b15c8c965801d0b163f313e9fece93f05f1f5519291e4cc10ca29bbb0bcb8a2f",
+    "saved_path": "responses/cadrecode_head.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/intersection_over_union.py",
+    "label": "pointercad_file_09",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.163995+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/intersection_over_union.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2914",
+      "ETag": "\"edcf3f8fef40945b1d60727675bb3344acc8e248c52635c1620be3df7a04a6c8\""
+    },
+    "bytes": 2914,
+    "sha256": "f2540e5593cb599e9d68457a905908eba25e832a3a386beefafc531bdc438984",
+    "saved_path": "responses/pointercad_file_09.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/collect_gen_pc.py",
+    "label": "gencad3d_file_09",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.200005+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/collect_gen_pc.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1486",
+      "ETag": "\"1550413449540662fb58e3a9f76a5576062f9eebb250a4b7db5a22a4946cde4d\""
+    },
+    "bytes": 1486,
+    "sha256": "9e642d6a03351b2f7568ba44e6067d0d053634dc3ec4d2c254afadf369a1b3cd",
+    "saved_path": "responses/gencad3d_file_09.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/README.md",
+    "label": "cadbench_file_01",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.196148+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "14207",
+      "ETag": "\"88221d680df5f9153ec8c8dd841bca2d69caa869b34d05bb65d1991cf886cf7c\""
+    },
+    "bytes": 14207,
+    "sha256": "aa218371ed465cfc1be432d91531cc0a633ea672e74b88f778da61354c2b704f",
+    "saved_path": "responses/cadbench_file_01.body"
+  },
+  {
+    "url": "https://api.github.com/repos/filapro/cad-recode/git/trees/03e3262119b38939feaa44b8368ad8db99243d47?recursive=1",
+    "label": "cadrecode_tree",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.217454+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/filapro/cad-recode/git/trees/03e3262119b38939feaa44b8368ad8db99243d47",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "1287",
+      "ETag": "W/\"0633896fd7b45e89426f78b88a285818e196fb2727a558b2fe2cabafea87a1f7\"",
+      "Last-Modified": "Thu, 22 Oct 2026 05:43:26 GMT",
+      "X-RateLimit-Remaining": "44"
+    },
+    "bytes": 1287,
+    "sha256": "2a86be937e2fd90a76376b9a1102a70e6db6127a8077e78d6a52a74d5581fd37",
+    "saved_path": "responses/cadrecode_tree.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/collect_gen_pc.py",
+    "label": "gencad3d_file_10",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.400680+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/collect_gen_pc.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1480",
+      "ETag": "\"e4098aed0ed9629824565207a478a39c81cbc2d24298297eb985ce6fd8651fd7\""
+    },
+    "bytes": 1480,
+    "sha256": "166a89186d786f3458bca496d614b5c77422ac6a6ac3c4e0e0a694ce7ef9f592",
+    "saved_path": "responses/gencad3d_file_10.body"
+  },
+  {
+    "url": "https://api.github.com/repos/qq456cvb/Img2CAD",
+    "label": "img2cad_factorization_repo",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.367865+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/qq456cvb/Img2CAD",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "5093",
+      "ETag": "W/\"f615ee2483abe7729d3b68a3e297f082fac7c1892c1210545cd734f737e6c99c\"",
+      "Last-Modified": "Wed, 07 Oct 2026 03:41:07 GMT",
+      "X-RateLimit-Remaining": "43"
+    },
+    "bytes": 5093,
+    "sha256": "12c9f33e92b2de31e84b01334bc5f38c2f3aeecc221eb7624453a170024aa623",
+    "saved_path": "responses/img2cad_factorization_repo.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/LICENSE.md",
+    "label": "cadrecode_file_00",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.433284+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/LICENSE.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "19346",
+      "ETag": "\"8ffbf743d8e79fde859af24a94d91e47da24e0905ef74b15000e11662e49bb0e\""
+    },
+    "bytes": 19346,
+    "sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+    "saved_path": "responses/cadrecode_file_00.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/scripts/run_eval_pipeline.py",
+    "label": "cadbench_file_02",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.429328+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/scripts/run_eval_pipeline.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2722",
+      "ETag": "\"5cb72f9591de8b448634a5274d0420489154a6380f14f57d920b58961d773e1e\""
+    },
+    "bytes": 2722,
+    "sha256": "c60bf4a4904253080e41ee1fe277bca063b838be4951497ab58c13a444d494ee",
+    "saved_path": "responses/cadbench_file_02.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_cd.py",
+    "label": "gencad3d_file_11",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.626417+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_cd.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "6663",
+      "ETag": "\"4c4e40d6aee8e3d00c61d3d56da2e5288699c87bdf2b4981b637e2cab85d947f\""
+    },
+    "bytes": 6663,
+    "sha256": "95f39cc85a2e74218edd9889f9a499c50a57312e0d4c661f23d85ad74ec5ebde",
+    "saved_path": "responses/gencad3d_file_11.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/README.md",
+    "label": "cadrecode_file_01",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.660089+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "3501",
+      "ETag": "\"fbf6723edafb3e8c1d3fac034d398229bae83aab05fe957e3778712ec26da4b0\""
+    },
+    "bytes": 3501,
+    "sha256": "f3da4d7994fe6090e8f5c82eaf29faea4afd984a8590fd9f5ade68fdc54b5c40",
+    "saved_path": "responses/cadrecode_file_01.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_vlm.py",
+    "label": "cadbench_file_03",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.666865+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_vlm.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "12341",
+      "ETag": "\"66b8a0ec0132c154f7344599b62e56dda1832efdd398b26cfdf4cc60c5b2cd72\""
+    },
+    "bytes": 12341,
+    "sha256": "359388493209aa5ecb94d256d3c9ab9bdc9280f1746f9b6eb60f8c1ec82a182a",
+    "saved_path": "responses/cadbench_file_03.body"
+  },
+  {
+    "url": "https://api.github.com/repos/qq456cvb/Img2CAD/commits/master",
+    "label": "img2cad_factorization_head",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.629417+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/qq456cvb/Img2CAD/commits/master",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "6206",
+      "ETag": "W/\"f9a474f700365ffdf21548500c5917f3a06bfcd88eb54a31cc96c3ce3cf415d8\"",
+      "Last-Modified": "Mon, 05 Oct 2026 13:15:49 GMT",
+      "X-RateLimit-Remaining": "42"
+    },
+    "bytes": 6206,
+    "sha256": "711a4851262a61716a384dd2937cc5833b8a018e2817afb2e88f44f12d8fb409",
+    "saved_path": "responses/img2cad_factorization_head.body"
+  },
+  {
+    "url": "https://huggingface.co/api/models/yu-nomi/GenCAD_3D?blobs=true",
+    "label": "gencad_weights_api",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.888448+00:00",
+    "status": 200,
+    "final_url_without_query": "https://huggingface.co/api/models/yu-nomi/GenCAD_3D",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "1284",
+      "ETag": "W/\"504-b17rVKhH4NHOZUlg8++q0hA6xV8\""
+    },
+    "bytes": 1284,
+    "sha256": "33a0ae8915c182de988d86d7ed0766d5c8ca9b6e34b162dd741b370fbe79d3ab",
+    "saved_path": "responses/gencad_weights_api.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_acc.py",
+    "label": "gencad3d_file_12",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.855891+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_acc.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "5648",
+      "ETag": "\"e768235fac7ad1b63a714bd52271ebbb72e200b4f1d3c9b644cb28d244cd65a6\""
+    },
+    "bytes": 5648,
+    "sha256": "61b94f015082015f73a336bd755afb01d558866c67cc8f97b2de6d3669f84d9e",
+    "saved_path": "responses/gencad3d_file_12.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/__init__.py",
+    "label": "cadbench_file_04",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.888448+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "549",
+      "ETag": "\"ebefc9b2790044ee1a59e6e7a1510812505c2abe3f16e0e5a43093deac2d6060\""
+    },
+    "bytes": 549,
+    "sha256": "aa9ea39d995b6377249ecbd339addb4e48a69880d2ad7f67cb07a8b1332c0fe0",
+    "saved_path": "responses/cadbench_file_04.body"
+  },
+  {
+    "url": "https://api.github.com/repos/qq456cvb/Img2CAD/git/trees/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3?recursive=1",
+    "label": "img2cad_factorization_tree",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:22.967530+00:00",
+    "status": 200,
+    "final_url_without_query": "https://api.github.com/repos/qq456cvb/Img2CAD/git/trees/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "7797",
+      "ETag": "W/\"dbcfcded46e2d19aba4fd9c08d53a666f273d716e9942fa028f9810567d389f2\"",
+      "Last-Modified": "Wed, 07 Oct 2026 03:41:07 GMT",
+      "X-RateLimit-Remaining": "41"
+    },
+    "bytes": 7797,
+    "sha256": "ca2f009facaadc450a0fb45f8cc90590ca4b77272ea65745098e1b4a41076181",
+    "saved_path": "responses/img2cad_factorization_tree.body"
+  },
+  {
+    "url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/README.md",
+    "label": "gencad_weights_README_md",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.034324+00:00",
+    "status": 200,
+    "final_url_without_query": "https://huggingface.co/api/resolve-cache/models/yu-nomi/GenCAD_3D/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "466",
+      "ETag": "\"b5ab76a369c5c125ba79c06873427bf766c06f79\"",
+      "X-Repo-Commit": "5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a",
+      "Content-Disposition": "inline; filename*=UTF-8''README.md; filename=\"README.md\";"
+    },
+    "bytes": 466,
+    "sha256": "e0253f2cddf28e9817f0e9e63e378fc0bd916c2ecc95210b792eb8d52a51a659",
+    "saved_path": "responses/gencad_weights_README_md.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_jsonl.py",
+    "label": "cadbench_file_05",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.100278+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_jsonl.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4127",
+      "ETag": "\"a659703100f5896f324a496c0824cc292ced9b8052ca0f45e00dab04c6e73764\""
+    },
+    "bytes": 4127,
+    "sha256": "fda14ca36bbe6f7a819a242f822d2fd7fc6241f9766ef551df7298fb67a14c08",
+    "saved_path": "responses/cadbench_file_05.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/gencad/evaluation/__init__.py",
+    "label": "gencad3d_file_13",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.087107+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/gencad/evaluation/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "0",
+      "ETag": "\"aae1d56222a9cafc63743594c537cd2e698c0090a4e3f7d75bd425ddd0a66100\""
+    },
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_path": "responses/gencad3d_file_13.body"
+  },
+  {
+    "url": "https://huggingface.co/api/datasets/DeCoDELab/CADBench?blobs=true",
+    "label": "cadbench_dataset_api",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.300678+00:00",
+    "status": 200,
+    "final_url_without_query": "https://huggingface.co/api/datasets/DeCoDELab/CADBench",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "52610",
+      "ETag": "W/\"cd82-VqRhXAVythlPKyqucq/evmYOS5k\""
+    },
+    "bytes": 52610,
+    "sha256": "a7549bf41ec255bf9f76ac47290cfff5e65cbcbcb316654dc758c34d95cf0901",
+    "saved_path": "responses/cadbench_dataset_api.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/CITATION.cff",
+    "label": "img2cad_factorization_file_00",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.237378+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/CITATION.cff",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2016",
+      "ETag": "\"ca5337d957950af5b3f57a0d67d376b4848a261ee69a77c57ac470af81c0c77d\""
+    },
+    "bytes": 2016,
+    "sha256": "4d284be679fd5803059199a754888cc947572dcc3015be569fc2b4a50dbb747b",
+    "saved_path": "responses/img2cad_factorization_file_00.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_local.py",
+    "label": "cadbench_file_06",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.318715+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_local.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4537",
+      "ETag": "\"5a1f1e3b0bc09ebcd430751d4386379b1fd00fdb07e75aef199a1609627391cd\""
+    },
+    "bytes": 4537,
+    "sha256": "37fad31188717df15a848c3e88d5a30a358e32faecee94096392f9641d508eb4",
+    "saved_path": "responses/cadbench_file_06.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/accuracy_metrics.py",
+    "label": "gencad3d_file_14",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.324722+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/accuracy_metrics.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1857",
+      "ETag": "\"b9db6a3effd0ff30ad928c4475298dbdf250d46269e79856110268dde946b03b\""
+    },
+    "bytes": 1857,
+    "sha256": "30616955a74a7ff70d415490de41f0b8adcf0837a6cd51d7db0f16cab12fb0ec",
+    "saved_path": "responses/gencad3d_file_14.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/LICENSE",
+    "label": "img2cad_factorization_file_01",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.466751+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/LICENSE",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1076",
+      "ETag": "\"af3bf57a77369f96379dcc6d4ce799d07f78236f1daabaec98a0dce1012164da\""
+    },
+    "bytes": 1076,
+    "sha256": "5a19d9ad1780ae06a3f219df1f3ae18172baf31cb2d2fcf708cfc99d4a2349d0",
+    "saved_path": "responses/img2cad_factorization_file_01.body"
+  },
+  {
+    "url": "https://huggingface.co/datasets/DeCoDELab/CADBench/resolve/7cf5b3ec195228e4342cfa534d25662d36e96cbc/README.md",
+    "label": "cadbench_dataset_README_md",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.436532+00:00",
+    "status": 200,
+    "final_url_without_query": "https://huggingface.co/api/resolve-cache/datasets/DeCoDELab/CADBench/7cf5b3ec195228e4342cfa534d25662d36e96cbc/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2117",
+      "ETag": "\"564e1841a9b6aa9fbdef04a1cd78f37f587f600a\"",
+      "X-Repo-Commit": "7cf5b3ec195228e4342cfa534d25662d36e96cbc",
+      "Content-Disposition": "inline; filename*=UTF-8''README.md; filename=\"README.md\";"
+    },
+    "bytes": 2117,
+    "sha256": "504eac3a11af3bf1dc19014bbcc229dcda76ee08fd0d748b626a0924cb093d3f",
+    "saved_path": "responses/cadbench_dataset_README_md.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/_main.py",
+    "label": "cadbench_file_07",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.535809+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/_main.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "15191",
+      "ETag": "\"21e46172ad577e467ce7cdc11ab908017ac2e6185b1f6a0fcb2e5433931cf285\""
+    },
+    "bytes": 15191,
+    "sha256": "3c1acdcda7b0c1291e508c29a12cb6026743d260a1b2fb80aa0b7ada88fa01ac",
+    "saved_path": "responses/cadbench_file_07.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/contrastive_evaluation_util.py",
+    "label": "gencad3d_file_15",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.549731+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/contrastive_evaluation_util.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "19941",
+      "ETag": "\"a833c33bdb21524f0e042ec48a922014e49a215556ade88be3b73a546ea33f20\""
+    },
+    "bytes": 19941,
+    "sha256": "1589fcb23b7853bf34b6fafa6ebd712e5822c3d4414f139d1cfdfa2fef1545a1",
+    "saved_path": "responses/gencad3d_file_15.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/README.md",
+    "label": "img2cad_factorization_file_02",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.684196+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/README.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "14721",
+      "ETag": "\"230f3bebfe9c3f7bf5b3ba46fa1371f705d78a4d48f7b3b2b2fd14335d612239\""
+    },
+    "bytes": 14721,
+    "sha256": "843f0f52c205d2197cad89a1adcc5deb241161bd0801e34f1f22b873a05c166b",
+    "saved_path": "responses/img2cad_factorization_file_02.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/__init__.py",
+    "label": "cadbench_file_08",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.751626+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "28",
+      "ETag": "\"bd10c35fdae4c5b83394d74828d3db0328dbc0b2820628840a620c4f44c958b3\""
+    },
+    "bytes": 28,
+    "sha256": "64b33779ae01ec4bded80f7aa755aec34e21625eb847b5a20f1781e097efec14",
+    "saved_path": "responses/cadbench_file_08.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/evaluate_gen_torch.py",
+    "label": "gencad3d_file_16",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.814405+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/evaluate_gen_torch.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "10379",
+      "ETag": "\"ef6f1b12b9be0e82f5176a5cc7df591d78e8fd6ae310d858f8ce45280191c5ed\""
+    },
+    "bytes": 10379,
+    "sha256": "c6561625e7c89a3f9eea67e9518ee76edc996d58a34bd682eb203154588b5165",
+    "saved_path": "responses/gencad3d_file_16.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/requirements.txt",
+    "label": "img2cad_factorization_file_03",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.900708+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/requirements.txt",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "1028",
+      "ETag": "\"608f9fc97a9090a99aaf7fa0c17041481d647152a56b6bb18010d513cbfed7f5\""
+    },
+    "bytes": 1028,
+    "sha256": "a1c8dd8deea5ea33a9766006022275e2495c688f6cc27eff169164a9aa36d6a8",
+    "saved_path": "responses/img2cad_factorization_file_03.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/collect_metrics.py",
+    "label": "cadbench_file_09",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:23.968877+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/collect_metrics.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "19246",
+      "ETag": "\"11b44a69cf214a7d3cee5e9ecb46e0b12c9cb67e44609eb4decec744e8da8f98\""
+    },
+    "bytes": 19246,
+    "sha256": "d7d76b0ed3b48428e09cdf5d127046ef8da69c8a7d47765bc8eef39a7928ce88",
+    "saved_path": "responses/cadbench_file_09.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_3metrics.py",
+    "label": "gencad3d_file_17",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.029332+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_3metrics.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4322",
+      "ETag": "\"20516733352c02f0977d97492d6bdc0d60c55071106e5696a30c56cd88156f16\""
+    },
+    "bytes": 4322,
+    "sha256": "51b038c5180338464c096d8e7952fb0f2394a4c7e11da47134d5d3e6e62a48e2",
+    "saved_path": "responses/gencad3d_file_17.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/TrAssembler/eval.py",
+    "label": "img2cad_factorization_file_04",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.120645+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/qq456cvb/Img2CAD/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/TrAssembler/eval.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "29261",
+      "ETag": "\"77eca767a632f5e84578a65ee20859ea2e88b8303acef4d5933d09a16407e9e0\""
+    },
+    "bytes": 29261,
+    "sha256": "e189b8f3a06f7fa6e75c8241dfac90562abcc3b7ae6027041794c51b215a5600",
+    "saved_path": "responses/img2cad_factorization_file_04.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Inference/_base.py",
+    "label": "cadbench_file_10",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.208738+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Inference/_base.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2034",
+      "ETag": "\"19444f5d5147b565d88a81c96f665dadfcd782f96f29d9b663c1e501694d9cf0\""
+    },
+    "bytes": 2034,
+    "sha256": "658f25bbea53c6030c6b5123c21b674fce014a1aa8f05a31ada501fa649b5b85",
+    "saved_path": "responses/cadbench_file_10.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/show_ae_acc_by_sl.py",
+    "label": "gencad3d_file_18",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.299737+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/show_ae_acc_by_sl.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "7035",
+      "ETag": "\"fe450db4cfd45b635de48a02c26fc1d00559f83c722396e3eefafee3094f7e97\""
+    },
+    "bytes": 7035,
+    "sha256": "c95a0ccbdf2b3d46268e42ea3bebf57d1ed2b3defa70f65b23d3fd50ebc34f87",
+    "saved_path": "responses/gencad3d_file_18.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Processing/_base.py",
+    "label": "cadbench_file_11",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.423021+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Processing/_base.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "411",
+      "ETag": "\"e3483b3fa948eeb5fab02ca263dcadc75e608fa880dd8d421d5ae9d7c03f1c2c\""
+    },
+    "bytes": 411,
+    "sha256": "4ed3bf8cc6b49f527eb044213b2ff4e7e7c1a55d622b90ba0b70fdeae3b60d37",
+    "saved_path": "responses/cadbench_file_11.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/gencad/evaluation/cd_acc_seq.py",
+    "label": "gencad3d_file_19",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.501308+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/gencad/evaluation/cd_acc_seq.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4900",
+      "ETag": "\"e69a095967d9cc5096267dda6cdc6e89170da403257ab8d4fb3c6c60c0eee654\""
+    },
+    "bytes": 4900,
+    "sha256": "0d28a840b994a4a0f34b73ecc66156f7fd0ee4c774f3d187e3e151714e9ee4b9",
+    "saved_path": "responses/gencad3d_file_19.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/code_metrics.py",
+    "label": "cadbench_file_12",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.634643+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/code_metrics.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "16087",
+      "ETag": "\"fc85ba77cd889c280aec0f01627e13c8a96e954b35b6cffebcd101526eddf081\""
+    },
+    "bytes": 16087,
+    "sha256": "780d22fada27956c29ba0a62932168469a8acf4abdd080f24af59ef75c0341c3",
+    "saved_path": "responses/cadbench_file_12.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_gen_torch.py",
+    "label": "gencad3d_file_20",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.700653+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_gen_torch.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "10191",
+      "ETag": "\"74dcdd9ea3b67bc2d2e8d9723e132bcb134915ecf559a0a7a77f0da6784e3001\""
+    },
+    "bytes": 10191,
+    "sha256": "b22ee7f9a842843fad1ddace0d55bd4287a8df8495ee1f3cbf7e7187b95fd566",
+    "saved_path": "responses/gencad3d_file_20.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Inference/__init__.py",
+    "label": "cadbench_file_13",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:24.855773+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Inference/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "131",
+      "ETag": "\"8d85ad82eba8cf5091ce285937d34c05a67501e37aac5a5856dff0b8865deeb2\""
+    },
+    "bytes": 131,
+    "sha256": "aa8102f1ba482c5b576fd74d72daebe5ba75498822b9a3ee020aa023526581e3",
+    "saved_path": "responses/cadbench_file_13.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_jsonl_modified.py",
+    "label": "cadbench_file_14",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:25.093008+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_jsonl_modified.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "9770",
+      "ETag": "\"2996a28a31ef9bc01be0871ef4b1d3766612a2b26bcd191dfdf407e43d3ce360\""
+    },
+    "bytes": 9770,
+    "sha256": "fc6e1dc3f495bec29e8931db01a0e224ecbf5ce949c7aa725afead4e707b7afc",
+    "saved_path": "responses/cadbench_file_14.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Processing/__init__.py",
+    "label": "cadbench_file_15",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:25.316353+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Processing/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "472",
+      "ETag": "\"a5ba8b1ee4bf401e519cc720b4c8c756fd69c14817f03119019495011da460c9\""
+    },
+    "bytes": 472,
+    "sha256": "9071e9d2f261b59a3c17f198cf0c60c614017f6a77e3a00b6c7832d6ee22b1e4",
+    "saved_path": "responses/cadbench_file_15.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/geometry/_utils.py",
+    "label": "cadbench_file_16",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:25.534018+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/geometry/_utils.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "9079",
+      "ETag": "\"a1f9aa0e438fad543b175a41e0ae36912c9ed38a6bbfe3e82ca49b208a8d9e65\""
+    },
+    "bytes": 9079,
+    "sha256": "9b605a2a541fbeb5b31a34646e7cf35efd86c7ba11db4141c6a53907de066f0a",
+    "saved_path": "responses/cadbench_file_16.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/execution/_utils.py",
+    "label": "cadbench_file_17",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:25.750353+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/execution/_utils.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "2423",
+      "ETag": "\"fd7caf0e44b27f6ae51fd94fbbd7b97ebe291d9a96ac86c85ca69e9982542c70\""
+    },
+    "bytes": 2423,
+    "sha256": "7de532e2b5d9cf60f8840aacb10dc5407413cddcd2d220682ad1b1b4288c60d5",
+    "saved_path": "responses/cadbench_file_17.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Inference/_openai_api.py",
+    "label": "cadbench_file_18",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:25.984053+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Inference/_openai_api.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "4177",
+      "ETag": "\"36025ae155018d8925aa4f5cebe628d4fc9254fc5cb695ef2148825057ef853c\""
+    },
+    "bytes": 4177,
+    "sha256": "90f06ed3471f56f77e962c114ed55743fdcbf79d4d8a00891cf86d47459ca611",
+    "saved_path": "responses/cadbench_file_18.body"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/geometry/__init__.py",
+    "label": "cadbench_file_19",
+    "method": "GET",
+    "requested_utc": "2026-10-25T12:44:26.219514+00:00",
+    "status": 200,
+    "final_url_without_query": "https://raw.githubusercontent.com/anniedoris/CADBench/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/geometry/__init__.py",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "110",
+      "ETag": "\"05234938e49ca50960fdc776187456689705ee45d42e09c8c7522fee48b7edb5\""
+    },
+    "bytes": 110,
+    "sha256": "d942767f96638581ed90ae88a8cb96ea8b76a8990661963f21d85b2a97777600",
+    "saved_path": "responses/cadbench_file_19.body"
+  }
+]

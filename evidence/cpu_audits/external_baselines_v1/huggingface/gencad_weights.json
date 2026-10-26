@@ -1,0 +1,51 @@
+{
+  "repo": "yu-nomi/GenCAD_3D",
+  "kind": "models",
+  "status": "PUBLIC_METADATA_CAPTURED",
+  "revision": "5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a",
+  "private": false,
+  "gated": false,
+  "card_metadata": null,
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "Autoencoder.zip",
+      "blobId": "bebbb4d401c2fe049f7a3c365dd7e4b1666481dd",
+      "size": 149267169,
+      "lfs": {
+        "sha256": "0d28ff1cae12fed3e17b0bda9691d606bd3b4b84250d7d665727349b9aced767",
+        "size": 149267169,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "Contrastive.zip",
+      "blobId": "9c1b6b574e66792be066fa9a9f9e5a9d39be2ee3",
+      "size": 513922220,
+      "lfs": {
+        "sha256": "804c50db90a0e6e90485ed3b96ee0e8eb24cbc207676e40bf5c330c1a58d52fb",
+        "size": 513922220,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "Diffusion.zip",
+      "blobId": "b3db52e1b65607e07281d2e62c847be5663aea58",
+      "size": 4681412235,
+      "lfs": {
+        "sha256": "ed2ee79b3a40b5d8514a81adcc4f38b5301c2139dbe183169c16d098aeba7634",
+        "size": 4681412235,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "b5ab76a369c5c125ba79c06873427bf766c06f79",
+      "size": 466
+    }
+  ]
+}

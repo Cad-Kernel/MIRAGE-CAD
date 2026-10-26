@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "meshed": 64,
+    "historical_placeholders": 8,
+    "conversion_failures": 0
+  },
+  "CPU_only": true,
+  "new_predictions_or_scores": false,
+  "render_protocol_sha256": "737134ff17799fa3c252ef8026cf75b7f1886010782be9f9a6960420ee707417"
+}

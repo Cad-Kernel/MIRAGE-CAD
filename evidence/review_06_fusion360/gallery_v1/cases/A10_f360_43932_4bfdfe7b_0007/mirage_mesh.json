@@ -1,0 +1,48 @@
+{
+  "case_id": "A10_f360_43932_4bfdfe7b_0007",
+  "sample_id": "f360_43932_4bfdfe7b_0007",
+  "method": "mirage",
+  "step_sha256": "aaddb6059574fb1d7142df465cd8615b6d811f100a43dfdfe2758669b0dee976",
+  "historical_outcome": "CD_SCOREABLE",
+  "created_utc": "2026-10-22T19:17:41.352812+00:00",
+  "mesh_script_sha256": "71495a94b5534f164f16dfc0fd0b209aa341f257498cfb298fb9179281700eca",
+  "render_protocol_sha256": "737134ff17799fa3c252ef8026cf75b7f1886010782be9f9a6960420ee707417",
+  "cadquery": "2.5.0.dev0",
+  "OCP": "7.7.2.0",
+  "alpha": 0.0001,
+  "angular_tolerance": 0.3,
+  "new_program_execution_or_score": false,
+  "status": "EXISTING_STEP_MESHED_FOR_DISPLAY_ONLY",
+  "counter_key": "meshed",
+  "mesh_sha256": "0ecf6c68a164f786b0b6a555c00a4fc9e79721a9f03d9bed00ffa3bf4ea848a7",
+  "mesh_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A10_f360_43932_4bfdfe7b_0007\\mirage_mesh.npz",
+  "brep_bbox": [
+    [
+      -22.14,
+      -10.5,
+      -999989.5000001002
+    ],
+    [
+      22.14,
+      10.5,
+      12.500000099661964
+    ]
+  ],
+  "mesh_bbox": [
+    [
+      -22.14,
+      -10.5,
+      -999989.5000001
+    ],
+    [
+      22.14,
+      10.5,
+      12.500000099661964
+    ]
+  ],
+  "linear_deflection_native_units": 100.00020000001999,
+  "vertices": 66,
+  "raw_vertices": 170,
+  "triangles": 132,
+  "geometry_modification": "Exact-coordinate vertex welding for shared feature edges only; raw arrays also retained"
+}

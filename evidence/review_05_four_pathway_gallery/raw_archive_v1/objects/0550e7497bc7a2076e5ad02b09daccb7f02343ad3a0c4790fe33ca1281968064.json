@@ -1,0 +1,372 @@
+{
+  "category": "sphere_stock",
+  "constrained_sketches": {
+    "count": 0,
+    "errors": [],
+    "features": [],
+    "hash": "9bafe15d7b8683f1bf278026cd84dd42bccebe2d293f5652ba462c26353f865b",
+    "schema": "constrained_sketch_manifest_v1",
+    "valid": true
+  },
+  "exports": {
+    "images": {
+      "bytes": 59554,
+      "files": [
+        {
+          "axis": "+X",
+          "azimuth_degrees": 0.0,
+          "bytes": 7117,
+          "camera_direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 0.0,
+          "foreground_pixels": 34525,
+          "height": 256,
+          "name": "pos_x",
+          "path": "images/canonical/00_pos_x.png",
+          "projection": "orthographic",
+          "sha256": "13f6f2b0f7a8e8342cdb739a5066d9017886931b9e3d34dd06b6a887461f0acd",
+          "view_type": "orthographic_side",
+          "width": 256
+        },
+        {
+          "axis": "-X",
+          "azimuth_degrees": 180.0,
+          "bytes": 6282,
+          "camera_direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 0.0,
+          "foreground_pixels": 34525,
+          "height": 256,
+          "name": "neg_x",
+          "path": "images/canonical/01_neg_x.png",
+          "projection": "orthographic",
+          "sha256": "04e5096266162f84e055e4116ab18831868862de402b9d79d7c71abfcda65772",
+          "view_type": "orthographic_side",
+          "width": 256
+        },
+        {
+          "axis": "+Y",
+          "azimuth_degrees": 90.0,
+          "bytes": 6197,
+          "camera_direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 0.0,
+          "foreground_pixels": 34506,
+          "height": 256,
+          "name": "pos_y",
+          "path": "images/canonical/02_pos_y.png",
+          "projection": "orthographic",
+          "sha256": "454fd3dc89c7bdbff857be44df85196cc7abd4f5608bd77c69fbdcceec31a7ce",
+          "view_type": "orthographic_side",
+          "width": 256
+        },
+        {
+          "axis": "-Y",
+          "azimuth_degrees": 270.0,
+          "bytes": 6948,
+          "camera_direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 0.0,
+          "foreground_pixels": 34526,
+          "height": 256,
+          "name": "neg_y",
+          "path": "images/canonical/03_neg_y.png",
+          "projection": "orthographic",
+          "sha256": "13894db5d48928e02afd3cf5e4dd47b797851382c808784a81b1337e72a7d6a4",
+          "view_type": "orthographic_side",
+          "width": 256
+        },
+        {
+          "axis": "+Z",
+          "azimuth_degrees": 0.0,
+          "bytes": 8610,
+          "camera_direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 90.0,
+          "foreground_pixels": 34880,
+          "height": 256,
+          "name": "pos_z_top",
+          "path": "images/canonical/04_pos_z_top.png",
+          "projection": "orthographic",
+          "sha256": "548fb18ded06b992d871872b6e6ee70e51ef4c258001ab31e54f2255933f6038",
+          "view_type": "orthographic_top",
+          "width": 256
+        },
+        {
+          "axis": "-Z",
+          "azimuth_degrees": 0.0,
+          "bytes": 7586,
+          "camera_direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": -90.0,
+          "foreground_pixels": 34880,
+          "height": 256,
+          "name": "neg_z_bottom",
+          "path": "images/canonical/05_neg_z_bottom.png",
+          "projection": "orthographic",
+          "sha256": "695d48936febac7a41affb668b95144377ccd2f5e057cd690d0962bfff743bd3",
+          "view_type": "orthographic_bottom",
+          "width": 256
+        },
+        {
+          "axis": "+X+Y+Z",
+          "azimuth_degrees": 45.0,
+          "bytes": 8317,
+          "camera_direction": [
+            0.577350269,
+            0.577350269,
+            0.577350269
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 35.264389682754654,
+          "foreground_pixels": 35087,
+          "height": 256,
+          "name": "iso_posx_posy_posz",
+          "path": "images/canonical/06_iso_posx_posy_posz.png",
+          "projection": "orthographic",
+          "sha256": "5dc5a3342dce526d79f97974ac9e0103e2f3972bfd2872d842be94568cffd798",
+          "view_type": "isometric",
+          "width": 256
+        },
+        {
+          "axis": "-X-Y+Z",
+          "azimuth_degrees": 225.0,
+          "bytes": 8497,
+          "camera_direction": [
+            -0.577350269,
+            -0.577350269,
+            0.577350269
+          ],
+          "edge_mode": "visible_feature_edges",
+          "elevation_degrees": 35.264389682754654,
+          "foreground_pixels": 34936,
+          "height": 256,
+          "name": "iso_negx_negy_posz",
+          "path": "images/canonical/07_iso_negx_negy_posz.png",
+          "projection": "orthographic",
+          "sha256": "2bf4214e8ea7a77e436c523d672b5157889565ab2966146d694670728128660c",
+          "view_type": "isometric",
+          "width": 256
+        }
+      ],
+      "image_size": 256,
+      "manifest_bytes": 4855,
+      "path": "images/canonical/manifest.json",
+      "schema": "flluma_canonical_images_v1",
+      "sha256": "3cb0bf3adf55933e0d860d18fd96cf5a174dd275c93d2a820321503998ae5d52",
+      "success": true,
+      "total_image_bytes": 59554,
+      "view_count": 8,
+      "view_set": "canonical_8"
+    },
+    "point_cloud": {
+      "arrays": {
+        "face_ids": {
+          "dtype": "int32",
+          "shape": [
+            2048
+          ]
+        },
+        "normals": {
+          "dtype": "float32",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        "points": {
+          "dtype": "float32",
+          "shape": [
+            2048,
+            3
+          ]
+        }
+      },
+      "binary": false,
+      "bytes": 45828,
+      "face_ids": true,
+      "format": "npz",
+      "normals": true,
+      "path": "point_cloud.npz",
+      "point_count": 2048,
+      "relative_path": "point_cloud.npz",
+      "sampling": "surface_uv",
+      "schema": "flluma_point_cloud_export_v1",
+      "sha256": "1feacfdd92ee7c36ebde0a80efb1cb98436c314b017c07af5145eb373a1e9d5d",
+      "success": true
+    },
+    "step": {
+      "bytes": 2158,
+      "path": "model.step",
+      "sha256": "0776a599926ecd0cb8e0fde5e4994cf44da6693c0b200a6d74a8288496393cf5",
+      "success": true
+    },
+    "text": {
+      "bytes": 6740,
+      "path": "text/descriptions.json",
+      "schema": "flluma_text_descriptions_v1",
+      "sha256": "fbe3a5ebf9e6a06c004993f14cf2be67cf554ed6a4c8c7a828f9d182e0cb5fd1",
+      "source": "template_generated",
+      "success": true
+    },
+    "training_ir": {
+      "bytes": 202,
+      "feature_tree_model_path": "feature_tree_model.json",
+      "feature_tree_model_sha256": "2d10c54420dfe842d1baa424dc5c61a4c5fdbf1baa0d978883a70d03876e4156",
+      "files": {
+        "feature_tree_model": "feature_tree_model.json",
+        "training_ir_text": "training_ir.txt"
+      },
+      "path": "training_ir.txt",
+      "schema": "flluma_training_ir_v1",
+      "sha256": "d4c7a3baa986cd0574b5536c636d967712d4ec4b79b488e42cefb8713b5840ac",
+      "source_feature_tree_hash": "2a7080b116cab0def9a055af28e23ac715702732fe9c5eb98786ab9b59459f5c",
+      "success": true
+    }
+  },
+  "hashes": {
+    "feature_tree": "2a7080b116cab0def9a055af28e23ac715702732fe9c5eb98786ab9b59459f5c",
+    "feature_tree_canonical": "2a7080b116cab0def9a055af28e23ac715702732fe9c5eb98786ab9b59459f5c",
+    "feature_tree_model": "8bd5d3ffad08049f3a3f607a4b890591eebfd6374514b3d58ce19c4fdd7f6d93",
+    "feature_tree_model_canonical": "8bd5d3ffad08049f3a3f607a4b890591eebfd6374514b3d58ce19c4fdd7f6d93",
+    "point_cloud": "1feacfdd92ee7c36ebde0a80efb1cb98436c314b017c07af5145eb373a1e9d5d",
+    "point_cloud_sha256": "1feacfdd92ee7c36ebde0a80efb1cb98436c314b017c07af5145eb373a1e9d5d",
+    "solid_signature": "a6021fe0cab7cdef27dab57ebe8f7c287918140740321af599e6b18c2ec44159",
+    "solid_signature_hash": "a6021fe0cab7cdef27dab57ebe8f7c287918140740321af599e6b18c2ec44159",
+    "step": "0776a599926ecd0cb8e0fde5e4994cf44da6693c0b200a6d74a8288496393cf5",
+    "step_sha256": "0776a599926ecd0cb8e0fde5e4994cf44da6693c0b200a6d74a8288496393cf5",
+    "training_ir": "d4c7a3baa986cd0574b5536c636d967712d4ec4b79b488e42cefb8713b5840ac",
+    "training_ir_text_sha256": "d4c7a3baa986cd0574b5536c636d967712d4ec4b79b488e42cefb8713b5840ac"
+  },
+  "inactive_parameters": [],
+  "mesh_quality": {
+    "brep_trainable": true,
+    "mesh_closed": true,
+    "mesh_closed_after_weld": true,
+    "mesh_closure_policy": "coordinate_welded",
+    "mesh_manifold": true,
+    "mesh_requires_weld": true,
+    "mesh_supervision_policy": "coordinate_welded_mesh",
+    "mesh_trainable": true,
+    "mesh_trainable_raw": false,
+    "mesh_trainable_welded": true,
+    "quality_tier": "brep_and_mesh_trainable",
+    "raw_mesh_closed": false,
+    "raw_stl_policy": "requires_weld"
+  },
+  "num_features": 1,
+  "operations": [
+    "OP_SPHERE"
+  ],
+  "part_name": "flluma_0091927",
+  "sample_id": "flluma_0091927",
+  "schema_version": "1.0.0",
+  "seed": 20352441,
+  "semantic_labels": [
+    "primitive_stock"
+  ],
+  "source_files": {
+    "feature_tree": "feature_tree.json",
+    "feature_tree_model": "feature_tree_model.json",
+    "metadata": "metadata.json",
+    "program": "program.py",
+    "text_descriptions": "text/descriptions.json",
+    "training_ir_text": "training_ir.txt"
+  },
+  "units": "mm",
+  "unused_parameters": [],
+  "validation": {
+    "bbox": {
+      "max": [
+        6.164721966,
+        6.152557373,
+        6.210000038
+      ],
+      "min": [
+        -6.164721966,
+        -6.152557373,
+        -6.210000038
+      ]
+    },
+    "bbox_size": [
+      12.329443932,
+      12.305114746,
+      12.420000076
+    ],
+    "brep": {
+      "bbox": {
+        "max": [
+          6.237372945,
+          6.225208274,
+          6.282650837
+        ],
+        "min": [
+          -6.237372945,
+          -6.225208274,
+          -6.282650837
+        ],
+        "size": [
+          12.47474589,
+          12.450416548,
+          12.565301674
+        ]
+      },
+      "brep_valid": true,
+      "edge_count": 3,
+      "face_count": 1,
+      "shape_type": "SOLID",
+      "solid_count": 1,
+      "success": true,
+      "surface_area": 484.610778963,
+      "vertex_count": 2,
+      "volume": 1003.144318615
+    },
+    "mesh_closed": true,
+    "mesh_closed_after_weld": true,
+    "mesh_closure_policy": "coordinate_welded",
+    "mesh_face_count": 614,
+    "mesh_index_count": 1842,
+    "mesh_manifold": true,
+    "mesh_vertex_count": 322,
+    "node_count": 1,
+    "profile": "summary",
+    "raw_mesh_closed": false,
+    "surface_area": 478.716494333,
+    "triangle_count": 614,
+    "valid_solid": true,
+    "volume": 980.865266536
+  },
+  "validation_summary": {
+    "classification": "trainable",
+    "exports_valid": true,
+    "feature_tree_deterministic": true,
+    "geometry_equivalent": true,
+    "geometry_hash_stable": true,
+    "trainable": true,
+    "valid": true
+  }
+}

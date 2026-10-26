@@ -1,0 +1,164 @@
+{
+  "A": {
+    "directories": [],
+    "files": {
+      "COMPLETE.json": {
+        "bytes": 3872,
+        "mtime_ns": 1792422892017632092,
+        "sha256": "d01a7a1fabb781da654b30cc7daffdbed737f340878f6356d15d0e3223b6d074"
+      },
+      "STARTED.json": {
+        "bytes": 1136,
+        "mtime_ns": 1792336116699443585,
+        "sha256": "d6f67ea9affc0586571fc4e475f5fdf708d90631c81cd45503b737e7f3cca54b"
+      },
+      "code_input_audit.jsonl": {
+        "bytes": 5764967,
+        "mtime_ns": 1792422885641116235,
+        "sha256": "69aafe25e5e8132817f9a4eed8fe6f1ebe6e768c361a7bc4d46d93ae55f4209a"
+      },
+      "geom_input_image.jsonl": {
+        "bytes": 5256038,
+        "mtime_ns": 1792422890475707782,
+        "sha256": "51347a9e8d69c9fa1452d73d0ee1cbd45e3a5da5b6fc7bf9c26fda7fd5eecc9e"
+      },
+      "geom_input_point.jsonl": {
+        "bytes": 5005635,
+        "mtime_ns": 1792422890349845429,
+        "sha256": "d5c282cc0dc64414b0ec3b682033c8c2f8471d6c04b5a97a2504a8a278a8fc80"
+      },
+      "geom_input_step.jsonl": {
+        "bytes": 5252501,
+        "mtime_ns": 1792422890282981056,
+        "sha256": "fe03807fb515d2dd78afe81b772df229d08b8fd27ceec36ee14613011013a3bb"
+      },
+      "geom_input_text.jsonl": {
+        "bytes": 4850350,
+        "mtime_ns": 1792422890416709804,
+        "sha256": "926bd854352114ecc1bf9c05fa3236f30bc926beff75f523bd201608fe94e18a"
+      },
+      "plan_input_audit.jsonl": {
+        "bytes": 5751384,
+        "mtime_ns": 1792368950633460842,
+        "sha256": "9a4349d4340be16e733d9f28cbcfae333e8dbe0833fbd1ea23811941f1cff0f5"
+      },
+      "test_code.jsonl": {
+        "bytes": 85322900,
+        "mtime_ns": 1792422885641116235,
+        "sha256": "712f489d3d7b4c993e3799bfb8801eab2b9537808e4809599309c128a4b7650f"
+      },
+      "test_code_image.jsonl": {
+        "bytes": 21817515,
+        "mtime_ns": 1792422890456041789,
+        "sha256": "1c9b50eba659ab569c66b7dd4e0d0ea319d5627c587a9773e677bfd84e802ad8"
+      },
+      "test_code_point.jsonl": {
+        "bytes": 21030900,
+        "mtime_ns": 1792422890330179436,
+        "sha256": "8f120d97ea32db147479e8041de66dc66e6b1d4b7109c04c1672e0bbdd1825dc"
+      },
+      "test_code_step.jsonl": {
+        "bytes": 21788653,
+        "mtime_ns": 1792422890255448664,
+        "sha256": "4d0aacc5020cd9c159f50c2d91ff8683b6bb0b2889b0f9f180ce93382619354b"
+      },
+      "test_code_text.jsonl": {
+        "bytes": 20685832,
+        "mtime_ns": 1792422890397043812,
+        "sha256": "451dda600e579d82d65c7f01e09256c6d2dc4b4d67fcac307f612338457968cc"
+      },
+      "test_plans.jsonl": {
+        "bytes": 33305744,
+        "mtime_ns": 1792368950633460842,
+        "sha256": "7a0a4b62228e66236d4b3a54d69abb7734253cd3287c15a96b550ee5ed34a6e9"
+      },
+      "test_plans.p1a_log.json": {
+        "bytes": 486154,
+        "mtime_ns": 1792368950652191918,
+        "sha256": "941efcaeda901a7bcca4cc0b8caeaa0a8537588739d0bc572a6d0319b98130ce"
+      }
+    },
+    "root": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A"
+  },
+  "B": {
+    "directories": [],
+    "files": {
+      "COMPLETE.json": {
+        "bytes": 3876,
+        "mtime_ns": 1792561854588894377,
+        "sha256": "fd55038a95f53aacd391b2d329c70ac9261f40dc78369f8e94afb23d570e95d9"
+      },
+      "STARTED.json": {
+        "bytes": 1136,
+        "mtime_ns": 1792428678442013390,
+        "sha256": "d9b5515f2df3b85aeac3633c00ecb7437f2a4098ba95ebdafb5eb3584b2b45e3"
+      },
+      "code_input_audit.jsonl": {
+        "bytes": 5766894,
+        "mtime_ns": 1792561840239933731,
+        "sha256": "b4c250fbeefa636620ad8fea4bd4480a922441d1f1d20256f26235c763af7c0c"
+      },
+      "geom_input_image.jsonl": {
+        "bytes": 5211326,
+        "mtime_ns": 1792561852612494363,
+        "sha256": "ac127a251f598a36840ffbd50f4f2b8b16a0a3a2f5aef464e9427488eddb4f09"
+      },
+      "geom_input_point.jsonl": {
+        "bytes": 5125242,
+        "mtime_ns": 1792561852486494366,
+        "sha256": "b3d6d1be0df11269b04aa0a06d61321d8ea738a0facaf5f3453db3fa9780f5a7"
+      },
+      "geom_input_step.jsonl": {
+        "bytes": 5078784,
+        "mtime_ns": 1792561852421694368,
+        "sha256": "fd79e5c6a3dbbda86ad5cb7a1e104530c27b2ac5eacdf63ea737d863f87560f8"
+      },
+      "geom_input_text.jsonl": {
+        "bytes": 5034812,
+        "mtime_ns": 1792561852547694364,
+        "sha256": "f6c7163e6ff44da629a9cf0a0f2fd2b802d5bb733bff8ecd14bf7e9a1571fbb1"
+      },
+      "plan_input_audit.jsonl": {
+        "bytes": 5751384,
+        "mtime_ns": 1792479597811956085,
+        "sha256": "9a4349d4340be16e733d9f28cbcfae333e8dbe0833fbd1ea23811941f1cff0f5"
+      },
+      "test_code.jsonl": {
+        "bytes": 86713746,
+        "mtime_ns": 1792561840239933731,
+        "sha256": "1871d05dea85d4a4dd32e775315b8ab3b7649e7756efc0a6aa9da3b4f8945cbc"
+      },
+      "test_code_image.jsonl": {
+        "bytes": 21927688,
+        "mtime_ns": 1792561852594494363,
+        "sha256": "f2bb9082003f796ac55d233f59a8b2a6cceb01ea9a00c97ea3756275d6b17f90"
+      },
+      "test_code_point.jsonl": {
+        "bytes": 21718714,
+        "mtime_ns": 1792561852464894366,
+        "sha256": "9cbded2fdf1c5536be39f99ef6492370bedd0843b516c993d061b1b7994c8280"
+      },
+      "test_code_step.jsonl": {
+        "bytes": 21608477,
+        "mtime_ns": 1792561852392894368,
+        "sha256": "164e65c40d8d214f6c6c3d96210772818247167f29fe3053853c05253cc87adb"
+      },
+      "test_code_text.jsonl": {
+        "bytes": 21458867,
+        "mtime_ns": 1792561852529694365,
+        "sha256": "004c16ac06424e28e808550b67a6e21e8734903ddef4b984da854a260c797ed1"
+      },
+      "test_plans.jsonl": {
+        "bytes": 34610950,
+        "mtime_ns": 1792479597811956085,
+        "sha256": "dca84d94b40eb22e7dcb304aa888e58a10903d0a8212d9d24975960fd164681d"
+      },
+      "test_plans.p1a_log.json": {
+        "bytes": 131749,
+        "mtime_ns": 1792479597823028873,
+        "sha256": "7c167eb7871d47c76e566f958098c3d86a620473246fe9abae61bcaadea9e25b"
+      }
+    },
+    "root": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_B"
+  }
+}

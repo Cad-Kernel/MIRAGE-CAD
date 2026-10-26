@@ -1,0 +1,494 @@
+{
+  "status": "READ_ONLY_REVIEW01_PROVENANCE_REASSESSMENT",
+  "historical_trainer_git_ref": "02491ce",
+  "historical_trainer_sha256": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+  "historical_source_matches_all_four_actuals": true,
+  "historical_A1E_source_restores_best": true,
+  "wrapper_matches_recorded_hash_all_seeds": true,
+  "B2P_trainer_matches_recorded_hash_all_seeds": true,
+  "wrapper_B2P_init_adapter": "outputs/qwen25_coder_1_5b_program_25k via --init-adapter-dir $BASE_CODE",
+  "A1E_init_adapter": null,
+  "initialization_and_cumulative_history_not_matched": true,
+  "declaration_is_not_runtime_proof": "actuals build_common_record hard-codes checkpoint_selection=final; its validation only checks artifact existence/row counts",
+  "historical_prediction_weight_byte_binding": "Not newly established by comparing current root files",
+  "records": [
+    {
+      "seed": 1,
+      "actuals_source": "__RUN_SOURCE_ROOT__\\outputs\\e1_observation_bypass\\cag_seed_1_actuals.json",
+      "actuals_sha256": "d6019a194ed1980ca05e9c08470568e0823859b3138289977c814369bf92c0f4",
+      "protocol_declaration": {
+        "batch_size": 16,
+        "checkpoint_selection": "final",
+        "epochs": 1,
+        "expected_updates": 3125,
+        "expected_updates_formula": "ceil(train_rows / grad_accum) * epochs",
+        "gradient_accumulation_steps": 8,
+        "limit": 500,
+        "modality": "step",
+        "repair": false
+      },
+      "recorded_script_hashes": {
+        "gen_scripts/train_soft_prefix_ir.py": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+        "scratch/cag_a1e_b2p_actuals.py": "d54cc54d3e505f9f6d7e4b850259e48dd3300cad3ab1434b55b9673df4f000f5",
+        "train_program_lora.py": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+        "training_25k/44_seeds_a1e_b2p.sh": "331150c037474be10e620361cfdd6867af7c45a42fa32fe7f6e521a2d1d5ce5d",
+        "training_25k/cag_run_frozen_a1e_b2p_seed.sh": "3494a19432afaed2a2513f366d6be0b2a2570da16d966bc6f08cda7c5af28f4f",
+        "training_25k/scripts/gen_b1_direct_latent.py": "c7bd0c66f5acfbcaf9d9af3efb948b2d36e8f1b7d737683a61f3183ebae538f4",
+        "training_25k/scripts/gen_code_from_predicted_ir.py": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+      },
+      "A1E_current_root": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1\\adapter_model.safetensors",
+          "exists": true,
+          "bytes": 73911112,
+          "sha256": "929c80a7ad9cbfa94c14cb9098b4b69328e1d17addf6321d0bf6499aab9fb927"
+        },
+        "soft_prefix.pt": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1\\soft_prefix.pt",
+          "exists": true,
+          "bytes": 40932549,
+          "sha256": "633c372e2188ff7f4d1aad3e492bd33222e85e027f42927fd81951e41251c58c",
+          "tensor_storage_sha256": {
+            "data/0": "992ba3b837b02e5080402b10246f2ba963cb9a6943a55498e5a0787c0253e495",
+            "data/1": "f7f9f5a55ed9ff308325d10275b52bb156df1dbc4d429c24a88cbf8ee8071fcb",
+            "data/2": "0fc1aaec147ce22d0a7cb2ec99c61e93006174d2f99aa0db4086b733dcb03dfd",
+            "data/3": "7403cd533879f03e6bf815706d68709be92eae4c95b2a9739f52ff5389ba974a",
+            "data/4": "9588940a5a1c71a747381f5c235600deebfd05e5b925bc638bc12d41259fcf3e",
+            "data/5": "8f5c234f0034f5d6b5f83ece40bdfad544a743c15429bad1d07655ac56d9f5de"
+          }
+        }
+      },
+      "A1E_available_checkpoints": {
+        "checkpoint-3000": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1\\checkpoint-3000\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "32f46610625b4e9fdd2fc17a2082e6fdc27c600e242de21926600fd980d3a5f9"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1\\checkpoint-3000\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "633c372e2188ff7f4d1aad3e492bd33222e85e027f42927fd81951e41251c58c",
+              "tensor_storage_sha256": {
+                "data/0": "992ba3b837b02e5080402b10246f2ba963cb9a6943a55498e5a0787c0253e495",
+                "data/1": "f7f9f5a55ed9ff308325d10275b52bb156df1dbc4d429c24a88cbf8ee8071fcb",
+                "data/2": "0fc1aaec147ce22d0a7cb2ec99c61e93006174d2f99aa0db4086b733dcb03dfd",
+                "data/3": "7403cd533879f03e6bf815706d68709be92eae4c95b2a9739f52ff5389ba974a",
+                "data/4": "9588940a5a1c71a747381f5c235600deebfd05e5b925bc638bc12d41259fcf3e",
+                "data/5": "8f5c234f0034f5d6b5f83ece40bdfad544a743c15429bad1d07655ac56d9f5de"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": false,
+            "soft_prefix.pt": true
+          }
+        },
+        "checkpoint-3125": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1\\checkpoint-3125\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "929c80a7ad9cbfa94c14cb9098b4b69328e1d17addf6321d0bf6499aab9fb927"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1\\checkpoint-3125\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "843d233616810e0bfbb6da6ebdb056e3b94977f24158b8b48a0bcf82249977cf",
+              "tensor_storage_sha256": {
+                "data/0": "d71581fc574fe3dc4d24d92226b961df9f42e24c7f8e0cc47654f8fa6ab20b62",
+                "data/1": "43dc17e0958dedc8aa416fffd846a415c612fcea787e9cf2b049cbdfbbb683fd",
+                "data/2": "68fb701ee5987b1f127fc2eda82bfe38ce0445268b6f03c42b5bdbd89aef1068",
+                "data/3": "4db9b6eb2d1c17015fbe14dade4883c6def858ac28cc19cd6b82b746a8f95efc",
+                "data/4": "f29a2e9415639e9706939d588ca7b93f0d1b94f94a08e5ff9f960955b465a591",
+                "data/5": "8c0265623c1a8b1a76e0309e3d4355059567bcd1f23d8a70a24c36de8e37f860"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": true,
+            "soft_prefix.pt": false
+          }
+        }
+      },
+      "logs": {
+        "A1E": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s1.train.log",
+          "sha256": "abe3bef126c14788eda261ac317a895873366b89e40de25254fbc56f6455bc93",
+          "relevant_lines": [
+            "[PrefixCheckpoint] Restored best checkpoint from outputs/b1_1epoch_step_s1/checkpoint-3000 (eval_loss=0.0933)"
+          ]
+        },
+        "B2P": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b2_pred_matched_step_s1.train.log",
+          "sha256": "5927c1eceb8d44e5d56007e329e0cc5bf39ced634847e18abb79da5f3a5b4810",
+          "relevant_lines": []
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "actuals_source": "__RUN_SOURCE_ROOT__\\outputs\\e1_observation_bypass\\cag_seed_2_actuals.json",
+      "actuals_sha256": "11e3dc5d691bc994c868c4959afe8c2bcb79f9f59863e7a156a9bfd7bb4e7d61",
+      "protocol_declaration": {
+        "batch_size": 16,
+        "checkpoint_selection": "final",
+        "epochs": 1,
+        "expected_updates": 3125,
+        "expected_updates_formula": "ceil(train_rows / grad_accum) * epochs",
+        "gradient_accumulation_steps": 8,
+        "limit": 500,
+        "modality": "step",
+        "repair": false
+      },
+      "recorded_script_hashes": {
+        "gen_scripts/train_soft_prefix_ir.py": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+        "scratch/cag_a1e_b2p_actuals.py": "d54cc54d3e505f9f6d7e4b850259e48dd3300cad3ab1434b55b9673df4f000f5",
+        "train_program_lora.py": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+        "training_25k/44_seeds_a1e_b2p.sh": "331150c037474be10e620361cfdd6867af7c45a42fa32fe7f6e521a2d1d5ce5d",
+        "training_25k/cag_run_frozen_a1e_b2p_seed.sh": "3494a19432afaed2a2513f366d6be0b2a2570da16d966bc6f08cda7c5af28f4f",
+        "training_25k/scripts/gen_b1_direct_latent.py": "c7bd0c66f5acfbcaf9d9af3efb948b2d36e8f1b7d737683a61f3183ebae538f4",
+        "training_25k/scripts/gen_code_from_predicted_ir.py": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+      },
+      "A1E_current_root": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2\\adapter_model.safetensors",
+          "exists": true,
+          "bytes": 73911112,
+          "sha256": "bf1e0576f1cb6dff0dfd285f90d242ebe85f645b09ee34c84cee3245fec4bbf2"
+        },
+        "soft_prefix.pt": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2\\soft_prefix.pt",
+          "exists": true,
+          "bytes": 40932549,
+          "sha256": "1c3a665c82c1d91bcbb9d93939c9dfc92ac8cbbea85b6b4acd84ca323c090eea",
+          "tensor_storage_sha256": {
+            "data/0": "b5d038b2080fbdb7547d0c228a9f2a82bfef5ac7017e67b795c7852ed4857e53",
+            "data/1": "9e33c949dbbcb8056386305d6dde158abfedd311a289f3f5c88c4e0a04fc9852",
+            "data/2": "a2cf89a34acea10d8e57d7e4656818a3fd7afe1a766581259b865eca1149b781",
+            "data/3": "1bb2d45e1f8de6a614d3fe6c998746ae200cf68abc97e85cfe5a1d33c39d4793",
+            "data/4": "1a86c180f84e68796f99b3feda572258c7f48f22f4397ad35352240fbf1235ff",
+            "data/5": "9bc34902aa6045030a1a64a97af3154644b7be4d43a128b48641dded7ee67e17"
+          }
+        }
+      },
+      "A1E_available_checkpoints": {
+        "checkpoint-3000": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2\\checkpoint-3000\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "085f98b8f3725d7cbdfe63ef7128e5af33e384d9746d4cc55d5664612ae641b1"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2\\checkpoint-3000\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "1c3a665c82c1d91bcbb9d93939c9dfc92ac8cbbea85b6b4acd84ca323c090eea",
+              "tensor_storage_sha256": {
+                "data/0": "b5d038b2080fbdb7547d0c228a9f2a82bfef5ac7017e67b795c7852ed4857e53",
+                "data/1": "9e33c949dbbcb8056386305d6dde158abfedd311a289f3f5c88c4e0a04fc9852",
+                "data/2": "a2cf89a34acea10d8e57d7e4656818a3fd7afe1a766581259b865eca1149b781",
+                "data/3": "1bb2d45e1f8de6a614d3fe6c998746ae200cf68abc97e85cfe5a1d33c39d4793",
+                "data/4": "1a86c180f84e68796f99b3feda572258c7f48f22f4397ad35352240fbf1235ff",
+                "data/5": "9bc34902aa6045030a1a64a97af3154644b7be4d43a128b48641dded7ee67e17"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": false,
+            "soft_prefix.pt": true
+          }
+        },
+        "checkpoint-3125": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2\\checkpoint-3125\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "bf1e0576f1cb6dff0dfd285f90d242ebe85f645b09ee34c84cee3245fec4bbf2"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2\\checkpoint-3125\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "017118621eabec64c789248ed8d6ec7ab2291580cb7f5e6e562bd7e54098e902",
+              "tensor_storage_sha256": {
+                "data/0": "62ea39890a60d098ed8b2b7002ed9d280799329f8f18c763e2be32ab114c4753",
+                "data/1": "24327b155c4cf3fe3f0880fe88c997379302822b39ec3ac75eaaca3f87700568",
+                "data/2": "e505c49a6d9b15cd5397129c7ce94dc95fcc003dec2ec3ba589385691f698be0",
+                "data/3": "8e3a58a9ea9e24c24257ff03278c83a49441bec4cacd8446e3b0a7097fff7fe3",
+                "data/4": "e1b1396237901d6f01fb77d1cddab8470ef18609c95cc72abd8984abf1e79047",
+                "data/5": "aa7efccb1ebba248d7fe85fa3fa9a8189586b0c4084c589ee3c1a838f47f3e28"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": true,
+            "soft_prefix.pt": false
+          }
+        }
+      },
+      "logs": {
+        "A1E": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s2.train.log",
+          "sha256": "4aa3232733004bea4e91287b83895ea1385c4a95e6ed3868f0ab34e76b74eb03",
+          "relevant_lines": [
+            "[PrefixCheckpoint] Restored best checkpoint from outputs/b1_1epoch_step_s2/checkpoint-3000 (eval_loss=0.0944)"
+          ]
+        },
+        "B2P": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b2_pred_matched_step_s2.train.log",
+          "sha256": "0fcebaab45076b8e872e889fef6e90ef1a12f3a46fc0bc2ff80491744ee3eda5",
+          "relevant_lines": []
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "actuals_source": "__RUN_SOURCE_ROOT__\\outputs\\e1_observation_bypass\\cag_seed_3_actuals.json",
+      "actuals_sha256": "669f2d55824a8df0bf912fb3edc8507089b4f201a7612e0911bc701deaf8ca1f",
+      "protocol_declaration": {
+        "batch_size": 16,
+        "checkpoint_selection": "final",
+        "epochs": 1,
+        "expected_updates": 3125,
+        "expected_updates_formula": "ceil(train_rows / grad_accum) * epochs",
+        "gradient_accumulation_steps": 8,
+        "limit": 500,
+        "modality": "step",
+        "repair": false
+      },
+      "recorded_script_hashes": {
+        "gen_scripts/train_soft_prefix_ir.py": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+        "scratch/cag_a1e_b2p_actuals.py": "d54cc54d3e505f9f6d7e4b850259e48dd3300cad3ab1434b55b9673df4f000f5",
+        "train_program_lora.py": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+        "training_25k/44_seeds_a1e_b2p.sh": "331150c037474be10e620361cfdd6867af7c45a42fa32fe7f6e521a2d1d5ce5d",
+        "training_25k/cag_run_frozen_a1e_b2p_seed.sh": "3494a19432afaed2a2513f366d6be0b2a2570da16d966bc6f08cda7c5af28f4f",
+        "training_25k/scripts/gen_b1_direct_latent.py": "c7bd0c66f5acfbcaf9d9af3efb948b2d36e8f1b7d737683a61f3183ebae538f4",
+        "training_25k/scripts/gen_code_from_predicted_ir.py": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+      },
+      "A1E_current_root": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3\\adapter_model.safetensors",
+          "exists": true,
+          "bytes": 73911112,
+          "sha256": "2ff1c16d89775cc06bc1b6466bbf0f64fd7a63adfbf5e1f5102816b612edda26"
+        },
+        "soft_prefix.pt": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3\\soft_prefix.pt",
+          "exists": true,
+          "bytes": 40932549,
+          "sha256": "b552466a09cf50489eaa07e0008ca47f55aead3aae4db7fdcc9a2733bbb1fd62",
+          "tensor_storage_sha256": {
+            "data/0": "a4b5ab80a8d000be8f7a07833d1db20e5ed850af1dd2e1c400b537ecd11e221a",
+            "data/1": "f268e68d14a748164c2e09ed6eac1715e009a2cc9e2d15c64baa38a2d44b1087",
+            "data/2": "9db85bf2b6094fab8b2f89b0d98cc0d842fc8d9dfc3a5fdb9a7c34b0fba8dbf2",
+            "data/3": "e685d0843fd11c48f1337aee6348904730b8982f30acff92de1d199449f383e4",
+            "data/4": "7c654b904cf96c4667beebb2368d150c463d6c3424a3563b1842e14654b2b9a5",
+            "data/5": "dafc4e7dd013a1c2af524422e157a8e7b5150cc7a72a045346db42db0ae6b4cc"
+          }
+        }
+      },
+      "A1E_available_checkpoints": {
+        "checkpoint-3000": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3\\checkpoint-3000\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "be08d69d477707d0a5c894d7d4b11a588a2c1184c2c68d15b341c6243a53fc4f"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3\\checkpoint-3000\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "b552466a09cf50489eaa07e0008ca47f55aead3aae4db7fdcc9a2733bbb1fd62",
+              "tensor_storage_sha256": {
+                "data/0": "a4b5ab80a8d000be8f7a07833d1db20e5ed850af1dd2e1c400b537ecd11e221a",
+                "data/1": "f268e68d14a748164c2e09ed6eac1715e009a2cc9e2d15c64baa38a2d44b1087",
+                "data/2": "9db85bf2b6094fab8b2f89b0d98cc0d842fc8d9dfc3a5fdb9a7c34b0fba8dbf2",
+                "data/3": "e685d0843fd11c48f1337aee6348904730b8982f30acff92de1d199449f383e4",
+                "data/4": "7c654b904cf96c4667beebb2368d150c463d6c3424a3563b1842e14654b2b9a5",
+                "data/5": "dafc4e7dd013a1c2af524422e157a8e7b5150cc7a72a045346db42db0ae6b4cc"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": false,
+            "soft_prefix.pt": true
+          }
+        },
+        "checkpoint-3125": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3\\checkpoint-3125\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "2ff1c16d89775cc06bc1b6466bbf0f64fd7a63adfbf5e1f5102816b612edda26"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3\\checkpoint-3125\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "88290a9420b89440ff4b9210dcfe6a4e626f7bea62c742fceb217676f86fd43d",
+              "tensor_storage_sha256": {
+                "data/0": "277e2aafc8372de5acfaa8514709d871206d5b24db958816ac6edf0e0c0badb1",
+                "data/1": "a3c38da25dcf728ebc4f1319ae138a69df291bf06d29de6bf3fc097b03b84757",
+                "data/2": "cabd04228566cd4ef2cd1fd045fda30aea2f431826ce37f6a73618856103649f",
+                "data/3": "08cbe66fd0ebd452b9d9413ed0b7fe6122015fdbc2ee591e9c2d0c18f38ecf6d",
+                "data/4": "497ea46bed864fe8c5ef0e62c30c17942c61276e880517028f565c13ff67064d",
+                "data/5": "2d39a59e914c13032780f1539ac78a4c34c18946de6fec8283bfbc79f4586bc0"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": true,
+            "soft_prefix.pt": false
+          }
+        }
+      },
+      "logs": {
+        "A1E": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s3.train.log",
+          "sha256": "d8c5954efd7b9495f02fc0ce5dfc180ac34edceaa153b4460fbe63f562dc0f03",
+          "relevant_lines": [
+            "[PrefixCheckpoint] Restored best checkpoint from outputs/b1_1epoch_step_s3/checkpoint-3000 (eval_loss=0.0930)"
+          ]
+        },
+        "B2P": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b2_pred_matched_step_s3.train.log",
+          "sha256": "0e6a9677613e10459fc6add8a93514b9b773aea6b42af784ba0e3848a415662f",
+          "relevant_lines": []
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "actuals_source": "__RUN_SOURCE_ROOT__\\outputs\\e1_observation_bypass\\cag_seed_4_actuals.json",
+      "actuals_sha256": "71689668d1c55620c57d0512c388fe45fdb0994f776aa26d9d4b611346bc7701",
+      "protocol_declaration": {
+        "batch_size": 16,
+        "checkpoint_selection": "final",
+        "epochs": 1,
+        "expected_updates": 3125,
+        "expected_updates_formula": "ceil(train_rows / grad_accum) * epochs",
+        "gradient_accumulation_steps": 8,
+        "limit": 500,
+        "modality": "step",
+        "repair": false
+      },
+      "recorded_script_hashes": {
+        "gen_scripts/train_soft_prefix_ir.py": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+        "scratch/cag_a1e_b2p_actuals.py": "d54cc54d3e505f9f6d7e4b850259e48dd3300cad3ab1434b55b9673df4f000f5",
+        "train_program_lora.py": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+        "training_25k/44_seeds_a1e_b2p.sh": "331150c037474be10e620361cfdd6867af7c45a42fa32fe7f6e521a2d1d5ce5d",
+        "training_25k/cag_run_frozen_a1e_b2p_seed.sh": "3494a19432afaed2a2513f366d6be0b2a2570da16d966bc6f08cda7c5af28f4f",
+        "training_25k/scripts/gen_b1_direct_latent.py": "c7bd0c66f5acfbcaf9d9af3efb948b2d36e8f1b7d737683a61f3183ebae538f4",
+        "training_25k/scripts/gen_code_from_predicted_ir.py": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+      },
+      "A1E_current_root": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4\\adapter_model.safetensors",
+          "exists": true,
+          "bytes": 73911112,
+          "sha256": "1943cfb9ee86c851db7fccd31f626b94e8b1f4d17d334744f54dabdb80cd33f6"
+        },
+        "soft_prefix.pt": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4\\soft_prefix.pt",
+          "exists": true,
+          "bytes": 40932549,
+          "sha256": "169daa2d6f2258d7516b75dc56c8dfd8f5473e5ac2e172c872f5522d5b596a22",
+          "tensor_storage_sha256": {
+            "data/0": "23089dbe2d82222cb9100756ad26361984bdd27f01655db1272ea68e53353139",
+            "data/1": "8cccd609bd481b630b701224953ffc57735064e2fd289cf34e5f01ba7e3d258c",
+            "data/2": "391797b8fe53da21cf8ba36242f82f65413b81dc9105510e31bb65b67498225e",
+            "data/3": "53262f2af9c82f1003b5708b7cae2319ad3ad9e16d3e184a2939762b09480d1b",
+            "data/4": "00cb097e04e95a15d2238d4f2c3105ea822fbcc423a72ec50febebff8d1fb89e",
+            "data/5": "938fe1c1770be053ca5a657667905e65006d248cdc50e820fbf0852a25871dbf"
+          }
+        }
+      },
+      "A1E_available_checkpoints": {
+        "checkpoint-3000": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4\\checkpoint-3000\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "b662be4537fc26957e58f659f5270be0e48ba95e07569d27311ff70f54dd8346"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4\\checkpoint-3000\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "1299ff63bbfeee16fe5fa5b9a3036e8b6045ce49683b8cb40d0cecfd5d360343",
+              "tensor_storage_sha256": {
+                "data/0": "0c8ac1446c67e4cad9a856cc4e8ff75e86ded4a0526063d5dea31e916bb50477",
+                "data/1": "511a879dd04bf4b49c34dc12e9d05d21065c01855ca59a5d343f08b88306a778",
+                "data/2": "db24059579cfa65bfa53cffd2cc21dd662bf09267e0af5ad75b23420abe89a91",
+                "data/3": "a7ceda6da81407433a928ed1acc949495db374faa264bf2b0dbe31ac6dc3265d",
+                "data/4": "3c1d7437327d173ed0b5a45a19d53d9c5d1983399219871562111e85c00f5907",
+                "data/5": "3e9720ab4682c884ae271d66373560682354950faff1e583e9ee87f7f75d555d"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": false,
+            "soft_prefix.pt": false
+          }
+        },
+        "checkpoint-3125": {
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4\\checkpoint-3125\\adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "1943cfb9ee86c851db7fccd31f626b94e8b1f4d17d334744f54dabdb80cd33f6"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4\\checkpoint-3125\\soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "169daa2d6f2258d7516b75dc56c8dfd8f5473e5ac2e172c872f5522d5b596a22",
+              "tensor_storage_sha256": {
+                "data/0": "23089dbe2d82222cb9100756ad26361984bdd27f01655db1272ea68e53353139",
+                "data/1": "8cccd609bd481b630b701224953ffc57735064e2fd289cf34e5f01ba7e3d258c",
+                "data/2": "391797b8fe53da21cf8ba36242f82f65413b81dc9105510e31bb65b67498225e",
+                "data/3": "53262f2af9c82f1003b5708b7cae2319ad3ad9e16d3e184a2939762b09480d1b",
+                "data/4": "00cb097e04e95a15d2238d4f2c3105ea822fbcc423a72ec50febebff8d1fb89e",
+                "data/5": "938fe1c1770be053ca5a657667905e65006d248cdc50e820fbf0852a25871dbf"
+              }
+            }
+          },
+          "root_matches": {
+            "adapter_model.safetensors": true,
+            "soft_prefix.pt": true
+          }
+        }
+      },
+      "logs": {
+        "A1E": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b1_1epoch_step_s4.train.log",
+          "sha256": "08aab3e196723b854dd35f5fd3c39c64020c4ffd1999169c08eae2d6d4a210d9",
+          "relevant_lines": [
+            "[PrefixCheckpoint] Restored best checkpoint from outputs/b1_1epoch_step_s4/checkpoint-3125 (eval_loss=0.1036)"
+          ]
+        },
+        "B2P": {
+          "path": "__RUN_SOURCE_ROOT__\\outputs\\b2_pred_matched_step_s4.train.log",
+          "sha256": "1a3a9776b464f4c48343d4d08fdc2cb7f6540100a13c608e1d858656a366f747",
+          "relevant_lines": []
+        }
+      }
+    }
+  ],
+  "new_training_predictions_execution_scoring": false,
+  "originals_modified": false
+}

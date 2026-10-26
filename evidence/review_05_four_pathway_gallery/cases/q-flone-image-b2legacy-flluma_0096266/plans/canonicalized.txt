@@ -1,0 +1,9 @@
+PART flluma_0005000 CAT mounting_block_with_counterbores UNITS mm SEED 20265514
+PARAM hole_radius 1.41 MIN 0.8 MAX 5 SEM hole_radius
+PARAM pocket_length 10.1 MIN 6 MAX 42 SEM pocket_length
+PARAM pocket_width 12.1 MIN 4 MAX 26 SEM pocket_width
+PARAM thickness 7.1 MIN 3 MAX 18 SEM thickness
+F box_001 OP_BOX SEM base_plate ROLE primary_body PARAMS height=@thickness length=@thickness width=@thickness
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP box_001 TARGET box_001.top_face PARAMS count=4 depth=THROUGH positions=[[-2.84,-3.025],[2.84,-3.025],[-2.84,3.025],[2.84,3.025]] radius=@hole_radius
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP hole_001 TARGET hole_001.top_face PARAMS depth=1.795 length=@pocket_length width=@pocket_width
+END

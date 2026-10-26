@@ -1,0 +1,37 @@
+{
+  "sample_id": "f360_118459_55a06bd6_0000",
+  "arm": "point_nnir",
+  "terminal": true,
+  "memory_cap": "RLIMIT_AS=8192MB",
+  "gt_verified": true,
+  "cd_status": null,
+  "iou_status": null,
+  "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+  "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_118459_55a06bd6_0000/candidate.step",
+  "gt_mesh_triangles": 4832,
+  "prediction_step_diagnostics": {
+    "n_solids": 1,
+    "n_faces": 1,
+    "faces_per_solid": [
+      1
+    ],
+    "first_solid_bbox": [
+      9.39999961853,
+      9.39999961853,
+      9.39999961853
+    ]
+  },
+  "reason": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+  "pred_mesh_triangles_on_failure": 0,
+  "pred_mesh_vertices_on_failure": 0,
+  "pipeline_status": "EMPTY_PREDICTION_MESH",
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": true
+  },
+  "gate_check": "match",
+  "seconds": 65.19
+}

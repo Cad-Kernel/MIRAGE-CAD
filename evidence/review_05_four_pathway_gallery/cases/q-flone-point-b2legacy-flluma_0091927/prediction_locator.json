@@ -1,0 +1,121 @@
+{
+  "sample_id": "flluma_0091927",
+  "modality": "point",
+  "locators": {
+    "test": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/data/25k/test.jsonl",
+        "bytes": 6400450,
+        "sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "28c8089aa917d4391dbb62631f06055804025ebbb058695eab35feaa4bbd907d",
+      "stable_key": {
+        "sample_id": "flluma_0091927"
+      }
+    },
+    "raw_plan": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point.jsonl",
+        "bytes": 8022161,
+        "sha256": "50921bd9fdcced935e37d3d7cf4a8aa108dfa361d237d0c8e9473436b8fe9670"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "bae202024c27c0cbb770d77508d455b04147862e32776ff20e3c88552382905e",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    },
+    "used_plan": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point_p1a.jsonl",
+        "bytes": 8023754,
+        "sha256": "73b2fd05e97a3054cb2f8785e071053cdd97619d948aa515f80067bd30482218"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "bae202024c27c0cbb770d77508d455b04147862e32776ff20e3c88552382905e",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    },
+    "raw_code": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b.jsonl",
+        "bytes": 17081521,
+        "sha256": "1c1af2e94403681c547e047744b394dd5cf5bbbe77940fd310d04b9461780697"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "9feb1f4dde94a7171a832d55db37b5fbc034709bb849b3f84f0e7d463842e1f3",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    },
+    "intermediate_code": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired.jsonl",
+        "bytes": 17081475,
+        "sha256": "741b672368b84a0bda09093a8e142d6362379eb0c6d1f295c0eb1cc819464944"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "9feb1f4dde94a7171a832d55db37b5fbc034709bb849b3f84f0e7d463842e1f3",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    },
+    "prediction": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired_p0.jsonl",
+        "bytes": 17081485,
+        "sha256": "efad38bcb8672a180919f1e474d206966b6e173b5da9ca8852d4f3afab2f4b22"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "9feb1f4dde94a7171a832d55db37b5fbc034709bb849b3f84f0e7d463842e1f3",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    },
+    "geometry_input": {
+      "file": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_point_stage3b.jsonl",
+        "bytes": 5246788,
+        "sha256": "5afff8d3566ff4e7a895d78053c6c4c44f7f245bb52075492e56c91185052450"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "ea5b31a7719945da0af8821981c3b0f09e569eea3f6c2aad52727044a40592d1",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    },
+    "gate": {
+      "file": {
+        "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_point/execution_rows.jsonl",
+        "bytes": 436916,
+        "sha256": "8317d1378da6bfddd469365a49e64424ac73ce7878122e70181e6d5ba2ba072e"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "b53b52ebe9f5c6539be5adbcceef92ad773af8f4f09a6fee404095f8aebabcd9",
+      "stable_key": {
+        "sample_id": "flluma_0091927"
+      }
+    },
+    "geometry": {
+      "file": {
+        "path": "__DEV_ROOT__/scratch/geom_stage3b_point_stage3b/geometry_nbest_rows.jsonl",
+        "bytes": 1021106,
+        "sha256": "8c2463edbf7e18fbd90168823cf17fb0ac153d13bc1688be1b082f1624b0298d"
+      },
+      "line_1based": 269,
+      "line_bytes_sha256": "7bb16eb81ed4f3c4dedfa696e19f7dfc20cbed004b3739e653e22006667bad82",
+      "stable_key": {
+        "sample_id": "flluma_0091927",
+        "modality": "point"
+      }
+    }
+  }
+}

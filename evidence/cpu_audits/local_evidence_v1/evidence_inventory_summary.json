@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-10-25T11:11:54.255484+00:00",
+  "counts": {
+    "01": {
+      "files_hashed": 17,
+      "bytes": 81140
+    },
+    "02": {
+      "files_hashed": 35,
+      "bytes": 37380932
+    },
+    "03": {
+      "files_hashed": 34,
+      "bytes": 13739792
+    },
+    "04": {
+      "files_hashed": 143,
+      "bytes": 310078310
+    },
+    "05_qualitative": {
+      "files_hashed": 998,
+      "bytes": 530505499
+    },
+    "06_fusion360": {
+      "files_hashed": 7006,
+      "bytes": 239553935
+    }
+  },
+  "excluded_dependency_directories": [
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "node_modules"
+  ],
+  "unreadable_files": [],
+  "status": "PASS_SCOPED_READ_HASH_INVENTORY",
+  "meaning": "Current-byte inventory only; no retroactive historical runtime attestation or independent backup."
+}

@@ -1,0 +1,24 @@
+{
+  "CAD_or_model_execution": false,
+  "audit_source": {
+    "bytes": 32038,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_exposure_final_results.py",
+    "sha256": "08da39b6faf84cb5d8c2ec736c56972301e4187c9c28193ef437fd3226e5d6d2"
+  },
+  "created_utc": "2026-10-22T05:00:47.810278+00:00",
+  "errors": 0,
+  "failures": 0,
+  "metric_helper_source": {
+    "bytes": 22256,
+    "path": "__DEV_ROOT__/src/training_25k/cag_summarize_b0_b2_fullstack_eval.py",
+    "sha256": "cc7c5ccc753e99765a69b211c6f48bdae377d9781b9aa85c54b1c05edcf3f898"
+  },
+  "scope": "Synthetic geometry rows, ID/association/schema guards, scoreable/denominator/outlier/paired-statistic contracts",
+  "status": "PASS",
+  "test_source": {
+    "bytes": 7791,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_exposure_final_audit.py",
+    "sha256": "362cf496f2b6a05da8d3c56ceb8e35ac31a3f564dce86ac0c8b49e7b721e35c8"
+  },
+  "tests_run": 20
+}

@@ -1,0 +1,484 @@
+{
+  "case_id": "q-flone-text-b2legacy-flluma_0097413",
+  "created_utc": "2026-10-22T17:48:07.570167+00:00",
+  "status": "RENDERED_CANDIDATE_NOT_FINAL_SELECTION",
+  "renders": [
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/reference_iso_pos.png",
+        "bytes": 9868,
+        "sha256": "fc721d78af055b5204bf8f1994953bf3054012b1d0fce28cb94a2e28e7f8ac2b"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          0.0,
+          5.349999831585343
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -1.8369364163106638e-07
+        ],
+        "span_mm": 84.6406822475098,
+        "pixels_per_mm": 6.2003280935916605,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 117961,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 260,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        129,
+        582,
+        511
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/prediction_iso_pos.png",
+        "bytes": 7022,
+        "sha256": "0a91e1482265ccc45c24934dc6b711dbe499128c6ad6c2f0913b6d0807aecbcb"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          0.0,
+          5.349999831585343
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -1.8369364163106638e-07
+        ],
+        "span_mm": 84.6406822475098,
+        "pixels_per_mm": 6.2003280935916605,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 141294,
+      "out_of_frame_vertices": 2,
+      "mesh_vertex_count": 356,
+      "border_foreground_pixels": 122,
+      "foreground_bbox_px": [
+        58,
+        167,
+        639,
+        553
+      ],
+      "blank": false,
+      "kind": "prediction"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/reference_iso_pos_shared_union.png",
+        "bytes": 8269,
+        "sha256": "40a36bb8589d5980849cdac1f3411e634fa4e0d5a5990122680ec40f44d99228"
+      },
+      "camera": {
+        "frame": "supplemental_shared_union_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          12.875,
+          3.8774999919535165
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          3.123099076267952
+        ],
+        "span_mm": 102.84868186306339,
+        "pixels_per_mm": 5.102641963839055,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 79902,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 260,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        146,
+        489,
+        460
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/prediction_iso_pos_shared_union.png",
+        "bytes": 6424,
+        "sha256": "76a9218d3b4235da6035a1de4d89b22f50e3970f180a0b0f06e333ede1dd60cc"
+      },
+      "camera": {
+        "frame": "supplemental_shared_union_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          12.875,
+          3.8774999919535165
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          3.123099076267952
+        ],
+        "span_mm": 102.84868186306339,
+        "pixels_per_mm": 5.102641963839055,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 99138,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 356,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        177,
+        582,
+        494
+      ],
+      "blank": false,
+      "kind": "prediction"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/reference_iso_neg.png",
+        "bytes": 9933,
+        "sha256": "fbb931acb79a86820530080488fa38804404d7573e40fdd694b98a6edaa7d4bc"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          0.0,
+          5.349999831585343
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -1.8369221166381067e-07
+        ],
+        "span_mm": 84.64068224750979,
+        "pixels_per_mm": 6.200328093591661,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 117959,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 260,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        129,
+        582,
+        511
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/prediction_iso_neg.png",
+        "bytes": 7234,
+        "sha256": "70ec25d5dd85510c5c75ff4bdf2aa8ebc61533f3871833eaee95ed53c924834a"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          0.0,
+          5.349999831585343
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -1.8369221166381067e-07
+        ],
+        "span_mm": 84.64068224750979,
+        "pixels_per_mm": 6.200328093591661,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 159758,
+      "out_of_frame_vertices": 2,
+      "mesh_vertex_count": 356,
+      "border_foreground_pixels": 121,
+      "foreground_bbox_px": [
+        0,
+        63,
+        582,
+        527
+      ],
+      "blank": false,
+      "kind": "prediction"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/reference_iso_neg_shared_union.png",
+        "bytes": 8527,
+        "sha256": "83590a51fe8eafc494f6cbda1f2d90f2fbb6848d8c631bb9ac34ee3aa6a4efa6"
+      },
+      "camera": {
+        "frame": "supplemental_shared_union_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          12.875,
+          3.8774999919535165
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          5.329026819822502e-08
+        ],
+        "span_mm": 102.84868186306339,
+        "pixels_per_mm": 5.102641963839055,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 80074,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 260,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        151,
+        183,
+        582,
+        498
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/prediction_iso_neg_shared_union.png",
+        "bytes": 6591,
+        "sha256": "8491a4328ec7e25ffeb3005486893153074fb8a2a726f7686712a23c35e2e71f"
+      },
+      "camera": {
+        "frame": "supplemental_shared_union_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          12.875,
+          3.8774999919535165
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          5.329026819822502e-08
+        ],
+        "span_mm": 102.84868186306339,
+        "pixels_per_mm": 5.102641963839055,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 111693,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 356,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        129,
+        582,
+        511
+      ],
+      "blank": false,
+      "kind": "prediction"
+    }
+  ],
+  "historical_scoreable": true,
+  "supplemental_union_frame": true,
+  "protocol_sha256": "e31082441244ea5dca021a66e8a054f2bafbea21730e83d9dda3f0d0a4733250",
+  "adapter_sha256": "d2e72fc361a364ea7c5f9f9a53d35ac4a034893a9b8d2531d82e0b1ad2f067e8",
+  "rasterizer_path": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\image_export.py",
+  "rasterizer_sha256": "2a61e3597b53a06fa48c2698274e68f99287cff45c172cb22fbaf7f45cfb6099",
+  "failure_evidence_path": null,
+  "metrics": "unchanged historical values in locked case.json",
+  "panel": {
+    "path": "rendering/cpu_v1/cases/q-flone-text-b2legacy-flluma_0097413/panel.png",
+    "bytes": 66548,
+    "sha256": "5da86b829ed1a14e4ed5ea2d51f4c27caa83f51bc50dfcbcf990d29b375cdc08"
+  }
+}

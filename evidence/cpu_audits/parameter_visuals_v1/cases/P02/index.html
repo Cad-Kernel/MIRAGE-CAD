@@ -1,0 +1,45 @@
+<!doctype html><meta charset="utf-8"><title>P02 parameter evidence</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:24px auto;color:#172536}img{max-width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f9;padding:16px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}</style>
+<a href="../../index.html">All cases</a><h1>P02 — flluma_0090189</h1>
+<p>responsive_negative; boss_height: 5.34 → 4.806. Author semantic confirmation PENDING.</p>
+<img src="panel.png"><p>Historical record: rebuilt_and_moved. These are current CPU re-exports, not recovered historical STEP bytes.</p>
+<p><a href="case.json">Original case metadata and literal examples</a> · <a href="change.diff">Exact code difference</a> · <a href="render_record.json">Camera and geometry diagnostics</a></p>
+<div class="cols"><section><h2>Before</h2><a href="before/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;boss_height&#x27;, 5.34, min=3.0, max=22.0, expression=&#x27;thickness * 0.87&#x27;, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_radius&#x27;, 10.14, min=6.0, max=18.0, expression=&#x27;hole_radius * 4.0&#x27;, semantic_type=&#x27;boss_radius&#x27;)
+params.add(&#x27;chamfer_distance&#x27;, 0.5, min=0.1, max=1.5, semantic_type=&#x27;chamfer_distance&#x27;)
+params.add(&#x27;height&#x27;, 78.6, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_offset_x&#x27;, 20.42, min=4.0, max=45.0, expression=&#x27;width * 0.28&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_offset_y&#x27;, 19.65, min=3.0, max=35.0, expression=&#x27;height * 0.28&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_radius&#x27;, 2.82, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;thickness&#x27;, 6, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 74.5, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0005700&#x27;, category=&#x27;flange_plate&#x27;, parameters=params, seed=20266214, sample_id=&#x27;flluma_0005700&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_flange&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;raised_center_boss_seed&#x27;, radius=params[&#x27;boss_radius&#x27;], height=params[&#x27;boss_height&#x27;], semantic_type=&#x27;boss&#x27;)
+moved = part.translate(name=&#x27;place_center_boss&#x27;, target=cylinder, offset=[0.0, 0.0, 5.47], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_center_boss&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+holes = part.hole_pattern(name=&#x27;flange_mounting_holes&#x27;, target=join.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-20.42, -19.65], [20.42, -19.65], [-20.42, 19.65], [20.42, 19.65]], semantic_type=&#x27;mounting_hole&#x27;)
+chamfer = part.chamfer(name=&#x27;flange_outer_chamfer&#x27;, target=holes.top_outer_edges(), distance=params[&#x27;chamfer_distance&#x27;], semantic_type=&#x27;edge_chamfer&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section><section><h2>After</h2><a href="after/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;boss_height&#x27;, 4.806, min=3.0, max=22.0, expression=&#x27;thickness * 0.87&#x27;, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_radius&#x27;, 10.14, min=6.0, max=18.0, expression=&#x27;hole_radius * 4.0&#x27;, semantic_type=&#x27;boss_radius&#x27;)
+params.add(&#x27;chamfer_distance&#x27;, 0.5, min=0.1, max=1.5, semantic_type=&#x27;chamfer_distance&#x27;)
+params.add(&#x27;height&#x27;, 78.6, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_offset_x&#x27;, 20.42, min=4.0, max=45.0, expression=&#x27;width * 0.28&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_offset_y&#x27;, 19.65, min=3.0, max=35.0, expression=&#x27;height * 0.28&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_radius&#x27;, 2.82, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;thickness&#x27;, 6, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 74.5, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0005700&#x27;, category=&#x27;flange_plate&#x27;, parameters=params, seed=20266214, sample_id=&#x27;flluma_0005700&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_flange&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;raised_center_boss_seed&#x27;, radius=params[&#x27;boss_radius&#x27;], height=params[&#x27;boss_height&#x27;], semantic_type=&#x27;boss&#x27;)
+moved = part.translate(name=&#x27;place_center_boss&#x27;, target=cylinder, offset=[0.0, 0.0, 5.47], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_center_boss&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+holes = part.hole_pattern(name=&#x27;flange_mounting_holes&#x27;, target=join.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-20.42, -19.65], [20.42, -19.65], [-20.42, 19.65], [20.42, 19.65]], semantic_type=&#x27;mounting_hole&#x27;)
+chamfer = part.chamfer(name=&#x27;flange_outer_chamfer&#x27;, target=holes.top_outer_edges(), distance=params[&#x27;chamfer_distance&#x27;], semantic_type=&#x27;edge_chamfer&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section></div>

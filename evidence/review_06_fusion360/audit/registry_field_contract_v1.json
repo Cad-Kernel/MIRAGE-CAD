@@ -1,0 +1,409 @@
+{
+  "columns": {
+    "master_index": {
+      "non_null_types": [
+        "int"
+      ],
+      "nullable": false
+    },
+    "sample_id": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "external_id": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "source_split": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "reference_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "reference_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "point_input_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "point_input_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_prediction_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_prediction_line_1based": {
+      "non_null_types": [
+        "int"
+      ],
+      "nullable": false
+    },
+    "mirage_prediction_line_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_step_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "mirage_step_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "mirage_log_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_gate_line_1based": {
+      "non_null_types": [
+        "int"
+      ],
+      "nullable": false
+    },
+    "mirage_metric_manifest_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_export_ok": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "mirage_step_exists_current": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "mirage_scoreable": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "mirage_iou_scoreable": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "mirage_CD": {
+      "non_null_types": [
+        "float"
+      ],
+      "nullable": true
+    },
+    "mirage_IoU": {
+      "non_null_types": [
+        "float"
+      ],
+      "nullable": true
+    },
+    "mirage_pipeline_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_cd_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "mirage_iou_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "mirage_native_error": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "mirage_score_reason": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "nn_retrieved_training_sample_id": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_prediction_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_prediction_line_1based": {
+      "non_null_types": [
+        "int"
+      ],
+      "nullable": false
+    },
+    "nn_prediction_line_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_step_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "nn_step_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "nn_log_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_gate_line_1based": {
+      "non_null_types": [
+        "int"
+      ],
+      "nullable": false
+    },
+    "nn_metric_manifest_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_export_ok": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "nn_step_exists_current": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "nn_scoreable": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "nn_iou_scoreable": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "nn_CD": {
+      "non_null_types": [
+        "float"
+      ],
+      "nullable": true
+    },
+    "nn_IoU": {
+      "non_null_types": [
+        "float"
+      ],
+      "nullable": true
+    },
+    "nn_pipeline_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_cd_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "nn_iou_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "nn_native_error": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "nn_score_reason": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "cadr_prediction_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "cadr_prediction_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "cadr_raw_generation_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "cadr_step_or_mesh_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "cadr_step_sha256": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "cadr_log_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "cadr_metric_manifest_path": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "cadr_export_ok": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "cadr_step_exists_current": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "cadr_scoreable": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "cadr_iou_scoreable": {
+      "non_null_types": [
+        "bool"
+      ],
+      "nullable": false
+    },
+    "cadr_CD": {
+      "non_null_types": [
+        "float"
+      ],
+      "nullable": true
+    },
+    "cadr_IoU": {
+      "non_null_types": [
+        "float"
+      ],
+      "nullable": true
+    },
+    "cadr_pipeline_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    },
+    "cadr_cd_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "cadr_iou_status": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": true
+    },
+    "verified_failure_class": {
+      "non_null_types": [],
+      "nullable": true
+    },
+    "failure_evidence": {
+      "non_null_types": [],
+      "nullable": true
+    },
+    "selection_bucket": {
+      "non_null_types": [],
+      "nullable": true
+    },
+    "notes": {
+      "non_null_types": [
+        "str"
+      ],
+      "nullable": false
+    }
+  },
+  "row_key": "sample_id",
+  "order": "master_index from original rows.jsonl",
+  "scoreable_definition": "CD available; IoU separately flagged",
+  "CD_units": "normalized dimensionless squared symmetric CD times1000",
+  "reserved_step2_step3_fields": [
+    "verified_failure_class",
+    "failure_evidence",
+    "selection_bucket"
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0096266",
+  "part_name": "flluma_0096266",
+  "category": "pocketed_service_plate",
+  "seed": 20356780,
+  "units": "mm",
+  "parameters": {
+    "fillet_radius": {
+      "value": 0.14,
+      "min": 0.05,
+      "max": 2.0,
+      "semantic_type": "edge_break_radius"
+    },
+    "height": {
+      "value": 53.0,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_offset_x": {
+      "value": 19.796,
+      "min": 4.0,
+      "max": 45.0,
+      "expression": "width * 0.28",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_offset_y": {
+      "value": 13.25,
+      "min": 3.0,
+      "max": 35.0,
+      "expression": "height * 0.25",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_radius": {
+      "value": 2.39,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "pocket_depth": {
+      "value": 3.7,
+      "min": 1,
+      "max": 8,
+      "expression": "min(thickness * 0.308, thickness - 1.2)",
+      "semantic_type": "pocket_depth"
+    },
+    "pocket_length": {
+      "value": 34.71,
+      "min": 8,
+      "max": 60,
+      "expression": "width * 0.491",
+      "semantic_type": "pocket_length"
+    },
+    "pocket_width": {
+      "value": 18.18,
+      "min": 4,
+      "max": 40,
+      "expression": "height * 0.343",
+      "semantic_type": "pocket_width"
+    },
+    "thickness": {
+      "value": 12,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 70.7,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "plate_001",
+      "name": "base_plate",
+      "type": "Plate",
+      "category": "additive",
+      "semantic_type": "base_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 70.7
+        },
+        "height": {
+          "parameter": "height",
+          "value": 53.0
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 12
+        },
+        "centered": true,
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "width": {
+              "parameter": "width",
+              "value": 70.7
+            },
+            "height": {
+              "parameter": "height",
+              "value": 53.0
+            },
+            "centered": true
+          },
+          {
+            "op": "Extrude",
+            "height": {
+              "parameter": "thickness",
+              "value": 12
+            },
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "hole_001",
+      "name": "service_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "service_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 14.0,
+        "count": 4,
+        "positions": [
+          [
+            -19.796,
+            -13.25
+          ],
+          [
+            19.796,
+            -13.25
+          ],
+          [
+            -19.796,
+            13.25
+          ],
+          [
+            19.796,
+            13.25
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 2.39
+        }
+      },
+      "dependencies": [
+        "plate_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "plate_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "plate_001:top_face:4a4118f35d38"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "pocket_001",
+      "name": "shallow_center_pocket",
+      "type": "RectangularPocket",
+      "category": "subtractive",
+      "semantic_type": "pocket",
+      "parameters": {
+        "length": {
+          "parameter": "pocket_length",
+          "value": 34.71
+        },
+        "width": {
+          "parameter": "pocket_width",
+          "value": 18.18
+        },
+        "depth": {
+          "parameter": "pocket_depth",
+          "value": 3.7
+        },
+        "center": [
+          0.0,
+          0.0
+        ],
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "length": {
+              "parameter": "pocket_length",
+              "value": 34.71
+            },
+            "width": {
+              "parameter": "pocket_width",
+              "value": 18.18
+            },
+            "centered": true
+          },
+          {
+            "op": "ProfileCut",
+            "depth": {
+              "parameter": "pocket_depth",
+              "value": 3.7
+            },
+            "offset_mode": "face"
+          }
+        ]
+      },
+      "dependencies": [
+        "hole_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "hole_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "hole_001:top_face:9014e73e3f7b"
+        }
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "fillet_001",
+      "name": "pocket_finish_radius",
+      "type": "Fillet",
+      "category": "modification",
+      "semantic_type": "edge_break",
+      "parameters": {
+        "radius": {
+          "parameter": "fillet_radius",
+          "value": 0.14
+        }
+      },
+      "dependencies": [
+        "pocket_001"
+      ],
+      "topology_references": {
+        "target_edges": {
+          "feature_id": "pocket_001",
+          "kind": "edge_set",
+          "selector": "pocket_edges",
+          "query": "inner top",
+          "reference_id": "pocket_001:pocket_edges:7ac46162d3f4"
+        }
+      },
+      "rebuild_order": 4
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "gen_scripts/train_soft_prefix_ir.py": {
+    "bytes": 29801,
+    "path": "__RUN_SOURCE_ROOT__/gen_scripts/train_soft_prefix_ir.py",
+    "sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac"
+  },
+  "miragecad/__init__.py": {
+    "bytes": 133,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/__init__.py",
+    "sha256": "d5df824b2928dfecbbaa78b67485689d87d9b20db08bdddfd0ebc990983c3212"
+  },
+  "miragecad/data.py": {
+    "bytes": 22661,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/data.py",
+    "sha256": "3ebca2ab8de767719ea440ade1b4f44b7ba9bb4278a0e831a8f4bfa3f5258ee0"
+  },
+  "miragecad/gen_prompts.py": {
+    "bytes": 11008,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/gen_prompts.py",
+    "sha256": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+  },
+  "miragecad/latent_prior.py": {
+    "bytes": 4206,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/latent_prior.py",
+    "sha256": "290533b6cde6e9012e574f8f1115b289a13aa3e82328c93d8a8fbc291e9a8975"
+  },
+  "miragecad/losses.py": {
+    "bytes": 1610,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/losses.py",
+    "sha256": "833412c5953bd28f9e63818a065980d3d2e15bc5b08bcdbb0f404fbd472f1ca0"
+  },
+  "miragecad/models.py": {
+    "bytes": 16749,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/models.py",
+    "sha256": "d24b5023abf507e1df2b27ec701b1350d35c8e5b5112e405528645fb4f41e6a9"
+  },
+  "miragecad/point_sampling.py": {
+    "bytes": 3316,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/point_sampling.py",
+    "sha256": "9084523d5e7e649756bcbf2412373eb62ccb1f173ae8a66294bf7583b2f52c9d"
+  },
+  "miragecad/soft_prefix.py": {
+    "bytes": 2626,
+    "path": "__RUN_SOURCE_ROOT__/miragecad/soft_prefix.py",
+    "sha256": "ee797ee46d2c82ce8522180a0e30b0896f51ded47ca208e79d92c6dbdb363678"
+  },
+  "train_program_lora.py": {
+    "bytes": 12149,
+    "path": "__RUN_SOURCE_ROOT__/train_program_lora.py",
+    "sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d"
+  },
+  "training_25k/06_train_lora_ir.sh": {
+    "bytes": 2681,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/06_train_lora_ir.sh",
+    "sha256": "2d8e092308f2f5ec36f6e175e323ef9bb9273a8b7f26feae4c5ddf81e5b643ba"
+  },
+  "training_25k/06b_train_lora_ir_stage3b.sh": {
+    "bytes": 3055,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/06b_train_lora_ir_stage3b.sh",
+    "sha256": "72e6a9bbaa6f3e1677522d840614f26f0642fb6c5962bd9812d3cf9f69228761"
+  },
+  "training_25k/07_gen_predicted_ir_train_subset.sh": {
+    "bytes": 1154,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/07_gen_predicted_ir_train_subset.sh",
+    "sha256": "4d5c1cc2bc5c311bdfc4afd824f421cba0f2c1faac6dfb42b3aee5efe84a2217"
+  },
+  "training_25k/08_build_stage4b_mix.sh": {
+    "bytes": 571,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/08_build_stage4b_mix.sh",
+    "sha256": "68a595e03e7e8e332ef552178cd6407f5239b3e40499bcebf5b363c35b9b06be"
+  },
+  "training_25k/09_train_lora_code_stage4.sh": {
+    "bytes": 1896,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/09_train_lora_code_stage4.sh",
+    "sha256": "e2ba1f28b89b6d29aecabce198c0b53bca410ae768766b0354f88903a053d934"
+  },
+  "training_25k/10_train_lora_code_stage4b.sh": {
+    "bytes": 1469,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/10_train_lora_code_stage4b.sh",
+    "sha256": "ebaa047c270ea805b91738c52ebcf76251d542c0d3710a2023727e6e5b846ff0"
+  },
+  "training_25k/scripts/build_stage4b_mix.py": {
+    "bytes": 3253,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/build_stage4b_mix.py",
+    "sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101"
+  },
+  "training_25k/scripts/gen_code_from_predicted_ir.py": {
+    "bytes": 8120,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_code_from_predicted_ir.py",
+    "sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+  },
+  "training_25k/scripts/gen_predicted_ir.py": {
+    "bytes": 17203,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_predicted_ir.py",
+    "sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098"
+  },
+  "training_25k/scripts/run_full_stage3b_pipeline.sh": {
+    "bytes": 3943,
+    "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/run_full_stage3b_pipeline.sh",
+    "sha256": "6bbb2f5ab7f188594582d8a66ad7d918465052a016f693ba5c770db0c6c81c5c"
+  }
+}

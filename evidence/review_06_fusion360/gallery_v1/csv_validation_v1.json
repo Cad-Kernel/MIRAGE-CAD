@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "engine": "@oai/artifact-tool",
+  "files": [
+    {
+      "file": "fusion360_gallery_cases_v1.csv",
+      "rows": 18,
+      "columns": 20,
+      "sha256": "16bb322a5edbe9761a102fad62305f3cd08de12535701941bf86fcb4819b4818",
+      "literal_roundtrip": "PASS",
+      "nulls_are_blank": true
+    },
+    {
+      "file": "fusion360_gallery_assets_v1.csv",
+      "rows": 72,
+      "columns": 27,
+      "sha256": "b0fab7733f01e0c5bb045070ed2f809ddb48d22590c3b282e9a2bce03fad28a2",
+      "literal_roundtrip": "PASS",
+      "nulls_are_blank": true
+    }
+  ],
+  "builder_sha256": "97019afdf53f1620a7cd4453814dccf4377f9203068a33a849509cfa85007514"
+}

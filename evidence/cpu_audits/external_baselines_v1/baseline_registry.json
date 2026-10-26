@@ -1,0 +1,852 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-25",
+  "methods": [
+    {
+      "id": "gencad3d",
+      "name": "GenCAD-3D",
+      "role": "point/point+normal/mesh reconstruction baseline candidate",
+      "paper": "https://arxiv.org/html/2509.15246v1",
+      "code_license": "MIT",
+      "data_license": "HF dataset card declares MIT",
+      "weight_license": "NOT_DECLARED in captured weight card/README",
+      "artifacts": [
+        {
+          "metadata_file": "huggingface/gencad_weights.json",
+          "repo": "yu-nomi/GenCAD_3D",
+          "kind": "models",
+          "revision": "5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a",
+          "private": false,
+          "gated": false,
+          "declared_card_license": null,
+          "candidate_binary_objects": [
+            {
+              "path": "Autoencoder.zip",
+              "bytes": 149267169,
+              "advertised_lfs_sha256": "0d28ff1cae12fed3e17b0bda9691d606bd3b4b84250d7d665727349b9aced767"
+            },
+            {
+              "path": "Contrastive.zip",
+              "bytes": 513922220,
+              "advertised_lfs_sha256": "804c50db90a0e6e90485ed3b96ee0e8eb24cbc207676e40bf5c330c1a58d52fb"
+            },
+            {
+              "path": "Diffusion.zip",
+              "bytes": 4681412235,
+              "advertised_lfs_sha256": "ed2ee79b3a40b5d8514a81adcc4f38b5301c2139dbe183169c16d098aeba7634"
+            }
+          ],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        },
+        {
+          "metadata_file": "huggingface/gencad_dataset.json",
+          "repo": "yu-nomi/GenCAD_3D",
+          "kind": "datasets",
+          "revision": "7b00c869543f32a11a1198981af28579b5b1f449",
+          "private": false,
+          "gated": false,
+          "declared_card_license": "mit",
+          "candidate_binary_objects": [
+            {
+              "path": "GenCAD3D.zip",
+              "bytes": 36576843068,
+              "advertised_lfs_sha256": "bd7f0f2c02d6a04931e594bfd10718f825e633a41b37ad1959673a0ffe09b451"
+            },
+            {
+              "path": "GenCAD3D_Scans.zip",
+              "bytes": 373335537,
+              "advertised_lfs_sha256": "b45d429fa757b2515eb26451cf3e5c52ba5e29b8e874426d09001e70103b390a"
+            },
+            {
+              "path": "GenCAD3D_SynthBal.zip",
+              "bytes": 34223595529,
+              "advertised_lfs_sha256": "23fcb9204e2b04b596a52357aa370f2287b29a4879bda857dbc29e89c9b315f4"
+            },
+            {
+              "path": "GenCAD3D_SynthBal_1M.zip",
+              "bytes": 697058614,
+              "advertised_lfs_sha256": "ef3f25eb566cb9eb18052cae1a8d3f69dd675e556a60a1e9e252795d9e9ffccc"
+            }
+          ],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        }
+      ],
+      "feasibility": "PUBLIC_WEIGHT_METADATA_AND_HEAD_PASS; inference/compatibility not tested",
+      "missing": [
+        "Archive contents and model variants not inspected",
+        "Weight redistribution permission not established",
+        "Native command-to-solid export and input conversion not tested"
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "local_copy": "responses/gencad3d_file_01.body",
+          "sha256": "a69414de2cedc6d0b98b4542712074ee5ec0d2aa168b9d5ab4437f48f43a5a08",
+          "permalink": "https://github.com/yunomi-git/GenCAD-3D/blob/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "local_copy": "responses/gencad3d_file_00.body",
+          "sha256": "b3fa9502c7c107d9f3dc42e9dcb7f5fd00b43705d2a10980ddac08ddcf64c5b8",
+          "permalink": "https://github.com/yunomi-git/GenCAD-3D/blob/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/LICENSE"
+        },
+        {
+          "path": "diffusion/evaluation/run_reconstruction_evaluations.py",
+          "local_copy": "responses/gencad3d_extra_00.body",
+          "sha256": "3fab80666b6d8d52e89590ff3a3448520591b4dc2ece144f6e08b2eeb9136ca7",
+          "permalink": "https://github.com/yunomi-git/GenCAD-3D/blob/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/run_reconstruction_evaluations.py"
+        }
+      ],
+      "code_revision": {
+        "repo": "yunomi-git/GenCAD-3D",
+        "commit": "50bf5133c5f895b183fed8dac1df43aa7c1aab1f",
+        "tree_complete": true
+      },
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "cadcrafter",
+      "name": "CADCrafter",
+      "role": "single/multi-view image reconstruction method",
+      "paper": "https://arxiv.org/html/2504.04753v2",
+      "code_license": "NOT_VERIFIED",
+      "data_license": "NOT_VERIFIED",
+      "weight_license": "NOT_VERIFIED",
+      "artifacts": [],
+      "feasibility": "Official runnable code/checkpoint not identified in checked paper pages; not proof of impossibility",
+      "missing": [
+        "Official code/checkpoint URL",
+        "Metric implementation, surface sampling and normalization",
+        "Execution environment and licensing"
+      ],
+      "sources": [],
+      "code_revision": null,
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "img2cad_svg",
+      "name": "Img2CAD: Conditioned 3D CAD Model Generation from Single Image with Structured Visual Geometry",
+      "role": "image/sketch-to-CAD; Tianrun Chen et al.; arXiv:2410.03417",
+      "paper": "https://arxiv.org/html/2410.03417v1",
+      "code_license": "NOT_VERIFIED",
+      "data_license": "NOT_VERIFIED",
+      "weight_license": "NOT_VERIFIED",
+      "artifacts": [],
+      "feasibility": "Correct paper identified; official checkpoint not identified in checked paper/coauthor pages",
+      "missing": [
+        "Official runnable implementation/checkpoint",
+        "Metric implementation and failure denominator",
+        "Do not replace with qq456cvb same-name project"
+      ],
+      "sources": [],
+      "code_revision": null,
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "text2cad",
+      "name": "Text2CAD",
+      "role": "text-to-parametric CAD command sequence; DeepCAD prompt levels L0-L3",
+      "paper": "https://arxiv.org/html/2409.17106v1",
+      "code_license": "CC-BY-NC-SA-4.0 in root LICENSE",
+      "data_license": "HF repository declares CC-BY-NC-SA-4.0 with acceptance gate",
+      "weight_license": "Weight hosted inside the same gated HF dataset repository",
+      "artifacts": [
+        {
+          "metadata_file": "huggingface/text2cad_dataset_weights.json",
+          "repo": "SadilKhan/Text2CAD",
+          "kind": "datasets",
+          "revision": "422d4c93198c3cd98d5c2092c0ab214b3a76a68d",
+          "private": false,
+          "gated": "auto",
+          "declared_card_license": "cc-by-nc-sa-4.0",
+          "candidate_binary_objects": [
+            {
+              "path": "cad_seq.zip",
+              "bytes": 606626050,
+              "advertised_lfs_sha256": "9f3a8bb85f9ceb078c19bc43f750fe596d3323631f2e846a7f541e47af7e7eaa"
+            },
+            {
+              "path": "text2cad_v1.0/Text2CAD_1.0.pth",
+              "bytes": 91601866,
+              "advertised_lfs_sha256": "235b137e72f97c740550e29698c342967d3be7c1d4cd0067a1b3380389034598"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0000_0010.zip",
+              "bytes": 4189429487,
+              "advertised_lfs_sha256": "69fd50df63d74701b7ca02015d005c2b66de96d37005fa98d497da812dc00c9f"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0011_0020.zip",
+              "bytes": 3992038499,
+              "advertised_lfs_sha256": "3e4a558c8ab98d3d55f5ed1fcab0e096e66b6783d84fd54289045f2fb889a085"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0021_0030.zip",
+              "bytes": 5162814181,
+              "advertised_lfs_sha256": "f03506a791670602cb0bc735cff9938266943657cb1398e2e7c9fd2379813deb"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0031_0040.zip",
+              "bytes": 4463857640,
+              "advertised_lfs_sha256": "10a8060ee3b0339c30c0b496a3c5881b34f15bb72e2ed3f6b7940bdd1904f542"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0041_0050.zip",
+              "bytes": 4442752283,
+              "advertised_lfs_sha256": "d1ac51bd745a8fa743c9c0fbc28186f8fee4e7470cc0080bc531d6649c733982"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0051_0060.zip",
+              "bytes": 4531043247,
+              "advertised_lfs_sha256": "c52bbfa48c8dac6b2a37701b0e87664c7a079c37c9cfe18d33767409f76b50a5"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0061_0070.zip",
+              "bytes": 4299032197,
+              "advertised_lfs_sha256": "52b530f50249a47ff27b754b323278bb7396144fd05ec65f57da163627bd7089"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0071_0080.zip",
+              "bytes": 4492096196,
+              "advertised_lfs_sha256": "2ea71fb1454a003dd2acee9a44e5a1d883ee32961f43f5e381bf04acffc3e1c1"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0081_0090.zip",
+              "bytes": 3776429031,
+              "advertised_lfs_sha256": "d7f59f28c6509b160c55e201f3c8ebcede89f298e096467e7b40ff89ff0e6334"
+            },
+            {
+              "path": "text2cad_v1.0/misc/depth_images/depth_images_0091_0099.zip",
+              "bytes": 3166062778,
+              "advertised_lfs_sha256": "3c8f30c3ba8870c07e9164d61f0f0bdfb2104d801ab901496e9187213d3925b0"
+            },
+            {
+              "path": "text2cad_v1.0/misc/minimal_json/minimal_json_0000_0099.zip",
+              "bytes": 114762278,
+              "advertised_lfs_sha256": "7e9a29ead357fe284c29d1b1c7a411e1b8c681bdd48e2aba0542a376955fb879"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0000_0010.zip",
+              "bytes": 5396945991,
+              "advertised_lfs_sha256": "931912bebc3958ee1a1a075f6e059087b2ced7fce18728e17c53ad0fdb1a4d13"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0011_0020.zip",
+              "bytes": 5180937102,
+              "advertised_lfs_sha256": "2349f1fb00d17a8b653f2736e57847c4cdb077db2fc79f63d6ed2d35f04d78d6"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0021_0030.zip",
+              "bytes": 6542038285,
+              "advertised_lfs_sha256": "6aec9d0447853cd920d52c26bca27cbde54eef5c40dba983cf217f92315b800a"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0031_0040.zip",
+              "bytes": 5675209814,
+              "advertised_lfs_sha256": "876ede73dc652b84ca8356c2d5cda6ae1b0f0823668c27935faaa6f3f170f36c"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0041_0050.zip",
+              "bytes": 5645675503,
+              "advertised_lfs_sha256": "a2c2480b751544c278981f40d52753f0dcb15ac9b169ba08ba698e8bdcef7b5f"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0051_0060.zip",
+              "bytes": 5738875274,
+              "advertised_lfs_sha256": "57b9a9afb4e47d182ceb8e3a232ae3e0fce8ed3a4bc02f3d942e2c2ed4aee8c9"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0061_0070.zip",
+              "bytes": 5534887318,
+              "advertised_lfs_sha256": "b40d7990a697ad1796076d9a4b1288a71d72b1fba6a523749a29ea1a756065cc"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0071_0080.zip",
+              "bytes": 5747717516,
+              "advertised_lfs_sha256": "6259485171b52cb89f6d311f175e139be2f1dd9cd831dfe099ad5202db9be569"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0081_0090.zip",
+              "bytes": 4844984674,
+              "advertised_lfs_sha256": "678c75815c29710d30a10700bba473f3b1afb8d9822d5ecb0bed42361b5c6478"
+            },
+            {
+              "path": "text2cad_v1.0/misc/rgb_images/rgb_images_0091_0099.zip",
+              "bytes": 4086889997,
+              "advertised_lfs_sha256": "f5bcd2d511934c476c2f819bad2bb896128ff28b077e9ce7b212537149df5a08"
+            },
+            {
+              "path": "text2cad_v1.1/misc/minimal_json/minimal_json_0000_0099.zip",
+              "bytes": 257581196,
+              "advertised_lfs_sha256": "9c482c15d61a8484877fdc9393dfb7362666c5d7c03681d9df3cbd6fdefeba6e"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0000_0005.zip",
+              "bytes": 25357262276,
+              "advertised_lfs_sha256": "2ebfc36df82be0bf77dc59660cf5182cb6d6fda72919ca05c5a83c7b039b8525"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0006_0010.zip",
+              "bytes": 20987372600,
+              "advertised_lfs_sha256": "dcd56d32bff40d9cf22d2e0f4550c9d5241e2dd51e9207b08a002c4a5b56bd70"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0011_0015.zip",
+              "bytes": 20441663797,
+              "advertised_lfs_sha256": "792898af3b93abccc1d4244e375f528f6e0f11a04b0e08aac1d453f3c75d7bdd"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0016_0020.zip",
+              "bytes": 20172068422,
+              "advertised_lfs_sha256": "ed1ac7c88533d872da058873c63229fce2c7e63ec9b5ae68bdff5d6512dd8569"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0021_0025.zip",
+              "bytes": 22688724031,
+              "advertised_lfs_sha256": "71e0960b02c5f58597a2222141dbb940cbf24659e94b7b2156abed61926f81eb"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0026_0030.zip",
+              "bytes": 28125493081,
+              "advertised_lfs_sha256": "733e4379df2141cd68446be2b3f60d48953fbfbd436cb87e7e308a0050c852ba"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0031_0035.zip",
+              "bytes": 24420023705,
+              "advertised_lfs_sha256": "0ff049cf407273822563136c64ce0a27245c4b1250f48986779b08ecf4c541fc"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0036_0040.zip",
+              "bytes": 19670259170,
+              "advertised_lfs_sha256": "1bbfc54bc3cebab4777a3da5ab45028c22dce2332233bab54cb7ed6f88333f31"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0041_0045.zip",
+              "bytes": 22080505768,
+              "advertised_lfs_sha256": "2102749e0520bfeee44d5cc9c576028aa3c8e0d4d174415d1ffbaa3598ca32f3"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0046_0050.zip",
+              "bytes": 22265530168,
+              "advertised_lfs_sha256": "ef092f527e85bb1095f227cc3d873dc0076226f4346a304d7f2ff8d274d3974a"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0051_0055.zip",
+              "bytes": 22494037806,
+              "advertised_lfs_sha256": "9015608d355cccc8e07498db76d1332438cec121c97ff6bc6308720aff97d969"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0056_0060.zip",
+              "bytes": 22741183345,
+              "advertised_lfs_sha256": "143762bb44f8235faf31d8c3272dc4566edf75ae1ecd69c578596dc7f0b1b3e9"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0061_0065.zip",
+              "bytes": 21075299860,
+              "advertised_lfs_sha256": "3d75d6aa2cb498bea14899afc170b1de78f471379d493186126c275513fc1f73"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0066_0070.zip",
+              "bytes": 24410936737,
+              "advertised_lfs_sha256": "b51cf2beaa7139400ed8caad7f235e78e0699a0ee8d623f3a292afe1b7032aa4"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0071_0075.zip",
+              "bytes": 28467943526,
+              "advertised_lfs_sha256": "edac36651736df66f62711ab9447f0a0aef2420f07b7d1a1dff4d7b6f91918e5"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0076_0080.zip",
+              "bytes": 25833342942,
+              "advertised_lfs_sha256": "c2f3b37f1643960be7c511c472ce167113bb5652d008727f05fc1f0cf0ad7536"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0081_0085.zip",
+              "bytes": 23769538383,
+              "advertised_lfs_sha256": "41150e4b473cca018cfb5fee81398c6619fe9a7f44136a485df1fb7c0b1c201c"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0086_0090.zip",
+              "bytes": 22688429878,
+              "advertised_lfs_sha256": "95c1bc4c972ea4275e583a2fca1654042b32ac73383dae4f402cc0b095242952"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0091_0095.zip",
+              "bytes": 21543553553,
+              "advertised_lfs_sha256": "723793c82a1db44b174be610610259a0b8b182bbb122f10905a3d787a2d392a3"
+            },
+            {
+              "path": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0096_0099.zip",
+              "bytes": 16942946164,
+              "advertised_lfs_sha256": "e7fcde321fe23ded54ddb0a850743f2473bd86f626a48aa10e328edeb5ea3e6b"
+            }
+          ],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        }
+      ],
+      "feasibility": "Metadata public; unauthenticated weight HEAD=401; agreement not accepted by agent",
+      "missing": [
+        "Author decision on account/license acceptance",
+        "Dependency and command-to-solid inference smoke",
+        "L0-L3 prompt compatibility with MIRAGE captions"
+      ],
+      "sources": [
+        {
+          "path": "LICENSE",
+          "local_copy": "responses/text2cad_file_00.body",
+          "sha256": "00a59345b70fc28ed27db6319b2f61a7dc552f8db03d01cf9f75382c292e4bfe",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "local_copy": "responses/text2cad_file_01.body",
+          "sha256": "4a0a57cae756bf0fcb46a1e1adc04455d1b96ed811646cddfb59355e96ce0199",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/README.md"
+        },
+        {
+          "path": "Cad_VLM/test_user_input.py",
+          "local_copy": "responses/text2cad_extra_01.body",
+          "sha256": "1578596cc27cba8668ddf3d9c7f460c3d4b9207a96f58aa304ebd70a160e1557",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/test_user_input.py"
+        }
+      ],
+      "code_revision": {
+        "repo": "SadilKhan/Text2CAD",
+        "commit": "669a81472ede2269837c22a4d00070eaac360c82",
+        "tree_complete": true
+      },
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "pointercad",
+      "name": "Pointer-CAD",
+      "role": "text plus generated intermediate B-Rep; next-operation/face-edge pointer generation",
+      "paper": "https://arxiv.org/html/2603.04337v1",
+      "code_license": "No root license identified in complete pinned tree",
+      "data_license": "Recap-OmniCAD HF card: CC-BY-4.0",
+      "weight_license": "No checkpoint object identified in checked official channels",
+      "artifacts": [
+        {
+          "metadata_file": "huggingface/pointer_dataset.json",
+          "repo": "Snitro/Recap-OmniCAD",
+          "kind": "datasets",
+          "revision": "62617cb80a869b4acf5ff5d3c9049bd0aec74736",
+          "private": false,
+          "gated": false,
+          "declared_card_license": "cc-by-4.0",
+          "candidate_binary_objects": [],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        }
+      ],
+      "feasibility": "Source present; trained model NOT_IDENTIFIED in scoped official inventory",
+      "missing": [
+        "Checkpoint and code permission",
+        "Official author HF public model list empty; GitHub releases empty at capture",
+        "Intermediate B-Rep is not a complete observed STEP reconstruction input"
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "local_copy": "responses/pointercad_file_00.body",
+          "sha256": "7e26906e6b40e4eb009fafa796a2c86c4c2c566b54d6fa840b38949dd7a293b5",
+          "permalink": "https://github.com/Snitro/Pointer-CAD/blob/a5c32d702f9569565d89a94de44b3af0020bcab0/README.md"
+        },
+        {
+          "path": "test.py",
+          "local_copy": "responses/pointercad_extra_00.body",
+          "sha256": "56769b8f239b984f4656e1b8af1ae7b4eeda7c95ece7d0abec532a914d7a603f",
+          "permalink": "https://github.com/Snitro/Pointer-CAD/blob/a5c32d702f9569565d89a94de44b3af0020bcab0/test.py"
+        }
+      ],
+      "code_revision": {
+        "repo": "Snitro/Pointer-CAD",
+        "commit": "a5c32d702f9569565d89a94de44b3af0020bcab0",
+        "tree_complete": true
+      },
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "cadrecode",
+      "name": "CAD-Recode",
+      "role": "point-cloud-to-CadQuery; existing Fusion360 comparator",
+      "paper": "https://arxiv.org/html/2412.14042v2",
+      "code_license": "CC-BY-NC-4.0 in pinned root LICENSE.md",
+      "data_license": "Not blanket-cleared by code/model cards; separate dataset not audited here",
+      "weight_license": "HF v1 and v1.5 cards: CC-BY-NC-4.0",
+      "artifacts": [
+        {
+          "metadata_file": "huggingface/cadrecode_model_v1.json",
+          "repo": "filapro/cad-recode",
+          "kind": "models",
+          "revision": "1e070ab9a4ccd56a768444ffb01732230548be45",
+          "private": false,
+          "gated": false,
+          "declared_card_license": "cc-by-nc-4.0",
+          "candidate_binary_objects": [
+            {
+              "path": "model.safetensors",
+              "bytes": 3087805256,
+              "advertised_lfs_sha256": "1ea6708c7e270fa623d05210354056867bb0c31ed88ebb351a49b408633a594a"
+            }
+          ],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        },
+        {
+          "metadata_file": "huggingface/cadrecode_model_v15.json",
+          "repo": "filapro/cad-recode-v1.5",
+          "kind": "models",
+          "revision": "765e8cc315a1a77bd8c69ccd0b403bad20ce35e8",
+          "private": false,
+          "gated": false,
+          "declared_card_license": "cc-by-nc-4.0",
+          "candidate_binary_objects": [
+            {
+              "path": "model.safetensors",
+              "bytes": 3087786824,
+              "advertised_lfs_sha256": "6fe6acab9baf5ce03cc529750ea0adba14d0e25df642d8642993952061a05d6c"
+            }
+          ],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        }
+      ],
+      "feasibility": "Public model metadata; no model binary downloaded this round; existing Fusion results retained",
+      "missing": [
+        "Historical Fusion run identifies v1.5 but no exact HF revision/weight-byte binding",
+        "Paper synthetic-training statement does not establish exact geometric overlap=0",
+        "Pretrained Qwen exposure not audited"
+      ],
+      "sources": [
+        {
+          "path": "LICENSE.md",
+          "local_copy": "responses/cadrecode_file_00.body",
+          "sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+          "permalink": "https://github.com/filapro/cad-recode/blob/03e3262119b38939feaa44b8368ad8db99243d47/LICENSE.md"
+        },
+        {
+          "path": "README.md",
+          "local_copy": "responses/cadrecode_file_01.body",
+          "sha256": "f3da4d7994fe6090e8f5c82eaf29faea4afd984a8590fd9f5ade68fdc54b5c40",
+          "permalink": "https://github.com/filapro/cad-recode/blob/03e3262119b38939feaa44b8368ad8db99243d47/README.md"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "local_copy": "responses/cadrecode_extra_00.body",
+          "sha256": "7742e3f581994f9f9d9b4c8cf59364d8c5a4e79ce9aea93016f1c315943cc0ee",
+          "permalink": "https://github.com/filapro/cad-recode/blob/03e3262119b38939feaa44b8368ad8db99243d47/CHANGELOG.md"
+        }
+      ],
+      "code_revision": {
+        "repo": "filapro/cad-recode",
+        "commit": "03e3262119b38939feaa44b8368ad8db99243d47",
+        "tree_complete": true
+      },
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "cadbench",
+      "name": "CADBench (anniedoris / arXiv:2605.10873)",
+      "role": "external benchmark, NOT a baseline method",
+      "paper": "https://arxiv.org/html/2605.10873v1",
+      "code_license": "MIT",
+      "data_license": "Underlying constituent licenses retained: DeepCAD/ABC/MCB MIT; Fusion360 non-commercial research; Objaverse ODC-By plus per-object CC",
+      "weight_license": "NOT_APPLICABLE (benchmark)",
+      "artifacts": [
+        {
+          "metadata_file": "huggingface/cadbench_dataset.json",
+          "repo": "DeCoDELab/CADBench",
+          "kind": "datasets",
+          "revision": "7cf5b3ec195228e4342cfa534d25662d36e96cbc",
+          "private": false,
+          "gated": false,
+          "declared_card_license": null,
+          "candidate_binary_objects": [],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        }
+      ],
+      "feasibility": "Public dataset metadata; no benchmark assets downloaded; CadQuery evaluator requires Flluma backend/export adaptation",
+      "missing": [
+        "No natural-language instruction feature in captured schema; label is not a text prompt",
+        "STEP availability differs by source family; B/F/E/A STEP-based, M/O mesh-based",
+        "Per-shape data licensing and evaluator adaptation untested",
+        "Paper/source surface-threshold convention differs"
+      ],
+      "sources": [
+        {
+          "path": "LICENSE",
+          "local_copy": "responses/cadbench_file_00.body",
+          "sha256": "2eac03af00b1c9e140bce2d386c37bf30f30f8f1eefe0cfa94ab0fe2036dce6b",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/LICENSE"
+        },
+        {
+          "path": "DATASET_LICENSE.md",
+          "local_copy": "responses/cadbench_extra_00.body",
+          "sha256": "95fbec063db2ef935d64d4bc940fb6a6cfdb7c4fefd491f2061a72c4188e0464",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/DATASET_LICENSE.md"
+        },
+        {
+          "path": "CADBenchEval/scripts/eval_jsonl.py",
+          "local_copy": "responses/cadbench_file_05.body",
+          "sha256": "fda14ca36bbe6f7a819a242f822d2fd7fc6241f9766ef551df7298fb67a14c08",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/eval_jsonl.py"
+        },
+        {
+          "path": "CADBenchEval/CADBench/Eval/geometry/_utils.py",
+          "local_copy": "responses/cadbench_file_16.body",
+          "sha256": "9b605a2a541fbeb5b31a34646e7cf35efd86c7ba11db4141c6a53907de066f0a",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/geometry/_utils.py"
+        }
+      ],
+      "code_revision": {
+        "repo": "anniedoris/CADBench",
+        "commit": "99e41a2eeb351f04611e83980f9f23cb0ca216c7",
+        "tree_complete": true
+      },
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    },
+    {
+      "id": "img2cad_factorization",
+      "name": "Img2CAD: Reverse Engineering 3D CAD Models from Images through VLM-Assisted Conditional Factorization",
+      "role": "Same-name identity warning; Yang You et al.; NOT the SVG paper",
+      "paper": "https://github.com/qq456cvb/Img2CAD/blob/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/CITATION.cff",
+      "code_license": "MIT",
+      "data_license": "Not audited",
+      "weight_license": "HF card: MIT",
+      "artifacts": [
+        {
+          "metadata_file": "huggingface/img2cad_other_weights.json",
+          "repo": "qq456cvb/img2cad",
+          "kind": "models",
+          "revision": "949958a05f3ef6f6f6566ac4eb9ca45a34650685",
+          "private": false,
+          "gated": false,
+          "declared_card_license": "mit",
+          "candidate_binary_objects": [
+            {
+              "path": "llamaft/chair/checkpoint-2160/adapter_model.safetensors",
+              "bytes": 47234640,
+              "advertised_lfs_sha256": "0a54927db3462f5e183292a26d1a781b85d8b5f950e577d2a47d46a330a20c33"
+            },
+            {
+              "path": "llamaft/chair/checkpoint-2160/optimizer.pt",
+              "bytes": 68295034,
+              "advertised_lfs_sha256": "d08be794a3b1981c9ffd7639e44c06c4480c9c714707bc9f23f8ea677a025a66"
+            },
+            {
+              "path": "llamaft/chair/checkpoint-2160/rng_state.pth",
+              "bytes": 14244,
+              "advertised_lfs_sha256": "9074ccc379f241c1fe34150e8752108fb5edca9c00e279732c695168713c1d13"
+            },
+            {
+              "path": "llamaft/chair/checkpoint-2160/scheduler.pt",
+              "bytes": 1064,
+              "advertised_lfs_sha256": "cacbf07d17317ea00c292fa69f638ec070a697be81e5ade2742520fc3c7717ef"
+            },
+            {
+              "path": "llamaft/chair/checkpoint-2160/training_args.bin",
+              "bytes": 5688,
+              "advertised_lfs_sha256": "53d9bf9b5a82c90a9a392bfd51488b196a3775d6068920dc45cbfbb23249317d"
+            },
+            {
+              "path": "llamaft/storagefurniture/checkpoint-645/adapter_model.safetensors",
+              "bytes": 47234640,
+              "advertised_lfs_sha256": "0322ef9f24becc43bc86e34707b60649d46a2689b254bb805b78fd8d67f4355a"
+            },
+            {
+              "path": "llamaft/storagefurniture/checkpoint-645/optimizer.pt",
+              "bytes": 68295034,
+              "advertised_lfs_sha256": "f5acde6ec3ef3842af7bcbae80d2e4b35a485d107383c8aace36dc456c03c379"
+            },
+            {
+              "path": "llamaft/storagefurniture/checkpoint-645/rng_state.pth",
+              "bytes": 14244,
+              "advertised_lfs_sha256": "dbed2e1f610d0cf3464adebc8f19959f3976ad1890a0d306e06d0a2f02924eda"
+            },
+            {
+              "path": "llamaft/storagefurniture/checkpoint-645/scheduler.pt",
+              "bytes": 1064,
+              "advertised_lfs_sha256": "d7c2d8e1c359547322d42eb4dbf0b45a7d85e3151d3d7ccf244cb70228a8b423"
+            },
+            {
+              "path": "llamaft/storagefurniture/checkpoint-645/training_args.bin",
+              "bytes": 5688,
+              "advertised_lfs_sha256": "64cf08123669dc759dbb57edb0e3e35636e6bc7f6b4411cc9b6042094dcc0427"
+            },
+            {
+              "path": "llamaft/table/checkpoint-6895/adapter_model.safetensors",
+              "bytes": 47234640,
+              "advertised_lfs_sha256": "f05700aefbd3adb11bcb1d75e348fd934fdaa8fb967afd308e42ff41d31def3e"
+            },
+            {
+              "path": "llamaft/table/checkpoint-6895/optimizer.pt",
+              "bytes": 68295034,
+              "advertised_lfs_sha256": "7569efef26252f670d534d1f979e2dfd8d8d2589f2bbaf7b2891c419b4506b52"
+            },
+            {
+              "path": "llamaft/table/checkpoint-6895/rng_state.pth",
+              "bytes": 14244,
+              "advertised_lfs_sha256": "a9cf25e94ced075b19184c9834ba57bd91311c1e3672188bb23bb5963e3da737"
+            },
+            {
+              "path": "llamaft/table/checkpoint-6895/scheduler.pt",
+              "bytes": 1064,
+              "advertised_lfs_sha256": "235072d74cf273aada5b85f4136a17510b945b0f4bf12f5d04396f9df2b7cf1a"
+            },
+            {
+              "path": "llamaft/table/checkpoint-6895/training_args.bin",
+              "bytes": 5688,
+              "advertised_lfs_sha256": "6fc8d5273e5ca5eccdad0dcd12fd18ca774d13bf043f6770c3772605220e5cd6"
+            },
+            {
+              "path": "partseg/chair/best_model.pth",
+              "bytes": 21076193,
+              "advertised_lfs_sha256": "42735823bb395ced43917115206484cc2935912306714992e55cc0b84344b8dd"
+            },
+            {
+              "path": "partseg/storagefurniture/best_model.pth",
+              "bytes": 21075754,
+              "advertised_lfs_sha256": "a644e23187c56b651602e1fbb7d254ebc9aae6f9f76bc0fd2849bd35c9b52197"
+            },
+            {
+              "path": "partseg/table/best_model.pth",
+              "bytes": 21076193,
+              "advertised_lfs_sha256": "18ed578fdec5c96c6fc2096204f0c23186d17370b4eaeaffae31d0332f889361"
+            }
+          ],
+          "binary_bytes_downloaded": 0,
+          "binary_content_or_compatibility_verified": false
+        }
+      ],
+      "feasibility": "Class-specific weights identified; cannot be used as evidence of SVG-paper availability",
+      "missing": [
+        "Different authors/title/training corpus",
+        "No inference or metric implementation audit for this distinct task"
+      ],
+      "sources": [
+        {
+          "path": "CITATION.cff",
+          "local_copy": "responses/img2cad_factorization_file_00.body",
+          "sha256": "4d284be679fd5803059199a754888cc947572dcc3015be569fc2b4a50dbb747b",
+          "permalink": "https://github.com/qq456cvb/Img2CAD/blob/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/CITATION.cff"
+        },
+        {
+          "path": "LICENSE",
+          "local_copy": "responses/img2cad_factorization_file_01.body",
+          "sha256": "5a19d9ad1780ae06a3f219df1f3ae18172baf31cb2d2fcf708cfc99d4a2349d0",
+          "permalink": "https://github.com/qq456cvb/Img2CAD/blob/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "local_copy": "responses/img2cad_factorization_file_02.body",
+          "sha256": "843f0f52c205d2197cad89a1adcc5deb241161bd0801e34f1f22b873a05c166b",
+          "permalink": "https://github.com/qq456cvb/Img2CAD/blob/afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3/README.md"
+        }
+      ],
+      "code_revision": {
+        "repo": "qq456cvb/Img2CAD",
+        "commit": "afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3",
+        "tree_complete": true
+      },
+      "experiment_run_this_round": false,
+      "scope": "Snapshot on 2026-10-25; current source is not proof of the historical paper run"
+    }
+  ],
+  "checkpoint_head_checks": [
+    {
+      "label": "gencad_Autoencoder.zip",
+      "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Autoencoder.zip",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 200,
+      "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/7fdfbd3de29c8c99048190165a7203ef04ac66442b13d05415dea22566f511da",
+      "headers": {
+        "Content-Length": "149267169",
+        "Content-Type": "application/zip",
+        "Content-Disposition": "inline; filename*=UTF-8''Autoencoder.zip; filename=\"Autoencoder.zip\";",
+        "ETag": "\"7fdfbd3de29c8c99048190165a7203ef04ac66442b13d05415dea22566f511da\""
+      }
+    },
+    {
+      "label": "gencad_Contrastive.zip",
+      "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Contrastive.zip",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 200,
+      "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/619e479a014cb693d62cfb453254a8bab6643b407df7247dc388e900b83e26d1",
+      "headers": {
+        "Content-Length": "513922220",
+        "Content-Type": "application/zip",
+        "Content-Disposition": "inline; filename*=UTF-8''Contrastive.zip; filename=\"Contrastive.zip\";",
+        "ETag": "\"619e479a014cb693d62cfb453254a8bab6643b407df7247dc388e900b83e26d1\""
+      }
+    },
+    {
+      "label": "gencad_Diffusion.zip",
+      "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Diffusion.zip",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 200,
+      "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/5e0d4d870432c6df44e41e0dad5a06b4abd5785bba4ec8688f623e8e4946659d",
+      "headers": {
+        "Content-Length": "4681412235",
+        "Content-Type": "application/zip",
+        "Content-Disposition": "inline; filename*=UTF-8''Diffusion.zip; filename=\"Diffusion.zip\";",
+        "ETag": "\"5e0d4d870432c6df44e41e0dad5a06b4abd5785bba4ec8688f623e8e4946659d\""
+      }
+    },
+    {
+      "label": "text2cad_v1_weight",
+      "requested_url": "https://huggingface.co/datasets/SadilKhan/Text2CAD/resolve/422d4c93198c3cd98d5c2092c0ab214b3a76a68d/text2cad_v1.0/Text2CAD_1.0.pth",
+      "method": "HEAD",
+      "body_bytes_read": 0,
+      "status": 401,
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    }
+  ],
+  "gencad_candidate_weight_bytes": 5344601624,
+  "pointer_availability_scope": {
+    "author_public_models": [],
+    "github_releases": 0,
+    "related_issues": [
+      {
+        "number": 19,
+        "title": "Could you release a trained model?",
+        "url": "https://github.com/Snitro/Pointer-CAD/issues/19",
+        "comment_count_captured": 0
+      },
+      {
+        "number": 16,
+        "title": "Dataset Release",
+        "url": "https://github.com/Snitro/Pointer-CAD/issues/16",
+        "comment_count_captured": 1
+      },
+      {
+        "number": 15,
+        "title": "Tracking: Code release checklist",
+        "url": "https://github.com/Snitro/Pointer-CAD/issues/15",
+        "comment_count_captured": 0
+      },
+      {
+        "number": 13,
+        "title": "Request: Dataset release details and annotation pipeline reproducibility",
+        "url": "https://github.com/Snitro/Pointer-CAD/issues/13",
+        "comment_count_captured": 1
+      }
+    ]
+  },
+  "reviewer_R1_3_status": "PARTIAL: source/feasibility/metric desk audit; not a common-protocol experiment or impossibility proof",
+  "author_decisions": "DEFERRED; no license acceptance, publication, inference or training"
+}

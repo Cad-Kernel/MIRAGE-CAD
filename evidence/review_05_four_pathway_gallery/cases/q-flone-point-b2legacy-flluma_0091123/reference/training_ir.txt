@@ -1,0 +1,16 @@
+PART flluma_0091123 CAT pipe_clamp UNITS mm SEED 20351637
+PARAM clamp_jaw_height 17.05 MIN 5 MAX 28 EXPR thickness*1.55 SEM clamp_jaw_height
+PARAM clamp_jaw_width 16.8 MIN 6 MAX 28 EXPR width*0.279 SEM clamp_jaw_width
+PARAM height 61.7 MIN 12 MAX 80 SEM overall_height
+PARAM hole_radius 2.9 MIN 1 MAX 8 SEM hole_radius
+PARAM pocket_width 23.08 MIN 8 MAX 40 EXPR height*0.374 SEM pocket_width
+PARAM thickness 11 MIN 3 MAX 25 SEM thickness
+PARAM width 60.2 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP plate_001 TARGET plate_001.top_face PARAMS depth=2.75 length=37.324 width=@pocket_width
+F hole_001 OP_HOLE_PATTERN SEM bolt_hole_pattern ROLE functional_feature DEP pocket_001 TARGET pocket_001.top_face PARAMS count=2 depth=THROUGH positions=[[-13.244,0],[14.448,7.404]] radius=@hole_radius
+F box_001 OP_BOX SEM clamp_jaw ROLE secondary_feature PARAMS height=@clamp_jaw_height length=@clamp_jaw_width width=@height
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[21.7,0,13.825]
+F mirror_001 OP_MIRROR SEM pattern ROLE pattern_feature DEP translate_001 PARAMS axis=X
+F join_001 OP_BOOLEAN_JOIN SEM mirrored_clamp_jaw ROLE secondary_feature DEP hole_001,mirror_001 TARGET hole_001,mirror_001
+END

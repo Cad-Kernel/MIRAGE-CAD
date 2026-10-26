@@ -1,0 +1,5 @@
+PART flluma_0079997 CAT prism_stock UNITS mm SEED 20340511
+PARAM height 11.27 MIN 3 MAX 28 SEM primitive_height
+PARAM radius 4.38 MIN 1.5 MAX 12 SEM primitive_radius
+F prism_001 OP_PRISM SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius sides=8
+END

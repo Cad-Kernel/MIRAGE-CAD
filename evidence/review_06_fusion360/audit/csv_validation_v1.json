@@ -1,0 +1,14 @@
+{
+  "status": "PASS_CSV_LITERAL_VALUES_AND_ROUNDTRIP",
+  "created_utc": "2026-10-22T18:23:24.124Z",
+  "rows": 400,
+  "columns": 67,
+  "master_order_unchanged": true,
+  "taxonomy_and_selection_fields_all_blank": true,
+  "null_is_blank_not_zero": true,
+  "source_sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+  "csv_sha256": "1e6788920f278f1f9c086ec61e1c3b40a623cfb6975e90811574fd02a6724ae4",
+  "builder_sha256": "fc32f2b9f6d4adede0fe4a9e017bf9107a301a1882963cc4c3e4313642de288b",
+  "engine": "@oai/artifact-tool",
+  "preview": "Worksheet ID columns only; not a CAD rendering or case selection"
+}

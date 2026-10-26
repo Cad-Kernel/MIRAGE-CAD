@@ -1,0 +1,20 @@
+params = Parameters()
+params.add('boss_height', 13.1, min=3.0, max=24.0, expression='thickness * 1.09', semantic_type='boss_height')
+params.add('boss_radius', 10.14, min=3.0, max=14.0, expression='hole_radius * 3.1', semantic_type='boss_radius')
+params.add('hole_radius', 2.73, min=0.8, max=5.0, semantic_type='hole_radius')
+params.add('height', 11.1, min=8.0, max=32.0, semantic_type='overall_height')
+params.add('pocket_width', 20.1, min=4.0, max=24.0, expression='width * 0.27', semantic_type='pocket_width')
+params.add('thickness', 10, min=3, max=25, semantic_type='thickness')
+params.add('width', 40.1, min=20.0, max=120.0, semantic_type='overall_width')
+
+part = Part('flluma_0003001', category='stepped_profile_mount', parameters=params, seed=20263515, sample_id='flluma_0003001', units='mm')
+plate = part.plate(name='base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+holes = part.hole_pattern(name='base_mounting_holes', target=plate.top_face(), radius=params['hole_radius'], depth='through', positions=[[-10.428, -2.775], [10.428, -2.775], [-10.428, 2.775], [10.428, 2.775]], semantic_type='mounting_hole')
+pocket = part.box(name='stepped_service_pocket', length=params['pocket_width'], width=params['boss_height'], height=params['boss_radius'], semantic_type='pocket')
+moved = part.translate(name='place_top_service_boss', target=pocket, offset=[14.55, 0.0, 5.45], semantic_type='placement')
+join = part.boolean_join(name='join_top_service_boss', target=holes, tool=moved, semantic_type='joined_boss')
+cylinder = part.cylinder(name='round_top_service_boss_seed', radius=params['boss_radius'], height=24.1, semantic_type='boss')
+moved_2 = part.translate(name='place_top_service_boss', target=cylinder, offset=[0.0, 0.0, -5.15], semantic_type='placement')
+pocket_2 = part.boolean_cut(name='cut_top_service_boss', target=join, tool=moved_2, semantic_type='pocket')
+
+__all__ = ['part']

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_LITERAL_ASSET_REGISTRY_AND_CSV_ROUNDTRIP",
+  "rows": 24,
+  "columns": 23,
+  "missing_prediction_paths": "blank for four historical hard failures, not zero or substituted geometry",
+  "source_sha256": "69a54dd2f368119e54408f0fbebcf3ff5673dcf1563e680726f30d6a1eda8841",
+  "csv_sha256": "4f050f850f8aa7bd9ce66b0b3fa9974ffb280ecae06790979b8833814ec2ee0f",
+  "builder_sha256": "23e54e5d600dd51b9a4d104e354edc1478f5c40e9e27dd4608402e9278e180a7",
+  "engine": "@oai/artifact-tool",
+  "original_candidate_csv_modified": false
+}

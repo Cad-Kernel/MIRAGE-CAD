@@ -1,0 +1,21 @@
+{
+  "case_id": "P06",
+  "side": "after",
+  "code_sha256": "a3eb0812822367a44eb0814a588c5e593a21197db217fc1fc8aa90952505df72",
+  "python": "3.11.11 (main, Jan 11 2026, 14:22:57) [MSC v.1950 64 bit (AMD64)]",
+  "started_utc": "2026-10-25T11:53:35.733600+00:00",
+  "additional_repair": false,
+  "historical_statistics_modified": false,
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": false,
+    "build_ok": false,
+    "solid_valid": false,
+    "step_export_ok": false
+  },
+  "status": "CURRENT_CPU_EXECUTION_FAILED_NO_SUBSTITUTION",
+  "failure_stage": "exec_ok",
+  "error": "PartError: topology reference 'join_002:top_face:323af5d41048' did not resolve any face",
+  "traceback": "Traceback (most recent call last):\n  File \"__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\support\\export_parameter_one.py\", line 38, in main\n    exec(compile(text,str(code),\"exec\"),ns)\n  File \"__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\after.py\", line 20, in <module>\n    holes = part.hole_pattern(name='pipe_flange_bolt_holes', target=join_2.top_face(), radius=params['hole_radius'], depth='through', positions=[[-3.62, 0.0], [3.62, 0.0]], semantic_type='bolt_hole_pattern')\n                                                                    ^^^^^^^^^^^^^^^^^\n  File \"__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\part.py\", line 610, in top_face\n    return self.part._make_topology_reference(self, \"face\", \"top_face\", \">Z |Z\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\part.py\", line 832, in _make_topology_reference\n    signature = self._selection_signature(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\part.py\", line 902, in _selection_signature\n    raise PartError(f\"topology reference {reference_id!r} did not resolve any {kind}\")\nflluma.api.part.PartError: topology reference 'join_002:top_face:323af5d41048' did not resolve any face\n",
+  "completed_utc": "2026-10-25T11:53:37.975264+00:00"
+}

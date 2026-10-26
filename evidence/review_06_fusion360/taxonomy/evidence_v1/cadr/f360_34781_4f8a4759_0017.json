@@ -1,0 +1,130 @@
+{
+  "sample_id": "f360_34781_4f8a4759_0017",
+  "method": "cadr",
+  "classification": {
+    "primary_outcome": "EXECUTION_FAILURE",
+    "verified_failure_class": "EXECUTION_FAILURE",
+    "reason_subtype": "CADQUERY_LINE_EDGE_CONSTRUCTION_REPORTED",
+    "reason_detail": null,
+    "classification_rule": "CADR_NATIVE_EXECUTION_RESULT",
+    "reported_error": "StdFail_NotDone: BRep_API: command not done",
+    "native_traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 818, in segment\n    val = Edge.makeLine(Vector(p1), Vector(p2))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2359, in makeLine\n    BRepBuilderAPI_MakeEdge(Vector(v1).toPnt(), Vector(v2).toPnt()).Edge()\nOCP.StdFail.StdFail_NotDone: BRep_API: command not done\n",
+    "cd_scoreable": false,
+    "iou_scoreable": false,
+    "CD": null,
+    "IoU": null,
+    "iou_outcome": "UNAVAILABLE_AFTER_PRIMARY_FAILURE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 50,
+    "json_pointer": "/rows/50/native_records/cadr"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_34781_4f8a4759_0017\\run_manifest.json",
+      "sha256": "711fa93c0d32b8b3b49d917832524e1c912cd3848bac2c4d73ec69ac603c3875",
+      "bytes": 3809
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_34781_4f8a4759_0017\\execution_result.json",
+      "sha256": "16c01078bf84cfa62979acfbd5a574d93afd3b0fa68aa7bf4abb9915e2675e5c",
+      "bytes": 1078
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_34781_4f8a4759_0017\\execution_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_34781_4f8a4759_0017\\execution_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "physical_JSONL_locators": {},
+  "original_native_record": {
+    "sample_id": "f360_34781_4f8a4759_0017",
+    "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/34781_4f8a4759_0017.step",
+    "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+    "pipeline_status": "EXECUTION_FAILED",
+    "terminal": true,
+    "cd_status": null,
+    "iou_status": null,
+    "input": {
+      "source_step_sha256": "3e795aa4b40d0ddf736e847c09698e74fcf8141dd547e9ce3d964907281f541c",
+      "alpha": 1e-06,
+      "angular_deflection": 0.3,
+      "canonical_mesh_sha256": "76d333f3cd49aee595ed60f5ad239b6382eed23931530c2e6956546c58fa9269/d5eed2596138c0dc6fe658990f13a4b91c8563376afbfcd89d07fac8b8e86721",
+      "mesh_vertex_count": 134,
+      "mesh_triangle_count": 264,
+      "mesh_watertight": true,
+      "bbox_before_normalization": [
+        558.0,
+        0.999725185109816,
+        0.9994504457428558
+      ],
+      "normalization_target_extent": 2.0,
+      "normalization_scale": 0.0035842293906810036,
+      "sampling_seed": 0,
+      "n_pre_points": 8192,
+      "cloud_8192_sha256": "f9d55eb709f4c46a0e72fc805cdf330324c4a4b29dfa6cc98f94fbf1b24ad60e",
+      "fps_indices_sha256": "1a1fc700df37458db5db279fe587ea5d05a7fea13d0437972fbf5a65873c15d9",
+      "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+      "cloud_256_sha256": "c6a6d14385866d3eafb872d1fad390e883894a90ee9a54e39378b566b1d16462"
+    },
+    "model": {
+      "checkpoint": "filapro/cad-recode-v1.5",
+      "tokenizer": "Qwen/Qwen2-1.5B",
+      "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+      "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+      "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+      "torch": "2.7.0+cu128",
+      "device": "cuda",
+      "device_capability": "sm_120",
+      "n_parameters": 1543794176,
+      "generation": {
+        "strategy": "greedy",
+        "num_candidates": 1,
+        "max_new_tokens": 768
+      },
+      "transformers": "4.47.1"
+    },
+    "generation": {
+      "seconds": 1.08,
+      "raw_chars": 2754,
+      "raw_sha256": "f3d89ee491675bd812432fc0ecd75ca044c66296274584282e6fa35c91bbb7d3"
+    },
+    "extraction_status": "ok",
+    "extracted_code_sha256": "dab284881432a5243b00f43bf18ac4ce3ee7681737d6d7bcf4ed082560c9c604",
+    "extracted_code_lines": 3,
+    "unsafe_patterns_found": [],
+    "execution": {
+      "timeout_s": 60,
+      "wall_seconds": 0.83,
+      "timed_out": false,
+      "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_34781_4f8a4759_0017",
+      "return_code": 1,
+      "runner_result": {
+        "status": "EXECUTION_FAILED",
+        "error": "StdFail_NotDone: BRep_API: command not done",
+        "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 818, in segment\n    val = Edge.makeLine(Vector(p1), Vector(p2))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2359, in makeLine\n    BRepBuilderAPI_MakeEdge(Vector(v1).toPnt(), Vector(v2).toPnt()).Edge()\nOCP.StdFail.StdFail_NotDone: BRep_API: command not done\n",
+        "generated_stdout": ""
+      }
+    }
+  },
+  "original_gate": null,
+  "original_export_record": null,
+  "original_CADR_execution_texts": {
+    "execution_stdout.txt": "",
+    "execution_stderr.txt": ""
+  },
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

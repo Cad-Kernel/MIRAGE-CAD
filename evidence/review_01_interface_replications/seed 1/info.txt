@@ -1,0 +1,224 @@
+可以，先登记是对的。请在这里创建文件夹：
+__EVIDENCE_SOURCE_ROOT__\01\seed 1
+里面放 3 个文件：
+01_seed1_closed_record.md
+02_four_seed_replication_registration.md
+03_paper_revision_mapping.md
+第 1 个文件：01_seed1_closed_record.md
+# Seed 1 Closed Record -- Frozen A1E/B2P Comparison
+
+Date: 2026-09-26
+
+## Status
+
+```yaml
+Training: COMPLETE
+Prediction: COMPLETE
+Gate evaluation: COMPLETE
+Geometry scoring: COMPLETE
+Seed status: CLOSED
+Seed 1 Result
+Arm	n	Build	STEP export	Scored	Median CD	Median F@1	Unconditional mean F@1
+A1E_s1	500	66.0%	65.0%	323 / 500	2.745	19.87%	12.54%
+B2P_s1	500	92.4%	91.6%	456 / 500	2.176	20.63%	19.33%
+
+
+Paired geometry:
+Joint n	A1E paired CD	B2P paired CD	A1E paired F@1	B2P paired F@1	A1E closer	Sign-test p
+301	2.745	2.241	19.97%	21.97%	105 / 301	1.732e-07
+
+
+Conclusion
+Seed 1 supports B2P on both coverage and geometry. B2P builds/exports more programs, scores more samples, has better unconditional F@1, and is better on the jointly scoreable subset.
+Do not promote this to a method-level claim yet. It is one strong replicate.
+
+**第 2 个文件：`02_four_seed_replication_registration.md`**
+
+```markdown
+# Four-Seed Frozen Replication Registration
+
+Date registered: 2026-09-26
+
+This plan is fixed before running seed 2.
+
+## Objective
+
+Assess training-seed stability of the exact-match A1E vs B2P comparison.
+
+## Registered Seeds
+
+```yaml
+seeds: [1, 2, 3, 4]
+Seed	Status
+1	CLOSED
+2	PLANNED
+3	PLANNED
+4	PLANNED
+
+
+Fixed Protocol
+- Modality: STEP
+- A1E rows: 25,000
+- B2P rows: 25,000
+- Evaluation slice: same 500 STEP rows
+- Updates: 3125 vs 3125
+- Epochs: 1
+- Grad accumulation: 8
+- Checkpoint: final
+- Decoding: same settings
+- Repair: false
+- Evaluator: same gate and geometry scoring setup
+Execution Rule
+Run each seed to closure before starting the next one:
+seed 2: training -> prediction -> gate -> geometry -> summary -> close
+seed 3: training -> prediction -> gate -> geometry -> summary -> close
+seed 4: training -> prediction -> gate -> geometry -> summary -> close
+Do not change the protocol after seeing seed 2.
+
+**第 3 个文件：`03_paper_revision_mapping.md`**
+
+```markdown
+# Paper Revision Mapping
+
+## Abstract
+
+Later add:
+
+> We repeat the exact-match continuous-vs-textual comparison across four training seeds, using identical update counts, stopping rules, checkpoint selection, decoding, and no repair.
+
+Only claim stability if seeds 2-4 support it.
+
+## Method / Protocol
+
+Add frozen protocol details:
+
+- 25k rows
+- same 500 STEP slice
+- 3125 vs 3125 updates
+- final checkpoint
+- same decoding
+- no repair
+- seeds 1, 2, 3, 4
+
+Also state:
+
+> We report seed-level results because test-sample bootstrap does not estimate training-run variance.
+
+## Results
+
+Add a per-seed table:
+
+| Seed | A1E Build | B2P Build | A1E Export | B2P Export | Joint n | A1E CD | B2P CD | A1E F@1 | B2P F@1 | A1E uncond F@1 | B2P uncond F@1 |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 66.0 | 92.4 | 65.0 | 91.6 | 301 | 2.745 | 2.241 | 19.97 | 21.97 | 12.54 | 19.33 |
+| 2 | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
+| 3 | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
+| 4 | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
+
+## Discussion
+
+If seeds 2-4 support seed 1:
+
+> The textual-plan pathway maintained high coverage across replicated runs, while the continuous pathway showed larger training-seed variability.
+
+If not:
+
+> The seed-1 advantage was not stable, confirming that training-seed variance is material.
+
+## Response Letter
+
+Reviewer 1:
+- We fixed update/checkpoint mismatch.
+- We ran registered seeds [1,2,3,4].
+- We report seed-level gate and geometry results.
+
+Reviewer 2:
+- We separate test-sample uncertainty from training-run uncertainty.
+- We no longer rely on bootstrap as seed-variance evidence.
+
+Reviewer 4:
+- We report geometry, not only Build.
+- Seed 1 includes CD/F@1 and unconditional F@1.
+
+## Do Not Write Yet
+
+Avoid:
+
+- “B2P is more stable than A1E.”
+- “Textualization improves Build by 26.4 pp.”
+- “The textual-plan interface is method-level superior.”
+
+Safe current statement:
+
+> Seed 1 is a strong replicate-level result. The registered four-seed replication will determine whether this effect is stable across training seeds.
+然后下一步就可以启动 seed 2：
+cd ~/workspace/MIRAGE/src
+SEED=2 bash training_25k/cag_run_frozen_a1e_b2p_seed.sh
+
+
+4:13 PM
+
+
+
+
+
+
+
+
+直接把上面的内容 写到我的 文件夹__EVIDENCE_SOURCE_ROOT__\01\seed 1 里面不可以吗 
+
+
+
+
+
+
+
+4:16 PM
+
+
+
+
+
+
+Worked for 1m 45s
+
+
+
+可以，当然可以。问题不是“不可以写”，而是我这边刚刚实际尝试写入时，Codex 本地 runner 连续报：
+spawn_ready
+所以我现在没有成功把文件写进去。我不能假装已经写好了。
+你指定的目标是对的：
+__EVIDENCE_SOURCE_ROOT__\01\seed 1
+应该创建这 3 个文件：
+01_seed1_closed_record.md
+02_four_seed_replication_registration.md
+03_paper_revision_mapping.md
+我建议你先手动建一下；等我这边 runner 恢复，我可以再帮你检查和补全。现在最重要的登记内容就是我上一条给你的三段 Markdown，直接分别保存进去即可。
+如果你愿意，也可以把这三个空文件先建好，然后告诉我“文件已建好”，我再尝试逐个追加内容。刚才失败的是创建/写入进程启动，不是内容本身有问题。
+
+
+4:18 PM
+
+
+
+
+
+
+
+
+文件已经建好了 写入
+
+
+
+
+
+
+
+4:19 PM
+
+
+
+
+
+
+Worked for 2m 24s

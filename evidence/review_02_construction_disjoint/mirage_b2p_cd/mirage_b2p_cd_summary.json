@@ -1,0 +1,296 @@
+{
+  "created_utc": "2026-10-05T09:20:20Z_outputs_recorded_after_windows_gate_geometry",
+  "purpose": "construction-disjoint STEP MIRAGE textual-plan pathway result",
+  "arm": "B2P_CD",
+  "protocol": "construction_disjoint_step_v1",
+  "status": {
+    "training": "COMPLETE",
+    "prediction": "COMPLETE",
+    "gate_evaluation": "COMPLETE",
+    "geometry_scoring": "COMPLETE",
+    "review_record": "COMPLETE"
+  },
+  "paths": {
+    "review_package": "__EVIDENCE_SOURCE_ROOT__\\02\\mirage_b2p_cd",
+    "windows_training_script": "__DEV_ROOT__\\src\\training_25k\\cag_run_construction_disjoint_step_b2p_training.sh",
+    "wsl_training_script": "~/workspace/MIRAGE/src/training_25k/cag_run_construction_disjoint_step_b2p_training.sh",
+    "wsl_data": "~/workspace/MIRAGE/src/data/construction_disjoint_step_v1",
+    "wsl_prediction": "~/workspace/MIRAGE/src/outputs/construction_disjoint_step_v1/gen_code_step_B2P_CD.jsonl",
+    "wsl_geometry_input": "~/workspace/MIRAGE/src/outputs/construction_disjoint_step_v1/geom_input_step_B2P_CD.jsonl",
+    "windows_exec_scratch": "__DEV_ROOT__\\scratch\\exec_cd_step_B2P_CD",
+    "windows_geom_scratch": "__DEV_ROOT__\\scratch\\geom_cd_step_B2P_CD",
+    "eval_execution_script": "__DEV_ROOT__\\src\\scripts\\evaluate_execution.ps1",
+    "eval_geometry_script": "__DEV_ROOT__\\src\\scripts\\evaluate_geometry_nbest.ps1"
+  },
+  "metadata": {
+    "arm": "B2P_CD",
+    "description": "Construction-disjoint STEP MIRAGE textual-plan pathway",
+    "data": "data/construction_disjoint_step_v1",
+    "alignment": "outputs/align_25k_cd_step",
+    "prior": "outputs/prior_step_25k_cd_step",
+    "lora_ir": "outputs/lora_ir_25k_cd_step",
+    "code_gt": "outputs/qwen25_coder_1_5b_program_25k_cd_step",
+    "code_stage4b": "outputs/qwen25_coder_1_5b_program_25k_cd_step_stage4b",
+    "repair": false,
+    "test_limit": 500,
+    "baseline_first_guard": "0"
+  },
+  "training_reports": {
+    "soft_prefix_ir": {
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "modalities": [
+        "step"
+      ],
+      "init_lora_ir_dir": null,
+      "train_rows": 25000,
+      "val_rows": 2500,
+      "prefix_len": 4,
+      "max_length": 1536,
+      "soft_prefix_eval": {
+        "normal_loss": 1.1795750574588775,
+        "zero_loss": 1.1916718115091325,
+        "shuffled_loss": 1.1795750574588775,
+        "shuffled_actually_permuted": false,
+        "shuffled_loss_note": "VACUOUS: the in-batch permutation never ran (eval batch size 1), so shuffled_loss is normal_loss by construction and says nothing about whether the prefix is read. The generation-level prefix ablation is the evidence for that."
+      },
+      "output_dir": "outputs/lora_ir_25k_cd_step"
+    },
+    "code_gt": {
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "target": "program",
+      "seed": 42,
+      "train_rows": 25000,
+      "val_rows": 2500,
+      "max_length": 1536,
+      "output_dir": "outputs/qwen25_coder_1_5b_program_25k_cd_step"
+    },
+    "code_stage4b": {
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "target": "program",
+      "seed": 42,
+      "train_rows": 3003,
+      "val_rows": 2500,
+      "max_length": 1536,
+      "output_dir": "outputs/qwen25_coder_1_5b_program_25k_cd_step_stage4b"
+    }
+  },
+  "repair_log": {
+    "counts": {
+      "ADD": 0,
+      "CUT": 0,
+      "gated_out": 4,
+      "conflict_skip": 0,
+      "ambiguous_skip": 0
+    },
+    "touched_samples": [],
+    "entries": [
+      {
+        "sample_id": "flluma_0007058",
+        "feature_id": "cut_001",
+        "old_op": "OP_BOOLEAN_CUT",
+        "new_op": null,
+        "direction": null,
+        "reason": "gated_out",
+        "line_before": "F cut_001 OP_BOOLEAN_CUT SEM boss ROLE functional_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1",
+        "line_after": "F cut_001 OP_BOOLEAN_CUT SEM boss ROLE functional_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1"
+      },
+      {
+        "sample_id": "flluma_0014283",
+        "feature_id": "cut_001",
+        "old_op": "OP_BOOLEAN_CUT",
+        "new_op": null,
+        "direction": null,
+        "reason": "gated_out",
+        "line_before": "F cut_001 OP_BOOLEAN_CUT SEM internal_cut ROLE secondary_feature DEP box_001,box_003 PARAMS operation=cut",
+        "line_after": "F cut_001 OP_BOOLEAN_CUT SEM internal_cut ROLE secondary_feature DEP box_001,box_003 PARAMS operation=cut"
+      },
+      {
+        "sample_id": "flluma_0020378",
+        "feature_id": "cut_001",
+        "old_op": "OP_BOOLEAN_CUT",
+        "new_op": null,
+        "direction": null,
+        "reason": "gated_out",
+        "line_before": "F cut_001 OP_BOOLEAN_CUT SEM threaded_slot ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002",
+        "line_after": "F cut_001 OP_BOOLEAN_CUT SEM threaded_slot ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002"
+      },
+      {
+        "sample_id": "flluma_0034652",
+        "feature_id": "cut_001",
+        "old_op": "OP_BOOLEAN_CUT",
+        "new_op": null,
+        "direction": null,
+        "reason": "gated_out",
+        "line_before": "F cut_001 OP_BOOLEAN_CUT SEM pocket ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1",
+        "line_after": "F cut_001 OP_BOOLEAN_CUT SEM pocket ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1"
+      }
+    ]
+  },
+  "gate": {
+    "input_jsonl": "__TEMP_RUN_ROOT__\\exec_eval\\exec_cd_step_B2P_CD\\input.jsonl",
+    "rows": 500,
+    "runtime_seconds": 17.851,
+    "syntax_ok_rate": 1.0,
+    "exec_ok_rate": 0.82,
+    "build_ok_rate": 0.82,
+    "solid_valid_rate": 0.82,
+    "step_export_ok_rate": 0.82,
+    "syntax_ok_count": 500,
+    "exec_ok_count": 410,
+    "build_ok_count": 410,
+    "solid_valid_count": 410,
+    "step_export_ok_count": 410,
+    "kernel_crash_count": 0
+  },
+  "execution_failure_summary": {
+    "failures": 90,
+    "categories": {
+      "Part.bossed_plate missing hole args": 22,
+      "Part.wedge unexpected keyword width": 50,
+      "Part.clamp_pad_plate unexpected chamfer_distance": 1,
+      "missing Part helper/method": 5,
+      "Part.linear_pattern unexpected keyword": 2,
+      "missing height key": 1,
+      "boss_center shape error": 2,
+      "ParameterRef type misuse": 2,
+      "exec error: Part.mirrored_lug_plate() missing 1 required keyword-only argument: 'hole_radius'": 1,
+      "Sketch name/API misuse": 1,
+      "feature-handle target error": 1,
+      "unsupported sketch_on_face profile": 1,
+      "sketch_on_face unexpected keyword": 1
+    },
+    "examples": {
+      "Part.bossed_plate missing hole args": "exec error: Part.bossed_plate() missing 2 required keyword-only arguments: 'hole_radius' and 'hole_positions'",
+      "Part.wedge unexpected keyword width": "exec error: Part.wedge() got an unexpected keyword argument 'width'",
+      "Part.clamp_pad_plate unexpected chamfer_distance": "exec error: Part.clamp_pad_plate() got an unexpected keyword argument 'chamfer_distance'",
+      "missing Part helper/method": "exec error: 'Part' object has no attribute 'rectangular_rib_profile'",
+      "Part.linear_pattern unexpected keyword": "exec error: Part.linear_pattern() got an unexpected keyword argument 'offset'",
+      "missing height key": "exec error: 'height'",
+      "boss_center shape error": "exec error: boss_center must be a 2D sequence",
+      "ParameterRef type misuse": "exec error: unsupported operand type(s) for *: 'ParameterRef' and 'float'",
+      "exec error: Part.mirrored_lug_plate() missing 1 required keyword-only argument: 'hole_radius'": "exec error: Part.mirrored_lug_plate() missing 1 required keyword-only argument: 'hole_radius'",
+      "Sketch name/API misuse": "exec error: name 'Sketch' is not defined",
+      "feature-handle target error": "exec error: target must be a FeatureHandle",
+      "unsupported sketch_on_face profile": "exec error: unsupported sketch_on_face profile [[-14.18, -8.2], [-14.18, 8.2], [14.18, 8.2], [14.18, -8.2]]",
+      "sketch_on_face unexpected keyword": "exec error: Part.sketch_on_face() got an unexpected keyword argument 'sketch'"
+    }
+  },
+  "geometry": {
+    "rows": 500,
+    "has_target": 500,
+    "gate_ok_candidates": 410,
+    "scoreable": 410,
+    "unscoreable": 90,
+    "cd": {
+      "n": 410,
+      "min": 0.10143143646451966,
+      "q25": 2.350638250604856,
+      "median": 4.409928410527609,
+      "mean": 5.769056340747087,
+      "q75": 7.968130811241014,
+      "max": 68.09219575577654,
+      "sd_population": 5.331509389646838
+    },
+    "f_at_1pct": {
+      "n": 410,
+      "min": 0.0,
+      "q25": 0.009380139802631578,
+      "median": 0.027308872767857144,
+      "mean": 0.03122076613473148,
+      "q75": 0.04714174041223689,
+      "max": 0.13902138157894736,
+      "sd_population": 0.02474710725252913
+    },
+    "bbox_err": {
+      "n": 410,
+      "min": 4.0363564342745427e-11,
+      "q25": 0.0792463020917203,
+      "median": 0.3232082152694501,
+      "mean": 1.6405549264523733,
+      "q75": 3.3800388019281566,
+      "max": 11.466667811333332,
+      "sd_population": 2.02106278631356
+    },
+    "unconditional_f_at_1pct_mean_failure_as_zero": 0.025601028230479814,
+    "unconditional_f_at_1pct_median_failure_as_zero": 0.01805320945945946
+  },
+  "compare_to_nn_descriptor_baseline": {
+    "nn_gate_build_rate": 1.0,
+    "b2p_gate_build_rate": 0.82,
+    "nn_scoreable": 500,
+    "b2p_scoreable": 410,
+    "nn_median_cd": 6.492554284974444,
+    "b2p_median_cd": 4.409928410527609,
+    "delta_median_cd_b2p_minus_nn": -2.082625874446835,
+    "nn_median_f_at_1pct": 0.011637369791666666,
+    "b2p_median_f_at_1pct": 0.027308872767857144,
+    "delta_median_f_b2p_minus_nn": 0.01567150297619048,
+    "nn_unconditional_mean_f_at_1pct": 0.01838105238740643,
+    "b2p_unconditional_mean_f_at_1pct": 0.025601028230479814,
+    "delta_unconditional_mean_f_at_1pct": 0.007219975843073385
+  },
+  "paired_with_nn_on_b2p_scoreable_subset": {
+    "paired_rows": 410,
+    "cd_delta_b2p_minus_nn": {
+      "n": 410,
+      "min": -82.03181232544857,
+      "q25": -4.50170487102476,
+      "median": -0.8857744492659907,
+      "mean": -2.6877994699136334,
+      "q75": 1.7651177030355574,
+      "max": 54.53191137914092,
+      "sd_population": 10.767229508902828
+    },
+    "f_delta_b2p_minus_nn": {
+      "n": 410,
+      "min": -0.07709901391006097,
+      "q25": -0.0038851351351351345,
+      "median": 0.007307493995405179,
+      "mean": 0.01394540308457751,
+      "q75": 0.030599380671337904,
+      "max": 0.12493438612099643,
+      "sd_population": 0.027056235220124528
+    },
+    "cd_wins_b2p_lower": 242,
+    "cd_losses_b2p_higher": 168,
+    "cd_ties": 0,
+    "cd_sign_test_two_sided": 0.0003013854053005725,
+    "f_wins_b2p_higher": 270,
+    "f_losses_b2p_lower": 137,
+    "f_ties": 3,
+    "f_sign_test_two_sided": 4.07685690721975e-11
+  },
+  "file_hashes_sha256": {
+    "B2P_CD_metadata.json": "3018fd0bcbbe8c40e2629d640cf5f41aace53c160f010e48a4442b9aa09721e1",
+    "execution_rows_B2P_CD.jsonl": "47bcf952fb7dfbeb0349a1213772c8f214c20c8b7a8c92ea4d5f1e893e2a080f",
+    "execution_summary_B2P_CD.json": "5affc469a7ebe8489a5e8d2140048c78205e4aa2d22ea2b285a8976a4f3dbbfb",
+    "gen_code_step_B2P_CD.jsonl": "6d35403bafa2e194afbcdf09fec3d7e95fc5db58b17193de150fa1a301e4201a",
+    "geometry_nbest_rows_B2P_CD.jsonl": "0eaa053cc6a4a663c87a5bbf88272ab63b0d8f4c52e24a99c467132b2a271e71",
+    "geom_input_step_B2P_CD.jsonl": "5f1e363939d63e9b389cecd53cc505579dc5c1eadaeb245b13552860ec0c6063",
+    "geom_input_step_B2P_CD_manifest.json": "89ecb217f5887e347ef224a63fad9207e07dd09b6cc8d24801eefe4b9d9a20c3",
+    "predicted_ir_test_step.jsonl": "79bcdb87a2b5dfda375cce18b8d6bffe23ae2c97cb6605851549e05dbf1c2107",
+    "predicted_ir_test_step_p1a.jsonl": "79bcdb87a2b5dfda375cce18b8d6bffe23ae2c97cb6605851549e05dbf1c2107",
+    "repair_face_extrude_alias_log_step_cd.json": "5f7802910c945e216049ee193fa48c83ad0a00e4d3df695d31324697507667e1",
+    "soft_prefix_training_report.json": "737b7fab3357ef337e16381c0d98dd0b3a200ea87b35e99cc7380b6f8cf64e36",
+    "training_report_code_gt.json": "6bca1a4ee7310a04c0f7bbb055952611b4515a523c4b1d5f848e9fd86e893fb1",
+    "training_report_code_stage4b.json": "5d48e6d3a6702df814bb687688975d378b31ab44d14a455680d0271b59520ab7"
+  },
+  "interpretation_guardrails": [
+    "This is a strict in-corpus construction-signature-disjoint STEP diagnostic, not an external CAD generalization benchmark.",
+    "The test set contains only four held-out operation-count-1 signatures; keep this caveat with all claims.",
+    "NN descriptor baseline has perfect executable coverage because it copies valid train programs; its low geometry is the meaningful baseline comparison.",
+    "B2P has lower coverage than NN retrieval but substantially better geometry among successful/scoreable outputs and higher unconditional mean F@1 despite 90 failures."
+  ],
+  "script_hashes_sha256": {
+    "windows_training_script": "7387a403b18204ed07cf688b56ad487b0741fa058dc4f7b2c85c47577c0962eb",
+    "wsl_training_script": "7387a403b18204ed07cf688b56ad487b0741fa058dc4f7b2c85c47577c0962eb"
+  },
+  "wsl_checkpoint_hashes_sha256": {
+    "outputs/align_25k_cd_step/best.pt": "1573ebfd1a6b7547ef40a047aae61839ff0468162a8fe5570d46f45a7ceb7f48",
+    "outputs/prior_step_25k_cd_step/best.pt": "956cd140627bcc6f37c4bc0bc047c37f9bec6f952425461e59706f5d792cca4e",
+    "outputs/lora_ir_25k_cd_step/adapter_model.safetensors": "d2c858a3b5cb25075dc48fd05fbc53fc7cecc15e626ee1e5e1cda2d6b8d63446",
+    "outputs/lora_ir_25k_cd_step/soft_prefix.pt": "979ee5bc1d41ad8d651d12cdb4ab6ad3be8c5fe7b537ec856b7a78b4d18fae99",
+    "outputs/qwen25_coder_1_5b_program_25k_cd_step/adapter_model.safetensors": "22af8bf78c0689c01e370a8de0f9c4f5278a2fdef867129db63a5a32f7b3f368",
+    "outputs/qwen25_coder_1_5b_program_25k_cd_step_stage4b/adapter_model.safetensors": "3b8057998790a34e55e48b14bdf8e4a06414ce3bc041d1127725c61cb4f98f91"
+  }
+}

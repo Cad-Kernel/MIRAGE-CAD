@@ -1,0 +1,16 @@
+{
+  "status": "LEXICAL_FALSE_POSITIVE_DEMONSTRATED",
+  "evaluator_sha256": "ff442981f454864da345bb230d2cd5944f685cf021d66d2ed9785629b3720522",
+  "source_pattern_present": true,
+  "synthetic_example": "params.add('hole_radius', 1.55)\n# extrude_cut is only a comment\npart.extrude_add(length=2)\n",
+  "published_regex_matches": [
+    "hole_radius",
+    "extrude_cut",
+    "extrude_add"
+  ],
+  "ast_actual_call_names": [
+    "add",
+    "extrude_add"
+  ],
+  "note": "Diagnostic only. No replacement metric applied to historical results; alias folding/add-cut semantics require separate definition."
+}

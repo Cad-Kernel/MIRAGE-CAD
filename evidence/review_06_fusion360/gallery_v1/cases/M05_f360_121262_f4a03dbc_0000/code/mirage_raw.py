@@ -1,0 +1,23 @@
+params = Parameters()
+params.add('boss_height', 13.1, min=3.0, max=24.0, expression='thickness * 1.01', semantic_type='boss_height')
+params.add('boss_radius', 10.11, min=4.0, max=16.0, expression='hole_radius * 2.7', semantic_type='boss_radius')
+params.add('fillet_radius', 0.9, min=0.1, max=2.0, semantic_type='fillet_radius')
+params.add('height', 13.5, min=12, max=80, semantic_type='overall_height')
+params.add('hole_offset_y', 2.76, min=4.0, max=45.0, expression='height * 0.32', semantic_type='hole_spacing')
+params.add('hole_radius', 3.54, min=2, max=14, semantic_type='hole_radius')
+params.add('offset_y', 1.8, min=2.0, max=35.0, expression='height * 0.138', semantic_type='pocket_depth')
+params.add('pocket_length', 18.1, min=12.0, max=78.0, expression='width * 0.27', semantic_type='pocket_length')
+params.add('pocket_width', 36.1, min=10.0, max=50.0, expression='height * 0.268', semantic_type='pocket_width')
+params.add('thickness', 10, min=3, max=25, semantic_type='thickness')
+params.add('width', 22.4, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0005600', category='offset_hole_mount', parameters=params, seed=20266114, sample_id='flluma_0005600', units='mm')
+plate = part.plate(name='base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+cylinder = part.cylinder(name='center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')
+moved = part.translate(name='place_center_boss', target=cylinder, offset=[0.0, 0.0, 10.5], semantic_type='placement')
+join = part.boolean_join(name='join_center_boss', target=plate, tool=moved, semantic_type='joined_boss')
+holes = part.hole_pattern(name='offset_mounting_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[-2.76, -1.8], [2.76, -1.8]], semantic_type='mounting_hole')
+pocket = part.rectangular_pocket(name='boss_recess', target=holes.top_face(), length=params['pocket_length'], width=params['pocket_width'], depth=2.6, semantic_type='pocket')
+fillet = part.fillet(name='mounting_edge_break', target=pocket.top_outer_edges(), radius=params['fillet_radius'], semantic_type='edge_break')
+
+__all__ = ['part']

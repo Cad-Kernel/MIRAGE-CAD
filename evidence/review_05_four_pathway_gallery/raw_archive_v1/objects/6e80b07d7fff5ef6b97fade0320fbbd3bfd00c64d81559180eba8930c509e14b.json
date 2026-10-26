@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0094365",
+  "part_name": "flluma_0094365",
+  "category": "linear_ribbed_heat_sink_mount",
+  "seed": 20354879,
+  "units": "mm",
+  "parameters": {
+    "height": {
+      "value": 56.8,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_offset_x": {
+      "value": 14.67,
+      "min": 4.0,
+      "max": 44.0,
+      "expression": "width * 0.28",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_offset_y": {
+      "value": 14.2,
+      "min": 3.0,
+      "max": 32.0,
+      "expression": "height * 0.25",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_radius": {
+      "value": 1.79,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "rib_count": {
+      "value": 7,
+      "min": 2,
+      "max": 10,
+      "semantic_type": "pin_row_count"
+    },
+    "rib_height": {
+      "value": 12.42,
+      "min": 3.0,
+      "max": 24.0,
+      "expression": "thickness * 1.38",
+      "semantic_type": "rib_height"
+    },
+    "rib_step": {
+      "value": 8.39,
+      "min": 4.0,
+      "max": 24.0,
+      "semantic_type": "rib_offset"
+    },
+    "rib_width": {
+      "value": 2.05,
+      "min": 0.8,
+      "max": 5.0,
+      "semantic_type": "rib_width"
+    },
+    "thickness": {
+      "value": 9,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 52.4,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "plate_001",
+      "name": "ribbed_mount_base",
+      "type": "Plate",
+      "category": "additive",
+      "semantic_type": "base_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 52.4
+        },
+        "height": {
+          "parameter": "height",
+          "value": 56.8
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 9
+        },
+        "centered": true,
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "width": {
+              "parameter": "width",
+              "value": 52.4
+            },
+            "height": {
+              "parameter": "height",
+              "value": 56.8
+            },
+            "centered": true
+          },
+          {
+            "op": "Extrude",
+            "height": {
+              "parameter": "thickness",
+              "value": 9
+            },
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "box_001",
+      "name": "heat_sink_rib_seed",
+      "type": "Box",
+      "category": "additive",
+      "semantic_type": "rib",
+      "parameters": {
+        "length": {
+          "parameter": "rib_width",
+          "value": 2.05
+        },
+        "width": {
+          "parameter": "height",
+          "value": 56.8
+        },
+        "height": {
+          "parameter": "rib_height",
+          "value": 12.42
+        },
+        "centered": true
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "translate_001",
+      "name": "place_first_heat_sink_rib",
+      "type": "Translate",
+      "category": "modification",
+      "semantic_type": "placement",
+      "parameters": {
+        "offset": [
+          -25.175,
+          0.0,
+          10.510000000000002
+        ]
+      },
+      "dependencies": [
+        "box_001"
+      ],
+      "rebuild_order": 3
+    },
+    {
+      "id": "linear_pattern_001",
+      "name": "linear_heat_sink_rib_array",
+      "type": "LinearPattern",
+      "category": "pattern",
+      "semantic_type": "linear_pattern",
+      "parameters": {
+        "count": 7,
+        "step": [
+          {
+            "parameter": "rib_step",
+            "value": 8.39
+          },
+          0.0,
+          0.0
+        ]
+      },
+      "dependencies": [
+        "translate_001"
+      ],
+      "rebuild_order": 4
+    },
+    {
+      "id": "join_001",
+      "name": "join_heat_sink_ribs",
+      "type": "BooleanJoin",
+      "category": "additive",
+      "semantic_type": "support_rib",
+      "parameters": {},
+      "dependencies": [
+        "plate_001",
+        "linear_pattern_001"
+      ],
+      "topology_references": {
+        "target": {
+          "feature_id": "plate_001"
+        },
+        "tool": {
+          "feature_id": "linear_pattern_001"
+        }
+      },
+      "rebuild_order": 5
+    },
+    {
+      "id": "hole_001",
+      "name": "ribbed_mount_corner_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "mounting_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 4,
+        "positions": [
+          [
+            -14.67,
+            -14.2
+          ],
+          [
+            14.67,
+            -14.2
+          ],
+          [
+            -14.67,
+            14.2
+          ],
+          [
+            14.67,
+            14.2
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 1.79
+        }
+      },
+      "dependencies": [
+        "join_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "join_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "join_001:top_face:b9ce48e7f7b9"
+        }
+      },
+      "rebuild_order": 6
+    }
+  ]
+}

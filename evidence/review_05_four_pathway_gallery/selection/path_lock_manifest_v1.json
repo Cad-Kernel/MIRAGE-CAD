@@ -1,0 +1,1967 @@
+{
+  "created_utc": "2026-10-22T17:32:09.626646+00:00",
+  "status": "CANDIDATES_AND_EXISTING_PATHS_LOCKED_V1",
+  "records": 24,
+  "main_candidates": 8,
+  "appendix_candidates": 16,
+  "unique_targets": 22,
+  "case_ids": [
+    "q-flone-text-b2legacy-flluma_0095386",
+    "q-flone-text-b2legacy-flluma_0090079",
+    "q-flone-text-b2legacy-flluma_0096516",
+    "q-flone-text-b2legacy-flluma_0097413",
+    "q-flone-text-b2legacy-flluma_0091927",
+    "q-flone-text-b2legacy-flluma_0090820",
+    "q-flone-image-b2legacy-flluma_0093014",
+    "q-flone-image-b2legacy-flluma_0090051",
+    "q-flone-image-b2legacy-flluma_0093772",
+    "q-flone-image-b2legacy-flluma_0096266",
+    "q-flone-image-b2legacy-flluma_0091927",
+    "q-flone-image-b2legacy-flluma_0094417",
+    "q-flone-point-b2legacy-flluma_0091123",
+    "q-flone-point-b2legacy-flluma_0090719",
+    "q-flone-point-b2legacy-flluma_0091975",
+    "q-flone-point-b2legacy-flluma_0090825",
+    "q-flone-point-b2legacy-flluma_0091927",
+    "q-flone-point-b2legacy-flluma_0098388",
+    "q-flone-step-b2legacy-flluma_0097267",
+    "q-flone-step-b2legacy-flluma_0090147",
+    "q-flone-step-b2legacy-flluma_0096700",
+    "q-flone-step-b2legacy-flluma_0094365",
+    "q-flone-step-b2legacy-flluma_0095267",
+    "q-flone-step-b2legacy-flluma_0096596"
+  ],
+  "files": {
+    "README.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\README.md",
+      "bytes": 6590,
+      "sha256": "3fd486b13a994c3733eaf14170629cfea6a3eb8b30d2e4a24bef7928f1bae2e3"
+    },
+    "01_reviewer_requirements.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\01_reviewer_requirements.md",
+      "bytes": 3877,
+      "sha256": "fb92f94a6ef513a020e8c0daaa47c6257cc1db517252f1442932f60dbbf55e4d"
+    },
+    "02_folder_and_path_convention.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\02_folder_and_path_convention.md",
+      "bytes": 7189,
+      "sha256": "9245bdd3d6495b8b15896000e4cfe95965c84b5aeb1bdd9ad9af3c8aeb1b6928"
+    },
+    "03_candidate_selection_policy.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\03_candidate_selection_policy.md",
+      "bytes": 8259,
+      "sha256": "8da7f31552706b6cfee99e4f9fb1c7522cb799392d1ad464bd4ffb2dcde667de"
+    },
+    "04_candidate_selection_and_path_locking_results.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\04_candidate_selection_and_path_locking_results.md",
+      "bytes": 14303,
+      "sha256": "df93026f7bc40de443b3ed2bab188343d5047788a5d2634cbcc326e557e72886"
+    },
+    "qualitative_case_registry.csv": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\qualitative_case_registry.csv",
+      "bytes": 73589,
+      "sha256": "bc8319304ee12faab152a39038442da9043b4ee451ac3395e5bb1c029d029afe"
+    },
+    "qualitative_case_registry.schema.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\qualitative_case_registry.schema.json",
+      "bytes": 5920,
+      "sha256": "edceef73b751d05648fc64d16b6c368d3f0652b924f307637b12f95bc1c01ad1"
+    },
+    "selection/cohort_v1.jsonl": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\cohort_v1.jsonl",
+      "bytes": 8044228,
+      "sha256": "6634c9f2ca5b230fe1ed7aa3f81e220ffabda8de7bb8f933e8b287a67d58317a"
+    },
+    "selection/source_audit_v1.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\source_audit_v1.json",
+      "bytes": 34398,
+      "sha256": "74a0b4be8d48c7d82deb0da643e7b69c143fac8c0caccd98074dbcb90f69c1c7"
+    },
+    "selection/candidate_rows_v1.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\candidate_rows_v1.json",
+      "bytes": 124849,
+      "sha256": "d6c96b965e0d95eeaa763fdc1c1fac93b93f1322ea30fe4a32bf2d699e913769"
+    },
+    "selection/candidate_contract_tests_v2.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\candidate_contract_tests_v2.json",
+      "bytes": 671,
+      "sha256": "5af3f006bafa9823ad8d6854376a083bff04a9d62f485ad43e5486cf12bbbb08"
+    },
+    "selection/registry_validation_v1.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\registry_validation_v1.json",
+      "bytes": 121958,
+      "sha256": "660170e5dba321e89f448ae8577c525b39d46a46f4d3f53a415cf3fa915be265"
+    },
+    "selection/registry_header_before_v1.csv": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\registry_header_before_v1.csv",
+      "bytes": 1151,
+      "sha256": "6b08aa608d1610344d96bd4541c925446c919e027abcb7577f40574d10454bee"
+    },
+    "support/build_registry.mjs": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\build_registry.mjs",
+      "bytes": 6312,
+      "sha256": "7faca34c0284073d372904104891a0216c2495235b6b51cf1876bfae8d1f724d"
+    },
+    "support/registry_population_v1.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\registry_population_v1.json",
+      "bytes": 803,
+      "sha256": "eed1b7b42e1accbc77785edd690d6505cfb58e21d7782b7d13879230838d8b95"
+    },
+    "support/registry_candidates_preview.png": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\registry_candidates_preview.png",
+      "bytes": 48188,
+      "sha256": "00490f409bb73131e93befe4790a9a21e32c1a8fb71e89ac13ebf0ee3ac1cc71"
+    },
+    "support/select_gallery_candidates.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\select_gallery_candidates.py",
+      "bytes": 32774,
+      "sha256": "d24b4fb3750d1e373da4b49285c18b9feffc44dfa1be90581d75bc42d92526af"
+    },
+    "support/test_candidate_selection.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\test_candidate_selection.py",
+      "bytes": 6377,
+      "sha256": "46cbdf8b8bc78fe9845bfc3930ada9de030bcc9100b49b969c7d0f12f7fe00c7"
+    },
+    "support/validate_candidate_registry.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\validate_candidate_registry.py",
+      "bytes": 15773,
+      "sha256": "8356edb0919016e31457ba5fc241dc66249c0082cb54c8ed7e4233eb31024031"
+    },
+    "support/write_candidate_report.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\write_candidate_report.py",
+      "bytes": 12685,
+      "sha256": "0e48476effc09a20fc79dec4bddf1d565f20958160022348cde5b21ace3e22a4"
+    },
+    "support/lock_candidate_package.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\support\\lock_candidate_package.py",
+      "bytes": 3538,
+      "sha256": "1e11b2ef52ff50b2647665efdff4231ab577b4e1112f73605743c8d1351fc097"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\assets.json",
+      "bytes": 9702,
+      "sha256": "bb9e7c304c2a1c15e56f47aa994ab27f00af750098ecba88d80120081687be93"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\case.json",
+      "bytes": 4376,
+      "sha256": "17519675c93eaccc13601d5801699939d39482bbd041e21103dc7ece0ecd7ec5"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "26658802bc4eacee8a69715798f728c3530d16db487233ec16fd6d577c21b2ff"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\provenance.json",
+      "bytes": 17509,
+      "sha256": "3f12b4c475356f047e06c8d9d54d6e6388d21e449185ddf8da0c14a138d7af8c"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\code\\excerpt.txt",
+      "bytes": 1435,
+      "sha256": "50bf63bec005d07dadebc87b537e89526387789d20517abc3d8cbe9fb725c7d5"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\code\\extrude_repaired.py",
+      "bytes": 1356,
+      "sha256": "6a8cf45de579957398a90022fb1c173d1211dc428c8443af13cbc3c7779ba6be"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\code\\prediction.py",
+      "bytes": 1356,
+      "sha256": "6a8cf45de579957398a90022fb1c173d1211dc428c8443af13cbc3c7779ba6be"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\code\\raw_prediction.py",
+      "bytes": 1356,
+      "sha256": "6a8cf45de579957398a90022fb1c173d1211dc428c8443af13cbc3c7779ba6be"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\input\\exact_text.txt",
+      "bytes": 192,
+      "sha256": "c58cc3e463fe03ccc22672befe75e4002d7a4e85146618613e462cefd163aa8b"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "0c21f1358725b7e69fed62086b3fb54b1ffd06ca1e680afca572c037f56c1edb"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\logs\\geometry_row.json",
+      "bytes": 515,
+      "sha256": "c02383e3ae5bda4160afe3762d48c3baf8320bd740bff1b018b72870b174df1d"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\plans\\canonicalized.txt",
+      "bytes": 895,
+      "sha256": "e714482c8b8620c944459f5c0011a9ba9b6074f177d55fce74129cb3fdde30bc"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\plans\\raw.txt",
+      "bytes": 895,
+      "sha256": "e714482c8b8620c944459f5c0011a9ba9b6074f177d55fce74129cb3fdde30bc"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\reference\\program.py",
+      "bytes": 1357,
+      "sha256": "25219f65097a53a5788d04b6e7ed5e3989416e3706f924d523cf1cbe0f41c457"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0095386\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0095386\\reference\\training_ir.txt",
+      "bytes": 896,
+      "sha256": "c7f635ca4372e65bd44980b212ab783557ddb22d706489550f23daf44e7dfa9a"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\assets.json",
+      "bytes": 9503,
+      "sha256": "996cc1bb27a41334753a536a4c60eec2f6a32fe43ebbb5b65028467e24abccda"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\case.json",
+      "bytes": 4609,
+      "sha256": "064d4c8629525fcd5fbd12c13b550fdf159d90d2b2d2dbc25ec67447805b6876"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\prediction_locator.json",
+      "bytes": 4479,
+      "sha256": "905a3fa0518d66e4ddbd94fcba76255f27e29a8c9c2a517a25559a6c4610035b"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\provenance.json",
+      "bytes": 17915,
+      "sha256": "65c595b88745e78ab285e80bd100f5a712602d9f5ef4fe8b7d274a7e745ba3fe"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\code\\excerpt.txt",
+      "bytes": 1649,
+      "sha256": "33c6146b41dcf8ff8b2845f6dae81cd8f4ed4674cef2c60e8932358a79e68631"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\code\\extrude_repaired.py",
+      "bytes": 1570,
+      "sha256": "a1f7312a806eaa39aa1ef308f5a4076207c2f1b19a7f8dbe8e3719ebc7d7f1f4"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\code\\prediction.py",
+      "bytes": 1570,
+      "sha256": "a1f7312a806eaa39aa1ef308f5a4076207c2f1b19a7f8dbe8e3719ebc7d7f1f4"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\code\\raw_prediction.py",
+      "bytes": 1570,
+      "sha256": "a1f7312a806eaa39aa1ef308f5a4076207c2f1b19a7f8dbe8e3719ebc7d7f1f4"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\input\\exact_text.txt",
+      "bytes": 146,
+      "sha256": "c85fa430812677ef61feec876ef1eb8acac4c64f344084f92d285138b0a8048b"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\gate_row.json",
+      "bytes": 252,
+      "sha256": "baa5ebd005d961e32746e12101cb25eb15d59d5b9bd24ad10aca785ff0c635c2"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\geometry_row.json",
+      "bytes": 524,
+      "sha256": "c5aa3724d18c7ef52e3e2fbbdbac1679c851f446711ef0e9d5534c7034f4300f"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\native_failure_messages.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\native_failure_messages.json",
+      "bytes": 383,
+      "sha256": "31a8bdee728b6f0a1b8f568ae00677fde51dc7e5eaa088b460b692f6a6cb9ba3"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\plans\\canonicalized.txt",
+      "bytes": 1598,
+      "sha256": "f45d53503a99e0cca831fea78f6358ef45dd7bf28323eed6ba05b6da0b8ff47b"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\plans\\raw.txt",
+      "bytes": 1593,
+      "sha256": "c0b4b81703178e9f00bf7fc4f4a4cd911aeaaad2c961ceaabeded42fc80fb78e"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\reference\\program.py",
+      "bytes": 1729,
+      "sha256": "48c31f2f09401f1683df4d0b0138550d7852137f0699e63bc572723d051f9f3c"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090079\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\reference\\training_ir.txt",
+      "bytes": 1341,
+      "sha256": "690ded44562fb94e3e4879741559acd0bf81016af6fa02b251027f2226922934"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\assets.json",
+      "bytes": 9706,
+      "sha256": "8b03e7e2feffd7f5dd35abc6817601c16c6118db64a9ec8565d233f484710af0"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\case.json",
+      "bytes": 4454,
+      "sha256": "f42f28ed7e290f0f41e6cdf3bf8a0412a8dd79bd86dc7bb87cb672667f32cf64"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "a83a432fad187b7b49b687f86930d26c5323eadfa757463c9648c140ee2442d0"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\provenance.json",
+      "bytes": 17603,
+      "sha256": "42b6f09d4ff9f4283f09304ee01173d725548fab941a004497b4b9b1daf3aef8"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\code\\excerpt.txt",
+      "bytes": 1960,
+      "sha256": "cbe08449d4acb3f0ac39b804fca1f0537c285d5a0f4b921ddd92baafa7e80d80"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\code\\extrude_repaired.py",
+      "bytes": 1881,
+      "sha256": "be2e65f9135503891cafb54512f1eff47d66138d1fa818adea9dab8e8302346d"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\code\\prediction.py",
+      "bytes": 1881,
+      "sha256": "be2e65f9135503891cafb54512f1eff47d66138d1fa818adea9dab8e8302346d"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\code\\raw_prediction.py",
+      "bytes": 1881,
+      "sha256": "be2e65f9135503891cafb54512f1eff47d66138d1fa818adea9dab8e8302346d"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\input\\exact_text.txt",
+      "bytes": 176,
+      "sha256": "92834ed13e523e318846332a8c89b60d86446625d487a45b8f26ad812b454645"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "e72105d4017c1113db53d86ce5ddb7333890660fce9d7c1b51a740a6002fcd7c"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\logs\\geometry_row.json",
+      "bytes": 517,
+      "sha256": "44361a6db2dabaca71a8a044d37c37b4ca97c6424186771d5e0fdb59a7d593ae"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\plans\\canonicalized.txt",
+      "bytes": 1503,
+      "sha256": "4f491f8080cbde1a137397798dd1b71624349b34b5e7cd66eeef7e499eceac96"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\plans\\raw.txt",
+      "bytes": 1503,
+      "sha256": "4f491f8080cbde1a137397798dd1b71624349b34b5e7cd66eeef7e499eceac96"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\reference\\program.py",
+      "bytes": 2722,
+      "sha256": "6d2b2c62275416acda44f9b4a555a6a877e2fe4e92e99837b3e449b11767b6ba"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0096516\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\reference\\training_ir.txt",
+      "bytes": 2386,
+      "sha256": "2800ff3825ea5628117d60162cd5e97838a3d1fb72bf7e6db9c697517506d7cd"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\assets.json",
+      "bytes": 9707,
+      "sha256": "540786e01200107cc9c1d7fc424a8a327e37da43077dfcd612ec0bbadf1d55f3"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\case.json",
+      "bytes": 4440,
+      "sha256": "db4643277311828077bc83af314f27f548dfc9165b6f1c3588893cc0de2fab40"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "082a3919476f2874358b199bf0d9277e87bbd84046b3c84e270d3d269d290046"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\provenance.json",
+      "bytes": 17582,
+      "sha256": "f0c2aa5a7044db385cc45031bee822f1fdeb2c2c1c1fee6389d0138f453a4c54"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\code\\excerpt.txt",
+      "bytes": 1600,
+      "sha256": "77d1b70fedbe57b217573ebba36903ec84f86e620c67d3ea9b3b2138157745ee"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\code\\extrude_repaired.py",
+      "bytes": 1521,
+      "sha256": "1f5fde68b024e2429b72142f95e40b8a3422eecc8a6efe4f4d9e705a94cf42bb"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\code\\prediction.py",
+      "bytes": 1521,
+      "sha256": "1f5fde68b024e2429b72142f95e40b8a3422eecc8a6efe4f4d9e705a94cf42bb"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\code\\raw_prediction.py",
+      "bytes": 1521,
+      "sha256": "1f5fde68b024e2429b72142f95e40b8a3422eecc8a6efe4f4d9e705a94cf42bb"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\input\\exact_text.txt",
+      "bytes": 169,
+      "sha256": "dab8fc03f017e3bebe6c2daa40896e51e948c9c1daf9535eee3dacdd5071e48e"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "c74549e272fe5d3b2e7be1a6e8712b9a6d7bba5134d56cd122290a04030678e8"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\logs\\geometry_row.json",
+      "bytes": 514,
+      "sha256": "6df5257911b16b13e2ecf13e5e04cc9975ba85f84201fcf2cbebc09027b7b1fe"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\plans\\canonicalized.txt",
+      "bytes": 1174,
+      "sha256": "3e638fa9443c624b647313e097ac327eaee3ef8e4f5421e945c60235ab0187af"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\plans\\raw.txt",
+      "bytes": 1174,
+      "sha256": "3e638fa9443c624b647313e097ac327eaee3ef8e4f5421e945c60235ab0187af"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\reference\\program.py",
+      "bytes": 1855,
+      "sha256": "8c91f88e55a9c35d31f923179f6f9616cc6e795586aa9111a4996f6e90bae6f3"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0097413\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0097413\\reference\\training_ir.txt",
+      "bytes": 1465,
+      "sha256": "10eee9df750f707c09061b35e4fa8c07914892ac63172c86adb9f2d5d1bae5d7"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\assets.json",
+      "bytes": 9694,
+      "sha256": "548387f65c36886f17543073a0ed09e6a09e657773ff500df5d5acc19f0e94e4"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\case.json",
+      "bytes": 4318,
+      "sha256": "25ef8300f36caa6608b8937fcf2b0df5be27bc458c6a561c72453959206d9fb4"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\prediction_locator.json",
+      "bytes": 4479,
+      "sha256": "64a71cf030af7df8f08c229022ef70a58ca3b7605dc2597a18b37ccf80ac2516"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\provenance.json",
+      "bytes": 17668,
+      "sha256": "9349c3f4d5c62e0875bdbfcbc9f849db2f740429e52ba6c53288de27c40d1114"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\code\\excerpt.txt",
+      "bytes": 433,
+      "sha256": "2dab318945f6a3deaeaf4e1641d4b39e5e0fcc5669c2a48be0aa231c06037d95"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\code\\extrude_repaired.py",
+      "bytes": 354,
+      "sha256": "b4f05d0aba81c51d04ac6b1f0af06697a269842dfdf9889629536f7d6346d398"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\code\\prediction.py",
+      "bytes": 354,
+      "sha256": "b4f05d0aba81c51d04ac6b1f0af06697a269842dfdf9889629536f7d6346d398"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\code\\raw_prediction.py",
+      "bytes": 354,
+      "sha256": "b4f05d0aba81c51d04ac6b1f0af06697a269842dfdf9889629536f7d6346d398"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\input\\exact_text.txt",
+      "bytes": 129,
+      "sha256": "0061dca25b3607e11b427cb86b79a54e03b92fac82e5db8b23eff5562a5dd3b1"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "10414a28e0e9fb0ed8b4ec703e13d5298a6e657f199f17d2edc3dca7fc235edd"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\logs\\geometry_row.json",
+      "bytes": 516,
+      "sha256": "d276670b1cecd8f02dbe39c0dc386f18ecde28dde53039325550ec0af165dabc"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\plans\\canonicalized.txt",
+      "bytes": 198,
+      "sha256": "8815ed8abfd90048a3c32d2e311773965259d1c9a4b2f2b8279383a03840e21d"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\plans\\raw.txt",
+      "bytes": 198,
+      "sha256": "8815ed8abfd90048a3c32d2e311773965259d1c9a4b2f2b8279383a03840e21d"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\reference\\program.py",
+      "bytes": 354,
+      "sha256": "ff5a2aa9639d2395e1b038d4b569643e59f4e32d65d3f09c795b20060db26762"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0091927\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0091927\\reference\\training_ir.txt",
+      "bytes": 198,
+      "sha256": "c6bda00fddd39b8879e68db4849e00d67f9224b0aaaf07d5fc1249bed83707f6"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\assets.json",
+      "bytes": 9707,
+      "sha256": "3c3968088d616a3ca037eca2eacad625a7d7761f11f3cecdf3ea7bf6e45bb886"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\case.json",
+      "bytes": 4416,
+      "sha256": "868363b05a565adef4e4a9434fec08c0d9d22a7ef1c10e2e05e66204d1b36752"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "2fcb1d27a13eca4f9efafc67ee2c5d0cb041a95afc6dc315036a512bc55766ff"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\provenance.json",
+      "bytes": 17593,
+      "sha256": "98717c1f8430fb76a1ffd70a886819f9d436c8f400e218664a1d415eb554b17a"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\code\\excerpt.txt",
+      "bytes": 2335,
+      "sha256": "1191402db5b5c98a581471846ad2ff0c51c00ef173c9f2148b5fc2c476c3c264"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\code\\extrude_repaired.py",
+      "bytes": 2256,
+      "sha256": "5060d4c4174398657664a29550ad946fcfb6a8973f941bf0d8abf1f1f466b1c7"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\code\\prediction.py",
+      "bytes": 2256,
+      "sha256": "5060d4c4174398657664a29550ad946fcfb6a8973f941bf0d8abf1f1f466b1c7"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\code\\raw_prediction.py",
+      "bytes": 2256,
+      "sha256": "5060d4c4174398657664a29550ad946fcfb6a8973f941bf0d8abf1f1f466b1c7"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\input\\exact_text.txt",
+      "bytes": 246,
+      "sha256": "58b797b7452255e3f609e6c60ef3c7885f80398583effdf53989df7dc2028805"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "c0c36d332f17b69bb0194b0d8217bd2d51c23e7135f00c643dc05e192e123414"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\logs\\geometry_row.json",
+      "bytes": 513,
+      "sha256": "ffa6875fb93d759e95110259b62705f82cebecabd367d53b1a90466a3e57e7dd"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\plans\\canonicalized.txt",
+      "bytes": 1789,
+      "sha256": "ddc6b860fe98b3cbf55dd42be0b46869c7dfb6207136e4d8972d9ecc055ed51f"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\plans\\raw.txt",
+      "bytes": 1789,
+      "sha256": "ddc6b860fe98b3cbf55dd42be0b46869c7dfb6207136e4d8972d9ecc055ed51f"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\reference\\program.py",
+      "bytes": 2281,
+      "sha256": "63b1aaa9be069661dacaf9891508dfd7751797809b4e35c1db4ec2a76fb20b4c"
+    },
+    "cases\\q-flone-text-b2legacy-flluma_0090820\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090820\\reference\\training_ir.txt",
+      "bytes": 1788,
+      "sha256": "c18536bff8a3d835678fa8590d6857cbad6cf36a840422011125b40460af0f9c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\assets.json",
+      "bytes": 9720,
+      "sha256": "4ca53f01481e0167aaec1ee34bfca1cf4d5435f053742d2482f346d9bcb4ec40"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\case.json",
+      "bytes": 4494,
+      "sha256": "7ec239fc43cfdefebbff17db6f784bf3a9e65313edf08b31813b541da237f8a5"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\prediction_locator.json",
+      "bytes": 4504,
+      "sha256": "13e3bb810570d544c51a1d1ec0d0d85f2c7374b1e4ac7835b4947df15ee68e99"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\provenance.json",
+      "bytes": 17633,
+      "sha256": "e3a89c3d04ff561e87094760d8f9358f49cda1603782d57eb655223ba2650994"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\code\\excerpt.txt",
+      "bytes": 1317,
+      "sha256": "20ac31a2f952689a8e434259f7e3eb48aa69eacdbc8e210d5164cd63d1eb782c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\code\\extrude_repaired.py",
+      "bytes": 1238,
+      "sha256": "4f7f4b5b1b13bed80aa93e183cf0d85e52a7fde0b0d46f2dfc638aca073160d8"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\code\\prediction.py",
+      "bytes": 1238,
+      "sha256": "4f7f4b5b1b13bed80aa93e183cf0d85e52a7fde0b0d46f2dfc638aca073160d8"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\code\\raw_prediction.py",
+      "bytes": 1238,
+      "sha256": "4f7f4b5b1b13bed80aa93e183cf0d85e52a7fde0b0d46f2dfc638aca073160d8"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\input\\exact_text.txt",
+      "bytes": 135,
+      "sha256": "a15fe201382c00d4e6f7224528a79283f75be3d333e5a2fa5ca99e5fb06b57b6"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "31d6ea044a2459fdfb93d5ccf02b72eb4144bca6d74913ba00bcd4b024393c4a"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\logs\\geometry_row.json",
+      "bytes": 515,
+      "sha256": "50265988313c7fe2cfc54648f230da7d0140156a21de705b37076500b351203a"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\plans\\canonicalized.txt",
+      "bytes": 954,
+      "sha256": "0454a10e05e5bceeede19deebc7fe73d89fdfb015b34d77d98198ba5f351f02f"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\plans\\raw.txt",
+      "bytes": 954,
+      "sha256": "0454a10e05e5bceeede19deebc7fe73d89fdfb015b34d77d98198ba5f351f02f"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\reference\\program.py",
+      "bytes": 1909,
+      "sha256": "cd5c5c9333dc8db7e1ad5dfa51a96a7c91de5969c1c3a80c160a470c3183578b"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093014\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093014\\reference\\training_ir.txt",
+      "bytes": 1483,
+      "sha256": "83a019daf6639855861d071b19ecf268a72c0b5b378733470ae3346a181c5a5d"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\assets.json",
+      "bytes": 9516,
+      "sha256": "05122f5eaa5d1e739cc7dd0be1e31889abd4ef6c0b898965d8be8c16d85f49aa"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\case.json",
+      "bytes": 4628,
+      "sha256": "37e3d68956dde7f253e13e80d9bc524d78c974a2c97c21197b995aa3bafe384b"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\prediction_locator.json",
+      "bytes": 4504,
+      "sha256": "589f039bed340dc02f2b1032b4735b85055d1008494a0b75956a93d2b843307a"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\provenance.json",
+      "bytes": 17889,
+      "sha256": "a80ad161ac626f7ccdb37d97a293dcadfad38ad72624129d4c6330108832a9a7"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\code\\excerpt.txt",
+      "bytes": 2347,
+      "sha256": "290c3289c704e8d0ecfea233a5e6f220fed022d8fe86b563666b414041c7643a"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\code\\extrude_repaired.py",
+      "bytes": 2268,
+      "sha256": "3bde472fa381bfb7e6297d685dd3cb4acc37eab01ccd9e4aa5f24d2825b6f7d3"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\code\\prediction.py",
+      "bytes": 2268,
+      "sha256": "3bde472fa381bfb7e6297d685dd3cb4acc37eab01ccd9e4aa5f24d2825b6f7d3"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\code\\raw_prediction.py",
+      "bytes": 2268,
+      "sha256": "3bde472fa381bfb7e6297d685dd3cb4acc37eab01ccd9e4aa5f24d2825b6f7d3"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\input\\exact_text.txt",
+      "bytes": 170,
+      "sha256": "a398cee151233c85b8c58d48605e7185c58a7cb9e24e70557f59f19ee3ac3e32"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\logs\\gate_row.json",
+      "bytes": 232,
+      "sha256": "352515975e357e61c4eec23763c5c2aa380ce3bc9f52267f05694577a011945f"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\logs\\geometry_row.json",
+      "bytes": 505,
+      "sha256": "9964a73d91a670689d7407344c8c9a61c11fb4f50a08b10a7d79240bee83f141"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\logs\\native_failure_messages.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\logs\\native_failure_messages.json",
+      "bytes": 344,
+      "sha256": "63644c934093f80228cb0f6819fc25f634cdeec4c58d62f9bfebd8751839ed1c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\plans\\canonicalized.txt",
+      "bytes": 2024,
+      "sha256": "6aab112194581813cb5ccdfacdaae59ac543f2f08fb90c067476ff85852665ac"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\plans\\raw.txt",
+      "bytes": 2019,
+      "sha256": "542a507c23dc5f8f2ffef03cfa846ee43508e0e7f17374ee3de5d07d9aff8855"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\reference\\program.py",
+      "bytes": 2263,
+      "sha256": "e22e99cebf2f01ca214d9ebee08e5fcbbc567777332040570f39c45a1d5e4f0f"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0090051\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0090051\\reference\\training_ir.txt",
+      "bytes": 1782,
+      "sha256": "b9d6d0ae96125a44e58b653cacb0b884afbe13985b2b8a58df88499b5abff343"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\assets.json",
+      "bytes": 9717,
+      "sha256": "61176e007a261a5ed743fd405f593bc693f9143e1dd1b6b0c157f68e365df697"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\case.json",
+      "bytes": 4417,
+      "sha256": "21e4f08d32cc76f5d66cf045a1b0c05b25771493c58243b91058bbb61ff24f4c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\prediction_locator.json",
+      "bytes": 4504,
+      "sha256": "760703c626eb42104e0e725cd2cd1b56f8f57692d524f06a30c096cf8bedd609"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\provenance.json",
+      "bytes": 17539,
+      "sha256": "96c31a1764d108a4e596ee2389ccf00491c0a6d2bf39ad1bed2dee3fc2437250"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\code\\excerpt.txt",
+      "bytes": 1276,
+      "sha256": "455b0eda8a19ffb651b3aff5ccd0c3f606af222d2ccaa704e3413741973ff283"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\code\\extrude_repaired.py",
+      "bytes": 1197,
+      "sha256": "6cc443b22cefded7e35f3328518d066c74c56c17df30a7e17bff6243cbbeefad"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\code\\prediction.py",
+      "bytes": 1197,
+      "sha256": "6cc443b22cefded7e35f3328518d066c74c56c17df30a7e17bff6243cbbeefad"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\code\\raw_prediction.py",
+      "bytes": 1197,
+      "sha256": "6cc443b22cefded7e35f3328518d066c74c56c17df30a7e17bff6243cbbeefad"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\input\\exact_text.txt",
+      "bytes": 167,
+      "sha256": "33e6646a2e42710b20140271cc61b949a2fce121d24e836b5594abd2a04f65d1"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "fa8ba90b5b759e33b4b4bcc6e7c1c781dcb09c323a26e2c07c9b067687cc5aec"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\logs\\geometry_row.json",
+      "bytes": 514,
+      "sha256": "fb34311b760d634880cc214c89a186ec04b3a8ccb7ba64e7c978cc1980aa6ea3"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\plans\\canonicalized.txt",
+      "bytes": 956,
+      "sha256": "6a62eb92ad968f0efb928686c10d0786829e7d0887a0f7220eabeaf4a01ca0cb"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\plans\\raw.txt",
+      "bytes": 956,
+      "sha256": "6a62eb92ad968f0efb928686c10d0786829e7d0887a0f7220eabeaf4a01ca0cb"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\reference\\program.py",
+      "bytes": 1212,
+      "sha256": "b6b8e787a18536a763b8a2767011ce160e76be22bbb4de45449ecf0a9ad87726"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0093772\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0093772\\reference\\training_ir.txt",
+      "bytes": 971,
+      "sha256": "d58c8eb870a4576923b2891e14873c06dd33479ca06226b9d0c9bda3b1bc8edf"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\assets.json",
+      "bytes": 9720,
+      "sha256": "114a8e273b76d9fb739b79ed2f95bf87fe4983bc35380805d3267323d2c062b7"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\case.json",
+      "bytes": 4439,
+      "sha256": "41ffd49a994856eb7a1416e196fdf8ae0e4b393f0540c29c6dcb5e3800bdecb5"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\prediction_locator.json",
+      "bytes": 4504,
+      "sha256": "632c1854785b5437d98e5b8f26237a7c1051aa3ded3bc3bc7b5aaca84e813620"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\provenance.json",
+      "bytes": 17567,
+      "sha256": "549f267fde40d68b9bce368ffaacbf5f30c27b5857a023ca38046a82f426b677"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\code\\excerpt.txt",
+      "bytes": 1168,
+      "sha256": "604bce5c40aee29d9299be586dba1c5a96141d310cac6e569391916219dea9f3"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\code\\extrude_repaired.py",
+      "bytes": 1089,
+      "sha256": "ca6fe8c2f31534da716ae4846e8d11d8a53db422f75a536365df2da8670cfa94"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\code\\prediction.py",
+      "bytes": 1089,
+      "sha256": "ca6fe8c2f31534da716ae4846e8d11d8a53db422f75a536365df2da8670cfa94"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\code\\raw_prediction.py",
+      "bytes": 1089,
+      "sha256": "ca6fe8c2f31534da716ae4846e8d11d8a53db422f75a536365df2da8670cfa94"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\input\\exact_text.txt",
+      "bytes": 220,
+      "sha256": "bd7705e68ab7b58194b8cbb054549e357dd44bf915b245ea640d34431f6d5b22"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "58d33e2767adc1ad20632bd953bb78490eac8d74f6c8f8e3fb5e60e85432044f"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\logs\\geometry_row.json",
+      "bytes": 510,
+      "sha256": "691e0a14c03b274c4f4fde52a7eb129dce1e64d395eac33965bde2637126088a"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\plans\\canonicalized.txt",
+      "bytes": 790,
+      "sha256": "6bb9133674447680e9effb49c52537066773f21f9771724944c6995536755a83"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\plans\\raw.txt",
+      "bytes": 790,
+      "sha256": "6bb9133674447680e9effb49c52537066773f21f9771724944c6995536755a83"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\reference\\program.py",
+      "bytes": 1858,
+      "sha256": "a638b93b7654034227f24478e025d1f9932b1d0621803b5dbed5ec5617bfa80d"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0096266\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0096266\\reference\\training_ir.txt",
+      "bytes": 1437,
+      "sha256": "0a9d3cc4fbab71e9cb5738ad28b112d427324862553d36a6f3c6bee43f727339"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\assets.json",
+      "bytes": 9709,
+      "sha256": "8c4d02e7975924b7a4a56d617eb9e93b9fb7368360beffd9b281d4c012fc318c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\case.json",
+      "bytes": 4344,
+      "sha256": "16253614ebbf8bde0615d2e100945329e356ce6552aced5ff45a771642677dd9"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\prediction_locator.json",
+      "bytes": 4495,
+      "sha256": "c252dbff5a4f041fb61676575e9c1dc0acba337e2f715fa565351b1a1dd5d3fd"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\provenance.json",
+      "bytes": 17664,
+      "sha256": "c7f638b5fc2829da9d78e8ff57c83ca2b0f1a9c749aab627e50ac950b983a8fe"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\code\\excerpt.txt",
+      "bytes": 431,
+      "sha256": "f217a50df2894d65b8329ea042bf63fbd72a61f657a7cc816f48c1c13c0cec79"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\code\\extrude_repaired.py",
+      "bytes": 352,
+      "sha256": "4dacfe9be89d178a76f99dc69db3f1a56d494d5703a359923f72a10a622f38bb"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\code\\prediction.py",
+      "bytes": 352,
+      "sha256": "4dacfe9be89d178a76f99dc69db3f1a56d494d5703a359923f72a10a622f38bb"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\code\\raw_prediction.py",
+      "bytes": 352,
+      "sha256": "4dacfe9be89d178a76f99dc69db3f1a56d494d5703a359923f72a10a622f38bb"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\input\\exact_text.txt",
+      "bytes": 129,
+      "sha256": "0061dca25b3607e11b427cb86b79a54e03b92fac82e5db8b23eff5562a5dd3b1"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "10414a28e0e9fb0ed8b4ec703e13d5298a6e657f199f17d2edc3dca7fc235edd"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\logs\\geometry_row.json",
+      "bytes": 502,
+      "sha256": "d2e66430849ae40b5de5af941d9704c0174b0f67e1cc96d9b9849ca786da4c3d"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\plans\\canonicalized.txt",
+      "bytes": 196,
+      "sha256": "f9d62ecd2fb8d800bc8e4521ef257c9b6147b9b173f2bdfe26117f7f187510cf"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\plans\\raw.txt",
+      "bytes": 196,
+      "sha256": "f9d62ecd2fb8d800bc8e4521ef257c9b6147b9b173f2bdfe26117f7f187510cf"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\reference\\program.py",
+      "bytes": 354,
+      "sha256": "ff5a2aa9639d2395e1b038d4b569643e59f4e32d65d3f09c795b20060db26762"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0091927\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0091927\\reference\\training_ir.txt",
+      "bytes": 198,
+      "sha256": "c6bda00fddd39b8879e68db4849e00d67f9224b0aaaf07d5fc1249bed83707f6"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\assets.json",
+      "bytes": 9722,
+      "sha256": "2d01fdd6e7c3db10bacaeca77c1045c173006465bbdb4c59205ea871b31105f4"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\case.json",
+      "bytes": 4456,
+      "sha256": "3c4c5bf272856c08dd9ab318df6cc3d067e110509ca43e8b091fe9e540295818"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\prediction_locator.json",
+      "bytes": 4495,
+      "sha256": "fa8958d7d345b8eb63276bc9ea68cbe240737faea53fc7b130772ccd12441c8f"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\provenance.json",
+      "bytes": 17607,
+      "sha256": "1aa72d20522f36b1128620d1d021d467617aa54f4e11aa0da939c32e26c68a51"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\code\\excerpt.txt",
+      "bytes": 2317,
+      "sha256": "6e171e90c8ec9858fff63ed33ae409cc15b5c5e052fae5ad1968899e6a28b15e"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\code\\extrude_repaired.py",
+      "bytes": 2238,
+      "sha256": "70c4af4d820bf6230fc30531cba8cfd47e014099e64857609643672a4c408e7c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\code\\prediction.py",
+      "bytes": 2238,
+      "sha256": "70c4af4d820bf6230fc30531cba8cfd47e014099e64857609643672a4c408e7c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\code\\raw_prediction.py",
+      "bytes": 2238,
+      "sha256": "70c4af4d820bf6230fc30531cba8cfd47e014099e64857609643672a4c408e7c"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\input\\exact_text.txt",
+      "bytes": 245,
+      "sha256": "c9ada670bbf0620383a7790f7decf53d133c42e2dd9bb85ca3ba697f787458e5"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "07621c2e803d2aa9ad3eca08105d8bd884a6d09e8edd42acb73ca1ec3c2ed88b"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\logs\\geometry_row.json",
+      "bytes": 515,
+      "sha256": "919b2d4ace211cb24bdc7b5e50265a6d6313f369e2054097efd299c0f95c13fd"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\plans\\canonicalized.txt",
+      "bytes": 1761,
+      "sha256": "ea8f12abee8784d0affb98d939b754c1a3ae67d236d79f3bee1d1cb942a83d29"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\plans\\raw.txt",
+      "bytes": 1761,
+      "sha256": "ea8f12abee8784d0affb98d939b754c1a3ae67d236d79f3bee1d1cb942a83d29"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\reference\\program.py",
+      "bytes": 2281,
+      "sha256": "ed42d26fded4ec73c2cdd65378a4c6fffb8d7928a4d3afba0dbd60c66f6cea38"
+    },
+    "cases\\q-flone-image-b2legacy-flluma_0094417\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-image-b2legacy-flluma_0094417\\reference\\training_ir.txt",
+      "bytes": 1790,
+      "sha256": "3212ffce87597f1add81688f0b60c409812393ada4501a3bc8e8c152882164e6"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\assets.json",
+      "bytes": 9721,
+      "sha256": "c91b1c54e9edb4c955650b689a0d7cdb18ca66e3599ee260f124b9c5f570833c"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\case.json",
+      "bytes": 4533,
+      "sha256": "96f440ab0d7c01504f354493fa375a1cdbc89e3db806c0c35702ace3028950d6"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\prediction_locator.json",
+      "bytes": 4504,
+      "sha256": "bd95bcb208083219b89526cb24938521fa6103d9b949e5f3aef88b3c5c18af5f"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\provenance.json",
+      "bytes": 17637,
+      "sha256": "90c1ab8bbfde48a8beca57626ae5ad69f587467f63e974e795c571b503f5ffdd"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\code\\excerpt.txt",
+      "bytes": 1900,
+      "sha256": "3df2a8185a1ce46b836d2dfa38517cbaae04bd313c6d2476a1e3fff71eb29598"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\code\\extrude_repaired.py",
+      "bytes": 1821,
+      "sha256": "0eee5a4db0e385ec2184e548851e89c6c9c6a4536dd9b89d35d68849063074ae"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\code\\prediction.py",
+      "bytes": 1821,
+      "sha256": "0eee5a4db0e385ec2184e548851e89c6c9c6a4536dd9b89d35d68849063074ae"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\code\\raw_prediction.py",
+      "bytes": 1821,
+      "sha256": "0eee5a4db0e385ec2184e548851e89c6c9c6a4536dd9b89d35d68849063074ae"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\input\\exact_text.txt",
+      "bytes": 236,
+      "sha256": "0da5da96a79e59c9ae528b5d4ccc23e5d5e2b9181341fd906bfa935ed39ebe63"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "c50da428b28d30e915a4c24e7dff1c097c48334e6d6770f30e0218062325f256"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\logs\\geometry_row.json",
+      "bytes": 514,
+      "sha256": "fa977e78efefcd11ce712089d1eed6f79f231dc7f78ef107608321e9377f487b"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\plans\\canonicalized.txt",
+      "bytes": 1321,
+      "sha256": "386ed6b6e01fc5237c716fa0af6d442500e8f27e3deec2f21223acab86180268"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\plans\\raw.txt",
+      "bytes": 1321,
+      "sha256": "386ed6b6e01fc5237c716fa0af6d442500e8f27e3deec2f21223acab86180268"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\reference\\program.py",
+      "bytes": 1823,
+      "sha256": "0c24b4507b916dee18487b9559afc1e756b5a5a348d6add76accf653fcce93a9"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091123\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091123\\reference\\training_ir.txt",
+      "bytes": 1407,
+      "sha256": "885e386e7a0d36a74e48fc9f9db4122cab61b4f4d93b4c8b66fb53ab7c7db4a7"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\assets.json",
+      "bytes": 9516,
+      "sha256": "481f8b2ea8867ad0cb9ad60bb9fb584dd38dab8071a36895c58dfd1b9076ffb9"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\case.json",
+      "bytes": 4629,
+      "sha256": "44eaccb3f5127c647989509023d98709d3df41d2f2cda6513f31a117a71a7151"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\prediction_locator.json",
+      "bytes": 4495,
+      "sha256": "72d277d6ad11a3988895e1165cd2566e7e6f0caa99a2caf59f1da4d1b79e5917"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\provenance.json",
+      "bytes": 17816,
+      "sha256": "9113313b58554e30ba6f48167e3b98c7265d5fe81dd9a8ad4d13dfb948f3480e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\code\\excerpt.txt",
+      "bytes": 1811,
+      "sha256": "91b0bb9fb9c47c7028e00268e54520c38506b90e73a066ecffb1a2f6ea9fbb86"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\code\\extrude_repaired.py",
+      "bytes": 1732,
+      "sha256": "2a3770beace58e4d4b264517df1b61f1ed97ef19d22c3c3535ea987c1152546e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\code\\prediction.py",
+      "bytes": 1732,
+      "sha256": "2a3770beace58e4d4b264517df1b61f1ed97ef19d22c3c3535ea987c1152546e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\code\\raw_prediction.py",
+      "bytes": 1732,
+      "sha256": "2a3770beace58e4d4b264517df1b61f1ed97ef19d22c3c3535ea987c1152546e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\input\\exact_text.txt",
+      "bytes": 229,
+      "sha256": "931975bf598906a90557d9b52dd3cbebc18b2930401b89f2c4e37a2a58602cf0"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\logs\\gate_row.json",
+      "bytes": 206,
+      "sha256": "12d528f23b817b439c05eb741ec19e5f63d642b6facccfa818414b4d4294e39d"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\logs\\geometry_row.json",
+      "bytes": 479,
+      "sha256": "2b25471a3cfd0e9c6e26233de0898d77fa1a28b4b8716cd3ca650f40bd3c8af1"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\logs\\native_failure_messages.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\logs\\native_failure_messages.json",
+      "bytes": 292,
+      "sha256": "c48df1a7413f90a76ada1227330e396afa1f28ce726ea65331678f3d23665a3c"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\plans\\canonicalized.txt",
+      "bytes": 1315,
+      "sha256": "339cf883aba18fb80ca8756b3b457823d5700f58e1ff58c8707fc4d8e79c3a4a"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\plans\\raw.txt",
+      "bytes": 1315,
+      "sha256": "339cf883aba18fb80ca8756b3b457823d5700f58e1ff58c8707fc4d8e79c3a4a"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\reference\\program.py",
+      "bytes": 1902,
+      "sha256": "7edacac5e108dadfbbe9bd68e86a167c65df191dd2b8f6030e7e96942173865e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090719\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090719\\reference\\training_ir.txt",
+      "bytes": 1480,
+      "sha256": "298f5ab39a55466594bb6fcfec3c6579e17c3b047cfc31fc4a22a65bdf4c292b"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\assets.json",
+      "bytes": 9719,
+      "sha256": "77139418c9135ee06a4819189754ef7aabf4a960b86e325285498bd54dcf867c"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\case.json",
+      "bytes": 4431,
+      "sha256": "84a4c44343687be187a5c138026d245df5d0eb7d241bbaf94e93087b77019a03"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\prediction_locator.json",
+      "bytes": 4495,
+      "sha256": "7e31f8bdcb67b6a937b76f927ec755bdb4d519d185fc22d9825479f48906a241"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\provenance.json",
+      "bytes": 17520,
+      "sha256": "fb0a8e3c796ec2ffd09f5674c3613377e3001370bc563db6e53d5566c11bc09c"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\code\\excerpt.txt",
+      "bytes": 2122,
+      "sha256": "87f2fcc38f347cf2494bc81a4fd96156444cec4b8f951bc8f7f75ec2b35a6323"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\code\\extrude_repaired.py",
+      "bytes": 2043,
+      "sha256": "a990eb0ec6d72a6c08525e7871cea9e4cdd080bc1fbb56129475507cb63aacd5"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\code\\prediction.py",
+      "bytes": 2043,
+      "sha256": "a990eb0ec6d72a6c08525e7871cea9e4cdd080bc1fbb56129475507cb63aacd5"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\code\\raw_prediction.py",
+      "bytes": 2043,
+      "sha256": "a990eb0ec6d72a6c08525e7871cea9e4cdd080bc1fbb56129475507cb63aacd5"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\input\\exact_text.txt",
+      "bytes": 167,
+      "sha256": "46bea34605624772957f6739bf4b2055881dd7da7a4ed8828df06c5a6ddc9253"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "e32f13ac23fd683e98d91dd6e451bd8b9141b454eca4008eef481a8ec8376fd1"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\logs\\geometry_row.json",
+      "bytes": 510,
+      "sha256": "ea60dc971e7bdcba71f0fc75acbae39af6ee4d012136944ea396f4321ba989cb"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\plans\\canonicalized.txt",
+      "bytes": 1998,
+      "sha256": "424f07fccd6cbd691eb4fff91b20abcf05cd7780e859ebd89dbd12a3a3acf962"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\plans\\raw.txt",
+      "bytes": 1998,
+      "sha256": "424f07fccd6cbd691eb4fff91b20abcf05cd7780e859ebd89dbd12a3a3acf962"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\reference\\program.py",
+      "bytes": 1182,
+      "sha256": "0c8a3d8d197d740bc8f7eed5eeee3c740b649fc64cd942dc12dd5826b23012be"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091975\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091975\\reference\\training_ir.txt",
+      "bytes": 867,
+      "sha256": "dcb840afe50204a1f8f9c9c889fdb9a50aec215a705030322b8fe241a7751881"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\assets.json",
+      "bytes": 9722,
+      "sha256": "b4c8c1441f85608a137a09097462811f0ed0f37d10e26a2d93527b04e9dda74f"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\case.json",
+      "bytes": 4510,
+      "sha256": "e281e11fd3cd887fed2b94d2a7cb5c3de4549d122c591bd7d8d7fc96bab76723"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\prediction_locator.json",
+      "bytes": 4486,
+      "sha256": "079dace50608761dcd7375fad8e45e181353a7b85e99d7d3b8abaac296fe3874"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\provenance.json",
+      "bytes": 17596,
+      "sha256": "ede46045dc409ac2358c08e1fef279cfe294f75106d067b461ce85216d722e43"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\code\\excerpt.txt",
+      "bytes": 2333,
+      "sha256": "5bbecd6dae9e2f4d7d4f559444023e66ead97dacbd2c611ae9cb103c7ccc1995"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\code\\extrude_repaired.py",
+      "bytes": 2254,
+      "sha256": "e283e2565cc55ae42d7acc7eb65530bbbba9b305c3c8d80ad3cfe9862cbdb336"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\code\\prediction.py",
+      "bytes": 2254,
+      "sha256": "e283e2565cc55ae42d7acc7eb65530bbbba9b305c3c8d80ad3cfe9862cbdb336"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\code\\raw_prediction.py",
+      "bytes": 2254,
+      "sha256": "e283e2565cc55ae42d7acc7eb65530bbbba9b305c3c8d80ad3cfe9862cbdb336"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\input\\exact_text.txt",
+      "bytes": 136,
+      "sha256": "863c32429bd65e8e3622113041aa017f9aad49c59989b7adea5774f2af343979"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "84a8d274d36629a2a4669f5e7f7144cf4b87b30991db725a2b9f67de2e9ccebd"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\logs\\geometry_row.json",
+      "bytes": 505,
+      "sha256": "3ec3f80c6f5791626954e428d3754f702ac9ca94d388f51a764ad9d2668401e5"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\plans\\canonicalized.txt",
+      "bytes": 2016,
+      "sha256": "10e7497c0406c1c315619952ab774eb81c66db90f4bcc12a15af646aefe5699f"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\plans\\raw.txt",
+      "bytes": 2016,
+      "sha256": "10e7497c0406c1c315619952ab774eb81c66db90f4bcc12a15af646aefe5699f"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\reference\\program.py",
+      "bytes": 1819,
+      "sha256": "d5dcda5eb20f7a3b8ae59f502d23bf4e331f8917033906b8c03534e3f0f27220"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0090825\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0090825\\reference\\training_ir.txt",
+      "bytes": 1403,
+      "sha256": "ee0f035f006ead7e34682117b612e8d5a776236a9edebb2ef2c79718229dc1ad"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\assets.json",
+      "bytes": 9709,
+      "sha256": "5ffe077f29adf07ce75d68b82a716a105635baab209815c96712e78faffdb5dc"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\case.json",
+      "bytes": 4362,
+      "sha256": "26206b2bc6ed0bea0786d0e8ccc5e0f74e5c84f3120ddad560ae89b7d8538021"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\prediction_locator.json",
+      "bytes": 4495,
+      "sha256": "173895c6e3120612330710ea53708d8eb29a361f3ff1ff3f047c6909ecf7782f"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\provenance.json",
+      "bytes": 17677,
+      "sha256": "e72c9f08b3ad3f3320fef75a8bc6fc0d7d5ddd649a4359eb4116336723cf44a2"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\code\\excerpt.txt",
+      "bytes": 431,
+      "sha256": "73ca56481febfef60b9e80ea4f2dcdb053d689a5fccf413e350b806ddc97c43e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\code\\extrude_repaired.py",
+      "bytes": 352,
+      "sha256": "406847ca56f010bd10f5189e786e51a92f2813a4c65036766dac01f2cd637db1"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\code\\prediction.py",
+      "bytes": 352,
+      "sha256": "406847ca56f010bd10f5189e786e51a92f2813a4c65036766dac01f2cd637db1"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\code\\raw_prediction.py",
+      "bytes": 352,
+      "sha256": "406847ca56f010bd10f5189e786e51a92f2813a4c65036766dac01f2cd637db1"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\input\\exact_text.txt",
+      "bytes": 129,
+      "sha256": "0061dca25b3607e11b427cb86b79a54e03b92fac82e5db8b23eff5562a5dd3b1"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "10414a28e0e9fb0ed8b4ec703e13d5298a6e657f199f17d2edc3dca7fc235edd"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\logs\\geometry_row.json",
+      "bytes": 499,
+      "sha256": "f0ae25121a7fd1c6a98b9aa55b2b6351d035bb10ffe5ca67c66f29243b586c2c"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\plans\\canonicalized.txt",
+      "bytes": 196,
+      "sha256": "1bb21422d50de1730210716e59beb8ff31dea9ab0f16d882e89bcda71e09849a"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\plans\\raw.txt",
+      "bytes": 196,
+      "sha256": "1bb21422d50de1730210716e59beb8ff31dea9ab0f16d882e89bcda71e09849a"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\reference\\program.py",
+      "bytes": 354,
+      "sha256": "ff5a2aa9639d2395e1b038d4b569643e59f4e32d65d3f09c795b20060db26762"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0091927\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0091927\\reference\\training_ir.txt",
+      "bytes": 198,
+      "sha256": "c6bda00fddd39b8879e68db4849e00d67f9224b0aaaf07d5fc1249bed83707f6"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\assets.json",
+      "bytes": 9722,
+      "sha256": "016db0da8f5961fe482272383b170ef2095dc9f4f7042213b913aa4c2bfa4bd0"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\case.json",
+      "bytes": 4468,
+      "sha256": "dec24e6537e65f673c9eab91e66fbb2d3156a1bee56287130a59e2c4f91bd32b"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\prediction_locator.json",
+      "bytes": 4495,
+      "sha256": "801a4d4d42d4055fbd997022ffe506bd43b055507354ec5674ea3770e4bc103e"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\provenance.json",
+      "bytes": 17608,
+      "sha256": "4a3d6133fcc2b9a5b336fcf58b5d9cd23cae5bb1005a488705451264e10af46f"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\code\\excerpt.txt",
+      "bytes": 2683,
+      "sha256": "ae24842e02ed7b907534beb8bdfeb1c84e3785c14a263b520fe6e783f30b4ce9"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\code\\extrude_repaired.py",
+      "bytes": 2604,
+      "sha256": "bda9d060cd5303054fdce323147ab0e4f96abc69b0549e0e8f69bb48a62bbb95"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\code\\prediction.py",
+      "bytes": 2604,
+      "sha256": "bda9d060cd5303054fdce323147ab0e4f96abc69b0549e0e8f69bb48a62bbb95"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\code\\raw_prediction.py",
+      "bytes": 2604,
+      "sha256": "bda9d060cd5303054fdce323147ab0e4f96abc69b0549e0e8f69bb48a62bbb95"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\input\\exact_text.txt",
+      "bytes": 189,
+      "sha256": "f6a06c8bc4eac9fedeb6f9a021981dd4f070a50b1bd2fe32a1b39f81e282f789"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "9bf8c4ecc517787e61809e7c62795096115c8d7cf89ae42f608a25eb520e804d"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\logs\\geometry_row.json",
+      "bytes": 514,
+      "sha256": "fd15012ce8ba55fcbc05069c71cc2c527f628f0a9ba4aec21a016951a3fcab53"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\plans\\canonicalized.txt",
+      "bytes": 1967,
+      "sha256": "5b06a4ea3ea06f969a32f53bf6774a7d9601ce0a1c127e68b5ba936b1d6b1bbe"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\plans\\raw.txt",
+      "bytes": 1962,
+      "sha256": "49167ae35690002b43638278de90af31afcbac278982300939b94574ac5f45a9"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\reference\\program.py",
+      "bytes": 2265,
+      "sha256": "0ef24c2b3a13d17e3b6f101527f79886e75fc7355b94de09a7eb94dc204a42cc"
+    },
+    "cases\\q-flone-point-b2legacy-flluma_0098388\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-point-b2legacy-flluma_0098388\\reference\\training_ir.txt",
+      "bytes": 1784,
+      "sha256": "56368f035488a4a6068eb92e01e5c753c8e1100fbfb358debb8dac9b777e369a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\assets.json",
+      "bytes": 9702,
+      "sha256": "1a09569d7e692fcb791ffe63675876ad8d1b65d5232f130c140f548e3bbb316a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\case.json",
+      "bytes": 4440,
+      "sha256": "9893449dd92023db4aaff0d266816248a4226573c655de636de56fdd075afa65"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "a4030fc621bffc03d36f69007871f46b46876a76432693e7f36d56abb3a26774"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\provenance.json",
+      "bytes": 17574,
+      "sha256": "0b8952c63148e54745567b404047e6ec93a391cb6f7199b7c2d4e340a94ff946"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\code\\excerpt.txt",
+      "bytes": 1285,
+      "sha256": "1822a523a82b4df4c8db474223fd3d0bc5a8a9844d243842a8186ed7b3b0f298"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\code\\extrude_repaired.py",
+      "bytes": 1206,
+      "sha256": "c7d365c1ea477b1738be8df9c3a79514c0d3da63a48b65b5371f5f0d22e2c6a9"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\code\\prediction.py",
+      "bytes": 1206,
+      "sha256": "c7d365c1ea477b1738be8df9c3a79514c0d3da63a48b65b5371f5f0d22e2c6a9"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\code\\raw_prediction.py",
+      "bytes": 1206,
+      "sha256": "c7d365c1ea477b1738be8df9c3a79514c0d3da63a48b65b5371f5f0d22e2c6a9"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\input\\exact_text.txt",
+      "bytes": 183,
+      "sha256": "fbe1e86bf5c1bb70c42d74af7ea74a93ad2dd6b018b2e9dd41daa5e5ca8feef7"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "e2c8fca85fddea71e6bd91fba33b47da43d20edb27f8407044b8e469954badce"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\logs\\geometry_row.json",
+      "bytes": 515,
+      "sha256": "1bc468f74f3728782666843da4e95e64d4f3d0d3af2e4a4810eee4e78eca36fd"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\plans\\canonicalized.txt",
+      "bytes": 948,
+      "sha256": "e8025821422d5ed599b15a74b7ead40127feb637ca1fbd8e0516d7e555ea8246"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\plans\\raw.txt",
+      "bytes": 948,
+      "sha256": "e8025821422d5ed599b15a74b7ead40127feb637ca1fbd8e0516d7e555ea8246"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\reference\\program.py",
+      "bytes": 1206,
+      "sha256": "56f01b90c9b353a49fab980ba8acd18558d2258e3af6cfa7e21414f032fe375c"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0097267\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0097267\\reference\\training_ir.txt",
+      "bytes": 944,
+      "sha256": "2e1eb1d0819923057167f4d6ea0649313e83f0f2b11308a86a8c6d9890fd1fba"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\assets.json",
+      "bytes": 9504,
+      "sha256": "52dd9cb742738d07ec8da6046b5d415f7cd1631e3cc3c40588953e59864b12ad"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\case.json",
+      "bytes": 4597,
+      "sha256": "a11e7661664e6642355b9258df67c597557e63074711d025d2976e964da00d99"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\prediction_locator.json",
+      "bytes": 4479,
+      "sha256": "d22e99647f592b8d854a5c1f1731e97bcf9740cc9dd30f502b65d3e8fce8dd6a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\provenance.json",
+      "bytes": 17831,
+      "sha256": "8f1573cab3e8d6254128a9bf80026e231cacebe947f27466a1d425c92b60e694"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\code\\excerpt.txt",
+      "bytes": 2613,
+      "sha256": "61c17e331188dae7386139b78ebdac256c73ab97de32b1ccb754d3a2c45a3b86"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\code\\extrude_repaired.py",
+      "bytes": 2534,
+      "sha256": "2730e35e5f0f46f9a924d42523dd6061472f4478613f0c51fc11b967ded6b3e0"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\code\\prediction.py",
+      "bytes": 2534,
+      "sha256": "2730e35e5f0f46f9a924d42523dd6061472f4478613f0c51fc11b967ded6b3e0"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\code\\raw_prediction.py",
+      "bytes": 2534,
+      "sha256": "2730e35e5f0f46f9a924d42523dd6061472f4478613f0c51fc11b967ded6b3e0"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\input\\exact_text.txt",
+      "bytes": 221,
+      "sha256": "fe670e1e728df0e588416fd7b333bdc17cb531e20e81fdae657da384f77fdb30"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\logs\\gate_row.json",
+      "bytes": 216,
+      "sha256": "b30a4c1e3e27745668654e09a7959b41d4d415ca86ee716198a02b835c8e88c8"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\logs\\geometry_row.json",
+      "bytes": 488,
+      "sha256": "484788752e1a4d2692fd339c24a87dbdfb01d2393f8fcad4242cd1a8e602ab37"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\logs\\native_failure_messages.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\logs\\native_failure_messages.json",
+      "bytes": 311,
+      "sha256": "315753fe9e18845d341a3b1537219a8d46b3667f15cf344fd4764592e0595a6d"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\plans\\canonicalized.txt",
+      "bytes": 2393,
+      "sha256": "bb426d61cf0ba4fbb30a8fec99febbd789a1dd5bdfa00226cc120981ff5bf552"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\plans\\raw.txt",
+      "bytes": 2393,
+      "sha256": "bb426d61cf0ba4fbb30a8fec99febbd789a1dd5bdfa00226cc120981ff5bf552"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\reference\\program.py",
+      "bytes": 2726,
+      "sha256": "fb1ea98c3bdfea1178181fe3b60a7b16f7ae8e3440797a943925ab4b5fef30cb"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0090147\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0090147\\reference\\training_ir.txt",
+      "bytes": 2361,
+      "sha256": "a596a30ee78ea69d065ef2d2ee0f61f7066d6a73ff42dc11fbee19a25592bd2a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\assets.json",
+      "bytes": 9702,
+      "sha256": "b9e2019f922e4879262579b0b85812999439db0dab78f67eda17624edf243fd5"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\case.json",
+      "bytes": 4414,
+      "sha256": "95e0c55c71c8941efecd726785340675d7144900ca10db0a77c1df06b48593ef"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "697efa773017053827bac4dd2c8e9a385f443f5ee920e02bf03e3c73ec761cb0"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\provenance.json",
+      "bytes": 17553,
+      "sha256": "c8385c0930618677d399d7eb5b95d472d6b0c3fec4b4f3b743b34713324f69be"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\code\\excerpt.txt",
+      "bytes": 1337,
+      "sha256": "6dfc00e7a3d67070d20fbbf1c068c61e20574d75b3843a18fba96536995ff5b4"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\code\\extrude_repaired.py",
+      "bytes": 1258,
+      "sha256": "8404d13e35c9ceafab59c7074cc293d2e7e1a1bc66c43770de494df8157886ea"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\code\\prediction.py",
+      "bytes": 1258,
+      "sha256": "8404d13e35c9ceafab59c7074cc293d2e7e1a1bc66c43770de494df8157886ea"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\code\\raw_prediction.py",
+      "bytes": 1258,
+      "sha256": "8404d13e35c9ceafab59c7074cc293d2e7e1a1bc66c43770de494df8157886ea"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\input\\exact_text.txt",
+      "bytes": 141,
+      "sha256": "39673b005b15f8ba396393c259b5e7b44a43483c12cd6c873112edf1f9ceb6b7"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "da1fc3ef7fc0a32b4b042a467e58ffc17ee62254a5bf3ca922ed55d0800525a3"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\logs\\geometry_row.json",
+      "bytes": 518,
+      "sha256": "9a94ce0ae5eb6b431869b416df517cf472777471e7e7a27041cebeed94038432"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\plans\\canonicalized.txt",
+      "bytes": 981,
+      "sha256": "6c513bd334f299fd15c24b552638e90aab1433c66476f52c6ba926beb26a20d6"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\plans\\raw.txt",
+      "bytes": 981,
+      "sha256": "6c513bd334f299fd15c24b552638e90aab1433c66476f52c6ba926beb26a20d6"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\reference\\program.py",
+      "bytes": 1265,
+      "sha256": "2531be5604292ca1898ad2728cd6dcd0464d217df55919cb736c418dfb28ff8e"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096700\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096700\\reference\\training_ir.txt",
+      "bytes": 981,
+      "sha256": "d60cc4913a1847d90d76b411f0a4d361f8871d4c04a0e8a4fcf6884bffbed5be"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\assets.json",
+      "bytes": 9707,
+      "sha256": "891635f69bd776fda1ea72b195522dcab7f46c6b8ce0694d9f10065ce9328822"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\case.json",
+      "bytes": 4445,
+      "sha256": "43f34858ae4276104189b1ff96412f34c05f5337fc2849b1c10469d55b25923b"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\prediction_locator.json",
+      "bytes": 4470,
+      "sha256": "6212958469ec0b3105148c4ce39a4fc503e3e4e82e592e70581e784444066bf3"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\provenance.json",
+      "bytes": 17577,
+      "sha256": "765b785ae505ab6cc55a7dd329d9f9aa5584c932a298b605978c00f8dfce27a3"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\code\\excerpt.txt",
+      "bytes": 1985,
+      "sha256": "7db015971ffa9e5592f505be3b18171eb8769e5d285e53605c615810f99a3d46"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\code\\extrude_repaired.py",
+      "bytes": 1906,
+      "sha256": "4f29b7825b348127cc906ee500aa7e768b30fe53d1aa52a959b197b62bddbdd6"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\code\\prediction.py",
+      "bytes": 1906,
+      "sha256": "4f29b7825b348127cc906ee500aa7e768b30fe53d1aa52a959b197b62bddbdd6"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\code\\raw_prediction.py",
+      "bytes": 1906,
+      "sha256": "4f29b7825b348127cc906ee500aa7e768b30fe53d1aa52a959b197b62bddbdd6"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\input\\exact_text.txt",
+      "bytes": 138,
+      "sha256": "4c6a2728d62e56f7e668021f3eeb6c533196605a8f355b1c7a161b1b99bdc0ab"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "e8307d595375c09c5410983358673d94fa249f0a383a92b946846cf520effb0b"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\logs\\geometry_row.json",
+      "bytes": 517,
+      "sha256": "849074fe875902e49ee3ce4b13cfdd6f14d8986d54bfe960abdf1a36828bc143"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\plans\\canonicalized.txt",
+      "bytes": 1343,
+      "sha256": "c70cee1807659cf65f2f5a7ffb9b73c75c7647d59804b98919ef6c936e373dbc"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\plans\\raw.txt",
+      "bytes": 1343,
+      "sha256": "c70cee1807659cf65f2f5a7ffb9b73c75c7647d59804b98919ef6c936e373dbc"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\reference\\program.py",
+      "bytes": 1906,
+      "sha256": "c1c740ce9b0003df08d7066cd599f30ea30cf26fc7118267d6036fcbc86e08d3"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0094365\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0094365\\reference\\training_ir.txt",
+      "bytes": 1484,
+      "sha256": "bcb435939a3c2a7d702c6a3720794f57c46fde2b01e8762c959bb2d91002a46a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\assets.json",
+      "bytes": 9694,
+      "sha256": "7da355197d8d901a175a675f60074ec20b73dcaa16d8aec38fe9d21d7bde640a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\case.json",
+      "bytes": 4326,
+      "sha256": "99ba7f57f586747906e959b3cb79c06c5ba574f7d5c95b3e8eda93e6c246cdc7"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "272c44dcb8cbc6508624c41a697ce964191da6ea1f39cf31f8bd7cf87721c828"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\provenance.json",
+      "bytes": 17679,
+      "sha256": "0c935f645270b5cb321e66855cd7dc0f75b3845378b4eb7ea6b594763f54d88b"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\code\\excerpt.txt",
+      "bytes": 432,
+      "sha256": "15a0d6c1d298d6290f3e8833a0154f9992892afe89381ffc101ae43d53732c09"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\code\\extrude_repaired.py",
+      "bytes": 353,
+      "sha256": "f16fbf31ba5cb998932c49112c1b0f386484dc864eb55b48e8fbbe28898c38f1"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\code\\prediction.py",
+      "bytes": 353,
+      "sha256": "f16fbf31ba5cb998932c49112c1b0f386484dc864eb55b48e8fbbe28898c38f1"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\code\\raw_prediction.py",
+      "bytes": 353,
+      "sha256": "f16fbf31ba5cb998932c49112c1b0f386484dc864eb55b48e8fbbe28898c38f1"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\input\\exact_text.txt",
+      "bytes": 137,
+      "sha256": "77ddb4008e964b1e9cb22db77d91b1a8802f716e3c988d663589df374a1e0707"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "bd289f475a776fde511ea882cb9353a36fa7b569f72821e31d15ba63febe557c"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\logs\\geometry_row.json",
+      "bytes": 519,
+      "sha256": "882f1a738d5979428297e0593a85fe94607cd81ea51f21598027e2c191fe94d7"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\plans\\canonicalized.txt",
+      "bytes": 197,
+      "sha256": "f5d2e6539f29be2ffaec32ea52987aa9ee630d7bf6c74d1df360a1b3630cc592"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\plans\\raw.txt",
+      "bytes": 197,
+      "sha256": "f5d2e6539f29be2ffaec32ea52987aa9ee630d7bf6c74d1df360a1b3630cc592"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\reference\\program.py",
+      "bytes": 354,
+      "sha256": "89119b2c54ca78e79ffcfc89cda32b4bd2535f6c46c5e1268f9176bed079759f"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0095267\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0095267\\reference\\training_ir.txt",
+      "bytes": 198,
+      "sha256": "7c710d3aba79fbdbd7f6d5bd41c1bc90a4c84f28520d73dcfea0c7612ff086f3"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\assets.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\assets.json",
+      "bytes": 9707,
+      "sha256": "94182ca695712e2915da4ec5b7ae0868ce4e0cf967b82f6a681054617a37354f"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\case.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\case.json",
+      "bytes": 4423,
+      "sha256": "bb42c2fbb2d7e1d4c448d8c1d84a845a9c9ccf72087b606624e931118ae7aa1a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\prediction_locator.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\prediction_locator.json",
+      "bytes": 4488,
+      "sha256": "fdf996561d9f615e36eb4350331a77f94456752c2d5510c7bb7168bdc0f6b5c9"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\provenance.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\provenance.json",
+      "bytes": 17594,
+      "sha256": "ccd9dfb7eebcc058bc60969b657f1dada04049e9863b447d0866683192f22b93"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\code\\excerpt.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\code\\excerpt.txt",
+      "bytes": 2323,
+      "sha256": "62d81eaf14ca72a1e0928a8ced738381756b1a0b9722993847856cddb84937a3"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\code\\extrude_repaired.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\code\\extrude_repaired.py",
+      "bytes": 2244,
+      "sha256": "5f43940435a1e6898409f12d77d7c82e4425c48d7a2ac1dfc3e7554a248f47fb"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\code\\prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\code\\prediction.py",
+      "bytes": 2244,
+      "sha256": "5f43940435a1e6898409f12d77d7c82e4425c48d7a2ac1dfc3e7554a248f47fb"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\code\\raw_prediction.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\code\\raw_prediction.py",
+      "bytes": 2244,
+      "sha256": "5f43940435a1e6898409f12d77d7c82e4425c48d7a2ac1dfc3e7554a248f47fb"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\input\\exact_text.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\input\\exact_text.txt",
+      "bytes": 161,
+      "sha256": "c2b4579847b9eaa3a8d7c2aa022dbc954ca41800d1825c2aea807f9762923e2a"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\logs\\gate_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\logs\\gate_row.json",
+      "bytes": 160,
+      "sha256": "855762a66ac8aa4fde3a995ac879ae4e83d62405995ee2f0a29a123d6353a9cd"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\logs\\geometry_row.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\logs\\geometry_row.json",
+      "bytes": 518,
+      "sha256": "bf0fc9dc6fe31df2ae733fb3102ff6dcee64014a910c046408b5be368b19a321"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\plans\\canonicalized.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\plans\\canonicalized.txt",
+      "bytes": 1529,
+      "sha256": "d231c95b5a6a6b8ad7bd14688bed63404329ca44ce8b57055353f18949b10009"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\plans\\raw.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\plans\\raw.txt",
+      "bytes": 1529,
+      "sha256": "d231c95b5a6a6b8ad7bd14688bed63404329ca44ce8b57055353f18949b10009"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\reference\\program.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\reference\\program.py",
+      "bytes": 2280,
+      "sha256": "cc599b8be559761181116057fd7eace239a801f35368e5e00f80aabcfad3ce61"
+    },
+    "cases\\q-flone-step-b2legacy-flluma_0096596\\reference\\training_ir.txt": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\reference\\training_ir.txt",
+      "bytes": 1787,
+      "sha256": "1f316db6f834aebf1a2b5024195b53de4703c85ce85622988b1db9a917902949"
+    }
+  },
+  "future_changes": "Create versioned visual-selection/render records; do not rewrite this candidate snapshot",
+  "actual_generated_STEP_or_gallery_renders": 0,
+  "gallery_status": "NOT_RENDERED_VISUAL_REVIEW_PENDING",
+  "legacy_training_seed_checkpoint_binding": "UNRESOLVED_NOT_FABRICATED",
+  "review04_closure_artifacts_unchanged": 17,
+  "training_model_or_CAD_execution": false
+}

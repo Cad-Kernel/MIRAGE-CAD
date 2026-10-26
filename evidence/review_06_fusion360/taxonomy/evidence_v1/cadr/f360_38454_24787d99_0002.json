@@ -1,0 +1,130 @@
+{
+  "sample_id": "f360_38454_24787d99_0002",
+  "method": "cadr",
+  "classification": {
+    "primary_outcome": "EXECUTION_FAILURE",
+    "verified_failure_class": "EXECUTION_FAILURE",
+    "reason_subtype": "CADQUERY_THREE_POINT_ARC_CONSTRUCTION_REPORTED",
+    "reason_detail": null,
+    "classification_rule": "CADR_NATIVE_EXECUTION_RESULT",
+    "reported_error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+    "native_traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+    "cd_scoreable": false,
+    "iou_scoreable": false,
+    "CD": null,
+    "IoU": null,
+    "iou_outcome": "UNAVAILABLE_AFTER_PRIMARY_FAILURE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 95,
+    "json_pointer": "/rows/95/native_records/cadr"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_38454_24787d99_0002\\run_manifest.json",
+      "sha256": "5c3cc9a5d572c8f291d1f9ecd0e89266ddda6158f9cd1dd467926988e918ce6b",
+      "bytes": 3832
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_38454_24787d99_0002\\execution_result.json",
+      "sha256": "07201e755813babc991ebd13f89e52bf657987dbc1aa2aec5e452c9c509fb726",
+      "bytes": 1105
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_38454_24787d99_0002\\execution_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_38454_24787d99_0002\\execution_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "physical_JSONL_locators": {},
+  "original_native_record": {
+    "sample_id": "f360_38454_24787d99_0002",
+    "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/38454_24787d99_0002.step",
+    "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+    "pipeline_status": "EXECUTION_FAILED",
+    "terminal": true,
+    "cd_status": null,
+    "iou_status": null,
+    "input": {
+      "source_step_sha256": "d30de22edbefc33a5428d656135f3ab91fbc6ac866b685326cd94ab460fcdc82",
+      "alpha": 1e-06,
+      "angular_deflection": 0.3,
+      "canonical_mesh_sha256": "f903f7563016028cdf0f80cd54bd4e5f464fe60560377563480d5e5f8f85f1a9/cad7bcc686aa52fa8d9afe18880fc6a4a741e72636cdff2333593d766e423503",
+      "mesh_vertex_count": 680,
+      "mesh_triangle_count": 1360,
+      "mesh_watertight": true,
+      "bbox_before_normalization": [
+        22.071067910647002,
+        17.0710677130838,
+        5.0
+      ],
+      "normalization_target_extent": 2.0,
+      "normalization_scale": 0.09061636745883091,
+      "sampling_seed": 0,
+      "n_pre_points": 8192,
+      "cloud_8192_sha256": "885bc0edd77133e15a9e9769a451fcfb5ca7be1458fac1ceaf773406ad03b2f5",
+      "fps_indices_sha256": "bdb5a6a7c050ae5ef0afbcd862ca4eef8228f158510bd3e5720e38621b550f4a",
+      "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+      "cloud_256_sha256": "b2572e373889d1514218c6850e4cc017e49734254c1b69d58120f45ff73f970d"
+    },
+    "model": {
+      "checkpoint": "filapro/cad-recode-v1.5",
+      "tokenizer": "Qwen/Qwen2-1.5B",
+      "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+      "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+      "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+      "torch": "2.7.0+cu128",
+      "device": "cuda",
+      "device_capability": "sm_120",
+      "n_parameters": 1543794176,
+      "generation": {
+        "strategy": "greedy",
+        "num_candidates": 1,
+        "max_new_tokens": 768
+      },
+      "transformers": "4.47.1"
+    },
+    "generation": {
+      "seconds": 1.71,
+      "raw_chars": 2826,
+      "raw_sha256": "17b9cc4b67ca9e4520deb4151985d4b2adf1226e78d12077cae11b6d7d7e0aa4"
+    },
+    "extraction_status": "ok",
+    "extracted_code_sha256": "632f580e658115a75a9654bb742849536997208e0785d672c10a930ad781117f",
+    "extracted_code_lines": 3,
+    "unsafe_patterns_found": [],
+    "execution": {
+      "timeout_s": 60,
+      "wall_seconds": 0.85,
+      "timed_out": false,
+      "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_38454_24787d99_0002",
+      "return_code": 1,
+      "runner_result": {
+        "status": "EXECUTION_FAILED",
+        "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+        "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+        "generated_stdout": ""
+      }
+    }
+  },
+  "original_gate": null,
+  "original_export_record": null,
+  "original_CADR_execution_texts": {
+    "execution_stdout.txt": "",
+    "execution_stderr.txt": ""
+  },
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

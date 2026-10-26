@@ -1,0 +1,84 @@
+{
+  "actual_global_step": 500,
+  "arm": "B",
+  "cache_index_sha256": "93e0060b697ccb98c0be3af51db70bb60ae0babbe294224ee9c7b3cf60718441",
+  "checkpoint_selection": "final",
+  "created_utc": "2026-10-18T00:20:16.816996+00:00",
+  "dataset": {
+    "all_cases_retain_target_tokens": true,
+    "first_batch": {
+      "attention_mask": [
+        1,
+        485
+      ],
+      "input_ids": [
+        1,
+        485
+      ],
+      "labels": [
+        1,
+        485
+      ],
+      "z_ir_hat": [
+        1,
+        512
+      ]
+    },
+    "last_batch": {
+      "attention_mask": [
+        1,
+        612
+      ],
+      "input_ids": [
+        1,
+        612
+      ],
+      "labels": [
+        1,
+        612
+      ],
+      "z_ir_hat": [
+        1,
+        512
+      ]
+    },
+    "rows": 8000,
+    "unique_inputs_tokenized": 8000
+  },
+  "execution_hashes": {
+    "cag_exposure_policy.py": "7c8ba2081e837f2bcc808e55c3b49e0fdff4778cc883484220c798afcdcd92f4",
+    "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+    "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+  },
+  "exposure_trace": {
+    "current_indices": [],
+    "epochs": [
+      {
+        "epoch": 0,
+        "index_sha256": "d1db656808d18448ed4a7a9ea7fa03319280c1c0afe0dcc9d54a0ad9e9d07c33",
+        "presentations": 8000
+      }
+    ],
+    "lr_steps_checked": 500
+  },
+  "fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "fresh_optimizer_and_scheduler": true,
+  "stage": "phase2",
+  "startup": {
+    "adapter_config.json": {
+      "bytes": 1197,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase1/adapter_config.json",
+      "sha256": "18007a7733f2215746f03d0b216bcb9e0fcb3795b4aa5f1491e913f7af112ba8"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 36981072,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase1/adapter_model.safetensors",
+      "sha256": "26e957e4df8b2339194dd5d818b6b49c3d1173fee27743396d491928ec9e7953"
+    },
+    "soft_prefix.pt": {
+      "bytes": 40932549,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase1/soft_prefix.pt",
+      "sha256": "687f47273450ca6d6330fd5357ef8e269c0e82f4a0437df9a927d199376f6018"
+    }
+  }
+}

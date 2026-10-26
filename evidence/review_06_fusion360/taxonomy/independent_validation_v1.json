@@ -1,0 +1,25 @@
+{
+  "status": "PASS_INDEPENDENT_NATIVE_LOG_TAXONOMY_VALIDATION",
+  "long_rows": 1200,
+  "long_columns": 28,
+  "wide_rows": 400,
+  "wide_columns": 94,
+  "unique_method_sample_pairs": 1200,
+  "evidence_files_checked": 1200,
+  "independent_stage_oracle_matches": 1200,
+  "original_67_columns_unchanged": true,
+  "native_source_files_rehashed": 2404,
+  "native_source_drift": 0,
+  "step1_sealed_files_unchanged": 20,
+  "prior_04_05_seals_unchanged": {
+    "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\path_lock_manifest_v1.json": 385,
+    "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\rendering\\cpu_v1\\render_inventory_v1.json": 370,
+    "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\raw_archive_v1\\archive_manifest.json": 237,
+    "__EVIDENCE_SOURCE_ROOT__\\04\\execution\\final_evidence_inventory_20261022.json": 17
+  },
+  "unit_tests": 20,
+  "unit_test_output": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.001s\n\nOK\n",
+  "measured_zero_IoU_preserved": 22,
+  "all_semantic_and_selection_labels_null": true,
+  "training_prediction_CAD_scoring_or_CAD_rendering": false
+}

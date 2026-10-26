@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0096516",
+  "part_name": "flluma_0096516",
+  "category": "face_recursive_mount",
+  "seed": 20357030,
+  "units": "mm",
+  "parameters": {
+    "boss_height": {
+      "value": 18.81,
+      "min": 6.0,
+      "max": 36.0,
+      "expression": "height * 0.409",
+      "semantic_type": "boss_height"
+    },
+    "boss_lift": {
+      "value": 5.73,
+      "min": 2.0,
+      "max": 16.0,
+      "expression": "thickness * 0.573",
+      "semantic_type": "boss_height"
+    },
+    "boss_width": {
+      "value": 34.44,
+      "min": 8.0,
+      "max": 50.0,
+      "expression": "width * 0.378",
+      "semantic_type": "boss_width"
+    },
+    "cut_depth": {
+      "value": 3.72,
+      "min": 0.5,
+      "max": 12.0,
+      "expression": "boss_lift * 0.649",
+      "semantic_type": "pocket_depth"
+    },
+    "fillet_radius": {
+      "value": 0.65,
+      "min": 0.1,
+      "max": 2.0,
+      "semantic_type": "fillet_radius"
+    },
+    "height": {
+      "value": 46.0,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_offset_x": {
+      "value": 29.152,
+      "min": 4.0,
+      "max": 45.0,
+      "expression": "width * 0.32",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_offset_y": {
+      "value": 12.88,
+      "min": 3.0,
+      "max": 35.0,
+      "expression": "height * 0.28",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_radius": {
+      "value": 1.8,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "slot_height": {
+      "value": 5.66,
+      "min": 1.0,
+      "max": 22.0,
+      "expression": "boss_height * 0.301",
+      "semantic_type": "pocket_width"
+    },
+    "slot_width": {
+      "value": 12.64,
+      "min": 4.0,
+      "max": 32.0,
+      "expression": "boss_width * 0.367",
+      "semantic_type": "pocket_width"
+    },
+    "thickness": {
+      "value": 10,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 91.1,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "plate_001",
+      "name": "base_plate",
+      "type": "Plate",
+      "category": "additive",
+      "semantic_type": "base_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 91.1
+        },
+        "height": {
+          "parameter": "height",
+          "value": 46.0
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 10
+        },
+        "centered": true,
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "width": {
+              "parameter": "width",
+              "value": 91.1
+            },
+            "height": {
+              "parameter": "height",
+              "value": 46.0
+            },
+            "centered": true
+          },
+          {
+            "op": "Extrude",
+            "height": {
+              "parameter": "thickness",
+              "value": 10
+            },
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "hole_001",
+      "name": "base_mounting_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "mounting_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 12.0,
+        "count": 4,
+        "positions": [
+          [
+            -29.152,
+            -12.88
+          ],
+          [
+            29.152,
+            -12.88
+          ],
+          [
+            -29.152,
+            12.88
+          ],
+          [
+            29.152,
+            12.88
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 1.8
+        }
+      },
+      "dependencies": [
+        "plate_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "plate_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "plate_001:top_face:4a4118f35d38"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "face_sketch_001",
+      "name": "raised_boss_profile",
+      "type": "SketchOnFace",
+      "category": "sketch",
+      "semantic_type": "boss_profile",
+      "parameters": {
+        "profile_type": "rectangle",
+        "width": {
+          "parameter": "boss_width",
+          "value": 34.44
+        },
+        "height": {
+          "parameter": "boss_height",
+          "value": 18.81
+        },
+        "centered": true,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "workplane": {
+          "source": "target_face",
+          "feature_id": "hole_001",
+          "selector": "top_face"
+        }
+      },
+      "dependencies": [
+        "hole_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "hole_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "hole_001:top_face:9014e73e3f7b"
+        }
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "face_add_001",
+      "name": "raised_boss",
+      "type": "FaceExtrudeAdd",
+      "category": "additive",
+      "semantic_type": "boss",
+      "parameters": {
+        "operation": "join",
+        "height": {
+          "parameter": "boss_lift",
+          "value": 5.73
+        }
+      },
+      "dependencies": [
+        "hole_001",
+        "face_sketch_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "hole_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "hole_001:top_face:9014e73e3f7b"
+        },
+        "sketch": {
+          "feature_id": "face_sketch_001"
+        }
+      },
+      "rebuild_order": 4
+    },
+    {
+      "id": "face_sketch_002",
+      "name": "boss_recess_profile",
+      "type": "SketchOnFace",
+      "category": "sketch",
+      "semantic_type": "pocket_profile",
+      "parameters": {
+        "profile_type": "rectangle",
+        "width": {
+          "parameter": "slot_width",
+          "value": 12.64
+        },
+        "height": {
+          "parameter": "slot_height",
+          "value": 5.66
+        },
+        "centered": true,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "workplane": {
+          "source": "target_face",
+          "feature_id": "face_add_001",
+          "selector": "top_face"
+        }
+      },
+      "dependencies": [
+        "face_add_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "face_add_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "face_add_001:top_face:9d394a7ac1f5"
+        }
+      },
+      "rebuild_order": 5
+    },
+    {
+      "id": "face_cut_001",
+      "name": "boss_recess_cut",
+      "type": "FaceExtrudeCut",
+      "category": "subtractive",
+      "semantic_type": "pocket",
+      "parameters": {
+        "operation": "cut",
+        "depth": {
+          "parameter": "cut_depth",
+          "value": 3.72
+        }
+      },
+      "dependencies": [
+        "face_add_001",
+        "face_sketch_002"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "face_add_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "face_add_001:top_face:9d394a7ac1f5"
+        },
+        "sketch": {
+          "feature_id": "face_sketch_002"
+        }
+      },
+      "rebuild_order": 6
+    },
+    {
+      "id": "fillet_001",
+      "name": "recursive_mount_edge_break",
+      "type": "Fillet",
+      "category": "modification",
+      "semantic_type": "edge_break",
+      "parameters": {
+        "radius": {
+          "parameter": "fillet_radius",
+          "value": 0.65
+        }
+      },
+      "dependencies": [
+        "face_cut_001"
+      ],
+      "topology_references": {
+        "target_edges": {
+          "feature_id": "face_cut_001",
+          "kind": "edge_set",
+          "selector": "top_outer_edges",
+          "query": "outer top",
+          "reference_id": "face_cut_001:top_outer_edges:fa2fe8c09b7e"
+        }
+      },
+      "rebuild_order": 7
+    }
+  ]
+}

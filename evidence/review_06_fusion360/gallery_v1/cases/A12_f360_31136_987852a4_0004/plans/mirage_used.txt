@@ -1,0 +1,13 @@
+PART flluma_0004000 CAT mass_centre_shell UNITS mm SEED 20264514
+PARAM chamfer_distance 0.16 MIN 0.1 MAX 1 SEM chamfer_distance
+PARAM height 10.1 MIN 3 MAX 20 SEM overall_height
+PARAM hole_radius 1.43 MIN 0.8 MAX 4 SEM hole_radius
+PARAM shell_thickness 0.8 MIN 0.4 MAX 3 SEM shell_thickness
+PARAM thickness 10.1 MIN 2 MAX 14 SEM thickness
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAM points [[1.55,4.94],[-0.69,4.94],[-1.55,3.08],[-0.69,3.08],[0.69,3.08],[1.55,3.08],[0.69,4.94],[1.55,4.94]] PARAM height 10.1 MIN 3 MAX 20 SEM extrude_profile
+F extrude_001 OP_EXTRUDE SEM shell ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAM height 10.1 MIN 2 MAX 14 SEM extrude_height
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAM height 10.1 MIN 2 MAX 18 SEM cylinder_height
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAM offset [0,0,5.05]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAM count 4 depth 6.72 MIN 1 MAX 8 SEM hole_depth,chamfer_distance,center_hole_radius
+F chamfer_001 OP_CHAMFER SEM outer_chamfer ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAM distance 0.24 MIN 0

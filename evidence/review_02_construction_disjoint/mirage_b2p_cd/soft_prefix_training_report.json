@@ -1,0 +1,19 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+  "modalities": [
+    "step"
+  ],
+  "init_lora_ir_dir": null,
+  "train_rows": 25000,
+  "val_rows": 2500,
+  "prefix_len": 4,
+  "max_length": 1536,
+  "soft_prefix_eval": {
+    "normal_loss": 1.1795750574588775,
+    "zero_loss": 1.1916718115091325,
+    "shuffled_loss": 1.1795750574588775,
+    "shuffled_actually_permuted": false,
+    "shuffled_loss_note": "VACUOUS: the in-batch permutation never ran (eval batch size 1), so shuffled_loss is normal_loss by construction and says nothing about whether the prefix is read. The generation-level prefix ablation is the evidence for that."
+  },
+  "output_dir": "outputs/lora_ir_25k_cd_step"
+}

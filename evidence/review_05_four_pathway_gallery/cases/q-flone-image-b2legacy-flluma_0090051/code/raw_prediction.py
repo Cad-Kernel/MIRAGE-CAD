@@ -1,0 +1,21 @@
+params = Parameters()
+params.add('flange_height', 13.1, min=4.0, max=24.0, expression='height * 0.77', semantic_type='primitive_height')
+params.add('flange_radius', 7.04, min=3.0, max=18.0, semantic_type='loft_radius')
+params.add('flange_width', 35.1, min=8.0, max=50.0, expression='width * 0.101', semantic_type='primitive_width')
+params.add('hole_radius', 1.3, min=0.5, max=4.0, semantic_type='hole_radius')
+params.add('pocket_length', 18.14, min=8.0, max=48.0, expression='width * 0.516', semantic_type='pocket_length')
+params.add('pocket_width', 10.14, min=5.0, max=28.0, expression='height * 0.36', semantic_type='pocket_width')
+params.add('thickness', 6, min=3, max=25, semantic_type='thickness')
+params.add('transition_height', 4.7, min=3.0, max=18.0, expression='thickness * 0.78', semantic_type='loft_height')
+
+part = Part('flluma_0005000', category='lofted_transition_profile_bracket', parameters=params, seed=20265514, sample_id='flluma_0005000', units='mm')
+sketch = part.sketch_polygon(name='loft_profile', points=[[-15.74, -6.25], [-3.73, -12.93], [13.97, -18.65], [17.91, 1.44], [19.66, 9.33], [6.45, 15.56], [-10.6, 11.31], [-18.45, 3.94]], closed=True, semantic_type='loft_profile')
+solid = part.loft(name='loft_bracket_transition', profile=sketch, semantic_type='lofted_solid')
+box = part.box(name='transition_flange_seed', length=params['flange_width'], width=params['flange_height'], height=params['thickness'], semantic_type='flange')
+moved = part.translate(name='place_transition_flange', target=box, offset=[0.0, 5.65, 2.95], semantic_type='placement')
+join = part.boolean_join(name='join_transition_flange', target=solid, tool=moved, semantic_type='flange')
+pocket_profile = part.sketch_polygon(name='loft_transition_pocket', points=[[5.73, 2.9], [4.73, 8.79], [1.9, 13.92], [8.17, 10.01], [11.5, 3.22]], closed=True, semantic_type='pocket_profile')
+pocket = part.boolean_cut(name='cut_transition_flange_profile', target=join, tool=pocket_profile, semantic_type='pocket')
+holes = part.hole_pattern(name='transition_flange_bolt_holes', target=pocket.top_face(), radius=params['hole_radius'], depth='through', positions=[[5.73, 2.9], [8.17, 4.74], [5.73, 6.28], [-8.17, 4.74], [-5.73, 2.9]], semantic_type='bolt_hole_pattern')
+
+__all__ = ['part']

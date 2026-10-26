@@ -1,0 +1,45 @@
+{
+  "cache_complete": {
+    "bytes": 325,
+    "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/COMPLETE.json",
+    "sha256": "d8ef8c2f538451d8ed1cfcbf13403c4af2eccb8536679c0a4c73037e4a07b715"
+  },
+  "cache_index": {
+    "bytes": 37902450,
+    "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/index.jsonl",
+    "sha256": "93e0060b697ccb98c0be3af51db70bb60ae0babbe294224ee9c7b3cf60718441"
+  },
+  "command": "bash __DEV_ROOT__/src/training_25k/cag_run_exposure_policy.sh run --confirm-training",
+  "created_utc": "2026-10-16T20:17:39.880074+00:00",
+  "environment": "WSL Ubuntu / ai_dev",
+  "execution_hashes": {
+    "cag_exposure_policy.py": "7c8ba2081e837f2bcc808e55c3b49e0fdff4778cc883484220c798afcdcd92f4",
+    "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+    "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+  },
+  "fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "frozen_source_runtime_and_initialization_hashes": "PASS",
+  "full_shared_cache": "COMPLETE_REVERIFIED",
+  "manual_training_command": "RELEASED_NOT_EXECUTED_BY_ASSISTANT",
+  "operator_policy": "Human runs the command; stop on any failure, no automatic resume or protocol change",
+  "preflight_report": {
+    "bytes": 5073,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/real_cache_preflight.json",
+    "sha256": "1e36971b5d5d2d1ba01bea2e64adbcf2fca07263d4f11e8d119c4bf2d25f7e5a"
+  },
+  "real_cache_cpu_preflight": "PASS_REVERIFIED",
+  "remaining_runtime_gates": [
+    "Actual final global_step 4689 / 500 / 1182 in each arm",
+    "Same-arm final LoRA/prefix at phase boundary, fresh optimizer/scheduler/RNG",
+    "Exactly 945 generated predicted-role plans with final Phase2 provenance",
+    "Actual generated-plan Stage4b tokenization retains supervised targets without dropping rows",
+    "All actual epoch sample-order/LR hashes and final trainable-weight finiteness",
+    "Same 2500 ordered evaluation IDs per modality; gate/geometry evaluation remains separate"
+  ],
+  "scientific_protocol": "FROZEN_UNCHANGED",
+  "shared_cache_entries": 83997,
+  "trained_results": null,
+  "training": "NOT_STARTED_AT_RELEASE",
+  "training_output_paths": "ALL_ABSENT",
+  "working_directory": "__RUN_SOURCE_ROOT__"
+}

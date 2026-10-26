@@ -1,0 +1,51 @@
+==============================================================================
+MIRAGE through the COMMON external evaluator -- facts only
+==============================================================================
+Same evaluate(), same GT meshes (hash-verified), same alpha = 1e-6 as CAD-Recode.
+
+--- point_genplan ---
+  rows                    400 of 400
+    SUCCESS                  226
+    NO_GEOMETRY              168
+    EMPTY_PREDICTION_MESH    5
+    REMESH_FAILED            1
+  Coverage denominator is all 400; a part that did not build is NOT a zero.
+  CD   n = 226 of 400
+    median 55.7106   mean 62.3658   p25 32.1149   p75 87.8069
+    CD / own floor: median 760.976   p25 262.192   p75 1953.487
+    at or below 1x floor 0/226   2x 0/226
+  IoU  n = 212 of 400
+    median 0.059388   mean 0.109015   p25 0.021640   p75 0.157213
+    IoU evaluator failures among scored parts: 14 (named, never set to 0)
+      f360_36920_08b32825_0000  boolean_failed
+      f360_114351_14d3d46e_0000  boolean_failed
+      f360_56477_620f7fc8_0009  boolean_failed
+      f360_25211_336c083f_0001  boolean_failed
+      f360_43932_4bfdfe7b_0007  boolean_failed
+      f360_24032_d6172503_0023  boolean_failed
+      f360_70169_914780d4_0011  boolean_failed
+      f360_135846_a6116c3f_0000  boolean_failed
+      f360_76880_9bb28e72_0001  boolean_failed
+      f360_33147_d7173b68_0001  boolean_failed
+      ... and 4 more
+
+--- point_nnir ---
+  rows                    400 of 400
+    SUCCESS                  392
+    NO_GEOMETRY              5
+    EMPTY_PREDICTION_MESH    3
+  Coverage denominator is all 400; a part that did not build is NOT a zero.
+  CD   n = 392 of 400
+    median 17.4843   mean 28.1961   p25 9.4610   p75 35.6357
+    CD / own floor: median 203.676   p25 88.740   p75 410.140
+    at or below 1x floor 0/392   2x 0/392
+  IoU  n = 389 of 400
+    median 0.156958   mean 0.208557   p25 0.062934   p75 0.298594
+    IoU evaluator failures among scored parts: 3 (named, never set to 0)
+      f360_22202_c9c16395_0005  boolean_failed
+      f360_86702_c06b5954_0000  boolean_failed
+      f360_22848_cc91b848_0034  boolean_failed
+
+CD and IoU have different denominators BY DESIGN, and so do the two arms.
+No cross-system comparison is computed here: that is a separate, paired analysis
+over the ids where the relevant arms both produced a number.

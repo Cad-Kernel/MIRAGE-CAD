@@ -1,0 +1,18 @@
+PART flluma_0005600 CAT offset_hole_mount UNITS mm SEED 20266114
+PARAM boss_height 13.1 MIN 3 MAX 24 EXPR thickness*1.01 SEM boss_height
+PARAM boss_radius 10.11 MIN 4 MAX 16 EXPR hole_radius*2.7 SEM boss_radius
+PARAM fillet_radius 0.9 MIN 0.1 MAX 2.0 SEM fillet_radius
+PARAM height 13.5 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_y 2.76 MIN 4 MAX 45 EXPR height*0.32 SEM hole_spacing
+PARAM hole_radius 3.54 MIN 2 MAX 14 SEM hole_radius
+PARAM offset_y 1.8 MIN 2 MAX 35 EXPR height*0.138 SEM pocket_depth
+PARAM pocket_length 18.1 MIN 12 MAX 78 EXPR width*0.27 SEM pocket_length
+PARAM pocket_width 36.1 MIN 10 MAX 50 EXPR height*0.268 SEM pocket_width
+PARAM thickness 10 MIN 3 MAX 25 SEM thickness
+PARAM width 22.4 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE secondary_feature DEP cylinder_001 PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_y,-@offset_y],[@hole_offset_y,-@offset_y],[-@hole_offset_y,@offset_y],[@hole_offset_y,@offset_y]] radius=@hole_radius
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE secondary_feature DEP hole_001 PARAMS depth=2.6 length=@pocket_length width=@pocket_width
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP pocket_001 PARAMS radius=@fillet_radius
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary

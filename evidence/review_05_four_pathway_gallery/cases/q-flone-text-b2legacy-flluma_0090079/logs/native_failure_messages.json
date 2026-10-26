@@ -1,0 +1,7 @@
+{
+  "sample_id": "flluma_0090079",
+  "modality": "text",
+  "gate_error": "exec error: topology reference 'join_001:top_face:b9ce48e7f7b9' did not resolve any face",
+  "geometry_error": "exec error: topology reference 'join_001:top_face:b9ce48e7f7b9' did not resolve any face",
+  "note": "Original native error summaries, not an invented full traceback or visual feature diagnosis"
+}

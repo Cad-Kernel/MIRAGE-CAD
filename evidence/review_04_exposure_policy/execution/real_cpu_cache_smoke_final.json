@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-10-16T19:01:00.051277+00:00",
+  "entries": [
+    {
+      "identity": [
+        "train",
+        "flluma_0000000",
+        "step"
+      ],
+      "latent_sha256": "aac8eb3aec01fcb4055de52576745e575a53205389bf572caee425ef16b9bf53",
+      "metadata_sha256": "a6b2f85c6c4f8cc6ec845c4f92c62a5ab88af3786b82bcfba37ec43bc5e4aacb",
+      "points_sha256": "e67dfcf0a38a63f145f6dcd76c42f4389fe99cf69e3134261f04536ab513726f"
+    },
+    {
+      "identity": [
+        "val",
+        "flluma_0080002",
+        "step"
+      ],
+      "latent_sha256": "f2ee82e662fe25d055efeb8ac26700677a10770dd8e0a7d332cc4417072d222f",
+      "metadata_sha256": "7ade45e3f98b124da155292092985cea9f468ed9613c34ca2e8e0206c141147b",
+      "points_sha256": "e67dfcf0a38a63f145f6dcd76c42f4389fe99cf69e3134261f04536ab513726f"
+    },
+    {
+      "identity": [
+        "train",
+        "flluma_0000000",
+        "point"
+      ],
+      "latent_sha256": "4417b862f64746a238a8fe48bfaea9884daf5a0eecde5287fdbe3defad6c719b",
+      "metadata_sha256": "a6fe920d9b3192420b4fde46af92795c02948d41fa046207a67717c01927e3d0",
+      "points_sha256": "b6a15a36a79b9956808f5cd7763a62e2f3f7ee4719aa74d559da2992f264ed71"
+    },
+    {
+      "identity": [
+        "val",
+        "flluma_0080114",
+        "point"
+      ],
+      "latent_sha256": "bd625a4f878ce7fd8b49af73838c3346a91c90d488524ed1a710312ac8e07fd3",
+      "metadata_sha256": "a5fec53290f8f84fba1d5d1d1893ca2d5c3b73650497a1eea7a09e2a30ad4048",
+      "points_sha256": "d4dff40d85a7fd8ca059fd8dff4dc8afe36fbd984aea013681ac8937b9b35210"
+    },
+    {
+      "identity": [
+        "train",
+        "flluma_0000000",
+        "text"
+      ],
+      "latent_sha256": "301b1365b47ceba39d373ce30b8642ba133909bdca4645692a7f9ece5b842422",
+      "metadata_sha256": "2ab904af0331d0f75f68b31320b3766554de8e22820073415fb6b1b8ba0eace2",
+      "points_sha256": "e67dfcf0a38a63f145f6dcd76c42f4389fe99cf69e3134261f04536ab513726f"
+    },
+    {
+      "identity": [
+        "val",
+        "flluma_0080114",
+        "text"
+      ],
+      "latent_sha256": "397215818d05bcaa1d38f73fbb189bb35d264f627aa549dc36382e3572ddf491",
+      "metadata_sha256": "356b9fa3b21031cc462fb1c884aa8ffc29f914301b7178099715540bd19d464b",
+      "points_sha256": "e67dfcf0a38a63f145f6dcd76c42f4389fe99cf69e3134261f04536ab513726f"
+    },
+    {
+      "identity": [
+        "train",
+        "flluma_0000000",
+        "image"
+      ],
+      "latent_sha256": "2e0ab0ed066b54a8ad74e99292bc738aaf4eb0363c6ff6943e2fd0277b703e9d",
+      "metadata_sha256": "e1c95b9e28fa5e442005b301758282393962cce31fe3b0d8bbcbc9ec9747aa9a",
+      "points_sha256": "e67dfcf0a38a63f145f6dcd76c42f4389fe99cf69e3134261f04536ab513726f"
+    },
+    {
+      "identity": [
+        "val",
+        "flluma_0080114",
+        "image"
+      ],
+      "latent_sha256": "56c46a1f26891b7bd635b3ad53511ccbc0ca362d6e29b3004ad3fc907dea2585",
+      "metadata_sha256": "d3cbbefc9b803bdb388798070e1c4745b677cef5ac33dc5f641cf9ac90e4d040",
+      "points_sha256": "e67dfcf0a38a63f145f6dcd76c42f4389fe99cf69e3134261f04536ab513726f"
+    }
+  ],
+  "fingerprint": "c42be18716958840ea9809d60fe92f633e2f3eda432695818d1d469b3dbc3c64",
+  "full_cache_created": false,
+  "real_entries_twice_encoded": 8,
+  "status": "PASS_SMOKE_ONLY",
+  "training_started": false
+}

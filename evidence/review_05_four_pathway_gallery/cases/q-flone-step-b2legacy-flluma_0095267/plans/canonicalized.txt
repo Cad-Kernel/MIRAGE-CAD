@@ -1,0 +1,4 @@
+PART flluma_0003001 CAT sphere_stock UNITS mm SEED 20263515
+PARAM radius 6.68 MIN 1.5 MAX 16 SEM sphere_radius
+F sphere_001 OP_SPHERE SEM primitive_stock ROLE primary_body PARAMS radius=@radius
+END

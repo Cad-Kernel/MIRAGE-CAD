@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-18T07:28:11.103175+00:00",
+  "errors": 0,
+  "failures": 0,
+  "scope": "CPU guard/callback/collator and tiny tied-weight adapter save; no train/forward/backward/optimizer step",
+  "sources": {
+    "cag_run_stage4b_only.sh": {
+      "bytes": 687,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_stage4b_only.sh",
+      "sha256": "71f9a883aecd815b084b4c99959cf8759e3c24f51b3b20be93c7dcdd33ecee23"
+    },
+    "cag_stage4b_execution.py": {
+      "bytes": 27597,
+      "path": "__DEV_ROOT__/src/training_25k/cag_stage4b_execution.py",
+      "sha256": "12871f780608950b9524c99aaa2effe9dfb430f37b394ae7e6a1d1b9ba7b205b"
+    }
+  },
+  "status": "PASS",
+  "test_source": {
+    "bytes": 14748,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_stage4b_execution.py",
+    "sha256": "e9baf33a89efd77f4be2ed624a92f3f8684a42ba31dce5f399263880943f9fda"
+  },
+  "tests_run": 26,
+  "training_started": false
+}

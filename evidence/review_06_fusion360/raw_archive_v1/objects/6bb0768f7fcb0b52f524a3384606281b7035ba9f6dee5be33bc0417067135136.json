@@ -1,0 +1,9 @@
+{
+  "experiment": "C-EXT1-min geometry: four arms against Fusion 360 reference clouds",
+  "n_per_arm": 400,
+  "reference_clouds": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/clouds (8192 points, sampled by flluma occt_file_to_pointcloud from the .step)",
+  "scored_at": "evaluate_geometry_nbest.py default 1024 points, subsampled from both sides",
+  "ceilings": "external F@1% = 0.281 within the corpus scale band, 0.304 over all 400 (docs 9.19). Raw Chamfer is not comparable with the internal 1.963 mm^2; use the bbox-normalized column",
+  "stratum_rule": "read the generated-plan vs NN-IR contrast on parts with bbox_diag <= 134.30 mm; beyond that the STEP descriptor extrapolates",
+  "repair_applied": true
+}

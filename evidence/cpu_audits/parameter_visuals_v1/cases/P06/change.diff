@@ -1,0 +1,11 @@
+--- before.py
++++ after.py
+@@ -4,7 +4,7 @@
+ params.add('flange_thickness', 3.4, min=2.0, max=8.0, semantic_type='thickness')
+ params.add('flange_width', 14.4, min=6.0, max=26.0, semantic_type='primitive_width')
+ params.add('hole_radius', 1.1, min=0.5, max=4.0, semantic_type='hole_radius')
+-params.add('path_height', 9.1, min=4.0, max=28.0, semantic_type='path_height')
++params.add('path_height', 11.375, min=4.0, max=28.0, semantic_type='path_height')
+ params.add('path_length', 20.1, min=10.0, max=45.0, semantic_type='path_length')
+ params.add('path_mid_length', 11.14, min=5.0, max=35.0, expression='path_length * 0.552', semantic_type='path_mid_length')
+ params.add('path_offset', 6.1, min=2.0, max=18.0, semantic_type='path_offset')

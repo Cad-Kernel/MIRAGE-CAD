@@ -1,0 +1,13 @@
+{
+  "case_id": "q-flone-step-b2legacy-flluma_0096596",
+  "sample_id": "flluma_0096596",
+  "modality": "step",
+  "historical_scoreable": true,
+  "case_snapshot_sha256": "bb42c2fbb2d7e1d4c448d8c1d84a845a9c9ccf72087b606624e931118ae7aa1a",
+  "code_path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-step-b2legacy-flluma_0096596\\code\\prediction.py",
+  "code_sha256": "5f43940435a1e6898409f12d77d7c82e4425c48d7a2ac1dfc3e7554a248f47fb",
+  "reference_step_path": "__FLLUMA_ROOT__One\\FllumaOne-100K\\shard_0096\\flluma_0096596\\model.step",
+  "reference_step_sha256": "52c31386ae8333bb50095efb91d3f3f054364ac7a4c8d64dff3fb6beb95f4b8b",
+  "output_dir": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\rendering\\cpu_v1\\cases\\q-flone-step-b2legacy-flluma_0096596",
+  "failure_evidence": null
+}

@@ -1,0 +1,21 @@
+params = Parameters()
+params.add('chamfer_distance', 0.22, min=0.1, max=1.5, semantic_type='chamfer_distance')
+params.add('height', 24.1, min=12, max=80, semantic_type='overall_height')
+params.add('hole_offset_y', 3.892, min=0.0, max=20.0, expression='height * 0.12', semantic_type='hole_spacing')
+params.add('hole_radius', 1.74, min=1, max=8, semantic_type='hole_radius')
+params.add('offset_x', 18.18, min=0.0, max=40.0, expression='width * 0.28', semantic_type='overall_width')
+params.add('offset_y', 10.82, min=0.0, max=30.0, expression='height * 0.42', semantic_type='overall_height')
+params.add('radius', 6.12, min=3.0, max=18.0, semantic_type='radius')
+params.add('thickness', 7.7, min=3, max=25, semantic_type='thickness')
+params.add('width', 44.1, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0001107', category='offset_hole_plate', parameters=params, seed=20262611, sample_id='flluma_0001107', units='mm')
+plate = part.plate(name='offset_base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+holes = part.hole_pattern(name='offset_mounting_holes', target=plate.top_face(), radius=params['hole_radius'], depth='through', positions=[[-18.18, -3.892], [18.18, -3.892]], semantic_type='mounting_hole')
+cylinder = part.cylinder(name='center_boss_seed', radius=params['radius'], height=10.1, semantic_type='boss')
+moved = part.translate(name='place_center_boss', target=cylinder, offset=[0.0, 0.0, 5.6], semantic_type='placement')
+join = part.boolean_join(name='join_center_boss', target=holes, tool=moved, semantic_type='joined_boss')
+holes_2 = part.hole_pattern(name='end_mounting_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[17.952, 10.824], [-17.952, 10.824], [17.952, -10.824], [-17.952, -10.824]], semantic_type='mounting_hole')
+chamfer = part.chamfer(name='machined_chamfer', target=holes_2.top_outer_edges(), distance=params['chamfer_distance'], semantic_type='outer_chamfer')
+
+__all__ = ['part']

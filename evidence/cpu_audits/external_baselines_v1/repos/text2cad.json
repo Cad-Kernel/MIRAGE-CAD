@@ -1,0 +1,73 @@
+{
+  "repo": "SadilKhan/Text2CAD",
+  "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+  "default_branch": "main",
+  "commit": "669a81472ede2269837c22a4d00070eaac360c82",
+  "commit_date": "2025-05-15T15:53:20Z",
+  "api_license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "tree_truncated": false,
+  "tree_blob_count": 65,
+  "metric_inference_candidate_paths": [
+    "Cad_VLM/config/inference.yaml",
+    "Cad_VLM/config/inference_user_input.yaml",
+    "Cad_VLM/models/metrics.py",
+    "Evaluation/eval_seq.py"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/LICENSE",
+      "status": 200,
+      "sha256": "00a59345b70fc28ed27db6319b2f61a7dc552f8db03d01cf9f75382c292e4bfe",
+      "saved_path": "responses/text2cad_file_00.body"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/README.md",
+      "status": 200,
+      "sha256": "4a0a57cae756bf0fcb46a1e1adc04455d1b96ed811646cddfb59355e96ce0199",
+      "saved_path": "responses/text2cad_file_01.body"
+    },
+    {
+      "path": "environment.yml",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/environment.yml",
+      "status": 200,
+      "sha256": "ca6fee30654c8e94cf5c9d86f960c94acf27326276893c579f927e30bca5b215",
+      "saved_path": "responses/text2cad_file_02.body"
+    },
+    {
+      "path": "Evaluation/eval_seq.py",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Evaluation/eval_seq.py",
+      "status": 200,
+      "sha256": "3cc7db249303155d20b5526a02da042370e5fa4db75f0cace53a3f3f2ddd1770",
+      "saved_path": "responses/text2cad_file_03.body"
+    },
+    {
+      "path": "Cad_VLM/models/metrics.py",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/models/metrics.py",
+      "status": 200,
+      "sha256": "eafee5e81464a842bdeb19d341f3a41267417cbb7c9841901e50935f3a4102a9",
+      "saved_path": "responses/text2cad_file_04.body"
+    },
+    {
+      "path": "Cad_VLM/config/inference.yaml",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/config/inference.yaml",
+      "status": 200,
+      "sha256": "4847e3a668ba5e32145a1cd396a6a2e328bf54bdfe9be3a8d7919493d5d607a7",
+      "saved_path": "responses/text2cad_file_05.body"
+    },
+    {
+      "path": "Cad_VLM/config/inference_user_input.yaml",
+      "url": "https://raw.githubusercontent.com/SadilKhan/Text2CAD/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/config/inference_user_input.yaml",
+      "status": 200,
+      "sha256": "097160e5b6760845471924125c6303814080761ba223bc6d4bd2ed6d71a0b201",
+      "saved_path": "responses/text2cad_file_06.body"
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "action": "read_only_schema_and_source_discovery",
+  "collections": {
+    "rows": {
+      "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\rows.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "external_id",
+        "dataset_root",
+        "step_feature_path",
+        "point_path",
+        "bbox_diag",
+        "source_dataset",
+        "split"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "external_id": "22357_e2f7b060_0012",
+        "dataset_root": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K",
+        "step_feature_path": "__RUN_SOURCE_ROOT__/data/external/fusion360/step_features/f360_22357_e2f7b060_0012.json",
+        "point_path": "__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/22357_e2f7b060_0012.npz",
+        "bbox_diag": 29.47865875211275,
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "split": "test"
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "queries": {
+      "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\queries.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "source_dataset",
+        "external_id",
+        "split",
+        "step_path",
+        "step_path_wsl",
+        "point_path",
+        "point_path_wsl",
+        "n_points",
+        "bbox_diag",
+        "scale_applied"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "external_id": "22357_e2f7b060_0012",
+        "split": "test",
+        "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\22357_e2f7b060_0012.step",
+        "step_path_wsl": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/22357_e2f7b060_0012.step",
+        "point_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\22357_e2f7b060_0012.npz",
+        "point_path_wsl": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/22357_e2f7b060_0012.npz",
+        "n_points": 8192,
+        "bbox_diag": 29.47865875211275,
+        "scale_applied": 1.0
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "step_index": {
+      "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_index.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "source_dataset",
+        "external_id",
+        "split",
+        "step_path",
+        "step_path_wsl",
+        "point_path",
+        "point_path_wsl",
+        "n_points",
+        "bbox_diag",
+        "scale_applied",
+        "step_feature_path",
+        "success",
+        "error"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "external_id": "22357_e2f7b060_0012",
+        "split": "test",
+        "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\22357_e2f7b060_0012.step",
+        "step_path_wsl": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/22357_e2f7b060_0012.step",
+        "point_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\22357_e2f7b060_0012.npz",
+        "point_path_wsl": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/22357_e2f7b060_0012.npz",
+        "n_points": 8192,
+        "bbox_diag": 29.47865875211275,
+        "scale_applied": 1.0,
+        "step_feature_path": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_22357_e2f7b060_0012.json",
+        "success": true,
+        "error": ""
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "old_manifest": {
+      "path": "__DEV_ROOT__\\scratch\\external_manifest\\manifest.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "gt_step_path",
+        "gt_mesh_path",
+        "point_cloud_path",
+        "mirage_prediction_path",
+        "mirage_exists",
+        "mirage_exec_status",
+        "mirage_mesh_path",
+        "cadrecode_prediction_path",
+        "cadrecode_exists",
+        "cadrecode_exec_status",
+        "cadrecode_mesh_path",
+        "eligible_for_cd",
+        "eligible_for_iou",
+        "paired_valid_geometry",
+        "gt_normalized_area",
+        "expected_cd_floor_8192",
+        "notes"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "gt_step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/22357_e2f7b060_0012.step",
+        "gt_mesh_path": "scratch\\external_gt_mesh\\f360_22357_e2f7b060_0012.stl",
+        "point_cloud_path": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/22357_e2f7b060_0012.npz",
+        "mirage_prediction_path": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/outputs/external_fusion360/gen_point_genplan.jsonl",
+        "mirage_exists": true,
+        "mirage_exec_status": "not_executed",
+        "mirage_mesh_path": "scratch\\external_mirage_mesh\\f360_22357_e2f7b060_0012.stl",
+        "cadrecode_prediction_path": "",
+        "cadrecode_exists": false,
+        "cadrecode_exec_status": "no_prediction",
+        "cadrecode_mesh_path": "scratch\\external_cadrecode_mesh\\f360_22357_e2f7b060_0012.stl",
+        "eligible_for_cd": false,
+        "eligible_for_iou": false,
+        "paired_valid_geometry": false,
+        "gt_normalized_area": "",
+        "expected_cd_floor_8192": "",
+        "notes": "gt_mesh_not_tessellated"
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "genplan_raw": {
+      "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "modality",
+        "predicted_ir",
+        "reference_ir",
+        "reference",
+        "prediction"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0001001 CAT capsule_stock UNITS mm SEED 20261516\nPARAM height 10.1 MIN 4 MAX 28 SEM primitive_height\nPARAM radius 5.1 MIN 1 MAX 12 SEM primitive_radius\nF capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius\nEND",
+        "reference_ir": "",
+        "reference": "",
+        "prediction": "params = Parameters()\nparams.add('height', 10.1, min=4.0, max=28.0, semantic_type='primitive_height')\nparams.add('radius', 5.1, min=1.0, max=12.0, semantic_type='primitive_radius')\n\npart = Part('flluma_0001001', category='capsule_stock', parameters=params, seed=20261516, sample_id='flluma_0001001', units='mm')\ncapsule = part.capsule(name='capsule_stock_body', radius=params['radius'], height=params['height'], semantic_type='primitive_stock')\n\n__all__ = ['part']"
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "genplan_used": {
+      "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan_repaired_p0.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "modality",
+        "predicted_ir",
+        "reference_ir",
+        "reference",
+        "prediction"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0001001 CAT capsule_stock UNITS mm SEED 20261516\nPARAM height 10.1 MIN 4 MAX 28 SEM primitive_height\nPARAM radius 5.1 MIN 1 MAX 12 SEM primitive_radius\nF capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius\nEND",
+        "reference_ir": "",
+        "reference": "",
+        "prediction": "params = Parameters()\nparams.add('height', 10.1, min=4.0, max=28.0, semantic_type='primitive_height')\nparams.add('radius', 5.1, min=1.0, max=12.0, semantic_type='primitive_radius')\n\npart = Part('flluma_0001001', category='capsule_stock', parameters=params, seed=20261516, sample_id='flluma_0001001', units='mm')\ncapsule = part.capsule(name='capsule_stock_body', radius=params['radius'], height=params['height'], semantic_type='primitive_stock')\n\n__all__ = ['part']"
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "nn_raw": {
+      "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "modality",
+        "baseline",
+        "nn_sample_id",
+        "predicted_ir",
+        "reference_ir",
+        "prediction",
+        "reference"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "modality": "point",
+        "baseline": "prior-nn-ir",
+        "nn_sample_id": "flluma_0068255",
+        "predicted_ir": "PART flluma_0068255 CAT capsule_stock UNITS mm SEED 22328775\nPARAM height 8.67 MIN 4 MAX 28 SEM primitive_height\nPARAM radius 2.23 MIN 1 MAX 8 SEM primitive_radius\nF capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius\nEND\n",
+        "reference_ir": "",
+        "prediction": "params = Parameters()\nparams.add('height', 8.67, min=4.0, max=28.0, semantic_type='primitive_height')\nparams.add('radius', 2.23, min=1.0, max=8.0, semantic_type='primitive_radius')\n\npart = Part('flluma_0068255', category='capsule_stock', parameters=params, seed=22328775, sample_id='flluma_0068255', units='mm')\ncapsule = part.capsule(name='capsule_stock_body', radius=params['radius'], height=params['height'], semantic_type='primitive_stock')\n\n__all__ = ['part']",
+        "reference": ""
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "nn_used": {
+      "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir_repaired_p0.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "modality",
+        "baseline",
+        "nn_sample_id",
+        "predicted_ir",
+        "reference_ir",
+        "prediction",
+        "reference"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "modality": "point",
+        "baseline": "prior-nn-ir",
+        "nn_sample_id": "flluma_0068255",
+        "predicted_ir": "PART flluma_0068255 CAT capsule_stock UNITS mm SEED 22328775\nPARAM height 8.67 MIN 4 MAX 28 SEM primitive_height\nPARAM radius 2.23 MIN 1 MAX 8 SEM primitive_radius\nF capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius\nEND\n",
+        "reference_ir": "",
+        "prediction": "params = Parameters()\nparams.add('height', 8.67, min=4.0, max=28.0, semantic_type='primitive_height')\nparams.add('radius', 2.23, min=1.0, max=8.0, semantic_type='primitive_radius')\n\npart = Part('flluma_0068255', category='capsule_stock', parameters=params, seed=22328775, sample_id='flluma_0068255', units='mm')\ncapsule = part.capsule(name='capsule_stock_body', radius=params['radius'], height=params['height'], semantic_type='primitive_stock')\n\n__all__ = ['part']",
+        "reference": ""
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "genplan_ir": {
+      "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\ir_point.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "modality",
+        "predicted_ir",
+        "reference_ir",
+        "program_path"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0001001 CAT capsule_stock UNITS mm SEED 20261516\nPARAM height 10.1 MIN 4 MAX 28 SEM primitive_height\nPARAM radius 5.1 MIN 1 MAX 12 SEM primitive_radius\nF capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius\nEND",
+        "reference_ir": "",
+        "program_path": ""
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "gate_genplan": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "syntax_ok",
+        "exec_ok",
+        "build_ok",
+        "solid_valid",
+        "step_export_ok",
+        "error"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    },
+    "gate_nn": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "exists": true,
+      "rows": 400,
+      "keys": [
+        "sample_id",
+        "syntax_ok",
+        "exec_ok",
+        "build_ok",
+        "solid_valid",
+        "step_export_ok",
+        "error"
+      ],
+      "first": {
+        "sample_id": "f360_22357_e2f7b060_0012",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "last_id": "f360_39109_816b707e_0013"
+    }
+  },
+  "manifests": {
+    "cadr": {
+      "count": 400,
+      "pipeline_statuses": {
+        "SUCCESS": 392,
+        "EXECUTION_FAILED": 8
+      },
+      "cd_statuses": {
+        "ok": 392,
+        "None": 8
+      },
+      "iou_statuses": {
+        "ok": 379,
+        "boolean_failed": 13,
+        "None": 8
+      },
+      "file_names": {
+        "cloud_256.npy": 400,
+        "execution_result.json": 400,
+        "execution_stderr.txt": 400,
+        "execution_stdout.txt": 400,
+        "extracted_code.py": 400,
+        "prediction.step": 392,
+        "raw_generation.txt": 400,
+        "run_manifest.json": 400
+      },
+      "examples": {
+        "SUCCESS": {
+          "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_101190_cfdcb477_0005\\run_manifest.json",
+          "record": {
+            "sample_id": "f360_101190_cfdcb477_0005",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/101190_cfdcb477_0005.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "SUCCESS",
+            "terminal": true,
+            "cd_status": "ok",
+            "iou_status": "ok",
+            "input": {
+              "source_step_sha256": "60c3af204b576f0eb20948ed51830e52ddc8fb03b98a98a92b41bebd76986511",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "28f9bba090e1f4808e8471a4a9714e3e52f9c783fc48884c46078126dc582fc1/7589b8d3fbfc7237c2a793707ec358c9d0ab3f9bd9b60a3e9270edbe349427d8",
+              "mesh_vertex_count": 10954,
+              "mesh_triangle_count": 21904,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                8.0,
+                47.4000002630055,
+                21.71471656687256
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.04219409259288442,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "31d69f12c8712764a562bb4d46b2c48aa0b2c0442e9a58adebc756434e5feded",
+              "fps_indices_sha256": "c2df30ddbcc3c0ebf58350717201a1c10837301991f8daf6a6a152039b3d2bd1",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "4af0113cc67e660c764c5b527d44496057f6e530735a5e88a36505e09a5495e0"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 4.54,
+              "raw_chars": 3195,
+              "raw_sha256": "55c56f001f3fa8b8ed286d1f669fc42445b4e6d01172dc7b32eb14c055558e67"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "744d3493cb7d38110f22d8756eeecfca7f4de025e2a660911f3290d001f9118d",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.92,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_101190_cfdcb477_0005",
+              "return_code": 0,
+              "runner_result": {
+                "status": "SUCCESS",
+                "generated_stdout": "",
+                "shape_type": "Compound",
+                "is_valid": true,
+                "bbox": [
+                  34.0,
+                  200.27276006819756,
+                  93.08279011131825
+                ],
+                "step_bytes": 72337
+              }
+            },
+            "artifacts": {
+              "prediction_step": "__DEV_ROOT__/scratch/cadrecode_runs/f360_101190_cfdcb477_0005/prediction.step",
+              "prediction_step_sha256": "44f35d6fd2604a0fb444be990854943bbb197d699194fe6a7988ccf74a0bcf3e",
+              "prediction_step_bytes": 72337
+            },
+            "evaluation": {
+              "pred_mesh_triangles": 538,
+              "pred_mesh_watertight": true,
+              "remesh_status": "ok",
+              "cd_x1000": 0.2531628073844831,
+              "cd_floor_gt": 0.07941397040035297,
+              "cd_status": "ok",
+              "iou": 0.913978165864037,
+              "iou_status": "ok",
+              "gt_self_iou": 1.0000001234650786,
+              "gt_self_iou_dev": 1.2346507860527822e-07,
+              "iou_eligible": true
+            },
+            "cd_floor_ratio": 3.1878875481002003
+          }
+        },
+        "EXECUTION_FAILED": {
+          "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_118459_55a06bd6_0000\\run_manifest.json",
+          "record": {
+            "sample_id": "f360_118459_55a06bd6_0000",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/118459_55a06bd6_0000.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "72986d7d3fd6b914a64f33cac384aff98ab858d3654f3fabdf86ab847631e93e",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "323dd091c3ad620eb9ecfcbd25438309027eb0a10dee279dbfda1a3872dd3b29/0b9b7cda25a18bc5fe57f762457aba0b51c66d144ab2fd396725a5dadbec5849",
+              "mesh_vertex_count": 2416,
+              "mesh_triangle_count": 4832,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                80.0,
+                16.0,
+                80.0
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.025,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "543b9c6ebc82ac221e1cff4f807758074a6aa145471f3f1be0580ecf3fb3c864",
+              "fps_indices_sha256": "4cb95fc68412322e29b959ad7fa9f73a0778d4704301993ffd7a2c823edec312",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "895f7a6900aad3e765033c081cc36c40553c7531408e532dcb78fc8909d0105e"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 6.92,
+              "raw_chars": 3254,
+              "raw_sha256": "ead366d888e8b20c17e25f911ce9f7b56bbe9f7702ee36daf5e67aac66ec9783"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "bf84f46e774e9bac8e49dd663996ec512500112c66f6a3d0bd5feb7a6096a59c",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.93,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_118459_55a06bd6_0000",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "mirage": {
+      "count": 400,
+      "pipeline_statuses": {
+        "SUCCESS": 226,
+        "NO_GEOMETRY": 168,
+        "EMPTY_PREDICTION_MESH": 5,
+        "REMESH_FAILED": 1
+      },
+      "cd_statuses": {
+        "ok": 226,
+        "None": 174
+      },
+      "iou_statuses": {
+        "ok": 212,
+        "None": 173,
+        "boolean_failed": 14,
+        "ineligible": 1
+      },
+      "file_names": {
+        "candidate.step": 232,
+        "score_manifest.json": 400
+      },
+      "examples": {
+        "SUCCESS": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_101190_cfdcb477_0005\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_101190_cfdcb477_0005",
+            "arm": "point_genplan",
+            "terminal": true,
+            "memory_cap": "RLIMIT_AS=8192MB",
+            "gt_verified": true,
+            "cd_status": "ok",
+            "iou_status": "ok",
+            "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+            "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_101190_cfdcb477_0005/candidate.step",
+            "gt_mesh_triangles": 21904,
+            "prediction_step_diagnostics": {
+              "n_solids": 1,
+              "n_faces": 21,
+              "faces_per_solid": [
+                21
+              ],
+              "first_solid_bbox": [
+                20.190000000001767,
+                10.199999809266,
+                10.700000008588928
+              ]
+            },
+            "evaluation": {
+              "pred_mesh_triangles": 6820,
+              "pred_mesh_watertight": true,
+              "remesh_status": "ok",
+              "cd_x1000": 71.03739002342765,
+              "cd_floor_gt": 0.07941397040035297,
+              "cd_status": "ok",
+              "iou": 0.08912278158439003,
+              "iou_status": "ok",
+              "gt_self_iou": 1.0000001234650786,
+              "gt_self_iou_dev": 1.2346507860527822e-07,
+              "iou_eligible": true
+            },
+            "cd_floor_ratio": 894.5200657428899,
+            "pipeline_status": "SUCCESS",
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": true,
+              "build_ok": true,
+              "solid_valid": true,
+              "step_export_ok": true
+            },
+            "gate_check": "match",
+            "seconds": 4.57
+          }
+        },
+        "NO_GEOMETRY": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_103284_e25015aa_0003\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_103284_e25015aa_0003",
+            "arm": "point_genplan",
+            "terminal": true,
+            "pipeline_status": "NO_GEOMETRY",
+            "reason": "this arm produced no STEP for this part: exec error: Part.circular_pattern() got an unexpected keyword argument 'radius'",
+            "gt_verified": null,
+            "cd_status": null,
+            "iou_status": null,
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": false,
+              "build_ok": false,
+              "solid_valid": false,
+              "step_export_ok": false
+            },
+            "gate_check": "match"
+          }
+        },
+        "EMPTY_PREDICTION_MESH": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_118459_55a06bd6_0000\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_118459_55a06bd6_0000",
+            "arm": "point_genplan",
+            "terminal": true,
+            "memory_cap": "RLIMIT_AS=8192MB",
+            "gt_verified": true,
+            "cd_status": null,
+            "iou_status": null,
+            "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+            "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_118459_55a06bd6_0000/candidate.step",
+            "gt_mesh_triangles": 4832,
+            "prediction_step_diagnostics": {
+              "n_solids": 1,
+              "n_faces": 1,
+              "faces_per_solid": [
+                1
+              ],
+              "first_solid_bbox": [
+                2.359999895096,
+                2.359999895096,
+                2.359999895096
+              ]
+            },
+            "reason": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+            "pred_mesh_triangles_on_failure": 0,
+            "pred_mesh_vertices_on_failure": 0,
+            "pipeline_status": "EMPTY_PREDICTION_MESH",
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": true,
+              "build_ok": true,
+              "solid_valid": true,
+              "step_export_ok": true
+            },
+            "gate_check": "match",
+            "seconds": 36.41
+          }
+        },
+        "REMESH_FAILED": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_42005_bb4162aa_0000\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_42005_bb4162aa_0000",
+            "arm": "point_genplan",
+            "terminal": true,
+            "memory_cap": "RLIMIT_AS=8192MB",
+            "gt_verified": true,
+            "cd_status": null,
+            "iou_status": "ineligible",
+            "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+            "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_42005_bb4162aa_0000/candidate.step",
+            "gt_mesh_triangles": 700,
+            "prediction_step_diagnostics": {
+              "n_solids": 1,
+              "n_faces": 0,
+              "faces_per_solid": [
+                0
+              ],
+              "diagnostics_error": "Standard_ConstructionError: Bnd_Box is void"
+            },
+            "evaluation": {
+              "remesh_status": "REMESH_FAILED: Standard_ConstructionError: Bnd_Box is void"
+            },
+            "pipeline_status": "REMESH_FAILED",
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": true,
+              "build_ok": true,
+              "solid_valid": true,
+              "step_export_ok": true
+            },
+            "gate_check": "match",
+            "seconds": 1.27
+          }
+        }
+      }
+    },
+    "nn": {
+      "count": 400,
+      "pipeline_statuses": {
+        "SUCCESS": 392,
+        "NO_GEOMETRY": 5,
+        "EMPTY_PREDICTION_MESH": 3
+      },
+      "cd_statuses": {
+        "ok": 392,
+        "None": 8
+      },
+      "iou_statuses": {
+        "ok": 389,
+        "None": 8,
+        "boolean_failed": 3
+      },
+      "file_names": {
+        "candidate.step": 395,
+        "score_manifest.json": 400
+      },
+      "examples": {
+        "SUCCESS": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_101190_cfdcb477_0005\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_101190_cfdcb477_0005",
+            "arm": "point_nnir",
+            "terminal": true,
+            "memory_cap": "RLIMIT_AS=8192MB",
+            "gt_verified": true,
+            "cd_status": "ok",
+            "iou_status": "ok",
+            "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+            "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_101190_cfdcb477_0005/candidate.step",
+            "gt_mesh_triangles": 21904,
+            "prediction_step_diagnostics": {
+              "n_solids": 1,
+              "n_faces": 23,
+              "faces_per_solid": [
+                23
+              ],
+              "first_solid_bbox": [
+                49.200000200000076,
+                73.6,
+                9.100000132270257
+              ]
+            },
+            "evaluation": {
+              "pred_mesh_triangles": 3032,
+              "pred_mesh_watertight": true,
+              "remesh_status": "ok",
+              "cd_x1000": 23.367303152284553,
+              "cd_floor_gt": 0.07941397040035297,
+              "cd_status": "ok",
+              "iou": 0.19163959748419343,
+              "iou_status": "ok",
+              "gt_self_iou": 1.0000001234650786,
+              "gt_self_iou_dev": 1.2346507860527822e-07,
+              "iou_eligible": true
+            },
+            "cd_floor_ratio": 294.2467557594966,
+            "pipeline_status": "SUCCESS",
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": true,
+              "build_ok": true,
+              "solid_valid": true,
+              "step_export_ok": true
+            },
+            "gate_check": "match",
+            "seconds": 1.81
+          }
+        },
+        "NO_GEOMETRY": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_115524_43f29107_0000\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_115524_43f29107_0000",
+            "arm": "point_nnir",
+            "terminal": true,
+            "pipeline_status": "NO_GEOMETRY",
+            "reason": "this arm produced no STEP for this part: exec error: boss_center must be a 2D sequence",
+            "gt_verified": null,
+            "cd_status": null,
+            "iou_status": null,
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": false,
+              "build_ok": false,
+              "solid_valid": false,
+              "step_export_ok": false
+            },
+            "gate_check": "match"
+          }
+        },
+        "EMPTY_PREDICTION_MESH": {
+          "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_118459_55a06bd6_0000\\score_manifest.json",
+          "record": {
+            "sample_id": "f360_118459_55a06bd6_0000",
+            "arm": "point_nnir",
+            "terminal": true,
+            "memory_cap": "RLIMIT_AS=8192MB",
+            "gt_verified": true,
+            "cd_status": null,
+            "iou_status": null,
+            "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+            "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_118459_55a06bd6_0000/candidate.step",
+            "gt_mesh_triangles": 4832,
+            "prediction_step_diagnostics": {
+              "n_solids": 1,
+              "n_faces": 1,
+              "faces_per_solid": [
+                1
+              ],
+              "first_solid_bbox": [
+                9.39999961853,
+                9.39999961853,
+                9.39999961853
+              ]
+            },
+            "reason": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+            "pred_mesh_triangles_on_failure": 0,
+            "pred_mesh_vertices_on_failure": 0,
+            "pipeline_status": "EMPTY_PREDICTION_MESH",
+            "gates": {
+              "syntax_ok": true,
+              "exec_ok": true,
+              "build_ok": true,
+              "solid_valid": true,
+              "step_export_ok": true
+            },
+            "gate_check": "match",
+            "seconds": 65.19
+          }
+        }
+      }
+    }
+  }
+}

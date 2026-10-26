@@ -1,0 +1,128 @@
+{
+  "sample_id": "f360_118459_55a06bd6_0000",
+  "method": "nn",
+  "classification": {
+    "primary_outcome": "EMPTY_PREDICTION_MESH",
+    "verified_failure_class": "EMPTY_PREDICTION_MESH",
+    "reason_subtype": "ZERO_TRIANGLE_TESSELLATION_REPORTED",
+    "reason_detail": null,
+    "classification_rule": "POST_EXPORT_NATIVE_STATUS:EMPTY_PREDICTION_MESH",
+    "reported_error": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+    "native_traceback": null,
+    "cd_scoreable": false,
+    "iou_scoreable": false,
+    "CD": null,
+    "IoU": null,
+    "iou_outcome": "UNAVAILABLE_AFTER_PRIMARY_FAILURE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 291,
+    "json_pointer": "/rows/291/native_records/nn"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_118459_55a06bd6_0000\\score_manifest.json",
+      "sha256": "ae93fee84f4a4c971e9a59e1255dfe50742933dd87919380d009dd689a9b6643",
+      "bytes": 1182
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "sha256": "63044e8ef41902f60fb6e3b3ec20b958dbd7bc9b1b53bade095269bb4a8fff32",
+      "bytes": 62046
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\export_rows.jsonl",
+      "sha256": "24bf68462b5fa07690e35cb2e2c6a57d520fe9a25320805bf012c254c833766c",
+      "bytes": 198985
+    }
+  ],
+  "physical_JSONL_locators": {
+    "nn_gate": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "line_1based": 292,
+      "line_bytes_sha256": "ac46da17b824f3827d6a2f0176696218cdc286f78d9ea81511a563fdea3b75c0",
+      "file_sha256": "63044e8ef41902f60fb6e3b3ec20b958dbd7bc9b1b53bade095269bb4a8fff32"
+    },
+    "nn_export": {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\export_rows.jsonl",
+      "line_1based": 292,
+      "line_bytes_sha256": "9c0c21bdc9504e79c5fdcd224a99ce45f1f4b94feaab6ad6581177c5e0405137",
+      "file_sha256": "24bf68462b5fa07690e35cb2e2c6a57d520fe9a25320805bf012c254c833766c"
+    }
+  },
+  "original_native_record": {
+    "sample_id": "f360_118459_55a06bd6_0000",
+    "arm": "point_nnir",
+    "terminal": true,
+    "memory_cap": "RLIMIT_AS=8192MB",
+    "gt_verified": true,
+    "cd_status": null,
+    "iou_status": null,
+    "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+    "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_118459_55a06bd6_0000/candidate.step",
+    "gt_mesh_triangles": 4832,
+    "prediction_step_diagnostics": {
+      "n_solids": 1,
+      "n_faces": 1,
+      "faces_per_solid": [
+        1
+      ],
+      "first_solid_bbox": [
+        9.39999961853,
+        9.39999961853,
+        9.39999961853
+      ]
+    },
+    "reason": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+    "pred_mesh_triangles_on_failure": 0,
+    "pred_mesh_vertices_on_failure": 0,
+    "pipeline_status": "EMPTY_PREDICTION_MESH",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "gate_check": "match",
+    "seconds": 65.19
+  },
+  "original_gate": {
+    "sample_id": "f360_118459_55a06bd6_0000",
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": true,
+    "error": ""
+  },
+  "original_export_record": {
+    "sample_id": "f360_118459_55a06bd6_0000",
+    "arm": "point_nnir",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "error": "",
+    "status": "OK",
+    "seconds": 0.01,
+    "tempdir_calls": 1,
+    "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_118459_55a06bd6_0000\\candidate.step",
+    "step_bytes": 2154,
+    "step_sha256": "c6a71d8322812dc7db558cdde63333e64310c2f963b64a830a747d296561d2a3",
+    "gate_check": "match"
+  },
+  "original_CADR_execution_texts": {},
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

@@ -1,0 +1,71 @@
+{
+  "sample_id": "f360_56065_00bbe5da_0017",
+  "relpath": "",
+  "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\56065_00bbe5da_0017.step",
+  "backend": "Flluma/OpenCASCADE extract_step_brep_features",
+  "features": {
+    "success": true,
+    "shape_type": "SOLID",
+    "brep_valid": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 5,
+    "wire_count": 5,
+    "edge_count": 9,
+    "vertex_count": 6,
+    "bbox": {
+      "min": [
+        -45.0,
+        -2.5,
+        -2.5
+      ],
+      "max": [
+        45.0,
+        2.5,
+        2.5
+      ],
+      "size": [
+        90.0,
+        5.0,
+        5.0
+      ]
+    },
+    "surface_area": 1447.258317475207,
+    "volume": 1741.985511631668,
+    "brep_feature_version": 1,
+    "brep_topology": {
+      "surface_type_counts": {
+        "cylinder": 1,
+        "plane": 4
+      },
+      "curve_type_counts": {
+        "circle": 4,
+        "line": 5
+      },
+      "edge_face_valence_counts": {
+        "2": 9
+      },
+      "face_area_stats": {
+        "count": 5,
+        "min": 2.7955951125100333,
+        "max": 1371.9884093053345,
+        "mean": 289.4516634950414,
+        "sum": 1447.258317475207
+      },
+      "edge_length_stats": {
+        "count": 9,
+        "min": 1.6087527719832195,
+        "max": 90.0,
+        "mean": 16.37954739287754,
+        "sum": 147.41592653589788
+      },
+      "face_wire_incidence_count": 5,
+      "face_edge_incidence_count": 18,
+      "face_edge_adjacency_count": 18,
+      "boundary_edge_count": 0,
+      "manifold_edge_count": 9,
+      "non_manifold_edge_count": 0
+    }
+  },
+  "success": true
+}

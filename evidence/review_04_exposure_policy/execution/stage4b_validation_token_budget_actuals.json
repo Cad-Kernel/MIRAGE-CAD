@@ -1,0 +1,102 @@
+{
+  "arm": "SHARED_VALIDATION",
+  "arm_B_exists": false,
+  "arm_phase1_final_actual_step": 4689,
+  "arm_phase2_final_actual_step": 500,
+  "audit_script": {
+    "bytes": 7239,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/audit_stage4b_token_budget.py",
+    "sha256": "ff11658001def752008dbc6b025068f2df6de60b75368aeb192867717a123a93"
+  },
+  "counting_contract": "existing prompt encoding with add_special_tokens=True plus reference_code+EOS encoded separately",
+  "counts": {
+    "all": {
+      "complete_target_exceeds_1536_alone": 0,
+      "complete_target_plus_empty_scaffold_exceeds_1536": 0,
+      "full_target_requires_shorter_prompt": 459,
+      "gt_fixed_prompt_plus_full_target_does_not_fit": 459,
+      "legacy_target_partially_or_fully_truncated": 459,
+      "legacy_zero_supervision": 0,
+      "prompt_tokens": {
+        "max": 1100,
+        "median": 624.0,
+        "min": 213,
+        "n": 2500,
+        "q95": 952.0
+      },
+      "rows": 2500,
+      "target_tokens_including_eos": {
+        "max": 1118,
+        "median": 588.5,
+        "min": 117,
+        "n": 2500,
+        "q95": 896.0
+      }
+    },
+    "gt": {
+      "complete_target_exceeds_1536_alone": 0,
+      "complete_target_plus_empty_scaffold_exceeds_1536": 0,
+      "full_target_requires_shorter_prompt": 459,
+      "gt_fixed_prompt_plus_full_target_does_not_fit": 459,
+      "legacy_target_partially_or_fully_truncated": 459,
+      "legacy_zero_supervision": 0,
+      "prompt_tokens": {
+        "max": 1100,
+        "median": 624.0,
+        "min": 213,
+        "n": 2500,
+        "q95": 952.0
+      },
+      "rows": 2500,
+      "target_tokens_including_eos": {
+        "max": 1118,
+        "median": 588.5,
+        "min": 117,
+        "n": 2500,
+        "q95": 896.0
+      }
+    },
+    "predicted": {
+      "complete_target_exceeds_1536_alone": 0,
+      "complete_target_plus_empty_scaffold_exceeds_1536": 0,
+      "full_target_requires_shorter_prompt": 0,
+      "gt_fixed_prompt_plus_full_target_does_not_fit": 0,
+      "legacy_target_partially_or_fully_truncated": 0,
+      "legacy_zero_supervision": 0,
+      "prompt_tokens": {
+        "max": null,
+        "median": null,
+        "min": null,
+        "n": 0,
+        "q95": null
+      },
+      "rows": 0,
+      "target_tokens_including_eos": {
+        "max": null,
+        "median": null,
+        "min": null,
+        "n": 0,
+        "q95": null
+      }
+    }
+  },
+  "created_utc": "2026-10-17T11:28:15.888102+00:00",
+  "empty_plan_scaffold_note": "exact existing serialized prompt with empty plan; BPE boundaries require exact candidate re-counting in any future packer",
+  "fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "prediction_file": null,
+  "production_code_changed": false,
+  "proposed_full_target_predicted_only_rule": "INFEASIBLE_AS_STATED",
+  "row_audit": {
+    "bytes": 1412376,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_validation_token_budget_rows.jsonl",
+    "sha256": "eff9096c923395be67d4cbfdf9927a127162d9f8811413c50bb7e856914522c1"
+  },
+  "scope": "CPU feasibility audit, original tokenization unchanged; no model training",
+  "source_definition": {
+    "bytes": 6403122,
+    "path": "__RUN_SOURCE_ROOT__/data/25k/val.jsonl",
+    "sha256": "4b76f8fec86f8fac7fbb9635542a924ccf3b91893115639d13ed79ada374a021"
+  },
+  "stage4b_output_exists": false,
+  "training_started_by_audit": false
+}

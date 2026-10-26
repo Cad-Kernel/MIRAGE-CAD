@@ -1,0 +1,17 @@
+PART flluma_0005100 CAT face_recursive_mount UNITS mm SEED 20265614
+PARAM boss_height 10.78 MIN 3 MAX 24 EXPR thickness*1.07 SEM boss_height
+PARAM boss_radius 10.11 MIN 2 MAX 14 EXPR hole_radius*3.1 SEM boss_radius
+PARAM fillet_radius 0.72 MIN 0.1 MAX 2.5 SEM fillet_radius
+PARAM height 46 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_x 27.11 MIN 4 MAX 45 EXPR width*0.308 SEM hole_spacing
+PARAM hole_offset_y 12.48 MIN 3 MAX 35 EXPR height*0.282 SEM hole_spacing
+PARAM hole_radius 3.21 MIN 1 MAX 8 SEM hole_radius
+PARAM thickness 8 MIN 3 MAX 25 SEM thickness
+PARAM width 91.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,7.69]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP plate_001,translate_001 TARGET plate_001,translate_001
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS radius=@fillet_radius
+END

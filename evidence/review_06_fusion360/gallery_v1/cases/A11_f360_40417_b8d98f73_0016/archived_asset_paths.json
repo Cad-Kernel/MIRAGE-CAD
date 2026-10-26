@@ -1,0 +1,92 @@
+{
+  "reference": {
+    "original_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\40417_b8d98f73_0016.step",
+    "exists": true,
+    "sha256": "4c58e17d347c0611a3dde4a11014ab255474c68effca27eba067d20e6508f3d1",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\4c58e17d347c0611a3dde4a11014ab255474c68effca27eba067d20e6508f3d1.step"
+  },
+  "point": {
+    "original_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\40417_b8d98f73_0016.npz",
+    "exists": true,
+    "sha256": "ddb30229b6ab18363456d62d225aae8c401090229dd02cf712802e3baf161c41",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\ddb30229b6ab18363456d62d225aae8c401090229dd02cf712802e3baf161c41.npz"
+  },
+  "step_descriptor": {
+    "original_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_features\\f360_40417_b8d98f73_0016.json",
+    "exists": true,
+    "sha256": "97aec31222ea10fcb1282c37ce8188ad11b792d84d1c1e717d8f9c3009f573fa",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\97aec31222ea10fcb1282c37ce8188ad11b792d84d1c1e717d8f9c3009f573fa.json"
+  },
+  "step_descriptor_index_copy": {
+    "original_path": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_40417_b8d98f73_0016.json",
+    "exists": true,
+    "sha256": "97aec31222ea10fcb1282c37ce8188ad11b792d84d1c1e717d8f9c3009f573fa",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\97aec31222ea10fcb1282c37ce8188ad11b792d84d1c1e717d8f9c3009f573fa.json"
+  },
+  "cadr_raw_generation.txt": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\raw_generation.txt",
+    "exists": true,
+    "sha256": "3e408eeb309bbfaef0193f1023218c74c1b8f68665b7196c900a3e73ebf7caf5",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\3e408eeb309bbfaef0193f1023218c74c1b8f68665b7196c900a3e73ebf7caf5.txt"
+  },
+  "cadr_extracted_code.py": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\extracted_code.py",
+    "exists": true,
+    "sha256": "5c08ac89ac3e0d69be70d935a9ccd01853c9c5bb114c6801256e4911022d1acf",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\5c08ac89ac3e0d69be70d935a9ccd01853c9c5bb114c6801256e4911022d1acf.py"
+  },
+  "cadr_execution_result.json": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\execution_result.json",
+    "exists": true,
+    "sha256": "8a378d9dd82bec6dc95d1226a93035ff774986fa668bf00c8b3b4a7354eb71ee",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\8a378d9dd82bec6dc95d1226a93035ff774986fa668bf00c8b3b4a7354eb71ee.json"
+  },
+  "cadr_execution_stdout.txt": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\execution_stdout.txt",
+    "exists": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt"
+  },
+  "cadr_execution_stderr.txt": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\execution_stderr.txt",
+    "exists": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt"
+  },
+  "cadr_cloud_256.npy": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\cloud_256.npy",
+    "exists": true,
+    "sha256": "e6a77a1f0ae86965d9cd96819ef74aac6a3554bb1f5e04d343647ff0cd0b1ec5",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\e6a77a1f0ae86965d9cd96819ef74aac6a3554bb1f5e04d343647ff0cd0b1ec5.npy"
+  },
+  "cadr_step": {
+    "original_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_40417_b8d98f73_0016\\prediction.step",
+    "exists": true,
+    "sha256": "87f2d5b645a34cd625ee0827afe80519215f071def9498ac422c389aa7065729",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\87f2d5b645a34cd625ee0827afe80519215f071def9498ac422c389aa7065729.step"
+  },
+  "mirage_step": {
+    "original_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_40417_b8d98f73_0016\\candidate.step",
+    "exists": true,
+    "sha256": "35469708ed1ae1f22340d6611c0d4251aa7f402f0703f8e9bdc131dcb45bf2e6",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\35469708ed1ae1f22340d6611c0d4251aa7f402f0703f8e9bdc131dcb45bf2e6.step"
+  },
+  "mirage_original_geometry_target_cloud": {
+    "original_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\40417_b8d98f73_0016.npz",
+    "exists": true,
+    "sha256": "ddb30229b6ab18363456d62d225aae8c401090229dd02cf712802e3baf161c41",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\ddb30229b6ab18363456d62d225aae8c401090229dd02cf712802e3baf161c41.npz"
+  },
+  "nn_step": {
+    "original_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_40417_b8d98f73_0016\\candidate.step",
+    "exists": true,
+    "sha256": "96855787cc1af5c831cd416ea40a3639350f13b620890200e6fe95e0f74fd330",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\96855787cc1af5c831cd416ea40a3639350f13b620890200e6fe95e0f74fd330.step"
+  },
+  "nn_original_geometry_target_cloud": {
+    "original_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\40417_b8d98f73_0016.npz",
+    "exists": true,
+    "sha256": "ddb30229b6ab18363456d62d225aae8c401090229dd02cf712802e3baf161c41",
+    "archived_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\raw_archive_v1\\objects\\ddb30229b6ab18363456d62d225aae8c401090229dd02cf712802e3baf161c41.npz"
+  }
+}

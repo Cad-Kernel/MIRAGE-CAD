@@ -1,0 +1,114 @@
+==============================================================================
+External comparison: coverage, then conditional fidelity, then winner counts
+==============================================================================
+
+Sign conventions were frozen in this script BEFORE any MIRAGE geometry existed:
+  dCD  = CD_MIRAGE  - CD_CADR    ; lower CD is better, so dCD  > 0 favours CAD-Recode
+  dIoU = IoU_MIRAGE - IoU_CADR   ; higher IoU is better, so dIoU > 0 favours MIRAGE
+No overall geometry score is computed: coverage and fidelity answer different questions
+and this paper has already documented them pointing opposite ways on the same rows.
+
+
+==============================================================================
+LAYER 1 -- COVERAGE, all inputs, nothing conditioned on
+==============================================================================
+  CAD-Recode vs point_genplan
+    n paired                400
+    CAD-Recode produced     392/400
+    point_genplan         226/400
+    both                    222
+    CAD-Recode only         170
+    point_genplan only 4
+    neither                 4
+    McNemar exact p         3.155e-45  (on the 174 discordant pairs)
+
+  CAD-Recode vs point_nnir
+    n paired                400
+    CAD-Recode produced     392/400
+    point_nnir            392/400
+    both                    385
+    CAD-Recode only         7
+    point_nnir only   7
+    neither                 1
+    McNemar exact p         1  (on the 14 discordant pairs)
+
+
+==============================================================================
+LAYER 2/3 -- CONDITIONAL FIDELITY and WINNER COUNTS, common-success only
+==============================================================================
+  CAD-Recode vs point_genplan
+    --- CD ---
+    paired n                222
+    median CD_MIRAGE      55.782007
+    median CD_CAD-Recode  0.116546
+    median dCD            +55.637877   95% CI [+49.285514, +63.838056]
+    excludes zero           yes
+    median favours          CAD-Recode   (dCD = CD_MIRAGE - CD_CADR; lower is better)
+    MIRAGE better on        1/222
+    CAD-Recode better on    221/222
+    exact ties              0
+    sign test p             6.617e-65
+    |dCD| below the larger sampling floor: 0/222  (diagnostic; not treated as ties)
+    SECONDARY r = CD/own floor, n 222
+      median r_MIRAGE       781.563
+      median r_CAD-Recode   1.291
+      median dr             +766.203   95% CI [+555.546, +1060.686]
+      Diagnostic only. It does NOT replace the published CD definition.
+    --- IoU ---
+    paired n                200
+    median IoU_MIRAGE      0.060400
+    median IoU_CAD-Recode  0.922554
+    median dIoU            -0.785315   95% CI [-0.809626, -0.750982]
+    excludes zero           yes
+    median favours          CAD-Recode   (dIoU = IoU_MIRAGE - IoU_CADR; higher is better)
+    MIRAGE better on        5/200
+    CAD-Recode better on    193/200
+    exact ties              2
+    sign test p             1.231e-50
+
+  CAD-Recode vs point_nnir
+    --- CD ---
+    paired n                385
+    median CD_MIRAGE      17.587709
+    median CD_CAD-Recode  0.186542
+    median dCD            +17.279475   95% CI [+15.509894, +19.836296]
+    excludes zero           yes
+    median favours          CAD-Recode   (dCD = CD_MIRAGE - CD_CADR; lower is better)
+    MIRAGE better on        5/385
+    CAD-Recode better on    380/385
+    exact ties              0
+    sign test p             1.766e-105
+    |dCD| below the larger sampling floor: 0/385  (diagnostic; not treated as ties)
+    SECONDARY r = CD/own floor, n 385
+      median r_MIRAGE       208.004
+      median r_CAD-Recode   1.239
+      median dr             +198.877   95% CI [+171.876, +225.873]
+      Diagnostic only. It does NOT replace the published CD definition.
+    --- IoU ---
+    paired n                369
+    median IoU_MIRAGE      0.162129
+    median IoU_CAD-Recode  0.942593
+    median dIoU            -0.683861   95% CI [-0.703670, -0.657698]
+    excludes zero           yes
+    median favours          CAD-Recode   (dIoU = IoU_MIRAGE - IoU_CADR; higher is better)
+    MIRAGE better on        10/369
+    CAD-Recode better on    355/369
+    exact ties              4
+    sign test p             2.796e-91
+
+==============================================================================
+READING THIS TABLE
+==============================================================================
+HEADLINE pairing is CAD-Recode vs point_genplan (autonomous point->plan->code).
+point_nnir is retrieval-assisted (training-index NN plan at inference) -- CAD-Recode has no such information
+source, so it is a retrieval-assisted reference answering a different question,
+not MIRAGE's entry in a like-for-like contest. It will have the cleaner statistics
+and that is not a reason to promote it.
+
+SURVIVORSHIP. Layer 2 is conditioned on BOTH systems succeeding, so for an arm with
+low coverage the surviving parts are disproportionately the ones it found tractable.
+Permitted: 'among parts successfully reconstructed by both systems, ...'.
+Not permitted: 'MIRAGE has better external geometry fidelity'. Layer 1 carries the
+system-level reading and must be quoted alongside Layer 2, never replaced by it.
+
+Neither layer may be combined into one number.

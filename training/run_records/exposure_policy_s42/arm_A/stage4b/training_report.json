@@ -1,0 +1,114 @@
+{
+  "actual_global_step": 1182,
+  "amendment_fingerprint": "efc5ea52d9ab2b9b3aa46661a0a4f46805e09c0b466b9162f3962d9dee335fd1",
+  "arm": "A",
+  "checkpoint_selection": "final",
+  "created_utc": "2026-10-18T10:02:14.332737+00:00",
+  "dataset": {
+    "EOS_preserved": "all",
+    "full_target_tokens_one_pass": 1898764,
+    "input_tokens_one_pass": 3765107,
+    "ordered_feature_ids_sha256": "04977f7eb786360ab267e3d2dcc9345f2f41be4bb1ae53dd6a093578705286e0",
+    "paired_row_audit": {
+      "bytes": 8358605,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight_after_B/A_rows.jsonl",
+      "sha256": "31d294820596c55bb280676890ef24ffb86cc2722cf97152f7bfd23b99734f05"
+    },
+    "plan_crops": {
+      "gt": 413,
+      "predicted": 211
+    },
+    "rows": 3150,
+    "target_truncated_rows": 0,
+    "zero_supervision_rows": 0
+  },
+  "exposure_trace": {
+    "current_indices": [],
+    "current_input_tokens": 0,
+    "current_padding_tokens": 0,
+    "current_target_tokens": 0,
+    "epochs": [
+      {
+        "epoch": 0,
+        "index_sha256": "5a90948f4e738629881fe6375de0139b4e20d48fbb77896e6a76201754881cf7",
+        "input_tokens": 3765107,
+        "padding_tokens": 0,
+        "presentations": 3150,
+        "supervised_target_tokens": 1898764
+      },
+      {
+        "epoch": 1,
+        "index_sha256": "13cb22750f976311a8fabe44eb1737f7443739406023c2df7e90c24965c284cf",
+        "input_tokens": 3765107,
+        "padding_tokens": 0,
+        "presentations": 3150,
+        "supervised_target_tokens": 1898764
+      },
+      {
+        "epoch": 2,
+        "index_sha256": "9dbb36ee7082dc010382e3ea3999921d8ade145f52e87075cbdf5a060eeb4ae5",
+        "input_tokens": 3765107,
+        "padding_tokens": 0,
+        "presentations": 3150,
+        "supervised_target_tokens": 1898764
+      }
+    ],
+    "lr_steps_checked": 1182
+  },
+  "fingerprint": "5d0b3ea3718f8f035c3cd8808ca66481e8e8574866266f9caa9d98582ad47291",
+  "fresh_optimizer_and_scheduler": true,
+  "parent_fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "policy_lock": {
+    "bytes": 1675,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_policy_lock_v1.json",
+    "sha256": "1efa3d6e218f47ab6fc2ad67fa0fe9f1b11384276b68774291915eaaf6e47faa"
+  },
+  "preflight": {
+    "bytes": 14115,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_execution_preflight_v1.json",
+    "sha256": "4b616054a9ffcf27a233680e5595584dd6f72586a030b0a26075ea52f8839ffa"
+  },
+  "sources": {
+    "cag_run_stage4b_only.sh": {
+      "bytes": 687,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_stage4b_only.sh",
+      "sha256": "71f9a883aecd815b084b4c99959cf8759e3c24f51b3b20be93c7dcdd33ecee23"
+    },
+    "cag_stage4b_execution.py": {
+      "bytes": 27597,
+      "path": "__DEV_ROOT__/src/training_25k/cag_stage4b_execution.py",
+      "sha256": "12871f780608950b9524c99aaa2effe9dfb430f37b394ae7e6a1d1b9ba7b205b"
+    }
+  },
+  "stage": "stage4b",
+  "startup": {
+    "adapter_config.json": {
+      "bytes": 1102,
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/adapter_config.json",
+      "sha256": "7ffa5ef61b0ef5352286c402778d8c758941893cbe10d9c95fbac1402863dbbc"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 73911112,
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/adapter_model.safetensors",
+      "sha256": "ea70a898cb6e0fa50ec001553e1358d7c88d31e9674aaf9ae8e18319709875f7"
+    }
+  },
+  "validation": {
+    "EOS_preserved": "all",
+    "full_target_tokens_one_pass": 1528910,
+    "input_tokens_one_pass": 3002738,
+    "ordered_feature_ids_sha256": "44381a1e9264bda433ce85f4fc4522cfbbda5b176058d608f6add27b750a2421",
+    "paired_row_audit": {
+      "bytes": 6636209,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight_after_B/validation_rows.jsonl",
+      "sha256": "2a5eed476c9c86a0328af0a337841c8e311d83dee4ceb0d8d39ff0b39e38f7ec"
+    },
+    "plan_crops": {
+      "gt": 459
+    },
+    "rows": 2500,
+    "target_truncated_rows": 0,
+    "zero_supervision_rows": 0
+  },
+  "version": "review04_stage4b_execution_v1"
+}

@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-25T11:11:55.818068+00:00",
+  "inventory_files": 8233,
+  "inventory_unreadable": 0,
+  "review03_arithmetic_checks": 36,
+  "review03_checks_needing_schema_mapping": 34,
+  "parameter_summary_fields_match": true,
+  "original_files_modified": false,
+  "audit_script_sha256": "facb891fd24a1f1525b3b60001899648d5a4f2c5d680c11eb2602d69890ba478"
+}

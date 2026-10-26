@@ -1,0 +1,242 @@
+[
+  {
+    "endpoint": "syntax_ok_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "syntax_ok_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "exec_ok_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "exec_ok_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "build_ok_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "build_ok_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "solid_valid_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "solid_valid_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "step_export_ok_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "step_export_ok_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "scoreable_pct",
+    "arm": "B0",
+    "per_seed_path": [
+      "geometry",
+      "scoreable_pct"
+    ],
+    "values": [
+      54.96,
+      48.24,
+      42.6,
+      53.52
+    ],
+    "recomputed_mean": 49.83,
+    "recomputed_sample_sd": 5.619430576134917,
+    "mean_match": true,
+    "sd_match": true
+  },
+  {
+    "endpoint": "scoreable_pct",
+    "arm": "B2",
+    "per_seed_path": [
+      "geometry",
+      "scoreable_pct"
+    ],
+    "values": [
+      67.04,
+      54.2,
+      60.96,
+      53.6
+    ],
+    "recomputed_mean": 58.95,
+    "recomputed_sample_sd": 6.342270886677738,
+    "mean_match": true,
+    "sd_match": true
+  },
+  {
+    "endpoint": "conditional_mean_cd",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_mean_cd",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_median_cd",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_median_cd",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_mean_f1_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_mean_f1_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_median_f1_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_median_f1_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "unconditional_mean_f1_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "unconditional_mean_f1_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "unconditional_median_f1_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "unconditional_median_f1_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_mean_cd",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_mean_cd",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_median_cd",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_median_cd",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_mean_f1_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_mean_f1_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_median_f1_pct",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "paired_median_f1_pct",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_mean_bbox_err",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_mean_bbox_err",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_median_bbox_err",
+    "arm": "B0",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  },
+  {
+    "endpoint": "conditional_median_bbox_err",
+    "arm": "B2",
+    "status": "SCHEMA_MAPPING_REQUIRED",
+    "candidate_count": 0
+  }
+]

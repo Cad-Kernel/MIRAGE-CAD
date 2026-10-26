@@ -1,0 +1,17 @@
+{
+  "case_id": "A08_f360_42005_bb4162aa_0000",
+  "sample_id": "f360_42005_bb4162aa_0000",
+  "method": "mirage",
+  "step_sha256": "1030a903b3ef853836cd8deb7990c73251645d88f93f9e996d49d18ec931db07",
+  "historical_outcome": "REMESH_FAILURE",
+  "created_utc": "2026-10-22T19:17:41.090678+00:00",
+  "mesh_script_sha256": "71495a94b5534f164f16dfc0fd0b209aa341f257498cfb298fb9179281700eca",
+  "render_protocol_sha256": "737134ff17799fa3c252ef8026cf75b7f1886010782be9f9a6960420ee707417",
+  "cadquery": "2.5.0.dev0",
+  "OCP": "7.7.2.0",
+  "alpha": 0.0001,
+  "angular_tolerance": 0.3,
+  "new_program_execution_or_score": false,
+  "status": "HISTORICAL_FAILURE_PLACEHOLDER",
+  "counter_key": "historical_placeholders"
+}

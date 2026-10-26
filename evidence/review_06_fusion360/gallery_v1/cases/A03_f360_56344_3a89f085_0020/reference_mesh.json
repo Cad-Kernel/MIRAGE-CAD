@@ -1,0 +1,48 @@
+{
+  "case_id": "A03_f360_56344_3a89f085_0020",
+  "sample_id": "f360_56344_3a89f085_0020",
+  "method": "reference",
+  "step_sha256": "1dce8500a6e6df0fa0cf62e9231e2a747cbce681d105464dce66feef94e55b80",
+  "historical_outcome": "REFERENCE",
+  "created_utc": "2026-10-22T19:17:40.123271+00:00",
+  "mesh_script_sha256": "71495a94b5534f164f16dfc0fd0b209aa341f257498cfb298fb9179281700eca",
+  "render_protocol_sha256": "737134ff17799fa3c252ef8026cf75b7f1886010782be9f9a6960420ee707417",
+  "cadquery": "2.5.0.dev0",
+  "OCP": "7.7.2.0",
+  "alpha": 0.0001,
+  "angular_tolerance": 0.3,
+  "new_program_execution_or_score": false,
+  "status": "EXISTING_STEP_MESHED_FOR_DISPLAY_ONLY",
+  "counter_key": "meshed",
+  "mesh_sha256": "1e4a93e834bf9144d0620ccf734f407931d4566221eb0d4bf97b5335c8c7957f",
+  "mesh_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A03_f360_56344_3a89f085_0020\\reference_mesh.npz",
+  "brep_bbox": [
+    [
+      616.39052158367,
+      161.544102304893,
+      0.0
+    ],
+    [
+      624.39052158367,
+      169.544102304893,
+      29.46
+    ]
+  ],
+  "mesh_bbox": [
+    [
+      616.39052158367,
+      161.55528711616827,
+      0.0
+    ],
+    [
+      624.39052158367,
+      169.5329174936177,
+      29.46
+    ]
+  ],
+  "linear_deflection_native_units": 0.0029460000000000003,
+  "vertices": 168,
+  "raw_vertices": 340,
+  "triangles": 332,
+  "geometry_modification": "Exact-coordinate vertex welding for shared feature edges only; raw arrays also retained"
+}

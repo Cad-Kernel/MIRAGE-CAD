@@ -1,0 +1,14 @@
+PART flluma_0005000 CAT revolved_boss UNITS mm SEED 20265514
+PARAM chamfer_distance 0.2 MIN 0.1 MAX 1.5 SEM chamfer_distance
+PARAM height 10.1 MIN 3 MAX 20 SEM overall_height
+PARAM radius 6.2 MIN 2 MAX 12 SEM inner_radius
+PARAM work_radius 10.1 MIN 4 MAX 14 SEM inner_radius
+F cylinder_001 OP_CYLINDER SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius
+F revolve_001 OP_REVOLVE SEM extruded_solid ROLE secondary_feature DEP cylinder_001 PARAMS path=[[-4.95,0],[4.95,0]] radius=@work_radius
+F cylinder_002 OP_CYLINDER SEM primitive_stock ROLE secondary_feature PARAMS height=16.5 radius=@chamfer_distance
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_002 PARAMS offset=[0,0,10.15]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP revolve_001,translate_001 TARGET revolve_001,translate_001
+F cylinder_003 OP_CYLINDER SEM primitive_stock ROLE secondary_feature PARAMS height=11.15 radius=2.75
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_003 PARAMS offset=[0,0,4.975]
+F join_002 OP_BOOLEAN_JOIN SEM covered_boss ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002
+END

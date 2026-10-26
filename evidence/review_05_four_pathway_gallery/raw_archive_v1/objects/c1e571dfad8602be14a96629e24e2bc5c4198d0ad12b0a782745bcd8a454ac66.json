@@ -1,0 +1,20 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+  "modalities": [
+    "image",
+    "point",
+    "step",
+    "text"
+  ],
+  "init_lora_ir_dir": "outputs/lora_ir_25k",
+  "train_rows": 8000,
+  "val_rows": 800,
+  "prefix_len": 4,
+  "max_length": 1536,
+  "soft_prefix_eval": {
+    "normal_loss": 0.15475433628074825,
+    "zero_loss": 0.1895249249506742,
+    "shuffled_loss": 0.15475433628074825
+  },
+  "output_dir": "outputs/lora_ir_25k_stage3b"
+}

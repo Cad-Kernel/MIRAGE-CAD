@@ -1,0 +1,95 @@
+{
+  "sample_id": "f360_33088_7def8eac_0001",
+  "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/33088_7def8eac_0001.step",
+  "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+  "pipeline_status": "SUCCESS",
+  "terminal": true,
+  "cd_status": "ok",
+  "iou_status": "ok",
+  "input": {
+    "source_step_sha256": "f4a0ca167ad00049ff3cb96065bae98d15923315b3848b3bc48e47eeb3100b0c",
+    "alpha": 1e-06,
+    "angular_deflection": 0.3,
+    "canonical_mesh_sha256": "6188c0f182cf1f6d966ea18b63599ee93f24c3f47a6195ac417141be925275b5/533b2c435757f1e3addc126026217c4754238a34aa4bcdfe285db79670d492b2",
+    "mesh_vertex_count": 7114,
+    "mesh_triangle_count": 14300,
+    "mesh_watertight": false,
+    "bbox_before_normalization": [
+      2.0,
+      113.86978730828332,
+      113.38028215136603
+    ],
+    "normalization_target_extent": 2.0,
+    "normalization_scale": 0.017563921451660712,
+    "sampling_seed": 0,
+    "n_pre_points": 8192,
+    "cloud_8192_sha256": "07b9e139f05b71ac4e234ef97b3675d40ccb16e23aee65f1b772c2b20915d813",
+    "fps_indices_sha256": "b710b7d5c674c7a971c0edbadc9f65f3f8c1cf95f98891a8abce62bf10efddae",
+    "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+    "cloud_256_sha256": "9f3112e0a92546785135080571a4c0be443ebebf7d15bb4f18d09890be715322"
+  },
+  "model": {
+    "checkpoint": "filapro/cad-recode-v1.5",
+    "tokenizer": "Qwen/Qwen2-1.5B",
+    "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+    "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+    "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+    "torch": "2.7.0+cu128",
+    "device": "cuda",
+    "device_capability": "sm_120",
+    "n_parameters": 1543794176,
+    "generation": {
+      "strategy": "greedy",
+      "num_candidates": 1,
+      "max_new_tokens": 768
+    },
+    "transformers": "4.47.1"
+  },
+  "generation": {
+    "seconds": 10.77,
+    "raw_chars": 3728,
+    "raw_sha256": "3cade4d3c4460bc3c0cb609086c036f813354e72c22227408ba76bc5c047bf5f"
+  },
+  "extraction_status": "ok",
+  "extracted_code_sha256": "13809335b1d36b37b163f273efbf4514de8ad255033f3210ce74e5599882ffa2",
+  "extracted_code_lines": 3,
+  "unsafe_patterns_found": [],
+  "execution": {
+    "timeout_s": 60,
+    "wall_seconds": 0.92,
+    "timed_out": false,
+    "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_33088_7def8eac_0001",
+    "return_code": 0,
+    "runner_result": {
+      "status": "SUCCESS",
+      "generated_stdout": "",
+      "shape_type": "Compound",
+      "is_valid": false,
+      "bbox": [
+        4.0,
+        199.42448030066853,
+        187.24990132273595
+      ],
+      "step_bytes": 197427
+    }
+  },
+  "artifacts": {
+    "prediction_step": "__DEV_ROOT__/scratch/cadrecode_runs/f360_33088_7def8eac_0001/prediction.step",
+    "prediction_step_sha256": "911b83b7d1ccb4530fe32f81bcbbe8e4b49fe5e8bd55ede95d27ac4516c26471",
+    "prediction_step_bytes": 197427
+  },
+  "evaluation": {
+    "pred_mesh_triangles": 5652,
+    "pred_mesh_watertight": false,
+    "remesh_status": "ok",
+    "cd_x1000": 20.693064349176293,
+    "cd_floor_gt": 0.04290277161610374,
+    "cd_status": "ok",
+    "iou": 0.0,
+    "iou_status": "ok",
+    "gt_self_iou": null,
+    "gt_self_iou_dev": null,
+    "iou_eligible": false
+  },
+  "cd_floor_ratio": 482.32465105841936
+}

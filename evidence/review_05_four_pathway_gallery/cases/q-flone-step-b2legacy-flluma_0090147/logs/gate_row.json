@@ -1,0 +1,9 @@
+{
+  "sample_id": "flluma_0090147",
+  "syntax_ok": true,
+  "exec_ok": false,
+  "build_ok": false,
+  "solid_valid": false,
+  "step_export_ok": false,
+  "error": "exec error: extrude_on_face join/add requires height"
+}

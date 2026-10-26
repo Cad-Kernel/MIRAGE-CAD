@@ -1,0 +1,73 @@
+{
+  "sample_id": "flluma_0091975",
+  "relpath": "shard_0091/flluma_0091975",
+  "step_path": "__FLLUMA_ROOT__One\\FllumaOne-100K\\shard_0091\\flluma_0091975\\model.step",
+  "backend": "Flluma/OpenCASCADE extract_step_brep_features",
+  "features": {
+    "success": true,
+    "shape_type": "SOLID",
+    "brep_valid": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 12,
+    "wire_count": 14,
+    "edge_count": 25,
+    "vertex_count": 15,
+    "bbox": {
+      "min": [
+        -42.5,
+        -14.10000038147,
+        -3.000000289707432
+      ],
+      "max": [
+        42.50000000000033,
+        14.100000381471666,
+        3.000000100000189
+      ],
+      "size": [
+        85.00000000000033,
+        28.200000762941666,
+        6.000000389707621
+      ]
+    },
+    "surface_area": 6189.149029529993,
+    "volume": 14291.787882591823,
+    "brep_feature_version": 1,
+    "brep_topology": {
+      "surface_type_counts": {
+        "bspline_surface": 1,
+        "cylinder": 1,
+        "plane": 10
+      },
+      "curve_type_counts": {
+        "bspline_curve": 3,
+        "circle": 1,
+        "line": 21
+      },
+      "edge_face_valence_counts": {
+        "2": 25
+      },
+      "face_area_stats": {
+        "count": 12,
+        "min": 2.1747913498022085,
+        "max": 2382.2066181631794,
+        "mean": 515.7624191274994,
+        "sum": 6189.149029529993
+      },
+      "edge_length_stats": {
+        "count": 25,
+        "min": 0.15556363280373756,
+        "max": 85.0,
+        "mean": 30.011294368313024,
+        "sum": 750.2823592078256
+      },
+      "face_wire_incidence_count": 14,
+      "face_edge_incidence_count": 50,
+      "face_edge_adjacency_count": 50,
+      "boundary_edge_count": 0,
+      "manifold_edge_count": 25,
+      "non_manifold_edge_count": 0
+    }
+  },
+  "success": true
+}

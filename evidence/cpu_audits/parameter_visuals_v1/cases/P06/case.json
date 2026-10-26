@@ -1,0 +1,70 @@
+{
+  "case_id": "P06",
+  "bucket": "execution_failure",
+  "sample_id": "flluma_0093632",
+  "historical_result": {
+    "kind": "result",
+    "sample_id": "flluma_0093632",
+    "param": "path_height",
+    "delta": 0.25,
+    "from": 9.1,
+    "to": 11.375,
+    "clamped_to_bound": false,
+    "outcome": "broke_at_exec_ok",
+    "error": "exec error: topology reference 'join_002:top_face:323af5d41048' did not resolve any face"
+  },
+  "historical_baseline": {
+    "kind": "row",
+    "sample_id": "flluma_0093632",
+    "modality": "step",
+    "coverage": {
+      "n_declared": 10,
+      "n_declared_referenced": 10,
+      "n_declared_unreferenced": 0,
+      "unreferenced_names": [],
+      "n_param_references": 10,
+      "n_inlined_literals": 12,
+      "parametric_coverage": 0.45454545454545453
+    },
+    "baseline": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true,
+      "error": ""
+    }
+  },
+  "before_sha256": "fa683bbc176120b48dd32e3fcbd7a837c77607b1ad11f4606beeedf7d52d0c5e",
+  "after_sha256": "a3eb0812822367a44eb0814a588c5e593a21197db217fc1fc8aa90952505df72",
+  "declared_parameter": {
+    "value": 9.1,
+    "min": 4.0,
+    "max": 28.0
+  },
+  "params_reference_lines": [
+    14
+  ],
+  "direct_literal_argument_examples": [
+    {
+      "line": 13,
+      "argument": "seed",
+      "source": "20266614",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 14,
+      "argument": "profile_segments",
+      "source": "16",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 17,
+      "argument": "offset",
+      "source": "[20.1, 6.1, 9.05]",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    }
+  ],
+  "author_semantic_review": "PENDING",
+  "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+}

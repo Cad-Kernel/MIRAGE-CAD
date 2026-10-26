@@ -1,0 +1,17 @@
+{
+  "case_id": "A12_f360_31136_987852a4_0004",
+  "sample_id": "f360_31136_987852a4_0004",
+  "method": "mirage",
+  "step_sha256": null,
+  "historical_outcome": "KERNEL_CRASH_STAGE_UNRESOLVED",
+  "created_utc": "2026-10-22T19:17:41.720879+00:00",
+  "mesh_script_sha256": "71495a94b5534f164f16dfc0fd0b209aa341f257498cfb298fb9179281700eca",
+  "render_protocol_sha256": "737134ff17799fa3c252ef8026cf75b7f1886010782be9f9a6960420ee707417",
+  "cadquery": "2.5.0.dev0",
+  "OCP": "7.7.2.0",
+  "alpha": 0.0001,
+  "angular_tolerance": 0.3,
+  "new_program_execution_or_score": false,
+  "status": "HISTORICAL_FAILURE_PLACEHOLDER",
+  "counter_key": "historical_placeholders"
+}

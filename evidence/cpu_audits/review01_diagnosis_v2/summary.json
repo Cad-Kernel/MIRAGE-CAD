@@ -1,0 +1,134 @@
+{
+  "status": "REAL_DATASET_AUDIT_COMPLETE_WITH_SEPARATE_REFERENCE_DISAGREEMENT_DIAGNOSIS",
+  "created_utc": "2026-10-25T11:32:08.613096+00:00",
+  "real_dataset_rows": 50000,
+  "actual_wsl_inputs": {
+    "A1E": {
+      "rows": 25000,
+      "complete_rows": 25000,
+      "eos_only_rows": 0,
+      "partial_body_rows": 0,
+      "no_target_rows": 0,
+      "body_cut_rows_including_no_target": 0,
+      "incomplete_target_rows": 0,
+      "median_prompt_tokens": 137.0,
+      "body_tokens_total_excluding_eos": 15237559,
+      "body_tokens_lost": 0,
+      "body_tokens_lost_pct_of_body_tokens": 0.0,
+      "body_loss_median": 0,
+      "body_loss_p90_nearest_rank": 0,
+      "body_loss_max": 0
+    },
+    "B2P": {
+      "rows": 25000,
+      "complete_rows": 18241,
+      "eos_only_rows": 19,
+      "partial_body_rows": 6096,
+      "no_target_rows": 644,
+      "body_cut_rows_including_no_target": 6740,
+      "incomplete_target_rows": 6759,
+      "median_prompt_tokens": 654.0,
+      "body_tokens_total_excluding_eos": 15237559,
+      "body_tokens_lost": 1939362,
+      "body_tokens_lost_pct_of_body_tokens": 12.727511014067279,
+      "body_loss_median": 242.0,
+      "body_loss_p90_nearest_rank": 609,
+      "body_loss_max": 1123
+    }
+  },
+  "missing_path_counterfactual": {
+    "A1E": {
+      "counterfactual_counts": {
+        "eos_only_rows": 0,
+        "body_cut_rows": 0,
+        "no_target_rows": 0,
+        "body_tokens_lost": 0,
+        "median_prompt_tokens": 123.0
+      },
+      "matches_claude_v2_all_these_fields": true
+    },
+    "B2P": {
+      "counterfactual_counts": {
+        "eos_only_rows": 30,
+        "body_cut_rows": 6333,
+        "no_target_rows": 631,
+        "body_tokens_lost": 1853778,
+        "median_prompt_tokens": 639.0
+      },
+      "matches_claude_v2_all_these_fields": true
+    }
+  },
+  "examples": [
+    {
+      "sample_id": "flluma_0018645",
+      "actual_step_feature_path": "data/25k/step_features/flluma_0018645.json",
+      "actual_evidence": "STEP/B-Rep evidence: validity=valid. bbox_size=70.400, 24.160, 8.500. face_count=11; edge_count=24. surface_counts: plane=11, cylinder=0, cone=0. curve_counts: line=24, circle=0. area=4495.119; volume=12117.502.",
+      "unresolved_path_evidence": "STEP/B-Rep evidence: validity=invalid. bbox_size=0.000, 0.000, 0.000. face_count=0; edge_count=0. surface_counts: plane=0, cylinder=0, cone=0. curve_counts: line=0, circle=0. area=0.000; volume=0.000.",
+      "actual_prompt_tokens": {
+        "A1E": 136,
+        "B2P": 492
+      },
+      "unresolved_path_prompt_tokens": {
+        "A1E": 123,
+        "B2P": 479
+      }
+    },
+    {
+      "sample_id": "flluma_0067284",
+      "actual_step_feature_path": "data/25k/step_features/flluma_0067284.json",
+      "actual_evidence": "STEP/B-Rep evidence: validity=valid. bbox_size=82.800, 49.630, 7.700. face_count=13; edge_count=33. surface_counts: plane=11, cylinder=2, cone=0. curve_counts: line=27, circle=2. area=7772.650; volume=22574.812.",
+      "unresolved_path_evidence": "STEP/B-Rep evidence: validity=invalid. bbox_size=0.000, 0.000, 0.000. face_count=0; edge_count=0. surface_counts: plane=0, cylinder=0, cone=0. curve_counts: line=0, circle=0. area=0.000; volume=0.000.",
+      "actual_prompt_tokens": {
+        "A1E": 136,
+        "B2P": 537
+      },
+      "unresolved_path_prompt_tokens": {
+        "A1E": 123,
+        "B2P": 524
+      }
+    },
+    {
+      "sample_id": "flluma_0073116",
+      "actual_step_feature_path": "data/25k/step_features/flluma_0073116.json",
+      "actual_evidence": "STEP/B-Rep evidence: validity=valid. bbox_size=82.700, 56.500, 13.930. face_count=13; edge_count=29. surface_counts: plane=11, cylinder=1, cone=0. curve_counts: line=25, circle=4. area=11383.616; volume=38436.742.",
+      "unresolved_path_evidence": "STEP/B-Rep evidence: validity=invalid. bbox_size=0.000, 0.000, 0.000. face_count=0; edge_count=0. surface_counts: plane=0, cylinder=0, cone=0. curve_counts: line=0, circle=0. area=0.000; volume=0.000.",
+      "actual_prompt_tokens": {
+        "A1E": 138,
+        "B2P": 875
+      },
+      "unresolved_path_prompt_tokens": {
+        "A1E": 123,
+        "B2P": 860
+      }
+    }
+  ],
+  "cuda_initialized_in_diagnosis": false,
+  "runtime": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.5.0",
+    "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:25:55) [GCC 14.3.0]"
+  },
+  "source_snapshots": {
+    "a1e_historical.py": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+    "b2p_recorded_hash_match.py": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+    "data.py": "3ebca2ab8de767719ea440ade1b4f44b7ba9bb4278a0e831a8f4bfa3f5258ee0",
+    "gen_prompts.py": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+  },
+  "tokenizer_snapshot": {
+    "config.json": "984abd4b3f21edb957012c7dc4352c462b08e15ffe8384b6d55990885e9dcc9a",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "4a917e4772d9b246ef600e1c5d7d81e3a81ae9f3f2d10d78ccb02c86e5fb184a",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "real_dataset_row_file_sha256": "4d3a39e6e510d82c057cf326b01ac714590ee373b972400a3d7f028b3ff2ef64",
+  "first_run_stop": "All 25000 paired real dataset calls and packing/labels assertions finished; comparison to Claude v2 then failed. Kept unchanged.",
+  "limitations": [
+    "Original training runtime input-byte binding not retrospectively proved",
+    "No historical LM or latent checkpoint loaded",
+    "A1E token path uses explicitly unused dummy latent",
+    "Counterfactual reproduces unresolved feature path, not a new trained condition",
+    "All counts conditional on pinned current data helper/prompt/tokenizer and recorded-hash-matching trainers"
+  ],
+  "audit_script_sha256": "b8e9cc7db09ed5e82fe0b09945cdfc116b264754fd6d19113719531a57741235"
+}

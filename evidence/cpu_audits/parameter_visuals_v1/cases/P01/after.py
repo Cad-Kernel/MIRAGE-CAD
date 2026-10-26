@@ -1,0 +1,21 @@
+params = Parameters()
+params.add('flange_height', 40.634, min=12.0, max=80.0, expression='height * 0.757', semantic_type='overall_height')
+params.add('flange_radius', 10.11, min=4.0, max=24.0, expression='width * 0.142', semantic_type='flange_radius')
+params.add('flange_width', 46.1, min=20.0, max=120.0, expression='length * 0.648', semantic_type='overall_width')
+params.add('height', 48.7, min=12, max=80, semantic_type='overall_height')
+params.add('hole_radius', 2.11, min=1, max=8, semantic_type='hole_radius')
+params.add('pocket_width', 16.01, min=8.0, max=40.0, expression='width * 0.34', semantic_type='pocket_width')
+params.add('thickness', 8, min=3, max=25, semantic_type='thickness')
+params.add('width', 71.7, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0001001', category='l_bracket', parameters=params, seed=20261515, sample_id='flluma_0001001', units='mm')
+plate = part.plate(name='base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+cylinder = part.cylinder(name='raised_flange_seed', radius=params['flange_radius'], height=params['flange_height'], semantic_type='flange')
+moved = part.translate(name='place_raised_flange', target=cylinder, offset=[0.0, 0.0, 18.37], semantic_type='placement')
+join = part.boolean_join(name='join_flange_to_base', target=plate, tool=moved, semantic_type='joined_boss')
+pocket = part.box(name='flange_recess_seed', length=params['flange_width'], width=params['pocket_width'], height=params['flange_height'], semantic_type='pocket')
+moved_2 = part.translate(name='place_flange_recess', target=pocket, offset=[0.0, -21.02, 18.335], semantic_type='placement')
+pocket_2 = part.boolean_cut(name='cut_flange_recess', target=join, tool=moved_2, semantic_type='pocket')
+holes = part.hole_pattern(name='flange_bolt_holes', target=pocket_2.top_face(), radius=params['hole_radius'], depth='through', positions=[[-19.82, -12.175], [19.82, -12.175], [-19.82, 12.175], [19.82, 12.175]], semantic_type='bolt_hole_pattern')
+
+__all__ = ['part']

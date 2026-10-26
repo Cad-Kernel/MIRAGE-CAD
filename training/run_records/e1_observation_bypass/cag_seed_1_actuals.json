@@ -1,0 +1,154 @@
+{
+  "arms": {
+    "A1E": {
+      "eval_loss_all": [
+        0.1388,
+        0.1185,
+        0.1107,
+        0.1013,
+        0.09784,
+        0.09332,
+        0.09346
+      ],
+      "output_dir": "outputs/b1_1epoch_step_s1",
+      "prediction_file": "outputs/e1_observation_bypass/gen_code_step_A1E_s1.jsonl",
+      "prediction_rows": 500,
+      "prediction_sha256": "f2a260c4ad9ccfa863de2a39aa0088cec5f6f7328525464e5f757819f76e745d",
+      "reports": {
+        "soft_prefix_training_report.json": {
+          "init_lora_ir_dir": null,
+          "max_length": 1536,
+          "modalities": [
+            "step"
+          ],
+          "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+          "output_dir": "outputs/b1_1epoch_step_s1",
+          "prefix_len": 4,
+          "soft_prefix_eval": {
+            "normal_loss": 0.09343888287842274,
+            "shuffled_actually_permuted": false,
+            "shuffled_loss": 0.09343888287842274,
+            "shuffled_loss_note": "VACUOUS: the in-batch permutation never ran (eval batch size 1), so shuffled_loss is normal_loss by construction and says nothing about whether the prefix is read. The generation-level prefix ablation is the evidence for that.",
+            "zero_loss": 0.12276154728233814
+          },
+          "train_rows": 25000,
+          "val_rows": 2500
+        }
+      },
+      "train_log": "outputs/b1_1epoch_step_s1.train.log"
+    },
+    "B2P": {
+      "eval_loss_all": [
+        0.03582,
+        0.06298,
+        0.06089,
+        0.05498,
+        0.05947,
+        0.06472,
+        0.06167,
+        0.06211,
+        0.0655,
+        0.06788,
+        0.0686,
+        0.0711,
+        0.07071
+      ],
+      "output_dir": "outputs/b2_pred_matched_step_s1",
+      "prediction_file": "outputs/e1_observation_bypass/gen_code_step_B2P_s1.jsonl",
+      "prediction_rows": 500,
+      "prediction_sha256": "b144fc881d54ba71fedb7f3faa4e40b5a1cbbabe1e0482e1dfc3f19381b8b74b",
+      "reports": {
+        "training_report.json": {
+          "max_length": 1536,
+          "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+          "output_dir": "outputs/b2_pred_matched_step_s1",
+          "seed": 1,
+          "target": "program",
+          "train_rows": 25000,
+          "val_rows": 2500
+        }
+      },
+      "train_log": "outputs/b2_pred_matched_step_s1.train.log"
+    }
+  },
+  "created_utc": "2026-09-26T13:05:53.301437+00:00",
+  "environment": {
+    "nvidia_smi": "NVIDIA GeForce RTX 5060 Ti, 591.86",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:25:55) [GCC 14.3.0]",
+    "torch": {
+      "cuda_available": true,
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+      "torch": "2.10.0+cu128"
+    },
+    "transformers": "5.5.0"
+  },
+  "inputs": {
+    "b2p_train_rows": 25000,
+    "b2p_train_sha256": "09cf50de9c85a0f5c0f91798d64debddab51d560775a791711d1cfb151088260",
+    "pred_ir_test_rows": 500,
+    "pred_ir_test_sha256": "b96bf1c6d39c7f323ab86ace4ba8fe1edd0613e5e7d3e176ed69527e8a9262ca",
+    "test_rows": 2500,
+    "test_sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e",
+    "train_rows": 25000,
+    "train_sha256": "991e0a6d811b5927d9316fed50c7cc09472719af1726b8c92017c3fbb86906ca"
+  },
+  "output_status_after": {
+    "a_log_exists": true,
+    "a_out_complete": true,
+    "a_out_exists": true,
+    "a_pred_exists": true,
+    "a_pred_rows": 500,
+    "b_log_exists": true,
+    "b_out_complete": true,
+    "b_out_exists": true,
+    "b_pred_exists": true,
+    "b_pred_rows": 500,
+    "cag_actuals_exists": false,
+    "legacy_actuals_exists": false
+  },
+  "paths": {
+    "a_log": "outputs/b1_1epoch_step_s1.train.log",
+    "a_out": "outputs/b1_1epoch_step_s1",
+    "a_pred": "outputs/e1_observation_bypass/gen_code_step_A1E_s1.jsonl",
+    "b2p_train": "data/25k/train_b2pred_step.jsonl",
+    "b_log": "outputs/b2_pred_matched_step_s1.train.log",
+    "b_out": "outputs/b2_pred_matched_step_s1",
+    "b_pred": "outputs/e1_observation_bypass/gen_code_step_B2P_s1.jsonl",
+    "cag_actuals": "outputs/e1_observation_bypass/cag_seed_1_actuals.json",
+    "legacy_actuals": "outputs/e1_observation_bypass/seed_1_actuals.json",
+    "pred_ir_test": "outputs/e1_observation_bypass/pred_ir_step_present.jsonl",
+    "preflight": "outputs/e1_observation_bypass/cag_seed_1_preflight.json",
+    "test": "data/25k/test.jsonl",
+    "train": "data/25k/train.jsonl"
+  },
+  "protocol": {
+    "batch_size": 16,
+    "checkpoint_selection": "final",
+    "epochs": 1,
+    "expected_updates": 3125,
+    "expected_updates_formula": "ceil(train_rows / grad_accum) * epochs",
+    "gradient_accumulation_steps": 8,
+    "limit": 500,
+    "modality": "step",
+    "repair": false
+  },
+  "purpose": "CAG frozen A1E/B2P exact-match comparison",
+  "script_hashes": {
+    "gen_scripts/train_soft_prefix_ir.py": "20bd0c9c4e1948ab0b9e096e45ae90da3c3e2777cf42464ccfbb5e182785bde1",
+    "scratch/cag_a1e_b2p_actuals.py": "d54cc54d3e505f9f6d7e4b850259e48dd3300cad3ab1434b55b9673df4f000f5",
+    "train_program_lora.py": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d",
+    "training_25k/44_seeds_a1e_b2p.sh": "331150c037474be10e620361cfdd6867af7c45a42fa32fe7f6e521a2d1d5ce5d",
+    "training_25k/cag_run_frozen_a1e_b2p_seed.sh": "3494a19432afaed2a2513f366d6be0b2a2570da16d966bc6f08cda7c5af28f4f",
+    "training_25k/scripts/gen_b1_direct_latent.py": "c7bd0c66f5acfbcaf9d9af3efb948b2d36e8f1b7d737683a61f3183ebae538f4",
+    "training_25k/scripts/gen_code_from_predicted_ir.py": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+  },
+  "seed": 1,
+  "validation": {
+    "a_final_artifacts_present": true,
+    "a_prediction_complete": true,
+    "b_final_artifacts_present": true,
+    "b_prediction_complete": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "action": "preflight",
+  "created_utc": "2026-10-16T19:01:48.490213+00:00",
+  "error": "BLOCKED: real shared latent cache is absent/incomplete",
+  "status": "BLOCKED_OR_FAILED",
+  "training_confirmation": false,
+  "type": "ValueError"
+}

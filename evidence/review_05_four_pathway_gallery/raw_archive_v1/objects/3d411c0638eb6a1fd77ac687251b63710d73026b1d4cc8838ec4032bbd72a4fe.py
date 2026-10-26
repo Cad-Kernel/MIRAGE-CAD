@@ -1,0 +1,20 @@
+params = Parameters()
+params.add('height', 56.8, min=12, max=80, semantic_type='overall_height')
+params.add('hole_offset_x', 14.67, min=4.0, max=44.0, expression='width * 0.28', semantic_type='hole_spacing')
+params.add('hole_offset_y', 14.2, min=3.0, max=32.0, expression='height * 0.25', semantic_type='hole_spacing')
+params.add('hole_radius', 1.79, min=1, max=8, semantic_type='hole_radius')
+params.add('rib_height', 12.42, min=3.0, max=24.0, expression='thickness * 1.38', semantic_type='rib_height')
+params.add('rib_step', 8.39, min=4.0, max=24.0, semantic_type='rib_offset')
+params.add('rib_width', 2.05, min=0.8, max=5.0, semantic_type='rib_width')
+params.add('thickness', 9, min=3, max=25, semantic_type='thickness')
+params.add('width', 52.4, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0094365', category='linear_ribbed_heat_sink_mount', parameters=params, seed=20354879, sample_id='flluma_0094365', units='mm')
+plate = part.plate(name='ribbed_mount_base', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+box = part.box(name='heat_sink_rib_seed', length=params['rib_width'], width=params['height'], height=params['rib_height'], semantic_type='rib')
+moved = part.translate(name='place_first_heat_sink_rib', target=box, offset=[-25.175, 0.0, 10.51], semantic_type='placement')
+linear_pattern = part.linear_pattern(name='linear_heat_sink_rib_array', target=moved, count=7, step=[params['rib_step'], 0.0, 0.0], semantic_type='linear_pattern')
+join = part.boolean_join(name='join_heat_sink_ribs', target=plate, tool=linear_pattern, semantic_type='support_rib')
+holes = part.hole_pattern(name='ribbed_mount_corner_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[-14.67, -14.2], [14.67, -14.2], [-14.67, 14.2], [14.67, 14.2]], semantic_type='mounting_hole')
+
+__all__ = ['part']

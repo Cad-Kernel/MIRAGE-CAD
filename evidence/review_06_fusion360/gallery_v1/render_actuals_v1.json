@@ -1,0 +1,12 @@
+{
+  "status": "DUAL_SERIES_RENDERING_COMPLETE_SEMANTIC_REVIEW_PENDING",
+  "cases": 18,
+  "method_slots": 72,
+  "views_including_explicit_placeholders": 288,
+  "geometry_views": 256,
+  "placeholder_views": 32,
+  "subpixel_warnings": 6,
+  "panels": 36,
+  "all_raw_meshes_and_transforms_retained": true,
+  "new_training_prediction_execution_scoring": false
+}

@@ -1,0 +1,386 @@
+{
+  "assignment_policy": "hash_dp_group_disjoint_v1",
+  "assignment_seed": "MIRAGE-CAD-CAG-construction-disjoint-2026-09-29",
+  "counts": {
+    "test": {
+      "rows": 500,
+      "unique_signatures": 4
+    },
+    "train": {
+      "rows": 25000,
+      "unique_signatures": 33
+    },
+    "unused": {
+      "rows": 2000,
+      "unique_signatures": 6
+    },
+    "val": {
+      "rows": 2500,
+      "unique_signatures": 5
+    }
+  },
+  "created_utc": "2026-09-29T21:34:06.042726+00:00",
+  "nearest_train_audit": {
+    "exact_op_sequence_matches": 0,
+    "exact_signature_matches": 0,
+    "operation_sequence_lcs": {
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n": 500,
+      "q25": 0.0,
+      "q75": 0.0,
+      "sd": 0.0
+    },
+    "operation_set_f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n": 500,
+      "q25": 0.0,
+      "q75": 0.0,
+      "sd": 0.0
+    },
+    "test_rows": 500
+  },
+  "out_dir": "__RUN_SOURCE_ROOT__/data/construction_disjoint_step_v1",
+  "overlap_audit": {
+    "status": "PASS",
+    "train_test_overlap": 0,
+    "train_val_overlap": 0,
+    "val_test_overlap": 0
+  },
+  "protocol_version": "construction_disjoint_step_v1",
+  "signature_version": "op_graph_sig_v1",
+  "source_hashes": {
+    "__RUN_SOURCE_ROOT__/data/25k/test.jsonl": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e",
+    "__RUN_SOURCE_ROOT__/data/25k/train.jsonl": "991e0a6d811b5927d9316fed50c7cc09472719af1726b8c92017c3fbb86906ca",
+    "__RUN_SOURCE_ROOT__/data/25k/val.jsonl": "4b76f8fec86f8fac7fbb9635542a924ccf3b91893115639d13ed79ada374a021"
+  },
+  "source_splits": [
+    "train",
+    "val",
+    "test"
+  ],
+  "split_summaries": {
+    "test": {
+      "bbox_diag": {
+        "max": 92.57888621549012,
+        "mean": 34.667856838714115,
+        "median": 22.854290108752735,
+        "min": 9.408634860268583,
+        "n": 500,
+        "q25": 17.589863400991916,
+        "q75": 59.05437659610108,
+        "sd": 24.93965981471918
+      },
+      "complexity_counts": {
+        "L1": 417,
+        "L3": 83
+      },
+      "operation_count": {
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "n": 500,
+        "q25": 1.0,
+        "q75": 1.0,
+        "sd": 0.0
+      },
+      "operation_token_counts": {
+        "OP_CLIPPED_OFFSET_STOCK": 83,
+        "OP_ELLIPSOID": 139,
+        "OP_SHELLED_COVER_PLATE": 129,
+        "OP_TORUS": 149
+      },
+      "rows": 500,
+      "surface_area": {
+        "max": 13008.350211445992,
+        "mean": 2516.3168143701077,
+        "median": 471.29138173597664,
+        "min": 90.55004613563118,
+        "n": 500,
+        "q25": 276.458532160054,
+        "q75": 5348.050952690331,
+        "sd": 3657.3757316135725
+      },
+      "template_family_top20": {
+        "COVER_PLATE_SHELL": 129,
+        "ELLIPSOID_STOCK": 139,
+        "INTERSECTION_OFFSET_STOCK": 83,
+        "TORUS_STOCK": 149
+      },
+      "unique_signatures": 4,
+      "volume": {
+        "max": 8365.024608190386,
+        "mean": 1544.6613342591627,
+        "median": 502.6717746101378,
+        "min": 73.26499334083675,
+        "n": 500,
+        "q25": 284.153783218848,
+        "q75": 2507.567461795032,
+        "sd": 1787.1613562276564
+      }
+    },
+    "train": {
+      "bbox_diag": {
+        "max": 131.355010880852,
+        "mean": 74.64628940968514,
+        "median": 79.0434692560471,
+        "min": 8.116408924079398,
+        "n": 25000,
+        "q25": 52.46174762286887,
+        "q75": 92.90483134660636,
+        "sd": 23.372428996919506
+      },
+      "complexity_counts": {
+        "L1": 187,
+        "L2": 3879,
+        "L3": 13689,
+        "L4": 7245
+      },
+      "operation_count": {
+        "max": 11.0,
+        "mean": 5.57592,
+        "median": 6.0,
+        "min": 1.0,
+        "n": 25000,
+        "q25": 4.0,
+        "q75": 7.0,
+        "sd": 2.366512237197761
+      },
+      "operation_token_counts": {
+        "OP_BOOLEAN_CUT": 576,
+        "OP_BOOLEAN_INTERSECT": 469,
+        "OP_BOOLEAN_JOIN": 15548,
+        "OP_BOSSED_PLATE": 287,
+        "OP_BOX": 10323,
+        "OP_CAPSULE": 87,
+        "OP_CHAMFER": 6327,
+        "OP_CLAMP_PAD_PLATE": 139,
+        "OP_CYLINDER": 5444,
+        "OP_EXTRUDE": 7186,
+        "OP_FACE_EXTRUDE_ADD": 1331,
+        "OP_FACE_EXTRUDE_CUT": 1331,
+        "OP_FILLET": 3641,
+        "OP_HOLE_PATTERN": 25661,
+        "OP_LINEAR_PATTERN": 1056,
+        "OP_LOFT": 2446,
+        "OP_LOFT_ADAPTER": 288,
+        "OP_MIRROR": 1933,
+        "OP_MIRRORED_LUG_PLATE": 154,
+        "OP_PLATE": 8161,
+        "OP_PROFILE_CUT": 524,
+        "OP_RAIL_MOUNT_PLATE": 179,
+        "OP_RECTANGULAR_POCKET": 7384,
+        "OP_REVOLVE": 2411,
+        "OP_RIBBED_SUPPORT_PLATE": 153,
+        "OP_SKETCH": 15013,
+        "OP_SKETCH_ON_FACE": 2662,
+        "OP_STANDOFF_ARRAY_PLATE": 325,
+        "OP_SWEEP_TUBE": 2100,
+        "OP_TRANSLATE": 16159,
+        "OP_WEDGE": 100
+      },
+      "rows": 25000,
+      "surface_area": {
+        "max": 42275.06980869011,
+        "mean": 7221.455500106882,
+        "median": 6295.628369873197,
+        "min": 95.1742763928208,
+        "n": 25000,
+        "q25": 3346.556956917436,
+        "q75": 9558.27987816343,
+        "sd": 4966.760741912305
+      },
+      "template_family_top20": {
+        "ASYMMETRIC_TAB_PROFILE_PLATE": 1003,
+        "BEARING_BLOCK": 475,
+        "CRESCENT_LUG_PROFILE": 934,
+        "CROSS_TAB_PROFILE_MOUNT": 1054,
+        "CUTOUT_MOTOR_BRACKET": 576,
+        "FACE_FEATURE_SERVICE_COVER": 1331,
+        "FLANGE_PLATE": 493,
+        "INTERSECTED_MOUNT_BLOCK": 469,
+        "LINEAR_RIBBED_HEAT_SINK_MOUNT": 591,
+        "LOBED_GASKET_PROFILE": 1127,
+        "LOFTED_TRANSITION_BRACKET": 2446,
+        "MOUNTING_BLOCK_WITH_COUNTERBORES": 515,
+        "PIPE_CLAMP": 491,
+        "REVOLVED_HUB_MOUNT": 2411,
+        "RIBBED_ANGLE_BRACKET": 602,
+        "ROUNDED_SLOT_PROFILE_PLATE": 1094,
+        "SLOTTED_MOUNT_PLATE": 524,
+        "STEPPED_PROFILE_MOUNT": 1044,
+        "SWEPT_PIPE_BRACKET": 1810,
+        "TRAPEZOID_PROFILE_FOOT": 930
+      },
+      "unique_signatures": 33,
+      "volume": {
+        "max": 152443.50336328923,
+        "mean": 21355.510919609846,
+        "median": 15424.27778382401,
+        "min": 59.121916932218426,
+        "n": 25000,
+        "q25": 6797.647134979257,
+        "q75": 29129.626267965228,
+        "sd": 20094.775480497363
+      }
+    },
+    "unused": {
+      "bbox_diag": {
+        "max": 118.67758945911802,
+        "mean": 76.01927467948762,
+        "median": 86.8625069799288,
+        "min": 11.708663855600864,
+        "n": 2000,
+        "q25": 65.70152177560166,
+        "q75": 96.45447302960801,
+        "sd": 28.725874932925844
+      },
+      "complexity_counts": {
+        "L1": 151,
+        "L2": 946,
+        "L3": 648,
+        "L4": 255
+      },
+      "operation_count": {
+        "max": 8.0,
+        "mean": 5.7655,
+        "median": 7.0,
+        "min": 1.0,
+        "n": 2000,
+        "q25": 2.0,
+        "q75": 8.0,
+        "sd": 2.741763736026884
+      },
+      "operation_token_counts": {
+        "OP_BOOLEAN_JOIN": 1296,
+        "OP_BOX": 1296,
+        "OP_CHAMFER": 255,
+        "OP_CONE": 89,
+        "OP_FACE_EXTRUDE_ADD": 790,
+        "OP_FACE_EXTRUDE_CUT": 790,
+        "OP_FILLET": 790,
+        "OP_HOLE_PATTERN": 1438,
+        "OP_PIN_CLUSTER": 156,
+        "OP_PLATE": 790,
+        "OP_REVOLVED_BUSHING": 255,
+        "OP_SHELL": 648,
+        "OP_SKETCH_ON_FACE": 1580,
+        "OP_SPHERE": 62,
+        "OP_TRANSLATE": 1296
+      },
+      "rows": 2000,
+      "surface_area": {
+        "max": 27442.924538654835,
+        "mean": 10701.6349282062,
+        "median": 10748.394527530914,
+        "min": 143.56325416829534,
+        "n": 2000,
+        "q25": 4910.256427313255,
+        "q75": 16331.206266499803,
+        "sd": 6982.614946367285
+      },
+      "template_family_top20": {
+        "CONE_STOCK": 89,
+        "FACE_RECURSIVE_MOUNT": 790,
+        "PATTERNED_PIN_CLUSTER": 156,
+        "REVOLVED_BUSHING": 255,
+        "SHELLED_ENCLOSURE_HISTORY": 648,
+        "SPHERE_STOCK": 62
+      },
+      "unique_signatures": 6,
+      "volume": {
+        "max": 82398.05404649365,
+        "mean": 18573.28418571729,
+        "median": 10677.558048730829,
+        "min": 149.9327211385186,
+        "n": 2000,
+        "q25": 4919.2989845978145,
+        "q75": 31598.161818533554,
+        "sd": 17901.122257464
+      }
+    },
+    "val": {
+      "bbox_diag": {
+        "max": 138.33265986396526,
+        "mean": 86.30236826099947,
+        "median": 87.31057913066513,
+        "min": 10.406387473890248,
+        "n": 2500,
+        "q25": 77.6285347582035,
+        "q75": 98.78111323756447,
+        "sd": 24.060506273729484
+      },
+      "complexity_counts": {
+        "L1": 145,
+        "L2": 275,
+        "L3": 2080
+      },
+      "operation_count": {
+        "max": 10.0,
+        "mean": 5.21,
+        "median": 4.0,
+        "min": 1.0,
+        "n": 2500,
+        "q25": 4.0,
+        "q75": 5.0,
+        "sd": 3.03999944714723
+      },
+      "operation_token_counts": {
+        "OP_BOOLEAN_JOIN": 1246,
+        "OP_CHAMFER": 2080,
+        "OP_CIRCULAR_PATTERN": 623,
+        "OP_CYLINDER": 1869,
+        "OP_EXTRUDE": 910,
+        "OP_HOLE_PATTERN": 2080,
+        "OP_PLATE": 547,
+        "OP_PRISM": 145,
+        "OP_RECTANGULAR_POCKET": 547,
+        "OP_SENSOR_MOUNT_PLATE": 275,
+        "OP_SKETCH": 910,
+        "OP_THREADED_HOLE": 547,
+        "OP_TRANSLATE": 1246
+      },
+      "rows": 2500,
+      "surface_area": {
+        "max": 24124.738911031684,
+        "mean": 8331.126120610135,
+        "median": 7506.353574466926,
+        "min": 164.5599506589703,
+        "n": 2500,
+        "q25": 5455.900691890417,
+        "q75": 10442.021597753781,
+        "sd": 4395.4629153472315
+      },
+      "template_family_top20": {
+        "CIRCULAR_FLANGE_PATTERN": 623,
+        "PRISM_STOCK": 145,
+        "SENSOR_MOUNT_PLATE": 275,
+        "THREADED_BEARING_PLATE": 547,
+        "U_CHANNEL_PROFILE_BRACKET": 910
+      },
+      "unique_signatures": 5,
+      "volume": {
+        "max": 115543.42246744862,
+        "mean": 27810.471156825377,
+        "median": 21387.66346077626,
+        "min": 148.31916210693603,
+        "n": 2500,
+        "q25": 11976.694147509996,
+        "q75": 38812.210191842336,
+        "sd": 21535.636938440563
+      }
+    }
+  },
+  "src_root": "__RUN_SOURCE_ROOT__",
+  "targets": {
+    "test": 500,
+    "train": 25000,
+    "val": 2500
+  }
+}

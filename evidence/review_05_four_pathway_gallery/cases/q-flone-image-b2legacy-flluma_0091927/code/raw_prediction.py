@@ -1,0 +1,7 @@
+params = Parameters()
+params.add('radius', 5.9, min=1.5, max=16.0, semantic_type='sphere_radius')
+
+part = Part('flluma_0005000', category='sphere_stock', parameters=params, seed=20265514, sample_id='flluma_0005000', units='mm')
+sphere = part.sphere(name='sphere_stock_body', radius=params['radius'], semantic_type='primitive_stock')
+
+__all__ = ['part']

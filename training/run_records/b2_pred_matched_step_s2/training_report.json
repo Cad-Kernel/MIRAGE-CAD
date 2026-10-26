@@ -1,0 +1,9 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+  "target": "program",
+  "seed": 2,
+  "train_rows": 25000,
+  "val_rows": 2500,
+  "max_length": 1536,
+  "output_dir": "outputs/b2_pred_matched_step_s2"
+}

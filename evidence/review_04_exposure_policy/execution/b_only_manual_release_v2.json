@@ -1,0 +1,100 @@
+{
+  "A_branch": {
+    "actual_steps": [
+      4689,
+      500
+    ],
+    "completion": {
+      "bytes": 592,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.complete.json",
+      "sha256": "7fbcafb883162c98fa52eb1cb46e6002d931c5b816e3292ff0550745bca97fe4"
+    },
+    "finals": {
+      "phase1": {
+        "bytes": 1946,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/plan_phase1/COMPLETE.json",
+        "sha256": "e6f44352e7e4815cd08f70c51caa428ecd83e24bdd1ba8047126f90d773073a5"
+      },
+      "phase2": {
+        "bytes": 1945,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/plan_phase2/COMPLETE.json",
+        "sha256": "a178eec3b479bfbf894514072a0d132e08eec14be42e52d511dffe7b19ae6f49"
+      }
+    },
+    "p1a_log": {
+      "bytes": 45827,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.p1a_log.json",
+      "sha256": "f425d75c2093b07c413365c56f68792c2e8fefbf82c9316657252a37c06bd346"
+    },
+    "predictions": {
+      "bytes": 3198217,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.jsonl",
+      "sha256": "f542921ef1986e09e16658f25d1b9dc93ca5eb8390e24f471f691d82f655a780"
+    },
+    "rows": 945
+  },
+  "A_plans_regenerated": false,
+  "A_read_only_inventory": {
+    "bytes": 11651,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/b_only_preflight_v2.a_inventory.json",
+    "sha256": "8fd03ccd7414b1cf468aaac56d000cf9ee9c0f636e45c0372d7d382e765e3f87"
+  },
+  "B_output": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B",
+  "B_state_at_release": "NOT_STARTED",
+  "GPU_training_started_by_assistant": false,
+  "Stage4b_A": "NOT_STARTED",
+  "Stage4b_B": "NOT_STARTED",
+  "actual_B_steps": null,
+  "allowed_sequence": [
+    "B_phase1",
+    "B_phase2",
+    "B_train_roles_945"
+  ],
+  "amendment_fingerprint": "efc5ea52d9ab2b9b3aa46661a0a4f46805e09c0b466b9162f3962d9dee335fd1",
+  "canonical_code_checkout": "__DEV_ROOT__",
+  "checkout_base_commit": "052392b6c7dc0305d04033b1f56d19b12fffb0a2",
+  "checkout_note": "New uncommitted execution files are identified by source SHA256, not by base commit alone",
+  "command": "bash __DEV_ROOT__/src/training_25k/cag_run_exposure_policy_b_only.sh run --confirm-training",
+  "contract_tests": {
+    "bytes": 887,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/b_only_contract_tests_v2.json",
+    "sha256": "e35024538501dd6e5d704487edcb32795725cd6730224e6431fe6f6e5731813d"
+  },
+  "created_utc": "2026-10-17T15:08:16.857451+00:00",
+  "environment": "WSL Ubuntu / ai_dev",
+  "next_after_B": "Actual A/B Stage4b paired preflight, then separate manual release only if PASS",
+  "parent_fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "policy_lock": {
+    "bytes": 1675,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_policy_lock_v1.json",
+    "sha256": "1efa3d6e218f47ab6fc2ad67fa0fe9f1b11384276b68774291915eaaf6e47faa"
+  },
+  "preflight": {
+    "bytes": 9346,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/b_only_preflight_v2.json",
+    "sha256": "2db8831451e92dac45577bc6d6c479ead08028219d0450e145e1ce63182060fa"
+  },
+  "registration_script": {
+    "bytes": 3382,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_b_only_release.py",
+    "sha256": "f69f7fe6b2e427d2205eaa35cf958eb3195201778e70d8e3780aa2af9a99e5de"
+  },
+  "shared_cache_regenerated": false,
+  "sources": {
+    "cag_exposure_policy_b_only.py": {
+      "bytes": 19230,
+      "path": "__DEV_ROOT__/src/training_25k/cag_exposure_policy_b_only.py",
+      "sha256": "3d2a3e193dc0451d35a49ae9481d506bf7bb49d0f19f2d070501d5a0bb7293e9"
+    },
+    "cag_run_exposure_policy_b_only.sh": {
+      "bytes": 695,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_policy_b_only.sh",
+      "sha256": "b194b9e244058e1b2100ddd74f81269d6f4d49d81dc2643a72da1ddcffae1294"
+    }
+  },
+  "stage4b_training_released": false,
+  "status": "B_ONLY_MANUAL_COMMAND_RELEASED_NOT_EXECUTED",
+  "superseded_initial_dry_run": "b_only_preflight_v1.json",
+  "version": "review04_b_plan_only_v2",
+  "working_directory": "__RUN_SOURCE_ROOT__"
+}

@@ -1,0 +1,107 @@
+{
+  "sample_id": "f360_139258_43c33f60_0037",
+  "method": "mirage",
+  "classification": {
+    "primary_outcome": "EXECUTION_FAILURE",
+    "verified_failure_class": "EXECUTION_FAILURE",
+    "reason_subtype": "UNEXPECTED_KEYWORD_ARGUMENT",
+    "reason_detail": "Part.wedge / length",
+    "classification_rule": "FIRST_FALSE_NATIVE_GATE:exec_ok",
+    "reported_error": "exec error: Part.wedge() got an unexpected keyword argument 'length'",
+    "native_traceback": null,
+    "cd_scoreable": false,
+    "iou_scoreable": false,
+    "CD": null,
+    "IoU": null,
+    "iou_outcome": "UNAVAILABLE_AFTER_PRIMARY_FAILURE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 276,
+    "json_pointer": "/rows/276/native_records/mirage"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_139258_43c33f60_0037\\score_manifest.json",
+      "sha256": "0f48dc1efa6622181e1daf4c979f58e6d7bccea7a2e4178684957eaf8694b1f3",
+      "bytes": 484
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf",
+      "bytes": 72946
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+      "sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605",
+      "bytes": 175959
+    }
+  ],
+  "physical_JSONL_locators": {
+    "mirage_gate": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "line_1based": 277,
+      "line_bytes_sha256": "386cd73306bbf3e69acc6b78eb60492b673a897d3163a5755f066bf8ab8a26fa",
+      "file_sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf"
+    },
+    "mirage_export": {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+      "line_1based": 277,
+      "line_bytes_sha256": "7f3475893928a040181ffa8c9f328551b34cea085b77c21b7ecb3a567caf75f1",
+      "file_sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605"
+    }
+  },
+  "original_native_record": {
+    "sample_id": "f360_139258_43c33f60_0037",
+    "arm": "point_genplan",
+    "terminal": true,
+    "pipeline_status": "NO_GEOMETRY",
+    "reason": "this arm produced no STEP for this part: exec error: Part.wedge() got an unexpected keyword argument 'length'",
+    "gt_verified": null,
+    "cd_status": null,
+    "iou_status": null,
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": false,
+      "build_ok": false,
+      "solid_valid": false,
+      "step_export_ok": false
+    },
+    "gate_check": "match"
+  },
+  "original_gate": {
+    "sample_id": "f360_139258_43c33f60_0037",
+    "syntax_ok": true,
+    "exec_ok": false,
+    "build_ok": false,
+    "solid_valid": false,
+    "step_export_ok": false,
+    "error": "exec error: Part.wedge() got an unexpected keyword argument 'length'"
+  },
+  "original_export_record": {
+    "sample_id": "f360_139258_43c33f60_0037",
+    "arm": "point_genplan",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": false,
+      "build_ok": false,
+      "solid_valid": false,
+      "step_export_ok": false
+    },
+    "error": "exec error: Part.wedge() got an unexpected keyword argument 'length'",
+    "status": "OK",
+    "seconds": 0.0,
+    "tempdir_calls": 0,
+    "step_path": null,
+    "gate_check": "match"
+  },
+  "original_CADR_execution_texts": {},
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

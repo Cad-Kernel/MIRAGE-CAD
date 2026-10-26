@@ -1,0 +1,7 @@
+PART flluma_0057500 CAT wedge_stock UNITS mm SEED 20318014
+PARAM height 5.61 MIN 2 MAX 18 SEM primitive_height
+PARAM length 6.76 MIN 3 MAX 24 SEM primitive_length
+PARAM ltx 3.55 MIN 0 MAX 20 EXPR length*0.525 SEM wedge_ltx
+PARAM width 4.27 MIN 2 MAX 18 SEM primitive_width
+F wedge_001 OP_WEDGE SEM primitive_stock ROLE primary_body PARAMS ltx=@ltx size=[@length,@width,@height]
+END

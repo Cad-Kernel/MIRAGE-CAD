@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-18T14:58:52.808194+00:00",
+  "errors": 0,
+  "failures": 0,
+  "real_model_forward": false,
+  "scope": "CPU guards, source-bound finals/paths, query-only prompts, real tokenizer, stub-only code generation",
+  "sources": {
+    "cag_exposure_inference.py": {
+      "bytes": 27205,
+      "path": "__DEV_ROOT__/src/training_25k/cag_exposure_inference.py",
+      "sha256": "852abdde1542b16a0c330723a469cb70b995d5dd053ac81425057c561229e02e"
+    },
+    "cag_run_exposure_inference.sh": {
+      "bytes": 692,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh",
+      "sha256": "0af2dd8b39e67cdd980e603b37b5f988237e98ac25a8ed59ec6b756bfbf7bde6"
+    }
+  },
+  "status": "PASS",
+  "test_source": {
+    "bytes": 23542,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_exposure_inference.py",
+    "sha256": "e1e46d092a60d1144949552bbdb7294334acf7dc3cf8c74a4b023166eba24822"
+  },
+  "tests_run": 35,
+  "training_started": false
+}

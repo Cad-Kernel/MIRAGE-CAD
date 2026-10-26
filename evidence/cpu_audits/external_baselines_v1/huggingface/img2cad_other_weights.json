@@ -1,0 +1,388 @@
+{
+  "repo": "qq456cvb/img2cad",
+  "kind": "models",
+  "status": "PUBLIC_METADATA_CAPTURED",
+  "revision": "949958a05f3ef6f6f6566ac4eb9ca45a34650685",
+  "private": false,
+  "gated": false,
+  "card_metadata": {
+    "language": [
+      "en"
+    ],
+    "license": "mit",
+    "tags": [
+      "img2cad",
+      "cad",
+      "reverse-engineering",
+      "vision-language",
+      "transformer",
+      "diffusion",
+      "llama",
+      "peft",
+      "lora",
+      "pytorch"
+    ],
+    "base_model": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "datasets": [
+      "qq456cvb/img2cad-dataset"
+    ],
+    "pipeline_tag": "image-to-3d"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "b302d37ab8a524629c9bf2d771c61e92a2b5ae2e",
+      "size": 1978
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "078f4e17d431a98237fcddc606e64d4f8b5e4a38",
+      "size": 4468
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/README.md",
+      "blobId": "d3c06c98e03c4cd9fe92dec821024f634fc6e95c",
+      "size": 5114
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/adapter_config.json",
+      "blobId": "cd7d72ae94ff74a558e4fdf884f22f58524f473f",
+      "size": 666
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/adapter_model.safetensors",
+      "blobId": "6ab3a8292ca98b50418c439234970a616f7b79d0",
+      "size": 47234640,
+      "lfs": {
+        "sha256": "0a54927db3462f5e183292a26d1a781b85d8b5f950e577d2a47d46a330a20c33",
+        "size": 47234640,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/optimizer.pt",
+      "blobId": "292d28fa481e9201da65c27d44ad95afdc798445",
+      "size": 68295034,
+      "lfs": {
+        "sha256": "d08be794a3b1981c9ffd7639e44c06c4480c9c714707bc9f23f8ea677a025a66",
+        "size": 68295034,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/prompt.txt",
+      "blobId": "baea840f571fcf5d0c63644356664820f0e9841f",
+      "size": 1152
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/rng_state.pth",
+      "blobId": "343edabe80f018bfee2fb36eddae836ae267355a",
+      "size": 14244,
+      "lfs": {
+        "sha256": "9074ccc379f241c1fe34150e8752108fb5edca9c00e279732c695168713c1d13",
+        "size": 14244,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/scheduler.pt",
+      "blobId": "ab4e2c6e0453384519572be805cb27cc8dec5bf9",
+      "size": 1064,
+      "lfs": {
+        "sha256": "cacbf07d17317ea00c292fa69f638ec070a697be81e5ade2742520fc3c7717ef",
+        "size": 1064,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/special_tokens_map.json",
+      "blobId": "3c1d04911c269b925af977a3151c9704e990e4d0",
+      "size": 454
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/tokenizer.json",
+      "blobId": "4b51e2712ad620372033a30d4f8f61e4c37e6863",
+      "size": 17210268,
+      "lfs": {
+        "sha256": "abd08b46c9c01a903788030f36d9731aad064d0c420e66b88e3e143cda9e4e9a",
+        "size": 17210268,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/tokenizer_config.json",
+      "blobId": "ccb2a08d45b2c57db187e346660939149340ab54",
+      "size": 55782
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/trainer_state.json",
+      "blobId": "8591bd464938eaecda5a5d66abbaa06960bd1cbf",
+      "size": 69257
+    },
+    {
+      "rfilename": "llamaft/chair/checkpoint-2160/training_args.bin",
+      "blobId": "812f56c3f0d494186e68e20bfe8ef0c60727a3c3",
+      "size": 5688,
+      "lfs": {
+        "sha256": "53d9bf9b5a82c90a9a392bfd51488b196a3775d6068920dc45cbfbb23249317d",
+        "size": 5688,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/README.md",
+      "blobId": "d3c06c98e03c4cd9fe92dec821024f634fc6e95c",
+      "size": 5114
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/adapter_config.json",
+      "blobId": "af6782bea930e9d66c00cbc533507b6761c31847",
+      "size": 666
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/adapter_model.safetensors",
+      "blobId": "dec5c959140af79889a01882c9399ab53ce11002",
+      "size": 47234640,
+      "lfs": {
+        "sha256": "0322ef9f24becc43bc86e34707b60649d46a2689b254bb805b78fd8d67f4355a",
+        "size": 47234640,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/optimizer.pt",
+      "blobId": "8c54da0b936eac507aa230185b2fc0afd8542025",
+      "size": 68295034,
+      "lfs": {
+        "sha256": "f5acde6ec3ef3842af7bcbae80d2e4b35a485d107383c8aace36dc456c03c379",
+        "size": 68295034,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/prompt.txt",
+      "blobId": "baea840f571fcf5d0c63644356664820f0e9841f",
+      "size": 1152
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/rng_state.pth",
+      "blobId": "398bc92808351f2bbe9fe882d06f86ca1479957d",
+      "size": 14244,
+      "lfs": {
+        "sha256": "dbed2e1f610d0cf3464adebc8f19959f3976ad1890a0d306e06d0a2f02924eda",
+        "size": 14244,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/scheduler.pt",
+      "blobId": "0e8557094cdec0f8f46d99062aaa0f73e044e5f6",
+      "size": 1064,
+      "lfs": {
+        "sha256": "d7c2d8e1c359547322d42eb4dbf0b45a7d85e3151d3d7ccf244cb70228a8b423",
+        "size": 1064,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/special_tokens_map.json",
+      "blobId": "3c1d04911c269b925af977a3151c9704e990e4d0",
+      "size": 454
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/tokenizer.json",
+      "blobId": "4b51e2712ad620372033a30d4f8f61e4c37e6863",
+      "size": 17210268,
+      "lfs": {
+        "sha256": "abd08b46c9c01a903788030f36d9731aad064d0c420e66b88e3e143cda9e4e9a",
+        "size": 17210268,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/tokenizer_config.json",
+      "blobId": "ccb2a08d45b2c57db187e346660939149340ab54",
+      "size": 55782
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/trainer_state.json",
+      "blobId": "a8d8699764bf97b01923772a5cf7a7c973c00504",
+      "size": 21113
+    },
+    {
+      "rfilename": "llamaft/storagefurniture/checkpoint-645/training_args.bin",
+      "blobId": "a5358dfa58772dae27466dac60c7865dde0e3028",
+      "size": 5688,
+      "lfs": {
+        "sha256": "64cf08123669dc759dbb57edb0e3e35636e6bc7f6b4411cc9b6042094dcc0427",
+        "size": 5688,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/README.md",
+      "blobId": "d3c06c98e03c4cd9fe92dec821024f634fc6e95c",
+      "size": 5114
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/adapter_config.json",
+      "blobId": "cd7d72ae94ff74a558e4fdf884f22f58524f473f",
+      "size": 666
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/adapter_model.safetensors",
+      "blobId": "9ad784796b291ffd8e8fab8dc0324a64fbc0e6c8",
+      "size": 47234640,
+      "lfs": {
+        "sha256": "f05700aefbd3adb11bcb1d75e348fd934fdaa8fb967afd308e42ff41d31def3e",
+        "size": 47234640,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/optimizer.pt",
+      "blobId": "ff9cfa1cccb56568a323348af40ed0d34d5a59c0",
+      "size": 68295034,
+      "lfs": {
+        "sha256": "7569efef26252f670d534d1f979e2dfd8d8d2589f2bbaf7b2891c419b4506b52",
+        "size": 68295034,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/prompt.txt",
+      "blobId": "baea840f571fcf5d0c63644356664820f0e9841f",
+      "size": 1152
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/rng_state.pth",
+      "blobId": "5ae18002fade9011d24602fe6f9daedab78fb237",
+      "size": 14244,
+      "lfs": {
+        "sha256": "a9cf25e94ced075b19184c9834ba57bd91311c1e3672188bb23bb5963e3da737",
+        "size": 14244,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/scheduler.pt",
+      "blobId": "950ee48bd1b979e1676c445cbd1afc360dbf2e0a",
+      "size": 1064,
+      "lfs": {
+        "sha256": "235072d74cf273aada5b85f4136a17510b945b0f4bf12f5d04396f9df2b7cf1a",
+        "size": 1064,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/special_tokens_map.json",
+      "blobId": "3c1d04911c269b925af977a3151c9704e990e4d0",
+      "size": 454
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/tokenizer.json",
+      "blobId": "4b51e2712ad620372033a30d4f8f61e4c37e6863",
+      "size": 17210268,
+      "lfs": {
+        "sha256": "abd08b46c9c01a903788030f36d9731aad064d0c420e66b88e3e143cda9e4e9a",
+        "size": 17210268,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/tokenizer_config.json",
+      "blobId": "ccb2a08d45b2c57db187e346660939149340ab54",
+      "size": 55782
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/trainer_state.json",
+      "blobId": "ecdcfafbddebcb775b5ba85d89d071cd99e9bbc1",
+      "size": 220599
+    },
+    {
+      "rfilename": "llamaft/table/checkpoint-6895/training_args.bin",
+      "blobId": "696d0c2f2c7f2e1a20c0874d696ec4a373639239",
+      "size": 5688,
+      "lfs": {
+        "sha256": "6fc8d5273e5ca5eccdad0dcd12fd18ca774d13bf043f6770c3772605220e5cd6",
+        "size": 5688,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "partseg/chair/best_model.pth",
+      "blobId": "a834697c98fa6db9ac397274b1dd5155b30f3870",
+      "size": 21076193,
+      "lfs": {
+        "sha256": "42735823bb395ced43917115206484cc2935912306714992e55cc0b84344b8dd",
+        "size": 21076193,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "partseg/storagefurniture/best_model.pth",
+      "blobId": "cffcbf92872513c413acf5e8349794102a528a1f",
+      "size": 21075754,
+      "lfs": {
+        "sha256": "a644e23187c56b651602e1fbb7d254ebc9aae6f9f76bc0fd2849bd35c9b52197",
+        "size": 21075754,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "partseg/table/best_model.pth",
+      "blobId": "14d07975f5486a9a95305b7842f3b20c6e272489",
+      "size": 21076193,
+      "lfs": {
+        "sha256": "18ed578fdec5c96c6fc2096204f0c23186d17370b4eaeaffae31d0332f889361",
+        "size": 21076193,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "trassembler/chair/chair_mean_scale_stats.json",
+      "blobId": "3eb850e6fc92895771085b9695f9aae83b77d14a",
+      "size": 1782
+    },
+    {
+      "rfilename": "trassembler/chair/last.ckpt",
+      "blobId": "a7025dde0f19662b48b327d58034a793fd524128",
+      "size": 704251574,
+      "lfs": {
+        "sha256": "6b460687e8856025bbb7b8c337ab37f76fdb6be45d7adc62488af76e047e567e",
+        "size": 704251574,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "trassembler/storagefurniture/last.ckpt",
+      "blobId": "a4348de21a602b5592ecb105217eaaeccbb1fa88",
+      "size": 680920969,
+      "lfs": {
+        "sha256": "f2bc423788b654d5a27e0689c0d5432f4fa38d7efde5fba45a1ca016a5fd6f42",
+        "size": 680920969,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "trassembler/storagefurniture/storagefurniture_mean_scale_stats.json",
+      "blobId": "430822dce5be61f1d277424970495fd2837ea1f5",
+      "size": 1603
+    },
+    {
+      "rfilename": "trassembler/table/last.ckpt",
+      "blobId": "916332894ac89705e435c54f707060b4b36966c9",
+      "size": 704251574,
+      "lfs": {
+        "sha256": "22a39a7467759b4ee1be6eda14837cd47e128886e96ded62b4ea21e7c5470c5c",
+        "size": 704251574,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "trassembler/table/table_mean_scale_stats.json",
+      "blobId": "39f46a7991932c6c0da91cd3c0a8247e6bbf959f",
+      "size": 1783
+    }
+  ]
+}

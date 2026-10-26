@@ -1,0 +1,18 @@
+{
+  "sample_id": "f360_35968_5488b3e5_0006",
+  "arm": "point_genplan",
+  "terminal": true,
+  "pipeline_status": "NO_GEOMETRY",
+  "reason": "this arm produced no STEP for this part: exec error: Part.cone() got an unexpected keyword argument 'top_radius'",
+  "gt_verified": null,
+  "cd_status": null,
+  "iou_status": null,
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": false,
+    "build_ok": false,
+    "solid_valid": false,
+    "step_export_ok": false
+  },
+  "gate_check": "match"
+}

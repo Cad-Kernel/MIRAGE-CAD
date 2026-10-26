@@ -1,0 +1,19 @@
+{
+  "CAD_or_model_execution": false,
+  "audit_source": {
+    "bytes": 12903,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_exposure_gate_results.py",
+    "sha256": "c1be002876a107e10744375ecdaaf2a042ed78b4debdc0c2925d7ff1b44b29d1"
+  },
+  "created_utc": "2026-10-21T19:28:02.226189+00:00",
+  "errors": 0,
+  "failures": 0,
+  "scope": "Synthetic rows, Python AST compatibility and UTF16/UTF8 decoding only",
+  "status": "PASS",
+  "test_source": {
+    "bytes": 6075,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_exposure_gate_audit.py",
+    "sha256": "d91e889b1cf6d816141cf18039a495cfcc95a300dffd11c6ceef100c424b472e"
+  },
+  "tests_run": 12
+}

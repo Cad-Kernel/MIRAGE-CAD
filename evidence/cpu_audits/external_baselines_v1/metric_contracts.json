@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "contracts": [
+    {
+      "id": "mirage_native",
+      "formula": "0.5*mean(d_PQ^2)+0.5*mean(d_QP^2)",
+      "squared": true,
+      "direction_factor": 0.5,
+      "multiplier": 1,
+      "surface_samples": "Candidate default 1024; target point cloud is loaded from the case input",
+      "normalization": "No new centering/scaling/alignment in symmetric_chamfer; native input coordinates",
+      "denominator": "CD conditional on scoreable outputs; unconditional mean F@1 assigns failures zero",
+      "f_metric": "Harmonic precision/recall; Euclidean threshold=0.01*target-point-cloud bbox diagonal; strict <",
+      "sources": [
+        {
+          "local_path": "__DEV_ROOT__\\src\\evaluate_geometry_nbest.py",
+          "sha256": "4da5f7fe12c4207f85be4fe2dfb30dda357f70c0c8ef55e9912fb1c6ff480e8f",
+          "lines": "104-128, 194-201, 228"
+        }
+      ]
+    },
+    {
+      "id": "mirage_fusion_external",
+      "formula": "1000*(mean(d_PQ^2)+mean(d_QP^2))",
+      "squared": true,
+      "direction_factor": 1,
+      "multiplier": 1000,
+      "surface_samples": 8192,
+      "normalization": "Per-shape bbox center / max extent -> unit side; CAD-Recode fixed-DSL affine is a separately declared option",
+      "denominator": "Existing Review/06 measurable/scoreable denominators retained; not replaced by CADBench VSR",
+      "f_metric": "Do not substitute native F@1 or CADBench SIoU",
+      "sources": [
+        {
+          "local_path": "__DEV_ROOT__\\src\\scratch\\external_geometry_eval.py",
+          "sha256": "8cf2955a4b9333dcf82ce037fb16c79c4040d4adb6b4d6abba911419e26a8fa2",
+          "lines": "46-47, 78-118, 166-185"
+        }
+      ]
+    },
+    {
+      "id": "gencad3d",
+      "formula": "1000*(mean(d_PQ^2)+mean(d_QP^2))",
+      "squared": true,
+      "direction_factor": 1,
+      "multiplier": 1000,
+      "surface_samples": 2000,
+      "normalization": "Precomputed GT cloud; generated cloud is divided by max abs coordinate only if max abs >2 in pinned CD evaluator",
+      "denominator": "Conditional median valid CD; missing GT/build/sample errors return None; IR relative to input files; SL aggregates group medians/IR equally by sequence length",
+      "f_metric": "IoU^SL/IR^SL are length-group summaries; not native F@1",
+      "sources": [
+        {
+          "path": "autoencoder/evaluation/evaluate_ae_cd.py",
+          "local_copy": "responses/gencad3d_file_11.body",
+          "sha256": "95f39cc85a2e74218edd9889f9a499c50a57312e0d4c661f23d85ad74ec5ebde",
+          "permalink": "https://github.com/yunomi-git/GenCAD-3D/blob/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_cd.py#L26-L110"
+        },
+        {
+          "path": "diffusion/evaluation/run_reconstruction_evaluations.py",
+          "local_copy": "responses/gencad3d_extra_00.body",
+          "sha256": "3fab80666b6d8d52e89590ff3a3448520591b4dc2ece144f6e08b2eeb9136ca7",
+          "permalink": "https://github.com/yunomi-git/GenCAD-3D/blob/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/run_reconstruction_evaluations.py"
+        }
+      ]
+    },
+    {
+      "id": "text2cad",
+      "formula": "1000*(mean(d_PQ^2)+mean(d_QP^2))",
+      "squared": true,
+      "direction_factor": 1,
+      "multiplier": 1000,
+      "surface_samples": 8192,
+      "normalization": "Independently divide each sampled cloud by abs(global coordinate max - min); normalize_pc does not recenter",
+      "denominator": "test.py assigns invalid=-1, skips GT creation failure; eval_seq excludes per-UID exceptions, CD uses cd>0 (excludes exact zeros), IR=count(cd<0)/retained report rows",
+      "f_metric": "Published line/arc/circle/extrusion F1 is sequence/primitive F1, not surface F@1",
+      "sources": [
+        {
+          "path": "Cad_VLM/test.py",
+          "local_copy": "responses/text2cad_extra_00.body",
+          "sha256": "83670a69c8b972cfcea5998d40665fedd2ac89b3a1d29e57ac3e7a804faebcbb",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/Cad_VLM/test.py#L213-L272"
+        },
+        {
+          "path": "CadSeqProc/utility/utils.py",
+          "local_copy": "responses/text2cad_extra_03.body",
+          "sha256": "794d0e208b640c1a9bc1f39eabbf161121da14e84a2ff20b4861d281bb4800cf",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/CadSeqProc/utility/utils.py#L328-L331"
+        },
+        {
+          "path": "CadSeqProc/utility/utils.py",
+          "local_copy": "responses/text2cad_extra_03.body",
+          "sha256": "794d0e208b640c1a9bc1f39eabbf161121da14e84a2ff20b4861d281bb4800cf",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/CadSeqProc/utility/utils.py#L1291-L1304"
+        },
+        {
+          "path": "Evaluation/eval_seq.py",
+          "local_copy": "responses/text2cad_file_03.body",
+          "sha256": "3cc7db249303155d20b5526a02da042370e5fa4db75f0cace53a3f3f2ddd1770",
+          "permalink": "https://github.com/SadilKhan/Text2CAD/blob/669a81472ede2269837c22a4d00070eaac360c82/Evaluation/eval_seq.py"
+        }
+      ]
+    },
+    {
+      "id": "pointercad",
+      "formula": "1000*(mean(d_PQ^2)+mean(d_QP^2))",
+      "squared": true,
+      "direction_factor": 1,
+      "multiplier": 1000,
+      "surface_samples": 8192,
+      "helper_default_samples": 1024,
+      "normalization": "Each sampled cloud independently subtracts sample centroid then divides by global max-min coordinate range",
+      "denominator": "eval.py conditional CD over status-true rows with metric not None; failure rate uses all result entries",
+      "f_metric": "Table primitive F1 and optional geometric F1 are distinct; neither assumed equal to native F@1",
+      "sources": [
+        {
+          "path": "measurements/chamfer_distance.py",
+          "local_copy": "responses/pointercad_file_03.body",
+          "sha256": "7d56fdbcef4a8ab4e27e5b9a4c2bb54fa0073dd92e13ee4c637bcb455a9d2525",
+          "permalink": "https://github.com/Snitro/Pointer-CAD/blob/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/chamfer_distance.py"
+        },
+        {
+          "path": "test.py",
+          "local_copy": "responses/pointercad_extra_00.body",
+          "sha256": "56769b8f239b984f4656e1b8af1ae7b4eeda7c95ece7d0abec532a914d7a603f",
+          "permalink": "https://github.com/Snitro/Pointer-CAD/blob/a5c32d702f9569565d89a94de44b3af0020bcab0/test.py#L494-L501"
+        },
+        {
+          "path": "eval.py",
+          "local_copy": "responses/pointercad_file_01.body",
+          "sha256": "5549d5d18533f352bb9184de7d7413c5f417e5e66ebe325637eb10ff128518b4",
+          "permalink": "https://github.com/Snitro/Pointer-CAD/blob/a5c32d702f9569565d89a94de44b3af0020bcab0/eval.py"
+        }
+      ]
+    },
+    {
+      "id": "cadbench",
+      "formula": "mean(d_PQ)+mean(d_QP)",
+      "squared": false,
+      "direction_factor": 1,
+      "multiplier": 1,
+      "surface_samples": 10000,
+      "normalization": "Alpha-wrap; bbox-center and max side ->2; center-of-mass/principal-axis alignment with four orientation choices selected using IoU; evaluator has fallback choices",
+      "denominator": "CD success-only; adjusted IoU/SIoU include zero for failure; source also exposes success-only IoU/SIoU; paper aggregates by benchmark strata",
+      "f_metric": "Pinned SIoU averages bidirectional near-surface fractions, default absolute threshold=.02 after normalization. Paper describes 1% of target bbox diagonal; not asserted identical. Not harmonic F1.",
+      "sources": [
+        {
+          "path": "CADBenchEval/CADBench/Eval/geometry/_utils.py",
+          "local_copy": "responses/cadbench_file_16.body",
+          "sha256": "9b605a2a541fbeb5b31a34646e7cf35efd86c7ba11db4141c6a53907de066f0a",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/geometry/_utils.py#L158-L205"
+        },
+        {
+          "path": "CADBenchEval/CADBench/Eval/_main.py",
+          "local_copy": "responses/cadbench_file_07.body",
+          "sha256": "3c1acdcda7b0c1291e508c29a12cb6026743d260a1b2fb80aa0b7ada88fa01ac",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/CADBench/Eval/_main.py"
+        },
+        {
+          "path": "CADBenchEval/scripts/collect_metrics.py",
+          "local_copy": "responses/cadbench_file_09.body",
+          "sha256": "d7d76b0ed3b48428e09cdf5d127046ef8da69c8a7d47765bc8eef39a7928ce88",
+          "permalink": "https://github.com/anniedoris/CADBench/blob/99e41a2eeb351f04611e83980f9f23cb0ca216c7/CADBenchEval/scripts/collect_metrics.py"
+        }
+      ]
+    },
+    {
+      "id": "cadcrafter",
+      "formula": null,
+      "squared": null,
+      "direction_factor": null,
+      "multiplier": null,
+      "surface_samples": null,
+      "normalization": "NOT_VERIFIED from captured paper; no official metric code identified",
+      "denominator": "IR and median CD named by paper; implementation denominator not established",
+      "f_metric": "Command/parameter accuracy is not native geometry F@1",
+      "sources": []
+    },
+    {
+      "id": "img2cad_svg",
+      "formula": null,
+      "squared": null,
+      "direction_factor": null,
+      "multiplier": null,
+      "surface_samples": null,
+      "normalization": "NOT_VERIFIED from captured paper; do not infer exact metric from cited DeepCAD",
+      "denominator": "Invalid ratio reported; runnable implementation denominator not established",
+      "f_metric": "Command/parameter accuracy is not native geometry F@1",
+      "sources": []
+    }
+  ],
+  "common_protocol_comparable": false,
+  "reason": "Different tasks/data, representations, normalization, alignment, powers, sample counts and failure denominators"
+}

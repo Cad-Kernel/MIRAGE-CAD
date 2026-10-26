@@ -1,0 +1,712 @@
+{
+  "slot": "A10",
+  "case_id": "A10_f360_43932_4bfdfe7b_0007",
+  "sample_id": "f360_43932_4bfdfe7b_0007",
+  "placement": "appendix",
+  "selection_bucket": "mirage_iou_boolean_failure",
+  "selection_rule": "MIRAGE CD available, native IoU boolean failure",
+  "cohort_size": 14,
+  "selected_priority": {
+    "sample_id": "f360_43932_4bfdfe7b_0007",
+    "hash_priority": "18a0b6407608bd01b5e05e7e0550be76b38754fe177934896f6564cede2bfad0",
+    "priority_rank": 1
+  },
+  "master": {
+    "sample_id": "f360_43932_4bfdfe7b_0007",
+    "view": {
+      "master_index": 56,
+      "sample_id": "f360_43932_4bfdfe7b_0007",
+      "external_id": "43932_4bfdfe7b_0007",
+      "source_split": "test",
+      "reference_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\43932_4bfdfe7b_0007.step",
+      "reference_sha256": "173926c64b58c36caa24140b12943c6c5ccd6c4d148f28788257fdb7d074567c",
+      "point_input_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\43932_4bfdfe7b_0007.npz",
+      "point_input_sha256": "985fb0cad357e83ca99176e58d6a705b2d31d04b5e8a5ebeccc7b08632e7983c",
+      "mirage_prediction_path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan_repaired_p0.jsonl",
+      "mirage_prediction_line_1based": 56,
+      "mirage_prediction_line_sha256": "7a51d047bb1e238e1dfe2f1569e6eb134059896210ead9a55901ad8941905d72",
+      "mirage_step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_43932_4bfdfe7b_0007\\candidate.step",
+      "mirage_step_sha256": "aaddb6059574fb1d7142df465cd8615b6d811f100a43dfdfe2758669b0dee976",
+      "mirage_log_path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "mirage_gate_line_1based": 56,
+      "mirage_metric_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_43932_4bfdfe7b_0007\\score_manifest.json",
+      "mirage_export_ok": true,
+      "mirage_step_exists_current": true,
+      "mirage_scoreable": true,
+      "mirage_iou_scoreable": false,
+      "mirage_CD": 151.24022839187134,
+      "mirage_IoU": null,
+      "mirage_pipeline_status": "SUCCESS",
+      "mirage_cd_status": "ok",
+      "mirage_iou_status": "boolean_failed",
+      "mirage_native_error": "",
+      "mirage_score_reason": null,
+      "nn_retrieved_training_sample_id": "flluma_0076727",
+      "nn_prediction_path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir_repaired_p0.jsonl",
+      "nn_prediction_line_1based": 56,
+      "nn_prediction_line_sha256": "62d9323c5a3a6a31352ba654cfac7687b1504b0b92c7f2ced76477df78ef619a",
+      "nn_step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_43932_4bfdfe7b_0007\\candidate.step",
+      "nn_step_sha256": "7cda07d757dcb601a1007511652ce093df1daa7de689dae85848da001b435de3",
+      "nn_log_path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "nn_gate_line_1based": 56,
+      "nn_metric_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_43932_4bfdfe7b_0007\\score_manifest.json",
+      "nn_export_ok": true,
+      "nn_step_exists_current": true,
+      "nn_scoreable": true,
+      "nn_iou_scoreable": true,
+      "nn_CD": 6.9846909196165115,
+      "nn_IoU": 0.247248859326945,
+      "nn_pipeline_status": "SUCCESS",
+      "nn_cd_status": "ok",
+      "nn_iou_status": "ok",
+      "nn_native_error": "",
+      "nn_score_reason": null,
+      "cadr_prediction_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\extracted_code.py",
+      "cadr_prediction_sha256": "c9510cf79884d4083377b3931678ec45f556afce973db992bb8b591684f7b9c7",
+      "cadr_raw_generation_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\raw_generation.txt",
+      "cadr_step_or_mesh_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\prediction.step",
+      "cadr_step_sha256": "bb115262c35820cfe260e9e5f5f30e8ec0cece6e77cadcdd32062744550ff9c8",
+      "cadr_log_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\execution_result.json",
+      "cadr_metric_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\run_manifest.json",
+      "cadr_export_ok": true,
+      "cadr_step_exists_current": true,
+      "cadr_scoreable": true,
+      "cadr_iou_scoreable": true,
+      "cadr_CD": 0.5293428392635746,
+      "cadr_IoU": 0.7559527009998744,
+      "cadr_pipeline_status": "SUCCESS",
+      "cadr_cd_status": "ok",
+      "cadr_iou_status": "ok",
+      "verified_failure_class": null,
+      "failure_evidence": null,
+      "selection_bucket": null,
+      "notes": "Step 1 only; taxonomy and case selection not started"
+    },
+    "locators": {
+      "rows": {
+        "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "2b207dcdddfd7672be4a87161cffab7439664d2194f06d0bc498fe63ddb05847",
+        "file_sha256": "9a3884c8da4d7a10c3057dc34d71c39f9485aa30410d5a26b85e1c22e8bc00db"
+      },
+      "queries": {
+        "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\queries.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "cfabb67079b301cb513634b642576b8de0d6188bf07ba58c777cef1f8764325e",
+        "file_sha256": "26c53eb5b827e907fb5b6f8be15429e329adf2a53724a6e0419e8a246e337ef7"
+      },
+      "step_index": {
+        "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_index.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "15007299bca1ce6798dd7da9c666a8368e46b33563fde946f65fc04c7d116c4d",
+        "file_sha256": "bbb2eeb0a3862ea727e26cec1ca0d580389091f10e1740103d608652eac2d13a"
+      },
+      "legacy_manifest": {
+        "path": "__DEV_ROOT__\\scratch\\external_manifest\\manifest.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "6d7ab35e42edf317a407e78515ffcc9f480a5f4812159176f6a79a027b2d063d",
+        "file_sha256": "6bdbcf7a9576596a2b506c2431d630ce26151de95afd17342ffc1193091cf34a"
+      },
+      "plan": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\ir_point.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "76b34baf466cf547095c1a324b419262357cc66b6f66f3c738cc22497b2272ed",
+        "file_sha256": "8c085d05c66e6d424622ff69b22a2b1c888a7450dedf7cdebe8915f47a1339f9"
+      },
+      "mirage_raw": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "7a51d047bb1e238e1dfe2f1569e6eb134059896210ead9a55901ad8941905d72",
+        "file_sha256": "fbe38775f1fea43165b47cb26e00710fbb0db57899c6e958f5266caf932470b4"
+      },
+      "mirage_used": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan_repaired_p0.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "7a51d047bb1e238e1dfe2f1569e6eb134059896210ead9a55901ad8941905d72",
+        "file_sha256": "fbe38775f1fea43165b47cb26e00710fbb0db57899c6e958f5266caf932470b4"
+      },
+      "mirage_gate": {
+        "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "5814af59ce8b7b669a324da43903df74ad334485c406c673da20b24f34655e4c",
+        "file_sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf"
+      },
+      "mirage_published_geom": {
+        "path": "__DEV_ROOT__\\scratch\\geom_ext_point_genplan\\geometry_nbest_rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "309292a87a8d1de8a6331a1b4667fc99660bd2f129c1b4ae87df505f7fd7ee11",
+        "file_sha256": "c964a27eb2aa8bdef5d721fea2ebe702c02e4da5120c388db34b8c2ba6af0cf7"
+      },
+      "mirage_geom_input": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_geometry\\geom_input_point_genplan.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "ede07a349bca1bd9d3765b1a3c477b40f68ba568dd4bd96a40f75c0542b0739c",
+        "file_sha256": "786de90832812427100c83fc3118e260398a8828f135c4dcb6bc7dda1970004c"
+      },
+      "mirage_export": {
+        "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "bfe1d72e3e0c676924ebbffb98e29ddedd57352ee39c3928a1297646571434c9",
+        "file_sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605"
+      },
+      "nn_raw": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "62d9323c5a3a6a31352ba654cfac7687b1504b0b92c7f2ced76477df78ef619a",
+        "file_sha256": "e417b54ec0ddca31ba60792a02f1dc9d9d50fbe2b018345cc77e58df91f7fba2"
+      },
+      "nn_used": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir_repaired_p0.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "62d9323c5a3a6a31352ba654cfac7687b1504b0b92c7f2ced76477df78ef619a",
+        "file_sha256": "e417b54ec0ddca31ba60792a02f1dc9d9d50fbe2b018345cc77e58df91f7fba2"
+      },
+      "nn_gate": {
+        "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "5814af59ce8b7b669a324da43903df74ad334485c406c673da20b24f34655e4c",
+        "file_sha256": "63044e8ef41902f60fb6e3b3ec20b958dbd7bc9b1b53bade095269bb4a8fff32"
+      },
+      "nn_published_geom": {
+        "path": "__DEV_ROOT__\\scratch\\geom_ext_point_nnir\\geometry_nbest_rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "1ab988aa03309033ea837cb26b7f0a409a449618cd3b5b420a34b862f16b129f",
+        "file_sha256": "07570d62825529e1b53cf382c601acc79207548715e12c24a69d8c8928180cd6"
+      },
+      "nn_geom_input": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_geometry\\geom_input_point_nnir.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "970baedfd3cd44c8bf069b6cd34375a42c5f7d7b86888f0aa82232f433d32843",
+        "file_sha256": "8ae0bbbb4a6e4dbee5ad05c53526c893c737431aac809e0125f90fb6644141a8"
+      },
+      "nn_export": {
+        "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\export_rows.jsonl",
+        "line_1based": 56,
+        "line_bytes_sha256": "f44b9c6178d4f26ec499bb8c249c9e5e2d72787a8460b0d641a670a5c8d2856a",
+        "file_sha256": "24bf68462b5fa07690e35cb2e2c6a57d520fe9a25320805bf012c254c833766c"
+      }
+    },
+    "assets": {
+      "reference": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\43932_4bfdfe7b_0007.step",
+      "point": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\43932_4bfdfe7b_0007.npz",
+      "step_descriptor": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_features\\f360_43932_4bfdfe7b_0007.json",
+      "step_descriptor_index_copy": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_43932_4bfdfe7b_0007.json",
+      "cadr_raw_generation.txt": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\raw_generation.txt",
+      "cadr_extracted_code.py": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\extracted_code.py",
+      "cadr_execution_result.json": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\execution_result.json",
+      "cadr_execution_stdout.txt": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\execution_stdout.txt",
+      "cadr_execution_stderr.txt": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\execution_stderr.txt",
+      "cadr_cloud_256.npy": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\cloud_256.npy",
+      "cadr_step": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\prediction.step",
+      "mirage_step": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_43932_4bfdfe7b_0007\\candidate.step",
+      "mirage_original_geometry_target_cloud": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\43932_4bfdfe7b_0007.npz",
+      "nn_step": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_43932_4bfdfe7b_0007\\candidate.step",
+      "nn_original_geometry_target_cloud": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\43932_4bfdfe7b_0007.npz"
+    },
+    "native_records": {
+      "mirage": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "arm": "point_genplan",
+        "terminal": true,
+        "memory_cap": "RLIMIT_AS=8192MB",
+        "gt_verified": true,
+        "cd_status": "ok",
+        "iou_status": "boolean_failed",
+        "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+        "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_43932_4bfdfe7b_0007/candidate.step",
+        "gt_mesh_triangles": 584,
+        "prediction_step_diagnostics": {
+          "n_solids": 1,
+          "n_faces": 23,
+          "faces_per_solid": [
+            23
+          ],
+          "first_solid_bbox": [
+            44.28,
+            21.0,
+            1000002.0000001999
+          ]
+        },
+        "evaluation": {
+          "pred_mesh_triangles": 824,
+          "pred_mesh_watertight": false,
+          "remesh_status": "ok",
+          "cd_x1000": 151.24022839187134,
+          "cd_floor_gt": 0.09239451066244116,
+          "cd_status": "ok",
+          "iou": null,
+          "iou_status": "boolean_failed",
+          "gt_self_iou": 0.99999966223949,
+          "gt_self_iou_dev": 3.37760510005225e-07,
+          "iou_eligible": false
+        },
+        "cd_floor_ratio": 1636.896253982232,
+        "pipeline_status": "SUCCESS",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "gate_check": "match",
+        "seconds": 1.34
+      },
+      "nn": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "arm": "point_nnir",
+        "terminal": true,
+        "memory_cap": "RLIMIT_AS=8192MB",
+        "gt_verified": true,
+        "cd_status": "ok",
+        "iou_status": "ok",
+        "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+        "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_43932_4bfdfe7b_0007/candidate.step",
+        "gt_mesh_triangles": 584,
+        "prediction_step_diagnostics": {
+          "n_solids": 1,
+          "n_faces": 23,
+          "faces_per_solid": [
+            23
+          ],
+          "first_solid_bbox": [
+            49.200000200000076,
+            73.6,
+            9.100000132270257
+          ]
+        },
+        "evaluation": {
+          "pred_mesh_triangles": 3032,
+          "pred_mesh_watertight": true,
+          "remesh_status": "ok",
+          "cd_x1000": 6.9846909196165115,
+          "cd_floor_gt": 0.09239451066244116,
+          "cd_status": "ok",
+          "iou": 0.247248859326945,
+          "iou_status": "ok",
+          "gt_self_iou": 0.99999966223949,
+          "gt_self_iou_dev": 3.37760510005225e-07,
+          "iou_eligible": true
+        },
+        "cd_floor_ratio": 75.59638413081422,
+        "pipeline_status": "SUCCESS",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "gate_check": "match",
+        "seconds": 1.34
+      },
+      "cadr": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/43932_4bfdfe7b_0007.step",
+        "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+        "pipeline_status": "SUCCESS",
+        "terminal": true,
+        "cd_status": "ok",
+        "iou_status": "ok",
+        "input": {
+          "source_step_sha256": "173926c64b58c36caa24140b12943c6c5ccd6c4d148f28788257fdb7d074567c",
+          "alpha": 1e-06,
+          "angular_deflection": 0.3,
+          "canonical_mesh_sha256": "1f1b52e9cff4987086de96962fc40383ef0f96b6967c32b4e5f172f034d5ef53/2e41f3bc3de72f12f484f4b3216bdb59b2c111ea5f5148650123f2a1d1845490",
+          "mesh_vertex_count": 292,
+          "mesh_triangle_count": 584,
+          "mesh_watertight": true,
+          "bbox_before_normalization": [
+            42.0,
+            130.77147431869,
+            28.0
+          ],
+          "normalization_target_extent": 2.0,
+          "normalization_scale": 0.01529385525719471,
+          "sampling_seed": 0,
+          "n_pre_points": 8192,
+          "cloud_8192_sha256": "bf15e37987f2680f00a011698fe6e0b98299c6df45955515716fe3d335a233c3",
+          "fps_indices_sha256": "397c76857a90a1fa385920ca6781e54340dfaa3c3553dc130ade2fa3638079ab",
+          "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+          "cloud_256_sha256": "739ec2fd9331007f8be604afb35392c3cbd476ca449053c312f350905800026a"
+        },
+        "model": {
+          "checkpoint": "filapro/cad-recode-v1.5",
+          "tokenizer": "Qwen/Qwen2-1.5B",
+          "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+          "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+          "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+          "torch": "2.7.0+cu128",
+          "device": "cuda",
+          "device_capability": "sm_120",
+          "n_parameters": 1543794176,
+          "generation": {
+            "strategy": "greedy",
+            "num_candidates": 1,
+            "max_new_tokens": 768
+          },
+          "transformers": "4.47.1"
+        },
+        "generation": {
+          "seconds": 1.27,
+          "raw_chars": 2765,
+          "raw_sha256": "8bbc7ddb9ecdc02f25ac04b8f2979739446612dcd7c1483a3bea5380153cb877"
+        },
+        "extraction_status": "ok",
+        "extracted_code_sha256": "c9510cf79884d4083377b3931678ec45f556afce973db992bb8b591684f7b9c7",
+        "extracted_code_lines": 3,
+        "unsafe_patterns_found": [],
+        "execution": {
+          "timeout_s": 60,
+          "wall_seconds": 2.48,
+          "timed_out": false,
+          "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_43932_4bfdfe7b_0007",
+          "return_code": 0,
+          "runner_result": {
+            "status": "SUCCESS",
+            "generated_stdout": "",
+            "shape_type": "Compound",
+            "is_valid": true,
+            "bbox": [
+              64.0,
+              200.0,
+              44.0
+            ],
+            "step_bytes": 38556
+          }
+        },
+        "artifacts": {
+          "prediction_step": "__DEV_ROOT__/scratch/cadrecode_runs/f360_43932_4bfdfe7b_0007/prediction.step",
+          "prediction_step_sha256": "bb115262c35820cfe260e9e5f5f30e8ec0cece6e77cadcdd32062744550ff9c8",
+          "prediction_step_bytes": 38556
+        },
+        "evaluation": {
+          "pred_mesh_triangles": 468,
+          "pred_mesh_watertight": true,
+          "remesh_status": "ok",
+          "cd_x1000": 0.5293428392635746,
+          "cd_floor_gt": 0.09239451066244116,
+          "cd_status": "ok",
+          "iou": 0.7559527009998744,
+          "iou_status": "ok",
+          "gt_self_iou": 0.99999966223949,
+          "gt_self_iou_dev": 3.37760510005225e-07,
+          "iou_eligible": true
+        },
+        "cd_floor_ratio": 5.729158967002952
+      }
+    },
+    "source_records": {
+      "rows": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "external_id": "43932_4bfdfe7b_0007",
+        "dataset_root": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K",
+        "step_feature_path": "__RUN_SOURCE_ROOT__/data/external/fusion360/step_features/f360_43932_4bfdfe7b_0007.json",
+        "point_path": "__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/43932_4bfdfe7b_0007.npz",
+        "bbox_diag": 140.17552744792272,
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "split": "test"
+      },
+      "queries": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "external_id": "43932_4bfdfe7b_0007",
+        "split": "test",
+        "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\43932_4bfdfe7b_0007.step",
+        "step_path_wsl": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/43932_4bfdfe7b_0007.step",
+        "point_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\43932_4bfdfe7b_0007.npz",
+        "point_path_wsl": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/43932_4bfdfe7b_0007.npz",
+        "n_points": 8192,
+        "bbox_diag": 140.17552744792272,
+        "scale_applied": 1.0
+      },
+      "step_index": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "external_id": "43932_4bfdfe7b_0007",
+        "split": "test",
+        "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\43932_4bfdfe7b_0007.step",
+        "step_path_wsl": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/43932_4bfdfe7b_0007.step",
+        "point_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\43932_4bfdfe7b_0007.npz",
+        "point_path_wsl": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/43932_4bfdfe7b_0007.npz",
+        "n_points": 8192,
+        "bbox_diag": 140.17552744792272,
+        "scale_applied": 1.0,
+        "step_feature_path": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_43932_4bfdfe7b_0007.json",
+        "success": true,
+        "error": ""
+      },
+      "legacy_manifest": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "gt_step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/43932_4bfdfe7b_0007.step",
+        "gt_mesh_path": "scratch\\external_gt_mesh\\f360_43932_4bfdfe7b_0007.stl",
+        "point_cloud_path": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/43932_4bfdfe7b_0007.npz",
+        "mirage_prediction_path": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/outputs/external_fusion360/gen_point_genplan.jsonl",
+        "mirage_exists": true,
+        "mirage_exec_status": "not_executed",
+        "mirage_mesh_path": "scratch\\external_mirage_mesh\\f360_43932_4bfdfe7b_0007.stl",
+        "cadrecode_prediction_path": "",
+        "cadrecode_exists": false,
+        "cadrecode_exec_status": "no_prediction",
+        "cadrecode_mesh_path": "scratch\\external_cadrecode_mesh\\f360_43932_4bfdfe7b_0007.stl",
+        "eligible_for_cd": false,
+        "eligible_for_iou": false,
+        "paired_valid_geometry": false,
+        "gt_normalized_area": "",
+        "expected_cd_floor_8192": "",
+        "notes": "gt_mesh_not_tessellated"
+      },
+      "plan": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0005001 CAT cross_tab_profile_mount UNITS mm SEED 20265515\nPARAM boss_height 11.1 MIN 1 MAX 10 SEM boss_height\nPARAM boss_radius 5.14 MIN 3 MAX 16 SEM boss_radius\nPARAM hole_radius 1.14 MIN 0.8 MAX 5 SEM hole_radius\nPARAM thickness 7.2 MIN 2 MAX 14 SEM thickness\nF sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-15.16,-10.5],[15.16,-10.5],[15.16,10.5],[22.14,10.5],[22.14,-6.65],[-22.14,-6.65],[-22.14,10.5],[-15.16,10.5]] profile_type=polygon\nF extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness\nF cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius\nF translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,4.95]\nF join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001\nF hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[0,-3.33],[7.09,0],[0,3.33],[-7.09,0]] radius=@hole_radius\nEND",
+        "reference_ir": "",
+        "program_path": ""
+      },
+      "mirage_raw": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0005001 CAT cross_tab_profile_mount UNITS mm SEED 20265515\nPARAM boss_height 11.1 MIN 1 MAX 10 SEM boss_height\nPARAM boss_radius 5.14 MIN 3 MAX 16 SEM boss_radius\nPARAM hole_radius 1.14 MIN 0.8 MAX 5 SEM hole_radius\nPARAM thickness 7.2 MIN 2 MAX 14 SEM thickness\nF sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-15.16,-10.5],[15.16,-10.5],[15.16,10.5],[22.14,10.5],[22.14,-6.65],[-22.14,-6.65],[-22.14,10.5],[-15.16,10.5]] profile_type=polygon\nF extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness\nF cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius\nF translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,4.95]\nF join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001\nF hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[0,-3.33],[7.09,0],[0,3.33],[-7.09,0]] radius=@hole_radius\nEND",
+        "reference_ir": "",
+        "reference": "",
+        "prediction": "params = Parameters()\nparams.add('boss_height', 11.1, min=1.0, max=10.0, semantic_type='boss_height')\nparams.add('boss_radius', 5.14, min=3.0, max=16.0, semantic_type='boss_radius')\nparams.add('hole_radius', 1.14, min=0.8, max=5.0, semantic_type='hole_radius')\nparams.add('thickness', 7.2, min=2.0, max=14.0, semantic_type='thickness')\n\npart = Part('flluma_0005001', category='cross_tab_profile_mount', parameters=params, seed=20265515, sample_id='flluma_0005001', units='mm')\nsketch = part.sketch_polygon(name='cross_tab_profile', points=[[-15.16, -10.5], [15.16, -10.5], [15.16, 10.5], [22.14, 10.5], [22.14, -6.65], [-22.14, -6.65], [-22.14, 10.5], [-15.16, 10.5]], closed=True, semantic_type='extrude_profile')\nsolid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')\ncylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')\nmoved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 4.95], semantic_type='placement')\njoin = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')\nholes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -3.33], [7.09, 0.0], [0.0, 3.33], [-7.09, 0.0]], semantic_type='mounting_hole')\n\n__all__ = ['part']"
+      },
+      "mirage_used": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0005001 CAT cross_tab_profile_mount UNITS mm SEED 20265515\nPARAM boss_height 11.1 MIN 1 MAX 10 SEM boss_height\nPARAM boss_radius 5.14 MIN 3 MAX 16 SEM boss_radius\nPARAM hole_radius 1.14 MIN 0.8 MAX 5 SEM hole_radius\nPARAM thickness 7.2 MIN 2 MAX 14 SEM thickness\nF sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-15.16,-10.5],[15.16,-10.5],[15.16,10.5],[22.14,10.5],[22.14,-6.65],[-22.14,-6.65],[-22.14,10.5],[-15.16,10.5]] profile_type=polygon\nF extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness\nF cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius\nF translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,4.95]\nF join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001\nF hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[0,-3.33],[7.09,0],[0,3.33],[-7.09,0]] radius=@hole_radius\nEND",
+        "reference_ir": "",
+        "reference": "",
+        "prediction": "params = Parameters()\nparams.add('boss_height', 11.1, min=1.0, max=10.0, semantic_type='boss_height')\nparams.add('boss_radius', 5.14, min=3.0, max=16.0, semantic_type='boss_radius')\nparams.add('hole_radius', 1.14, min=0.8, max=5.0, semantic_type='hole_radius')\nparams.add('thickness', 7.2, min=2.0, max=14.0, semantic_type='thickness')\n\npart = Part('flluma_0005001', category='cross_tab_profile_mount', parameters=params, seed=20265515, sample_id='flluma_0005001', units='mm')\nsketch = part.sketch_polygon(name='cross_tab_profile', points=[[-15.16, -10.5], [15.16, -10.5], [15.16, 10.5], [22.14, 10.5], [22.14, -6.65], [-22.14, -6.65], [-22.14, 10.5], [-15.16, 10.5]], closed=True, semantic_type='extrude_profile')\nsolid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')\ncylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')\nmoved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 4.95], semantic_type='placement')\njoin = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')\nholes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -3.33], [7.09, 0.0], [0.0, 3.33], [-7.09, 0.0]], semantic_type='mounting_hole')\n\n__all__ = ['part']"
+      },
+      "mirage_gate": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "mirage_published_geom": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "has_target": true,
+        "candidate_results": [
+          {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true,
+            "error": "point cloud sampling failed on generated part",
+            "cd": null,
+            "bbox_err": null,
+            "f_score_1pct": null,
+            "target_bbox_diag": null,
+            "gen_bbox_diag": null,
+            "bbox_ratio_to_gt": null
+          }
+        ]
+      },
+      "mirage_geom_input": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "point_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/clouds/43932_4bfdfe7b_0007.npz",
+        "all_candidates": [
+          "params = Parameters()\nparams.add('boss_height', 11.1, min=1.0, max=10.0, semantic_type='boss_height')\nparams.add('boss_radius', 5.14, min=3.0, max=16.0, semantic_type='boss_radius')\nparams.add('hole_radius', 1.14, min=0.8, max=5.0, semantic_type='hole_radius')\nparams.add('thickness', 7.2, min=2.0, max=14.0, semantic_type='thickness')\n\npart = Part('flluma_0005001', category='cross_tab_profile_mount', parameters=params, seed=20265515, sample_id='flluma_0005001', units='mm')\nsketch = part.sketch_polygon(name='cross_tab_profile', points=[[-15.16, -10.5], [15.16, -10.5], [15.16, 10.5], [22.14, 10.5], [22.14, -6.65], [-22.14, -6.65], [-22.14, 10.5], [-15.16, 10.5]], closed=True, semantic_type='extrude_profile')\nsolid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')\ncylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')\nmoved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 4.95], semantic_type='placement')\njoin = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')\nholes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -3.33], [7.09, 0.0], [0.0, 3.33], [-7.09, 0.0]], semantic_type='mounting_hole')\n\n__all__ = ['part']"
+        ]
+      },
+      "mirage_export": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "arm": "point_genplan",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "error": "",
+        "status": "OK",
+        "seconds": 0.07,
+        "tempdir_calls": 1,
+        "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_43932_4bfdfe7b_0007\\candidate.step",
+        "step_bytes": 66294,
+        "step_sha256": "aaddb6059574fb1d7142df465cd8615b6d811f100a43dfdfe2758669b0dee976",
+        "gate_check": "match"
+      },
+      "nn_raw": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "baseline": "prior-nn-ir",
+        "nn_sample_id": "flluma_0076727",
+        "predicted_ir": "PART flluma_0076727 CAT cross_tab_profile_mount UNITS mm SEED 20337241\nPARAM boss_height 4.8 MIN 1 MAX 10 SEM boss_height\nPARAM boss_radius 9.83 MIN 3 MAX 16 SEM boss_radius\nPARAM hole_radius 1.46 MIN 0.8 MAX 5 SEM hole_radius\nPARAM thickness 9 MIN 2 MAX 14 SEM thickness\nF sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-8.86,-36.8],[8.86,-36.8],[8.86,-13.25],[24.6,-13.25],[24.6,13.25],[8.86,13.25],[8.86,36.8],[-8.86,36.8],[-8.86,13.25],[-24.6,13.25],[-24.6,-13.25],[-8.86,-13.25]] profile_type=polygon\nF extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness\nF cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius\nF translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,6.7]\nF join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001\nF hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[0,-25.02],[16.73,0],[0,25.02],[-16.73,0]] radius=@hole_radius\nEND\n",
+        "reference_ir": "",
+        "prediction": "params = Parameters()\nparams.add('boss_height', 4.8, min=1.0, max=10.0, semantic_type='boss_height')\nparams.add('boss_radius', 9.83, min=3.0, max=16.0, semantic_type='boss_radius')\nparams.add('hole_radius', 1.46, min=0.8, max=5.0, semantic_type='hole_radius')\nparams.add('thickness', 9.0, min=2.0, max=14.0, semantic_type='thickness')\n\npart = Part('flluma_0076727', category='cross_tab_profile_mount', parameters=params, seed=20337241, sample_id='flluma_0076727', units='mm')\nsketch = part.sketch_polygon(name='cross_tab_profile', points=[[-8.86, -36.8], [8.86, -36.8], [8.86, -13.25], [24.6, -13.25], [24.6, 13.25], [8.86, 13.25], [8.86, 36.8], [-8.86, 36.8], [-8.86, 13.25], [-24.6, 13.25], [-24.6, -13.25], [-8.86, -13.25]], closed=True, semantic_type='extrude_profile')\nsolid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')\ncylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')\nmoved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 6.7], semantic_type='placement')\njoin = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')\nholes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -25.02], [16.73, 0.0], [0.0, 25.02], [-16.73, 0.0]], semantic_type='mounting_hole')\n\n__all__ = ['part']",
+        "reference": ""
+      },
+      "nn_used": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "baseline": "prior-nn-ir",
+        "nn_sample_id": "flluma_0076727",
+        "predicted_ir": "PART flluma_0076727 CAT cross_tab_profile_mount UNITS mm SEED 20337241\nPARAM boss_height 4.8 MIN 1 MAX 10 SEM boss_height\nPARAM boss_radius 9.83 MIN 3 MAX 16 SEM boss_radius\nPARAM hole_radius 1.46 MIN 0.8 MAX 5 SEM hole_radius\nPARAM thickness 9 MIN 2 MAX 14 SEM thickness\nF sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-8.86,-36.8],[8.86,-36.8],[8.86,-13.25],[24.6,-13.25],[24.6,13.25],[8.86,13.25],[8.86,36.8],[-8.86,36.8],[-8.86,13.25],[-24.6,13.25],[-24.6,-13.25],[-8.86,-13.25]] profile_type=polygon\nF extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness\nF cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius\nF translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,6.7]\nF join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001\nF hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[0,-25.02],[16.73,0],[0,25.02],[-16.73,0]] radius=@hole_radius\nEND\n",
+        "reference_ir": "",
+        "prediction": "params = Parameters()\nparams.add('boss_height', 4.8, min=1.0, max=10.0, semantic_type='boss_height')\nparams.add('boss_radius', 9.83, min=3.0, max=16.0, semantic_type='boss_radius')\nparams.add('hole_radius', 1.46, min=0.8, max=5.0, semantic_type='hole_radius')\nparams.add('thickness', 9.0, min=2.0, max=14.0, semantic_type='thickness')\n\npart = Part('flluma_0076727', category='cross_tab_profile_mount', parameters=params, seed=20337241, sample_id='flluma_0076727', units='mm')\nsketch = part.sketch_polygon(name='cross_tab_profile', points=[[-8.86, -36.8], [8.86, -36.8], [8.86, -13.25], [24.6, -13.25], [24.6, 13.25], [8.86, 13.25], [8.86, 36.8], [-8.86, 36.8], [-8.86, 13.25], [-24.6, 13.25], [-24.6, -13.25], [-8.86, -13.25]], closed=True, semantic_type='extrude_profile')\nsolid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')\ncylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')\nmoved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 6.7], semantic_type='placement')\njoin = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')\nholes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -25.02], [16.73, 0.0], [0.0, 25.02], [-16.73, 0.0]], semantic_type='mounting_hole')\n\n__all__ = ['part']",
+        "reference": ""
+      },
+      "nn_gate": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "nn_published_geom": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "has_target": true,
+        "candidate_results": [
+          {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true,
+            "error": "",
+            "cd": 138.08401947878667,
+            "bbox_err": 27.757157675302736,
+            "f_score_1pct": 0.014388020833333333,
+            "target_bbox_diag": 140.17552615388772,
+            "gen_bbox_diag": 88.99668532181971,
+            "bbox_ratio_to_gt": 0.6348946050975919
+          }
+        ]
+      },
+      "nn_geom_input": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "modality": "point",
+        "point_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/clouds/43932_4bfdfe7b_0007.npz",
+        "all_candidates": [
+          "params = Parameters()\nparams.add('boss_height', 4.8, min=1.0, max=10.0, semantic_type='boss_height')\nparams.add('boss_radius', 9.83, min=3.0, max=16.0, semantic_type='boss_radius')\nparams.add('hole_radius', 1.46, min=0.8, max=5.0, semantic_type='hole_radius')\nparams.add('thickness', 9.0, min=2.0, max=14.0, semantic_type='thickness')\n\npart = Part('flluma_0076727', category='cross_tab_profile_mount', parameters=params, seed=20337241, sample_id='flluma_0076727', units='mm')\nsketch = part.sketch_polygon(name='cross_tab_profile', points=[[-8.86, -36.8], [8.86, -36.8], [8.86, -13.25], [24.6, -13.25], [24.6, 13.25], [8.86, 13.25], [8.86, 36.8], [-8.86, 36.8], [-8.86, 13.25], [-24.6, 13.25], [-24.6, -13.25], [-8.86, -13.25]], closed=True, semantic_type='extrude_profile')\nsolid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')\ncylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')\nmoved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 6.7], semantic_type='placement')\njoin = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')\nholes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -25.02], [16.73, 0.0], [0.0, 25.02], [-16.73, 0.0]], semantic_type='mounting_hole')\n\n__all__ = ['part']"
+        ]
+      },
+      "nn_export": {
+        "sample_id": "f360_43932_4bfdfe7b_0007",
+        "arm": "point_nnir",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "error": "",
+        "status": "OK",
+        "seconds": 0.12,
+        "tempdir_calls": 1,
+        "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_43932_4bfdfe7b_0007\\candidate.step",
+        "step_bytes": 84808,
+        "step_sha256": "7cda07d757dcb601a1007511652ce093df1daa7de689dae85848da001b435de3",
+        "gate_check": "match"
+      }
+    }
+  },
+  "taxonomy": {
+    "cadr": {
+      "master_index": 56,
+      "sample_id": "f360_43932_4bfdfe7b_0007",
+      "method": "cadr",
+      "primary_outcome": "CD_SCOREABLE",
+      "verified_failure_class": null,
+      "reason_subtype": "NOT_APPLICABLE",
+      "reason_detail": null,
+      "classification_rule": "CADR_NATIVE_CD_OK",
+      "reported_error": null,
+      "native_traceback": null,
+      "cd_scoreable": true,
+      "iou_scoreable": true,
+      "CD": 0.5293428392635746,
+      "IoU": 0.7559527009998744,
+      "iou_outcome": "IOU_AVAILABLE",
+      "iou_failure_class": null,
+      "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+      "verified_semantic_failure": null,
+      "selection_bucket": null,
+      "historical_export_ok": true,
+      "prediction_step_exists": true,
+      "native_pipeline_status": "SUCCESS",
+      "native_cd_status": "ok",
+      "native_iou_status": "ok",
+      "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_43932_4bfdfe7b_0007.json",
+      "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43932_4bfdfe7b_0007\\run_manifest.json",
+      "input_sample_id_unchanged": true,
+      "classification_version": "native-log-taxonomy-v1"
+    },
+    "mirage": {
+      "master_index": 56,
+      "sample_id": "f360_43932_4bfdfe7b_0007",
+      "method": "mirage",
+      "primary_outcome": "CD_SCOREABLE",
+      "verified_failure_class": null,
+      "reason_subtype": "NOT_APPLICABLE",
+      "reason_detail": null,
+      "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+      "reported_error": null,
+      "native_traceback": null,
+      "cd_scoreable": true,
+      "iou_scoreable": false,
+      "CD": 151.24022839187134,
+      "IoU": null,
+      "iou_outcome": "IOU_BOOLEAN_FAILURE",
+      "iou_failure_class": "IOU_BOOLEAN_FAILURE",
+      "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+      "verified_semantic_failure": null,
+      "selection_bucket": null,
+      "historical_export_ok": true,
+      "prediction_step_exists": true,
+      "native_pipeline_status": "SUCCESS",
+      "native_cd_status": "ok",
+      "native_iou_status": "boolean_failed",
+      "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_43932_4bfdfe7b_0007.json",
+      "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_43932_4bfdfe7b_0007\\score_manifest.json",
+      "input_sample_id_unchanged": true,
+      "classification_version": "native-log-taxonomy-v1"
+    },
+    "nn": {
+      "master_index": 56,
+      "sample_id": "f360_43932_4bfdfe7b_0007",
+      "method": "nn",
+      "primary_outcome": "CD_SCOREABLE",
+      "verified_failure_class": null,
+      "reason_subtype": "NOT_APPLICABLE",
+      "reason_detail": null,
+      "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+      "reported_error": null,
+      "native_traceback": null,
+      "cd_scoreable": true,
+      "iou_scoreable": true,
+      "CD": 6.9846909196165115,
+      "IoU": 0.247248859326945,
+      "iou_outcome": "IOU_AVAILABLE",
+      "iou_failure_class": null,
+      "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+      "verified_semantic_failure": null,
+      "selection_bucket": null,
+      "historical_export_ok": true,
+      "prediction_step_exists": true,
+      "native_pipeline_status": "SUCCESS",
+      "native_cd_status": "ok",
+      "native_iou_status": "ok",
+      "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_43932_4bfdfe7b_0007.json",
+      "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_43932_4bfdfe7b_0007\\score_manifest.json",
+      "input_sample_id_unchanged": true,
+      "classification_version": "native-log-taxonomy-v1"
+    }
+  },
+  "visual_semantic_review": "PENDING_RENDERING",
+  "semantic_labels": null
+}

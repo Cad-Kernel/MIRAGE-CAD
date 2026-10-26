@@ -1,0 +1,10 @@
+PART flluma_0041815 CAT stepped_profile_mount UNITS mm SEED 20302329
+PARAM hole_radius 1.51 MIN 0.8 MAX 5 SEM hole_radius
+PARAM pocket_length 18.38 MIN 6 MAX 40 SEM pocket_length
+PARAM pocket_width 6.75 MIN 4 MAX 26 SEM pocket_width
+PARAM thickness 5 MIN 3 MAX 16 SEM thickness
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-35.9,-12.14],[-8.62,-12.14],[-8.62,-4.28],[12.92,-4.28],[12.92,-12.14],[35.9,-12.14],[35.9,10.71],[15.8,10.71],[15.8,2.86],[-12.92,2.86],[-12.92,12.85],[-35.9,12.85]] profile_type=polygon
+F extrude_001 OP_EXTRUDE SEM extruded_solid ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP extrude_001 TARGET extrude_001.top_face PARAMS count=2 depth=THROUGH positions=[[-24.41,-7.14],[24.41,6.43]] radius=@hole_radius
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP hole_001 TARGET hole_001.top_face PARAMS depth=1.4 length=@pocket_length width=@pocket_width
+END

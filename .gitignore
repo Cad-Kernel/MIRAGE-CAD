@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# large artefacts that do not belong in the source tree
+*.safetensors
+*.bin
+*.npy
+*.pk
+
+# Local runs and large model payloads
+*.pt
+*.pth
+*.pkl
+*.zip
+*.tar
+workspaces/
+local_config.json
+!evidence/**/*.npy
+
+# Retain the archived registry-header evidence image
+!evidence/review_05_four_pathway_gallery/support/registry_header_preview.png

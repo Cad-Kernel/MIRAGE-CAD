@@ -1,0 +1,21 @@
+PART flluma_0001001 CAT offset_hole_plate UNITS mm SEED 20261516
+PARAM chamfer_distance 0.2 MIN 0.1 MAX 1.5 SEM chamfer_distance
+PARAM height 24.1 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_y 3.892 MIN 0 MAX 20 EXPR height*0.12 SEM hole_spacing
+PARAM hole_radius 1.44 MIN 1 MAX 8 SEM hole_radius
+PARAM offset_x 18.18 MIN 0 MAX 40 EXPR width*0.28 SEM overall_width
+PARAM offset_y 10.82 MIN 0 MAX 30 EXPR height*0.42 SEM overall_height
+PARAM radius 6.12 MIN 3 MAX 16 SEM radius
+PARAM thickness 7.7 MIN 3 MAX 25 SEM thickness
+PARAM width 44.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP plate_001 PARAMS count=4 depth=THROUGH positions=[[-@offset_x,-@hole_offset_y],[@offset_x,-@hole_offset_y],[-@offset_x,@hole_offset_y],[@offset_x,@hole_offset_y]] radius=@hole_radius
+F circle_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@radius radius=@radius side_profile_type=SKEL_UNIF_TOP_BOTTOM
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP circle_001 PARAMS offset=[0,0,5.6]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP plate_001,translate_001 TARGET plate_001,translate_001
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=18.75 radius=6.12
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,3.875]
+F join_002 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002
+F hole_002 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_002 PARAMS count=4 depth=THROUGH positions=[[17.952,10.824],[-17.952,10.824],[17.952,-10.824],[-17.952,-10.824]] radius=@radius
+F offset_hole_001 OP_OFFSET_HOLE_PATTERN SEM offset_mounting_hole ROLE functional_feature DEP hole_002 PARAMS offset=[0,0,3.15] pattern_hole_radius=@radius
+END

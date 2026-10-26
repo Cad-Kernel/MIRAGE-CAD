@@ -1,0 +1,532 @@
+{
+  "status": "FROZEN_CPU_ILLUSTRATION_INPUTS",
+  "source_input_sha256": "e32736a8fda6c8d2ff0e50a9b4ca3a8de322f170885434712ce056ab11e7ae1b",
+  "raw_records_sha256": "073125456b5ee12cec32fe0232d02a66b53368246717eb538ec0c420dc425cb6",
+  "protocol_sha256": "b55bbe6758547e147ac240a23b1d6d54173236ed355a85cfc2a877446132e84d",
+  "native_cli": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\FllumaCLI.exe",
+  "native_cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+  "cases": [
+    {
+      "case_id": "P01",
+      "bucket": "responsive_positive",
+      "sample_id": "flluma_0090123",
+      "historical_result": {
+        "kind": "result",
+        "sample_id": "flluma_0090123",
+        "param": "flange_height",
+        "delta": 0.1,
+        "from": 36.94,
+        "to": 40.634,
+        "clamped_to_bound": false,
+        "outcome": "rebuilt_and_moved",
+        "error": ""
+      },
+      "historical_baseline": {
+        "kind": "row",
+        "sample_id": "flluma_0090123",
+        "modality": "step",
+        "coverage": {
+          "n_declared": 8,
+          "n_declared_referenced": 8,
+          "n_declared_unreferenced": 0,
+          "unreferenced_names": [],
+          "n_param_references": 9,
+          "n_inlined_literals": 15,
+          "parametric_coverage": 0.375
+        },
+        "baseline": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true,
+          "error": ""
+        }
+      },
+      "before_sha256": "b1945d3a3e5d99573a803f6d8d61c7c8b4ccea53b0d50f49f05515e092e532b8",
+      "after_sha256": "44d7d8f42c8a36ded04369712275969cd4c53245136e7a803e9aa30c6746fea6",
+      "declared_parameter": {
+        "value": 36.94,
+        "min": 12.0,
+        "max": 80.0
+      },
+      "params_reference_lines": [
+        13,
+        16
+      ],
+      "direct_literal_argument_examples": [
+        {
+          "line": 11,
+          "argument": "seed",
+          "source": "20261515",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 14,
+          "argument": "offset",
+          "source": "[0.0, 0.0, 18.37]",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        }
+      ],
+      "author_semantic_review": "PENDING",
+      "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+    },
+    {
+      "case_id": "P02",
+      "bucket": "responsive_negative",
+      "sample_id": "flluma_0090189",
+      "historical_result": {
+        "kind": "result",
+        "sample_id": "flluma_0090189",
+        "param": "boss_height",
+        "delta": -0.1,
+        "from": 5.34,
+        "to": 4.806,
+        "clamped_to_bound": false,
+        "outcome": "rebuilt_and_moved",
+        "error": ""
+      },
+      "historical_baseline": {
+        "kind": "row",
+        "sample_id": "flluma_0090189",
+        "modality": "step",
+        "coverage": {
+          "n_declared": 9,
+          "n_declared_referenced": 7,
+          "n_declared_unreferenced": 2,
+          "unreferenced_names": [
+            "hole_offset_x",
+            "hole_offset_y"
+          ],
+          "n_param_references": 7,
+          "n_inlined_literals": 12,
+          "parametric_coverage": 0.3684210526315789
+        },
+        "baseline": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true,
+          "error": ""
+        }
+      },
+      "before_sha256": "279709107b97ea44805cb33535d9a8f7ceb44ef394fde6f6bd90fb40785f4f98",
+      "after_sha256": "1a1794c9c3623306141796c109568af04391b212977bc9b7128f4ff1aaeba1c3",
+      "declared_parameter": {
+        "value": 5.34,
+        "min": 3.0,
+        "max": 22.0
+      },
+      "params_reference_lines": [
+        14
+      ],
+      "direct_literal_argument_examples": [
+        {
+          "line": 12,
+          "argument": "seed",
+          "source": "20266214",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 15,
+          "argument": "offset",
+          "source": "[0.0, 0.0, 5.47]",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        }
+      ],
+      "author_semantic_review": "PENDING",
+      "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+    },
+    {
+      "case_id": "P03",
+      "bucket": "unreferenced_no_change",
+      "sample_id": "flluma_0090198",
+      "historical_result": {
+        "kind": "result",
+        "sample_id": "flluma_0090198",
+        "param": "clamp_length",
+        "delta": 0.25,
+        "from": 25.1,
+        "to": 31.375,
+        "clamped_to_bound": false,
+        "outcome": "rebuilt_no_change",
+        "error": ""
+      },
+      "historical_baseline": {
+        "kind": "row",
+        "sample_id": "flluma_0090198",
+        "modality": "step",
+        "coverage": {
+          "n_declared": 9,
+          "n_declared_referenced": 7,
+          "n_declared_unreferenced": 2,
+          "unreferenced_names": [
+            "clamp_length",
+            "hole_radius"
+          ],
+          "n_param_references": 7,
+          "n_inlined_literals": 9,
+          "parametric_coverage": 0.4375
+        },
+        "baseline": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true,
+          "error": ""
+        }
+      },
+      "before_sha256": "a970a87665ea7dd0a7a883891f87a97e01aebc4d93c29d18e28ba053e84a4319",
+      "after_sha256": "c9f2e80e8bccdf79baeb044943df381be287ab073b9bb899d9310b0b0e50d779",
+      "declared_parameter": {
+        "value": 25.1,
+        "min": 8.0,
+        "max": 40.0
+      },
+      "params_reference_lines": [],
+      "direct_literal_argument_examples": [
+        {
+          "line": 12,
+          "argument": "seed",
+          "source": "20265614",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 17,
+          "argument": "length",
+          "source": "22.94",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 17,
+          "argument": "width",
+          "source": "11.04",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 18,
+          "argument": "offset",
+          "source": "[19.344, 0.0, 20.345]",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        }
+      ],
+      "author_semantic_review": "PENDING",
+      "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+    },
+    {
+      "case_id": "P04",
+      "bucket": "referenced_no_change",
+      "sample_id": "flluma_0091127",
+      "historical_result": {
+        "kind": "result",
+        "sample_id": "flluma_0091127",
+        "param": "hole_radius",
+        "delta": 0.25,
+        "from": 2.01,
+        "to": 2.5124999999999997,
+        "clamped_to_bound": false,
+        "outcome": "rebuilt_no_change",
+        "error": ""
+      },
+      "historical_baseline": {
+        "kind": "row",
+        "sample_id": "flluma_0091127",
+        "modality": "step",
+        "coverage": {
+          "n_declared": 4,
+          "n_declared_referenced": 4,
+          "n_declared_unreferenced": 0,
+          "unreferenced_names": [],
+          "n_param_references": 4,
+          "n_inlined_literals": 30,
+          "parametric_coverage": 0.11764705882352941
+        },
+        "baseline": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true,
+          "error": ""
+        }
+      },
+      "before_sha256": "c5d312fb1dfb38504bed3bd9e3235aa627aa14b922ba8317193d7784d955cc12",
+      "after_sha256": "a3d644d6293f67b0422b9f7893f70c09d5328e830fac614a0f6c49eb94cc3c56",
+      "declared_parameter": {
+        "value": 2.01,
+        "min": 0.8,
+        "max": 5.0
+      },
+      "params_reference_lines": [
+        10
+      ],
+      "direct_literal_argument_examples": [
+        {
+          "line": 7,
+          "argument": "seed",
+          "source": "20265614",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 11,
+          "argument": "depth",
+          "source": "1.44",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        }
+      ],
+      "author_semantic_review": "PENDING",
+      "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+    },
+    {
+      "case_id": "P05",
+      "bucket": "export_failure",
+      "sample_id": "flluma_0098828",
+      "historical_result": {
+        "kind": "result",
+        "sample_id": "flluma_0098828",
+        "param": "boss_radius",
+        "delta": 0.25,
+        "from": 10.14,
+        "to": 12.675,
+        "clamped_to_bound": false,
+        "outcome": "broke_at_step_export_ok",
+        "error": "STEP export error: OCCT build failed"
+      },
+      "historical_baseline": {
+        "kind": "row",
+        "sample_id": "flluma_0098828",
+        "modality": "step",
+        "coverage": {
+          "n_declared": 12,
+          "n_declared_referenced": 10,
+          "n_declared_unreferenced": 2,
+          "unreferenced_names": [
+            "hole_offset_x",
+            "hole_offset_y"
+          ],
+          "n_param_references": 10,
+          "n_inlined_literals": 12,
+          "parametric_coverage": 0.45454545454545453
+        },
+        "baseline": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true,
+          "error": ""
+        }
+      },
+      "before_sha256": "ad8ccffbb5d4816f6ea009be823a244d6f729cfd0a1001b15329a4bf5260b5d1",
+      "after_sha256": "c5de0fef313fd9e61dec64d1a30010cc9f1f90c35278bac1793b6e72ebea3e90",
+      "declared_parameter": {
+        "value": 10.14,
+        "min": 3.0,
+        "max": 18.0
+      },
+      "params_reference_lines": [
+        17
+      ],
+      "direct_literal_argument_examples": [
+        {
+          "line": 15,
+          "argument": "seed",
+          "source": "20263515",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 18,
+          "argument": "offset",
+          "source": "[0.0, 0.0, 5.29]",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        }
+      ],
+      "author_semantic_review": "PENDING",
+      "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+    },
+    {
+      "case_id": "P06",
+      "bucket": "execution_failure",
+      "sample_id": "flluma_0093632",
+      "historical_result": {
+        "kind": "result",
+        "sample_id": "flluma_0093632",
+        "param": "path_height",
+        "delta": 0.25,
+        "from": 9.1,
+        "to": 11.375,
+        "clamped_to_bound": false,
+        "outcome": "broke_at_exec_ok",
+        "error": "exec error: topology reference 'join_002:top_face:323af5d41048' did not resolve any face"
+      },
+      "historical_baseline": {
+        "kind": "row",
+        "sample_id": "flluma_0093632",
+        "modality": "step",
+        "coverage": {
+          "n_declared": 10,
+          "n_declared_referenced": 10,
+          "n_declared_unreferenced": 0,
+          "unreferenced_names": [],
+          "n_param_references": 10,
+          "n_inlined_literals": 12,
+          "parametric_coverage": 0.45454545454545453
+        },
+        "baseline": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true,
+          "error": ""
+        }
+      },
+      "before_sha256": "fa683bbc176120b48dd32e3fcbd7a837c77607b1ad11f4606beeedf7d52d0c5e",
+      "after_sha256": "a3eb0812822367a44eb0814a588c5e593a21197db217fc1fc8aa90952505df72",
+      "declared_parameter": {
+        "value": 9.1,
+        "min": 4.0,
+        "max": 28.0
+      },
+      "params_reference_lines": [
+        14
+      ],
+      "direct_literal_argument_examples": [
+        {
+          "line": 13,
+          "argument": "seed",
+          "source": "20266614",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 14,
+          "argument": "profile_segments",
+          "source": "16",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        },
+        {
+          "line": 17,
+          "argument": "offset",
+          "source": "[20.1, 6.1, 9.05]",
+          "classification": "direct_literal_argument_not_a_params_subscript"
+        }
+      ],
+      "author_semantic_review": "PENDING",
+      "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+    }
+  ],
+  "jobs": [
+    {
+      "case_id": "P01",
+      "side": "before",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\before",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\before.py",
+      "code_sha256": "b1945d3a3e5d99573a803f6d8d61c7c8b4ccea53b0d50f49f05515e092e532b8",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\before_job.json"
+    },
+    {
+      "case_id": "P01",
+      "side": "after",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\after",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\after.py",
+      "code_sha256": "44d7d8f42c8a36ded04369712275969cd4c53245136e7a803e9aa30c6746fea6",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\after_job.json"
+    },
+    {
+      "case_id": "P02",
+      "side": "before",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\before",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\before.py",
+      "code_sha256": "279709107b97ea44805cb33535d9a8f7ceb44ef394fde6f6bd90fb40785f4f98",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\before_job.json"
+    },
+    {
+      "case_id": "P02",
+      "side": "after",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\after",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\after.py",
+      "code_sha256": "1a1794c9c3623306141796c109568af04391b212977bc9b7128f4ff1aaeba1c3",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\after_job.json"
+    },
+    {
+      "case_id": "P03",
+      "side": "before",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\before",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\before.py",
+      "code_sha256": "a970a87665ea7dd0a7a883891f87a97e01aebc4d93c29d18e28ba053e84a4319",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\before_job.json"
+    },
+    {
+      "case_id": "P03",
+      "side": "after",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\after",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\after.py",
+      "code_sha256": "c9f2e80e8bccdf79baeb044943df381be287ab073b9bb899d9310b0b0e50d779",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\after_job.json"
+    },
+    {
+      "case_id": "P04",
+      "side": "before",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\before",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\before.py",
+      "code_sha256": "c5d312fb1dfb38504bed3bd9e3235aa627aa14b922ba8317193d7784d955cc12",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\before_job.json"
+    },
+    {
+      "case_id": "P04",
+      "side": "after",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\after",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\after.py",
+      "code_sha256": "a3d644d6293f67b0422b9f7893f70c09d5328e830fac614a0f6c49eb94cc3c56",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\after_job.json"
+    },
+    {
+      "case_id": "P05",
+      "side": "before",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\before",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\before.py",
+      "code_sha256": "ad8ccffbb5d4816f6ea009be823a244d6f729cfd0a1001b15329a4bf5260b5d1",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\before_job.json"
+    },
+    {
+      "case_id": "P05",
+      "side": "after",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\after",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\after.py",
+      "code_sha256": "c5de0fef313fd9e61dec64d1a30010cc9f1f90c35278bac1793b6e72ebea3e90",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\after_job.json"
+    },
+    {
+      "case_id": "P06",
+      "side": "before",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\before",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\before.py",
+      "code_sha256": "fa683bbc176120b48dd32e3fcbd7a837c77607b1ad11f4606beeedf7d52d0c5e",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\before_job.json"
+    },
+    {
+      "case_id": "P06",
+      "side": "after",
+      "output_dir": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\after",
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\after.py",
+      "code_sha256": "a3eb0812822367a44eb0814a588c5e593a21197db217fc1fc8aa90952505df72",
+      "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+      "job_file": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\after_job.json"
+    }
+  ],
+  "all100_coverage_and1608_value_checks": "PASS",
+  "originals_modified": false
+}

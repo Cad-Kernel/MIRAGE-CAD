@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0097413",
+  "part_name": "flluma_0097413",
+  "category": "heat_sink_base",
+  "seed": 20357927,
+  "units": "mm",
+  "parameters": {
+    "fin_height": {
+      "value": 10.9,
+      "min": 4.0,
+      "max": 24.0,
+      "expression": "thickness * 2.18",
+      "semantic_type": "rib_height"
+    },
+    "fin_step": {
+      "value": 9.21,
+      "min": 3.0,
+      "max": 24.0,
+      "semantic_type": "rib_offset"
+    },
+    "fin_width": {
+      "value": 1.94,
+      "min": 1.0,
+      "max": 5.0,
+      "semantic_type": "rib_width"
+    },
+    "height": {
+      "value": 62.5,
+      "min": 12,
+      "max": 80,
+      "semantic_type": "overall_height"
+    },
+    "hole_offset_x": {
+      "value": 16.02,
+      "min": 4.0,
+      "max": 45.0,
+      "expression": "width * 0.28",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_offset_y": {
+      "value": 15.62,
+      "min": 3.0,
+      "max": 35.0,
+      "expression": "height * 0.25",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_radius": {
+      "value": 1.69,
+      "min": 1,
+      "max": 8,
+      "semantic_type": "hole_radius"
+    },
+    "thickness": {
+      "value": 5,
+      "min": 3,
+      "max": 25,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 57.2,
+      "min": 20,
+      "max": 120,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "plate_001",
+      "name": "thermal_base_plate",
+      "type": "Plate",
+      "category": "additive",
+      "semantic_type": "base_plate",
+      "parameters": {
+        "width": {
+          "parameter": "width",
+          "value": 57.2
+        },
+        "height": {
+          "parameter": "height",
+          "value": 62.5
+        },
+        "thickness": {
+          "parameter": "thickness",
+          "value": 5
+        },
+        "centered": true,
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "width": {
+              "parameter": "width",
+              "value": 57.2
+            },
+            "height": {
+              "parameter": "height",
+              "value": 62.5
+            },
+            "centered": true
+          },
+          {
+            "op": "Extrude",
+            "height": {
+              "parameter": "thickness",
+              "value": 5
+            },
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "box_001",
+      "name": "fin_seed",
+      "type": "Box",
+      "category": "additive",
+      "semantic_type": "rib",
+      "parameters": {
+        "length": {
+          "parameter": "fin_width",
+          "value": 1.94
+        },
+        "width": {
+          "parameter": "height",
+          "value": 62.5
+        },
+        "height": {
+          "parameter": "fin_height",
+          "value": 10.9
+        },
+        "centered": true
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "translate_001",
+      "name": "place_first_fin",
+      "type": "Translate",
+      "category": "modification",
+      "semantic_type": "placement",
+      "parameters": {
+        "offset": [
+          -27.630000000000003,
+          0.0,
+          7.75
+        ]
+      },
+      "dependencies": [
+        "box_001"
+      ],
+      "rebuild_order": 3
+    },
+    {
+      "id": "linear_pattern_001",
+      "name": "linear_fin_array",
+      "type": "LinearPattern",
+      "category": "pattern",
+      "semantic_type": "linear_pattern",
+      "parameters": {
+        "count": 7,
+        "step": [
+          {
+            "parameter": "fin_step",
+            "value": 9.21
+          },
+          0.0,
+          0.0
+        ]
+      },
+      "dependencies": [
+        "translate_001"
+      ],
+      "rebuild_order": 4
+    },
+    {
+      "id": "join_001",
+      "name": "join_fin_array",
+      "type": "BooleanJoin",
+      "category": "additive",
+      "semantic_type": "support_rib",
+      "parameters": {},
+      "dependencies": [
+        "plate_001",
+        "linear_pattern_001"
+      ],
+      "topology_references": {
+        "target": {
+          "feature_id": "plate_001"
+        },
+        "tool": {
+          "feature_id": "linear_pattern_001"
+        }
+      },
+      "rebuild_order": 5
+    },
+    {
+      "id": "hole_001",
+      "name": "corner_mounting_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "mounting_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 4,
+        "positions": [
+          [
+            -16.02,
+            -15.62
+          ],
+          [
+            16.02,
+            -15.62
+          ],
+          [
+            -16.02,
+            15.62
+          ],
+          [
+            16.02,
+            15.62
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 1.69
+        }
+      },
+      "dependencies": [
+        "join_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "join_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "join_001:top_face:b9ce48e7f7b9"
+        }
+      },
+      "rebuild_order": 6
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-10-22T18:29:48.493242+00:00",
+  "status": "STEP1_EXISTING_EVIDENCE_AUDIT_SEALED_V1",
+  "files": {
+    "01_inventory_and_correspondence_audit.md": {
+      "sha256": "7a2b58a99733ab4c69aa3f1f74b04c4803faa6fcd3aaee593e17f6b5c5417486",
+      "bytes": 8164
+    },
+    "audit/correspondence_v1.json": {
+      "sha256": "bbc972312154fd897184f7546e038df1411ce193625877c79dd5d5b8a718b427",
+      "bytes": 13326411
+    },
+    "audit/csv_validation_v1.json": {
+      "sha256": "40a7892a4fd0db4121ea720a4689aad626e3cfbc0019ed89f90a5a9bc3761573",
+      "bytes": 626
+    },
+    "audit/discovery_v1.json": {
+      "sha256": "f1de00df09318f6baac098805225115888b53fcad3afa0aee193cc5b436dec71",
+      "bytes": 36349
+    },
+    "audit/independent_validation_v1.json": {
+      "sha256": "d5ee459a7831c34800f992d4e5ae160dcdfd96a71f9df583db29c7e7d7b135a9",
+      "bytes": 1293
+    },
+    "audit/master_ids_v1.txt": {
+      "sha256": "62abd7212b49d4773e9f8f1e03e5d8570bb48024b27ab7b7499d2c619e06cd20",
+      "bytes": 10084
+    },
+    "audit/master_records_v1.json": {
+      "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+      "bytes": 18605584
+    },
+    "audit/registry_field_contract_v1.json": {
+      "sha256": "eaa2e0c580e5a5ed74da78c889037dfbd150ce0fa1902c31f62b2ce21c4ef37f",
+      "bytes": 7869
+    },
+    "audit/source_files_v1.json": {
+      "sha256": "110b084f536ff0d8ab8ce1b7bb37265cedcb3dc2867e0a2194ab078892964def",
+      "bytes": 3880662
+    },
+    "fusion360_case_registry.csv": {
+      "sha256": "1e6788920f278f1f9c086ec61e1c3b40a623cfb6975e90811574fd02a6724ae4",
+      "bytes": 1033108
+    },
+    "README.md": {
+      "sha256": "e210df457e524e2e4d0ab0b9bec30e16bc618fd1305067b2067bdbcb79030fe2",
+      "bytes": 3737
+    },
+    "support/.gitignore": {
+      "sha256": "de46ca71b20bf7dbc2df3669aeb780a0418229975f51cfc30d72bf4bbd0f88ec",
+      "bytes": 27
+    },
+    "support/audit_fusion360.py": {
+      "sha256": "02827cdc7f178107629e537a5157d7c70350a4f78729a16eb65ab7a89643bee4",
+      "bytes": 21330
+    },
+    "support/build_case_registry.mjs": {
+      "sha256": "fc32f2b9f6d4adede0fe4a9e017bf9107a301a1882963cc4c3e4313642de288b",
+      "bytes": 3475
+    },
+    "support/case_registry_preview.png": {
+      "sha256": "0722703f6c331f6361a58433a186b5b55b4a4a11dd9db271a241d49e586fe277",
+      "bytes": 37757
+    },
+    "support/discover_existing.py": {
+      "sha256": "f5ef82e8585b070198965336a98d9f4c5a65ab8dc9b87f8693ba11509b13992a",
+      "bytes": 3353
+    },
+    "support/seal_step1.py": {
+      "sha256": "2ece1f03789d9976e18c0ed3de1d2d617bfc7cef3d5d2abfc893086bf9094388",
+      "bytes": 1672
+    },
+    "support/test_audit_contract.py": {
+      "sha256": "5fae72071c64e8678398481548539ac97c048a55477231f9f9b16013632b6224",
+      "bytes": 2268
+    },
+    "support/validate_step1.py": {
+      "sha256": "b3c924ba566282c0bdd4f966b905d8b93e9f7c6e04f5f8fec99c8511410e7594",
+      "bytes": 5270
+    },
+    "support/write_audit_record.py": {
+      "sha256": "9f42f046a8822e52da4cd4898235e7bc9d8a6e65c49c370560c1de9dc7e9393c",
+      "bytes": 10761
+    }
+  },
+  "master_rows": 400,
+  "CSV_columns": 67,
+  "Step2_taxonomy": "NOT_STARTED",
+  "Step3_selection_rendering": "NOT_STARTED",
+  "Step4_raw_asset_archive": "NOT_STARTED",
+  "no_new_training_prediction_CAD_or_metric_evaluation": true,
+  "later_changes": "Create a new version for later taxonomy/selection; preserve this Step-1 CSV/master/seal"
+}

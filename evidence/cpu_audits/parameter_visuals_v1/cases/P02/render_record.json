@@ -1,0 +1,279 @@
+{
+  "case_id": "P02",
+  "historical_outcome": "rebuilt_and_moved",
+  "current_before_export_ok": true,
+  "current_after_export_ok": true,
+  "current_after_failure_stage": null,
+  "current_geometry_info": {
+    "before": {
+      "brep_volume_current": 36187.07846565461,
+      "brep_area_current": 14082.471242264779,
+      "bbox_min": [
+        -37.25,
+        -39.29999923706,
+        -3.000000243778663
+      ],
+      "bbox_max": [
+        37.25,
+        39.299999237061,
+        8.139999866486
+      ]
+    },
+    "after": {
+      "brep_volume_current": 36079.19079843965,
+      "brep_area_current": 14707.226267962527,
+      "bbox_min": [
+        -37.25,
+        -39.29999923706,
+        -3.000000243778663
+      ],
+      "bbox_max": [
+        37.25,
+        39.299999237061,
+        7.87299990654
+      ]
+    }
+  },
+  "author_semantic_review": "PENDING",
+  "camera_contract": "Both sides share exact camera in each of 2 views",
+  "images": [
+    {
+      "image": {
+        "path": "cases/P02/before/view_1.png",
+        "bytes": 7817,
+        "sha256": "4bf86d03c4bbafc11d67696b284a550eadf3fbec6dd6c0b90417e5379bc93c8a"
+      },
+      "camera": {
+        "frame": "common_before_after_union_frame",
+        "view": {
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.009326287108706e-13,
+          2.569999811353669
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -2.0983960589551724
+        ],
+        "span_mm": 108.25804712070105,
+        "pixels_per_mm": 4.847676583477257,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 92329,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 470,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        157,
+        582,
+        483
+      ],
+      "blank": false,
+      "kind": "current_geometry_render",
+      "side": "before",
+      "view_id": 1
+    },
+    {
+      "image": {
+        "path": "cases/P02/after/view_1.png",
+        "bytes": 7711,
+        "sha256": "640424d859847bbc021650b4142680d22c1f31e4bc4435369f59ec887ac7e57e"
+      },
+      "camera": {
+        "frame": "common_before_after_union_frame",
+        "view": {
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.009326287108706e-13,
+          2.569999811353669
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -2.0983960589551724
+        ],
+        "span_mm": 108.25804712070105,
+        "pixels_per_mm": 4.847676583477257,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 92329,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 470,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        157,
+        582,
+        483
+      ],
+      "blank": false,
+      "kind": "current_geometry_render",
+      "side": "after",
+      "view_id": 1
+    },
+    {
+      "image": {
+        "path": "cases/P02/before/view_2.png",
+        "bytes": 7726,
+        "sha256": "7998fdf3ed534239f9050a11951d4d4b52891f46e7e1adaf37797733704970a5"
+      },
+      "camera": {
+        "frame": "common_before_after_union_frame",
+        "view": {
+          "azimuth": 225,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.009326287108706e-13,
+          2.569999811353669
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -2.0983960589551724
+        ],
+        "span_mm": 108.25804712070104,
+        "pixels_per_mm": 4.8476765834772575,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 92329,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 470,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        157,
+        582,
+        483
+      ],
+      "blank": false,
+      "kind": "current_geometry_render",
+      "side": "before",
+      "view_id": 2
+    },
+    {
+      "image": {
+        "path": "cases/P02/after/view_2.png",
+        "bytes": 7700,
+        "sha256": "074d56d2064d9c2e8782404ffd0cb7115080da939491ae654daf7e65839d18e9"
+      },
+      "camera": {
+        "frame": "common_before_after_union_frame",
+        "view": {
+          "azimuth": 225,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          0.0,
+          5.009326287108706e-13,
+          2.569999811353669
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -2.0983960589551724
+        ],
+        "span_mm": 108.25804712070104,
+        "pixels_per_mm": 4.8476765834772575,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 92329,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 470,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        157,
+        582,
+        483
+      ],
+      "blank": false,
+      "kind": "current_geometry_render",
+      "side": "after",
+      "view_id": 2
+    }
+  ],
+  "display_vertex_sets_exactly_equal": false,
+  "brep_volume_delta_current": -107.88766721495631
+}

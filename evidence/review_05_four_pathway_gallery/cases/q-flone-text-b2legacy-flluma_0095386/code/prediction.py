@@ -1,0 +1,14 @@
+params = Parameters()
+params.add('height', 37.2, min=12, max=80, semantic_type='overall_height')
+params.add('hole_radius', 1.53, min=1, max=8, semantic_type='hole_radius')
+params.add('rib_height', 7.72, min=2.0, max=14.0, expression='thickness * 0.94', semantic_type='rib_height')
+params.add('rib_length', 20.14, min=12.0, max=100.0, expression='width * 0.276', semantic_type='rib_length')
+params.add('rib_offset_y', 10.14, min=2.0, max=24.0, expression='height * 0.27', semantic_type='rib_offset')
+params.add('rib_width', 3.14, min=2.0, max=12.0, expression='max(2.0, height * 0.085)', semantic_type='rib_width')
+params.add('thickness', 7, min=3, max=25, semantic_type='thickness')
+params.add('width', 74.2, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0005100', category='ribbed_support_plate', parameters=params, seed=20265614, sample_id='flluma_0005100', units='mm')
+ribbed_plate = part.ribbed_support_plate(name='ribbed_support_plate_body', width=params['width'], height=params['height'], thickness=params['thickness'], hole_radius=params['hole_radius'], hole_positions=[[-20.396, -9.3], [20.396, -9.3], [-20.396, 9.3], [20.396, 9.3]], rib_length=params['rib_length'], rib_width=params['rib_width'], rib_height=params['rib_height'], rib_offset_y=params['rib_offset_y'], semantic_type='ribbed_support_plate')
+
+__all__ = ['part']

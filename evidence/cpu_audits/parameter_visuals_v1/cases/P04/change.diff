@@ -1,0 +1,9 @@
+--- before.py
++++ after.py
+@@ -1,5 +1,5 @@
+ params = Parameters()
+-params.add('hole_radius', 2.01, min=0.8, max=5.0, semantic_type='hole_radius')
++params.add('hole_radius', 2.5125, min=0.8, max=5.0, semantic_type='hole_radius')
+ params.add('pocket_length', 21.1, min=6.0, max=40.0, semantic_type='pocket_length')
+ params.add('pocket_width', 10.14, min=4.0, max=26.0, semantic_type='pocket_width')
+ params.add('thickness', 5.0, min=3.0, max=16.0, semantic_type='thickness')

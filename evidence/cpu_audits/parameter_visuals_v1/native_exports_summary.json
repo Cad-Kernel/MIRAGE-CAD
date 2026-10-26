@@ -1,0 +1,200 @@
+{
+  "jobs": [
+    {
+      "case_id": "P01",
+      "side": "before",
+      "returncode": 0,
+      "seconds": 1.297000000020489,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\before\\native_export.json"
+    },
+    {
+      "case_id": "P01",
+      "side": "after",
+      "returncode": 0,
+      "seconds": 0.2809999999590218,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P01\\after\\native_export.json"
+    },
+    {
+      "case_id": "P02",
+      "side": "before",
+      "returncode": 0,
+      "seconds": 0.28100000007543713,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\before\\native_export.json"
+    },
+    {
+      "case_id": "P02",
+      "side": "after",
+      "returncode": 0,
+      "seconds": 0.26599999994505197,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P02\\after\\native_export.json"
+    },
+    {
+      "case_id": "P03",
+      "side": "before",
+      "returncode": 0,
+      "seconds": 0.23400000005494803,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\before\\native_export.json"
+    },
+    {
+      "case_id": "P03",
+      "side": "after",
+      "returncode": 0,
+      "seconds": 0.2339999999385327,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P03\\after\\native_export.json"
+    },
+    {
+      "case_id": "P04",
+      "side": "before",
+      "returncode": 0,
+      "seconds": 0.2660000000614673,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\before\\native_export.json"
+    },
+    {
+      "case_id": "P04",
+      "side": "after",
+      "returncode": 0,
+      "seconds": 0.26599999994505197,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P04\\after\\native_export.json"
+    },
+    {
+      "case_id": "P05",
+      "side": "before",
+      "returncode": 0,
+      "seconds": 0.375,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\before\\native_export.json"
+    },
+    {
+      "case_id": "P05",
+      "side": "after",
+      "returncode": 0,
+      "seconds": 0.35900000005494803,
+      "status": "CURRENT_CPU_EXECUTION_FAILED_NO_SUBSTITUTION",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": false
+      },
+      "error": "ExportError: OCCT build failed",
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P05\\after\\native_export.json"
+    },
+    {
+      "case_id": "P06",
+      "side": "before",
+      "returncode": 0,
+      "seconds": 4.515999999945052,
+      "status": "CURRENT_CPU_STEP_EXPORTED",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true
+      },
+      "error": null,
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\before\\native_export.json"
+    },
+    {
+      "case_id": "P06",
+      "side": "after",
+      "returncode": 0,
+      "seconds": 2.422000000020489,
+      "status": "CURRENT_CPU_EXECUTION_FAILED_NO_SUBSTITUTION",
+      "gates": {
+        "syntax_ok": true,
+        "exec_ok": false,
+        "build_ok": false,
+        "solid_valid": false,
+        "step_export_ok": false
+      },
+      "error": "PartError: topology reference 'join_002:top_face:323af5d41048' did not resolve any face",
+      "report_path": "__EVIDENCE_SOURCE_ROOT__\\09_cpu_preparation\\parameter_visuals_v1\\cases\\P06\\after\\native_export.json"
+    }
+  ],
+  "cli_sha256": "da5c912958bfb01a7b5c724fc54b671e1ef2a92f491dce2d8bb127fb8eb058ca",
+  "worker_sha256": "a24b01c54483094d05d5f8ed3b6a9342c337c75f9faf5158ecbb8a1547051cd0",
+  "CPU_only": true,
+  "model_inference": false
+}

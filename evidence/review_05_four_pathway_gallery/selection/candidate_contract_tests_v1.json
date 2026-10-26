@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-22T17:14:26.605977+00:00",
+  "status": "PASS",
+  "tests_run": 12,
+  "failures": 0,
+  "errors": 0,
+  "source": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/support/select_gallery_candidates.py",
+    "bytes": 32150,
+    "sha256": "54560a75e9ec706a775b1830346d048d4dd18b8891c60a6a7fbc916f40da14bc"
+  },
+  "test_source": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/support/test_candidate_selection.py",
+    "bytes": 6061,
+    "sha256": "d1248c48a90af93202cd356547d68cebf66fd38d7a26dc36172404b7692c0ecf"
+  },
+  "scope": "Synthetic selection/percentile/rarity/tier/locator guards only; no model/CAD"
+}

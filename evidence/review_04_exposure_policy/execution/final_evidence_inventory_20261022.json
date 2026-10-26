@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-10-22T05:17:12.036099+00:00",
+  "status": "CLOSED_EVIDENCE_VERIFIED",
+  "files": {
+    "04/README.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/README.md",
+      "bytes": 18261,
+      "sha256": "0f8570407bc49b4bffa72554f810eed8626e0b22a8dd4939a1e37c7911ebd10a"
+    },
+    "04/11_stage4b_validation_checklist.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/11_stage4b_validation_checklist.md",
+      "bytes": 10064,
+      "sha256": "ce2ed8c4d665afff35631628ab3a5c85cbdcaf8caaa5f465130487b64dd1b3b4"
+    },
+    "04/20_gate_results_and_geometry_release.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/20_gate_results_and_geometry_release.md",
+      "bytes": 9932,
+      "sha256": "c95679b1dcb423421dab0759ba3b4002feb03e858c073f9a30550fe7910ae6e2"
+    },
+    "04/21_final_results_and_closed_summary.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/21_final_results_and_closed_summary.md",
+      "bytes": 12693,
+      "sha256": "299f755a251307784b826b85137b86bd216385a0176cd57a1cc2ebb23a5a6b2a"
+    },
+    "training_experiments_roadmap.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/training_experiments_roadmap.md",
+      "bytes": 9845,
+      "sha256": "8e2449991d5fc0ae2363af0554e8408cab06d4eb24667f0d73e5951bec556f4d"
+    },
+    "04/execution/seal_final_evidence.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/seal_final_evidence.py",
+      "bytes": 4277,
+      "sha256": "4c749e64e4ced4607be4b2a87a8df19fb3a030dd248cff2c91ce0e77780f6730"
+    },
+    "04/execution/register_exposure_final_results.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_exposure_final_results.py",
+      "bytes": 32048,
+      "sha256": "4c288072db51e5534750a890f768b66f338758da81d47e4284ba482a05ec5a3a"
+    },
+    "04/execution/test_exposure_final_audit.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_exposure_final_audit.py",
+      "bytes": 7791,
+      "sha256": "9a39545d477f055a1b2afeefe5deed283ba32ce1154fc0969a4bd53d618f38b7"
+    },
+    "04/execution/verify_exposure_final_summary.py": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/verify_exposure_final_summary.py",
+      "bytes": 6883,
+      "sha256": "7faed8a305910888e5ee4c9423f62a4ae5ba672916650701c7a018c18cee56da"
+    },
+    "04/execution/exposure_final_independent_verification_20261022.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_final_independent_verification_20261022.json",
+      "bytes": 14301,
+      "sha256": "35782079329e789a7d2c62aa65946d162fb4036b59e57dbc26e87733f17e0674"
+    },
+    "04/execution/exposure_final_audit_tests_20261022.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_final_audit_tests_20261022.json",
+      "bytes": 875,
+      "sha256": "9afcadd33dd69b7bc463d8cfaf1b2436e1406e150142b37a0cb9449519cb52f7"
+    },
+    "04/result/01_complete_evaluation_results.md": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/01_complete_evaluation_results.md",
+      "bytes": 167051,
+      "sha256": "9962fc39a960f79413c3fb7192871b991df10d398d1ebf553821ad1bada6348b"
+    },
+    "04/result/cag_exposure_policy_eval_summary.json": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/cag_exposure_policy_eval_summary.json",
+      "bytes": 1053331,
+      "sha256": "705554dd5aa6c2042c74f66e067b8a29bda3a8cc0a006d2b0f5c83199c04b613"
+    },
+    "04/result/paired_cases_image.jsonl": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_image.jsonl",
+      "bytes": 6383031,
+      "sha256": "6593e7c67bb932d472f74828e28fd040a20b672c1b92ecf8d543399054a56f27"
+    },
+    "04/result/paired_cases_point.jsonl": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_point.jsonl",
+      "bytes": 6388816,
+      "sha256": "75a7496a3927ab0b591e4174d88791770cb590485616847926d317dc7ab07cd2"
+    },
+    "04/result/paired_cases_step.jsonl": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_step.jsonl",
+      "bytes": 6363208,
+      "sha256": "40a438a07202381e214e13dbc648d2a99cc10c17bcc7f37295df84900a469455"
+    },
+    "04/result/paired_cases_text.jsonl": {
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_text.jsonl",
+      "bytes": 6368974,
+      "sha256": "276fa626dbf8da45e3d045766f049f7efd1c675802357a76d53e428006e9238e"
+    }
+  },
+  "strict_exact_test_tail_checks": 32,
+  "tail_comparison_absolute_tolerance": 0,
+  "tail_comparison_relative_tolerance": 1e-10,
+  "scipy_version": "1.17.0",
+  "record_scope": "Post-result evidence inventory; does not rewrite or replace the original frozen scientific protocol/seal",
+  "training_model_or_CAD_execution": false
+}

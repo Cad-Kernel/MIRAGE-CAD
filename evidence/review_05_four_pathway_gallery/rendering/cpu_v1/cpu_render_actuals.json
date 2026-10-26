@@ -1,0 +1,50 @@
+{
+  "status": "PASS_CPU_ASSETS_CAMERA_PIXEL_AND_ORIGINAL_LOCK_AUDIT",
+  "created_utc": "2026-10-22T17:52:40.901713+00:00",
+  "cases": 24,
+  "main_candidates": 8,
+  "appendix_candidates": 16,
+  "new_prediction_steps": 20,
+  "historical_failures_preserved_not_retried": 4,
+  "meshes": 44,
+  "primary_view_pngs": 88,
+  "supplemental_view_pngs": 12,
+  "case_panels": 24,
+  "contact_sheets": 5,
+  "render_pngs": 100,
+  "blank_renders": 0,
+  "clipped_primary_views": 6,
+  "shared_union_supplement_cases": [
+    {
+      "case_id": "q-flone-text-b2legacy-flluma_0097413",
+      "issue": "prediction extends beyond reference frame",
+      "action": "original primary views retained; additional shared union-frame pair retained"
+    },
+    {
+      "case_id": "q-flone-image-b2legacy-flluma_0093014",
+      "issue": "prediction extends beyond reference frame",
+      "action": "original primary views retained; additional shared union-frame pair retained"
+    },
+    {
+      "case_id": "q-flone-point-b2legacy-flluma_0090825",
+      "issue": "prediction extends beyond reference frame",
+      "action": "original primary views retained; additional shared union-frame pair retained"
+    }
+  ],
+  "original_locked_files_verified_unchanged": 385,
+  "tests": {
+    "camera_and_raster_unit_tests": 5,
+    "paired_camera_checks": "PASS",
+    "pixel_recount": "PASS",
+    "image_hashes": "PASS",
+    "native_export_successes": 20
+  },
+  "historical_metrics": "not recomputed or changed",
+  "model_forward_or_training": false,
+  "registry_status": "candidate; final manuscript selection remains open",
+  "execution_notes": [
+    "Native reference STEP import-to-CustomNode was unavailable; original failed probe retained. Existing CadQuery STEP tessellator used for both reference and prediction.",
+    "Initial tessellation run stopped before a failure-reference mesh write because the case output directory did not yet exist; mkdir fix only, verified prior assets reused, no geometry or camera policy changes.",
+    "20 current native re-exports succeeded. No claim of byte identity to deleted original temporary STEP files."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "counts": {
+    "ADD": 0,
+    "CUT": 0,
+    "gated_out": 4,
+    "conflict_skip": 0,
+    "ambiguous_skip": 0
+  },
+  "touched_samples": [],
+  "entries": [
+    {
+      "sample_id": "flluma_0007058",
+      "feature_id": "cut_001",
+      "old_op": "OP_BOOLEAN_CUT",
+      "new_op": null,
+      "direction": null,
+      "reason": "gated_out",
+      "line_before": "F cut_001 OP_BOOLEAN_CUT SEM boss ROLE functional_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1",
+      "line_after": "F cut_001 OP_BOOLEAN_CUT SEM boss ROLE functional_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1"
+    },
+    {
+      "sample_id": "flluma_0014283",
+      "feature_id": "cut_001",
+      "old_op": "OP_BOOLEAN_CUT",
+      "new_op": null,
+      "direction": null,
+      "reason": "gated_out",
+      "line_before": "F cut_001 OP_BOOLEAN_CUT SEM internal_cut ROLE secondary_feature DEP box_001,box_003 PARAMS operation=cut",
+      "line_after": "F cut_001 OP_BOOLEAN_CUT SEM internal_cut ROLE secondary_feature DEP box_001,box_003 PARAMS operation=cut"
+    },
+    {
+      "sample_id": "flluma_0020378",
+      "feature_id": "cut_001",
+      "old_op": "OP_BOOLEAN_CUT",
+      "new_op": null,
+      "direction": null,
+      "reason": "gated_out",
+      "line_before": "F cut_001 OP_BOOLEAN_CUT SEM threaded_slot ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002",
+      "line_after": "F cut_001 OP_BOOLEAN_CUT SEM threaded_slot ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002"
+    },
+    {
+      "sample_id": "flluma_0034652",
+      "feature_id": "cut_001",
+      "old_op": "OP_BOOLEAN_CUT",
+      "new_op": null,
+      "direction": null,
+      "reason": "gated_out",
+      "line_before": "F cut_001 OP_BOOLEAN_CUT SEM pocket ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1",
+      "line_after": "F cut_001 OP_BOOLEAN_CUT SEM pocket ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002 PARAM direction=-1"
+    }
+  ]
+}

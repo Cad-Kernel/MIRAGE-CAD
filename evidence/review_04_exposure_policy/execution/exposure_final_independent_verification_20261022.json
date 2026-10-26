@@ -1,0 +1,253 @@
+{
+  "created_utc": "2026-10-22T05:12:14.533822+00:00",
+  "status": "PASS",
+  "rows_verified": 20000,
+  "audit_source": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/verify_exposure_final_summary.py",
+    "bytes": 6883,
+    "sha256": "7faed8a305910888e5ee4c9423f62a4ae5ba672916650701c7a018c18cee56da"
+  },
+  "summary": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/result/cag_exposure_policy_eval_summary.json",
+    "bytes": 1053331,
+    "sha256": "705554dd5aa6c2042c74f66e067b8a29bda3a8cc0a006d2b0f5c83199c04b613"
+  },
+  "full_markdown": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/result/01_complete_evaluation_results.md",
+    "bytes": 167051,
+    "sha256": "9962fc39a960f79413c3fb7192871b991df10d398d1ebf553821ad1bada6348b"
+  },
+  "paired_cases": {
+    "image": {
+      "bytes": 6383031,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_image.jsonl",
+      "sha256": "6593e7c67bb932d472f74828e28fd040a20b672c1b92ecf8d543399054a56f27"
+    },
+    "point": {
+      "bytes": 6388816,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_point.jsonl",
+      "sha256": "75a7496a3927ab0b591e4174d88791770cb590485616847926d317dc7ab07cd2"
+    },
+    "step": {
+      "bytes": 6363208,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_step.jsonl",
+      "sha256": "40a438a07202381e214e13dbc648d2a99cc10c17bcc7f37295df84900a469455"
+    },
+    "text": {
+      "bytes": 6368974,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/result/paired_cases_text.jsonl",
+      "sha256": "276fa626dbf8da45e3d045766f049f7efd1c675802357a76d53e428006e9238e"
+    }
+  },
+  "native_result_files": {
+    "__DEV_ROOT__/scratch/geom_r04_image_A/cli.log": {
+      "bytes": 1287072,
+      "path": "__DEV_ROOT__/scratch/geom_r04_image_A/cli.log",
+      "sha256": "e6e6a7bd695706c43e53e344309740cfda6352667ddce3b58597190240d66752"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_image_A/geometry_nbest_rows.jsonl": {
+      "bytes": 1029824,
+      "path": "__DEV_ROOT__/scratch/geom_r04_image_A/geometry_nbest_rows.jsonl",
+      "sha256": "4a1130b21c66491e6f3c6c87948b41320340d6986e2cc38ee064d1175026b8ae"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_image_A/cli.log": {
+      "bytes": 1287052,
+      "path": "__DEV_ROOT__/scratch/exec_r04_image_A/cli.log",
+      "sha256": "4cd807326658cb79b3b1e5dd691a356daa772fd0c749201101a0134c1e8860e7"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_image_A/execution_rows.jsonl": {
+      "bytes": 442643,
+      "path": "__DEV_ROOT__/scratch/exec_r04_image_A/execution_rows.jsonl",
+      "sha256": "4b354fa29af7a3f8609494be61e09d4f83eab85a68c5f34bcabe8ca816a2a27e"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_image_A/execution_summary.json": {
+      "bytes": 451,
+      "path": "__DEV_ROOT__/scratch/exec_r04_image_A/execution_summary.json",
+      "sha256": "eb285ea4910babbad7905508fddd1fd249d35ab0713204cce9c5a2489c7e2dad"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_image_B/cli.log": {
+      "bytes": 1302838,
+      "path": "__DEV_ROOT__/scratch/geom_r04_image_B/cli.log",
+      "sha256": "74bc12ce9104e093f8b64aed71758ae37089445b031b01414b7ecafc2b25690c"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_image_B/geometry_nbest_rows.jsonl": {
+      "bytes": 1021580,
+      "path": "__DEV_ROOT__/scratch/geom_r04_image_B/geometry_nbest_rows.jsonl",
+      "sha256": "60021ac7b0d380215a76ee1d6ee1d83d1745dc2524bb0f2dc2e1966430500f8d"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_image_B/cli.log": {
+      "bytes": 1302818,
+      "path": "__DEV_ROOT__/scratch/exec_r04_image_B/cli.log",
+      "sha256": "63537a3d3159b6c337a14d2218fb98ee43f63fd627e182706fef07641cb00688"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_image_B/execution_rows.jsonl": {
+      "bytes": 434508,
+      "path": "__DEV_ROOT__/scratch/exec_r04_image_B/execution_rows.jsonl",
+      "sha256": "12ee81b1a4304b198b357895b41531d69cb4e36f1a84696e97c9bc3d84211f2a"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_image_B/execution_summary.json": {
+      "bytes": 452,
+      "path": "__DEV_ROOT__/scratch/exec_r04_image_B/execution_summary.json",
+      "sha256": "6e7c6eea4483b17699f0da39161451e5dbdf9dc8c032e884f7bd0028d69da2a1"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_point_A/cli.log": {
+      "bytes": 1260822,
+      "path": "__DEV_ROOT__/scratch/geom_r04_point_A/cli.log",
+      "sha256": "11cbfc40fe046200462f53d47f033dfa5490461ba8cb80fdd08368e9e525a621"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_point_A/geometry_nbest_rows.jsonl": {
+      "bytes": 1031651,
+      "path": "__DEV_ROOT__/scratch/geom_r04_point_A/geometry_nbest_rows.jsonl",
+      "sha256": "10def9224f515325a60a26269d4de60d74fb41d3cb03dcc046dc5ccc048cb052"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_point_A/cli.log": {
+      "bytes": 1260802,
+      "path": "__DEV_ROOT__/scratch/exec_r04_point_A/cli.log",
+      "sha256": "5bac0b1b0f5e0d6009d58bb013032bbf5ebd6d091050b6217523940268b5bc39"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_point_A/execution_rows.jsonl": {
+      "bytes": 447136,
+      "path": "__DEV_ROOT__/scratch/exec_r04_point_A/execution_rows.jsonl",
+      "sha256": "7c1873d58cf9048e4a29300e5399247c8049411b590c7504edbf9176bdfee93f"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_point_A/execution_summary.json": {
+      "bytes": 447,
+      "path": "__DEV_ROOT__/scratch/exec_r04_point_A/execution_summary.json",
+      "sha256": "8f7a27bbf5e4c202ee4c52a8c37b036eba87218757b35308d27cfa88f3f548ba"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_point_B/cli.log": {
+      "bytes": 1224076,
+      "path": "__DEV_ROOT__/scratch/geom_r04_point_B/cli.log",
+      "sha256": "1651daf2c94ab4a8de21a2ee03351aacd2fb58c2abeb98895464f40db7883189"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_point_B/geometry_nbest_rows.jsonl": {
+      "bytes": 1019129,
+      "path": "__DEV_ROOT__/scratch/geom_r04_point_B/geometry_nbest_rows.jsonl",
+      "sha256": "d1b47219d5ef4408b07e07848e10a5dc5dbd2b45b2863278c953a2c1304d14dd"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_point_B/cli.log": {
+      "bytes": 1224056,
+      "path": "__DEV_ROOT__/scratch/exec_r04_point_B/cli.log",
+      "sha256": "7f2631fdcca93b8d4b18b9b995949099a6e8b943eefa291a39a623c20fd12e8b"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_point_B/execution_rows.jsonl": {
+      "bytes": 438519,
+      "path": "__DEV_ROOT__/scratch/exec_r04_point_B/execution_rows.jsonl",
+      "sha256": "394885c4ba4f0703385fd02eb573c0193a4b4752c982430a4782380ca173251c"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_point_B/execution_summary.json": {
+      "bytes": 450,
+      "path": "__DEV_ROOT__/scratch/exec_r04_point_B/execution_summary.json",
+      "sha256": "575b9da5da96a83011d61c0b7381317ee496cb5e006a135c3ec4507bc777b74f"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_step_A/cli.log": {
+      "bytes": 1463698,
+      "path": "__DEV_ROOT__/scratch/geom_r04_step_A/cli.log",
+      "sha256": "92dd209b33a066debc276c734e74990c01b27cb6cfcef790a95768d6cb99ff90"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_step_A/geometry_nbest_rows.jsonl": {
+      "bytes": 1035220,
+      "path": "__DEV_ROOT__/scratch/geom_r04_step_A/geometry_nbest_rows.jsonl",
+      "sha256": "77256a1a66a492e2d09396efb0692e51855593e1a65fc5ed1a8cfaa46888eab0"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_step_A/cli.log": {
+      "bytes": 1463678,
+      "path": "__DEV_ROOT__/scratch/exec_r04_step_A/cli.log",
+      "sha256": "df9b4185da6c36cfb3ff9b268d8bf5a3675fc73f140a80a1893969c3efc61bc7"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_step_A/execution_rows.jsonl": {
+      "bytes": 432964,
+      "path": "__DEV_ROOT__/scratch/exec_r04_step_A/execution_rows.jsonl",
+      "sha256": "3b195ae46b16ccb01f37cbd6c85db0ea19043bb349d6c1b5d0443d9d382932ad"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_step_A/execution_summary.json": {
+      "bytes": 450,
+      "path": "__DEV_ROOT__/scratch/exec_r04_step_A/execution_summary.json",
+      "sha256": "e95091fb581461faec4c158fe918f31d4e624169483de092bf8ccf2155fb8564"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_step_B/cli.log": {
+      "bytes": 1348576,
+      "path": "__DEV_ROOT__/scratch/geom_r04_step_B/cli.log",
+      "sha256": "3699a7e8475ede238c40d2c035242396bc3fa71b91b22355571dfffd6aa6e60d"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_step_B/geometry_nbest_rows.jsonl": {
+      "bytes": 1024513,
+      "path": "__DEV_ROOT__/scratch/geom_r04_step_B/geometry_nbest_rows.jsonl",
+      "sha256": "d8ca8b089b752f1816f5757d6f7631af4e5348c8f6113d521aff5ed603ac4400"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_step_B/cli.log": {
+      "bytes": 1348556,
+      "path": "__DEV_ROOT__/scratch/exec_r04_step_B/cli.log",
+      "sha256": "5c7472f8bf402f42c88e27ce14670d868155060f8a874a7c2476118f52685287"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_step_B/execution_rows.jsonl": {
+      "bytes": 432540,
+      "path": "__DEV_ROOT__/scratch/exec_r04_step_B/execution_rows.jsonl",
+      "sha256": "126e2f176d00459042f4307d6636c85c377afcf09e6eef385aad90eb29ae686c"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_step_B/execution_summary.json": {
+      "bytes": 450,
+      "path": "__DEV_ROOT__/scratch/exec_r04_step_B/execution_summary.json",
+      "sha256": "9cd0d7426f86361fe820a8abcc558903f269ce93cd93a90b490d6f72cbcaffa1"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_text_A/cli.log": {
+      "bytes": 1213196,
+      "path": "__DEV_ROOT__/scratch/geom_r04_text_A/cli.log",
+      "sha256": "742c4699c01e7ed01ec1dd845e324863ad7776ecbdc322f8d33536279793f645"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_text_A/geometry_nbest_rows.jsonl": {
+      "bytes": 1028652,
+      "path": "__DEV_ROOT__/scratch/geom_r04_text_A/geometry_nbest_rows.jsonl",
+      "sha256": "79a1cc9746e489c21d288aee4d19a8416dc470a3b8a05728cffa5fee2e52b530"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_text_A/cli.log": {
+      "bytes": 1213176,
+      "path": "__DEV_ROOT__/scratch/exec_r04_text_A/cli.log",
+      "sha256": "55ff078e9cada6adb2dcbdb131f4374704f98616706a4ce06383c286df38d9f8"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_text_A/execution_rows.jsonl": {
+      "bytes": 447225,
+      "path": "__DEV_ROOT__/scratch/exec_r04_text_A/execution_rows.jsonl",
+      "sha256": "2a5e5169a8eadb00b4b6db3aaf66dddba64f5f7542035cbeef6ea1e7c4437f88"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_text_A/execution_summary.json": {
+      "bytes": 449,
+      "path": "__DEV_ROOT__/scratch/exec_r04_text_A/execution_summary.json",
+      "sha256": "978eaad37cdb367a69e1b508aed7a0e991e11b68e0afbe57108626070bac1bf2"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_text_B/cli.log": {
+      "bytes": 1261786,
+      "path": "__DEV_ROOT__/scratch/geom_r04_text_B/cli.log",
+      "sha256": "f3c745da971bc026478e1e65cfd24e5932d7f003579b6babb9f38adebf5fbbf3"
+    },
+    "__DEV_ROOT__/scratch/geom_r04_text_B/geometry_nbest_rows.jsonl": {
+      "bytes": 1021500,
+      "path": "__DEV_ROOT__/scratch/geom_r04_text_B/geometry_nbest_rows.jsonl",
+      "sha256": "c642b0721af49f7a315e1c8fd0fbe0ca9e2d81a9de5f272cfac00acffbe6e03c"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_text_B/cli.log": {
+      "bytes": 1261766,
+      "path": "__DEV_ROOT__/scratch/exec_r04_text_B/cli.log",
+      "sha256": "bcfd46fd67a700d82ef24c753411f77c7e763f1214bd05c2a2774d9fe57f22de"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_text_B/execution_rows.jsonl": {
+      "bytes": 438576,
+      "path": "__DEV_ROOT__/scratch/exec_r04_text_B/execution_rows.jsonl",
+      "sha256": "f4c0d2d9537142c57396a347cf33d7c967a64d4a92b4f635c6ec761869e12575"
+    },
+    "__DEV_ROOT__/scratch/exec_r04_text_B/execution_summary.json": {
+      "bytes": 449,
+      "path": "__DEV_ROOT__/scratch/exec_r04_text_B/execution_summary.json",
+      "sha256": "d8c33e5d76c1d776ba554bbcec5528edd8c4a60d5e38d9f34e2140fd933c41c1"
+    }
+  },
+  "numpy_version": "2.2.6",
+  "training_or_model_or_CAD_execution": false,
+  "checks": [
+    "Every native row equals archived per-case raw record",
+    "Every coverage count/scoreable decision",
+    "All conditional/unconditional/paired mean/median/sampleSD/min/max/quantiles via independent NumPy",
+    "Every paired ID and win/loss/tie count",
+    "Every sign/McNemar p-value via independent scipy.stats.binomtest"
+  ]
+}

@@ -1,0 +1,6 @@
+PART flluma_0005001 CAT wedge_stock UNITS mm SEED 20265515
+PARAM height 10.64 MIN 4 MAX 28 SEM primitive_height
+PARAM length 10.1 MIN 8 MAX 32 SEM primitive_length
+PARAM width 13.1 MIN 5 MAX 21 SEM primitive_width
+F wedge_0005001 OP_WEDGE SEM primitive_stock ROLE primary_body PARAMS height=@height length=@length width=@width
+END

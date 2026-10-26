@@ -1,0 +1,16 @@
+PART flluma_0096266 CAT pocketed_service_plate UNITS mm SEED 20356780
+PARAM fillet_radius 0.14 MIN 0.05 MAX 2 SEM edge_break_radius
+PARAM height 53 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_x 19.796 MIN 4 MAX 45 EXPR width*0.28 SEM hole_spacing
+PARAM hole_offset_y 13.25 MIN 3 MAX 35 EXPR height*0.25 SEM hole_spacing
+PARAM hole_radius 2.39 MIN 1 MAX 8 SEM hole_radius
+PARAM pocket_depth 3.7 MIN 1 MAX 8 EXPR min(thickness*0.308,thickness-1.2) SEM pocket_depth
+PARAM pocket_length 34.71 MIN 8 MAX 60 EXPR width*0.491 SEM pocket_length
+PARAM pocket_width 18.18 MIN 4 MAX 40 EXPR height*0.343 SEM pocket_width
+PARAM thickness 12 MIN 3 MAX 25 SEM thickness
+PARAM width 70.7 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F hole_001 OP_HOLE_PATTERN SEM service_hole ROLE functional_feature DEP plate_001 TARGET plate_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP hole_001 TARGET hole_001.top_face PARAMS depth=@pocket_depth length=@pocket_length width=@pocket_width
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP pocket_001 TARGET pocket_001.pocket_edges PARAMS radius=@fillet_radius
+END

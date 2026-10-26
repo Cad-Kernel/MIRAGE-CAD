@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>q-flone-text-b2legacy-flluma_0096516</title><style>body{font:16px Arial,sans-serif;color:#202a32;margin:0 auto;padding:28px;max-width:1400px;background:#fff}h1{font-size:26px}h2{font-size:21px}h3{font-size:17px}a{color:#086b6a}nav{display:flex;gap:16px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #ccc}p{line-height:1.5}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:left;border-bottom:1px solid #ddd;overflow-wrap:anywhere}th{background:#eef1f3}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;background:#f7f8fa;padding:16px;border:1px solid #d9dfe2;font-size:13px}img.panel{width:100%;height:auto}img.input{max-width:640px;width:100%;height:auto}.warn{border-left:4px solid #a66b00;padding:8px 16px;background:#fff7e7}.views{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.views img{width:100%}details{margin:20px 0}summary{cursor:pointer;font-weight:bold}code{overflow-wrap:anywhere}@media(max-width:700px){body{padding:12px}.views{grid-template-columns:1fr}table{font-size:12px}td,th{padding:6px}}</style><body><nav><a href="../../index.html">All cases</a></nav><h1>TEXT flluma_0096516</h1><p>near_median; L2; historical deployed repaired B2. Candidate status is unchanged.</p><p>Nearest complete-scoreable-cohort cd percentile0.5, then f1 percentile0.5; already registered IDs excluded</p><p class="warn">These are new CPU exports of locked historical code, not newly generated model predictions or recovered original temporary STEP files. Executable does not mean semantically accurate. Historical seed/checkpoint-byte binding remains unresolved.</p><img class="panel" src="panel.png" alt="Matched-camera two-view reference and prediction comparison"><h2>Inputs and Original Evidence</h2><nav><a href="../../../../raw_archive_v1/objects/d7d716f9cc7da51c23105c8168396479e0a7456f09644b8be06a7ade350c0911.step">Reference STEP</a><a href="../../../../raw_archive_v1/objects/3ee78ffe4cc078904c75621cc4d9fb4f0018d2e7a8a1071cf82f025edc0cf5a5.npz">Reference point NPZ</a><a href="../../../../raw_archive_v1/objects/0f0c44f48bd5a39383050fa192731ac57a185a8cfef5ddfc57be82fc6e121388.json">Reference feature tree</a><a href="../../../../raw_archive_v1/objects/415b3326fb8330d0ac5caff16213c38fd05af9e1c4bdd1ab89f46df023da7a44.json">STEP descriptor</a><a href="prediction.step">New prediction STEP</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/plans/raw.txt">Raw plan</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/plans/canonicalized.txt">P1a plan</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/code/raw_prediction.py">Raw code</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/code/prediction.py">Executed repaired code</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/logs/gate_row.json">Historical gate row</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/logs/geometry_row.json">Historical geometry row</a></nav><details open><summary>Exact Text Input</summary><pre>A built from 7 ordered CAD features, approximately 91.1 by 46 by 15.73 mm.
+A face recursive mount with 4 mounting holes and rounded edges, approximately 91.1 by 46 by 15.73 mm.</pre></details><details open><summary>Generated Plan (P1a canonicalized)</summary><pre>PART flluma_0005100 CAT face_recursive_mount UNITS mm SEED 20265614
+PARAM boss_height 10.78 MIN 3 MAX 24 EXPR thickness*1.07 SEM boss_height
+PARAM boss_radius 10.11 MIN 2 MAX 14 EXPR hole_radius*3.1 SEM boss_radius
+PARAM fillet_radius 0.72 MIN 0.1 MAX 2.5 SEM fillet_radius
+PARAM height 46 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_x 27.11 MIN 4 MAX 45 EXPR width*0.308 SEM hole_spacing
+PARAM hole_offset_y 12.48 MIN 3 MAX 35 EXPR height*0.282 SEM hole_spacing
+PARAM hole_radius 3.21 MIN 1 MAX 8 SEM hole_radius
+PARAM thickness 8 MIN 3 MAX 25 SEM thickness
+PARAM width 91.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,7.69]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP plate_001,translate_001 TARGET plate_001,translate_001
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS radius=@fillet_radius
+END</pre></details><details open><summary>Code Excerpt (literal first 40 lines, not a semantic summary)</summary><pre># Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add(&#x27;boss_height&#x27;, 10.78, min=3.0, max=24.0, expression=&#x27;thickness * 1.07&#x27;, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_radius&#x27;, 10.11, min=2.0, max=14.0, expression=&#x27;hole_radius * 3.1&#x27;, semantic_type=&#x27;boss_radius&#x27;)
+params.add(&#x27;fillet_radius&#x27;, 0.72, min=0.1, max=2.5, semantic_type=&#x27;fillet_radius&#x27;)
+params.add(&#x27;height&#x27;, 46.0, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_offset_x&#x27;, 27.11, min=4.0, max=45.0, expression=&#x27;width * 0.308&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_offset_y&#x27;, 12.48, min=3.0, max=35.0, expression=&#x27;height * 0.282&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_radius&#x27;, 3.21, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;thickness&#x27;, 8, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 91.1, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0005100&#x27;, category=&#x27;face_recursive_mount&#x27;, parameters=params, seed=20265614, sample_id=&#x27;flluma_0005100&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_plate&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;round_center_boss_seed&#x27;, radius=params[&#x27;boss_radius&#x27;], height=params[&#x27;boss_height&#x27;], semantic_type=&#x27;boss&#x27;)
+moved = part.translate(name=&#x27;place_center_boss&#x27;, target=cylinder, offset=[0.0, 0.0, 7.69], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_center_boss&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+holes = part.hole_pattern(name=&#x27;four_bolt_holes&#x27;, target=join.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-27.11, -12.48], [27.11, -12.48], [-27.11, 12.48], [27.11, 12.48]], semantic_type=&#x27;mounting_hole&#x27;)
+fillet = part.fillet(name=&#x27;mount_edge_break&#x27;, target=holes.top_outer_edges(), radius=params[&#x27;fillet_radius&#x27;], semantic_type=&#x27;edge_break&#x27;)
+
+__all__ = [&#x27;part&#x27;]
+</pre></details><h2>Provenance</h2><nav><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/case.json">Locked case record</a><a href="../../../../cases/q-flone-text-b2legacy-flluma_0096516/provenance.json">Original source hashes</a><a href="render_manifest.json">New camera/pixel/hash manifest</a></nav></body></html>

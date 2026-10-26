@@ -1,0 +1,47 @@
+<!doctype html><meta charset="utf-8"><title>P03 parameter evidence</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:24px auto;color:#172536}img{max-width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f9;padding:16px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}</style>
+<a href="../../index.html">All cases</a><h1>P03 — flluma_0090198</h1>
+<p>unreferenced_no_change; clamp_length: 25.1 → 31.375. Author semantic confirmation PENDING.</p>
+<img src="panel.png"><p>Historical record: rebuilt_no_change. These are current CPU re-exports, not recovered historical STEP bytes.</p>
+<p><a href="case.json">Original case metadata and literal examples</a> · <a href="change.diff">Exact code difference</a> · <a href="render_record.json">Camera and geometry diagnostics</a></p>
+<div class="cols"><section><h2>Before</h2><a href="before/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;clamp_jaw_height&#x27;, 18.58, min=5.0, max=28.0, expression=&#x27;thickness * 1.27&#x27;, semantic_type=&#x27;clamp_jaw_height&#x27;)
+params.add(&#x27;clamp_jaw_width&#x27;, 15.12, min=6.0, max=28.0, expression=&#x27;width * 0.227&#x27;, semantic_type=&#x27;clamp_jaw_width&#x27;)
+params.add(&#x27;clamp_length&#x27;, 25.1, min=8.0, max=40.0, expression=&#x27;width * 0.38&#x27;, semantic_type=&#x27;overall_length&#x27;)
+params.add(&#x27;clamp_thickness&#x27;, 12.6, min=3.0, max=25.0, expression=&#x27;thickness * 1.05&#x27;, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;height&#x27;, 43.2, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_radius&#x27;, 2.14, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_width&#x27;, 15.1, min=8.0, max=40.0, expression=&#x27;width * 0.227&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 10, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 66.6, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0005100&#x27;, category=&#x27;pipe_clamp&#x27;, parameters=params, seed=20265614, sample_id=&#x27;flluma_0005100&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;clamp_base&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+pocket = part.box(name=&#x27;pipe_clearance_channel_seed&#x27;, length=params[&#x27;clamp_jaw_width&#x27;], width=params[&#x27;pocket_width&#x27;], height=params[&#x27;clamp_jaw_height&#x27;], semantic_type=&#x27;pocket&#x27;)
+moved = part.translate(name=&#x27;place_pipe_clearance_channel&#x27;, target=pocket, offset=[-30.74, 0.0, 16.69], semantic_type=&#x27;placement_offset&#x27;)
+join = part.boolean_join(name=&#x27;join_clamp_jaw&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_clamp_jaw&#x27;)
+pocket_2 = part.box(name=&#x27;pipe_support_clearance_channel_seed&#x27;, length=22.94, width=11.04, height=params[&#x27;clamp_thickness&#x27;], semantic_type=&#x27;pocket&#x27;)
+moved_2 = part.translate(name=&#x27;place_second_clamp_jaw_channel&#x27;, target=pocket_2, offset=[19.344, 0.0, 20.345], semantic_type=&#x27;placement_offset&#x27;)
+pocket_3 = part.boolean_cut(name=&#x27;cut_clamp_jaw_channel&#x27;, target=join, tool=moved_2, semantic_type=&#x27;pocket&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section><section><h2>After</h2><a href="after/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;clamp_jaw_height&#x27;, 18.58, min=5.0, max=28.0, expression=&#x27;thickness * 1.27&#x27;, semantic_type=&#x27;clamp_jaw_height&#x27;)
+params.add(&#x27;clamp_jaw_width&#x27;, 15.12, min=6.0, max=28.0, expression=&#x27;width * 0.227&#x27;, semantic_type=&#x27;clamp_jaw_width&#x27;)
+params.add(&#x27;clamp_length&#x27;, 31.375, min=8.0, max=40.0, expression=&#x27;width * 0.38&#x27;, semantic_type=&#x27;overall_length&#x27;)
+params.add(&#x27;clamp_thickness&#x27;, 12.6, min=3.0, max=25.0, expression=&#x27;thickness * 1.05&#x27;, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;height&#x27;, 43.2, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_radius&#x27;, 2.14, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_width&#x27;, 15.1, min=8.0, max=40.0, expression=&#x27;width * 0.227&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 10, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 66.6, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0005100&#x27;, category=&#x27;pipe_clamp&#x27;, parameters=params, seed=20265614, sample_id=&#x27;flluma_0005100&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;clamp_base&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+pocket = part.box(name=&#x27;pipe_clearance_channel_seed&#x27;, length=params[&#x27;clamp_jaw_width&#x27;], width=params[&#x27;pocket_width&#x27;], height=params[&#x27;clamp_jaw_height&#x27;], semantic_type=&#x27;pocket&#x27;)
+moved = part.translate(name=&#x27;place_pipe_clearance_channel&#x27;, target=pocket, offset=[-30.74, 0.0, 16.69], semantic_type=&#x27;placement_offset&#x27;)
+join = part.boolean_join(name=&#x27;join_clamp_jaw&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_clamp_jaw&#x27;)
+pocket_2 = part.box(name=&#x27;pipe_support_clearance_channel_seed&#x27;, length=22.94, width=11.04, height=params[&#x27;clamp_thickness&#x27;], semantic_type=&#x27;pocket&#x27;)
+moved_2 = part.translate(name=&#x27;place_second_clamp_jaw_channel&#x27;, target=pocket_2, offset=[19.344, 0.0, 20.345], semantic_type=&#x27;placement_offset&#x27;)
+pocket_3 = part.boolean_cut(name=&#x27;cut_clamp_jaw_channel&#x27;, target=join, tool=moved_2, semantic_type=&#x27;pocket&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section></div>

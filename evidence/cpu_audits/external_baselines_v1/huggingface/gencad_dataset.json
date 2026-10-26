@@ -1,0 +1,63 @@
+{
+  "repo": "yu-nomi/GenCAD_3D",
+  "kind": "datasets",
+  "status": "PUBLIC_METADATA_CAPTURED",
+  "revision": "7b00c869543f32a11a1198981af28579b5b1f449",
+  "private": false,
+  "gated": false,
+  "card_metadata": {
+    "license": "mit"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+      "size": 2461
+    },
+    {
+      "rfilename": "GenCAD3D.zip",
+      "blobId": "e293d61a5556ee7499a9ce4a6f0cd91a5611164e",
+      "size": 36576843068,
+      "lfs": {
+        "sha256": "bd7f0f2c02d6a04931e594bfd10718f825e633a41b37ad1959673a0ffe09b451",
+        "size": 36576843068,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "GenCAD3D_Scans.zip",
+      "blobId": "7bfc67fc336580237af733fe24c9ad764482fd98",
+      "size": 373335537,
+      "lfs": {
+        "sha256": "b45d429fa757b2515eb26451cf3e5c52ba5e29b8e874426d09001e70103b390a",
+        "size": 373335537,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "GenCAD3D_SynthBal.zip",
+      "blobId": "bab98e4ab226f7fc90ebf75998d0aa9ae52d0b60",
+      "size": 34223595529,
+      "lfs": {
+        "sha256": "23fcb9204e2b04b596a52357aa370f2287b29a4879bda857dbc29e89c9b315f4",
+        "size": 34223595529,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "GenCAD3D_SynthBal_1M.zip",
+      "blobId": "7f27fb4d809b3f9244fae472b328cc8df0c8c9dd",
+      "size": 697058614,
+      "lfs": {
+        "sha256": "ef3f25eb566cb9eb18052cae1a8d3f69dd675e556a60a1e9e252795d9e9ffccc",
+        "size": 697058614,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "da13daff077018b952a4280bfcc323da5238e434",
+      "size": 837
+    }
+  ]
+}

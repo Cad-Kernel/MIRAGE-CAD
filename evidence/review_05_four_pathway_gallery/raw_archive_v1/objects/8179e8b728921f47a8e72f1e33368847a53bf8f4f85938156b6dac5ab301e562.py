@@ -1,0 +1,22 @@
+params = Parameters()
+params.add('flange_length', 36.54, min=16.0, max=48.0, expression='lower_width * 1.45', semantic_type='primitive_length')
+params.add('flange_thickness', 4.0, min=1.5, max=7.0, semantic_type='thickness')
+params.add('flange_width', 19.07, min=12.0, max=36.0, expression='lower_height * 1.55', semantic_type='primitive_width')
+params.add('hole_offset_x', 15.35, min=4.0, max=24.0, expression='flange_length * 0.42', semantic_type='hole_spacing')
+params.add('hole_offset_y', 7.25, min=3.0, max=18.0, expression='flange_width * 0.38', semantic_type='hole_spacing')
+params.add('hole_radius', 1.31, min=0.5, max=4.0, semantic_type='hole_radius')
+params.add('lower_height', 12.3, min=8.0, max=30.0, semantic_type='primitive_height')
+params.add('lower_width', 25.2, min=10.0, max=40.0, semantic_type='primitive_width')
+params.add('upper_radius', 8.32, min=3.0, max=14.0, semantic_type='loft_upper_radius')
+
+part = Part('flluma_0090051', category='lofted_transition_bracket', parameters=params, seed=20350565, sample_id='flluma_0090051', units='mm')
+sketch = part.sketch_rectangle(name='loft_lower_rect_profile', width=params['lower_width'], height=params['lower_height'], semantic_type='loft_profile')
+sketch_2 = part.sketch_circle(name='loft_upper_round_profile', radius=params['upper_radius'], segments=48, semantic_type='loft_profile')
+moved = part.translate(name='place_upper_loft_profile', target=sketch_2, offset=[0.0, 0.0, 21.2], semantic_type='placement')
+loft = part.loft(name='square_to_round_transition', profiles=[sketch, moved], semantic_type='lofted_solid')
+box = part.box(name='transition_lower_flange_seed', length=params['flange_length'], width=params['flange_width'], height=params['flange_thickness'], semantic_type='flange')
+moved_2 = part.translate(name='place_transition_lower_flange', target=box, offset=[0.0, 0.0, -1.8], semantic_type='placement')
+join = part.boolean_join(name='join_transition_lower_flange', target=loft, tool=moved_2, semantic_type='flange')
+holes = part.hole_pattern(name='transition_flange_bolt_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[-15.35, -7.25], [15.35, -7.25], [-15.35, 7.25], [15.35, 7.25]], semantic_type='bolt_hole_pattern')
+
+__all__ = ['part']

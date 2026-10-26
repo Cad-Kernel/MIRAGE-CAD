@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-04T11:21:37.841385+00:00",
+  "distance": "zscore_l2",
+  "exact_operation_sequence_matches": 0,
+  "exact_signature_matches": 0,
+  "hashes": {
+    "manifest_csv_sha256": "fa03e2567f73b59c2cac24418b404cd4d2ba2cd55854b33dceb3071af817584a",
+    "output_jsonl_sha256": "ce74acf1d51392853d00a78db5a8bbbe11a6803c589607f009d762642dcbe667",
+    "script_sha256": "bc4e12162c837fa5bccb8b446fb217b298337fc0ff6561cdc03882542553cc93",
+    "split_actuals_sha256": "b127b16206d15c0ca8bbfde466a985ad104cfdc9d1b94a08a75d7c01bbba6c0f",
+    "test_jsonl_sha256": "3c42ee760354323fa3ab503bb5af576b7a56d82e2e2d26367ffacc71935fbd55",
+    "train_jsonl_sha256": "5952447edcacf3de5bc26b8647e59566544526a29dacdda7eb60beab14a09a1b"
+  },
+  "manifest_csv": "data/construction_disjoint_step_v1/construction_split_manifest.csv",
+  "nn_distance": {
+    "max": 34.63768005371094,
+    "mean": 11.596178603887559,
+    "median": 11.069742202758789,
+    "min": 1.290563702583313,
+    "n": 500,
+    "q25": 2.6223772764205933,
+    "q75": 17.927095413208008,
+    "sd": 8.019266639896875
+  },
+  "operation_sequence_lcs": {
+    "max": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 500,
+    "q25": 0.0,
+    "q75": 0.0,
+    "sd": 0.0
+  },
+  "operation_set_f1": {
+    "max": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 500,
+    "q25": 0.0,
+    "q75": 0.0,
+    "sd": 0.0
+  },
+  "purpose": "construction-disjoint STEP train-only descriptor NN baseline",
+  "rows": 500,
+  "split_actuals": "data/construction_disjoint_step_v1/cag_construction_split_actuals.json",
+  "test_jsonl": "data/construction_disjoint_step_v1/test.jsonl",
+  "test_rows": 500,
+  "train_jsonl": "data/construction_disjoint_step_v1/train.jsonl",
+  "train_rows": 25000
+}

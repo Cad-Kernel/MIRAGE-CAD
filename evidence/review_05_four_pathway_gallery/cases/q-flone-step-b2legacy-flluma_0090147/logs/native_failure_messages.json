@@ -1,0 +1,7 @@
+{
+  "sample_id": "flluma_0090147",
+  "modality": "step",
+  "gate_error": "exec error: extrude_on_face join/add requires height",
+  "geometry_error": "exec error: extrude_on_face join/add requires height",
+  "note": "Original native error summaries, not an invented full traceback or visual feature diagnosis"
+}

@@ -1,0 +1,12 @@
+{
+  "source": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1",
+  "dataset": "Fusion 360 Gallery reconstruction r1.0.1",
+  "frame": "published test split of train_test.json (1,725 designs); per-extrude intermediates excluded",
+  "n": 400,
+  "n_failed": 0,
+  "point_count_requested": 8192,
+  "scale_applied": 1.0,
+  "seed": 20260810,
+  "sampler": "flluma occt_file_to_pointcloud, surface_uv -- the same exporter, sampler and options used for generated parts, so both sides of every geometry comparison come out of one code path",
+  "equivalence_check": "probe_step_pointcloud.py: a corpus model.step sampled this way matches the released point_cloud.npz sampled from the program instead -- identical bbox, median nearest neighbour 0.78/0.80 against an 89.55 diagonal"
+}

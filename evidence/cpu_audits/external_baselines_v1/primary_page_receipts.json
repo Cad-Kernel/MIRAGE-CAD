@@ -1,0 +1,171 @@
+[
+  {
+    "url": "https://arxiv.org/html/2603.04337v1",
+    "label": "paper_pointer_v1",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.779206+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2603.04337v1",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "395629",
+      "ETag": "\"CMXFzdyUupYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 21:01:51 GMT"
+    },
+    "bytes": 395629,
+    "sha256": "26a05fa3bf30db3d41fb418825bab0cfb22333628485cff3c03be76c724ddf64",
+    "saved_path": "responses/paper_pointer_v1.body"
+  },
+  {
+    "url": "https://arxiv.org/html/2409.17106v1",
+    "label": "paper_text2cad_v1",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.779206+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2409.17106v1",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "238018",
+      "ETag": "\"CKqohtCPupYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 20:39:02 GMT"
+    },
+    "bytes": 238018,
+    "sha256": "f19dc5858116e11a2f7a52adcee8e96d9a0646cf06fdf0649b3270c289eada46",
+    "saved_path": "responses/paper_text2cad_v1.body"
+  },
+  {
+    "url": "https://arxiv.org/html/2410.03417v1",
+    "label": "paper_img2cad_svg_v1",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.882188+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2410.03417v1",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "179350",
+      "ETag": "\"CJaIp6GUupYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 20:59:47 GMT"
+    },
+    "bytes": 179350,
+    "sha256": "37a5b333204dd308b12e0778bcc88d59f7c42993db998a5202fc422a1d44ce15",
+    "saved_path": "responses/paper_img2cad_svg_v1.body"
+  },
+  {
+    "url": "https://arxiv.org/html/2504.04753v2",
+    "label": "paper_cadcrafter_v2",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.780207+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2504.04753v2",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "258456",
+      "ETag": "\"CPTZ2aD2uZYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 18:45:32 GMT"
+    },
+    "bytes": 258456,
+    "sha256": "b715a3df956d38071caf1ab795dc98de579589700f46e9965424ed6e001de8cc",
+    "saved_path": "responses/paper_cadcrafter_v2.body"
+  },
+  {
+    "url": "https://arxiv.org/html/2509.15246v1",
+    "label": "paper_gencad_v1",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.778207+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2509.15246v1",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "388953",
+      "ETag": "\"CMqdwrn9uZYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 19:17:43 GMT"
+    },
+    "bytes": 388953,
+    "sha256": "812014bd634866914037a3ec0bbfc675ef5baf361878838f8f1391b809c0f607",
+    "saved_path": "responses/paper_gencad_v1.body"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.10873v1",
+    "label": "paper_cadbench_v1",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.883197+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2605.10873v1",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "1257333",
+      "ETag": "\"CP39676CupYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 19:40:17 GMT"
+    },
+    "bytes": 1257333,
+    "sha256": "e35c2f44804f0e427da85be1400599a8322c66831756159df9893be64fb134e4",
+    "saved_path": "responses/paper_cadbench_v1.body"
+  },
+  {
+    "url": "https://arxiv.org/html/2412.14042v2",
+    "label": "paper_cadrecode_v2",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.943313+00:00",
+    "status": 200,
+    "final_url_without_query": "https://arxiv.org/html/2412.14042v2",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "638800",
+      "ETag": "\"CO7KqcyCupYDEAE=\"",
+      "Last-Modified": "Mon, 24 Aug 2026 19:40:45 GMT"
+    },
+    "bytes": 638800,
+    "sha256": "98a09d2741eb4bd4c440346d833e8428d15b56a2e3c0c5af08519069c392b2b7",
+    "saved_path": "responses/paper_cadrecode_v2.body"
+  },
+  {
+    "url": "https://snitro.github.io/Pointer-CAD-Page/",
+    "label": "page_pointer_project",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.959909+00:00",
+    "status": 200,
+    "final_url_without_query": "https://snitro.github.io/Pointer-CAD-Page/",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "43346",
+      "ETag": "\"6a4dfd88-a952\"",
+      "Last-Modified": "Wed, 08 Jul 2026 07:34:32 GMT"
+    },
+    "bytes": 43346,
+    "sha256": "6be5f775b2cc6ba505a39a6862827ecfd30b9dd1b4014f63f944ac35b4ae6e62",
+    "saved_path": "responses/page_pointer_project.body"
+  },
+  {
+    "url": "https://huggingface.co/datasets/SadilKhan/Text2CAD",
+    "label": "page_text2cad_gate",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.995171+00:00",
+    "status": 200,
+    "final_url_without_query": "https://huggingface.co/datasets/SadilKhan/Text2CAD",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "125767",
+      "ETag": "W/\"1eb47-XSl1hmI/G1jcclzWoBTji3es+4s\""
+    },
+    "bytes": 125767,
+    "sha256": "04e6c81bc33f2fb97ff403b440da56c7552002f809b93d2157c992ddc4bff0bc",
+    "saved_path": "responses/page_text2cad_gate.body"
+  },
+  {
+    "url": "https://chunan-yu.github.io/",
+    "label": "page_img2cad_svg_coauthor",
+    "method": "GET",
+    "requested_utc": "2026-10-25T13:32:50.963943+00:00",
+    "status": 200,
+    "final_url_without_query": "https://chunan-yu.github.io/",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "44659",
+      "ETag": "\"69e36ff4-ae73\"",
+      "Last-Modified": "Sat, 18 Apr 2026 11:50:12 GMT"
+    },
+    "bytes": 44659,
+    "sha256": "c3c29175549397466a005cdc12d68428d428ef9d6b36db7b575c6ced082e160f",
+    "saved_path": "responses/page_img2cad_svg_coauthor.body"
+  }
+]

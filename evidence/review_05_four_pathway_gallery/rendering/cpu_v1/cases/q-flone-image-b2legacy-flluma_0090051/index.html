@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>q-flone-image-b2legacy-flluma_0090051</title><style>body{font:16px Arial,sans-serif;color:#202a32;margin:0 auto;padding:28px;max-width:1400px;background:#fff}h1{font-size:26px}h2{font-size:21px}h3{font-size:17px}a{color:#086b6a}nav{display:flex;gap:16px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #ccc}p{line-height:1.5}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:left;border-bottom:1px solid #ddd;overflow-wrap:anywhere}th{background:#eef1f3}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;background:#f7f8fa;padding:16px;border:1px solid #d9dfe2;font-size:13px}img.panel{width:100%;height:auto}img.input{max-width:640px;width:100%;height:auto}.warn{border-left:4px solid #a66b00;padding:8px 16px;background:#fff7e7}.views{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.views img{width:100%}details{margin:20px 0}summary{cursor:pointer;font-weight:bold}code{overflow-wrap:anywhere}@media(max-width:700px){body{padding:12px}.views{grid-template-columns:1fr}table{font-size:12px}td,th{padding:6px}}</style><body><nav><a href="../../index.html">All cases</a></nav><h1>IMAGE flluma_0090051</h1><p>hard_failure; L4; historical deployed repaired B2. Candidate status is unchanged.</p><p>Dominant first-failure stage and exact native error; median reference feature count; sample-ID tie break</p><p class="warn">These are new CPU exports of locked historical code, not newly generated model predictions or recovered original temporary STEP files. Executable does not mean semantically accurate. Historical seed/checkpoint-byte binding remains unresolved.</p><img class="panel" src="panel.png" alt="Matched-camera two-view reference and prediction comparison"><h2>Inputs and Original Evidence</h2><nav><a href="../../../../raw_archive_v1/objects/65f3920a0b30e3a195f5c09a7a79492289191196af27b768b82046dcd89b975f.step">Reference STEP</a><a href="../../../../raw_archive_v1/objects/5374d35e7ef84e94d53c5768aa45f1149410fb82d9179fffeb645523962a7501.npz">Reference point NPZ</a><a href="../../../../raw_archive_v1/objects/237f38477c156fc94d1adbdba7bb814a1ab0d4c0fb9bb30b7e3f8b3fa86511fa.json">Reference feature tree</a><a href="../../../../raw_archive_v1/objects/15cf39caf4a59da41364ad5d008d503dc2e3a22848f6d48e90b087a4fe53df5d.json">STEP descriptor</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/plans/raw.txt">Raw plan</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/plans/canonicalized.txt">P1a plan</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/code/raw_prediction.py">Raw code</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/code/prediction.py">Executed repaired code</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/logs/gate_row.json">Historical gate row</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/logs/geometry_row.json">Historical geometry row</a></nav><h3>Exact Image Input</h3><img class="input" src="../../../../raw_archive_v1/objects/091e37c8f1011d16445dd674a846ad688a0c971edad7f3ab6dc4f2c1c0c3289e.png" alt="Original encoder image input"><details><summary>Dataset Text (not this modality input)</summary><pre>A built from 8 ordered CAD features, approximately 36.54 by 19.07 by 25 mm.
+Build a lofted transition bracket with 4 bolt holes and dimensions of 36.54 by 19.07 by 25 mm.</pre></details><details open><summary>Generated Plan (P1a canonicalized)</summary><pre>PART flluma_0005000 CAT lofted_transition_profile_bracket UNITS mm SEED 20265514
+PARAM flange_height 13.1 MIN 4 MAX 24 EXPR height*0.77 SEM primitive_height
+PARAM flange_radius 7.04 MIN 3 MAX 18 SEM loft_radius
+PARAM flange_width 35.1 MIN 8 MAX 50 EXPR width*0.101 SEM primitive_width
+PARAM hole_radius 1.3 MIN 0.5 MAX 4 SEM hole_radius
+PARAM pocket_length 18.14 MIN 8 MAX 48 EXPR width*0.516 SEM pocket_length
+PARAM pocket_width 10.14 MIN 5 MAX 28 EXPR height*0.36 SEM pocket_width
+PARAM thickness 6 MIN 3 MAX 25 SEM thickness
+PARAM transition_height 4.7 MIN 3 MAX 18 EXPR thickness*0.78 SEM loft_height
+F sketch_001 OP_SKETCH SEM loft_profile ROLE profile_definition PARAMS points=[[-15.74,-6.25],[-3.73,-12.93],[13.97,-18.65],[17.91,1.44],[19.66,9.33],[6.45,15.56],[-10.6,11.31],[-18.45,3.94]] profile_type=polygon
+F sketch_002 OP_SKETCH SEM pocket ROLE profile_definition PARAMS points=[[5.73,2.9],[-4.73,8.79],[-1.9,13.92],[8.17,10.01],[11.5,3.22]] profile_type=polygon
+F boolean_cut_001 OP_FACE_EXTRUDE_CUT SEM pocket ROLE functional_feature DEP sketch_002 TARGET sketch_002
+F box_001 OP_BOX SEM flange ROLE secondary_feature PARAMS height=@flange_height length=@flange_width width=@flange_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,5.65,2.95]
+F loft_001 OP_LOFT SEM lofted_transition ROLE secondary_feature DEP sketch_001,translate_001 TARGET sketch_001,translate_001
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@thickness radius=@thickness
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,4.1,2.75]
+F boolean_join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP loft_001,translate_002 TARGET loft_001,translate_002
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP boolean_join_001 TARGET boolean_join_001.top_face PARAMS count=4 depth=THROUGH positions=[[5.73,2.9],[8.17,4.74],[5.73,6.28],[-8.17,4.74],[-5.73,2.9]] radius=@hole_radius
+END</pre></details><details open><summary>Code Excerpt (literal first 40 lines, not a semantic summary)</summary><pre># Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add(&#x27;flange_height&#x27;, 13.1, min=4.0, max=24.0, expression=&#x27;height * 0.77&#x27;, semantic_type=&#x27;primitive_height&#x27;)
+params.add(&#x27;flange_radius&#x27;, 7.04, min=3.0, max=18.0, semantic_type=&#x27;loft_radius&#x27;)
+params.add(&#x27;flange_width&#x27;, 35.1, min=8.0, max=50.0, expression=&#x27;width * 0.101&#x27;, semantic_type=&#x27;primitive_width&#x27;)
+params.add(&#x27;hole_radius&#x27;, 1.3, min=0.5, max=4.0, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_length&#x27;, 18.14, min=8.0, max=48.0, expression=&#x27;width * 0.516&#x27;, semantic_type=&#x27;pocket_length&#x27;)
+params.add(&#x27;pocket_width&#x27;, 10.14, min=5.0, max=28.0, expression=&#x27;height * 0.36&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 6, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;transition_height&#x27;, 4.7, min=3.0, max=18.0, expression=&#x27;thickness * 0.78&#x27;, semantic_type=&#x27;loft_height&#x27;)
+
+part = Part(&#x27;flluma_0005000&#x27;, category=&#x27;lofted_transition_profile_bracket&#x27;, parameters=params, seed=20265514, sample_id=&#x27;flluma_0005000&#x27;, units=&#x27;mm&#x27;)
+sketch = part.sketch_polygon(name=&#x27;loft_profile&#x27;, points=[[-15.74, -6.25], [-3.73, -12.93], [13.97, -18.65], [17.91, 1.44], [19.66, 9.33], [6.45, 15.56], [-10.6, 11.31], [-18.45, 3.94]], closed=True, semantic_type=&#x27;loft_profile&#x27;)
+solid = part.loft(name=&#x27;loft_bracket_transition&#x27;, profile=sketch, semantic_type=&#x27;lofted_solid&#x27;)
+box = part.box(name=&#x27;transition_flange_seed&#x27;, length=params[&#x27;flange_width&#x27;], width=params[&#x27;flange_height&#x27;], height=params[&#x27;thickness&#x27;], semantic_type=&#x27;flange&#x27;)
+moved = part.translate(name=&#x27;place_transition_flange&#x27;, target=box, offset=[0.0, 5.65, 2.95], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_transition_flange&#x27;, target=solid, tool=moved, semantic_type=&#x27;flange&#x27;)
+pocket_profile = part.sketch_polygon(name=&#x27;loft_transition_pocket&#x27;, points=[[5.73, 2.9], [4.73, 8.79], [1.9, 13.92], [8.17, 10.01], [11.5, 3.22]], closed=True, semantic_type=&#x27;pocket_profile&#x27;)
+pocket = part.boolean_cut(name=&#x27;cut_transition_flange_profile&#x27;, target=join, tool=pocket_profile, semantic_type=&#x27;pocket&#x27;)
+holes = part.hole_pattern(name=&#x27;transition_flange_bolt_holes&#x27;, target=pocket.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[5.73, 2.9], [8.17, 4.74], [5.73, 6.28], [-8.17, 4.74], [-5.73, 2.9]], semantic_type=&#x27;bolt_hole_pattern&#x27;)
+
+__all__ = [&#x27;part&#x27;]
+</pre></details><h2>Original Failure Evidence</h2><pre>{
+  &quot;sample_id&quot;: &quot;flluma_0090051&quot;,
+  &quot;modality&quot;: &quot;image&quot;,
+  &quot;gate_error&quot;: &quot;exec error: Part.loft() got an unexpected keyword argument &#x27;profile&#x27;&quot;,
+  &quot;geometry_error&quot;: &quot;exec error: Part.loft() got an unexpected keyword argument &#x27;profile&#x27;&quot;,
+  &quot;note&quot;: &quot;Original native error summaries, not an invented full traceback or visual feature diagnosis&quot;
+}
+</pre><h2>Provenance</h2><nav><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/case.json">Locked case record</a><a href="../../../../cases/q-flone-image-b2legacy-flluma_0090051/provenance.json">Original source hashes</a><a href="render_manifest.json">New camera/pixel/hash manifest</a></nav></body></html>

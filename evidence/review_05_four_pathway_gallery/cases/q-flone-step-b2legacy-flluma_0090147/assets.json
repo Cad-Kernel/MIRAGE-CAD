@@ -1,0 +1,248 @@
+{
+  "case_id": "q-flone-step-b2legacy-flluma_0090147",
+  "gallery_rendering": "NOT_RUN",
+  "assets": [
+    {
+      "asset_role": "reference_step",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/model.step",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "5eb73008b32bc67ec5507c6950b128b3ffa33f192fc5e92e106e803cc59404f5",
+      "bytes": 120839,
+      "verified_utc": "2026-10-22T17:18:02.704681+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "reference_point",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/point_cloud.npz",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "d5e15f0f6effd8f48da164ca1eac148333f8df87bf2d0ce819e1eed81f47659e",
+      "bytes": 19006,
+      "verified_utc": "2026-10-22T17:18:02.721477+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "input_image",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/images/canonical/06_iso_posx_posy_posz.png",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "b9003c812683579fd6d50a2fced015f3d8dcca8077cf2369e4220a1717353e07",
+      "bytes": 1806,
+      "verified_utc": "2026-10-22T17:18:02.740400+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "step_descriptor",
+      "status": "existing",
+      "source_path": "__RUN_SOURCE_ROOT__/data/25k/step_features/flluma_0090147.json",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "63f7d00e50b1074bfd13a6f10254733f6eea4fe670aeb1ef3487ed410ca58d99",
+      "bytes": 1837,
+      "verified_utc": "2026-10-22T17:18:02.741005+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "reference_ir_source",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/training_ir.txt",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "8704e528a1adc65cc50277b434b75a7e2e810ea6d042cc3888f73cca6c2e5909",
+      "bytes": 2383,
+      "verified_utc": "2026-10-22T17:18:02.759935+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "reference_code_source",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/program.py",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "41a5ab03c043a0aee2c57aabea2183bffe95ca88424446293f9ff305eb66644d",
+      "bytes": 2751,
+      "verified_utc": "2026-10-22T17:18:02.779484+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "reference_feature_tree",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/feature_tree.json",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "a79a075872e32d59f50b264bea3cca732fbce467b43f73767f3964117cb5ba61",
+      "bytes": 8765,
+      "verified_utc": "2026-10-22T17:18:02.797458+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "reference_metadata",
+      "status": "existing",
+      "source_path": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K/shard_0090/flluma_0090147/metadata.json",
+      "package_path": null,
+      "planned_path": null,
+      "sha256": "8fe207a85bc53b7b4c097fa06eed9ef2e99d0071287ac7b2c381d432b4e169b5",
+      "bytes": 11679,
+      "verified_utc": "2026-10-22T17:18:02.815954+00:00",
+      "path_style": "WSL absolute"
+    },
+    {
+      "asset_role": "exact_text",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/input/exact_text.txt",
+      "planned_path": null,
+      "sha256": "fe670e1e728df0e588416fd7b333bdc17cb531e20e81fdae657da384f77fdb30",
+      "bytes": 221,
+      "verified_utc": "2026-10-22T17:18:02.821329+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "raw_plan",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/plans/raw.txt",
+      "planned_path": null,
+      "sha256": "bb426d61cf0ba4fbb30a8fec99febbd789a1dd5bdfa00226cc120981ff5bf552",
+      "bytes": 2393,
+      "verified_utc": "2026-10-22T17:18:02.821373+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "used_plan",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/plans/canonicalized.txt",
+      "planned_path": null,
+      "sha256": "bb426d61cf0ba4fbb30a8fec99febbd789a1dd5bdfa00226cc120981ff5bf552",
+      "bytes": 2393,
+      "verified_utc": "2026-10-22T17:18:02.821406+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "raw_code",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/code/raw_prediction.py",
+      "planned_path": null,
+      "sha256": "2730e35e5f0f46f9a924d42523dd6061472f4478613f0c51fc11b967ded6b3e0",
+      "bytes": 2534,
+      "verified_utc": "2026-10-22T17:18:02.821435+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "intermediate_code",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/code/extrude_repaired.py",
+      "planned_path": null,
+      "sha256": "2730e35e5f0f46f9a924d42523dd6061472f4478613f0c51fc11b967ded6b3e0",
+      "bytes": 2534,
+      "verified_utc": "2026-10-22T17:18:02.821461+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "executed_code",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/code/prediction.py",
+      "planned_path": null,
+      "sha256": "2730e35e5f0f46f9a924d42523dd6061472f4478613f0c51fc11b967ded6b3e0",
+      "bytes": 2534,
+      "verified_utc": "2026-10-22T17:18:02.821487+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "code_excerpt",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/code/excerpt.txt",
+      "planned_path": null,
+      "sha256": "61c17e331188dae7386139b78ebdac256c73ab97de32b1ccb754d3a2c45a3b86",
+      "bytes": 2613,
+      "verified_utc": "2026-10-22T17:18:02.821513+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "reference_ir",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/reference/training_ir.txt",
+      "planned_path": null,
+      "sha256": "a596a30ee78ea69d065ef2d2ee0f61f7066d6a73ff42dc11fbee19a25592bd2a",
+      "bytes": 2361,
+      "verified_utc": "2026-10-22T17:18:02.821538+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "reference_code",
+      "status": "existing",
+      "source_path": null,
+      "package_path": "cases/q-flone-step-b2legacy-flluma_0090147/reference/program.py",
+      "planned_path": null,
+      "sha256": "fb1ea98c3bdfea1178181fe3b60a7b16f7ae8e3440797a943925ab4b5fef30cb",
+      "bytes": 2726,
+      "verified_utc": "2026-10-22T17:18:02.821563+00:00",
+      "path_style": "package relative"
+    },
+    {
+      "asset_role": "reference_gallery_render",
+      "status": "planned",
+      "source_path": null,
+      "package_path": null,
+      "planned_path": "cases/q-flone-step-b2legacy-flluma_0090147/renders/reference/view01.png",
+      "sha256": null,
+      "view_id": "view01",
+      "camera": null,
+      "missing_reason": "Matched-camera gallery rendering not run"
+    },
+    {
+      "asset_role": "prediction_gallery_render",
+      "status": "not_applicable",
+      "source_path": null,
+      "package_path": null,
+      "planned_path": null,
+      "sha256": null,
+      "view_id": "view01",
+      "camera": null,
+      "missing_reason": "No successful native STEP export; no substitute prediction solid"
+    },
+    {
+      "asset_role": "reference_gallery_render",
+      "status": "planned",
+      "source_path": null,
+      "package_path": null,
+      "planned_path": "cases/q-flone-step-b2legacy-flluma_0090147/renders/reference/view02.png",
+      "sha256": null,
+      "view_id": "view02",
+      "camera": null,
+      "missing_reason": "Matched-camera gallery rendering not run"
+    },
+    {
+      "asset_role": "prediction_gallery_render",
+      "status": "not_applicable",
+      "source_path": null,
+      "package_path": null,
+      "planned_path": null,
+      "sha256": null,
+      "view_id": "view02",
+      "camera": null,
+      "missing_reason": "No successful native STEP export; no substitute prediction solid"
+    },
+    {
+      "asset_role": "predicted_step",
+      "status": "not_applicable",
+      "source_path": null,
+      "package_path": null,
+      "planned_path": null,
+      "sha256": null,
+      "missing_reason": "Native program did not pass STEP export"
+    }
+  ],
+  "camera_policy": "At least two shared target/prediction cameras and common target scale; no independent prediction resizing",
+  "original_input_image_note": "Existing dataset iso image is an original reference image/input, not proof of completed matched-camera gallery views"
+}

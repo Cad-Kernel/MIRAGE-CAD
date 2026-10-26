@@ -1,0 +1,5 @@
+node_modules/
+registry_header_preview.png
+
+# Include the preserved anonymous schema preview in the review artifact
+!registry_header_preview.png

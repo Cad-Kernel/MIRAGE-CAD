@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0093772",
+  "part_name": "flluma_0093772",
+  "category": "crescent_lug_profile",
+  "seed": 20354286,
+  "units": "mm",
+  "parameters": {
+    "center_hole_radius": {
+      "value": 9.46,
+      "min": 3.0,
+      "max": 16.0,
+      "semantic_type": "inner_radius"
+    },
+    "fillet_radius": {
+      "value": 0.22,
+      "min": 0.05,
+      "max": 0.8,
+      "semantic_type": "fillet_radius"
+    },
+    "height": {
+      "value": 55.4,
+      "min": 20.0,
+      "max": 90.0,
+      "semantic_type": "overall_height"
+    },
+    "hole_radius": {
+      "value": 2.64,
+      "min": 0.8,
+      "max": 5.0,
+      "semantic_type": "hole_radius"
+    },
+    "thickness": {
+      "value": 6.1,
+      "min": 2.0,
+      "max": 14.0,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 80.3,
+      "min": 28.0,
+      "max": 120.0,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "sketch_001",
+      "name": "crescent_lug_outer_profile",
+      "type": "SketchFeature",
+      "category": "sketch",
+      "semantic_type": "extrude_profile",
+      "parameters": {
+        "profile_type": "polygon",
+        "points": [
+          [
+            -38.54,
+            -3.32
+          ],
+          [
+            -27.3,
+            -17.73
+          ],
+          [
+            1.61,
+            -23.27
+          ],
+          [
+            35.33,
+            -14.4
+          ],
+          [
+            41.76,
+            1.11
+          ],
+          [
+            30.51,
+            15.51
+          ],
+          [
+            6.42,
+            22.16
+          ],
+          [
+            -17.67,
+            18.84
+          ],
+          [
+            -35.33,
+            9.97
+          ]
+        ],
+        "closed": true
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "extrude_001",
+      "name": "extrude_crescent_lug",
+      "type": "Extrude",
+      "category": "additive",
+      "semantic_type": "extruded_plate",
+      "parameters": {
+        "height": {
+          "parameter": "thickness",
+          "value": 6.1
+        },
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "dependencies": [
+        "sketch_001"
+      ],
+      "topology_references": {
+        "profile": {
+          "feature_id": "sketch_001"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "hole_001",
+      "name": "crescent_lug_mounting_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "mounting_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 2,
+        "positions": [
+          [
+            -24.09,
+            3.32
+          ],
+          [
+            25.7,
+            -2.77
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 2.64
+        }
+      },
+      "dependencies": [
+        "extrude_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "extrude_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "extrude_001:top_face:b9ec9b032ae6"
+        }
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "hole_002",
+      "name": "crescent_center_hole",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "clearance_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 1,
+        "positions": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "center_hole_radius",
+          "value": 9.46
+        }
+      },
+      "dependencies": [
+        "hole_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "hole_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "hole_001:top_face:9014e73e3f7b"
+        }
+      },
+      "rebuild_order": 4
+    }
+  ]
+}

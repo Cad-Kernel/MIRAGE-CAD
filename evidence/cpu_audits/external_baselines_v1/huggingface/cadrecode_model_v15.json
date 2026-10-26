@@ -1,0 +1,46 @@
+{
+  "repo": "filapro/cad-recode-v1.5",
+  "kind": "models",
+  "status": "PUBLIC_METADATA_CAPTURED",
+  "revision": "765e8cc315a1a77bd8c69ccd0b403bad20ce35e8",
+  "private": false,
+  "gated": false,
+  "card_metadata": {
+    "license": "cc-by-nc-4.0",
+    "base_model": [
+      "Qwen/Qwen2-1.5B"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "6131638dfb1a0d6bdb9a0c2fdd173a84ce43406b",
+      "size": 935
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "d9034f84c3aa2776aeb4a1d11460a93ac99d6c86",
+      "size": 700
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "fe9fa988a75947be6abacb6aea1e6964d9387a37",
+      "size": 163
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "535008e928fc597b05c93633b3097e31d01622c4",
+      "size": 3087786824,
+      "lfs": {
+        "sha256": "6fe6acab9baf5ce03cc529750ea0adba14d0e25df642d8642993952061a05d6c",
+        "size": 3087786824,
+        "pointerSize": 135
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+PART flluma_0068255 CAT capsule_stock UNITS mm SEED 22328775
+PARAM height 8.67 MIN 4 MAX 28 SEM primitive_height
+PARAM radius 2.23 MIN 1 MAX 8 SEM primitive_radius
+F capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius
+END

@@ -1,0 +1,17 @@
+{
+  "arm": "NN_DESC_TRAIN",
+  "created_utc": "2026-10-04T11:21:37.979972+00:00",
+  "empty_program": 0,
+  "expected_rows": 500,
+  "missing_target": 0,
+  "no_point_path": 0,
+  "output_jsonl": "outputs/construction_disjoint_step_v1/geom_input_step_NN_DESC_TRAIN.jsonl",
+  "output_rows": 500,
+  "output_sha256": "1aeee7227ff8d749fbcdda6a04f4bf92014d8ea0823a1438c198a37bf237587e",
+  "prediction_file": "outputs/construction_disjoint_step_v1/nn_step_descriptor_train_only.jsonl",
+  "prediction_rows": 500,
+  "prediction_sha256": "ce74acf1d51392853d00a78db5a8bbbe11a6803c589607f009d762642dcbe667",
+  "purpose": "construction-disjoint geometry input prep",
+  "test_jsonl": "data/construction_disjoint_step_v1/test.jsonl",
+  "test_jsonl_sha256": "3c42ee760354323fa3ab503bb5af576b7a56d82e2e2d26367ffacc71935fbd55"
+}

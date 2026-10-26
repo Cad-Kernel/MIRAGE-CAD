@@ -1,0 +1,200 @@
+{
+  "repo": "yunomi-git/GenCAD-3D",
+  "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+  "default_branch": "main",
+  "commit": "50bf5133c5f895b183fed8dac1df43aa7c1aab1f",
+  "commit_date": "2025-09-22T21:52:15Z",
+  "api_license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "tree_truncated": false,
+  "tree_blob_count": 141,
+  "metric_inference_candidate_paths": [
+    "autoencoder/evaluation/__init__.py",
+    "autoencoder/evaluation/accuracy_metrics.py",
+    "autoencoder/evaluation/collect_gen_pc.py",
+    "autoencoder/evaluation/eval_kmeans.py",
+    "autoencoder/evaluation/evaluate_3metrics.py",
+    "autoencoder/evaluation/evaluate_IOU.py",
+    "autoencoder/evaluation/evaluate_ae_acc.py",
+    "autoencoder/evaluation/evaluate_ae_cd.py",
+    "autoencoder/evaluation/evaluate_gen_torch.py",
+    "autoencoder/evaluation/run_autoencoder_reconstruction.py",
+    "autoencoder/evaluation/show_ae_acc_by_sl.py",
+    "autoencoder/gencad/evaluation/__init__.py",
+    "autoencoder/gencad/evaluation/cd_acc_seq.py",
+    "autoencoder/gencad/evaluation/collect_gen_pc.py",
+    "autoencoder/gencad/evaluation/evaluate_ae_acc.py",
+    "autoencoder/gencad/evaluation/evaluate_ae_cd.py",
+    "autoencoder/gencad/evaluation/evaluate_gen_torch.py",
+    "autoencoder/gencad/evaluation/evaluate_gen_torch_optimized.py",
+    "autoencoder/gencad/evaluation/param_acc_seq.py",
+    "contrastive/contrastive_evaluation_util.py",
+    "contrastive/evaluation/__init__.py",
+    "contrastive/evaluation/eval_contrastive_retrieval.py",
+    "contrastive/evaluation/plot_mesh_latent_picture_master.py",
+    "diffusion/evaluation/__init__.py",
+    "diffusion/evaluation/collect_gen_pc.py",
+    "diffusion/evaluation/diffusion_evaluation_util.py",
+    "diffusion/evaluation/evaluate_gen_torch.py",
+    "diffusion/evaluation/generate_eval_encoding_samples.py",
+    "diffusion/evaluation/generate_generation_reconstructions.py",
+    "diffusion/evaluation/run_generation_evaluations.py",
+    "diffusion/evaluation/run_reconstruction_evaluations.py",
+    "diffusion/evaluation/visualize_diffusion_inference.py",
+    "diffusion/evaluation/visualize_diffusion_samples.py"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/LICENSE",
+      "status": 200,
+      "sha256": "b3fa9502c7c107d9f3dc42e9dcb7f5fd00b43705d2a10980ddac08ddcf64c5b8",
+      "saved_path": "responses/gencad3d_file_00.body"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/README.md",
+      "status": 200,
+      "sha256": "a69414de2cedc6d0b98b4542712074ee5ec0d2aa168b9d5ab4437f48f43a5a08",
+      "saved_path": "responses/gencad3d_file_01.body"
+    },
+    {
+      "path": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/requirements.txt",
+      "status": 200,
+      "sha256": "0acd82dc801bf675e5fdf23116e67b44726d0652cf74c6a0a13342a07e80420c",
+      "saved_path": "responses/gencad3d_file_02.body"
+    },
+    {
+      "path": "contrastive/evaluation/eval_contrastive_retrieval.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/evaluation/eval_contrastive_retrieval.py",
+      "status": 200,
+      "sha256": "1ccd799fa391a6982551407b5fbaa496344864e2bb1f91f0c26f2f6d8cd37997",
+      "saved_path": "responses/gencad3d_file_03.body"
+    },
+    {
+      "path": "diffusion/evaluation/__init__.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/__init__.py",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "saved_path": "responses/gencad3d_file_04.body"
+    },
+    {
+      "path": "autoencoder/evaluation/__init__.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/__init__.py",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "saved_path": "responses/gencad3d_file_05.body"
+    },
+    {
+      "path": "contrastive/evaluation/__init__.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/evaluation/__init__.py",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "saved_path": "responses/gencad3d_file_06.body"
+    },
+    {
+      "path": "autoencoder/evaluation/eval_kmeans.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/eval_kmeans.py",
+      "status": 200,
+      "sha256": "167c40493b159da4fefa7e435876d4913261a81e64e5fcf2c6a6336b2b4cd835",
+      "saved_path": "responses/gencad3d_file_07.body"
+    },
+    {
+      "path": "autoencoder/evaluation/evaluate_IOU.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_IOU.py",
+      "status": 200,
+      "sha256": "68238b9b925c01fc35a075d129bd2af73f5e4fb81fb63a08dc193f5a855366a8",
+      "saved_path": "responses/gencad3d_file_08.body"
+    },
+    {
+      "path": "diffusion/evaluation/collect_gen_pc.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/collect_gen_pc.py",
+      "status": 200,
+      "sha256": "9e642d6a03351b2f7568ba44e6067d0d053634dc3ec4d2c254afadf369a1b3cd",
+      "saved_path": "responses/gencad3d_file_09.body"
+    },
+    {
+      "path": "autoencoder/evaluation/collect_gen_pc.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/collect_gen_pc.py",
+      "status": 200,
+      "sha256": "166a89186d786f3458bca496d614b5c77422ac6a6ac3c4e0e0a694ce7ef9f592",
+      "saved_path": "responses/gencad3d_file_10.body"
+    },
+    {
+      "path": "autoencoder/evaluation/evaluate_ae_cd.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_cd.py",
+      "status": 200,
+      "sha256": "95f39cc85a2e74218edd9889f9a499c50a57312e0d4c661f23d85ad74ec5ebde",
+      "saved_path": "responses/gencad3d_file_11.body"
+    },
+    {
+      "path": "autoencoder/evaluation/evaluate_ae_acc.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_ae_acc.py",
+      "status": 200,
+      "sha256": "61b94f015082015f73a336bd755afb01d558866c67cc8f97b2de6d3669f84d9e",
+      "saved_path": "responses/gencad3d_file_12.body"
+    },
+    {
+      "path": "autoencoder/gencad/evaluation/__init__.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/gencad/evaluation/__init__.py",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "saved_path": "responses/gencad3d_file_13.body"
+    },
+    {
+      "path": "autoencoder/evaluation/accuracy_metrics.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/accuracy_metrics.py",
+      "status": 200,
+      "sha256": "30616955a74a7ff70d415490de41f0b8adcf0837a6cd51d7db0f16cab12fb0ec",
+      "saved_path": "responses/gencad3d_file_14.body"
+    },
+    {
+      "path": "contrastive/contrastive_evaluation_util.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/contrastive/contrastive_evaluation_util.py",
+      "status": 200,
+      "sha256": "1589fcb23b7853bf34b6fafa6ebd712e5822c3d4414f139d1cfdfa2fef1545a1",
+      "saved_path": "responses/gencad3d_file_15.body"
+    },
+    {
+      "path": "diffusion/evaluation/evaluate_gen_torch.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/diffusion/evaluation/evaluate_gen_torch.py",
+      "status": 200,
+      "sha256": "c6561625e7c89a3f9eea67e9518ee76edc996d58a34bd682eb203154588b5165",
+      "saved_path": "responses/gencad3d_file_16.body"
+    },
+    {
+      "path": "autoencoder/evaluation/evaluate_3metrics.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_3metrics.py",
+      "status": 200,
+      "sha256": "51b038c5180338464c096d8e7952fb0f2394a4c7e11da47134d5d3e6e62a48e2",
+      "saved_path": "responses/gencad3d_file_17.body"
+    },
+    {
+      "path": "autoencoder/evaluation/show_ae_acc_by_sl.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/show_ae_acc_by_sl.py",
+      "status": 200,
+      "sha256": "c95a0ccbdf2b3d46268e42ea3bebf57d1ed2b3defa70f65b23d3fd50ebc34f87",
+      "saved_path": "responses/gencad3d_file_18.body"
+    },
+    {
+      "path": "autoencoder/gencad/evaluation/cd_acc_seq.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/gencad/evaluation/cd_acc_seq.py",
+      "status": 200,
+      "sha256": "0d28a840b994a4a0f34b73ecc66156f7fd0ee4c774f3d187e3e151714e9ee4b9",
+      "saved_path": "responses/gencad3d_file_19.body"
+    },
+    {
+      "path": "autoencoder/evaluation/evaluate_gen_torch.py",
+      "url": "https://raw.githubusercontent.com/yunomi-git/GenCAD-3D/50bf5133c5f895b183fed8dac1df43aa7c1aab1f/autoencoder/evaluation/evaluate_gen_torch.py",
+      "status": 200,
+      "sha256": "b22ee7f9a842843fad1ddace0d55bd4287a8df8495ee1f3cbf7e7187b95fd566",
+      "saved_path": "responses/gencad3d_file_20.body"
+    }
+  ]
+}

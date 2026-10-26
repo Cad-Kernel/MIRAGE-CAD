@@ -1,0 +1,2 @@
+A built from 8 ordered CAD features, approximately 28.1 by 16.3 by 12.855 mm.
+Swept pipe bracket model with 2 bolt holes, chamfered edges, and a swept tube body.

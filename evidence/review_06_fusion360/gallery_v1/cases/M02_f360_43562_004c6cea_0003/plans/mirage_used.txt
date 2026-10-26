@@ -1,0 +1,16 @@
+PART flluma_0003001 CAT stepped_profile_mount UNITS mm SEED 20263515
+PARAM boss_height 13.1 MIN 3 MAX 24 EXPR thickness*1.09 SEM boss_height
+PARAM boss_radius 10.14 MIN 3 MAX 14 EXPR hole_radius*3.1 SEM boss_radius
+PARAM hole_radius 2.73 MIN 0.8 MAX 5 SEM hole_radius
+PARAM height 11.1 MIN 8 MAX 32 SEM overall_height
+PARAM pocket_width 20.1 MIN 4 MAX 24 EXPR width*0.27 SEM pocket_width
+PARAM thickness 10 MIN 3 MAX 25 SEM thickness
+PARAM width 40.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP plate_001 TARGET plate_001.top_face PARAMS count=4 depth=THROUGH positions=[[-10.428,-2.775],[10.428,-2.775],[-10.428,2.775],[10.428,2.775]] radius=@hole_radius
+F box_001 OP_BOX SEM boss ROLE secondary_feature PARAMS height=@boss_height length=@pocket_width width=@boss_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[14.55,0,5.45]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP hole_001,translate_001 TARGET hole_001,translate_001
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=24.1 radius=@boss_radius
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,-5.15]
+F cut_001 OP_BOOLEAN_CUT SEM pocket ROLE functional_feature DEP join_001,translate_00

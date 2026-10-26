@@ -1,0 +1,404 @@
+{
+  "actual_global_steps": null,
+  "cache_completion": {
+    "bytes": 325,
+    "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/COMPLETE.json",
+    "sha256": "d8ef8c2f538451d8ed1cfcbf13403c4af2eccb8536679c0a4c73037e4a07b715"
+  },
+  "cache_index": {
+    "bytes": 37902450,
+    "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/index.jsonl",
+    "sha256": "93e0060b697ccb98c0be3af51db70bb60ae0babbe294224ee9c7b3cf60718441"
+  },
+  "code_validation": {
+    "all_cases_retain_target_tokens": true,
+    "first_batch": {
+      "attention_mask": [
+        1,
+        1270
+      ],
+      "input_ids": [
+        1,
+        1270
+      ],
+      "labels": [
+        1,
+        1270
+      ]
+    },
+    "last_batch": {
+      "attention_mask": [
+        1,
+        1536
+      ],
+      "input_ids": [
+        1,
+        1536
+      ],
+      "labels": [
+        1,
+        1536
+      ]
+    },
+    "rows": 2500,
+    "unique_inputs_tokenized": 2500
+  },
+  "created_utc": "2026-10-16T20:13:51.907042+00:00",
+  "execution_hashes": {
+    "cag_exposure_policy.py": "7c8ba2081e837f2bcc808e55c3b49e0fdff4778cc883484220c798afcdcd92f4",
+    "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+    "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+  },
+  "fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "paired_cache_identity": {
+    "same_cache_index_for_all_arms": true,
+    "shared_phase1_pairs": 14464,
+    "status": "PASS",
+    "tensor_hashes_verified": true
+  },
+  "phase_transition": {
+    "actual_phase1_final_checkpoint": "NOT_YET_CREATED",
+    "final_weights_required_from_same_arm": true,
+    "new_optimizer_each_phase": true,
+    "status": "CONTRACT_PASS",
+    "steps": [
+      4689,
+      500
+    ]
+  },
+  "plan_validation": {
+    "all_cases_retain_target_tokens": true,
+    "first_batch": {
+      "attention_mask": [
+        1,
+        628
+      ],
+      "input_ids": [
+        1,
+        628
+      ],
+      "labels": [
+        1,
+        628
+      ],
+      "z_ir_hat": [
+        1,
+        512
+      ]
+    },
+    "last_batch": {
+      "attention_mask": [
+        1,
+        664
+      ],
+      "input_ids": [
+        1,
+        664
+      ],
+      "labels": [
+        1,
+        664
+      ],
+      "z_ir_hat": [
+        1,
+        512
+      ]
+    },
+    "rows": 800,
+    "unique_inputs_tokenized": 800
+  },
+  "scope": "real-cache CPU execution preflight",
+  "stages": {
+    "A_phase1": {
+      "all_cases_retain_target_tokens": true,
+      "epochs": 1,
+      "first_batch": {
+        "attention_mask": [
+          1,
+          625
+        ],
+        "input_ids": [
+          1,
+          625
+        ],
+        "labels": [
+          1,
+          625
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "group_sizes": {
+        "16": 4689
+      },
+      "last_batch": {
+        "attention_mask": [
+          1,
+          875
+        ],
+        "input_ids": [
+          1,
+          875
+        ],
+        "labels": [
+          1,
+          875
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "planned_updates": 4689,
+      "rows": 75024,
+      "sampler_epoch_index_sha256": [
+        "9e202854d2d6a5b36dfd51877ce79ded55c885a1dd46238936bdf0ccf13a1bb1"
+      ],
+      "unique_inputs_tokenized": 25000
+    },
+    "A_phase2": {
+      "all_cases_retain_target_tokens": true,
+      "epochs": 1,
+      "first_batch": {
+        "attention_mask": [
+          1,
+          485
+        ],
+        "input_ids": [
+          1,
+          485
+        ],
+        "labels": [
+          1,
+          485
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "group_sizes": {
+        "16": 500
+      },
+      "last_batch": {
+        "attention_mask": [
+          1,
+          612
+        ],
+        "input_ids": [
+          1,
+          612
+        ],
+        "labels": [
+          1,
+          612
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "planned_updates": 500,
+      "rows": 8000,
+      "sampler_epoch_index_sha256": [
+        "d1db656808d18448ed4a7a9ea7fa03319280c1c0afe0dcc9d54a0ad9e9d07c33"
+      ],
+      "unique_inputs_tokenized": 8000
+    },
+    "A_stage4b_contract": {
+      "actual_predicted_plan_gate": "REQUIRED_AFTER_FINAL_PHASE2_GENERATION",
+      "all_cases_retain_target_tokens": true,
+      "epochs": 3,
+      "first_batch": {
+        "attention_mask": [
+          1,
+          795
+        ],
+        "input_ids": [
+          1,
+          795
+        ],
+        "labels": [
+          1,
+          795
+        ]
+      },
+      "group_sizes": {
+        "6": 3,
+        "8": 1179
+      },
+      "last_batch": {
+        "attention_mask": [
+          1,
+          1536
+        ],
+        "input_ids": [
+          1,
+          1536
+        ],
+        "labels": [
+          1,
+          1536
+        ]
+      },
+      "plan_text_source": "EMPTY_PLAN_CONTRACT_FIXTURE_ONLY_NOT_MODEL_OUTPUTS",
+      "planned_updates": 1182,
+      "rows": 3150,
+      "sampler_epoch_index_sha256": [
+        "5a90948f4e738629881fe6375de0139b4e20d48fbb77896e6a76201754881cf7",
+        "13cb22750f976311a8fabe44eb1737f7443739406023c2df7e90c24965c284cf",
+        "9dbb36ee7082dc010382e3ea3999921d8ade145f52e87075cbdf5a060eeb4ae5"
+      ],
+      "unique_inputs_tokenized": 3150
+    },
+    "B_phase1": {
+      "all_cases_retain_target_tokens": true,
+      "epochs": 1,
+      "first_batch": {
+        "attention_mask": [
+          1,
+          625
+        ],
+        "input_ids": [
+          1,
+          625
+        ],
+        "labels": [
+          1,
+          625
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "group_sizes": {
+        "16": 4689
+      },
+      "last_batch": {
+        "attention_mask": [
+          1,
+          875
+        ],
+        "input_ids": [
+          1,
+          875
+        ],
+        "labels": [
+          1,
+          875
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "planned_updates": 4689,
+      "rows": 75024,
+      "sampler_epoch_index_sha256": [
+        "9e202854d2d6a5b36dfd51877ce79ded55c885a1dd46238936bdf0ccf13a1bb1"
+      ],
+      "unique_inputs_tokenized": 57798
+    },
+    "B_phase2": {
+      "all_cases_retain_target_tokens": true,
+      "epochs": 1,
+      "first_batch": {
+        "attention_mask": [
+          1,
+          485
+        ],
+        "input_ids": [
+          1,
+          485
+        ],
+        "labels": [
+          1,
+          485
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "group_sizes": {
+        "16": 500
+      },
+      "last_batch": {
+        "attention_mask": [
+          1,
+          612
+        ],
+        "input_ids": [
+          1,
+          612
+        ],
+        "labels": [
+          1,
+          612
+        ],
+        "z_ir_hat": [
+          1,
+          512
+        ]
+      },
+      "planned_updates": 500,
+      "rows": 8000,
+      "sampler_epoch_index_sha256": [
+        "d1db656808d18448ed4a7a9ea7fa03319280c1c0afe0dcc9d54a0ad9e9d07c33"
+      ],
+      "unique_inputs_tokenized": 8000
+    },
+    "B_stage4b_contract": {
+      "actual_predicted_plan_gate": "REQUIRED_AFTER_FINAL_PHASE2_GENERATION",
+      "all_cases_retain_target_tokens": true,
+      "epochs": 3,
+      "first_batch": {
+        "attention_mask": [
+          1,
+          795
+        ],
+        "input_ids": [
+          1,
+          795
+        ],
+        "labels": [
+          1,
+          795
+        ]
+      },
+      "group_sizes": {
+        "6": 3,
+        "8": 1179
+      },
+      "last_batch": {
+        "attention_mask": [
+          1,
+          1536
+        ],
+        "input_ids": [
+          1,
+          1536
+        ],
+        "labels": [
+          1,
+          1536
+        ]
+      },
+      "plan_text_source": "EMPTY_PLAN_CONTRACT_FIXTURE_ONLY_NOT_MODEL_OUTPUTS",
+      "planned_updates": 1182,
+      "rows": 3150,
+      "sampler_epoch_index_sha256": [
+        "5a90948f4e738629881fe6375de0139b4e20d48fbb77896e6a76201754881cf7",
+        "13cb22750f976311a8fabe44eb1737f7443739406023c2df7e90c24965c284cf",
+        "9dbb36ee7082dc010382e3ea3999921d8ade145f52e87075cbdf5a060eeb4ae5"
+      ],
+      "unique_inputs_tokenized": 3150
+    }
+  },
+  "status": "PASS",
+  "training_authorized": false,
+  "training_started": false
+}

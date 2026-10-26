@@ -1,0 +1,9 @@
+PART flluma_0005710 CAT crescent_lug_profile UNITS mm SEED 20266224
+PARAM center_hole_radius 5.12 MIN 3 MAX 16 SEM inner_radius
+PARAM hole_radius 1.43 MIN 0.8 MAX 5 SEM hole_radius
+PARAM thickness 7.1 MIN 2 MAX 14 SEM thickness
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-27.36,-1.2],[-19.34,-5.7],[1.12,-7.2],[24.88,-2.9],[29.52,0.9],[21.5,5.4],[4.76,7.2],[-12.44,2.7],[-24.88,0.4]] profile_type=polygon
+F extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP extrude_001 TARGET extrude_001.top_face PARAMS count=2 depth=THROUGH positions=[[-16.68,1.2],[17.84,-1.05]] radius=@hole_radius
+F hole_002 OP_HOLE_PATTERN SEM clearance_hole ROLE functional_feature DEP hole_001 TARGET hole_001.top_face PARAMS count=1 depth=THROUGH positions=[[0,0]] radius=@center_hole_radius
+END

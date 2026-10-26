@@ -1,0 +1,3 @@
+import cadquery as cq
+w0=cq.Workplane('XY',origin=(0,0,77))
+r=w0.workplane(offset=-177/2).cylinder(177,25).union(w0.workplane(offset=23/2).cylinder(23,18))

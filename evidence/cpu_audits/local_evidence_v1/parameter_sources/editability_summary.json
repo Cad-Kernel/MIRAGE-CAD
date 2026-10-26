@@ -1,0 +1,56 @@
+{
+  "n_rows": 100,
+  "n_baseline_kernel_valid": 74,
+  "n_rows_skipped_baseline_invalid": 26,
+  "n_worker_processes_crashed": 0,
+  "n_perturbations": 1608,
+  "n_clamped_to_declared_bound": 12,
+  "outcomes": {
+    "rebuilt_and_moved": 1321,
+    "rebuilt_no_change": 267,
+    "rebuilt_change_unknown": 16,
+    "broke_at_step_export_ok": 3,
+    "broke_at_exec_ok": 1
+  },
+  "outcomes_pct": {
+    "rebuilt_and_moved": 82.15,
+    "rebuilt_no_change": 16.6,
+    "rebuilt_change_unknown": 1.0,
+    "broke_at_step_export_ok": 0.19,
+    "broke_at_exec_ok": 0.06
+  },
+  "per_delta": {
+    "-0.25": {
+      "rebuilt_and_moved": 331,
+      "rebuilt_no_change": 67,
+      "broke_at_step_export_ok": 1,
+      "rebuilt_change_unknown": 3
+    },
+    "-0.10": {
+      "rebuilt_and_moved": 330,
+      "rebuilt_no_change": 68,
+      "rebuilt_change_unknown": 4
+    },
+    "+0.10": {
+      "rebuilt_and_moved": 330,
+      "rebuilt_no_change": 67,
+      "rebuilt_change_unknown": 5
+    },
+    "+0.25": {
+      "rebuilt_and_moved": 330,
+      "rebuilt_no_change": 65,
+      "broke_at_step_export_ok": 2,
+      "rebuilt_change_unknown": 4,
+      "broke_at_exec_ok": 1
+    }
+  },
+  "editable_pct": 82.15,
+  "silently_ignored_pct": 16.6,
+  "hard_crash_pct": 0.0,
+  "broke_pct": 0.25,
+  "mean_parametric_coverage": 0.2928,
+  "mean_resample_noise_floor": 0.0,
+  "max_resample_noise_floor": 0.0,
+  "declared_params_total": 402,
+  "declared_params_never_referenced": 26
+}

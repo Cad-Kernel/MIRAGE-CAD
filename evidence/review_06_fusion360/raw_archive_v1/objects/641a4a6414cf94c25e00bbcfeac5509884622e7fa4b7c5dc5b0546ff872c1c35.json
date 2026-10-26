@@ -1,0 +1,18 @@
+{
+  "sample_id": "f360_45437_a98a4f45_0000",
+  "arm": "point_genplan",
+  "terminal": true,
+  "pipeline_status": "NO_GEOMETRY",
+  "reason": "this arm produced no STEP for this part: STEP export error: OCCT build failed",
+  "gt_verified": null,
+  "cd_status": null,
+  "iou_status": null,
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": false
+  },
+  "gate_check": "match"
+}

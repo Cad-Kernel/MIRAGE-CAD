@@ -1,0 +1,185 @@
+{
+  "instructions": "Copy this template to a new version. Confirm/revise view-level observations after inspecting the original 640px views or archived 3D STEP. Do not overwrite sealed raw evidence.",
+  "cases": [
+    {
+      "slot": "M01",
+      "sample_id": "f360_82203_8b9714ce_0000",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "M02",
+      "sample_id": "f360_43562_004c6cea_0003",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "M03",
+      "sample_id": "f360_34917_61633e20_0004",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "M04",
+      "sample_id": "f360_54501_96041527_0000",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "M05",
+      "sample_id": "f360_121262_f4a03dbc_0000",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "M06",
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A01",
+      "sample_id": "f360_22822_b5d896dd_0007",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A02",
+      "sample_id": "f360_43529_4804941b_0056",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A03",
+      "sample_id": "f360_56344_3a89f085_0020",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A04",
+      "sample_id": "f360_31962_e5291336_0005",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A05",
+      "sample_id": "f360_143293_fc5b0ff7_0020",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A06",
+      "sample_id": "f360_42013_f685a660_0000",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A07",
+      "sample_id": "f360_24195_9791f5d3_0005",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A08",
+      "sample_id": "f360_42005_bb4162aa_0000",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A09",
+      "sample_id": "f360_45798_b573e9da_0001",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A10",
+      "sample_id": "f360_43932_4bfdfe7b_0007",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A11",
+      "sample_id": "f360_40417_b8d98f73_0016",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    },
+    {
+      "slot": "A12",
+      "sample_id": "f360_31136_987852a4_0004",
+      "author_confirmed": null,
+      "accepted_label": null,
+      "revised_observation": null,
+      "view_evidence": [],
+      "reviewer": null,
+      "date": null
+    }
+  ]
+}

@@ -1,0 +1,1063 @@
+{
+  "repo": "Snitro/Recap-OmniCAD",
+  "kind": "datasets",
+  "status": "PUBLIC_METADATA_CAPTURED",
+  "revision": "62617cb80a869b4acf5ff5d3c9049bd0aec74736",
+  "private": false,
+  "gated": false,
+  "card_metadata": {
+    "license": "cc-by-4.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "25e065e402e6e125139f8754f5f0962438ef1100",
+      "size": 2560
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "175764cf6fb4cd3fab7c544ff7c571ee685bf498",
+      "size": 2024
+    },
+    {
+      "rfilename": "data/0000.tar.gz",
+      "blobId": "7b7c8e1de0688685e44951df942488e198754dcc",
+      "size": 232879229,
+      "lfs": {
+        "sha256": "06c7242a648fa57ce0f923a216e96232a4533fc31e774c6f9cc47d163ff74abf",
+        "size": 232879229,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0001.tar.gz",
+      "blobId": "4657116fd4481a13ab78159004e8c033c0890507",
+      "size": 275583643,
+      "lfs": {
+        "sha256": "92ae810a368f498b06bcec42cd24aa46d2f37615f844db7ba5574e814dec769a",
+        "size": 275583643,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0002.tar.gz",
+      "blobId": "13c1af695ac19e1555c1f926f22f23df1e359f0a",
+      "size": 232167693,
+      "lfs": {
+        "sha256": "953a2efc5f210288b3076344c0b7ac7b91a2a57a88d6f7b539ad0e68b6e981e7",
+        "size": 232167693,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0003.tar.gz",
+      "blobId": "251eb1bb0fdf76c2a0a3d3e684434e04079c0517",
+      "size": 289189213,
+      "lfs": {
+        "sha256": "65555b08bf51ea2c4753c4a76aed68fef9ffd65d06ca89cf901565dedac12c24",
+        "size": 289189213,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0004.tar.gz",
+      "blobId": "5cff49bc42354aab814ff784cbd6c838b5fd15dd",
+      "size": 297657829,
+      "lfs": {
+        "sha256": "d1af22c1853fe40893a80aaa4961938d6e5f8a29dc0d450576e0bb8e66c632fb",
+        "size": 297657829,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0005.tar.gz",
+      "blobId": "ff99bc517978069090d35039a1f000f1a39f3665",
+      "size": 532753580,
+      "lfs": {
+        "sha256": "e616b01805bca58b8635be460d1b7a86e637d9c9b0cd24172e26b1b0812d28e8",
+        "size": 532753580,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0006.tar.gz",
+      "blobId": "27fbc43a386db30dd96fbcbf76e500e16c1755e2",
+      "size": 361421840,
+      "lfs": {
+        "sha256": "79714e7a8b515dc3cc8d968c15c3f5793a8bf40abad650b2c122e19fba0e7b09",
+        "size": 361421840,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0007.tar.gz",
+      "blobId": "1610fd2c8cd23824d522f3463b80db74bac1ff32",
+      "size": 387097906,
+      "lfs": {
+        "sha256": "b89dfa5ad14106ad2fa256429a1b992708e217233529d2659203f32bc05b18d6",
+        "size": 387097906,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0008.tar.gz",
+      "blobId": "51610fd061aa0390d439ae2cace02e8e9f49008c",
+      "size": 322766765,
+      "lfs": {
+        "sha256": "c8460ddd6f40b75384ee96819ebe3e6b1b7f307b2e1b426da88433d0516bc1df",
+        "size": 322766765,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0009.tar.gz",
+      "blobId": "8fa4857dbc35b6f01ded9715e1bc8b0a278a611e",
+      "size": 338077992,
+      "lfs": {
+        "sha256": "9bbd5a6c3f930f89d23ae794850bdb4780a8178cfc6ef4bd1821ada65a34eea4",
+        "size": 338077992,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0010.tar.gz",
+      "blobId": "e0653c290e3b94baeb74f9b71d2107a81cca0114",
+      "size": 305098260,
+      "lfs": {
+        "sha256": "712fd30c1ea9200d0d35a5f09c916a58f3a452c61e5ae6037d0b025c5183b195",
+        "size": 305098260,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0011.tar.gz",
+      "blobId": "3fdafda7cd63512bf12a0b5eeb3409e4bd777143",
+      "size": 322094383,
+      "lfs": {
+        "sha256": "51a5a75ba88fcb8adb1d8f2272e70b05177b002165ddfcc5436792227bf3d79b",
+        "size": 322094383,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0012.tar.gz",
+      "blobId": "4e367524a11fae17b77c7944a1ff34710383261d",
+      "size": 249367939,
+      "lfs": {
+        "sha256": "c055be8b166713b26cd6550de7e818dbbf09c98c0191ee2fbbd1f45d76430f87",
+        "size": 249367939,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0013.tar.gz",
+      "blobId": "8e19e090b851a1c06910d46f37a254bbe0cd164f",
+      "size": 376478039,
+      "lfs": {
+        "sha256": "bc14c89b73eae4b6fcd46fd0d769665e8ca7c2b69cb0da0714bd39dd8f8039ad",
+        "size": 376478039,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0014.tar.gz",
+      "blobId": "053acb88a2e0871ff75724fe935133cedf85f68a",
+      "size": 203221037,
+      "lfs": {
+        "sha256": "ba9e294b5e2703a99726d60c06965487d155631517c21e227478c9626fd01372",
+        "size": 203221037,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0015.tar.gz",
+      "blobId": "9964565f43a34933aea4d8930b8878e4a0cae056",
+      "size": 343235908,
+      "lfs": {
+        "sha256": "a2443ade7bc3e2c7987faedf2c799726bbe410000b9431c90fb235fb75d89559",
+        "size": 343235908,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0016.tar.gz",
+      "blobId": "48553deabd15fc2bd2c4de27924413aeaa72562b",
+      "size": 311446910,
+      "lfs": {
+        "sha256": "d12aad3b0c5616e3eb72c15e84b8690df54df943cb39ca27e937749e79b65e7a",
+        "size": 311446910,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0017.tar.gz",
+      "blobId": "2221b3639ee573a82d6862fa03f1dc8fd83b4c7a",
+      "size": 246875164,
+      "lfs": {
+        "sha256": "08098d33abac800bb1d9d25f5cb42d1029d39d1dc23e812ad648c1726b5b0040",
+        "size": 246875164,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0018.tar.gz",
+      "blobId": "d2b40fc11bc5dbb8b32c9f55292b729d4e9f39c9",
+      "size": 253939534,
+      "lfs": {
+        "sha256": "c791e0d84a113e640d290363ce72f61ce24a0ea2b537a87dedbf4b95203a5762",
+        "size": 253939534,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0019.tar.gz",
+      "blobId": "952e7d954b3b2e087957967f0a9e3e49f09b3a23",
+      "size": 306347896,
+      "lfs": {
+        "sha256": "ea84b6a18e5f52c077ed45480592e0695e87818c8e5f1d446e58594c692949b6",
+        "size": 306347896,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0020.tar.gz",
+      "blobId": "fce571b7bdea7e804e0306e5c970736bd2e1e99c",
+      "size": 271779640,
+      "lfs": {
+        "sha256": "5d5e3442cb9034885aadc3e09f7d2ebd7244e7654bec07ff977c2b171591f084",
+        "size": 271779640,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0021.tar.gz",
+      "blobId": "9f80aad8f6f469b7b0bbcd563ae7ff2e8db3ef43",
+      "size": 330487810,
+      "lfs": {
+        "sha256": "1e61ba314bf7ecdb22bb0f4673dc8bb3db04a15a7fb5fc06bef0fd261d918466",
+        "size": 330487810,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0022.tar.gz",
+      "blobId": "a08417ca9ec14ec5122dd63c65721237e9ed1564",
+      "size": 394606662,
+      "lfs": {
+        "sha256": "013a72b1dea11f9415dad1605fc011960c9703d78f24edded8c53fceed6a44c6",
+        "size": 394606662,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0023.tar.gz",
+      "blobId": "b9b645ae03b1646558635dcf75cf40dcb6f1542f",
+      "size": 335234086,
+      "lfs": {
+        "sha256": "91af86d46c746da1b067de8d7c9e30eec99961c5f58561ca5649a38bc17a2e57",
+        "size": 335234086,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0024.tar.gz",
+      "blobId": "d27e1e8d1fd6dda49d3dbf69d8391020bbe8aa1b",
+      "size": 295287828,
+      "lfs": {
+        "sha256": "c515cc7b042906c6e0fc4ba4e987fb34927c8f32efee3bfb92feb8176dca9422",
+        "size": 295287828,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0025.tar.gz",
+      "blobId": "4aec0fb40634956e9a6f0fa248995db3b14e80c6",
+      "size": 286303877,
+      "lfs": {
+        "sha256": "9cc701394c9f942b215b1621aec0ec52751716e0e4dcb692622b801943d29ddb",
+        "size": 286303877,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0026.tar.gz",
+      "blobId": "fad27f40a879cf6d91fe6f6171230504a704b3e7",
+      "size": 372649096,
+      "lfs": {
+        "sha256": "94d7391dfc2c30f5e553b6972f79d0ac8494903d8ff8fdd49f4bffde0e0f427a",
+        "size": 372649096,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0027.tar.gz",
+      "blobId": "34428504983462bd43326b18f7cfb433e0d06846",
+      "size": 277076671,
+      "lfs": {
+        "sha256": "bbdded65f50f3d363f05f107c3084920b1d048c268492eed04da3c21fc7bb5d5",
+        "size": 277076671,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0028.tar.gz",
+      "blobId": "956da68a0063afa605a999eb17eb58b36f351f88",
+      "size": 342213354,
+      "lfs": {
+        "sha256": "5573234ea9fba4a4dd9b6e508f233537a9e94b48c9d9f3b2bd29efa51b4b4ece",
+        "size": 342213354,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0029.tar.gz",
+      "blobId": "06635194d74b5cdd383b7b084e1f93cba91f930f",
+      "size": 260941511,
+      "lfs": {
+        "sha256": "18bbda6e1a8505c387055da996b99cdd3a357b1a428bf909e3cd50abc5508fa0",
+        "size": 260941511,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0030.tar.gz",
+      "blobId": "c5ed2307304097f371aad34b402979be53ecf204",
+      "size": 367295812,
+      "lfs": {
+        "sha256": "ae40387a2a682235610241875da4105ea3181c1f089395dfa3222a94cd6d64dd",
+        "size": 367295812,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0031.tar.gz",
+      "blobId": "3fab94f6df0086493a994d9ec9e979b6ef21e0e8",
+      "size": 258124113,
+      "lfs": {
+        "sha256": "9644da7767d74cdb55881c934e10666f170692e19bbac1bb2bf8a0b51835aaef",
+        "size": 258124113,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0032.tar.gz",
+      "blobId": "bc86aa570f1fe843ccc0692ec05e13bc5df0a54a",
+      "size": 256146516,
+      "lfs": {
+        "sha256": "85b5f3ac235a0a3ff97d88db495d2646562f7eab74209d19404884fd65bca8d5",
+        "size": 256146516,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0033.tar.gz",
+      "blobId": "789f4426525ad7f8cdbdea2b37f2242256f5738b",
+      "size": 277717628,
+      "lfs": {
+        "sha256": "86b8a088a6f0e8442c96a5e220446b3fb4a2314abe22a670cccce0e273ef18c6",
+        "size": 277717628,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0034.tar.gz",
+      "blobId": "0ac9c2df7e3e975f5434f86ef646f03c332e86ef",
+      "size": 331982311,
+      "lfs": {
+        "sha256": "a3c709311759a2c90ee1e5791be4cace57dd449efb80ce270595c9205e383561",
+        "size": 331982311,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0035.tar.gz",
+      "blobId": "4df53b8a8409cbe372cfc9d581229ec657fede7e",
+      "size": 316744441,
+      "lfs": {
+        "sha256": "fe2b6ba65cf6a30b77cab5066fa27849cde60df5bb2248f350cba53c7689b5a4",
+        "size": 316744441,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0036.tar.gz",
+      "blobId": "893682ddb8b57e930aaf65a105f3475d0b72fa50",
+      "size": 280482660,
+      "lfs": {
+        "sha256": "4eacc35fe269bdb834f18df87a627ff18704ba428b059ef212615accc49180de",
+        "size": 280482660,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0037.tar.gz",
+      "blobId": "4c8df828caf9550feb7842921c97188487d91210",
+      "size": 308718575,
+      "lfs": {
+        "sha256": "2ab57eb7ba4f5c07d4636ea6a902eed3f9657dc2c1fa3eb64061a864cae125e0",
+        "size": 308718575,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0038.tar.gz",
+      "blobId": "b7753d940ebc8dfb5cde98211a5507b010bf73c0",
+      "size": 240734524,
+      "lfs": {
+        "sha256": "3fdbfa7f9dc66fa218b63b5487cccb0fe3a5ee7688b7cc48bad627f863a0b400",
+        "size": 240734524,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0039.tar.gz",
+      "blobId": "ee8558fdf146268a2237af766540bd1fd0d1ac4e",
+      "size": 259513494,
+      "lfs": {
+        "sha256": "eb61f97a76cc2925901acda8ee2c7f9bd318f8096c962726bcd7cdee03a15f9e",
+        "size": 259513494,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0040.tar.gz",
+      "blobId": "6ba722685720695291ebc2e014d0cc665e805f99",
+      "size": 310486550,
+      "lfs": {
+        "sha256": "280ba7892a1dfd1fd7382b0b52fcfb64d7ca7647b64085dbe9c5fa1d0fa404c1",
+        "size": 310486550,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0041.tar.gz",
+      "blobId": "ec5e1c45ad1896a27cb855f8b3a68a8f94b383f9",
+      "size": 279952636,
+      "lfs": {
+        "sha256": "5d787ab80e05f51e72231b2f9e700ca7b0ad5daca7d72aac8aae84372b2666c2",
+        "size": 279952636,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0042.tar.gz",
+      "blobId": "b17debf623bd057257c53d3842748f0b070f5f08",
+      "size": 272871770,
+      "lfs": {
+        "sha256": "09b650774c3d5b21021a85bb0507604d952cf0b1bf439c4efc62f48779140c7a",
+        "size": 272871770,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0043.tar.gz",
+      "blobId": "740e154eef548e157528e0dd5c748f074a414156",
+      "size": 289216303,
+      "lfs": {
+        "sha256": "9af6c0fb0e79aed4fffd2818665d2ffa32d8dff1b5ee6d7bf1e917e462a4c449",
+        "size": 289216303,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0044.tar.gz",
+      "blobId": "5edffd686b0b64744f7490eedaf4e097ccb24c52",
+      "size": 316648776,
+      "lfs": {
+        "sha256": "8a394ee0b6d3cd5ab403d51e26a5e7c634f2b671cc8d25900b527c5fd2f99864",
+        "size": 316648776,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0045.tar.gz",
+      "blobId": "8e8ad30f1f38f46a2e57335013776a6053dd52bb",
+      "size": 312469100,
+      "lfs": {
+        "sha256": "c8f7f1624f0922769b9e905009ecb48aaf25665da873c13dffea79c2a084bd58",
+        "size": 312469100,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0046.tar.gz",
+      "blobId": "21c388d12573c2122d39eb32206221ac57f64247",
+      "size": 237672669,
+      "lfs": {
+        "sha256": "8f4eb4486565904e611f88bdf79df231c1c023644096660fbc19486aa2d2fd04",
+        "size": 237672669,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0047.tar.gz",
+      "blobId": "bd024dc81e457142bcc8ac2b7ed6d6f8ea1385fe",
+      "size": 368179319,
+      "lfs": {
+        "sha256": "9615bc3a59073af5c859c39b432b527073aeae4d0bd4f6d830ee3f0efd15a13f",
+        "size": 368179319,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0048.tar.gz",
+      "blobId": "7299e6b8b32b7193db82c9a5c5087c9ed264d730",
+      "size": 342642973,
+      "lfs": {
+        "sha256": "7ea4ed236fe61fff4f5b20c24b5340540de7336415d9d0c02ea44c918211d0b7",
+        "size": 342642973,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0049.tar.gz",
+      "blobId": "578ae24607bb3148ed74c4f1f4c8fbed25e88ca4",
+      "size": 280139780,
+      "lfs": {
+        "sha256": "d06c000a4a5502af779ccb4c26702bd335a95f2d657483b4aa2dd3e423e233e2",
+        "size": 280139780,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0050.tar.gz",
+      "blobId": "ad72bfdda82f75c54aef7b95d3da3f375a610380",
+      "size": 269181968,
+      "lfs": {
+        "sha256": "fad03d6c3bea997cbe13d6a4ba57696201319bdd8bd563b82a1d037f86a0a4bc",
+        "size": 269181968,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0051.tar.gz",
+      "blobId": "adb6fd54f18a37aec5ee88c7272d65aff56aaa6b",
+      "size": 236445103,
+      "lfs": {
+        "sha256": "134b72be475490bbacd7d886c04c9cd2bb4ffcc8b6d73c8a5104240ae4582e9f",
+        "size": 236445103,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0052.tar.gz",
+      "blobId": "482e7b6e550a9c0e8990cd78f2fa97950a46c49f",
+      "size": 307806388,
+      "lfs": {
+        "sha256": "7ed519a6adbdefce0d5e9ab55cfb772d9477a4ce55fa17307a4ee070e7eb93b6",
+        "size": 307806388,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0053.tar.gz",
+      "blobId": "0c67b8a0dc121a2a70d3a3b01b811f51293efd9b",
+      "size": 258115992,
+      "lfs": {
+        "sha256": "8d0a0a1605a28a692a53d499abfac601709f45df1bed389155b768811f639c3a",
+        "size": 258115992,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0054.tar.gz",
+      "blobId": "8ca37d7408cb3614b7a192a4cafeb98c0b6acc45",
+      "size": 286272672,
+      "lfs": {
+        "sha256": "50c06fc1f4197edbecb7e30360c5c690a402790b89edc90c8f47ca4a21d66add",
+        "size": 286272672,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0055.tar.gz",
+      "blobId": "7cc13f2d24ed43626b1572952b3dd6034df92802",
+      "size": 318048121,
+      "lfs": {
+        "sha256": "1e9d346567c4dbbe595043b61667683220ab3b4e82633a42178059898532edba",
+        "size": 318048121,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0056.tar.gz",
+      "blobId": "0d4cdbc0bd80328a2f08f0185e042e6f4b5bf8ce",
+      "size": 347385754,
+      "lfs": {
+        "sha256": "89403a6dc4cdc96effdd2ce03d90d533acc0a73c86d833d952554034edf04fcf",
+        "size": 347385754,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0057.tar.gz",
+      "blobId": "9669ab95336f02ed6cd43e0655377a69b3dbb1e8",
+      "size": 318332267,
+      "lfs": {
+        "sha256": "a089420c5204bb7ad3b97dfe5145a229f3c3170482fc408e16134cf75a098c0b",
+        "size": 318332267,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0058.tar.gz",
+      "blobId": "fbafa894436af7210ecf8957ae6e25193b3a83ee",
+      "size": 274769807,
+      "lfs": {
+        "sha256": "2de49159733d6c4fba73425c827834e98ea10336d08c080aeb7a3f9bb4ba23be",
+        "size": 274769807,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0059.tar.gz",
+      "blobId": "e4008a21c726ad0b90a1a3a160c718f5ad80f21a",
+      "size": 281202887,
+      "lfs": {
+        "sha256": "31777d995ce036549fef2f47ed55a20e31a1615dc255b225d3fb4c03d9d4d0fb",
+        "size": 281202887,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0060.tar.gz",
+      "blobId": "99fa05ddd684cac30e116f0b9881258450c5723e",
+      "size": 298416417,
+      "lfs": {
+        "sha256": "54330e75518270933affaff9a7f07b75c684512b9d81d2cc105d1aac9c8f8418",
+        "size": 298416417,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0061.tar.gz",
+      "blobId": "7ad59f351597b58676c17723d3ffef0364f4822a",
+      "size": 335575660,
+      "lfs": {
+        "sha256": "1c4a28819db84c0a814f1c9bb12354d0fb6bcfe5cab4be17065f063a76117a9b",
+        "size": 335575660,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0062.tar.gz",
+      "blobId": "deb6dc00df8807a0eeee37cc0d7cca609752fe4b",
+      "size": 303666976,
+      "lfs": {
+        "sha256": "b4e5eecbfffe41e9eacafdf476278e9093e0619c3518dc26047e3bd40901567b",
+        "size": 303666976,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0063.tar.gz",
+      "blobId": "ab0346bdd2a9b5f48a86699295a0506f25225db8",
+      "size": 321928140,
+      "lfs": {
+        "sha256": "3b05f296cece41ad5e3dc25c183022a122e5de4fa5ecdcb4447af29297c8fc45",
+        "size": 321928140,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0064.tar.gz",
+      "blobId": "5459853b0b19f23affe7b284390336519a31ce28",
+      "size": 277059938,
+      "lfs": {
+        "sha256": "39f8682968765c02d6b8a30dcebcd6023c2e35a6b5b512b227c4f361eee00cfb",
+        "size": 277059938,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0065.tar.gz",
+      "blobId": "a969c2dea2ad1cb0e0885ec31a42ca1486dc6806",
+      "size": 283321080,
+      "lfs": {
+        "sha256": "7d044ab36801a3f97f28e77910b688080f9001b5c72e7eedd04ba5bc3484c7da",
+        "size": 283321080,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0066.tar.gz",
+      "blobId": "25b339bb60c7b34cae7f0b0f048270d1d67ac87d",
+      "size": 284570847,
+      "lfs": {
+        "sha256": "290f986efe8f28de8f5641233b47f6a4572b1f7e25c84163eb15d4cb4b336123",
+        "size": 284570847,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0067.tar.gz",
+      "blobId": "60486a00266b89362c1e2c222cb4daf1e3301816",
+      "size": 298830161,
+      "lfs": {
+        "sha256": "f13a72ca1636ea464d0d5ffbf040af0663ae105a2b07f6a6ee2d95440b9ac112",
+        "size": 298830161,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0068.tar.gz",
+      "blobId": "26a38c18676ff0fabca5bc56f192b3801eacea77",
+      "size": 258134770,
+      "lfs": {
+        "sha256": "f01783967591e31cf760cfc910b53137a5d7fd355eb785d6ffd9ee33f9462e89",
+        "size": 258134770,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0069.tar.gz",
+      "blobId": "395428fa96efd333eab961030e4766ccfa5ca24e",
+      "size": 343246396,
+      "lfs": {
+        "sha256": "5145fb9f6085e77d373f842f381fbab0905f80f0daf89b9e048e831234e92cf7",
+        "size": 343246396,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0070.tar.gz",
+      "blobId": "1d509af10f8e41025aaa34a77213815c05649a09",
+      "size": 229788430,
+      "lfs": {
+        "sha256": "4dee752ac84602e255f43cbbaa6457aa13d3a08b3c6ee7804fe5c1f2ed71b45f",
+        "size": 229788430,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0071.tar.gz",
+      "blobId": "1fddaedd24be3bfdf0ecb2cf056d2e8dc1399cf8",
+      "size": 296590414,
+      "lfs": {
+        "sha256": "34d03616da1f808c7ae3c310031e79fc5afd81b7dbc19f1af548cc72baec244b",
+        "size": 296590414,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0072.tar.gz",
+      "blobId": "c2a11db808e525d37085d7d1dde5fdf9b1f74619",
+      "size": 273700410,
+      "lfs": {
+        "sha256": "920907d0041cc6b90b2ab7d72fe39e8b2261eda6ef69fae3f5a1543961dd0d74",
+        "size": 273700410,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0073.tar.gz",
+      "blobId": "21c48efd09ba81fdf47815aaf8edc8910b345496",
+      "size": 306695889,
+      "lfs": {
+        "sha256": "b335af48b128c5432fe0438e2398d85d41dcb85022fb45a6125c5b4a7261df80",
+        "size": 306695889,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0074.tar.gz",
+      "blobId": "1502e2a69f53bdd544e0e11655df09ee5d1d1a39",
+      "size": 238351742,
+      "lfs": {
+        "sha256": "4b9557208d53a587c1166daa4b7ce87b5f2a1a7ec3ac5715f3b6545f7626db3d",
+        "size": 238351742,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0075.tar.gz",
+      "blobId": "57847a24012e0f965ceba1ce89da5ad58c257538",
+      "size": 288053465,
+      "lfs": {
+        "sha256": "81230e7d25926e41c4483b837d5d2c9b98c3799e87162fa4064388da6edc6c61",
+        "size": 288053465,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0076.tar.gz",
+      "blobId": "30a34ff888a6f430559f5ae5f0e335ffddd886d3",
+      "size": 340369952,
+      "lfs": {
+        "sha256": "3d0c90459987675578acde9b792521eee7e6ef585afb175abdd0e06554b7308a",
+        "size": 340369952,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0077.tar.gz",
+      "blobId": "92d4da0e2a26b0946a307dfe96d53c45ce635191",
+      "size": 248609630,
+      "lfs": {
+        "sha256": "abc70b340fdb908c2024361929287bdb1aece8a0252122bce18771ed8befbd3c",
+        "size": 248609630,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0078.tar.gz",
+      "blobId": "9085efe62fa63624bf0504b6060bf12cfc2d5ca8",
+      "size": 260709588,
+      "lfs": {
+        "sha256": "6b14f9fcbeabd34307774073cbb7b7577fe597c8feff1df9f6c3aeb666a9b7c1",
+        "size": 260709588,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0079.tar.gz",
+      "blobId": "c54e3a1983d5a31c0621fe0ee582ecf81198fc25",
+      "size": 261410243,
+      "lfs": {
+        "sha256": "d058f285bea6610ead666ba3a854545d01dd492b4b561f588ad9d0f46fd2bc4d",
+        "size": 261410243,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0080.tar.gz",
+      "blobId": "ef32ec7199ad9efa25b3f23c1cb26e1d972ca54d",
+      "size": 264430959,
+      "lfs": {
+        "sha256": "4cd405987b9dbf69c4a85fcb47b2079fd0445519d2c0ded0568b86f69990fd8b",
+        "size": 264430959,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0081.tar.gz",
+      "blobId": "12ac205e26abf5e6cf86585ea87378ffb10a6b5f",
+      "size": 281098582,
+      "lfs": {
+        "sha256": "67f5a2bf3078cca5db79d1bf234ce2869912f1dde98fa516c5ca89eb31bb8e4c",
+        "size": 281098582,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0082.tar.gz",
+      "blobId": "9659332e5624471ae4829b75880b6b7155a831bb",
+      "size": 298669428,
+      "lfs": {
+        "sha256": "680fff17beefac00f3870b066aec42461e88d40864f5bfa5edfd84a1db2a2f98",
+        "size": 298669428,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0083.tar.gz",
+      "blobId": "f306f50216e10da7201e0fd98c21ada6ece1b0a3",
+      "size": 314357456,
+      "lfs": {
+        "sha256": "a0e53a5f6ee01871c7f4bc9c02b76e3582796be6958a94ba5d71d4f9a630c855",
+        "size": 314357456,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0084.tar.gz",
+      "blobId": "c8f377237b9b6dd6beb3d5d73e5945474bec0ee1",
+      "size": 258354139,
+      "lfs": {
+        "sha256": "fd4a410282d836ebd08fbfc7ba3373e07a642a90a0493e20b1804550f7a011c3",
+        "size": 258354139,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0085.tar.gz",
+      "blobId": "c9d09da0d03aaadb4df58c704a9230edc4324ea0",
+      "size": 278913227,
+      "lfs": {
+        "sha256": "c3bf2c7eeea14276cff39a96a767c2f49911cb0febfd22c4478f91dc0315504e",
+        "size": 278913227,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0086.tar.gz",
+      "blobId": "c75f187f53b24d1f84baf740692cc403b533c469",
+      "size": 268832567,
+      "lfs": {
+        "sha256": "fcaf74258b7c2fbb5df0b96304637e7fd374cfbf7389db366ddb62dfd73641c4",
+        "size": 268832567,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0087.tar.gz",
+      "blobId": "a665d30967d1a2307fecbc267c5af9804b92e531",
+      "size": 269772589,
+      "lfs": {
+        "sha256": "ea157107395013ff1be4f58bd0af7974e1889ba745a06c856b515947aa5a9e6d",
+        "size": 269772589,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0088.tar.gz",
+      "blobId": "b17a53d70c8ae2aa936bde71df09d0b5963912bb",
+      "size": 328855353,
+      "lfs": {
+        "sha256": "0b0dcf7ad8300ab94e7eff8e74cc892a6c6bab55871474437603342705ea5f8d",
+        "size": 328855353,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0089.tar.gz",
+      "blobId": "0189ac24857de0225c3128e1781625bcba7a248c",
+      "size": 300618880,
+      "lfs": {
+        "sha256": "10f05ce8001f82e24a47bf1f7a1aa0f8a9e520794e18c8330fa5a64265876dc6",
+        "size": 300618880,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0090.tar.gz",
+      "blobId": "8d4d5d5d7a3008807d0077c1ce6f04e97c65ead1",
+      "size": 269504247,
+      "lfs": {
+        "sha256": "266bd132f1a7a5b0c0e21ca1ab35500524fc7d0796b72de33c8ecfef1572e4fc",
+        "size": 269504247,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0091.tar.gz",
+      "blobId": "70b71d0ed7225e2e374daf0ac577cb79797e30a2",
+      "size": 269745605,
+      "lfs": {
+        "sha256": "ef85af16cad8120ff77c07063db1b8111ae37fdf260947122cb1bb13ac60e2ae",
+        "size": 269745605,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0092.tar.gz",
+      "blobId": "95755cf45cf211db40190140d1d1a9aac12ba90c",
+      "size": 245425886,
+      "lfs": {
+        "sha256": "3561910a9c8a8f11e0d4a571954bff2538eb375365499941e744efaac052b493",
+        "size": 245425886,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0093.tar.gz",
+      "blobId": "bb9c4b39bc8a36ce5d41da8757efca92c914bd4d",
+      "size": 393390982,
+      "lfs": {
+        "sha256": "adc9d2f092f01587419d34802b0d3565301b26b2125c5e84e7ccad53cbfe6fe5",
+        "size": 393390982,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0094.tar.gz",
+      "blobId": "e937ddf2fb0d349fd2ff247c920d2d5c23bc0e28",
+      "size": 261157036,
+      "lfs": {
+        "sha256": "8fe63b11edf5fc3e18e58aa154182223f1d6d864a113037567355e6fd739224f",
+        "size": 261157036,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0095.tar.gz",
+      "blobId": "838104b20d3e6a9b6bb5c4bcc545b494f7887a6d",
+      "size": 343925681,
+      "lfs": {
+        "sha256": "2294f166b2d2f0897318ad3b1caee652dacf5867c9ed723b74205e5bf3c08a8e",
+        "size": 343925681,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0096.tar.gz",
+      "blobId": "3993f3ea3e32718a1d5eccc62e6e7e5ccca58355",
+      "size": 280934187,
+      "lfs": {
+        "sha256": "8f6ea18ce8d0a5b08578b922363c34d2136ff094e41a40c31009158db7652045",
+        "size": 280934187,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0097.tar.gz",
+      "blobId": "4290dd6446097aec880f921fc5236ea3ed466044",
+      "size": 251167901,
+      "lfs": {
+        "sha256": "fd676bacce603f8ed59df8c5991317adf9f70c350aebfd04379933a9f921ad09",
+        "size": 251167901,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0098.tar.gz",
+      "blobId": "358cd9357d6999618e86ea1b4197cd83c0679994",
+      "size": 289815511,
+      "lfs": {
+        "sha256": "177a27c926fd943c0afe1d9a4021c24149c26fcb518273ab9e95162c61cbcb1b",
+        "size": 289815511,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "data/0099.tar.gz",
+      "blobId": "7eeffb4e1949dfaac6cf1c24a6242a4f4c8521e3",
+      "size": 319337064,
+      "lfs": {
+        "sha256": "e4eef5eb7c6a5dc89b2878723d646102c19a8e604f51d6eea6bd7c3bfd55e8ca",
+        "size": 319337064,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "metadata/test.parquet",
+      "blobId": "ba1a150a92efba3755aaa643c4f72f492f91b070",
+      "size": 14445025,
+      "lfs": {
+        "sha256": "9b1c5aa0676d49a9adb5b6d348d445950ba14cf80aae477eaa2e8175824f80e0",
+        "size": 14445025,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "metadata/train.parquet",
+      "blobId": "ef96582339c70f6c6078b6c8fabe906be1d8b40b",
+      "size": 283607628,
+      "lfs": {
+        "sha256": "f4ae93939e06ba71c053c81020ffd2c92be2e4506ef84a19717401d55e643d58",
+        "size": 283607628,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "metadata/validation.parquet",
+      "blobId": "5f3c7deeabdf47eee4591f05486c8ad3e119d8ca",
+      "size": 15234781,
+      "lfs": {
+        "sha256": "2a30dde43ab3240a5a7f97770c8488750044f44afc1107a7c7a58c100d6b7880",
+        "size": 15234781,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "train_val_test.json",
+      "blobId": "978be8f280207a0fb2d02349e7856795ca033452",
+      "size": 14817576,
+      "lfs": {
+        "sha256": "b33e94b5afeecb775319b14b3d98c6fd07e2376794b643ee32b1c0d958bac5b9",
+        "size": 14817576,
+        "pointerSize": 133
+      }
+    }
+  ]
+}

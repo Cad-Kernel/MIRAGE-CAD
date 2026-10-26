@@ -1,0 +1,10 @@
+PART flluma_0007100 CAT rounded_slot_profile_plate UNITS mm SEED 20267614
+PARAM hole_radius 1.13 MIN 0.8 MAX 5 SEM hole_radius
+PARAM slot_length 14.5 MIN 6 MAX 34 SEM pocket_length
+PARAM slot_width 5.1 MIN 2 MAX 12 SEM pocket_width
+PARAM thickness 6.7 MIN 2 MAX 12 SEM thickness
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-22.1,-30.7],[22.1,-30.7],[28.2,-24.8],[28.2,24.8],[22.1,30.7],[-22.1,30.7],[-28.2,24.8],[-28.2,-24.8]] profile_type=polygon
+F extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness
+F pocket_001 OP_RECTANGULAR_POCKET SEM slot ROLE functional_cut DEP extrude_001 TARGET extrude_001.top_face PARAMS depth=2.68 length=@slot_length width=@slot_width
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP pocket_001 TARGET pocket_001.top_face PARAMS count=2 depth=THROUGH positions=[[-17.97,15.35],[17.97,-15.35]] radius=@hole_radius
+END

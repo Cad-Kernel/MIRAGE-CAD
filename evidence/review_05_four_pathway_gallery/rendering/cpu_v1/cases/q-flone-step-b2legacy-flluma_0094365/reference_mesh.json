@@ -1,0 +1,38 @@
+{
+  "case_id": "q-flone-step-b2legacy-flluma_0094365",
+  "kind": "reference",
+  "source_sha256": "dcef3b70dcf48fef4c294e775e6acdbb814364d66f4ce1b9dd948c8ff790a15f",
+  "created_utc": "2026-10-22T17:48:01.434980+00:00",
+  "python": "3.11.15 | packaged by conda-forge | (main, Aug 11 2026, 10:26:29) [GCC 14.4.0]",
+  "cadquery_version": "2.5.0.dev0",
+  "tessellation": {
+    "helper_path": "__DEV_ROOT__\\src\\scratch\\probe_cadrecode_mesh.py",
+    "helper_sha256": "853b27e75be7cc7dac41470408184ee7e6ca030334be6855766582597c491502",
+    "function": "tessellate_step",
+    "linear_deflection_mm": 0.03,
+    "angular_deflection_radians": 0.3,
+    "render_only": true,
+    "metric_recomputation": false,
+    "mesh_postprocessing": "exact coincident-vertex weld only; no smoothing, repairs or coordinate transforms"
+  },
+  "coordinates_changed": false,
+  "status": "TESSELLATED",
+  "mesh": {
+    "path": "rendering/cpu_v1/cases/q-flone-step-b2legacy-flluma_0094365/reference_mesh.npz",
+    "bytes": 7578,
+    "sha256": "31abc2b74394dac122db98a52044c7963920b6c7bf7943433f2b4e43c4a57314"
+  },
+  "vertices": 440,
+  "vertices_before_exact_weld": 1024,
+  "triangles": 892,
+  "bbox_min": [
+    -26.20000076293,
+    -28.39999961853,
+    -4.500000154738939
+  ],
+  "bbox_max": [
+    26.200000762939,
+    28.39999961853,
+    16.720000423087182
+  ]
+}

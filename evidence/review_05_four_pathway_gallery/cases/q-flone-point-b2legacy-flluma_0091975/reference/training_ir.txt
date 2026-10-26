@@ -1,0 +1,11 @@
+PART flluma_0091975 CAT control_plate UNITS mm SEED 20352489
+PARAM chamfer_distance 0.11 MIN 0.1 MAX 2 SEM chamfer_distance
+PARAM height 28.2 MIN 12 MAX 80 SEM overall_height
+PARAM hole_radius 2.17 MIN 1 MAX 8 SEM hole_radius
+PARAM hole_spacing 24.99 MIN 5 MAX 45 EXPR width*0.294 SEM hole_spacing
+PARAM thickness 6 MIN 3 MAX 25 SEM thickness
+PARAM width 85 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F hole_001 OP_HOLE_PATTERN SEM clearance_hole ROLE functional_feature DEP plate_001 TARGET plate_001.top_face PARAMS count=3 depth=THROUGH positions=[[-@hole_spacing,0],[0,0],[@hole_spacing,0]] radius=@hole_radius
+F chamfer_001 OP_CHAMFER SEM outer_edge_break ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS distance=@chamfer_distance
+END

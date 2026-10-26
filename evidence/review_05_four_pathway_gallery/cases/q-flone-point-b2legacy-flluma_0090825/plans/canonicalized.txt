@@ -1,0 +1,22 @@
+PART flluma_0005000 CAT pipe_clamp UNITS mm SEED 20265514
+PARAM clamp_jaw_height 10.1 MIN 3 MAX 24 EXPR thickness*1.15 SEM clamp_jaw_height
+PARAM clamp_jaw_width 10.1 MIN 4 MAX 24 EXPR width*0.166 SEM clamp_jaw_width
+PARAM clamp_length 16.1 MIN 8 MAX 50 EXPR width*0.206 SEM overall_length
+PARAM clamp_thickness 5.1 MIN 2 MAX 14 EXPR thickness*0.82 SEM thickness
+PARAM clamp_width 23.1 MIN 6 MAX 42 EXPR height*0.43 SEM overall_width
+PARAM height 109.1 MIN 20 MAX 80 SEM overall_height
+PARAM hole_radius 1.52 MIN 0.8 MAX 5 SEM hole_radius
+PARAM pocket_width 26.1 MIN 16 MAX 80 EXPR width*0.238 SEM pocket_width
+PARAM thickness 3 MIN 2 MAX 25 SEM thickness
+PARAM width 253.1 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F box_001 OP_BOX SEM clamp_jaw ROLE secondary_feature PARAMS height=@clamp_jaw_height length=@clamp_jaw_width width=@clamp_thickness
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,31.15,-10.05]
+F join_001 OP_BOOLEAN_JOIN SEM joined_clamp_jaw ROLE secondary_feature DEP plate_001,translate_001 TARGET plate_001,translate_001
+F box_002 OP_BOX SEM clamp ROLE secondary_feature PARAMS height=@clamp_length length=@clamp_width width=10.8
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_002 PARAMS offset=[10.182,22.625,8.475]
+F mirror_001 OP_MIRROR SEM pattern ROLE pattern_feature DEP translate_002 PARAMS axis=X
+F join_002 OP_BOOLEAN_JOIN SEM joined_clamp_jaw ROLE secondary_feature DEP join_001,mirror_001 TARGET join_001,mirror_001
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP join_002 TARGET join_002.top_face PARAMS depth=1.2 length=10.082 width=@pocket_width
+F hole_001 OP_HOLE_PATTERN SEM bolt_hole_pattern ROLE functional_feature DEP pocket_001 TARGET pocket_001.top_face PARAMS count=4 depth=THROUGH positions=[[-6.126,-5.715],[6.126,-5.715],[-6.126,5.715],[6.126,5.715]] radius=@hole_radius
+END

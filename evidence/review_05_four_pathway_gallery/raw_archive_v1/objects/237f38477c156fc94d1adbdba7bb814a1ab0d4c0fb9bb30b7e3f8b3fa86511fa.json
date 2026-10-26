@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0090051",
+  "part_name": "flluma_0090051",
+  "category": "lofted_transition_bracket",
+  "seed": 20350565,
+  "units": "mm",
+  "parameters": {
+    "flange_length": {
+      "value": 36.54,
+      "min": 16.0,
+      "max": 48.0,
+      "expression": "lower_width * 1.45",
+      "semantic_type": "primitive_length"
+    },
+    "flange_thickness": {
+      "value": 4.0,
+      "min": 1.5,
+      "max": 7.0,
+      "semantic_type": "thickness"
+    },
+    "flange_width": {
+      "value": 19.07,
+      "min": 12.0,
+      "max": 36.0,
+      "expression": "lower_height * 1.55",
+      "semantic_type": "primitive_width"
+    },
+    "hole_offset_x": {
+      "value": 15.35,
+      "min": 4.0,
+      "max": 24.0,
+      "expression": "flange_length * 0.42",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_offset_y": {
+      "value": 7.25,
+      "min": 3.0,
+      "max": 18.0,
+      "expression": "flange_width * 0.38",
+      "semantic_type": "hole_spacing"
+    },
+    "hole_radius": {
+      "value": 1.31,
+      "min": 0.5,
+      "max": 4.0,
+      "semantic_type": "hole_radius"
+    },
+    "loft_height": {
+      "value": 21.2,
+      "min": 8.0,
+      "max": 32.0,
+      "semantic_type": "loft_height"
+    },
+    "lower_height": {
+      "value": 12.3,
+      "min": 8.0,
+      "max": 30.0,
+      "semantic_type": "primitive_height"
+    },
+    "lower_width": {
+      "value": 25.2,
+      "min": 10.0,
+      "max": 40.0,
+      "semantic_type": "primitive_width"
+    },
+    "upper_radius": {
+      "value": 8.32,
+      "min": 3.0,
+      "max": 14.0,
+      "semantic_type": "loft_upper_radius"
+    }
+  },
+  "features": [
+    {
+      "id": "sketch_001",
+      "name": "loft_lower_rect_profile",
+      "type": "SketchFeature",
+      "category": "sketch",
+      "semantic_type": "loft_profile",
+      "parameters": {
+        "profile_type": "rectangle",
+        "width": {
+          "parameter": "lower_width",
+          "value": 25.2
+        },
+        "height": {
+          "parameter": "lower_height",
+          "value": 12.3
+        },
+        "centered": true,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "sketch_002",
+      "name": "loft_upper_round_profile",
+      "type": "SketchFeature",
+      "category": "sketch",
+      "semantic_type": "loft_profile",
+      "parameters": {
+        "profile_type": "circle",
+        "radius": {
+          "parameter": "upper_radius",
+          "value": 8.32
+        },
+        "segments": 48,
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "translate_001",
+      "name": "place_upper_loft_profile",
+      "type": "Translate",
+      "category": "modification",
+      "semantic_type": "placement",
+      "parameters": {
+        "offset": [
+          0.0,
+          0.0,
+          21.2
+        ]
+      },
+      "dependencies": [
+        "sketch_002"
+      ],
+      "rebuild_order": 3
+    },
+    {
+      "id": "loft_001",
+      "name": "square_to_round_transition",
+      "type": "Loft",
+      "category": "additive",
+      "semantic_type": "lofted_solid",
+      "parameters": {
+        "make_solid": true,
+        "ruled": false
+      },
+      "dependencies": [
+        "sketch_001",
+        "translate_001"
+      ],
+      "topology_references": {
+        "profiles": [
+          {
+            "feature_id": "sketch_001"
+          },
+          {
+            "feature_id": "translate_001"
+          }
+        ]
+      },
+      "rebuild_order": 4
+    },
+    {
+      "id": "box_001",
+      "name": "transition_lower_flange_seed",
+      "type": "Box",
+      "category": "additive",
+      "semantic_type": "flange",
+      "parameters": {
+        "length": {
+          "parameter": "flange_length",
+          "value": 36.54
+        },
+        "width": {
+          "parameter": "flange_width",
+          "value": 19.07
+        },
+        "height": {
+          "parameter": "flange_thickness",
+          "value": 4.0
+        },
+        "centered": true
+      },
+      "rebuild_order": 5
+    },
+    {
+      "id": "translate_002",
+      "name": "place_transition_lower_flange",
+      "type": "Translate",
+      "category": "modification",
+      "semantic_type": "placement",
+      "parameters": {
+        "offset": [
+          0.0,
+          0.0,
+          -1.8
+        ]
+      },
+      "dependencies": [
+        "box_001"
+      ],
+      "rebuild_order": 6
+    },
+    {
+      "id": "join_001",
+      "name": "join_transition_lower_flange",
+      "type": "BooleanJoin",
+      "category": "additive",
+      "semantic_type": "flange",
+      "parameters": {},
+      "dependencies": [
+        "loft_001",
+        "translate_002"
+      ],
+      "topology_references": {
+        "target": {
+          "feature_id": "loft_001"
+        },
+        "tool": {
+          "feature_id": "translate_002"
+        }
+      },
+      "rebuild_order": 7
+    },
+    {
+      "id": "hole_001",
+      "name": "transition_flange_bolt_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "bolt_hole_pattern",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 4,
+        "positions": [
+          [
+            -15.35,
+            -7.25
+          ],
+          [
+            15.35,
+            -7.25
+          ],
+          [
+            -15.35,
+            7.25
+          ],
+          [
+            15.35,
+            7.25
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 1.31
+        }
+      },
+      "dependencies": [
+        "join_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "join_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "join_001:top_face:b9ce48e7f7b9"
+        }
+      },
+      "rebuild_order": 8
+    }
+  ]
+}

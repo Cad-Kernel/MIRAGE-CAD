@@ -1,0 +1,20 @@
+PART flluma_0090820 CAT swept_pipe_bracket UNITS mm SEED 20351334
+PARAM chamfer_distance 0.11 MIN 0.05 MAX 1 SEM chamfer_distance
+PARAM flange_length 16 MIN 8 MAX 32 SEM primitive_length
+PARAM flange_thickness 2.7 MIN 1.5 MAX 8 SEM thickness
+PARAM flange_width 14.9 MIN 6 MAX 26 SEM primitive_width
+PARAM hole_radius 1.1 MIN 0.5 MAX 4 SEM hole_radius
+PARAM path_height 7.4 MIN 4 MAX 28 SEM path_height
+PARAM path_length 20.8 MIN 10 MAX 45 SEM path_length
+PARAM path_mid_length 13.04 MIN 5 MAX 32 EXPR path_length*0.627 SEM path_mid_length
+PARAM path_offset 4.6 MIN 2 MAX 18 SEM path_offset
+PARAM tube_radius 1.24 MIN 0.6 MAX 4 SEM sweep_radius
+F sweep_tube_001 OP_SWEEP_TUBE SEM sweep_tube ROLE primary_body PARAMS path_height=@path_height path_length=@path_length path_mid_length=@path_mid_length path_offset=@path_offset profile_segments=16 radius=@tube_radius
+F box_001 OP_BOX SEM flange ROLE secondary_feature PARAMS height=@flange_thickness length=@flange_length width=@flange_width
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,0,-0.405]
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[20.8,4.6,7.4]
+F join_001 OP_BOOLEAN_JOIN SEM flange ROLE secondary_feature DEP sweep_tube_001,translate_001 TARGET sweep_tube_001,translate_001
+F join_002 OP_BOOLEAN_JOIN SEM flange ROLE secondary_feature DEP join_001,translate_002 TARGET join_001,translate_002
+F hole_001 OP_HOLE_PATTERN SEM bolt_hole_pattern ROLE functional_feature DEP join_002 TARGET join_002.top_face PARAMS count=2 depth=THROUGH positions=[[-3.84,0],[3.84,0]] radius=@hole_radius
+F chamfer_001 OP_CHAMFER SEM outer_chamfer ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS distance=@chamfer_distance
+END

@@ -1,0 +1,12 @@
+{
+  "status": "SUCCESS",
+  "generated_stdout": "",
+  "shape_type": "Solid",
+  "is_valid": true,
+  "bbox": [
+    200.00520776826966,
+    192.02604053653928,
+    34.0
+  ],
+  "step_bytes": 16026
+}

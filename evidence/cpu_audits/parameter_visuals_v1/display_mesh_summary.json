@@ -1,0 +1,269 @@
+{
+  "records": [
+    {
+      "case_id": "P01",
+      "side": "before",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "07532eaee50186a2059534bbdeca6a4fd60b700e40656037d4e0e250b864bbe5",
+      "mesh_sha256": "ab76ab511cd7d519594bc3b8ca995eb60e6223982149e2db2497cc77893604dc",
+      "vertices": 436,
+      "triangles": 884,
+      "bbox_min": [
+        -35.84999847412,
+        -24.35000038147,
+        -4.00000018240176
+      ],
+      "bbox_max": [
+        35.849998474121,
+        24.35000038147,
+        36.840000152588
+      ],
+      "brep_volume_current": 35986.90958243193,
+      "brep_area_current": 11292.523088858212,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P01",
+      "side": "after",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "155580ac1b8c406a73ea4988b99c1e247ef7ca728209d3afe046e74ba8beb08b",
+      "mesh_sha256": "a7279216d0492f9c9b8143d2dd1d76417c0f680e748589412647e1794d445747",
+      "vertices": 436,
+      "triangles": 884,
+      "bbox_min": [
+        -35.84999847412,
+        -24.35000038147,
+        -4.00000018240176
+      ],
+      "bbox_max": [
+        35.849998474121,
+        24.35000038147,
+        38.687000274658
+      ],
+      "brep_volume_current": 35666.526434362735,
+      "brep_area_current": 11402.748289549872,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P02",
+      "side": "before",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "ad2f5234c8266579448b4fa58b6c8609312a35e63c2059f4872175c0e12129f5",
+      "mesh_sha256": "aec69c8cd01be29808422bf7d135628cda60d439e1f02bf86a09320c864ae911",
+      "vertices": 470,
+      "triangles": 952,
+      "bbox_min": [
+        -37.25,
+        -39.29999923706,
+        -3.000000243778663
+      ],
+      "bbox_max": [
+        37.25,
+        39.299999237061,
+        8.139999866486
+      ],
+      "brep_volume_current": 36187.07846565461,
+      "brep_area_current": 14082.471242264779,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P02",
+      "side": "after",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "a22d2fdc631ec7e192e4e396d7db18c3d4916d1339501cc83105134aa017b199",
+      "mesh_sha256": "2cd6018c4dcd7928a1b52b02774ca7753cf42e36924a8c7539d95c2962786f8c",
+      "vertices": 470,
+      "triangles": 948,
+      "bbox_min": [
+        -37.25,
+        -39.29999923706,
+        -3.000000243778663
+      ],
+      "bbox_max": [
+        37.25,
+        39.299999237061,
+        7.87299990654
+      ],
+      "brep_volume_current": 36079.19079843965,
+      "brep_area_current": 14707.226267962527,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P03",
+      "side": "before",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "bee6686f6612a08a86902adacbf15f951d0b878b10ff35c8d45a8292b9a9446a",
+      "mesh_sha256": "dd6f3732f8d4eaa31db1eda9ec85c7e19be0ded64e5ace82ea966fee5a939f27",
+      "vertices": 16,
+      "triangles": 24,
+      "bbox_min": [
+        -38.29999971389,
+        -21.60000038147,
+        -5.0
+      ],
+      "bbox_max": [
+        33.299999237061,
+        21.60000038147,
+        25.980000495911
+      ],
+      "brep_volume_current": 33013.23686657863,
+      "brep_area_current": 9529.839167920069,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P03",
+      "side": "after",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "bee6686f6612a08a86902adacbf15f951d0b878b10ff35c8d45a8292b9a9446a",
+      "mesh_sha256": "dd6f3732f8d4eaa31db1eda9ec85c7e19be0ded64e5ace82ea966fee5a939f27",
+      "vertices": 16,
+      "triangles": 24,
+      "bbox_min": [
+        -38.29999971389,
+        -21.60000038147,
+        -5.0
+      ],
+      "bbox_max": [
+        33.299999237061,
+        21.60000038147,
+        25.980000495911
+      ],
+      "brep_volume_current": 33013.23686657863,
+      "brep_area_current": 9529.839167920069,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P04",
+      "side": "before",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "21c8f9af4b948f34fc3ac722c1067d78903e84dd1b380550323b39b5eb90676f",
+      "mesh_sha256": "10555542b9964801c353cba532ab688cd4876b94f26fd31e87ff7135743f73f6",
+      "vertices": 32,
+      "triangles": 60,
+      "bbox_min": [
+        -50.45,
+        -15.06,
+        0.0
+      ],
+      "bbox_max": [
+        50.45,
+        15.06,
+        5.0
+      ],
+      "brep_volume_current": 10852.261572,
+      "brep_area_current": 5879.665,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P04",
+      "side": "after",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "21c8f9af4b948f34fc3ac722c1067d78903e84dd1b380550323b39b5eb90676f",
+      "mesh_sha256": "10555542b9964801c353cba532ab688cd4876b94f26fd31e87ff7135743f73f6",
+      "vertices": 32,
+      "triangles": 60,
+      "bbox_min": [
+        -50.45,
+        -15.06,
+        0.0
+      ],
+      "bbox_max": [
+        50.45,
+        15.06,
+        5.0
+      ],
+      "brep_volume_current": 10852.261572,
+      "brep_area_current": 5879.665,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P05",
+      "side": "before",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "c8cb6b25045df5fd5ccb717aad687e8dcd1ab3c51141496252d5f9199c0c1d66",
+      "mesh_sha256": "a855c24c1f26d64841a2c7c9a350ada0294f73588b2722a18c4bec461d26909f",
+      "vertices": 724,
+      "triangles": 1460,
+      "bbox_min": [
+        -28.70000076293,
+        -22.89999961853,
+        -3.000000277492743
+      ],
+      "bbox_max": [
+        28.700000762939,
+        22.89999961853,
+        7.77999997139
+      ],
+      "brep_volume_current": 15925.347362875758,
+      "brep_area_current": 6974.891563383619,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P05",
+      "side": "after",
+      "status": "CURRENT_EXECUTION_FAILURE_PLACEHOLDER",
+      "failure_stage": "step_export_ok"
+    },
+    {
+      "case_id": "P06",
+      "side": "before",
+      "status": "CPU_DISPLAY_MESH_CREATED",
+      "step_sha256": "35e694904c92948927150a6cec25562703e5ca96588c7576a36c78590da11c68",
+      "mesh_sha256": "f29d32dd232c3d62f222abe9772a03f1fc1be1cf4d539e0ab2568ee9e4bb19e4",
+      "vertices": 740,
+      "triangles": 1484,
+      "bbox_min": [
+        -7.550000190735,
+        -7.199999809265,
+        -2.195000052452
+      ],
+      "bbox_max": [
+        27.650000572205,
+        13.299999713898,
+        10.750000238419124
+      ],
+      "brep_volume_current": 1543.558294678067,
+      "brep_area_current": 1452.8524578856495,
+      "display_tolerance_mm": 0.03,
+      "angular_tolerance_rad": 0.3,
+      "old_metrics_recomputed": false,
+      "cadquery": "2.5.0.dev0"
+    },
+    {
+      "case_id": "P06",
+      "side": "after",
+      "status": "CURRENT_EXECUTION_FAILURE_PLACEHOLDER",
+      "failure_stage": "exec_ok"
+    }
+  ],
+  "helper_sha256": "853b27e75be7cc7dac41470408184ee7e6ca030334be6855766582597c491502",
+  "CPU_only": true,
+  "historical_stats_unchanged": true
+}

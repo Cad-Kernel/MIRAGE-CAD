@@ -1,0 +1,407 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mirage:qualitative-case:v1",
+  "title": "MIRAGE qualitative evidence case v1",
+  "description": "One observed sample/modality/arm/seed output. CSV columns follow properties order. Blank CSV cells decode as null, except arrays decode from JSON. No example rows are selected by this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Actual source path or package-relative existing asset. Planned assets belong only in assets.json with status planned, not these actual-path cells."
+    },
+    "flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "fraction": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "case_id",
+    "registry_status",
+    "corpus",
+    "source_split",
+    "modality",
+    "sample_id",
+    "experiment_id",
+    "arm",
+    "case_type",
+    "selection_reason",
+    "selection_cohort_path",
+    "input_representation",
+    "metric_status",
+    "tags",
+    "operation_set",
+    "notes"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,119}$"
+    },
+    "registry_status": {
+      "enum": [
+        "candidate",
+        "verified",
+        "selected",
+        "excluded"
+      ]
+    },
+    "corpus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_split": {
+      "enum": [
+        "train_diagnostic",
+        "val_diagnostic",
+        "test",
+        "external_test"
+      ]
+    },
+    "modality": {
+      "enum": [
+        "text",
+        "image",
+        "point",
+        "step"
+      ]
+    },
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "experiment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "arm": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seed": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "checkpoint_path": {
+      "$ref": "#/$defs/path"
+    },
+    "checkpoint_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "protocol_path": {
+      "$ref": "#/$defs/path"
+    },
+    "protocol_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "checkout_path": {
+      "$ref": "#/$defs/path"
+    },
+    "checkout_commit": {
+      "$ref": "#/$defs/text"
+    },
+    "program_repair": {
+      "$ref": "#/$defs/flag"
+    },
+    "plan_canonicalization": {
+      "$ref": "#/$defs/text"
+    },
+    "comparison_group_id": {
+      "$ref": "#/$defs/text"
+    },
+    "case_type": {
+      "enum": [
+        "representative_success",
+        "near_median",
+        "low_tail",
+        "hard_failure",
+        "rare_operation",
+        "high_complexity",
+        "parameter_edit"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "selection_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection_cohort_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection_metric": {
+      "$ref": "#/$defs/text"
+    },
+    "selection_quantile_fraction": {
+      "$ref": "#/$defs/fraction"
+    },
+    "input_representation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_path": {
+      "$ref": "#/$defs/path"
+    },
+    "exact_text_input_path": {
+      "$ref": "#/$defs/path"
+    },
+    "reference_step_path": {
+      "$ref": "#/$defs/path"
+    },
+    "reference_render_path": {
+      "$ref": "#/$defs/path"
+    },
+    "predicted_plan_path": {
+      "$ref": "#/$defs/path"
+    },
+    "raw_plan_path": {
+      "$ref": "#/$defs/path"
+    },
+    "predicted_code_path": {
+      "$ref": "#/$defs/path"
+    },
+    "predicted_step_path": {
+      "$ref": "#/$defs/path"
+    },
+    "predicted_render_path": {
+      "$ref": "#/$defs/path"
+    },
+    "prediction_jsonl_path": {
+      "$ref": "#/$defs/path"
+    },
+    "prediction_jsonl_line_1based": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "prediction_record_locator_path": {
+      "$ref": "#/$defs/path"
+    },
+    "code_excerpt_path": {
+      "$ref": "#/$defs/path"
+    },
+    "feature_tree_excerpt_path": {
+      "$ref": "#/$defs/path"
+    },
+    "gate_summary_path": {
+      "$ref": "#/$defs/path"
+    },
+    "gate_row_path": {
+      "$ref": "#/$defs/path"
+    },
+    "geometry_row_path": {
+      "$ref": "#/$defs/path"
+    },
+    "failure_log_path": {
+      "$ref": "#/$defs/path"
+    },
+    "gate_status": {
+      "enum": [
+        null,
+        "pass",
+        "syntax_failure",
+        "execution_failure",
+        "build_failure",
+        "solid_invalid",
+        "step_export_failure",
+        "not_run"
+      ]
+    },
+    "syntax_ok": {
+      "$ref": "#/$defs/flag"
+    },
+    "build_ok": {
+      "$ref": "#/$defs/flag"
+    },
+    "step_export_ok": {
+      "$ref": "#/$defs/flag"
+    },
+    "scoreable": {
+      "$ref": "#/$defs/flag"
+    },
+    "metric_status": {
+      "enum": [
+        "measured",
+        "not_scoreable",
+        "not_run",
+        "missing_source",
+        "not_applicable"
+      ]
+    },
+    "metric_missing_reason": {
+      "$ref": "#/$defs/text"
+    },
+    "cd": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "cd_units_and_scaling": {
+      "$ref": "#/$defs/text"
+    },
+    "f1_at_1_fraction": {
+      "$ref": "#/$defs/fraction"
+    },
+    "iou_fraction": {
+      "$ref": "#/$defs/fraction"
+    },
+    "metric_protocol_path": {
+      "$ref": "#/$defs/path"
+    },
+    "complexity_tier": {
+      "$ref": "#/$defs/text"
+    },
+    "operation_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "operation_set": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "failure_category": {
+      "enum": [
+        null,
+        "syntax",
+        "execution",
+        "api_schema",
+        "topology_reference",
+        "invalid_solid",
+        "step_export",
+        "geometry_unscoreable",
+        "scoreable_geometrically_wrong",
+        "missing_feature",
+        "unknown"
+      ]
+    },
+    "failure_evidence_path": {
+      "$ref": "#/$defs/path"
+    },
+    "provenance_manifest_path": {
+      "$ref": "#/$defs/path"
+    },
+    "asset_manifest_path": {
+      "$ref": "#/$defs/path"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "registry_status": {
+            "enum": [
+              "verified",
+              "selected"
+            ]
+          }
+        },
+        "required": [
+          "registry_status"
+        ]
+      },
+      "then": {
+        "required": [
+          "protocol_path",
+          "provenance_manifest_path",
+          "asset_manifest_path",
+          "input_path",
+          "gate_status"
+        ],
+        "properties": {
+          "protocol_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance_manifest_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "asset_manifest_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "input_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metric_status": {
+            "const": "measured"
+          }
+        },
+        "required": [
+          "metric_status"
+        ]
+      },
+      "then": {
+        "required": [
+          "metric_protocol_path",
+          "geometry_row_path"
+        ],
+        "properties": {
+          "metric_protocol_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "geometry_row_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

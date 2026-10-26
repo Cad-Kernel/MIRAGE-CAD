@@ -1,0 +1,51 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { createRequire } from 'node:module';
+import { createHash } from 'node:crypto';
+import { pathToFileURL } from 'node:url';
+
+const require = createRequire(new URL('../support/build_registry.mjs', import.meta.url));
+const { Workbook } = await import(pathToFileURL(require.resolve('@oai/artifact-tool')).href);
+const root = path.resolve(import.meta.dirname, '..');
+const out = path.join(root, 'rendering', 'cpu_v1');
+const payload = JSON.parse(await fs.readFile(path.join(out, 'render_assets.json'), 'utf8'));
+const rows = payload.records;
+if (rows.length !== 24 || new Set(rows.map(r => r.case_id)).size !== 24) throw Error('Wrong case contract');
+const columns = Object.keys(rows[0]);
+const matrix = [columns, ...rows.map(r => columns.map(c => r[c]))];
+const workbook = Workbook.create();
+const sheet = workbook.worksheets.add('Render Assets');
+const range = sheet.getRangeByIndexes(0, 0, matrix.length, columns.length);
+range.values = matrix;
+range.format.font = { name: 'Arial', size: 10 };
+range.format.rowHeight = 24;
+range.format.columnWidth = 34;
+sheet.getRange('A1:A25').format.columnWidth = 58;
+sheet.getRange('B1:B25').format.columnWidth = 13;
+sheet.getRange('C1:C25').format.columnWidth = 23;
+sheet.getRange('D1:D25').format.columnWidth = 15;
+sheet.getRange('E1:E25').format.columnWidth = 26;
+sheet.getRange('F1:F25').format.columnWidth = 24;
+sheet.getRangeByIndexes(0, 0, 1, columns.length).format.font = { name: 'Arial', size: 10, bold: true };
+sheet.showGridLines = false;
+workbook.recalculate();
+const actual = range.values;
+if (JSON.stringify(actual) !== JSON.stringify(matrix)) throw Error('Typed asset values changed');
+if (range.formulas.flat().some(x => typeof x === 'string' && x.startsWith('='))) throw Error('Literal registry must not have formulas');
+console.log((await workbook.inspect({kind:'table', range:"'Render Assets'!A1:F9", include:'values,formulas', tableMaxRows:9, tableMaxCols:6, maxChars:2000})).ndjson);
+const image = await workbook.render({sheetName:'Render Assets', range:'A1:F9', scale:1, format:'png'});
+await fs.writeFile(path.join(out,'render_registry_preview.png'),new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+const stringify = value => value == null ? '' : String(value);
+const csv = actual.map(row => row.map(value => '"' + stringify(value).replaceAll('"','""') + '"').join(',')).join('\r\n') + '\r\n';
+const roundtrip = await Workbook.fromCSV(csv,{sheetName:'Roundtrip'});
+const restored = roundtrip.worksheets.getItem('Roundtrip').getRangeByIndexes(0,0,matrix.length,columns.length).values;
+const norm = values => values.map(row => row.map(stringify));
+if (JSON.stringify(norm(restored)) !== JSON.stringify(norm(matrix))) throw Error('CSV roundtrip changed paths or missing values');
+await fs.writeFile(path.join(out,'render_asset_registry.csv'),csv,{flag:'wx',encoding:'utf8'});
+const sha = value => createHash('sha256').update(value).digest('hex');
+const result = {status:'PASS_LITERAL_ASSET_REGISTRY_AND_CSV_ROUNDTRIP', rows:rows.length, columns:columns.length,
+  missing_prediction_paths:'blank for four historical hard failures, not zero or substituted geometry',
+  source_sha256:sha(await fs.readFile(path.join(out,'render_assets.json'))),csv_sha256:sha(Buffer.from(csv)),
+  builder_sha256:sha(await fs.readFile(import.meta.filename)),engine:'@oai/artifact-tool',original_candidate_csv_modified:false};
+await fs.writeFile(path.join(out,'render_registry_csv_validation.json'),JSON.stringify(result,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify(result));

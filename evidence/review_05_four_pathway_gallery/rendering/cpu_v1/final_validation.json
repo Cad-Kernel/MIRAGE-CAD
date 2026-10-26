@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FINAL_PATHS_CSV_AND_PRESERVATION",
+  "created_utc": "2026-10-22T17:58:14.249776+00:00",
+  "html_pages": 25,
+  "unique_existing_gallery_link_targets": 400,
+  "broken_links": 0,
+  "csv_rows": 24,
+  "csv_fields_each": 23,
+  "csv_json_values_exactly_matched": true,
+  "original_05_files_unchanged": 385,
+  "review_04_final_files_unchanged": 17,
+  "visual_review": "main eight, all four six-case contact sheets, CSV preview, and three supplemental prediction views reviewed; not semantic final selection",
+  "no_new_training_or_model_prediction": true
+}

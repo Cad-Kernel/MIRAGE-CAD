@@ -1,0 +1,8 @@
+{
+  "experiment": "Stage 3 vs Stage 3b, geometric fidelity",
+  "modalities": "step point text image",
+  "n_per_arm": 2500,
+  "source": "outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_{m}{,_stage3b}_repaired_p0.jsonl",
+  "repair_applied": true,
+  "note": "Both arms carry the published repair pipeline (_repaired_p0), matching tab:stage3b_ablation, so the only variable is the Stage 3 vs Stage 3b plan generator."
+}

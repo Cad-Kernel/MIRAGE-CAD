@@ -1,0 +1,21 @@
+{
+  "sample_id": "flluma_0090719",
+  "modality": "point",
+  "has_target": true,
+  "candidate_results": [
+    {
+      "syntax_ok": true,
+      "exec_ok": false,
+      "build_ok": false,
+      "solid_valid": false,
+      "step_export_ok": false,
+      "error": "exec error: target must be a FeatureHandle",
+      "cd": null,
+      "bbox_err": null,
+      "f_score_1pct": null,
+      "target_bbox_diag": null,
+      "gen_bbox_diag": null,
+      "bbox_ratio_to_gt": null
+    }
+  ]
+}

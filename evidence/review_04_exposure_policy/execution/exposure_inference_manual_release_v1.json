@@ -1,0 +1,59 @@
+{
+  "A_release": "human-operated inference only; model/source/ID/cache guards rerun at startup",
+  "B_release": "conditional on same-fingerprint A generation complete and all output hashes/IDs validated",
+  "GPU_model_loading_or_generation_smoke_test": "NOT_RUN",
+  "checkout_head_inspected_from_Windows_git": "052392b6c7dc0305d04033b1f56d19b12fffb0a2",
+  "code_checkout": "__DEV_ROOT__",
+  "commands": {
+    "A": "bash __DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh run --arm A --confirm-generation",
+    "B": "bash __DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh run --arm B --confirm-generation"
+  },
+  "created_utc": "2026-10-18T15:01:47.850528+00:00",
+  "evaluation_status": "NOT_STARTED",
+  "inference_fingerprint": "191cdcd6571ba58887f9d193a874613823ee71a8bc64e13bec211229e81acba9",
+  "on_partial_output": "Preserve outputs; no overwrite/deletion/implicit resume; inspect before a separate recovery decision",
+  "outputs": {
+    "A": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A",
+    "B": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_B"
+  },
+  "prediction_status": "NOT_STARTED_BOTH_ARMS",
+  "preflight": {
+    "bytes": 22607,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_inference_preflight_v1.json",
+    "sha256": "6be9b6b310150fb717fa7189cdf14d41237c789005d381be520f8bb481a8469a"
+  },
+  "registration_script": {
+    "bytes": 3753,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_exposure_inference_release.py",
+    "sha256": "a3417651d47a46f88a18e443a1dbefa011407fe786ec8f079804de4747b20054"
+  },
+  "runtime_code_prompt_gate": "Actual generated-plan prompts audited during inference without reference-aware packing",
+  "scope": "One-arm greedy plan/code inference only; original2500 IDs x4 modalities; no training/gate/geometry",
+  "source_commit_note": "New inference sources are uncommitted; source SHA256, not HEAD alone, identifies this execution",
+  "sources": {
+    "cag_exposure_inference.py": {
+      "bytes": 27205,
+      "path": "__DEV_ROOT__/src/training_25k/cag_exposure_inference.py",
+      "sha256": "852abdde1542b16a0c330723a469cb70b995d5dd053ac81425057c561229e02e"
+    },
+    "cag_run_exposure_inference.sh": {
+      "bytes": 692,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh",
+      "sha256": "0af2dd8b39e67cdd980e603b37b5f988237e98ac25a8ed59ec6b756bfbf7bde6"
+    }
+  },
+  "states_at_release": {
+    "A": "NOT_STARTED",
+    "B": "NOT_STARTED"
+  },
+  "status": "A_INFERENCE_MANUAL_READY_B_GATED_ON_A_GENERATION_COMPLETE",
+  "tests": {
+    "bytes": 906,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_inference_contract_tests_v1.json",
+    "sha256": "3e604ca8b881f4f5dc100434b6a5683f7ea0499fa349a12208e4ab607cad0e4a"
+  },
+  "training_or_prediction_run_by_assistant": false,
+  "training_status": "COMPLETE_READ_ONLY",
+  "version": "review04_evaluation_only_v1",
+  "working_directory": "__RUN_SOURCE_ROOT__"
+}

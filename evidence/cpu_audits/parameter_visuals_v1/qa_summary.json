@@ -1,0 +1,261 @@
+{
+  "status": "PASS_SCOPED_PARAMETER_ILLUSTRATION_QA",
+  "six_predeclared_buckets_retained": true,
+  "same_two_cameras_and_scales": true,
+  "current_native_outcomes_consistent_with_selected_history": true,
+  "four_successful_pairs_two_after_failures": true,
+  "image_count": 31,
+  "local_html_links": 49,
+  "historical_statistics_unchanged": true,
+  "author_semantic_signoff": "PENDING",
+  "images": [
+    {
+      "path": "contact_sheet.png",
+      "size": [
+        1340,
+        2250
+      ],
+      "sha256": "864345aa1b294158311ce5cc8726f60cc7578759762b68d5e411abae76c84b20"
+    },
+    {
+      "path": "cases/P01/panel.png",
+      "size": [
+        1340,
+        1500
+      ],
+      "sha256": "53d996101bab810ac4bc1943413174c4768950ef3a9d122c18e55021d3e8db6c"
+    },
+    {
+      "path": "cases/P02/panel.png",
+      "size": [
+        1340,
+        1500
+      ],
+      "sha256": "abc1e6afc74c22e46f53a37421baa3e25b33c7ba5db36d586e4c952717c66c44"
+    },
+    {
+      "path": "cases/P03/panel.png",
+      "size": [
+        1340,
+        1500
+      ],
+      "sha256": "883d490310ee174bee62a20211ffa28ea907493017422edfbc8217da75f752b9"
+    },
+    {
+      "path": "cases/P04/panel.png",
+      "size": [
+        1340,
+        1500
+      ],
+      "sha256": "739f55178e1462bef14eb1eb3a3fd74e3dcaae793bcaf77242b402cc5d9f8089"
+    },
+    {
+      "path": "cases/P05/panel.png",
+      "size": [
+        1340,
+        1500
+      ],
+      "sha256": "33a85b72507387f438ad1c59e6e9e0fe1f906b68eec5d8544738df536a8ff270"
+    },
+    {
+      "path": "cases/P06/panel.png",
+      "size": [
+        1340,
+        1500
+      ],
+      "sha256": "41ff9559e39cc1b103b494f57cfbffee6e73e6d8febcf4189bc3c52eb558ce12"
+    },
+    {
+      "path": "cases/P01/after/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "50a9eccfddb386964118cb4b8944b7dac38bd174d627ab84ecf47c15853fad6f"
+    },
+    {
+      "path": "cases/P01/after/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "35f1ea6d1436a53ffe52e91d68cf3a8f46ac76d206a43df2e81ff267a15f3765"
+    },
+    {
+      "path": "cases/P01/before/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "f4c270bc4910c64fab32834617b158553fac8cfd2557f2fc19462d7ac2996724"
+    },
+    {
+      "path": "cases/P01/before/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "928d1c8b8efa5fa2bf85b179b9b4edffde306ebd6a8e04ba44c965761b1c47f4"
+    },
+    {
+      "path": "cases/P02/after/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "640424d859847bbc021650b4142680d22c1f31e4bc4435369f59ec887ac7e57e"
+    },
+    {
+      "path": "cases/P02/after/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "074d56d2064d9c2e8782404ffd0cb7115080da939491ae654daf7e65839d18e9"
+    },
+    {
+      "path": "cases/P02/before/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "4bf86d03c4bbafc11d67696b284a550eadf3fbec6dd6c0b90417e5379bc93c8a"
+    },
+    {
+      "path": "cases/P02/before/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "7998fdf3ed534239f9050a11951d4d4b52891f46e7e1adaf37797733704970a5"
+    },
+    {
+      "path": "cases/P03/after/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "ceaf97c91fbf8aeda90e288a3bb054d4778400daf0aa82620bd6d0d1fa81da33"
+    },
+    {
+      "path": "cases/P03/after/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "07cbf8e3fd376c402df0f0a51c79e36e39c0e38be19c97734a5866ceeb9336b6"
+    },
+    {
+      "path": "cases/P03/before/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "ceaf97c91fbf8aeda90e288a3bb054d4778400daf0aa82620bd6d0d1fa81da33"
+    },
+    {
+      "path": "cases/P03/before/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "07cbf8e3fd376c402df0f0a51c79e36e39c0e38be19c97734a5866ceeb9336b6"
+    },
+    {
+      "path": "cases/P04/after/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "788c4d62fcb14a2b26b136151c3ebd6bb996650743450dce0f2eccb0dfc7a1de"
+    },
+    {
+      "path": "cases/P04/after/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "0b818790cf43893de236f91aac31bdeabd9895fd81f0264a800bd006d2cf6d1e"
+    },
+    {
+      "path": "cases/P04/before/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "788c4d62fcb14a2b26b136151c3ebd6bb996650743450dce0f2eccb0dfc7a1de"
+    },
+    {
+      "path": "cases/P04/before/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "0b818790cf43893de236f91aac31bdeabd9895fd81f0264a800bd006d2cf6d1e"
+    },
+    {
+      "path": "cases/P05/after/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "8a2ea9e11ce191fea33240218f20f995932d1823118c45e294329725d0f3a787"
+    },
+    {
+      "path": "cases/P05/after/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "8a2ea9e11ce191fea33240218f20f995932d1823118c45e294329725d0f3a787"
+    },
+    {
+      "path": "cases/P05/before/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "855c83a84bc4266b8e41d5b7774b2195b25f985e1ff13688f4cd73aa4b7443b3"
+    },
+    {
+      "path": "cases/P05/before/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "4ca64c014fea7d9fdd2296a3f8a383980a98290258f4a712108d3c91045d4e4f"
+    },
+    {
+      "path": "cases/P06/after/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "198cfd7785400848ac1b14c2a9113c8d65dc12fa77bfd165a3ad635e2cbd7f88"
+    },
+    {
+      "path": "cases/P06/after/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "198cfd7785400848ac1b14c2a9113c8d65dc12fa77bfd165a3ad635e2cbd7f88"
+    },
+    {
+      "path": "cases/P06/before/view_1.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "3b02fd2952a47325a51b52951be0c17f7138d3650ffa5c90d659f3caa90edb69"
+    },
+    {
+      "path": "cases/P06/before/view_2.png",
+      "size": [
+        640,
+        640
+      ],
+      "sha256": "7a70dc00e30912283123fdc59a837191e003b8cf4acdaf0402db06183cd3abcb"
+    }
+  ]
+}

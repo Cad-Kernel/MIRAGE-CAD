@@ -1,0 +1,44 @@
+{
+  "review_01": {
+    "entry": "training_25k/cag_run_frozen_a1e_b2p_seed.sh",
+    "source": "run_source",
+    "seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scope": "fixed-upstream decoder/interface repetitions; strict-match HOLD",
+    "entry_present": true
+  },
+  "review_02": {
+    "entry": "training_25k/cag_run_construction_disjoint_step_b2p_training.sh",
+    "source": "run_source",
+    "seeds": [
+      42
+    ],
+    "scope": "construction-signature-disjoint in-corpus STEP diagnostic",
+    "entry_present": true
+  },
+  "review_03": {
+    "entry": "training_25k/cag_run_b0_b2_fullstack_seed.sh",
+    "source": "run_source",
+    "seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scope": "full condition retraining, unequal total compute and sequence lengths",
+    "entry_present": true
+  },
+  "review_04": {
+    "entry": "training_25k/cag_run_exposure_policy.sh",
+    "source": "development_source",
+    "seeds": [
+      42
+    ],
+    "scope": "one paired exposure-policy diagnostic; manifests/amendment retained",
+    "entry_present": true
+  }
+}

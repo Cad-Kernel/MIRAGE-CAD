@@ -1,0 +1,70 @@
+{
+  "sample_id": "f360_20934_fe7fbd78_0000",
+  "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/20934_fe7fbd78_0000.step",
+  "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+  "pipeline_status": "EXECUTION_FAILED",
+  "terminal": true,
+  "cd_status": null,
+  "iou_status": null,
+  "input": {
+    "source_step_sha256": "80f10c1259eb478d4164f92cd7b17e794de39eae8794dd0855157b2620a53153",
+    "alpha": 1e-06,
+    "angular_deflection": 0.3,
+    "canonical_mesh_sha256": "252dc4f3c77a2162ff0db69de434719c9a1b82689a9ec1d0e27901d586ba0d4b/44401fab55636c844946869107695333fd78b4a067c4b699ae70bcc744f10e4b",
+    "mesh_vertex_count": 1516,
+    "mesh_triangle_count": 3028,
+    "mesh_watertight": true,
+    "bbox_before_normalization": [
+      28.944171136433976,
+      10.0,
+      50.0
+    ],
+    "normalization_target_extent": 2.0,
+    "normalization_scale": 0.04,
+    "sampling_seed": 0,
+    "n_pre_points": 8192,
+    "cloud_8192_sha256": "03003ad43008358f742cfa452af178ce504f4c211e00c73a79c33882532f6351",
+    "fps_indices_sha256": "e43df673d3a172c5191dffb1ea3add219d2ea2169f117be3fac0c45688f53030",
+    "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+    "cloud_256_sha256": "43dadb3a66cf92b684ac15b03e0dee253e19f6af839457e1846cea600f1c7d41"
+  },
+  "model": {
+    "checkpoint": "filapro/cad-recode-v1.5",
+    "tokenizer": "Qwen/Qwen2-1.5B",
+    "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+    "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+    "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+    "torch": "2.7.0+cu128",
+    "device": "cuda",
+    "device_capability": "sm_120",
+    "n_parameters": 1543794176,
+    "generation": {
+      "strategy": "greedy",
+      "num_candidates": 1,
+      "max_new_tokens": 768
+    },
+    "transformers": "4.47.1"
+  },
+  "generation": {
+    "seconds": 3.81,
+    "raw_chars": 3079,
+    "raw_sha256": "dd87ba847a6f59ea3c277881b742098ba842e29e42c277180bcba1040ad32bf2"
+  },
+  "extraction_status": "ok",
+  "extracted_code_sha256": "ea5a2a0b45e5432e2e296a60dc0ee1b55c4e91f10ac6d72a8f18d4d17302fcbc",
+  "extracted_code_lines": 3,
+  "unsafe_patterns_found": [],
+  "execution": {
+    "timeout_s": 60,
+    "wall_seconds": 0.89,
+    "timed_out": false,
+    "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_20934_fe7fbd78_0000",
+    "return_code": 1,
+    "runner_result": {
+      "status": "EXECUTION_FAILED",
+      "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+      "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+      "generated_stdout": ""
+    }
+  }
+}

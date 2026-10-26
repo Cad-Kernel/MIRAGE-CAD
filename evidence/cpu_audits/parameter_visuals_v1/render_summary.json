@@ -1,0 +1,12 @@
+{
+  "status": "CPU_PARAMETER_VISUAL_ASSETS_COMPLETE_PENDING_AUTHOR_SEMANTICS",
+  "cases": 6,
+  "actual_geometry_views": 20,
+  "failure_placeholder_views": 4,
+  "native_steps": 10,
+  "panels": 6,
+  "old_statistics_changed": false,
+  "renderer_source_sha256": "d2e72fc361a364ea7c5f9f9a53d35ac4a034893a9b8d2531d82e0b1ad2f067e8",
+  "new_script_sha256": "00d02f4f7e36cf056d61d30ff9d9f3a70c098be69f698b2fcd4a56bb5061da1c",
+  "author_signoff": "PENDING"
+}

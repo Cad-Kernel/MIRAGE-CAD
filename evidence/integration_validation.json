@@ -1,0 +1,38 @@
+{
+  "status": "PASS_SCOPED_ANONYMOUS_WORKTREE_QA",
+  "created_utc": "2026-10-25T19:07:05.604944+00:00",
+  "catalogued": 9653,
+  "included": 9509,
+  "omitted": 144,
+  "identity_matches": 0,
+  "secret_token_matches": 0,
+  "PNG_files_metadata_checked": 518,
+  "array_containers_checked": 940,
+  "local_html_links_checked": 1181,
+  "missing_local_html_links": 0,
+  "powershell_files": 40,
+  "powershell_failures": 0,
+  "classification_counts": {
+    "INCLUDED_ANONYMOUS_COPY": 9509,
+    "CHECKPOINT_HASH_ONLY_NO_MODEL_PAYLOAD": 7,
+    "COMPLETE_CORPUS_MANIFEST_HASH_ONLY_DATASET_SEPARATE": 4,
+    "THIRD_PARTY_SOURCE_OR_FULL_PAPER_REFERENCE_ONLY": 130,
+    "COMPLETE_TRAINING_DATA_HASH_ONLY_DATASET_SEPARATE": 3
+  },
+  "training_source_versions_separate": true,
+  "historical_hashes_not_resealed": true,
+  "numeric_boolean_null_fields_preserved": 3634604,
+  "jsonl_rows_preserved": 454121,
+  "python_nonstring_AST_equal_files": 312,
+  "STEP_numeric_payloads_checked": 1471,
+  "git_history_modified": false,
+  "model_training_inference_or_CAD_scoring": false,
+  "remote_pushed": false,
+  "limits": [
+    "No full training/native-runtime reproduction",
+    "Data/runtime redistribution and final logged-out anonymous access remain separate",
+    "No semantic/visual-label approval",
+    "Historical prediction-to-weight binding remains unresolved"
+  ],
+  "ignored_distributed_paths": 0
+}

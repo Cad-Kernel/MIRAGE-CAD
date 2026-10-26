@@ -1,0 +1,6 @@
+PART flluma_0021473 CAT intersection_offset_stock UNITS mm SEED 20281987
+PARAM clip_size 11.96 MIN 6 MAX 24 SEM clip_size
+PARAM offset_distance 0.08 MIN 0.05 MAX 1 SEM offset_distance
+PARAM sphere_radius 10.26 MIN 4 MAX 18 SEM sphere_radius
+F clipped_offset_stock_001 OP_CLIPPED_OFFSET_STOCK SEM clipped_offset_stock ROLE primary_body PARAMS clip_size=@clip_size offset_distance=@offset_distance sphere_radius=@sphere_radius
+END

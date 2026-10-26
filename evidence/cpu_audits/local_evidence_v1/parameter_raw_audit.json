@@ -1,0 +1,137 @@
+{
+  "status": "PASS_RECOMPUTED_RECORDED_FIELDS",
+  "raw_path": "__DEV_ROOT__\\scratch\\editability_25k_step_c\\editability_rows.jsonl",
+  "raw_sha256": "073125456b5ee12cec32fe0232d02a66b53368246717eb538ec0c420dc425cb6",
+  "summary_sha256": "0278acd7200462c2df8c691222545c36e69aabb50c11b3721166ba56596cb898",
+  "recomputed": {
+    "n_rows": 100,
+    "n_baseline_kernel_valid": 74,
+    "n_perturbations": 1608,
+    "outcomes": {
+      "rebuilt_and_moved": 1321,
+      "rebuilt_no_change": 267,
+      "rebuilt_change_unknown": 16,
+      "broke_at_step_export_ok": 3,
+      "broke_at_exec_ok": 1
+    },
+    "mean_parametric_coverage": 0.2928,
+    "declared_params_total": 402,
+    "declared_params_never_referenced": 26,
+    "n_clamped_to_declared_bound": 12
+  },
+  "matches_recorded_summary": {
+    "n_rows": true,
+    "n_baseline_kernel_valid": true,
+    "n_perturbations": true,
+    "outcomes": true,
+    "mean_parametric_coverage": true,
+    "declared_params_total": true,
+    "declared_params_never_referenced": true,
+    "n_clamped_to_declared_bound": true
+  },
+  "duplicate_sample_param_delta": 0,
+  "unique_part_parameter_pairs": 402,
+  "rebuild_valid_pct_all_perturbations": 99.75124378109453,
+  "responsive_pct_all_perturbations": 82.15174129353234,
+  "geometry_change_unknown_n": 16,
+  "valid_program_denominator_for_coverage": 74,
+  "unreferenced_parameters_by_sample": [
+    {
+      "sample_id": "flluma_0090198",
+      "names": [
+        "clamp_length",
+        "hole_radius"
+      ]
+    },
+    {
+      "sample_id": "flluma_0098828",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0090800",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0096112",
+      "names": [
+        "hole_spacing"
+      ]
+    },
+    {
+      "sample_id": "flluma_0092549",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0090807",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0095739",
+      "names": [
+        "clamp_length",
+        "clamp_thickness"
+      ]
+    },
+    {
+      "sample_id": "flluma_0092603",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0097021",
+      "names": [
+        "clamp_length",
+        "clamp_thickness",
+        "hole_radius"
+      ]
+    },
+    {
+      "sample_id": "flluma_0090189",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0092404",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0094365",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    },
+    {
+      "sample_id": "flluma_0097678",
+      "names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ]
+    }
+  ],
+  "limitations": [
+    "No intended-feature correctness test",
+    "No new before/after geometry produced",
+    "No proof all inlined constants are semantically unreachable",
+    "Historical runtime binding not newly established"
+  ]
+}

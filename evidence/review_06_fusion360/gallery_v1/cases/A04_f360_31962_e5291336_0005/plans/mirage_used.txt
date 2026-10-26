@@ -1,0 +1,7 @@
+PART flluma_0005001 CAT asymmetric_tab_profile_foot UNITS mm SEED 20265515
+PARAM hole_radius 1.23 MIN 0.8 MAX 5 SEM hole_radius
+PARAM pocket_length 13.1 MIN 6 MAX 38 SEM pocket_length
+PARAM pocket_width 10.1 MIN 4 MAX 26 SEM pocket_width
+PARAM thickness 6.2 MIN 2 MAX 14 SEM thickness
+F asymmetric_tab_profile_foot_001 OP_ASYMMETRIC_TAB_PROFILE_FOOT SEM asymmetric_tab_profile_foot ROLE primary_body PARAMS hole_positions=[[-3.12,-16.8],[3.12,-16.8],[-3.12,16.8],[3.12,16.8]] hole_radius=@hole_radius pocket_length=@pocket_length pocket_width=@pocket_width thickness=@thickness
+END

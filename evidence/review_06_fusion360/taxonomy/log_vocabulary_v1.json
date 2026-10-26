@@ -1,0 +1,809 @@
+{
+  "scope": "read-only log vocabulary; no taxonomy applied",
+  "messages": {
+    "mirage": {
+      "exec error: 'Part' object has no attribute 'wedge_profile_service_plate'": 3,
+      "exec error: 'Part' object has no attribute 'square_profile_mount'": 4,
+      "exec error: Part.hole_pattern() missing 1 required keyword-only argument: 'positions'": 1,
+      "exec error: Part.wedge() got an unexpected keyword argument 'radius'": 4,
+      "exec error: size must be a 3D sequence": 7,
+      "exec error: Part.ellipsoid() got an unexpected keyword argument 'radius_x'": 2,
+      "exec error: topology reference 'join_001:top_face:b9ce48e7f7b9' did not resolve any face": 3,
+      "exec error: target must be a TopologyReference from a FeatureHandle": 2,
+      "exec error: Part.wedge() got an unexpected keyword argument 'length'": 15,
+      "exec error: parameter 'pin_height' already exists": 1,
+      "exec error: name 'min_width' is not defined": 1,
+      "exec error: Part.rectangular_pocket() got an unexpected keyword argument 'height'": 6,
+      "exec error: Parameters.add() got an unexpected keyword argument 'units'": 2,
+      "exec error: Part.prism() got an unexpected keyword argument 'width'": 5,
+      "exec error: target must be a FeatureHandle": 2,
+      "exec error: 'width'": 3,
+      "exec error: Part.__init__() got an unexpected keyword argument 'semantic_type'": 1,
+      "exec error: Part.plate() got an unexpected keyword argument 'length'": 2,
+      "exec error: Part.wedge() got an unexpected keyword argument 'lwidth'": 2,
+      "exec error: Part.circular_pattern() got an unexpected keyword argument 'radius'": 2,
+      "exec error: 'Part' object has no attribute 'rectangular_clip'": 1,
+      "STEP export error: OCCT build failed": 5,
+      "exec error: unsupported operand type(s) for /: 'ParameterRef' and 'float'": 1,
+      "exec error: 'Part' object has no attribute 'square_tab_profile'": 2,
+      "exec error: 'Part' object has no attribute 'revolved_tube'": 2,
+      "exec error: Part.linear_pattern() got an unexpected keyword argument 'offset'": 1,
+      "exec error: parameter 'cut_depth' already exists": 1,
+      "exec error: 'Part' object has no attribute 'prism_stock'": 2,
+      "exec error: Part.box() got an unexpected keyword argument 'lower'": 1,
+      "exec error: boss_center must be a 2D sequence": 1,
+      "exec error: Part.cone() got an unexpected keyword argument 'height_top'": 3,
+      "exec error: topology reference 'join_002:top_face:323af5d41048' did not resolve any face": 2,
+      "exec error: Part.wedge() got an unexpected keyword argument 'width'": 3,
+      "exec error: 'Part' object has no attribute 'cross_tab_profile'": 1,
+      "exec error: Part.cone() got an unexpected keyword argument 'radius_bottom'": 3,
+      "exec error: Part.box() got an unexpected keyword argument 'thickness'": 2,
+      "exec error: 'Part' object has no attribute 'clip_stock'": 13,
+      "exec error: 'Part' object has no attribute 'cross_tabbed_rectangle'": 1,
+      "exec error: unsupported operand type(s) for *: 'ParameterRef' and 'float'": 3,
+      "exec error: Part.revolve() got an unexpected keyword argument 'target'": 1,
+      "exec error: 'Part' object has no attribute 'box_on_face'": 1,
+      "exec error: 'Part' object has no attribute 'boolean_clip'": 1,
+      "exec error: Part.hole_pattern() got an unexpected keyword argument 'holes'": 1,
+      "exec error: Part.prism() got an unexpected keyword argument 'side_count'": 1,
+      "exec error: Part.sweep_tube() got an unexpected keyword argument 'height'": 2,
+      "exec error: offset must be a 3D sequence": 1,
+      "exec error: unsupported operand type(s) for -: 'ParameterRef' and 'float'": 1,
+      "exec error: hole depth must be a number or 'through'": 2,
+      "exec error: 'Part' object has no attribute 'axl_stock'": 1,
+      "exec error: parameter 'height' already exists": 3,
+      "exec error: 'FeatureHandle' object has no attribute 'top'": 1,
+      "exec error: Part.__init__() got an unexpected keyword argument 'sample_count'": 1,
+      "exec error: 'Part' object has no attribute 'stock'": 1,
+      "exec error: parameter 'hole_radius' already exists": 1,
+      "exec error: Part.rectangular_pocket() got an unexpected keyword argument 'length_mode'": 1,
+      "exec error: 'Part' object has no attribute 'square_mount'": 1,
+      "SyntaxError: closing parenthesis ')' does not match opening parenthesis '[' (<unknown>, line 8)": 1,
+      "exec error: Part.plate() got an unexpected keyword argument 'min_height'": 1,
+      "kernel access violation (0xC0000005) -- the process died on this candidate; recorded on resume rather than re-attempted": 1,
+      "exec error: Part.bossed_plate() got an unexpected keyword argument 'holes'": 2,
+      "exec error: Part.sweep_tube() got an unexpected keyword argument 'profile'": 1,
+      "exec error: Part.cylinder() got an unexpected keyword argument 'center'": 1,
+      "exec error: 'Part' object has no attribute 'square_hole_pattern'": 1,
+      "exec error: 'boss_profile'": 1,
+      "exec error: 'Part' object has no attribute 'square_mount_plate'": 1,
+      "exec error: Part.prism() got an unexpected keyword argument 'radial_segments'": 1,
+      "exec error: Part.prism() got an unexpected keyword argument 'length'": 2,
+      "exec error: Part.box() got an unexpected keyword argument 'semantic_center'": 1,
+      "SyntaxError: '[' was never closed (<unknown>, line 9)": 1,
+      "exec error: 'Part' object has no attribute 'cast_loved_capsule'": 1,
+      "exec error: Part.extrude() got an unexpected keyword argument 'operation'": 1,
+      "exec error: 'length'": 1,
+      "exec error: Part.cone() got an unexpected keyword argument 'top_radius'": 1,
+      "exec error: 'stock'": 1,
+      "exec error: 'Part' object has no attribute 'wedge_stock'": 2,
+      "exec error: Part.cone() got an unexpected keyword argument 'fill_radius'": 1,
+      "exec error: 'Part' object has no attribute 'rectangular_feature_stock'": 1,
+      "exec error: Parameters.add() takes 3 positional arguments but 4 were given": 1,
+      "exec error: Part.revolved_bushing() got an unexpected keyword argument 'pin_height'": 1,
+      "exec error: Part.box() got an unexpected keyword argument 'semantic_tag'": 1,
+      "exec error: 'Part' object has no attribute 'sweep_pipe_profile'": 1,
+      "exec error: 'Part' object has no attribute 'elliptical_ellipsoid'": 1,
+      "exec error: 'Part' object has no attribute 'square_block'": 1,
+      "exec error: 'Part' object has no attribute 'asymmetric_tab_profile_foot'": 1
+    },
+    "nn": {
+      "exec error: boss_center must be a 2D sequence": 2,
+      "SyntaxError: unterminated string literal (detected at line 18) (<unknown>, line 18)": 3
+    },
+    "cadr": {
+      "StdFail_NotDone: BRep_API: command not done": 4,
+      "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result": 4
+    }
+  },
+  "native_status_examples": {
+    "mirage": {
+      "EMPTY_PREDICTION_MESH": {
+        "sample_id": "f360_24195_9791f5d3_0005",
+        "native": {
+          "sample_id": "f360_24195_9791f5d3_0005",
+          "arm": "point_genplan",
+          "terminal": true,
+          "memory_cap": "RLIMIT_AS=8192MB",
+          "gt_verified": true,
+          "cd_status": null,
+          "iou_status": null,
+          "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+          "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_24195_9791f5d3_0005/candidate.step",
+          "gt_mesh_triangles": 9260,
+          "prediction_step_diagnostics": {
+            "n_solids": 1,
+            "n_faces": 1,
+            "faces_per_solid": [
+              1
+            ],
+            "first_solid_bbox": [
+              2.359999895096,
+              2.359999895096,
+              2.359999895096
+            ]
+          },
+          "reason": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+          "pred_mesh_triangles_on_failure": 0,
+          "pred_mesh_vertices_on_failure": 0,
+          "pipeline_status": "EMPTY_PREDICTION_MESH",
+          "gates": {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true
+          },
+          "gate_check": "match",
+          "seconds": 35.05
+        }
+      },
+      "REMESH_FAILED": {
+        "sample_id": "f360_42005_bb4162aa_0000",
+        "native": {
+          "sample_id": "f360_42005_bb4162aa_0000",
+          "arm": "point_genplan",
+          "terminal": true,
+          "memory_cap": "RLIMIT_AS=8192MB",
+          "gt_verified": true,
+          "cd_status": null,
+          "iou_status": "ineligible",
+          "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+          "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_42005_bb4162aa_0000/candidate.step",
+          "gt_mesh_triangles": 700,
+          "prediction_step_diagnostics": {
+            "n_solids": 1,
+            "n_faces": 0,
+            "faces_per_solid": [
+              0
+            ],
+            "diagnostics_error": "Standard_ConstructionError: Bnd_Box is void"
+          },
+          "evaluation": {
+            "remesh_status": "REMESH_FAILED: Standard_ConstructionError: Bnd_Box is void"
+          },
+          "pipeline_status": "REMESH_FAILED",
+          "gates": {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true
+          },
+          "gate_check": "match",
+          "seconds": 1.27
+        }
+      }
+    },
+    "nn": {
+      "EMPTY_PREDICTION_MESH": {
+        "sample_id": "f360_23393_d47067ad_0002",
+        "native": {
+          "sample_id": "f360_23393_d47067ad_0002",
+          "arm": "point_nnir",
+          "terminal": true,
+          "memory_cap": "RLIMIT_AS=8192MB",
+          "gt_verified": true,
+          "cd_status": null,
+          "iou_status": null,
+          "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+          "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_23393_d47067ad_0002/candidate.step",
+          "gt_mesh_triangles": 472,
+          "prediction_step_diagnostics": {
+            "n_solids": 1,
+            "n_faces": 1,
+            "faces_per_solid": [
+              1
+            ],
+            "first_solid_bbox": [
+              7.920000076294,
+              7.920000076294,
+              7.920000076294
+            ]
+          },
+          "reason": "the prediction STEP tessellates to an EMPTY mesh (0 triangles), so it has no surface to sample or intersect. Flluma reported build_ok, solid_valid and step_export_ok for it.",
+          "pred_mesh_triangles_on_failure": 0,
+          "pred_mesh_vertices_on_failure": 0,
+          "pipeline_status": "EMPTY_PREDICTION_MESH",
+          "gates": {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true
+          },
+          "gate_check": "match",
+          "seconds": 54.18
+        }
+      }
+    },
+    "cadr": {
+      "EXECUTION_FAILED": [
+        {
+          "sample_id": "f360_34781_4f8a4759_0017",
+          "native": {
+            "sample_id": "f360_34781_4f8a4759_0017",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/34781_4f8a4759_0017.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "3e795aa4b40d0ddf736e847c09698e74fcf8141dd547e9ce3d964907281f541c",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "76d333f3cd49aee595ed60f5ad239b6382eed23931530c2e6956546c58fa9269/d5eed2596138c0dc6fe658990f13a4b91c8563376afbfcd89d07fac8b8e86721",
+              "mesh_vertex_count": 134,
+              "mesh_triangle_count": 264,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                558.0,
+                0.999725185109816,
+                0.9994504457428558
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.0035842293906810036,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "f9d55eb709f4c46a0e72fc805cdf330324c4a4b29dfa6cc98f94fbf1b24ad60e",
+              "fps_indices_sha256": "1a1fc700df37458db5db279fe587ea5d05a7fea13d0437972fbf5a65873c15d9",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "c6a6d14385866d3eafb872d1fad390e883894a90ee9a54e39378b566b1d16462"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 1.08,
+              "raw_chars": 2754,
+              "raw_sha256": "f3d89ee491675bd812432fc0ecd75ca044c66296274584282e6fa35c91bbb7d3"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "dab284881432a5243b00f43bf18ac4ce3ee7681737d6d7bcf4ed082560c9c604",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.83,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_34781_4f8a4759_0017",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: BRep_API: command not done",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 818, in segment\n    val = Edge.makeLine(Vector(p1), Vector(p2))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2359, in makeLine\n    BRepBuilderAPI_MakeEdge(Vector(v1).toPnt(), Vector(v2).toPnt()).Edge()\nOCP.StdFail.StdFail_NotDone: BRep_API: command not done\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_38454_24787d99_0002",
+          "native": {
+            "sample_id": "f360_38454_24787d99_0002",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/38454_24787d99_0002.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "d30de22edbefc33a5428d656135f3ab91fbc6ac866b685326cd94ab460fcdc82",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "f903f7563016028cdf0f80cd54bd4e5f464fe60560377563480d5e5f8f85f1a9/cad7bcc686aa52fa8d9afe18880fc6a4a741e72636cdff2333593d766e423503",
+              "mesh_vertex_count": 680,
+              "mesh_triangle_count": 1360,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                22.071067910647002,
+                17.0710677130838,
+                5.0
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.09061636745883091,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "885bc0edd77133e15a9e9769a451fcfb5ca7be1458fac1ceaf773406ad03b2f5",
+              "fps_indices_sha256": "bdb5a6a7c050ae5ef0afbcd862ca4eef8228f158510bd3e5720e38621b550f4a",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "b2572e373889d1514218c6850e4cc017e49734254c1b69d58120f45ff73f970d"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 1.71,
+              "raw_chars": 2826,
+              "raw_sha256": "17b9cc4b67ca9e4520deb4151985d4b2adf1226e78d12077cae11b6d7d7e0aa4"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "632f580e658115a75a9654bb742849536997208e0785d672c10a930ad781117f",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.85,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_38454_24787d99_0002",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_51877_0032e502_0011",
+          "native": {
+            "sample_id": "f360_51877_0032e502_0011",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/51877_0032e502_0011.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "d36837c39963a9cca28ce88db28c068434af9eb83fa94fecfb6e82791ba8beaa",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "6a01ce287b0d4e8349544aad3dc3abb4bbc48bf85f40e4d59c393216e79e0e25/c79b2564724689b5d79cbc11bd0af0252db4f9e17ccfce02a7ed3ebf5b3f4494",
+              "mesh_vertex_count": 732,
+              "mesh_triangle_count": 1460,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                12.0000001788139,
+                15.0,
+                11.99994400329572
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.13333333333333333,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "2b095251922665515ddd8e191b53aa41042f606b4f68cc70c605791d5cb712dd",
+              "fps_indices_sha256": "02d78cc5abb9137ab176e9cd3593f08c27dd6f8b23997d20968eea1497bcd677",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "242f06baa0d5dbda849354ee6b93bbd4dab9604a4f1accd02311fef0571b4101"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 1.49,
+              "raw_chars": 2795,
+              "raw_sha256": "87bd73502a8ddfd1f150fa1e59fd3f150644b32df8e6e56c98a4383f8ca1b407"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "9b723deaf5e8fdc10502f12cb142340061ca45bf3605cd3e09162cf15539b9b0",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.89,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_51877_0032e502_0011",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: BRep_API: command not done",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 828, in segment\n    val = Edge.makeLine(p1, Vector(p2))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2359, in makeLine\n    BRepBuilderAPI_MakeEdge(Vector(v1).toPnt(), Vector(v2).toPnt()).Edge()\nOCP.StdFail.StdFail_NotDone: BRep_API: command not done\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_20934_fe7fbd78_0000",
+          "native": {
+            "sample_id": "f360_20934_fe7fbd78_0000",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/20934_fe7fbd78_0000.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "80f10c1259eb478d4164f92cd7b17e794de39eae8794dd0855157b2620a53153",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "252dc4f3c77a2162ff0db69de434719c9a1b82689a9ec1d0e27901d586ba0d4b/44401fab55636c844946869107695333fd78b4a067c4b699ae70bcc744f10e4b",
+              "mesh_vertex_count": 1516,
+              "mesh_triangle_count": 3028,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                28.944171136433976,
+                10.0,
+                50.0
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.04,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "03003ad43008358f742cfa452af178ce504f4c211e00c73a79c33882532f6351",
+              "fps_indices_sha256": "e43df673d3a172c5191dffb1ea3add219d2ea2169f117be3fac0c45688f53030",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "43dadb3a66cf92b684ac15b03e0dee253e19f6af839457e1846cea600f1c7d41"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 3.81,
+              "raw_chars": 3079,
+              "raw_sha256": "dd87ba847a6f59ea3c277881b742098ba842e29e42c277180bcba1040ad32bf2"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "ea5a2a0b45e5432e2e296a60dc0ee1b55c4e91f10ac6d72a8f18d4d17302fcbc",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.89,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_20934_fe7fbd78_0000",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_118459_55a06bd6_0000",
+          "native": {
+            "sample_id": "f360_118459_55a06bd6_0000",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/118459_55a06bd6_0000.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "72986d7d3fd6b914a64f33cac384aff98ab858d3654f3fabdf86ab847631e93e",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "323dd091c3ad620eb9ecfcbd25438309027eb0a10dee279dbfda1a3872dd3b29/0b9b7cda25a18bc5fe57f762457aba0b51c66d144ab2fd396725a5dadbec5849",
+              "mesh_vertex_count": 2416,
+              "mesh_triangle_count": 4832,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                80.0,
+                16.0,
+                80.0
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.025,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "543b9c6ebc82ac221e1cff4f807758074a6aa145471f3f1be0580ecf3fb3c864",
+              "fps_indices_sha256": "4cb95fc68412322e29b959ad7fa9f73a0778d4704301993ffd7a2c823edec312",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "895f7a6900aad3e765033c081cc36c40553c7531408e532dcb78fc8909d0105e"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 6.92,
+              "raw_chars": 3254,
+              "raw_sha256": "ead366d888e8b20c17e25f911ce9f7b56bbe9f7702ee36daf5e67aac66ec9783"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "bf84f46e774e9bac8e49dd663996ec512500112c66f6a3d0bd5feb7a6096a59c",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.93,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_118459_55a06bd6_0000",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_144428_61da44e1_0000",
+          "native": {
+            "sample_id": "f360_144428_61da44e1_0000",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/144428_61da44e1_0000.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "ddf7a958d678bb294a7f666d000e55f1687aafaed60e671cbbb53d713888a731",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "c3d4367289d2ec526fb86a114285459d3f66039cc0fe9d510cf0bf6185dcb741/5680c296dddb46eafb3f2f37ff3bd779745f3d80b9457f3afe12819f3e113332",
+              "mesh_vertex_count": 3084,
+              "mesh_triangle_count": 6164,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                9.999950444559017,
+                2.9999999999999964,
+                5.0
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.20000099111373115,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "5d58cdb18f9936b061059f526f6c7cfa705cdaa6087c2a64b876bdbf9e7b3dbf",
+              "fps_indices_sha256": "dd969cbc0350468cc2857cbf4be7c9f6d4807ed4529c64c402ad70109a22e33d",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "5244f85032330cffaa38bb29aeaed09369f28cc69d5973ed200271277f902e09"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 2.4,
+              "raw_chars": 2918,
+              "raw_sha256": "a2adf0ddfd80824a5c39a3487287ba7be7192a4a8319360238a8244df07617d4"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "b9218433f07dff29ee34457c99731cc45feba20c17d8afd5aa5543460765e905",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.88,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_144428_61da44e1_0000",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: BRep_API: command not done",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 828, in segment\n    val = Edge.makeLine(p1, Vector(p2))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2359, in makeLine\n    BRepBuilderAPI_MakeEdge(Vector(v1).toPnt(), Vector(v2).toPnt()).Edge()\nOCP.StdFail.StdFail_NotDone: BRep_API: command not done\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_53927_ef5208b9_0009",
+          "native": {
+            "sample_id": "f360_53927_ef5208b9_0009",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/53927_ef5208b9_0009.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "54dda0c0902eda48a360bcdc07456119500708d77a074f27b30eb9b7a7180344",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "338c72a160754bc7cbf9331c0234b64f64ac3ddfb9bfeed5a7c1b4871bb6b34f/43ac6c5986bf712d26770a857c33e169da174af9ebd8730ecfd3d27bbb9ca8c0",
+              "mesh_vertex_count": 3238,
+              "mesh_triangle_count": 6480,
+              "mesh_watertight": true,
+              "bbox_before_normalization": [
+                49.99931090156292,
+                25.0,
+                15.0000000000001
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.040000551286347476,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "3dfeb519d619fe43277d4add8f40876c27c9241035bb216f55b9f245b10a4590",
+              "fps_indices_sha256": "b8b73669bdbe2c3fc8b0aad317ecd009c5287528e4e5e3b6b21e4daa7b91095d",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "25c33bd890d5e72c698d5843e58303e11af4fde3cc59260062f98e9a1134e6eb"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 3.06,
+              "raw_chars": 3014,
+              "raw_sha256": "1734017b21103982d9465465988f8af4c990047e051a36bb2dcd36baed36bdf0"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "03ee8719da839aa5c1bf79b9fd1ddaf6ec1bb3d5dbb4e60750368533ea5b24c4",
+            "extracted_code_lines": 4,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.9,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_53927_ef5208b9_0009",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: BRep_API: command not done",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 4, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 828, in segment\n    val = Edge.makeLine(p1, Vector(p2))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2359, in makeLine\n    BRepBuilderAPI_MakeEdge(Vector(v1).toPnt(), Vector(v2).toPnt()).Edge()\nOCP.StdFail.StdFail_NotDone: BRep_API: command not done\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        },
+        {
+          "sample_id": "f360_42013_f685a660_0000",
+          "native": {
+            "sample_id": "f360_42013_f685a660_0000",
+            "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/42013_f685a660_0000.step",
+            "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+            "pipeline_status": "EXECUTION_FAILED",
+            "terminal": true,
+            "cd_status": null,
+            "iou_status": null,
+            "input": {
+              "source_step_sha256": "c71e78a578957fd567d58ec69c848a0adc9eb6eb239c68ef29664b032cd12897",
+              "alpha": 1e-06,
+              "angular_deflection": 0.3,
+              "canonical_mesh_sha256": "de4084801ce01b151dfb7b4833f21824cb89968ea33967f8925ae10bf4fd3e1d/bc273bd6a18528f72d20759e3685a47fa4a617f2c7e4b774def7a69fd276cfcc",
+              "mesh_vertex_count": 2716,
+              "mesh_triangle_count": 6088,
+              "mesh_watertight": false,
+              "bbox_before_normalization": [
+                32.99972786910658,
+                22.0,
+                32.999863934272774
+              ],
+              "normalization_target_extent": 2.0,
+              "normalization_scale": 0.06060631049823371,
+              "sampling_seed": 0,
+              "n_pre_points": 8192,
+              "cloud_8192_sha256": "550dc84279a74b2ce165ebffd61cbad6558f35c8684a0d329960ac6d0defd4d1",
+              "fps_indices_sha256": "4c33db42489dd0aeed537f38359254e92cef38eaaff07ebeefd19ae6fb131a2b",
+              "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+              "cloud_256_sha256": "0b9cf1c048175d8740d0967e1931c1f52a62f82072b021b6d366209cd598ecd8"
+            },
+            "model": {
+              "checkpoint": "filapro/cad-recode-v1.5",
+              "tokenizer": "Qwen/Qwen2-1.5B",
+              "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+              "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+              "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+              "torch": "2.7.0+cu128",
+              "device": "cuda",
+              "device_capability": "sm_120",
+              "n_parameters": 1543794176,
+              "generation": {
+                "strategy": "greedy",
+                "num_candidates": 1,
+                "max_new_tokens": 768
+              },
+              "transformers": "4.47.1"
+            },
+            "generation": {
+              "seconds": 4.67,
+              "raw_chars": 3199,
+              "raw_sha256": "bb88abf128f9c52f03393cdda339836ed513de458a24593b48c428cae84284d9"
+            },
+            "extraction_status": "ok",
+            "extracted_code_sha256": "62f2529fe93f3275fe2ab692075e5b67490c8519c233b2e2ce4bdf59935dd5af",
+            "extracted_code_lines": 3,
+            "unsafe_patterns_found": [],
+            "execution": {
+              "timeout_s": 60,
+              "wall_seconds": 0.92,
+              "timed_out": false,
+              "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_42013_f685a660_0000",
+              "return_code": 1,
+              "runner_result": {
+                "status": "EXECUTION_FAILED",
+                "error": "StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result",
+                "traceback": "Traceback (most recent call last):\n  File \"__DEV_ROOT__/src/scratch/cadrecode_generated_runner.py\", line 69, in main\n    exec(compile(code, \"<generated>\", \"exec\"), ns)\n  File \"<generated>\", line 3, in <module>\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/multimethod/__init__.py\", line 375, in __call__\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/sketch.py\", line 874, in arc\n    val = Edge.makeThreePointArc(Vector(p1), Vector(p2), Vector(p3))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__USER_HOME__/miniforge3/envs/cadrecode_env/lib/python3.11/site-packages/cadquery/occ_impl/shapes.py\", line 2328, in makeThreePointArc\n    ).Value()\n      ^^^^^^^\nOCP.StdFail.StdFail_NotDone: GC_MakeArcOfCircle::Value() - no result\n",
+                "generated_stdout": ""
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

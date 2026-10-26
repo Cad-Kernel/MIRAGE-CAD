@@ -1,0 +1,68 @@
+{
+  "A_release": "human-operated one-arm Stage4b run only",
+  "B_release": "conditional: same-version/fingerprint A overlay final and actual1182 steps verified at startup",
+  "GPU_forward_or_gradient_smoke_test": "NOT_RUN_OPERATOR_STARTS_REAL_TRAINING",
+  "actual_stage4b_global_steps": {
+    "A": null,
+    "B": null
+  },
+  "amendment_fingerprint": "efc5ea52d9ab2b9b3aa46661a0a4f46805e09c0b466b9162f3962d9dee335fd1",
+  "code_checkout": "__DEV_ROOT__",
+  "commands": {
+    "A": "bash __DEV_ROOT__/src/training_25k/cag_run_stage4b_only.sh run --arm A --confirm-training",
+    "B": "bash __DEV_ROOT__/src/training_25k/cag_run_stage4b_only.sh run --arm B --confirm-training"
+  },
+  "contract_tests": {
+    "bytes": 867,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_execution_contract_tests_v2.json",
+    "sha256": "99b74a7fb61dd12eaf279a81006e0abb70e52719791cc1893502a4d03c7120a6"
+  },
+  "created_utc": "2026-10-18T07:30:06.044820+00:00",
+  "environment": "WSL Ubuntu / ai_dev",
+  "evaluation_predictions_generated": false,
+  "execution_fingerprint": "5d0b3ea3718f8f035c3cd8808ca66481e8e8574866266f9caa9d98582ad47291",
+  "future_inference_boundary": "Use overlay-aware final validation; original final_path/generate intentionally reject the new completion fingerprint",
+  "outputs": {
+    "A": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/stage4b",
+    "B": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/stage4b"
+  },
+  "parent_fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "plan_branches_retrained": false,
+  "plans_regenerated": false,
+  "policy_lock": {
+    "bytes": 1675,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_policy_lock_v1.json",
+    "sha256": "1efa3d6e218f47ab6fc2ad67fa0fe9f1b11384276b68774291915eaaf6e47faa"
+  },
+  "preflight": {
+    "bytes": 14115,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_execution_preflight_v1.json",
+    "sha256": "4b616054a9ffcf27a233680e5595584dd6f72586a030b0a26075ea52f8839ffa"
+  },
+  "registration_script": {
+    "bytes": 3568,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_stage4b_execution_release.py",
+    "sha256": "e27408ec3b83a5177a831516d7034543ecb5af94b01189800dec5b0e0b2fd698"
+  },
+  "runtime_raw_source_resources": "Full frozen source-resource byte checks run before model loading in each manual run",
+  "sources": {
+    "cag_run_stage4b_only.sh": {
+      "bytes": 687,
+      "path": "__DEV_ROOT__/src/training_25k/cag_run_stage4b_only.sh",
+      "sha256": "71f9a883aecd815b084b4c99959cf8759e3c24f51b3b20be93c7dcdd33ecee23"
+    },
+    "cag_stage4b_execution.py": {
+      "bytes": 27597,
+      "path": "__DEV_ROOT__/src/training_25k/cag_stage4b_execution.py",
+      "sha256": "12871f780608950b9524c99aaa2effe9dfb430f37b394ae7e6a1d1b9ba7b205b"
+    }
+  },
+  "states_at_release": {
+    "A": "NOT_STARTED",
+    "B": "NOT_STARTED"
+  },
+  "status": "STAGE4B_A_MANUAL_RELEASED_B_GATED_ON_A_FINAL",
+  "training_started_by_assistant": false,
+  "version": "review04_stage4b_execution_v1",
+  "working_directory": "__RUN_SOURCE_ROOT__"
+}

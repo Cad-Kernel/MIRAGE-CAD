@@ -1,0 +1,10 @@
+PART flluma_0005710 CAT wedge_stock UNITS mm SEED 20266224
+PARAM height 10.1 MIN 2 MAX 18 SEM primitive_height
+PARAM length 10.1 MIN 3 MAX 24 SEM primitive_length
+PARAM ltx 4.14 MIN 0 MAX 20 EX lwidth*0.413 SEM wedge_ltx
+PARAM width 15.1 MIN 2 MAX 18 SEM primitive_width
+F wedge_001 OP_WEDGE SEM primitive_stock ROLE primary_body PARAMS ltx=@ltx size=[@length,@width] tx=-27.78
+F box_001 OP_BOX SEM flange ROLE secondary_feature PARAMS height=@height length=@length width=@width
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,6.85,-4.455]
+F join_001 OP_BOOLEAN_JOIN_2 SEM joined_stock ROLE secondary_feature DEP wedge_001,translate_001 TARGET wedge_001,translate_001
+END

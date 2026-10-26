@@ -1,0 +1,13 @@
+{
+  "arm": "B2P_CD",
+  "description": "Construction-disjoint STEP MIRAGE textual-plan pathway",
+  "data": "data/construction_disjoint_step_v1",
+  "alignment": "outputs/align_25k_cd_step",
+  "prior": "outputs/prior_step_25k_cd_step",
+  "lora_ir": "outputs/lora_ir_25k_cd_step",
+  "code_gt": "outputs/qwen25_coder_1_5b_program_25k_cd_step",
+  "code_stage4b": "outputs/qwen25_coder_1_5b_program_25k_cd_step_stage4b",
+  "repair": false,
+  "test_limit": 500,
+  "baseline_first_guard": "0"
+}

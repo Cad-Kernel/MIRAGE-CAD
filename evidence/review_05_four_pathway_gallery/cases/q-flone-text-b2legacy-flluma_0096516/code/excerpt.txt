@@ -1,0 +1,21 @@
+# Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add('boss_height', 10.78, min=3.0, max=24.0, expression='thickness * 1.07', semantic_type='boss_height')
+params.add('boss_radius', 10.11, min=2.0, max=14.0, expression='hole_radius * 3.1', semantic_type='boss_radius')
+params.add('fillet_radius', 0.72, min=0.1, max=2.5, semantic_type='fillet_radius')
+params.add('height', 46.0, min=12, max=80, semantic_type='overall_height')
+params.add('hole_offset_x', 27.11, min=4.0, max=45.0, expression='width * 0.308', semantic_type='hole_spacing')
+params.add('hole_offset_y', 12.48, min=3.0, max=35.0, expression='height * 0.282', semantic_type='hole_spacing')
+params.add('hole_radius', 3.21, min=1, max=8, semantic_type='hole_radius')
+params.add('thickness', 8, min=3, max=25, semantic_type='thickness')
+params.add('width', 91.1, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0005100', category='face_recursive_mount', parameters=params, seed=20265614, sample_id='flluma_0005100', units='mm')
+plate = part.plate(name='base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+cylinder = part.cylinder(name='round_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')
+moved = part.translate(name='place_center_boss', target=cylinder, offset=[0.0, 0.0, 7.69], semantic_type='placement')
+join = part.boolean_join(name='join_center_boss', target=plate, tool=moved, semantic_type='joined_boss')
+holes = part.hole_pattern(name='four_bolt_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[-27.11, -12.48], [27.11, -12.48], [-27.11, 12.48], [27.11, 12.48]], semantic_type='mounting_hole')
+fillet = part.fillet(name='mount_edge_break', target=holes.top_outer_edges(), radius=params['fillet_radius'], semantic_type='edge_break')
+
+__all__ = ['part']

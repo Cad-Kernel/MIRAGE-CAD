@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SCOPED_ASSET_READABILITY",
+  "images_checked": 487,
+  "step_envelopes_checked": 1461,
+  "html_local_links_checked": 1132,
+  "missing_html_local_links": [],
+  "errors": [],
+  "author_semantic_signoff": "PENDING_UNCHANGED",
+  "scope": "No mesh/solid validity, semantic judgement, rerendering or metric recomputation",
+  "originals_modified": false
+}

@@ -1,0 +1,572 @@
+{
+  "repo": "SadilKhan/Text2CAD",
+  "kind": "datasets",
+  "status": "PUBLIC_METADATA_CAPTURED",
+  "revision": "422d4c93198c3cd98d5c2092c0ab214b3a76a68d",
+  "private": false,
+  "gated": "auto",
+  "card_metadata": {
+    "language": [
+      "en"
+    ],
+    "license": "cc-by-nc-sa-4.0",
+    "pipeline_tag": "text-to-3D",
+    "tags": [
+      "text-to-cad",
+      "dataset",
+      "annotation"
+    ],
+    "extra_gated_heading": "Acknowledge license to accept the repository",
+    "extra_gated_prompt": "### Text2CAD Community License Agreement\n\n [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)\n \n This named Dataset, **Text2CAD.v1**, was developed by [Deutsche Forschungszentrum für Kuntlische Inlligenz (DFKI GmbH)] (Germany). It is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\n \n ## Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)\n You are free to:\n - **Share**: copy and redistribute the material in any medium or format.\n - **Adapt**: remix, transform, and build upon the material.\n \n\n Under the following terms:\n - **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\n - **NonCommercial**: You may not use the material for commercial purposes.\n - **ShareAlike**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.\n \n \n \n To view a copy of this license, visit [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/).\n \n If you use this dataset in your work, please cite the following publication:\n \n Mohammad Sadil Khan*, Sankalp Sinha*, Talha Uddin Sheikh, Didier Stricker, Sk Aziz Ali, Muhammad Zeshan Afzal. \"Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts.\" In The Thirty-eighth Annual Conference on Neural Information Processing Systems (2024).\n \n \n \n For inquiries or additional information, contact:\n \n \n \n - [DFKI GmbH  Contact Information]\n   \n   Deutsches Forschungszentrum Fur Kunstliche Intelligenz GmbH\n   Trippstadter Str. 122\n   67663 Kaiserslautern\n   Germany\n   Phone: +49 631 20575 0\n   link: https://www.dfki.de/web\n",
+    "extra_gated_fields": {
+      "First Name": "text",
+      "Last Name": "text",
+      "Country": "country",
+      "Affiliation": "text",
+      "I want to use this dataset for": {
+        "type": "select",
+        "options": [
+          "Research",
+          "Education",
+          {
+            "label": "Other",
+            "value": "other"
+          }
+        ]
+      },
+      "I agree to use this dataset for non-commercial use ONLY": "checkbox"
+    }
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "ebe558dd44a23005d085e1cd36fd7b60e90d0f23",
+      "size": 3411
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "e7da759a2b713e7d38ce5f790dfaa6f9ea6c245c",
+      "size": 8559
+    },
+    {
+      "rfilename": "cad_seq.zip",
+      "blobId": "da70165416b822724af5aa5743ec62b2b455857a",
+      "size": 606626050,
+      "lfs": {
+        "sha256": "9f3a8bb85f9ceb078c19bc43f750fe596d3323631f2e846a7f541e47af7e7eaa",
+        "size": 606626050,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/Text2CAD_1.0.pth",
+      "blobId": "f41eabd14f5a4aace5853c01aab25bf4a5679db7",
+      "size": 91601866,
+      "lfs": {
+        "sha256": "235b137e72f97c740550e29698c342967d3be7c1d4cd0067a1b3380389034598",
+        "size": 91601866,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0000_0010.zip",
+      "blobId": "7caa0704ac4356e8ac2d703ebce994a0f0bfd594",
+      "size": 4189429487,
+      "lfs": {
+        "sha256": "69fd50df63d74701b7ca02015d005c2b66de96d37005fa98d497da812dc00c9f",
+        "size": 4189429487,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0011_0020.zip",
+      "blobId": "49785d60c51a8bb21c4e694304c156cfd9487d35",
+      "size": 3992038499,
+      "lfs": {
+        "sha256": "3e4a558c8ab98d3d55f5ed1fcab0e096e66b6783d84fd54289045f2fb889a085",
+        "size": 3992038499,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0021_0030.zip",
+      "blobId": "fc7d2dcbe0a34615514220bcdb83d349570790a9",
+      "size": 5162814181,
+      "lfs": {
+        "sha256": "f03506a791670602cb0bc735cff9938266943657cb1398e2e7c9fd2379813deb",
+        "size": 5162814181,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0031_0040.zip",
+      "blobId": "096751fa15605dabcac3124a2544772160b166ab",
+      "size": 4463857640,
+      "lfs": {
+        "sha256": "10a8060ee3b0339c30c0b496a3c5881b34f15bb72e2ed3f6b7940bdd1904f542",
+        "size": 4463857640,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0041_0050.zip",
+      "blobId": "7890eb4b40d41f27c22abaef19e16283e28b7f7f",
+      "size": 4442752283,
+      "lfs": {
+        "sha256": "d1ac51bd745a8fa743c9c0fbc28186f8fee4e7470cc0080bc531d6649c733982",
+        "size": 4442752283,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0051_0060.zip",
+      "blobId": "2aaa8015fea2c07d63f075d820b30068ee30bb71",
+      "size": 4531043247,
+      "lfs": {
+        "sha256": "c52bbfa48c8dac6b2a37701b0e87664c7a079c37c9cfe18d33767409f76b50a5",
+        "size": 4531043247,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0061_0070.zip",
+      "blobId": "79c561357516000514914be42edea1f17cf35763",
+      "size": 4299032197,
+      "lfs": {
+        "sha256": "52b530f50249a47ff27b754b323278bb7396144fd05ec65f57da163627bd7089",
+        "size": 4299032197,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0071_0080.zip",
+      "blobId": "be2c9fd114481bc8a64944c73c3d2fea5325aac4",
+      "size": 4492096196,
+      "lfs": {
+        "sha256": "2ea71fb1454a003dd2acee9a44e5a1d883ee32961f43f5e381bf04acffc3e1c1",
+        "size": 4492096196,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0081_0090.zip",
+      "blobId": "ef3d04733dfc3a8e86e18aa4468d06659ead74d8",
+      "size": 3776429031,
+      "lfs": {
+        "sha256": "d7f59f28c6509b160c55e201f3c8ebcede89f298e096467e7b40ff89ff0e6334",
+        "size": 3776429031,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/depth_images/depth_images_0091_0099.zip",
+      "blobId": "93ff7b8f7e1f30e9737acc0cee169e5b54fbfdc3",
+      "size": 3166062778,
+      "lfs": {
+        "sha256": "3c8f30c3ba8870c07e9164d61f0f0bdfb2104d801ab901496e9187213d3925b0",
+        "size": 3166062778,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/minimal_json/minimal_json_0000_0099.zip",
+      "blobId": "8e7a1e26e66eda3ccc364bfd37e0bd3c2f36681d",
+      "size": 114762278,
+      "lfs": {
+        "sha256": "7e9a29ead357fe284c29d1b1c7a411e1b8c681bdd48e2aba0542a376955fb879",
+        "size": 114762278,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0000_0010.zip",
+      "blobId": "c00a849568b81aa01242ef20ce66c49c6b276520",
+      "size": 5396945991,
+      "lfs": {
+        "sha256": "931912bebc3958ee1a1a075f6e059087b2ced7fce18728e17c53ad0fdb1a4d13",
+        "size": 5396945991,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0011_0020.zip",
+      "blobId": "e79a7630fbdd49d6f646e51f187de88227ea6194",
+      "size": 5180937102,
+      "lfs": {
+        "sha256": "2349f1fb00d17a8b653f2736e57847c4cdb077db2fc79f63d6ed2d35f04d78d6",
+        "size": 5180937102,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0021_0030.zip",
+      "blobId": "95e74fea3109de1be7cbb4f9359b0b8b6f727f4f",
+      "size": 6542038285,
+      "lfs": {
+        "sha256": "6aec9d0447853cd920d52c26bca27cbde54eef5c40dba983cf217f92315b800a",
+        "size": 6542038285,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0031_0040.zip",
+      "blobId": "af7339773ee07c9bf06eb6d367700fe358cfd03d",
+      "size": 5675209814,
+      "lfs": {
+        "sha256": "876ede73dc652b84ca8356c2d5cda6ae1b0f0823668c27935faaa6f3f170f36c",
+        "size": 5675209814,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0041_0050.zip",
+      "blobId": "995456d0df730a3dda4ae086dc5084241240f316",
+      "size": 5645675503,
+      "lfs": {
+        "sha256": "a2c2480b751544c278981f40d52753f0dcb15ac9b169ba08ba698e8bdcef7b5f",
+        "size": 5645675503,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0051_0060.zip",
+      "blobId": "58436e78daacf9e9f073c3c2001f2980a9c221e1",
+      "size": 5738875274,
+      "lfs": {
+        "sha256": "57b9a9afb4e47d182ceb8e3a232ae3e0fce8ed3a4bc02f3d942e2c2ed4aee8c9",
+        "size": 5738875274,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0061_0070.zip",
+      "blobId": "4546d62d6a341038f872d31c4739bc0f3dfc2dfe",
+      "size": 5534887318,
+      "lfs": {
+        "sha256": "b40d7990a697ad1796076d9a4b1288a71d72b1fba6a523749a29ea1a756065cc",
+        "size": 5534887318,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0071_0080.zip",
+      "blobId": "b5d73c62c1978b5f97961af737763d7284294e12",
+      "size": 5747717516,
+      "lfs": {
+        "sha256": "6259485171b52cb89f6d311f175e139be2f1dd9cd831dfe099ad5202db9be569",
+        "size": 5747717516,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0081_0090.zip",
+      "blobId": "a2404ad9fa7888399ea77f7f50ebc425e02984ab",
+      "size": 4844984674,
+      "lfs": {
+        "sha256": "678c75815c29710d30a10700bba473f3b1afb8d9822d5ecb0bed42361b5c6478",
+        "size": 4844984674,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/misc/rgb_images/rgb_images_0091_0099.zip",
+      "blobId": "e17f3585bda0a9645157cb3e98fa387bf9e8154e",
+      "size": 4086889997,
+      "lfs": {
+        "sha256": "f5bcd2d511934c476c2f819bad2bb896128ff28b077e9ce7b212537149df5a08",
+        "size": 4086889997,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/text2cad_v1.0.csv",
+      "blobId": "6368827469c4675e8a3bde40d67bc0d0e197664b",
+      "size": 1078124103,
+      "lfs": {
+        "sha256": "32427ca7169f8b93411b64a025c387cdb0b55d9b9ce0e9cf9755ac8a3528f4a3",
+        "size": 1078124103,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/train_data.pkl",
+      "blobId": "1c691338534a8d4d996b6bb02501b4a4a648730f",
+      "size": 45761037157,
+      "lfs": {
+        "sha256": "df01cb41da510f11f2a1cea5a8e3e4659dcb36bc28782ce80f16ccac1d100986",
+        "size": 45761037157,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/train_test_val.json",
+      "blobId": "d04393bd1755f7bcc5f5e24ede81b162d72ab5fd",
+      "size": 2992377,
+      "lfs": {
+        "sha256": "4ea6db9027b4cebee8f37903b6601b73b810adacd808a4874dbe847c7c508e7b",
+        "size": 2992377,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.0/validation_data.pkl",
+      "blobId": "a70f18ce0e9f908a4a6cf5c06d51ea2ca9fcfbcf",
+      "size": 2571368450,
+      "lfs": {
+        "sha256": "e343c1fb9c01e081a1f00ca2a301653b118b5885ed5fb3f7d1da35a470596f2b",
+        "size": 2571368450,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/.gitattributes",
+      "blobId": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/minimal_json/minimal_json_0000_0099.zip",
+      "blobId": "f79efd035af3d552674a5f2fe1fa64eb3dcb1614",
+      "size": 257581196,
+      "lfs": {
+        "sha256": "9c482c15d61a8484877fdc9393dfb7362666c5d7c03681d9df3cbd6fdefeba6e",
+        "size": 257581196,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/.gitattributes",
+      "blobId": "bb0db0add9d34695ff681fc731abe14d215a6379",
+      "size": 1260
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0000_0005.zip",
+      "blobId": "a0cc87c3823d72a7aa9591734f11b7bc7eabbc61",
+      "size": 25357262276,
+      "lfs": {
+        "sha256": "2ebfc36df82be0bf77dc59660cf5182cb6d6fda72919ca05c5a83c7b039b8525",
+        "size": 25357262276,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0006_0010.zip",
+      "blobId": "ea742d0cce2f822ac3939835644e90283cf6e2a6",
+      "size": 20987372600,
+      "lfs": {
+        "sha256": "dcd56d32bff40d9cf22d2e0f4550c9d5241e2dd51e9207b08a002c4a5b56bd70",
+        "size": 20987372600,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0011_0015.zip",
+      "blobId": "471666f4f1cd2098c9b75370cb1efca916f7a7a6",
+      "size": 20441663797,
+      "lfs": {
+        "sha256": "792898af3b93abccc1d4244e375f528f6e0f11a04b0e08aac1d453f3c75d7bdd",
+        "size": 20441663797,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0016_0020.zip",
+      "blobId": "79cb8b416d6c817f2e685ea92666fe1615fb2bbc",
+      "size": 20172068422,
+      "lfs": {
+        "sha256": "ed1ac7c88533d872da058873c63229fce2c7e63ec9b5ae68bdff5d6512dd8569",
+        "size": 20172068422,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0021_0025.zip",
+      "blobId": "d13e2dca0a256c17ffda0a30ce0d0293fb2da473",
+      "size": 22688724031,
+      "lfs": {
+        "sha256": "71e0960b02c5f58597a2222141dbb940cbf24659e94b7b2156abed61926f81eb",
+        "size": 22688724031,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0026_0030.zip",
+      "blobId": "6b7bfc00b39fe7b62c854e951b3f1ee6f65c0763",
+      "size": 28125493081,
+      "lfs": {
+        "sha256": "733e4379df2141cd68446be2b3f60d48953fbfbd436cb87e7e308a0050c852ba",
+        "size": 28125493081,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0031_0035.zip",
+      "blobId": "c5747a90fa5aee0b5c8ec824d0ce091c10c3f441",
+      "size": 24420023705,
+      "lfs": {
+        "sha256": "0ff049cf407273822563136c64ce0a27245c4b1250f48986779b08ecf4c541fc",
+        "size": 24420023705,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0036_0040.zip",
+      "blobId": "4921c2494f2bbc5bf5580ff578bf0fc7db4fc974",
+      "size": 19670259170,
+      "lfs": {
+        "sha256": "1bbfc54bc3cebab4777a3da5ab45028c22dce2332233bab54cb7ed6f88333f31",
+        "size": 19670259170,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0041_0045.zip",
+      "blobId": "e8c6cc81a250e897aab85271776ebea03b4a851c",
+      "size": 22080505768,
+      "lfs": {
+        "sha256": "2102749e0520bfeee44d5cc9c576028aa3c8e0d4d174415d1ffbaa3598ca32f3",
+        "size": 22080505768,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0046_0050.zip",
+      "blobId": "79c0b08495d2ed6e7637af8fe79734c93c0fe5bf",
+      "size": 22265530168,
+      "lfs": {
+        "sha256": "ef092f527e85bb1095f227cc3d873dc0076226f4346a304d7f2ff8d274d3974a",
+        "size": 22265530168,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0051_0055.zip",
+      "blobId": "71346a9abed8684ed4e412ef6443a54931e8fa8d",
+      "size": 22494037806,
+      "lfs": {
+        "sha256": "9015608d355cccc8e07498db76d1332438cec121c97ff6bc6308720aff97d969",
+        "size": 22494037806,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0056_0060.zip",
+      "blobId": "f4460ff01cb0db039b1305de284bc908e4b341b3",
+      "size": 22741183345,
+      "lfs": {
+        "sha256": "143762bb44f8235faf31d8c3272dc4566edf75ae1ecd69c578596dc7f0b1b3e9",
+        "size": 22741183345,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0061_0065.zip",
+      "blobId": "7157aa3835bdfb4c382862a1ba2468fd04e915a5",
+      "size": 21075299860,
+      "lfs": {
+        "sha256": "3d75d6aa2cb498bea14899afc170b1de78f471379d493186126c275513fc1f73",
+        "size": 21075299860,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0066_0070.zip",
+      "blobId": "c2f00e9b16f5df5b9be693d6c35c45fe4932937e",
+      "size": 24410936737,
+      "lfs": {
+        "sha256": "b51cf2beaa7139400ed8caad7f235e78e0699a0ee8d623f3a292afe1b7032aa4",
+        "size": 24410936737,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0071_0075.zip",
+      "blobId": "c55d1113cefbc875476a23f2563fbab34c9d1b1f",
+      "size": 28467943526,
+      "lfs": {
+        "sha256": "edac36651736df66f62711ab9447f0a0aef2420f07b7d1a1dff4d7b6f91918e5",
+        "size": 28467943526,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0076_0080.zip",
+      "blobId": "4eea347ef8b90e884705c405380f326417edc367",
+      "size": 25833342942,
+      "lfs": {
+        "sha256": "c2f3b37f1643960be7c511c472ce167113bb5652d008727f05fc1f0cf0ad7536",
+        "size": 25833342942,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0081_0085.zip",
+      "blobId": "55af4f68e7d84474b0894ad36b8b248fb5a0bd7b",
+      "size": 23769538383,
+      "lfs": {
+        "sha256": "41150e4b473cca018cfb5fee81398c6619fe9a7f44136a485df1fb7c0b1c201c",
+        "size": 23769538383,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0086_0090.zip",
+      "blobId": "470a2788223b7466dcdf14a18135a972ef9eb2f1",
+      "size": 22688429878,
+      "lfs": {
+        "sha256": "95c1bc4c972ea4275e583a2fca1654042b32ac73383dae4f402cc0b095242952",
+        "size": 22688429878,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0091_0095.zip",
+      "blobId": "8b336d87e3d553601da94a6b2f49228584191422",
+      "size": 21543553553,
+      "lfs": {
+        "sha256": "723793c82a1db44b174be610610259a0b8b182bbb122f10905a3d787a2d392a3",
+        "size": 21543553553,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/misc/rgb_images/rgb_images_1_0096_0099.zip",
+      "blobId": "08abc0d9ccbf2d8c27b4c37247eb7e101ea2fe1c",
+      "size": 16942946164,
+      "lfs": {
+        "sha256": "e7fcde321fe23ded54ddb0a850743f2473bd86f626a48aa10e328edeb5ea3e6b",
+        "size": 16942946164,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/text2cad_v1.1.csv",
+      "blobId": "7a48fad0a1decd1acb99528fe5141efdc6f6de7e",
+      "size": 1298988495,
+      "lfs": {
+        "sha256": "cded1b8048f432c192127a5d177da59dc926149ac02fb9ae31e1015ee6219136",
+        "size": 1298988495,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text2cad_v1.1/train_test_val.json",
+      "blobId": "1813b0e7d03395472741d3807b61c2f34e01c80f",
+      "size": 2326827,
+      "lfs": {
+        "sha256": "7a00d9fe865603937524491e2a33f638f68c443a415b3ba1e1a1aba9167c24bb",
+        "size": 2326827,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "train_test_val.json",
+      "blobId": "d04393bd1755f7bcc5f5e24ede81b162d72ab5fd",
+      "size": 2992377,
+      "lfs": {
+        "sha256": "4ea6db9027b4cebee8f37903b6601b73b810adacd808a4874dbe847c7c508e7b",
+        "size": 2992377,
+        "pointerSize": 132
+      }
+    }
+  ]
+}

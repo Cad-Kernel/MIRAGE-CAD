@@ -1,0 +1,83 @@
+{
+  "status": "READ_ONLY_METADATA_CAPTURE_COMPLETE_WITH_PER_SOURCE_STATUSES",
+  "created_utc": "2026-10-25T12:44:26.477217+00:00",
+  "request_count": 87,
+  "max_response_bytes": 4194304,
+  "model_weight_bytes_downloaded": 0,
+  "remote_code_executed": false,
+  "repos": {
+    "text2cad": {
+      "repo": "SadilKhan/Text2CAD",
+      "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+      "commit": "669a81472ede2269837c22a4d00070eaac360c82",
+      "revision": null,
+      "default_branch": "main",
+      "tree_blob_count": 65,
+      "tree_truncated": false
+    },
+    "pointercad": {
+      "repo": "Snitro/Pointer-CAD",
+      "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+      "commit": "a5c32d702f9569565d89a94de44b3af0020bcab0",
+      "revision": null,
+      "default_branch": "main",
+      "tree_blob_count": 39,
+      "tree_truncated": false
+    },
+    "cadrecode": {
+      "repo": "filapro/cad-recode",
+      "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+      "commit": "03e3262119b38939feaa44b8368ad8db99243d47",
+      "revision": null,
+      "default_branch": "main",
+      "tree_blob_count": 5,
+      "tree_truncated": false
+    },
+    "gencad_weights": {
+      "repo": "yu-nomi/GenCAD_3D",
+      "status": "PUBLIC_METADATA_CAPTURED",
+      "commit": null,
+      "revision": "5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a",
+      "default_branch": null,
+      "tree_blob_count": null,
+      "tree_truncated": null
+    },
+    "cadbench_dataset": {
+      "repo": "DeCoDELab/CADBench",
+      "status": "PUBLIC_METADATA_CAPTURED",
+      "commit": null,
+      "revision": "7cf5b3ec195228e4342cfa534d25662d36e96cbc",
+      "default_branch": null,
+      "tree_blob_count": null,
+      "tree_truncated": null
+    },
+    "img2cad_factorization": {
+      "repo": "qq456cvb/Img2CAD",
+      "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+      "commit": "afe48afa3f66e793ac9b64d3df4aab8c3ef7f7e3",
+      "revision": null,
+      "default_branch": "master",
+      "tree_blob_count": 29,
+      "tree_truncated": false
+    },
+    "gencad3d": {
+      "repo": "yunomi-git/GenCAD-3D",
+      "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+      "commit": "50bf5133c5f895b183fed8dac1df43aa7c1aab1f",
+      "revision": null,
+      "default_branch": "main",
+      "tree_blob_count": 141,
+      "tree_truncated": false
+    },
+    "cadbench": {
+      "repo": "anniedoris/CADBench",
+      "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+      "commit": "99e41a2eeb351f04611e83980f9f23cb0ca216c7",
+      "revision": null,
+      "default_branch": "main",
+      "tree_blob_count": 4439,
+      "tree_truncated": false
+    }
+  },
+  "script_sha256": "eaea97e6fe79837d8c2d1087e07d41d99490af16a7157a3514f0e93daf3418bc"
+}

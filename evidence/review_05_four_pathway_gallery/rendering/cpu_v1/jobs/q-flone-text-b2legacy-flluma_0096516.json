@@ -1,0 +1,13 @@
+{
+  "case_id": "q-flone-text-b2legacy-flluma_0096516",
+  "sample_id": "flluma_0096516",
+  "modality": "text",
+  "historical_scoreable": true,
+  "case_snapshot_sha256": "f42f28ed7e290f0f41e6cdf3bf8a0412a8dd79bd86dc7bb87cb672667f32cf64",
+  "code_path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0096516\\code\\prediction.py",
+  "code_sha256": "be2e65f9135503891cafb54512f1eff47d66138d1fa818adea9dab8e8302346d",
+  "reference_step_path": "__FLLUMA_ROOT__One\\FllumaOne-100K\\shard_0096\\flluma_0096516\\model.step",
+  "reference_step_sha256": "d7d716f9cc7da51c23105c8168396479e0a7456f09644b8be06a7ade350c0911",
+  "output_dir": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\rendering\\cpu_v1\\cases\\q-flone-text-b2legacy-flluma_0096516",
+  "failure_evidence": null
+}

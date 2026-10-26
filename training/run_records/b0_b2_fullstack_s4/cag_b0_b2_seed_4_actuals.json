@@ -1,0 +1,198 @@
+{
+  "created_utc": "2026-10-16T01:52:25.115482+00:00",
+  "data": {
+    "data/25k/test.jsonl": {
+      "rows": 2500,
+      "sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e"
+    },
+    "data/25k/train.jsonl": {
+      "rows": 25000,
+      "sha256": "991e0a6d811b5927d9316fed50c7cc09472719af1726b8c92017c3fbb86906ca"
+    },
+    "data/25k/val.jsonl": {
+      "rows": 2500,
+      "sha256": "4b76f8fec86f8fac7fbb9635542a924ccf3b91893115639d13ed79ada374a021"
+    }
+  },
+  "experiment": "Review/03 B0 vs B2 full-stack multi-seed replication",
+  "limit": 2500,
+  "modality": "step",
+  "outputs": {
+    "b0_geometry_input": {
+      "exists": true,
+      "path": "outputs/b0_b2_fullstack_s4/predictions/geom_input_step_B0_s4.jsonl",
+      "rows": 2500,
+      "sha256": "a037788dd7e75fdc80d6c455dc5e5cc6652e92fd9a5e710d95468ed4491616cb"
+    },
+    "b0_prediction": {
+      "exists": true,
+      "path": "outputs/b0_b2_fullstack_s4/predictions/gen_step_B0_s4.jsonl",
+      "rows": 2500,
+      "sha256": "f22c42cf81754a1eb0dce87a853f6bb038d74bd595131c6b1f43d0618fab9782"
+    },
+    "b0_training_report": {
+      "max_length": 2048,
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "output_dir": "outputs/b0_b2_fullstack_s4/b0_lora_code_noplan_25k",
+      "seed": 4,
+      "target": "program",
+      "train_rows": 25000,
+      "val_rows": 2500
+    },
+    "b2_geometry_input": {
+      "exists": true,
+      "path": "outputs/b0_b2_fullstack_s4/predictions/geom_input_step_B2_s4.jsonl",
+      "rows": 2500,
+      "sha256": "12877e966e87ffcba18e9601f8caf078e13d0e83997a4867bc18241cc8aa5a8e"
+    },
+    "b2_predicted_ir_p1a": {
+      "exists": true,
+      "path": "outputs/b0_b2_fullstack_s4/predictions/predicted_ir_test_step_p1a_s4.jsonl",
+      "rows": 2500,
+      "sha256": "d9fdac3f742697e7e3dc705431fc9c51bd723476ad5a33cdbfba4a72220b3f67"
+    },
+    "b2_predicted_ir_raw": {
+      "exists": true,
+      "path": "outputs/b0_b2_fullstack_s4/predictions/predicted_ir_test_step_raw_s4.jsonl",
+      "rows": 2500,
+      "sha256": "c0f6b87a570090a83e4c878d488c6add3564bf603af96095dcf5699bca6629c5"
+    },
+    "b2_prediction": {
+      "exists": true,
+      "path": "outputs/b0_b2_fullstack_s4/predictions/gen_step_B2_s4.jsonl",
+      "rows": 2500,
+      "sha256": "24a0cd2c31b5a519f6fa229741b559c2d5d0be614e5e96f8a8c0a6143a24f325"
+    },
+    "b2_stage3_report": {
+      "checkpoint_rule": "final",
+      "init_lora_ir_dir": null,
+      "max_length": 1536,
+      "modalities": [
+        "step"
+      ],
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "output_dir": "outputs/b0_b2_fullstack_s4/lora_ir_25k",
+      "prefix_len": 4,
+      "seed": 4,
+      "soft_prefix_eval": {
+        "normal_loss": 0.11131587580293417,
+        "shuffled_actually_permuted": false,
+        "shuffled_loss": 0.11131587580293417,
+        "shuffled_loss_note": "VACUOUS: the in-batch permutation never ran (eval batch size 1), so shuffled_loss is normal_loss by construction and says nothing about whether the prefix is read. The generation-level prefix ablation is the evidence for that.",
+        "zero_loss": 0.1315694533035159
+      },
+      "train_rows": 25000,
+      "val_rows": 2500
+    },
+    "b2_stage3b_report": {
+      "checkpoint_rule": "final",
+      "init_lora_ir_dir": "outputs/b0_b2_fullstack_s4/lora_ir_25k",
+      "max_length": 1536,
+      "modalities": [
+        "image",
+        "point",
+        "step",
+        "text"
+      ],
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "output_dir": "outputs/b0_b2_fullstack_s4/lora_ir_25k_stage3b",
+      "prefix_len": 4,
+      "seed": 4,
+      "soft_prefix_eval": {
+        "normal_loss": 0.14433008149266244,
+        "shuffled_actually_permuted": false,
+        "shuffled_loss": 0.14433008149266244,
+        "shuffled_loss_note": "VACUOUS: the in-batch permutation never ran (eval batch size 1), so shuffled_loss is normal_loss by construction and says nothing about whether the prefix is read. The generation-level prefix ablation is the evidence for that.",
+        "zero_loss": 0.15999471195507795
+      },
+      "train_rows": 8000,
+      "val_rows": 800
+    },
+    "b2_stage4_report": {
+      "max_length": 1536,
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "output_dir": "outputs/b0_b2_fullstack_s4/qwen25_coder_1_5b_program_25k",
+      "seed": 4,
+      "target": "program",
+      "train_rows": 25000,
+      "val_rows": 2500
+    },
+    "b2_stage4b_report": {
+      "max_length": 1536,
+      "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+      "output_dir": "outputs/b0_b2_fullstack_s4/qwen25_coder_1_5b_program_25k_stage4b",
+      "seed": 4,
+      "target": "program",
+      "train_rows": 3130,
+      "val_rows": 2500
+    },
+    "stage4b_mix": {
+      "exists": true,
+      "path": "data/b0_b2_fullstack_s4/train_stage4b_mix.jsonl",
+      "rows": 3130,
+      "sha256": "d4fc448f347ced50ee621453adce9193a9bd45dc9810337f56b2d10fbb004892"
+    }
+  },
+  "paths": {
+    "base": "outputs/b0_b2_fullstack_s4",
+    "data_dir": "data/b0_b2_fullstack_s4",
+    "work": "outputs/b0_b2_fullstack_s4/predictions"
+  },
+  "protocol": {
+    "b0_scope": "full retrain of direct query->code no-plan condition",
+    "b2_plan_canonicalization": "P1a face/extrude alias canonicalization before code generation",
+    "b2_scope": "full retrain of deployed generated-plan pathway components",
+    "checkpoint_selection": "final",
+    "evaluation_slice": "data/25k/test.jsonl, first 2500 STEP rows",
+    "program_code_repair": false,
+    "run_policy": "one seed fully closed before the next"
+  },
+  "scripts": {
+    "gen_scripts/train_soft_prefix_ir.py": {
+      "exists": true,
+      "sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac"
+    },
+    "scratch/repair_face_extrude_alias.py": {
+      "exists": true,
+      "sha256": "baeedbec121bc2cea3888fc15256c0fa739273440b325479992362883c01ec75"
+    },
+    "train_alignment.py": {
+      "exists": true,
+      "sha256": "bb0dcfc3059c0ee82cd21745d5405870d0a2d9c7acba336fe9ff9d4b59589d19"
+    },
+    "train_latent_prior.py": {
+      "exists": true,
+      "sha256": "4b333fd99b323b63d82278b9e80712ef0085992ae5939c05cfe89041facb120f"
+    },
+    "train_program_lora.py": {
+      "exists": true,
+      "sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d"
+    },
+    "training_25k/cag_b0_b2_fullstack_actuals.py": {
+      "exists": true,
+      "sha256": "fb89241688fd1df5441eeacd2fa8c2cbdc74facdebcdb8c2c48494ca319f2b85"
+    },
+    "training_25k/cag_prepare_b0_b2_seed_geometry.py": {
+      "exists": true,
+      "sha256": "73a2865dec970940138309bfd8465de2c8bec84b5aaf708ead74395858991bab"
+    },
+    "training_25k/cag_run_b0_b2_fullstack_seed.sh": {
+      "exists": true,
+      "sha256": "e32ba4bdf5afff97107c966750a3a61f55426e8f54eb6a8db05f0c847c62dc55"
+    },
+    "training_25k/scripts/build_stage4b_mix.py": {
+      "exists": true,
+      "sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101"
+    },
+    "training_25k/scripts/gen_code_from_predicted_ir.py": {
+      "exists": true,
+      "sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+    },
+    "training_25k/scripts/gen_predicted_ir.py": {
+      "exists": true,
+      "sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098"
+    }
+  },
+  "seed": 4,
+  "status": "GENERATION_COMPLETE_NEEDS_GATE_AND_GEOMETRY"
+}

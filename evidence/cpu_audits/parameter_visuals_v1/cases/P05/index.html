@@ -1,0 +1,53 @@
+<!doctype html><meta charset="utf-8"><title>P05 parameter evidence</title>
+<style>body{font:16px system-ui;max-width:1400px;margin:24px auto;color:#172536}img{max-width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f9;padding:16px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}</style>
+<a href="../../index.html">All cases</a><h1>P05 — flluma_0098828</h1>
+<p>export_failure; boss_radius: 10.14 → 12.675. Author semantic confirmation PENDING.</p>
+<img src="panel.png"><p>Historical record: broke_at_step_export_ok. These are current CPU re-exports, not recovered historical STEP bytes.</p>
+<p><a href="case.json">Original case metadata and literal examples</a> · <a href="change.diff">Exact code difference</a> · <a href="render_record.json">Camera and geometry diagnostics</a></p>
+<div class="cols"><section><h2>Before</h2><a href="before/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;boss_height&#x27;, 4.98, min=3.0, max=24.0, expression=&#x27;thickness * 0.82&#x27;, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_radius&#x27;, 10.14, min=3.0, max=18.0, expression=&#x27;hole_radius * 3.1&#x27;, semantic_type=&#x27;boss_radius&#x27;)
+params.add(&#x27;fillet_radius&#x27;, 1.01, min=0.1, max=2.4, semantic_type=&#x27;fillet_radius&#x27;)
+params.add(&#x27;height&#x27;, 45.8, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_offset_x&#x27;, 17.22, min=4.0, max=45.0, expression=&#x27;width * 0.308&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_offset_y&#x27;, 12.82, min=3.0, max=35.0, expression=&#x27;height * 0.28&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_radius&#x27;, 3.21, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_depth&#x27;, 2.1, min=1, max=8, semantic_type=&#x27;pocket_depth&#x27;)
+params.add(&#x27;pocket_length&#x27;, 25.14, min=8.0, max=60.0, expression=&#x27;width * 0.44&#x27;, semantic_type=&#x27;pocket_length&#x27;)
+params.add(&#x27;pocket_width&#x27;, 16.14, min=4.0, max=40.0, expression=&#x27;height * 0.352&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 6, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 57.4, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0003001&#x27;, category=&#x27;motor_mount&#x27;, parameters=params, seed=20263515, sample_id=&#x27;flluma_0003001&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_plate&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;center_boss_seed&#x27;, radius=params[&#x27;boss_radius&#x27;], height=params[&#x27;boss_height&#x27;], semantic_type=&#x27;boss&#x27;)
+moved = part.translate(name=&#x27;place_center_boss&#x27;, target=cylinder, offset=[0.0, 0.0, 5.29], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_center_boss&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+holes = part.hole_pattern(name=&#x27;four_bolt_holes&#x27;, target=join.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-17.22, -12.82], [17.22, -12.82], [-17.22, 12.82], [17.22, 12.82]], semantic_type=&#x27;mounting_hole&#x27;)
+pocket = part.rectangular_pocket(name=&#x27;center_clearance_pocket&#x27;, target=holes.top_face(), length=params[&#x27;pocket_length&#x27;], width=params[&#x27;pocket_width&#x27;], depth=params[&#x27;pocket_depth&#x27;], semantic_type=&#x27;pocket&#x27;)
+fillet = part.fillet(name=&#x27;mount_outer_fillet&#x27;, target=pocket.top_outer_edges(), radius=params[&#x27;fillet_radius&#x27;], semantic_type=&#x27;edge_break&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section><section><h2>After</h2><a href="after/native_export.json">Native record</a><pre>params = Parameters()
+params.add(&#x27;boss_height&#x27;, 4.98, min=3.0, max=24.0, expression=&#x27;thickness * 0.82&#x27;, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_radius&#x27;, 12.675, min=3.0, max=18.0, expression=&#x27;hole_radius * 3.1&#x27;, semantic_type=&#x27;boss_radius&#x27;)
+params.add(&#x27;fillet_radius&#x27;, 1.01, min=0.1, max=2.4, semantic_type=&#x27;fillet_radius&#x27;)
+params.add(&#x27;height&#x27;, 45.8, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_offset_x&#x27;, 17.22, min=4.0, max=45.0, expression=&#x27;width * 0.308&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_offset_y&#x27;, 12.82, min=3.0, max=35.0, expression=&#x27;height * 0.28&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_radius&#x27;, 3.21, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;pocket_depth&#x27;, 2.1, min=1, max=8, semantic_type=&#x27;pocket_depth&#x27;)
+params.add(&#x27;pocket_length&#x27;, 25.14, min=8.0, max=60.0, expression=&#x27;width * 0.44&#x27;, semantic_type=&#x27;pocket_length&#x27;)
+params.add(&#x27;pocket_width&#x27;, 16.14, min=4.0, max=40.0, expression=&#x27;height * 0.352&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 6, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 57.4, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0003001&#x27;, category=&#x27;motor_mount&#x27;, parameters=params, seed=20263515, sample_id=&#x27;flluma_0003001&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;base_plate&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+cylinder = part.cylinder(name=&#x27;center_boss_seed&#x27;, radius=params[&#x27;boss_radius&#x27;], height=params[&#x27;boss_height&#x27;], semantic_type=&#x27;boss&#x27;)
+moved = part.translate(name=&#x27;place_center_boss&#x27;, target=cylinder, offset=[0.0, 0.0, 5.29], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_center_boss&#x27;, target=plate, tool=moved, semantic_type=&#x27;joined_boss&#x27;)
+holes = part.hole_pattern(name=&#x27;four_bolt_holes&#x27;, target=join.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-17.22, -12.82], [17.22, -12.82], [-17.22, 12.82], [17.22, 12.82]], semantic_type=&#x27;mounting_hole&#x27;)
+pocket = part.rectangular_pocket(name=&#x27;center_clearance_pocket&#x27;, target=holes.top_face(), length=params[&#x27;pocket_length&#x27;], width=params[&#x27;pocket_width&#x27;], depth=params[&#x27;pocket_depth&#x27;], semantic_type=&#x27;pocket&#x27;)
+fillet = part.fillet(name=&#x27;mount_outer_fillet&#x27;, target=pocket.top_outer_edges(), radius=params[&#x27;fillet_radius&#x27;], semantic_type=&#x27;edge_break&#x27;)
+
+__all__ = [&#x27;part&#x27;]</pre></section></div>

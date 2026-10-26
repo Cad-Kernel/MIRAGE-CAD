@@ -1,0 +1,155 @@
+{
+  "sample_id": "f360_52449_3da8c6e5_0000",
+  "method": "cadr",
+  "classification": {
+    "primary_outcome": "CD_SCOREABLE",
+    "verified_failure_class": null,
+    "reason_subtype": "NOT_APPLICABLE",
+    "reason_detail": null,
+    "classification_rule": "CADR_NATIVE_CD_OK",
+    "reported_error": null,
+    "native_traceback": null,
+    "cd_scoreable": true,
+    "iou_scoreable": true,
+    "CD": 0.11394862414664549,
+    "IoU": 0.9835159320174981,
+    "iou_outcome": "IOU_AVAILABLE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 122,
+    "json_pointer": "/rows/122/native_records/cadr"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_52449_3da8c6e5_0000\\run_manifest.json",
+      "sha256": "64072b5cd5f0c1945a80e875299796e2d2b993283fee31199ecb3fb7cc857991",
+      "bytes": 3544
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_52449_3da8c6e5_0000\\execution_result.json",
+      "sha256": "91ca0004c4339ab1004db4b3804ded0e778315b183d18105160f612cab82cb84",
+      "bytes": 166
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_52449_3da8c6e5_0000\\execution_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_52449_3da8c6e5_0000\\execution_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "physical_JSONL_locators": {},
+  "original_native_record": {
+    "sample_id": "f360_52449_3da8c6e5_0000",
+    "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/52449_3da8c6e5_0000.step",
+    "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+    "pipeline_status": "SUCCESS",
+    "terminal": true,
+    "cd_status": "ok",
+    "iou_status": "ok",
+    "input": {
+      "source_step_sha256": "7d5baea684390a6e5c5ff5f4bba34294dab7a0fbb7f625c8a082062844dc50dd",
+      "alpha": 1e-06,
+      "angular_deflection": 0.3,
+      "canonical_mesh_sha256": "6060c11588909f1b985cfe23f3582b1e6976ac05677ca64bfff558faf402c2d6/b4328057b5256121f045923e2c670055c75eeb39b674108e80e839324c97d3e9",
+      "mesh_vertex_count": 20,
+      "mesh_triangle_count": 36,
+      "mesh_watertight": true,
+      "bbox_before_normalization": [
+        1600.0,
+        500.0,
+        700.0
+      ],
+      "normalization_target_extent": 2.0,
+      "normalization_scale": 0.00125,
+      "sampling_seed": 0,
+      "n_pre_points": 8192,
+      "cloud_8192_sha256": "7052fdcfac121e9a3d56c8c5e85ae86be568b6c79cc72972e9097b7f42ba1d30",
+      "fps_indices_sha256": "0a9da9a5d47b4b10e794a5b576bad021f264c492c213e457fb351d5b8c28c9b1",
+      "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+      "cloud_256_sha256": "eb276924c4af2e3962efba9849c33e8cc3a7c1e36d3009b93850e33696147d45"
+    },
+    "model": {
+      "checkpoint": "filapro/cad-recode-v1.5",
+      "tokenizer": "Qwen/Qwen2-1.5B",
+      "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+      "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+      "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+      "torch": "2.7.0+cu128",
+      "device": "cuda",
+      "device_capability": "sm_120",
+      "n_parameters": 1543794176,
+      "generation": {
+        "strategy": "greedy",
+        "num_candidates": 1,
+        "max_new_tokens": 768
+      },
+      "transformers": "4.47.1"
+    },
+    "generation": {
+      "seconds": 1.95,
+      "raw_chars": 2872,
+      "raw_sha256": "5a95922c118b892c147767c4c24af4fd13381b55d431001e120edd4b2bb5f0eb"
+    },
+    "extraction_status": "ok",
+    "extracted_code_sha256": "6536d33d76f0ae16e18458d3cd3b69bcfd985a0f994e9cec66d472d558c8acca",
+    "extracted_code_lines": 3,
+    "unsafe_patterns_found": [],
+    "execution": {
+      "timeout_s": 60,
+      "wall_seconds": 0.88,
+      "timed_out": false,
+      "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_52449_3da8c6e5_0000",
+      "return_code": 0,
+      "runner_result": {
+        "status": "SUCCESS",
+        "generated_stdout": "",
+        "shape_type": "Solid",
+        "is_valid": true,
+        "bbox": [
+          200.0,
+          62.0,
+          88.0
+        ],
+        "step_bytes": 36178
+      }
+    },
+    "artifacts": {
+      "prediction_step": "__DEV_ROOT__/scratch/cadrecode_runs/f360_52449_3da8c6e5_0000/prediction.step",
+      "prediction_step_sha256": "6687c9e6f3f31e5956ba4828a6c90873904877dfdf689d4772009e4ead42055e",
+      "prediction_step_bytes": 36178
+    },
+    "evaluation": {
+      "pred_mesh_triangles": 36,
+      "pred_mesh_watertight": true,
+      "remesh_status": "ok",
+      "cd_x1000": 0.11394862414664549,
+      "cd_floor_gt": 0.1129429995877363,
+      "cd_status": "ok",
+      "iou": 0.9835159320174981,
+      "iou_status": "ok",
+      "gt_self_iou": 1.0,
+      "gt_self_iou_dev": 0.0,
+      "iou_eligible": true
+    },
+    "cd_floor_ratio": 1.0089038237215224
+  },
+  "original_gate": null,
+  "original_export_record": null,
+  "original_CADR_execution_texts": {
+    "execution_stdout.txt": "",
+    "execution_stderr.txt": ""
+  },
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

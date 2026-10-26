@@ -1,0 +1,33 @@
+{
+  "sample_id": "f360_42005_bb4162aa_0000",
+  "arm": "point_genplan",
+  "terminal": true,
+  "memory_cap": "RLIMIT_AS=8192MB",
+  "gt_verified": true,
+  "cd_status": null,
+  "iou_status": "ineligible",
+  "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+  "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_42005_bb4162aa_0000/candidate.step",
+  "gt_mesh_triangles": 700,
+  "prediction_step_diagnostics": {
+    "n_solids": 1,
+    "n_faces": 0,
+    "faces_per_solid": [
+      0
+    ],
+    "diagnostics_error": "Standard_ConstructionError: Bnd_Box is void"
+  },
+  "evaluation": {
+    "remesh_status": "REMESH_FAILED: Standard_ConstructionError: Bnd_Box is void"
+  },
+  "pipeline_status": "REMESH_FAILED",
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": true
+  },
+  "gate_check": "match",
+  "seconds": 1.27
+}

@@ -1,0 +1,12 @@
+PART flluma_0005001 CAT cross_tab_profile_mount UNITS mm SEED 20265515
+PARAM boss_height 11.1 MIN 1 MAX 10 SEM boss_height
+PARAM boss_radius 5.14 MIN 3 MAX 16 SEM boss_radius
+PARAM hole_radius 1.14 MIN 0.8 MAX 5 SEM hole_radius
+PARAM thickness 7.2 MIN 2 MAX 14 SEM thickness
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-15.16,-10.5],[15.16,-10.5],[15.16,10.5],[22.14,10.5],[22.14,-6.65],[-22.14,-6.65],[-22.14,10.5],[-15.16,10.5]] profile_type=polygon
+F extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,4.95]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[0,-3.33],[7.09,0],[0,3.33],[-7.09,0]] radius=@hole_radius
+END

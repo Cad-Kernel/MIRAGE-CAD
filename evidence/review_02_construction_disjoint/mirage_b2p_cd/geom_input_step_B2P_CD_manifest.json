@@ -1,0 +1,17 @@
+{
+  "arm": "B2P_CD",
+  "created_utc": "2026-10-05T09:20:20.540292+00:00",
+  "empty_program": 0,
+  "expected_rows": 500,
+  "missing_target": 0,
+  "no_point_path": 0,
+  "output_jsonl": "outputs/construction_disjoint_step_v1/geom_input_step_B2P_CD.jsonl",
+  "output_rows": 500,
+  "output_sha256": "5f1e363939d63e9b389cecd53cc505579dc5c1eadaeb245b13552860ec0c6063",
+  "prediction_file": "outputs/construction_disjoint_step_v1/gen_code_step_B2P_CD.jsonl",
+  "prediction_rows": 500,
+  "prediction_sha256": "6d35403bafa2e194afbcdf09fec3d7e95fc5db58b17193de150fa1a301e4201a",
+  "purpose": "construction-disjoint geometry input prep",
+  "test_jsonl": "data/construction_disjoint_step_v1/test.jsonl",
+  "test_jsonl_sha256": "3c42ee760354323fa3ab503bb5af576b7a56d82e2e2d26367ffacc71935fbd55"
+}

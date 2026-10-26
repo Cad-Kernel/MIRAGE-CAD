@@ -1,0 +1,271 @@
+{
+  "actual_stage4b_global_step": null,
+  "amendment_fingerprint": "efc5ea52d9ab2b9b3aa46661a0a4f46805e09c0b466b9162f3962d9dee335fd1",
+  "audit_script": {
+    "bytes": 10237,
+    "path": "__DEV_ROOT__/src/training_25k/cag_preflight_stage4b_packing.py",
+    "sha256": "073455e5e37cdcdf3d1b3d67bcd452bfb4db2e6889c93ca8a22e29350c1e85bc"
+  },
+  "cache_complete": {
+    "bytes": 325,
+    "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/COMPLETE.json",
+    "sha256": "d8ef8c2f538451d8ed1cfcbf13403c4af2eccb8536679c0a4c73037e4a07b715"
+  },
+  "cache_index": {
+    "bytes": 37902450,
+    "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/index.jsonl",
+    "sha256": "93e0060b697ccb98c0be3af51db70bb60ae0babbe294224ee9c7b3cf60718441"
+  },
+  "cache_verification_scope": "full index/identity coverage; bytes/tensors verified for every consumed train/validation entry",
+  "created_utc": "2026-10-18T07:07:24.185589+00:00",
+  "dataloader_budget": {
+    "epochs": 3,
+    "group_sizes": {
+      "6": 3,
+      "8": 1179
+    },
+    "planned_updates": 1182,
+    "rows": 3150,
+    "sampler_epoch_index_sha256": [
+      "5a90948f4e738629881fe6375de0139b4e20d48fbb77896e6a76201754881cf7",
+      "13cb22750f976311a8fabe44eb1737f7443739406023c2df7e90c24965c284cf",
+      "9dbb36ee7082dc010382e3ea3999921d8ade145f52e87075cbdf5a060eeb4ae5"
+    ]
+  },
+  "datasets": {
+    "A": {
+      "collated_batch_probes": [
+        {
+          "input_shape": [
+            2,
+            1536
+          ],
+          "supervised_tokens": [
+            640,
+            869
+          ]
+        },
+        {
+          "input_shape": [
+            2,
+            1536
+          ],
+          "supervised_tokens": [
+            869,
+            868
+          ]
+        }
+      ],
+      "failure_rows": 0,
+      "failures": [],
+      "full_supervised_tokens_one_pass": 1898764,
+      "gt_rows_truncated": 413,
+      "instruction_target_overflow_rows": 0,
+      "legacy_zero_supervision_rows": 19,
+      "max_final_sequence_tokens": 1536,
+      "max_original_plan_tokens": 1536,
+      "max_retained_plan_tokens": 948,
+      "ordered_ids_roles_sha256": "5b84232b45476b30b00816d561dbd2efa03d51c04db39f633f262902847c2871",
+      "packed_rows": 3150,
+      "plan_emptied_by_budget_rows": 0,
+      "predicted_rows_truncated": 211,
+      "roles": {
+        "gt": 2205,
+        "predicted": 945
+      },
+      "row_audit": {
+        "bytes": 8358605,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight_after_B/A_rows.jsonl",
+        "sha256": "31d294820596c55bb280676890ef24ffb86cc2722cf97152f7bfd23b99734f05"
+      },
+      "rows_requiring_plan_truncation": 624,
+      "status": "PASS",
+      "total_rows": 3150,
+      "validation_rows_truncated": 0,
+      "zero_supervision_rows": 0
+    },
+    "B": {
+      "collated_batch_probes": [
+        {
+          "input_shape": [
+            2,
+            1536
+          ],
+          "supervised_tokens": [
+            640,
+            869
+          ]
+        },
+        {
+          "input_shape": [
+            2,
+            1536
+          ],
+          "supervised_tokens": [
+            869,
+            868
+          ]
+        }
+      ],
+      "failure_rows": 0,
+      "failures": [],
+      "full_supervised_tokens_one_pass": 1898764,
+      "gt_rows_truncated": 413,
+      "instruction_target_overflow_rows": 0,
+      "legacy_zero_supervision_rows": 164,
+      "max_final_sequence_tokens": 1536,
+      "max_original_plan_tokens": 1536,
+      "max_retained_plan_tokens": 950,
+      "ordered_ids_roles_sha256": "5b84232b45476b30b00816d561dbd2efa03d51c04db39f633f262902847c2871",
+      "packed_rows": 3150,
+      "plan_emptied_by_budget_rows": 0,
+      "predicted_rows_truncated": 320,
+      "roles": {
+        "gt": 2205,
+        "predicted": 945
+      },
+      "row_audit": {
+        "bytes": 8303589,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight_after_B/B_rows.jsonl",
+        "sha256": "408a4a1b332e859be016631bb84395595bb17d28640f82a9000dfa0213638ef1"
+      },
+      "rows_requiring_plan_truncation": 733,
+      "status": "PASS",
+      "total_rows": 3150,
+      "validation_rows_truncated": 0,
+      "zero_supervision_rows": 0
+    },
+    "validation": {
+      "collated_batch_probes": [
+        {
+          "input_shape": [
+            2,
+            1536
+          ],
+          "supervised_tokens": [
+            632,
+            1091
+          ]
+        },
+        {
+          "input_shape": [
+            1,
+            1536
+          ],
+          "supervised_tokens": [
+            899
+          ]
+        }
+      ],
+      "failure_rows": 0,
+      "failures": [],
+      "full_supervised_tokens_one_pass": 1528910,
+      "gt_rows_truncated": 459,
+      "instruction_target_overflow_rows": 0,
+      "legacy_zero_supervision_rows": 0,
+      "max_final_sequence_tokens": 1536,
+      "max_original_plan_tokens": 947,
+      "max_retained_plan_tokens": 638,
+      "ordered_ids_roles_sha256": "9c3dbadc470529a0fa7c8cc6d4ca65f54671e335c1d169c60fd731c6f2e6fbb1",
+      "packed_rows": 2500,
+      "plan_emptied_by_budget_rows": 0,
+      "predicted_rows_truncated": 0,
+      "roles": {
+        "gt": 2500
+      },
+      "row_audit": {
+        "bytes": 6636209,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight_after_B/validation_rows.jsonl",
+        "sha256": "2a5eed476c9c86a0328af0a337841c8e311d83dee4ceb0d8d39ff0b39e38f7ec"
+      },
+      "rows_requiring_plan_truncation": 459,
+      "status": "PASS",
+      "total_rows": 2500,
+      "validation_rows_truncated": 459,
+      "zero_supervision_rows": 0
+    }
+  },
+  "model_forward_called": false,
+  "notes": "CPU-only audit; no continuation entrypoint or training authorization. Original three execution sources unchanged.",
+  "original_execution_hashes": {
+    "cag_exposure_policy.py": "7c8ba2081e837f2bcc808e55c3b49e0fdff4778cc883484220c798afcdcd92f4",
+    "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+    "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+  },
+  "paired_actual_plan_preflight": "PASS",
+  "policy_identity": {
+    "implementation": {
+      "bytes": 6636,
+      "path": "__DEV_ROOT__/src/training_25k/cag_stage4b_packing_v1.py",
+      "sha256": "611a21ef38c3086bdfa05d57d77726b0ea115d570f2750d7e274903d085d5b8c"
+    },
+    "parent_fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+    "policy": "stage4b_preserve_full_code_truncate_construction_plan_v1",
+    "prompt_builder": {
+      "bytes": 11008,
+      "path": "__RUN_SOURCE_ROOT__/miragecad/gen_prompts.py",
+      "sha256": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+    },
+    "tokenizer_files": {
+      "tokenizer.json": {
+        "bytes": 11421892,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer.json",
+        "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+      },
+      "tokenizer_config.json": {
+        "bytes": 666,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer_config.json",
+        "sha256": "8bf20d1ba8531aff9e2eac813845e87f07cb2684b68e1de521ca84871f24cdbe"
+      }
+    }
+  },
+  "provenance": {
+    "A": {
+      "completion": {
+        "bytes": 592,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.complete.json",
+        "sha256": "7fbcafb883162c98fa52eb1cb46e6002d931c5b816e3292ff0550745bca97fe4"
+      },
+      "phase1": {
+        "bytes": 1946,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/plan_phase1/COMPLETE.json",
+        "sha256": "e6f44352e7e4815cd08f70c51caa428ecd83e24bdd1ba8047126f90d773073a5"
+      },
+      "phase2": {
+        "bytes": 1945,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/plan_phase2/COMPLETE.json",
+        "sha256": "a178eec3b479bfbf894514072a0d132e08eec14be42e52d511dffe7b19ae6f49"
+      },
+      "predictions": {
+        "bytes": 3198217,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.jsonl",
+        "sha256": "f542921ef1986e09e16658f25d1b9dc93ca5eb8390e24f471f691d82f655a780"
+      }
+    },
+    "B": {
+      "completion": {
+        "bytes": 592,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/predictions/train_roles_plans.complete.json",
+        "sha256": "f4b33918f65e0a559480b0ef385828d2dd38c1f1d9efffbe64b564e2b81d929d"
+      },
+      "phase1": {
+        "bytes": 1946,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase1/COMPLETE.json",
+        "sha256": "bda92b2782f6bca1ff321359f1889068728603d1b2ba4fe3bb9ec38a215eded4"
+      },
+      "phase2": {
+        "bytes": 1945,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase2/COMPLETE.json",
+        "sha256": "21f5fa13a4b6b0dd37caf119d2e8015655770b432ce40f8545df04e246fa3d24"
+      },
+      "predictions": {
+        "bytes": 3226708,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/predictions/train_roles_plans.jsonl",
+        "sha256": "dfa4061ec8c00d7d94667d7ef248c0656d49a7d21edc1a05338e858cda61ea66"
+      }
+    }
+  },
+  "status": "PASS_PAIRED",
+  "training_authorized": false,
+  "training_started": false
+}

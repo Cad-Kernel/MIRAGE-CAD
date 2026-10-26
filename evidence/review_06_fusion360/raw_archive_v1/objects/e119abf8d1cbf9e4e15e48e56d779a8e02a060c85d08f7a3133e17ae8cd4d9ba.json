@@ -1,0 +1,18 @@
+{
+  "sample_id": "f360_53831_de0554da_0001",
+  "arm": "point_genplan",
+  "terminal": true,
+  "pipeline_status": "NO_GEOMETRY",
+  "reason": "this arm produced no STEP for this part: exec error: topology reference 'join_002:top_face:323af5d41048' did not resolve any face",
+  "gt_verified": null,
+  "cd_status": null,
+  "iou_status": null,
+  "gates": {
+    "syntax_ok": true,
+    "exec_ok": false,
+    "build_ok": false,
+    "solid_valid": false,
+    "step_export_ok": false
+  },
+  "gate_check": "match"
+}

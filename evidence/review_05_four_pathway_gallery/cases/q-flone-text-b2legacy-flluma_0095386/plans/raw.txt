@@ -1,0 +1,11 @@
+PART flluma_0005100 CAT ribbed_support_plate UNITS mm SEED 20265614
+PARAM height 37.2 MIN 12 MAX 80 SEM overall_height
+PARAM hole_radius 1.53 MIN 1 MAX 8 SEM hole_radius
+PARAM rib_height 7.72 MIN 2 MAX 14 EXPR thickness*0.94 SEM rib_height
+PARAM rib_length 20.14 MIN 12 MAX 100 EXPR width*0.276 SEM rib_length
+PARAM rib_offset_y 10.14 MIN 2 MAX 24 EXPR height*0.27 SEM rib_offset
+PARAM rib_width 3.14 MIN 2 MAX 12 EXPR max(2.0,height*0.085) SEM rib_width
+PARAM thickness 7 MIN 3 MAX 25 SEM thickness
+PARAM width 74.2 MIN 20 MAX 120 SEM overall_width
+F ribbed_support_plate_001 OP_RIBBED_SUPPORT_PLATE SEM ribbed_support_plate ROLE primary_body PARAMS height=@height hole_positions=[[-20.396,-9.3],[20.396,-9.3],[-20.396,9.3],[20.396,9.3]] hole_radius=@hole_radius rib_height=@rib_height rib_length=@rib_length rib_offset_y=@rib_offset_y rib_width=@rib_width thickness=@thickness width=@width
+END

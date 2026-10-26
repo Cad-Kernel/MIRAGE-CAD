@@ -1,0 +1,17 @@
+# Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add('chamfer_distance', 0.14, min=0.1, max=1.0, semantic_type='edge_break')
+params.add('flange_radius', 18.55, min=12.0, max=50.0, semantic_type='primitive_radius')
+params.add('flange_thickness', 3.1, min=2.0, max=14.0, semantic_type='thickness')
+params.add('hole_radius', 1.14, min=0.5, max=4.0, semantic_type='hole_radius')
+params.add('thickness', 9.6, min=2.0, max=18.0, semantic_type='thickness')
+
+part = Part('flluma_0005000', category='revolved_hub_mount', parameters=params, seed=20265514, sample_id='flluma_0005000', units='mm')
+sketch = part.sketch_polygon(name='hub_revolve_profile', points=[[-6.48, -18.13], [6.48, -18.13], [6.48, 16.35], [22.03, 16.35], [22.03, -8.41], [-22.03, -8.41], [-22.03, 16.35], [-6.48, 16.35]], closed=True, semantic_type='primitive_profile')
+revolved = part.revolve(name='revolved_hub_mount', profile=sketch, semantic_type='revolved_solid')
+cylinder = part.cylinder(name='hub_mount_flange_seed', radius=params['flange_radius'], height=params['flange_thickness'], semantic_type='flange')
+join = part.boolean_join(name='join_hub_to_flange', target=cylinder, tool=revolved, semantic_type='joined_boss')
+holes = part.hole_pattern(name='hub_flange_bolt_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, 0.0], [14.98, 0.0], [0.0, 14.98], [-14.98, 0.0]], semantic_type='bolt_hole_pattern')
+chamfer = part.chamfer(name='hub_mount_edge_chamfer', target=holes.top_outer_edges(), distance=params['chamfer_distance'], semantic_type='outer_chamfer')
+
+__all__ = ['part']

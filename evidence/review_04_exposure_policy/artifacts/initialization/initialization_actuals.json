@@ -1,0 +1,127 @@
+{
+  "adapter_reload": "PASS",
+  "arm_files": {
+    "A": {
+      "README.md": {
+        "bytes": 5392,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/README.md",
+        "sha256": "d75c9510285b5f4d31ac8495ab4c083c9d1abdfb2ceb20f5e29885e85cda44ce"
+      },
+      "adapter_config.json": {
+        "bytes": 1197,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/adapter_config.json",
+        "sha256": "3987bc2f96eb4e1f21c873cfe01761fd0d80b7964f2aa0e3ffbfee9d6ffd90ed"
+      },
+      "adapter_model.safetensors": {
+        "bytes": 36981072,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/adapter_model.safetensors",
+        "sha256": "54586081a12f2f5c88ae9577045a5130368102992e047cc536450e3dd302a078"
+      },
+      "chat_template.jinja": {
+        "bytes": 2507,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/chat_template.jinja",
+        "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+      },
+      "soft_prefix.pt": {
+        "bytes": 40932485,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/soft_prefix.pt",
+        "sha256": "91c3cee8d61d408d42bfec3725d335b94e29a93d0be0e2252b6cbc9e24f3ebe1"
+      },
+      "tokenizer.json": {
+        "bytes": 11421892,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer.json",
+        "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+      },
+      "tokenizer_config.json": {
+        "bytes": 666,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer_config.json",
+        "sha256": "8bf20d1ba8531aff9e2eac813845e87f07cb2684b68e1de521ca84871f24cdbe"
+      }
+    },
+    "B": {
+      "README.md": {
+        "bytes": 5392,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/README.md",
+        "sha256": "d75c9510285b5f4d31ac8495ab4c083c9d1abdfb2ceb20f5e29885e85cda44ce"
+      },
+      "adapter_config.json": {
+        "bytes": 1197,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/adapter_config.json",
+        "sha256": "3987bc2f96eb4e1f21c873cfe01761fd0d80b7964f2aa0e3ffbfee9d6ffd90ed"
+      },
+      "adapter_model.safetensors": {
+        "bytes": 36981072,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/adapter_model.safetensors",
+        "sha256": "54586081a12f2f5c88ae9577045a5130368102992e047cc536450e3dd302a078"
+      },
+      "chat_template.jinja": {
+        "bytes": 2507,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/chat_template.jinja",
+        "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+      },
+      "soft_prefix.pt": {
+        "bytes": 40932485,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/soft_prefix.pt",
+        "sha256": "91c3cee8d61d408d42bfec3725d335b94e29a93d0be0e2252b6cbc9e24f3ebe1"
+      },
+      "tokenizer.json": {
+        "bytes": 11421892,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/tokenizer.json",
+        "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+      },
+      "tokenizer_config.json": {
+        "bytes": 666,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/tokenizer_config.json",
+        "sha256": "8bf20d1ba8531aff9e2eac813845e87f07cb2684b68e1de521ca84871f24cdbe"
+      }
+    }
+  },
+  "base_files": {
+    "config.json": {
+      "bytes": 660,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/config.json",
+      "sha256": "984abd4b3f21edb957012c7dc4352c462b08e15ffe8384b6d55990885e9dcc9a"
+    },
+    "generation_config.json": {
+      "bytes": 117,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/generation_config.json",
+      "sha256": "444ea57ebf361c659d1f5c23508319b691e181d122588ea3cdd5f68d3e618b1f"
+    },
+    "merges.txt": {
+      "bytes": 1671839,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/merges.txt",
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    "model.safetensors": {
+      "bytes": 3087467144,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/model.safetensors",
+      "sha256": "535485b26038ac24f4e8a86e1a73ed417d8992e3192f6305b7fcc4fb92efa210"
+    },
+    "tokenizer.json": {
+      "bytes": 7031645,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/tokenizer.json",
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    "tokenizer_config.json": {
+      "bytes": 7308,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/tokenizer_config.json",
+      "sha256": "4a917e4772d9b246ef600e1c5d7d81e3a81ae9f3f2d10d78ccb02c86e5fb184a"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "path": "__USER_HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B/snapshots/df3ce67c0e24480f20468b6ef2894622d69eb73b/vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "base_revision": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "device": "cpu",
+  "identical_initialization_hashes": true,
+  "note": "A matched new initialization, not a claim of bitwise historical/4-bit initialization reproduction",
+  "peft": "0.19.1",
+  "prefix_tensor_equality": "PASS",
+  "recipe": "CPU BF16 base; reset RNG; standard PEFT init; fresh FP32 prefix",
+  "seed": 42,
+  "status": "PASS",
+  "training_started": false
+}

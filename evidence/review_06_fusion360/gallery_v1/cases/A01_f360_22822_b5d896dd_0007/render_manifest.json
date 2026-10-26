@@ -1,0 +1,1684 @@
+{
+  "case_id": "A01_f360_22822_b5d896dd_0007",
+  "sample_id": "f360_22822_b5d896dd_0007",
+  "created_utc": "2026-10-22T19:17:55.749834+00:00",
+  "protocol_sha256": "737134ff17799fa3c252ef8026cf75b7f1886010782be9f9a6960420ee707417",
+  "renderer_sha256": "16e733f13359182b9a5385b450649a1d9cafe090afb6b3100a3bf68c61531261",
+  "rasterizer_sha256": "2a61e3597b53a06fa48c2698274e68f99287cff45c172cb22fbaf7f45cfb6099",
+  "renders": [
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_reference_isometric.png",
+      "sha256": "f19f80fc32745aacf15361cf8e18cbbb138493bddfb1f2466a1b75ef7f3be9d2",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.632993161855452,
+        "pixels_per_world_unit": 321.37305425315293,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 12465,
+      "blank": false,
+      "foreground_bbox_px": [
+        198,
+        235,
+        432,
+        399
+      ],
+      "projected_extent_px": [
+        234.0318996884028,
+        164.23863081174687
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "reference",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_cadr_isometric.png",
+      "sha256": "5052cd5e947864b3362450014ca2e757eae1c8b3f68b4d30f308297c881b81b0",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.632993161855452,
+        "pixels_per_world_unit": 321.37305425315293,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 12205,
+      "blank": false,
+      "foreground_bbox_px": [
+        198,
+        233,
+        431,
+        400
+      ],
+      "projected_extent_px": [
+        232.92863658298137,
+        167.35196269099745
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "cadr",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_mirage_isometric.png",
+      "sha256": "02d2a14d5b0056b40ce8c2af8de67925830d1800167086a87a678214e84fe9b5",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.632993161855452,
+        "pixels_per_world_unit": 321.37305425315293,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 84533,
+      "blank": false,
+      "foreground_bbox_px": [
+        101,
+        155,
+        539,
+        481
+      ],
+      "projected_extent_px": [
+        437.34785420361993,
+        326.35048355899414
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "mirage",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_nn_isometric.png",
+      "sha256": "cde26e188eb1aec98735323e2dcb78f7b9dbf8f5adefb5b7a8e27edf218aa1ea",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.632993161855452,
+        "pixels_per_world_unit": 321.37305425315293,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 24511,
+      "blank": false,
+      "foreground_bbox_px": [
+        166,
+        218,
+        474,
+        418
+      ],
+      "projected_extent_px": [
+        308.61627995391245,
+        200.736
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "nn",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_reference_front.png",
+      "sha256": "8210ee522dba5f234811ed0c9f415d80660c742bea027d5f97ff26f45a9b151a",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.0000000000000002,
+        "pixels_per_world_unit": 524.7999999999998,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 47955,
+      "blank": false,
+      "foreground_bbox_px": [
+        58,
+        273,
+        582,
+        367
+      ],
+      "projected_extent_px": [
+        524.7999999999997,
+        94.04112681741344
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "reference",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_cadr_front.png",
+      "sha256": "9391fe0df415d5131a305e9e626b6aa84a1ac66458569084aef1a6820c04d594",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.0000000000000002,
+        "pixels_per_world_unit": 524.7999999999998,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 48019,
+      "blank": false,
+      "foreground_bbox_px": [
+        58,
+        273,
+        582,
+        367
+      ],
+      "projected_extent_px": [
+        524.7999999999997,
+        94.50463775491619
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "cadr",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_mirage_front.png",
+      "sha256": "b48518dc6d2440252877b0ad357c67d8f7af234694b4285b9896e6b4973801b0",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.0000000000000002,
+        "pixels_per_world_unit": 524.7999999999998,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 81317,
+      "blank": false,
+      "foreground_bbox_px": [
+        77,
+        235,
+        563,
+        405
+      ],
+      "projected_extent_px": [
+        485.2116054158607,
+        169.01200029152386
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "mirage",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_nn_front.png",
+      "sha256": "31ee055b7cd96ef62fcc5cf2bf8f926a3f4f57679a332a8d6cc96b6bf585ffcb",
+      "camera": {
+        "series": "metric_space",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 1.0000000000000002,
+        "pixels_per_world_unit": 524.7999999999998,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "fixed_unit_cube"
+      },
+      "foreground_pixels": 27690,
+      "blank": false,
+      "foreground_bbox_px": [
+        58,
+        293,
+        582,
+        347
+      ],
+      "projected_extent_px": [
+        524.7999999999997,
+        53.15282051282048
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "metric_space",
+      "method": "nn",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_reference_isometric.png",
+      "sha256": "8155670803269cd1b93e09bc641948c48a51d15d9b08042184151bcc7eede566",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 107.25623542215071,
+        "pixels_per_world_unit": 4.892955621036252,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 12952,
+      "blank": false,
+      "foreground_bbox_px": [
+        139,
+        288,
+        378,
+        455
+      ],
+      "projected_extent_px": [
+        238.61301183510875,
+        167.45355829629835
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "reference",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_cadr_isometric.png",
+      "sha256": "89b3b04403f99a3ac39f31c9a8005b21ddf06f49cf8a41c8ab219c471bbdd2a0",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 107.25623542215071,
+        "pixels_per_world_unit": 4.892955621036252,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 12696,
+      "blank": false,
+      "foreground_bbox_px": [
+        139,
+        286,
+        377,
+        457
+      ],
+      "projected_extent_px": [
+        237.38603083082663,
+        170.55446147692373
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "cadr",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_mirage_isometric.png",
+      "sha256": "8fbd23a5df235fe3f0f635248112f9cf26640b2810b8ec9139c391b9ce00da18",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 107.25623542215071,
+        "pixels_per_world_unit": 4.892955621036252,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 52382,
+      "blank": false,
+      "foreground_bbox_px": [
+        186,
+        156,
+        530,
+        413
+      ],
+      "projected_extent_px": [
+        344.2542889181171,
+        256.8837427138229
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "mirage",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_nn_isometric.png",
+      "sha256": "d029ec3edcf9098305e134b745ec5e30572aa28a727549de2b2f906ce99a89ad",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "isometric",
+          "azimuth": 45,
+          "elevation": 35.264389682754654
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 107.25623542215071,
+        "pixels_per_world_unit": 4.892955621036252,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 34572,
+      "blank": false,
+      "foreground_bbox_px": [
+        175,
+        182,
+        541,
+        420
+      ],
+      "projected_extent_px": [
+        366.5010736190568,
+        238.38651520581354
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "nn",
+      "view": "isometric"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_reference_front.png",
+      "sha256": "4dc3ea9e160459ac7dd97bef7bc0007672e7b78ab7494ff6709b10a34e4a19f3",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 99.9832227830871,
+        "pixels_per_world_unit": 5.24888061608646,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 21666,
+      "blank": false,
+      "foreground_bbox_px": [
+        231,
+        316,
+        582,
+        379
+      ],
+      "projected_extent_px": [
+        351.49887806050066,
+        62.98656739303755
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "reference",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_cadr_front.png",
+      "sha256": "e38bf177357964b1212e1b2ba3a9cb584156dac2f4b4dc0bd17abaade79d4ff5",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 99.9832227830871,
+        "pixels_per_world_unit": 5.24888061608646,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 21975,
+      "blank": false,
+      "foreground_bbox_px": [
+        231,
+        316,
+        582,
+        380
+      ],
+      "projected_extent_px": [
+        351.34773071366897,
+        63.269798050890074
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "cadr",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_mirage_front.png",
+      "sha256": "65f089a6c972a1a82fae3225207e0317a99bc9f6ffbaca234346af0a3932afc4",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 99.9832227830871,
+        "pixels_per_world_unit": 5.24888061608646,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 21852,
+      "blank": false,
+      "foreground_bbox_px": [
+        137,
+        260,
+        388,
+        348
+      ],
+      "projected_extent_px": [
+        250.8964934489328,
+        87.39386640925386
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "mirage",
+      "view": "front"
+    },
+    {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_nn_front.png",
+      "sha256": "e3aee668343bdfa319876e13ecd865c984dab21a44eb2eb5bf4979504b6ea798",
+      "camera": {
+        "series": "reference_world",
+        "view": {
+          "name": "front",
+          "azimuth": 270,
+          "elevation": 0
+        },
+        "projection": "orthographic",
+        "field_of_view": null,
+        "center": [
+          10.99161139154354,
+          0.34999999999999964,
+          5.311510235624662
+        ],
+        "basis": [
+          [
+            1.0,
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          0.0
+        ],
+        "span_world_units": 99.9832227830871,
+        "pixels_per_world_unit": 5.24888061608646,
+        "size": 640,
+        "frame_occupancy": 0.82,
+        "frame_source": "shared_all_renderable_methods_union_bbox"
+      },
+      "foreground_pixels": 16898,
+      "blank": false,
+      "foreground_bbox_px": [
+        58,
+        306,
+        467,
+        348
+      ],
+      "projected_extent_px": [
+        409.41268805474397,
+        41.46615686708304
+      ],
+      "subpixel_warning": false,
+      "out_of_frame_vertices": 0,
+      "border_foreground_pixels": 0,
+      "placeholder": false,
+      "series": "reference_world",
+      "method": "nn",
+      "view": "front"
+    }
+  ],
+  "transforms": {
+    "metric_space": {
+      "reference": {
+        "native_to_display": [
+          [
+            0.014932851692297617,
+            0.0,
+            0.0,
+            0.08934657846181554
+          ],
+          [
+            0.0,
+            0.014932851692297617,
+            0.0,
+            0.4925335741538512
+          ],
+          [
+            0.0,
+            0.0,
+            0.014932851692297617,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            66.96644556617416,
+            0.0,
+            0.0,
+            -5.983222783087079
+          ],
+          [
+            0.0,
+            66.96644556617416,
+            0.0,
+            -32.98322278308708
+          ],
+          [
+            0.0,
+            0.0,
+            66.96644556617416,
+            -33.48322278308708
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -5.983222783087081,
+            -2.0,
+            -6.0
+          ],
+          [
+            60.98322278308708,
+            3.0,
+            6.0
+          ]
+        ],
+        "display_bbox": [
+          [
+            -4.163336342344337e-17,
+            0.462667870769256,
+            0.4104028898462143
+          ],
+          [
+            1.0,
+            0.537332129230744,
+            0.5895971101537857
+          ]
+        ],
+        "reference_extent_used": null
+      },
+      "cadr": {
+        "native_to_display": [
+          [
+            0.005002150965178068,
+            0.0,
+            0.0,
+            0.4999999999999855
+          ],
+          [
+            0.0,
+            0.005002150965178068,
+            0.0,
+            0.49749892451741096
+          ],
+          [
+            0.0,
+            0.0,
+            0.005002150965178068,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            199.9139983901709,
+            0.0,
+            0.0,
+            -99.95699919508255
+          ],
+          [
+            0.0,
+            199.9139983901709,
+            0.0,
+            -99.45699919508544
+          ],
+          [
+            0.0,
+            0.0,
+            199.9139983901709,
+            -99.95699919508544
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -99.95699919508255,
+            -7.0,
+            -18.0
+          ],
+          [
+            99.95699919508834,
+            8.0,
+            18.0
+          ]
+        ],
+        "display_bbox": [
+          [
+            0.0,
+            0.46248386776116446,
+            0.40996128262679477
+          ],
+          [
+            1.0,
+            0.5375161322388355,
+            0.5900387173732052
+          ]
+        ],
+        "reference_extent_used": null
+      },
+      "mirage": {
+        "native_to_display": [
+          [
+            0.01934235976789168,
+            0.0,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            0.01934235976789168,
+            0.0,
+            0.4932301740812379
+          ],
+          [
+            0.0,
+            0.0,
+            0.01934235976789168,
+            0.33897485151358053
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            51.7,
+            0.0,
+            0.0,
+            -25.85
+          ],
+          [
+            0.0,
+            51.7,
+            0.0,
+            -25.500000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            51.7,
+            -17.524999823252113
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -23.9,
+            -25.5,
+            -2.1870922859359355e-07
+          ],
+          [
+            23.9,
+            26.2,
+            16.650000572205
+          ]
+        ],
+        "display_bbox": [
+          [
+            0.037717601547388846,
+            5.551115123125783e-17,
+            0.33897484728322796
+          ],
+          [
+            0.9622823984526112,
+            1.0,
+            0.661025152716772
+          ]
+        ],
+        "reference_extent_used": null
+      },
+      "nn": {
+        "native_to_display": [
+          [
+            0.01282051282051282,
+            0.0,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            0.01282051282051282,
+            0.0,
+            0.49493589743589744
+          ],
+          [
+            0.0,
+            0.0,
+            0.01282051282051282,
+            0.4493589743589744
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            78.0,
+            0.0,
+            0.0,
+            -39.0
+          ],
+          [
+            0.0,
+            78.0,
+            0.0,
+            -38.605000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            78.0,
+            -35.050000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -39.0,
+            -13.57,
+            0.0
+          ],
+          [
+            39.0,
+            14.36,
+            7.9
+          ]
+        ],
+        "display_bbox": [
+          [
+            0.0,
+            0.32096153846153846,
+            0.4493589743589744
+          ],
+          [
+            1.0,
+            0.6790384615384615,
+            0.5506410256410257
+          ]
+        ],
+        "reference_extent_used": null
+      }
+    },
+    "reference_world": {
+      "reference": {
+        "native_to_display": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -5.983222783087081,
+            -2.0,
+            -6.0
+          ],
+          [
+            60.98322278308708,
+            3.0,
+            6.0
+          ]
+        ],
+        "display_bbox": [
+          [
+            -5.983222783087081,
+            -2.0,
+            -6.0
+          ],
+          [
+            60.98322278308708,
+            3.0,
+            6.0
+          ]
+        ],
+        "reference_extent_used": null
+      },
+      "cadr": {
+        "native_to_display": [
+          [
+            0.3348322278308708,
+            0.0,
+            0.0,
+            27.5
+          ],
+          [
+            0.0,
+            0.3348322278308708,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.3348322278308708,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            2.986570338459523,
+            0.0,
+            0.0,
+            -82.13068430763688
+          ],
+          [
+            0.0,
+            2.986570338459523,
+            0.0,
+            -1.4932851692297615
+          ],
+          [
+            0.0,
+            0.0,
+            2.986570338459523,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -99.95699919508255,
+            -7.0,
+            -18.0
+          ],
+          [
+            99.95699919508834,
+            8.0,
+            18.0
+          ]
+        ],
+        "display_bbox": [
+          [
+            -5.968824727778049,
+            -1.8438255948160958,
+            -6.026980100955674
+          ],
+          [
+            60.96882472777999,
+            3.1786578226469664,
+            6.026980100955674
+          ]
+        ],
+        "reference_extent_used": 66.96644556617416
+      },
+      "mirage": {
+        "native_to_display": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -23.9,
+            -25.5,
+            -2.1870922859359355e-07
+          ],
+          [
+            23.9,
+            26.2,
+            16.650000572205
+          ]
+        ],
+        "display_bbox": [
+          [
+            -23.9,
+            -25.5,
+            -2.1870922859359355e-07
+          ],
+          [
+            23.9,
+            26.2,
+            16.650000572205
+          ]
+        ],
+        "reference_extent_used": null
+      },
+      "nn": {
+        "native_to_display": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "display_to_native": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "original_mesh_bbox": [
+          [
+            -39.0,
+            -13.57,
+            0.0
+          ],
+          [
+            39.0,
+            14.36,
+            7.9
+          ]
+        ],
+        "display_bbox": [
+          [
+            -39.0,
+            -13.57,
+            0.0
+          ],
+          [
+            39.0,
+            14.36,
+            7.9
+          ]
+        ],
+        "reference_extent_used": null
+      }
+    }
+  },
+  "panels": {
+    "metric_space": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\metric_space_panel.png",
+      "sha256": "ef702f2659f51db9841e1fce9a722b314153f44e3f621ff5f0e317ca25e3ec5f"
+    },
+    "reference_world": {
+      "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\A01_f360_22822_b5d896dd_0007\\reference_world_panel.png",
+      "sha256": "9f90c32b412f6c06625046cbada4d667006b24267046a2f5334b0a453a0104fa"
+    }
+  },
+  "semantic_review": "PENDING_VISUAL_INSPECTION",
+  "metrics_recomputed": false
+}

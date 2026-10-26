@@ -1,0 +1,2 @@
+A built from 8 ordered CAD features, approximately 36.54 by 19.07 by 25 mm.
+Build a lofted transition bracket with 4 bolt holes and dimensions of 36.54 by 19.07 by 25 mm.

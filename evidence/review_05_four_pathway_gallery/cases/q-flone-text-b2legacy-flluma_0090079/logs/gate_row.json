@@ -1,0 +1,9 @@
+{
+  "sample_id": "flluma_0090079",
+  "syntax_ok": true,
+  "exec_ok": false,
+  "build_ok": false,
+  "solid_valid": false,
+  "step_export_ok": false,
+  "error": "exec error: topology reference 'join_001:top_face:b9ce48e7f7b9' did not resolve any face"
+}

@@ -1,0 +1,9 @@
+--- before.py
++++ after.py
+@@ -1,5 +1,5 @@
+ params = Parameters()
+-params.add('flange_height', 36.94, min=12.0, max=80.0, expression='height * 0.757', semantic_type='overall_height')
++params.add('flange_height', 40.634, min=12.0, max=80.0, expression='height * 0.757', semantic_type='overall_height')
+ params.add('flange_radius', 10.11, min=4.0, max=24.0, expression='width * 0.142', semantic_type='flange_radius')
+ params.add('flange_width', 46.1, min=20.0, max=120.0, expression='length * 0.648', semantic_type='overall_width')
+ params.add('height', 48.7, min=12, max=80, semantic_type='overall_height')

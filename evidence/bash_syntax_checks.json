@@ -1,0 +1,2127 @@
+[
+  {
+    "path": "analysis/setup_cadrecode_env.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "external/external_eval_env.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "evidence/review_05_four_pathway_gallery/raw_archive_v1/objects/059757cb0a3ac0436643ec87039857c5e8b3eed48a9e14bbc6e570987bd07ab7.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "evidence/review_05_four_pathway_gallery/raw_archive_v1/objects/6bbb2f5ab7f188594582d8a66ad7d918465052a016f693ba5c770db0c6c81c5c.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/benchmark_batch_size.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/decoding_ablation_point_step100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/quick_eval_stage3b_all4_100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/quick_eval_stage4b_step100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/run_audit_5k_vs_25k_zirhat_gap.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/run_full_stage3b_pipeline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/run_geometry_nbest_stage3b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/helpers/run_nnir_baseline_25k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/build_index_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/build_index_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/build_test_index_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/build_test_index_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_500_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_no_retrieval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_quick_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_quick_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_quick_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_50k_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_rerank_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/evaluate_rerank_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/eval_retrieval_prior_point_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/eval_retrieval_prior_point_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/eval_retrieval_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/eval_retrieval_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_500_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_no_retrieval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_quick_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_quick_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_quick_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_50k_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_rerank_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/generate_rerank_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/prepare_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/prepare_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/prepare_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_alignment_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_alignment_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_lora_program_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_lora_program_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_lora_program_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_lora_program_5k_stage4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_lora_program_5k_stage4c.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_lora_program_5k_stage4c_mini.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_image_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_point_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_point_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_point_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_step_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/retrieval/train_prior_text_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/01_prepare_data.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/03_train_alignment.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/04_build_retrieval_indices.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/05_train_prior_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/05_train_prior_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/05_train_prior_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/05_train_prior_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/06b_train_lora_ir_stage3b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/06_train_lora_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/07_gen_predicted_ir_train_subset.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/08_build_stage4b_mix.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/09_train_lora_code_stage4.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/10_train_lora_code_stage4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/11_gen_test_predicted_ir_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/11_gen_test_predicted_ir_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/11_gen_test_predicted_ir_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/11_gen_test_predicted_ir_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/12_repair_p1a_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/13_gen_test_code_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/13_gen_test_code_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/13_gen_test_code_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/13_gen_test_code_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/14_repair_code_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/16_evaluate_retrieval_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/17_evaluate_ir_quality_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/18_audit_rareop_decision_gate.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/19_evaluate_programs_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/20_rerun_geometry_nbest_random100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/21_editability_probe.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/24_n1_prefix_source_ablation.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/25_n1b_multiplan.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/26_b3_b4_sample_size_fixes.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/27_point_evidence_fix.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/28_score_nnir_full_programs.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/29_n1g_geometry_fidelity.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/30_b1k_prefix_length_sweep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/31_b1k_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/32_stage3b_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/33_noplan_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/34_noplan_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/35_external_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/36_external_arms.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/37_external_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/38_compositional_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/39_e1_observation_bypass.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/40_e1b_shuffled_x_suppressed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/41_e1_geometry_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/42_b1_direct_latent.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/43_b2_pred_exposure_matched.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/44_seeds_a1e_b2p.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_03_train_alignment.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_05_train_priors.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_06_train_lora_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_07_08_stage4b_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_09_10_train_lora_code.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_11_build_index_and_gen_ours.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_13_gen_nnir_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_run_eval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/comp_run_stages_2to4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/stages/_guard_fresh.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/generation/scripts/evaluate_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/generation/scripts/generate_cache_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/generation/scripts/run_gen_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/generation/scripts/train_hints_probe_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/generation/scripts/train_lora_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "pipeline/generation/scripts/train_lora_ir_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/sync_to_wsl.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scratch/external_eval_env.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scratch/setup_cadrecode_env.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/build_index_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/build_index_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/build_test_index_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/build_test_index_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_500_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_no_retrieval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_quick_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_quick_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_quick_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_50k_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_rerank_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/evaluate_rerank_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/eval_retrieval_prior_point_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/eval_retrieval_prior_point_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/eval_retrieval_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/eval_retrieval_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_500_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_no_retrieval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_quick_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_quick_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_quick_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_50k_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_rerank_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/generate_rerank_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/prepare_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/prepare_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/prepare_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_alignment_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_alignment_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_lora_program_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_lora_program_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_lora_program_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_lora_program_5k_stage4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_lora_program_5k_stage4c.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_lora_program_5k_stage4c_mini.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_image_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_point_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_point_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_point_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_step_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/scripts/train_prior_text_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/01_prepare_data.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/03_train_alignment.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/04_build_retrieval_indices.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/05_train_prior_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/05_train_prior_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/05_train_prior_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/05_train_prior_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/06b_train_lora_ir_stage3b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/06_train_lora_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/07_gen_predicted_ir_train_subset.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/08_build_stage4b_mix.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/09_train_lora_code_stage4.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/10_train_lora_code_stage4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/11_gen_test_predicted_ir_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/11_gen_test_predicted_ir_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/11_gen_test_predicted_ir_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/11_gen_test_predicted_ir_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/12_repair_p1a_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/13_gen_test_code_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/13_gen_test_code_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/13_gen_test_code_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/13_gen_test_code_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/14_repair_code_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/16_evaluate_retrieval_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/17_evaluate_ir_quality_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/18_audit_rareop_decision_gate.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/19_evaluate_programs_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/20_rerun_geometry_nbest_random100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/21_editability_probe.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/24_n1_prefix_source_ablation.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/25_n1b_multiplan.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/26_b3_b4_sample_size_fixes.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/27_point_evidence_fix.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/28_score_nnir_full_programs.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/29_n1g_geometry_fidelity.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/30_b1k_prefix_length_sweep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/31_b1k_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/32_stage3b_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/33_noplan_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/34_noplan_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/35_external_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/36_external_arms.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/37_external_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/38_compositional_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/39_e1_observation_bypass.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/40_e1b_shuffled_x_suppressed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/41_e1_geometry_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/42_b1_direct_latent.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/43_b2_pred_exposure_matched.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/44_seeds_a1e_b2p.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_archive_partial_a1e_b2p.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_prepare_frozen_a1e_b2p_eval_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_construction_disjoint_nn_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_construction_disjoint_step_b2p_training.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_exposure_inference.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_exposure_policy.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_exposure_policy_b_only.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_frozen_a1e_b2p_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/cag_run_stage4b_only.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_03_train_alignment.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_05_train_priors.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_06_train_lora_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_07_08_stage4b_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_09_10_train_lora_code.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_11_build_index_and_gen_ours.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_13_gen_nnir_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_run_eval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/comp_run_stages_2to4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/_guard_fresh.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/gen_scripts/scripts/evaluate_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/gen_scripts/scripts/generate_cache_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/gen_scripts/scripts/run_gen_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/gen_scripts/scripts/train_hints_probe_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/gen_scripts/scripts/train_lora_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/gen_scripts/scripts/train_lora_ir_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/lite_scripts/scripts/run_lite_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/benchmark_batch_size.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/decoding_ablation_point_step100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/quick_eval_stage3b_all4_100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/quick_eval_stage4b_step100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/run_audit_5k_vs_25k_zirhat_gap.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/run_full_stage3b_pipeline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/run_geometry_nbest_stage3b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/development_source/src/training_25k/scripts/run_nnir_baseline_25k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/cag_prepare_frozen_a1e_b2p_eval_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/external_eval_env.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_image500_code.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_image500_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_nbest_100_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_nbest_100_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_nbest_20.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_nbest_smoke10.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_point500_code.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_point500_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_text500_code.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/run_text500_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scratch/setup_cadrecode_env.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/build_index_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/build_index_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/build_test_index_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/build_test_index_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_500_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_no_retrieval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_quick_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_quick_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_quick_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_50k_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_rerank_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/evaluate_rerank_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/eval_retrieval_prior_point_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/eval_retrieval_prior_point_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/eval_retrieval_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/eval_retrieval_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_500_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_no_retrieval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_quick.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_quick_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_quick_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_quick_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_50k_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_rerank_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/generate_rerank_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/prepare_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/prepare_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/prepare_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_alignment_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_alignment_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_lora_program_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_lora_program_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_lora_program_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_lora_program_5k_stage4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_lora_program_5k_stage4c.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_lora_program_5k_stage4c_mini.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_image_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_point_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_point_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_point_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_step_50k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_step_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/scripts/train_prior_text_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/01_prepare_data.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/03_train_alignment.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/04_build_retrieval_indices.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/05_train_prior_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/05_train_prior_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/05_train_prior_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/05_train_prior_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/06b_train_lora_ir_stage3b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/06_train_lora_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/07_gen_predicted_ir_train_subset.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/08_build_stage4b_mix.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/09_train_lora_code_stage4.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/10_train_lora_code_stage4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/11_gen_test_predicted_ir_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/11_gen_test_predicted_ir_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/11_gen_test_predicted_ir_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/11_gen_test_predicted_ir_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/12_repair_p1a_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/13_gen_test_code_image.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/13_gen_test_code_point.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/13_gen_test_code_step.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/13_gen_test_code_text.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/14_repair_code_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/16_evaluate_retrieval_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/17_evaluate_ir_quality_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/18_audit_rareop_decision_gate.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/19_evaluate_programs_all.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/20_rerun_geometry_nbest_random100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/21_editability_probe.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/24_n1_prefix_source_ablation.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/25_n1b_multiplan.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/26_b3_b4_sample_size_fixes.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/27_point_evidence_fix.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/28_score_nnir_full_programs.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/29_n1g_geometry_fidelity.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/30_b1k_prefix_length_sweep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/31_b1k_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/32_stage3b_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/33_noplan_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/34_noplan_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/35_external_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/36_external_arms.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/37_external_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/38_compositional_geometry.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/39_e1_observation_bypass.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/40_e1b_shuffled_x_suppressed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/41_e1_geometry_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/42_b1_direct_latent.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/43_b2_pred_exposure_matched.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/44_seeds_a1e_b2p.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/cag_archive_partial_a1e_b2p.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/cag_prepare_frozen_a1e_b2p_eval_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/cag_run_b0_b2_fullstack_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/cag_run_construction_disjoint_nn_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/cag_run_construction_disjoint_step_b2p_training.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/cag_run_frozen_a1e_b2p_seed.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_03_train_alignment.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_05_train_priors.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_06_train_lora_ir.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_07_08_stage4b_prep.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_09_10_train_lora_code.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_11_build_index_and_gen_ours.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_13_gen_nnir_baseline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_run_eval.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/comp_run_stages_2to4b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/_guard_fresh.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/gen_scripts/scripts/evaluate_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/gen_scripts/scripts/generate_cache_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/gen_scripts/scripts/run_gen_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/gen_scripts/scripts/train_hints_probe_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/gen_scripts/scripts/train_lora_ir_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/gen_scripts/scripts/train_lora_ir_5k.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/lite_scripts/scripts/run_lite_step_500.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/benchmark_batch_size.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/decoding_ablation_point_step100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/quick_eval_stage3b_all4_100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/quick_eval_stage4b_step100.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/run_audit_5k_vs_25k_zirhat_gap.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/run_full_stage3b_pipeline.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/run_geometry_nbest_stage3b.sh",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "path": "training/source_snapshots/run_source/src/training_25k/scripts/run_nnir_baseline_25k.sh",
+    "exit_code": 0,
+    "error": ""
+  }
+]

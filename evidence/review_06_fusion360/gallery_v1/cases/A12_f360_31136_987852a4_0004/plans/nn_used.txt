@@ -1,0 +1,16 @@
+PART flluma_0067789 CAT intersected_mount_block UNITS mm SEED 20328303
+PARAM chamfer_distance 0.24 MIN 0.1 MAX 1.2 SEM chamfer_distance
+PARAM cylinder_radius 29.8 MIN 8 MAX 50 SEM primitive_radius
+PARAM height 29.2 MIN 8 MAX 45 SEM overall_height
+PARAM hole_radius 2.09 MIN 0.8 MAX 6 SEM hole_radius
+PARAM length 57.1 MIN 20 MAX 100 SEM overall_width
+PARAM pocket_length 19.24 MIN 8 MAX 48 EXPR length*0.337 SEM pocket_length
+PARAM pocket_width 17.64 MIN 5 MAX 28 EXPR width*0.357 SEM pocket_width
+PARAM width 49.4 MIN 14 MAX 80 SEM primitive_width
+F box_001 OP_BOX SEM primitive_stock ROLE primary_body PARAMS height=@height length=@length width=@width
+F cylinder_001 OP_CYLINDER SEM primitive_stock ROLE secondary_feature PARAMS height=33.2 radius=@cylinder_radius
+F intersect_001 OP_BOOLEAN_INTERSECT SEM intersection_solid ROLE secondary_feature DEP box_001,cylinder_001 TARGET box_001,cylinder_001
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP intersect_001 TARGET intersect_001.top_face PARAMS depth=5.256 length=@pocket_length width=@pocket_width
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP pocket_001 TARGET pocket_001.top_face PARAMS count=2 depth=THROUGH positions=[[-14.85,0],[14.85,0]] radius=@hole_radius
+F chamfer_001 OP_CHAMFER SEM outer_chamfer ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS distance=@chamfer_distance
+END

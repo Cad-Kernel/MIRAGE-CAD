@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-25T14:25:40.106798+00:00",
+  "status": "SEALED_PRIVATE_DESK_AUDIT",
+  "manifest_rows": 167,
+  "manifest_sha256": "105c6eed762c952fca42b09756c53b45de988ead9ac559fb39890237a13243c6",
+  "local_markdown_links_checked": 11,
+  "archive_scope": "external_baselines_v1 plus listed 09 documents and five support scripts",
+  "original_evidence_01_to_08_modified": false,
+  "manuscript_modified": false,
+  "model_inference_run": false,
+  "training_run": false,
+  "weight_bodies_downloaded": false,
+  "publication": false,
+  "exclusions": "Not an anonymous publication package; named public sources/licenses intentionally preserved",
+  "manifest_excludes": [
+    "external_baselines_v1/file_manifest.jsonl",
+    "external_baselines_v1/seal.json"
+  ],
+  "archive_sha256_stored_outside_archive": "external_baselines_v1_archive.json"
+}

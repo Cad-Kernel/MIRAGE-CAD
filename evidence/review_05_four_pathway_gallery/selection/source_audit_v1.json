@@ -1,0 +1,661 @@
+{
+  "created_utc": "2026-10-22T17:16:36.038093+00:00",
+  "status": "PASS_LEGACY_TABLE7_SOURCE_ASSOCIATIONS",
+  "policy": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/03_candidate_selection_policy.md",
+    "bytes": 8259,
+    "sha256": "8da7f31552706b6cfee99e4f9fb1c7522cb799392d1ad464bd4ffb2dcde667de"
+  },
+  "collector": {
+    "path": "__EVIDENCE_SOURCE_ROOT__/05_qualitative/support/select_gallery_candidates.py",
+    "bytes": 32774,
+    "sha256": "d24b4fb3750d1e373da4b49285c18b9feffc44dfa1be90581d75bc42d92526af"
+  },
+  "source_files": {
+    "__RUN_SOURCE_ROOT__/data/25k/test.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/test.jsonl",
+      "bytes": 6400450,
+      "sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e"
+    },
+    "__RUN_SOURCE_ROOT__/data/25k/train.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/train.jsonl",
+      "bytes": 64001980,
+      "sha256": "991e0a6d811b5927d9316fed50c7cc09472719af1726b8c92017c3fbb86906ca"
+    },
+    "__RUN_SOURCE_ROOT__/data/25k/val.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/val.jsonl",
+      "bytes": 6403122,
+      "sha256": "4b76f8fec86f8fac7fbb9635542a924ccf3b91893115639d13ed79ada374a021"
+    },
+    "__DEV_ROOT__/scratch/complexity_lookup.jsonl": {
+      "path": "__DEV_ROOT__/scratch/complexity_lookup.jsonl",
+      "bytes": 29000,
+      "sha256": "217c77deda779dc7cda09f4afb928126e4c9d11e79f618b7f4dec6ecb900f0de"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/run_metadata.json": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/run_metadata.json",
+      "bytes": 423,
+      "sha256": "9202dfc6b531385bf49731da44ee31e7e87a9125a4a25e992724fe7bc167f487"
+    },
+    "__DEV_ROOT__/final/ComputersGraphics_version2/main.tex": {
+      "path": "__DEV_ROOT__/final/ComputersGraphics_version2/main.tex",
+      "bytes": 150296,
+      "sha256": "ecdc48859ab6cc1514f4d456a4968de8bd4e453e04a6888279259350227eacc0"
+    },
+    "__DEV_ROOT__/src/training_25k/scripts/run_full_stage3b_pipeline.sh": {
+      "path": "__DEV_ROOT__/src/training_25k/scripts/run_full_stage3b_pipeline.sh",
+      "bytes": 3943,
+      "sha256": "6bbb2f5ab7f188594582d8a66ad7d918465052a016f693ba5c770db0c6c81c5c"
+    },
+    "__DEV_ROOT__/src/training_25k/32_stage3b_geometry.sh": {
+      "path": "__DEV_ROOT__/src/training_25k/32_stage3b_geometry.sh",
+      "bytes": 6857,
+      "sha256": "059757cb0a3ac0436643ec87039857c5e8b3eed48a9e14bbc6e570987bd07ab7"
+    },
+    "__DEV_ROOT__/src/training_25k/23_exec_norepair_all.ps1": {
+      "path": "__DEV_ROOT__/src/training_25k/23_exec_norepair_all.ps1",
+      "bytes": 2085,
+      "sha256": "cfc3ae10d2b6ccb79d05c3361f89b6d9fe455364b8f845ea0b654aa081f7bbfd"
+    },
+    "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_predicted_ir.py": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_predicted_ir.py",
+      "bytes": 17203,
+      "sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098"
+    },
+    "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_code_from_predicted_ir.py": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_code_from_predicted_ir.py",
+      "bytes": 8120,
+      "sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+    },
+    "__RUN_SOURCE_ROOT__/miragecad/gen_prompts.py": {
+      "path": "__RUN_SOURCE_ROOT__/miragecad/gen_prompts.py",
+      "bytes": 11008,
+      "sha256": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+    },
+    "__RUN_SOURCE_ROOT__/miragecad/point_sampling.py": {
+      "path": "__RUN_SOURCE_ROOT__/miragecad/point_sampling.py",
+      "bytes": 3316,
+      "sha256": "9084523d5e7e649756bcbf2412373eb62ccb1f173ae8a66294bf7583b2f52c9d"
+    },
+    "__RUN_SOURCE_ROOT__/evaluate_geometry_nbest.py": {
+      "path": "__RUN_SOURCE_ROOT__/evaluate_geometry_nbest.py",
+      "bytes": 12801,
+      "sha256": "4da5f7fe12c4207f85be4fe2dfb30dda357f70c0c8ef55e9912fb1c6ff480e8f"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/adapter_model.safetensors": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/adapter_model.safetensors",
+      "bytes": 36981072,
+      "sha256": "e7ea0acadc1c4225070dc0836de3bbdd55e1ba338a244ea789a666db6894632e"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix.pt": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix.pt",
+      "bytes": 40932549,
+      "sha256": "13e457593dba6c3a51d726b121fb8e31ab993fe0544908577b25e20c0da8cf1b"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/adapter_model.safetensors": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/adapter_model.safetensors",
+      "bytes": 73911112,
+      "sha256": "db0d88b6971b51f81d4e75dfa017feb669a24987b01b2f38b611c56a2442a1f6"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix_training_report.json": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix_training_report.json",
+      "bytes": 438,
+      "sha256": "c1e571dfad8602be14a96629e24e2bc5c4198d0ad12b0a782745bcd8a454ac66"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/training_report.json": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/training_report.json",
+      "bytes": 197,
+      "sha256": "5ec8e7c00e69ae758023f750b9988f20f9ed8428670c00aad751ff0cbb560dc3"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_text.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_text.jsonl",
+      "bytes": 7535755,
+      "sha256": "e936f2e18daf51553ab19152946f59e68939a5013bcec387443a5f195ce97aad"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_text_p1a.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_text_p1a.jsonl",
+      "bytes": 7536698,
+      "sha256": "2b69385f80c13617fb65006ae2626c0e8d7e32b0a0fae14482bf37d77ca020d4"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b.jsonl",
+      "bytes": 16196546,
+      "sha256": "f31c5a6f380e5f3e914b4d9af7f07486bca35dd391be6697b92c992b72de9115"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b_repaired.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b_repaired.jsonl",
+      "bytes": 16196528,
+      "sha256": "708960ccbaa0ec906e864167c287b176b5806361e9e9100245dd785dccc9b257"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b_repaired_p0.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b_repaired_p0.jsonl",
+      "bytes": 16196533,
+      "sha256": "3fe988be463ccb70215744d3c1b6be742923afb424223d6c92582ffacaa3ce87"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_text_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_text_stage3b.jsonl",
+      "bytes": 4846392,
+      "sha256": "87508a0089614cfaec1c5662ff6b51d09a7003061c126baf24c56c8d9a82a997"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_text/execution_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_text/execution_rows.jsonl",
+      "bytes": 439684,
+      "sha256": "69401d9dd8ac9068e92265b3473f135de700c5b7386fab9ccb82425ea4a0be35"
+    },
+    "__DEV_ROOT__/scratch/geom_stage3b_text_stage3b/geometry_nbest_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/geom_stage3b_text_stage3b/geometry_nbest_rows.jsonl",
+      "bytes": 1027108,
+      "sha256": "36bbb34fe0fc112c4192a9256360abe3ac7179470827c1f257104a06d907a655"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_text/execution_summary.json": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_text/execution_summary.json",
+      "bytes": 402,
+      "sha256": "8eee6c6152e4ca7d875266fff02ca69a038ecd76f561269b047725d6646f8856"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_image.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_image.jsonl",
+      "bytes": 8011265,
+      "sha256": "1ae0d388818c6f9c81c41a1e1cef77d364e6e8b47a02137297440d116f61b08c"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_image_p1a.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_image_p1a.jsonl",
+      "bytes": 8012370,
+      "sha256": "ca4595859c5741b54cb867abced4ac255a7b083afd0d5c31c9f1590588bf75ad"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b.jsonl",
+      "bytes": 17037955,
+      "sha256": "be126aecf11fb835582431b7ce8d015b0d3d99c4e7f1e17037f717e10e95e320"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b_repaired.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b_repaired.jsonl",
+      "bytes": 17037920,
+      "sha256": "9cd637be30b70acaae9356d3798325cfcd2a4a8469b36c2be4b425ae959b0491"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b_repaired_p0.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b_repaired_p0.jsonl",
+      "bytes": 17037940,
+      "sha256": "0e8d295f2e45f003ba88fb5d2963623b9a9bc5db313e9ce30c27196136cfd2c8"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_image_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_image_stage3b.jsonl",
+      "bytes": 5214627,
+      "sha256": "96ad5d290e717fbc018f0c4dd2bcb223632c3fc095b78215a550fdfd973acf27"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_image/execution_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_image/execution_rows.jsonl",
+      "bytes": 439864,
+      "sha256": "e4bf186f4ec8ed8dcb921e67d36465160740b13a469b2f1ef507f7a2057be5b0"
+    },
+    "__DEV_ROOT__/scratch/geom_stage3b_image_stage3b/geometry_nbest_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/geom_stage3b_image_stage3b/geometry_nbest_rows.jsonl",
+      "bytes": 1022477,
+      "sha256": "25d6d52d2c86ef0dd65b5186430e5b7c89ea40537b2eb1def264daf1b8cf1aac"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_image/execution_summary.json": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_image/execution_summary.json",
+      "bytes": 405,
+      "sha256": "11afc1995e1f1a804a53b76306009906f75d03ca3273078f88aea5a4977a2ea3"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point.jsonl",
+      "bytes": 8022161,
+      "sha256": "50921bd9fdcced935e37d3d7cf4a8aa108dfa361d237d0c8e9473436b8fe9670"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point_p1a.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point_p1a.jsonl",
+      "bytes": 8023754,
+      "sha256": "73b2fd05e97a3054cb2f8785e071053cdd97619d948aa515f80067bd30482218"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b.jsonl",
+      "bytes": 17081521,
+      "sha256": "1c1af2e94403681c547e047744b394dd5cf5bbbe77940fd310d04b9461780697"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired.jsonl",
+      "bytes": 17081475,
+      "sha256": "741b672368b84a0bda09093a8e142d6362379eb0c6d1f295c0eb1cc819464944"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired_p0.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired_p0.jsonl",
+      "bytes": 17081485,
+      "sha256": "efad38bcb8672a180919f1e474d206966b6e173b5da9ca8852d4f3afab2f4b22"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_point_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_point_stage3b.jsonl",
+      "bytes": 5246788,
+      "sha256": "5afff8d3566ff4e7a895d78053c6c4c44f7f245bb52075492e56c91185052450"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_point/execution_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_point/execution_rows.jsonl",
+      "bytes": 436916,
+      "sha256": "8317d1378da6bfddd469365a49e64424ac73ce7878122e70181e6d5ba2ba072e"
+    },
+    "__DEV_ROOT__/scratch/geom_stage3b_point_stage3b/geometry_nbest_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/geom_stage3b_point_stage3b/geometry_nbest_rows.jsonl",
+      "bytes": 1021106,
+      "sha256": "8c2463edbf7e18fbd90168823cf17fb0ac153d13bc1688be1b082f1624b0298d"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_point/execution_summary.json": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_point/execution_summary.json",
+      "bytes": 404,
+      "sha256": "20bda64f2769c9cbaed29e1130aaf08c4f67b8b56d48b620c0b4833e398c1d9b"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step.jsonl",
+      "bytes": 7890645,
+      "sha256": "bc9f76f80fcea23c10f40cf2b1702d3c105c51912cbb049c6a02b7fdf6fd80fb"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step_p1a.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step_p1a.jsonl",
+      "bytes": 7891299,
+      "sha256": "ee11c0a5fa3cd4c94f90b69877be47413f73888fa813fd735b15d55dbf9987c9"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b.jsonl",
+      "bytes": 16795880,
+      "sha256": "4b48a8706d0c5a82c387b24523c5e0bce5f56993733945735d751f3f18c1855d"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired.jsonl",
+      "bytes": 16795818,
+      "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired_p0.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired_p0.jsonl",
+      "bytes": 16795818,
+      "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b"
+    },
+    "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_step_stage3b.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/stage3b_geometry/geom_input_step_stage3b.jsonl",
+      "bytes": 5091076,
+      "sha256": "1d9190cd3c1d0b2231ccd84673afa597245f222b3f174e7a588286b4a637ab7b"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_step/execution_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_step/execution_rows.jsonl",
+      "bytes": 416945,
+      "sha256": "d65bc8e5ebce7b20eb3ae29c17aed57fa808065a74145bc8ccacfa36f794ef54"
+    },
+    "__DEV_ROOT__/scratch/geom_stage3b_step_stage3b/geometry_nbest_rows.jsonl": {
+      "path": "__DEV_ROOT__/scratch/geom_stage3b_step_stage3b/geometry_nbest_rows.jsonl",
+      "bytes": 1032832,
+      "sha256": "5dc02742f3ef9b34944fb777f6523026995f58ceed3423afc2b6f0967220158f"
+    },
+    "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_step/execution_summary.json": {
+      "path": "__DEV_ROOT__/scratch/exec_eval_25k_stage3b_step/execution_summary.json",
+      "bytes": 405,
+      "sha256": "9a50fbe70e1101b1a55fb830a75229386535e47658c476213041de7473956c60"
+    }
+  },
+  "summaries": {
+    "text": {
+      "test_rows": 2500,
+      "native_gate_summary": {
+        "input_jsonl": "__TEMP_RUN_ROOT__\\exec_eval\\input.jsonl",
+        "rows": 2500,
+        "runtime_seconds": 560.603,
+        "syntax_ok_rate": 0.9828,
+        "exec_ok_rate": 0.572,
+        "build_ok_rate": 0.572,
+        "solid_valid_rate": 0.572,
+        "step_export_ok_rate": 0.5312,
+        "syntax_ok_count": 2457,
+        "exec_ok_count": 1430,
+        "build_ok_count": 1430,
+        "solid_valid_count": 1430,
+        "step_export_ok_count": 1328
+      },
+      "scoreable": 1296,
+      "eligible": 2500,
+      "ineligible": [],
+      "scoreable_median_cd": 5.405334358786737,
+      "scoreable_median_f1": 0.15110965596943837,
+      "tier_counts": {
+        "L3": 1375,
+        "L2": 425,
+        "L4": 625,
+        "L1": 75
+      },
+      "reference_operation_object_counts": {
+        "OP_BOOLEAN_JOIN": 1168,
+        "OP_CYLINDER": 501,
+        "OP_EXTRUDE": 674,
+        "OP_HOLE_PATTERN": 2215,
+        "OP_SKETCH": 1122,
+        "OP_TRANSLATE": 979,
+        "OP_BOX": 849,
+        "OP_LINEAR_PATTERN": 88,
+        "OP_PLATE": 797,
+        "OP_FILLET": 358,
+        "OP_RECTANGULAR_POCKET": 654,
+        "OP_BOSSED_PLATE": 22,
+        "OP_FACE_EXTRUDE_ADD": 175,
+        "OP_FACE_EXTRUDE_CUT": 175,
+        "OP_SKETCH_ON_FACE": 175,
+        "OP_LOFT": 214,
+        "OP_RIBBED_SUPPORT_PLATE": 19,
+        "OP_CHAMFER": 727,
+        "OP_REVOLVE": 189,
+        "OP_SWEEP_TUBE": 175,
+        "OP_LOFT_ADAPTER": 27,
+        "OP_BOOLEAN_CUT": 49,
+        "OP_SHELL": 53,
+        "OP_PROFILE_CUT": 45,
+        "OP_SHELLED_COVER_PLATE": 11,
+        "OP_MIRROR": 130,
+        "OP_CIRCULAR_PATTERN": 43,
+        "OP_BOOLEAN_INTERSECT": 47,
+        "OP_SENSOR_MOUNT_PLATE": 32,
+        "OP_ELLIPSOID": 12,
+        "OP_REVOLVED_BUSHING": 20,
+        "OP_THREADED_HOLE": 38,
+        "OP_MIRRORED_LUG_PLATE": 8,
+        "OP_STANDOFF_ARRAY_PLATE": 25,
+        "OP_RAIL_MOUNT_PLATE": 13,
+        "OP_PIN_CLUSTER": 12,
+        "OP_CONE": 11,
+        "OP_WEDGE": 8,
+        "OP_CLIPPED_OFFSET_STOCK": 9,
+        "OP_PRISM": 13,
+        "OP_SPHERE": 3,
+        "OP_TORUS": 10,
+        "OP_CAPSULE": 7,
+        "OP_CLAMP_PAD_PLATE": 7
+      },
+      "first_failure_counts": {
+        "pass": 1328,
+        "execution_failure": 1027,
+        "step_export_failure": 102,
+        "syntax_failure": 43
+      }
+    },
+    "image": {
+      "test_rows": 2500,
+      "native_gate_summary": {
+        "input_jsonl": "__TEMP_RUN_ROOT__\\exec_eval\\input.jsonl",
+        "rows": 2500,
+        "runtime_seconds": 710.007,
+        "syntax_ok_rate": 0.9428,
+        "exec_ok_rate": 0.5776,
+        "build_ok_rate": 0.5776,
+        "solid_valid_rate": 0.5776,
+        "step_export_ok_rate": 0.5232,
+        "syntax_ok_count": 2357,
+        "exec_ok_count": 1444,
+        "build_ok_count": 1444,
+        "solid_valid_count": 1444,
+        "step_export_ok_count": 1308
+      },
+      "scoreable": 1196,
+      "eligible": 2500,
+      "ineligible": [],
+      "scoreable_median_cd": 45.33083727170347,
+      "scoreable_median_f1": 0.04149816176470588,
+      "tier_counts": {
+        "L3": 1375,
+        "L2": 425,
+        "L4": 625,
+        "L1": 75
+      },
+      "reference_operation_object_counts": {
+        "OP_BOOLEAN_JOIN": 1168,
+        "OP_CYLINDER": 501,
+        "OP_EXTRUDE": 674,
+        "OP_HOLE_PATTERN": 2215,
+        "OP_SKETCH": 1122,
+        "OP_TRANSLATE": 979,
+        "OP_BOX": 849,
+        "OP_LINEAR_PATTERN": 88,
+        "OP_PLATE": 797,
+        "OP_FILLET": 358,
+        "OP_RECTANGULAR_POCKET": 654,
+        "OP_BOSSED_PLATE": 22,
+        "OP_FACE_EXTRUDE_ADD": 175,
+        "OP_FACE_EXTRUDE_CUT": 175,
+        "OP_SKETCH_ON_FACE": 175,
+        "OP_LOFT": 214,
+        "OP_RIBBED_SUPPORT_PLATE": 19,
+        "OP_CHAMFER": 727,
+        "OP_REVOLVE": 189,
+        "OP_SWEEP_TUBE": 175,
+        "OP_LOFT_ADAPTER": 27,
+        "OP_BOOLEAN_CUT": 49,
+        "OP_SHELL": 53,
+        "OP_PROFILE_CUT": 45,
+        "OP_SHELLED_COVER_PLATE": 11,
+        "OP_MIRROR": 130,
+        "OP_CIRCULAR_PATTERN": 43,
+        "OP_BOOLEAN_INTERSECT": 47,
+        "OP_SENSOR_MOUNT_PLATE": 32,
+        "OP_ELLIPSOID": 12,
+        "OP_REVOLVED_BUSHING": 20,
+        "OP_THREADED_HOLE": 38,
+        "OP_MIRRORED_LUG_PLATE": 8,
+        "OP_STANDOFF_ARRAY_PLATE": 25,
+        "OP_RAIL_MOUNT_PLATE": 13,
+        "OP_PIN_CLUSTER": 12,
+        "OP_CONE": 11,
+        "OP_WEDGE": 8,
+        "OP_CLIPPED_OFFSET_STOCK": 9,
+        "OP_PRISM": 13,
+        "OP_SPHERE": 3,
+        "OP_TORUS": 10,
+        "OP_CAPSULE": 7,
+        "OP_CLAMP_PAD_PLATE": 7
+      },
+      "first_failure_counts": {
+        "pass": 1308,
+        "step_export_failure": 136,
+        "execution_failure": 913,
+        "syntax_failure": 143
+      }
+    },
+    "point": {
+      "test_rows": 2500,
+      "native_gate_summary": {
+        "input_jsonl": "__TEMP_RUN_ROOT__\\exec_eval\\input.jsonl",
+        "rows": 2500,
+        "runtime_seconds": 410.179,
+        "syntax_ok_rate": 0.8952,
+        "exec_ok_rate": 0.5544,
+        "build_ok_rate": 0.5544,
+        "solid_valid_rate": 0.5544,
+        "step_export_ok_rate": 0.526,
+        "syntax_ok_count": 2238,
+        "exec_ok_count": 1386,
+        "build_ok_count": 1386,
+        "solid_valid_count": 1386,
+        "step_export_ok_count": 1315
+      },
+      "scoreable": 1214,
+      "eligible": 2500,
+      "ineligible": [],
+      "scoreable_median_cd": 45.79524854839285,
+      "scoreable_median_f1": 0.03661458333333333,
+      "tier_counts": {
+        "L3": 1375,
+        "L2": 425,
+        "L4": 625,
+        "L1": 75
+      },
+      "reference_operation_object_counts": {
+        "OP_BOOLEAN_JOIN": 1168,
+        "OP_CYLINDER": 501,
+        "OP_EXTRUDE": 674,
+        "OP_HOLE_PATTERN": 2215,
+        "OP_SKETCH": 1122,
+        "OP_TRANSLATE": 979,
+        "OP_BOX": 849,
+        "OP_LINEAR_PATTERN": 88,
+        "OP_PLATE": 797,
+        "OP_FILLET": 358,
+        "OP_RECTANGULAR_POCKET": 654,
+        "OP_BOSSED_PLATE": 22,
+        "OP_FACE_EXTRUDE_ADD": 175,
+        "OP_FACE_EXTRUDE_CUT": 175,
+        "OP_SKETCH_ON_FACE": 175,
+        "OP_LOFT": 214,
+        "OP_RIBBED_SUPPORT_PLATE": 19,
+        "OP_CHAMFER": 727,
+        "OP_REVOLVE": 189,
+        "OP_SWEEP_TUBE": 175,
+        "OP_LOFT_ADAPTER": 27,
+        "OP_BOOLEAN_CUT": 49,
+        "OP_SHELL": 53,
+        "OP_PROFILE_CUT": 45,
+        "OP_SHELLED_COVER_PLATE": 11,
+        "OP_MIRROR": 130,
+        "OP_CIRCULAR_PATTERN": 43,
+        "OP_BOOLEAN_INTERSECT": 47,
+        "OP_SENSOR_MOUNT_PLATE": 32,
+        "OP_ELLIPSOID": 12,
+        "OP_REVOLVED_BUSHING": 20,
+        "OP_THREADED_HOLE": 38,
+        "OP_MIRRORED_LUG_PLATE": 8,
+        "OP_STANDOFF_ARRAY_PLATE": 25,
+        "OP_RAIL_MOUNT_PLATE": 13,
+        "OP_PIN_CLUSTER": 12,
+        "OP_CONE": 11,
+        "OP_WEDGE": 8,
+        "OP_CLIPPED_OFFSET_STOCK": 9,
+        "OP_PRISM": 13,
+        "OP_SPHERE": 3,
+        "OP_TORUS": 10,
+        "OP_CAPSULE": 7,
+        "OP_CLAMP_PAD_PLATE": 7
+      },
+      "first_failure_counts": {
+        "pass": 1315,
+        "syntax_failure": 262,
+        "execution_failure": 852,
+        "step_export_failure": 71
+      }
+    },
+    "step": {
+      "test_rows": 2500,
+      "native_gate_summary": {
+        "input_jsonl": "__TEMP_RUN_ROOT__\\exec_eval\\input.jsonl",
+        "rows": 2500,
+        "runtime_seconds": 580.508,
+        "syntax_ok_rate": 0.9452,
+        "exec_ok_rate": 0.6996,
+        "build_ok_rate": 0.6996,
+        "solid_valid_rate": 0.6996,
+        "step_export_ok_rate": 0.6616,
+        "syntax_ok_count": 2363,
+        "exec_ok_count": 1749,
+        "build_ok_count": 1749,
+        "solid_valid_count": 1749,
+        "step_export_ok_count": 1654
+      },
+      "scoreable": 1628,
+      "eligible": 2500,
+      "ineligible": [],
+      "scoreable_median_cd": 2.715454998843293,
+      "scoreable_median_f1": 0.1972632077660891,
+      "tier_counts": {
+        "L3": 1375,
+        "L2": 425,
+        "L4": 625,
+        "L1": 75
+      },
+      "reference_operation_object_counts": {
+        "OP_BOOLEAN_JOIN": 1168,
+        "OP_CYLINDER": 501,
+        "OP_EXTRUDE": 674,
+        "OP_HOLE_PATTERN": 2215,
+        "OP_SKETCH": 1122,
+        "OP_TRANSLATE": 979,
+        "OP_BOX": 849,
+        "OP_LINEAR_PATTERN": 88,
+        "OP_PLATE": 797,
+        "OP_FILLET": 358,
+        "OP_RECTANGULAR_POCKET": 654,
+        "OP_BOSSED_PLATE": 22,
+        "OP_FACE_EXTRUDE_ADD": 175,
+        "OP_FACE_EXTRUDE_CUT": 175,
+        "OP_SKETCH_ON_FACE": 175,
+        "OP_LOFT": 214,
+        "OP_RIBBED_SUPPORT_PLATE": 19,
+        "OP_CHAMFER": 727,
+        "OP_REVOLVE": 189,
+        "OP_SWEEP_TUBE": 175,
+        "OP_LOFT_ADAPTER": 27,
+        "OP_BOOLEAN_CUT": 49,
+        "OP_SHELL": 53,
+        "OP_PROFILE_CUT": 45,
+        "OP_SHELLED_COVER_PLATE": 11,
+        "OP_MIRROR": 130,
+        "OP_CIRCULAR_PATTERN": 43,
+        "OP_BOOLEAN_INTERSECT": 47,
+        "OP_SENSOR_MOUNT_PLATE": 32,
+        "OP_ELLIPSOID": 12,
+        "OP_REVOLVED_BUSHING": 20,
+        "OP_THREADED_HOLE": 38,
+        "OP_MIRRORED_LUG_PLATE": 8,
+        "OP_STANDOFF_ARRAY_PLATE": 25,
+        "OP_RAIL_MOUNT_PLATE": 13,
+        "OP_PIN_CLUSTER": 12,
+        "OP_CONE": 11,
+        "OP_WEDGE": 8,
+        "OP_CLIPPED_OFFSET_STOCK": 9,
+        "OP_PRISM": 13,
+        "OP_SPHERE": 3,
+        "OP_TORUS": 10,
+        "OP_CAPSULE": 7,
+        "OP_CLAMP_PAD_PLATE": 7
+      },
+      "first_failure_counts": {
+        "pass": 1654,
+        "execution_failure": 614,
+        "syntax_failure": 137,
+        "step_export_failure": 95
+      }
+    }
+  },
+  "checkout": {
+    "path": "__RUN_SOURCE_ROOT__",
+    "commit": null,
+    "status_porcelain": null,
+    "git_status": "UNAVAILABLE_OR_NOT_A_REPOSITORY",
+    "git_error": "fatal: not a git repository (or any of the parent directories): .git",
+    "canonical_windows_repository": {
+      "path": "__DEV_ROOT__",
+      "commit": "052392b6c7dc0305d04033b1f56d19b12fffb0a2",
+      "status_porcelain": " M .gitignore\n M figures/svg/TomodifyMain.txt\n M final/arxiv/MIRAGE/main.bbl\n M final/arxiv/MIRAGE/references.bib\n M final/elsarticle/main.bbl\n M final/elsarticle/references.bib\n M review/11.txt\n M scratch/ext_inventory/external_prep_inventory.txt\n M scratch/external_manifest/manifest.csv\n M scratch/overnight_20260804_235106/run.log\n M scratch/probe_step_import.txt\n M scratch/probe_step_pointcloud.txt\n M src/gen_scripts/train_soft_prefix_ir.py\n?? .claude/\n?? final/ComputersGraphics/\n?? final/ComputersGraphics_version2/\n?? final/arxiv/MIRAGE/main.aux\n?? final/arxiv/MIRAGE/main.blg\n?? final/arxiv/MIRAGE/main.fdb_latexmk\n?? final/arxiv/MIRAGE/main.fls\n?? final/arxiv/MIRAGE/main.log\n?? final/arxiv/MIRAGE/main.out\n?? final/arxiv/MIRAGE/main.pdf\n?? final/arxiv/MIRAGE/main.spl\n?? final/arxiv/MIRAGE/main.synctex.gz\n?? linkin/\n?? scratch/cag_seed_1_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_2_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_3_a1e_b2p_eval_summary.json\n?? scratch/cag_seed_4_a1e_b2p_eval_summary.json\n?? scratch/exec_b0b2_step_B0_s1/\n?? scratch/exec_b0b2_step_B0_s2/\n?? scratch/exec_b0b2_step_B0_s3/\n?? scratch/exec_b0b2_step_B0_s4/\n?? scratch/exec_b0b2_step_B2_s1/\n?? scratch/exec_b0b2_step_B2_s2/\n?? scratch/exec_b0b2_step_B2_s3/\n?? scratch/exec_b0b2_step_B2_s4/\n?? scratch/exec_cd_step_B2P_CD/\n?? scratch/exec_cd_step_NN_DESC_TRAIN/\n?? scratch/exec_e1_step_A1E_s1/\n?? scratch/exec_e1_step_A1E_s2/\n?? scratch/exec_e1_step_A1E_s3/\n?? scratch/exec_e1_step_A1E_s4/\n?? scratch/exec_e1_step_B2P_s1/\n?? scratch/exec_e1_step_B2P_s2/\n?? scratch/exec_e1_step_B2P_s3/\n?? scratch/exec_e1_step_B2P_s4/\n?? scratch/exec_r04_image_A/\n?? scratch/exec_r04_image_B/\n?? scratch/exec_r04_point_A/\n?? scratch/exec_r04_point_B/\n?? scratch/exec_r04_step_A/\n?? scratch/exec_r04_step_B/\n?? scratch/exec_r04_text_A/\n?? scratch/exec_r04_text_B/\n?? scratch/geom_b0b2_step_B0_s1/\n?? scratch/geom_b0b2_step_B0_s2/\n?? scratch/geom_b0b2_step_B0_s3/\n?? scratch/geom_b0b2_step_B0_s4/\n?? scratch/geom_b0b2_step_B2_s1/\n?? scratch/geom_b0b2_step_B2_s2/\n?? scratch/geom_b0b2_step_B2_s3/\n?? scratch/geom_b0b2_step_B2_s4/\n?? scratch/geom_cd_step_B2P_CD/\n?? scratch/geom_cd_step_NN_DESC_TRAIN/\n?? scratch/geom_e1_step_A1E_s1/\n?? scratch/geom_e1_step_A1E_s2/\n?? scratch/geom_e1_step_A1E_s3/\n?? scratch/geom_e1_step_A1E_s4/\n?? scratch/geom_e1_step_B2P_s1/\n?? scratch/geom_e1_step_B2P_s2/\n?? scratch/geom_e1_step_B2P_s3/\n?? scratch/geom_e1_step_B2P_s4/\n?? scratch/geom_r04_image_A/\n?? scratch/geom_r04_image_B/\n?? scratch/geom_r04_point_A/\n?? scratch/geom_r04_point_B/\n?? scratch/geom_r04_step_A/\n?? scratch/geom_r04_step_B/\n?? scratch/geom_r04_text_A/\n?? scratch/geom_r04_text_B/\n?? src/scratch/cag_a1e_b2p_actuals.py\n?? src/training_25k/cag_archive_partial_a1e_b2p.sh\n?? src/training_25k/cag_b0_b2_fullstack_actuals.py\n?? src/training_25k/cag_build_construction_disjoint_split.py\n?? src/training_25k/cag_exposure_inference.py\n?? src/training_25k/cag_exposure_policy.py\n?? src/training_25k/cag_exposure_policy_b_only.py\n?? src/training_25k/cag_exposure_policy_core.py\n?? src/training_25k/cag_gen_cd_step_nn_descriptor_baseline.py\n?? src/training_25k/cag_preflight_stage4b_packing.py\n?? src/training_25k/cag_prepare_a1e_b2p_seed_geometry.py\n?? src/training_25k/cag_prepare_b0_b2_seed_geometry.py\n?? src/training_25k/cag_prepare_construction_disjoint_geometry.py\n?? src/training_25k/cag_prepare_frozen_a1e_b2p_eval_seed.sh\n?? src/training_25k/cag_run_b0_b2_fullstack_seed.sh\n?? src/training_25k/cag_run_construction_disjoint_nn_baseline.sh\n?? src/training_25k/cag_run_construction_disjoint_step_b2p_training.sh\n?? src/training_25k/cag_run_exposure_inference.sh\n?? src/training_25k/cag_run_exposure_policy.sh\n?? src/training_25k/cag_run_exposure_policy_b_only.sh\n?? src/training_25k/cag_run_frozen_a1e_b2p_seed.sh\n?? src/training_25k/cag_run_stage4b_only.sh\n?? src/training_25k/cag_stage4b_execution.py\n?? src/training_25k/cag_stage4b_packing_v1.py\n?? src/training_25k/cag_summarize_a1e_b2p_seed_eval.py\n?? src/training_25k/cag_summarize_b0_b2_fullstack_eval.py\n",
+      "git_status": "OBSERVED_CURRENT_CHECKOUT",
+      "git_error": null
+    },
+    "note": "Source/data root may be an unversioned copied tree. Never substitute the canonical Windows repository commit as a commit of that root. Current observations do not attest historical executed tree bytes; exact inspected source hashes retained"
+  },
+  "current_checkpoint_observations": {
+    "plan_adapter": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/adapter_model.safetensors",
+      "bytes": 36981072,
+      "sha256": "e7ea0acadc1c4225070dc0836de3bbdd55e1ba338a244ea789a666db6894632e"
+    },
+    "plan_prefix": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix.pt",
+      "bytes": 40932549,
+      "sha256": "13e457593dba6c3a51d726b121fb8e31ab993fe0544908577b25e20c0da8cf1b"
+    },
+    "code_adapter": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/adapter_model.safetensors",
+      "bytes": 73911112,
+      "sha256": "db0d88b6971b51f81d4e75dfa017feb669a24987b01b2f38b611c56a2442a1f6"
+    },
+    "plan_report": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix_training_report.json",
+      "bytes": 438,
+      "sha256": "c1e571dfad8602be14a96629e24e2bc5c4198d0ad12b0a782745bcd8a454ac66"
+    },
+    "code_report": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/training_report.json",
+      "bytes": 197,
+      "sha256": "5ec8e7c00e69ae758023f750b9988f20f9ed8428670c00aad751ff0cbb560dc3"
+    }
+  },
+  "legacy_runtime_checkpoint_binding": "UNATTESTED",
+  "training_model_or_CAD_execution": false
+}

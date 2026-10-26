@@ -1,0 +1,93 @@
+{
+  "repo": "Snitro/Pointer-CAD",
+  "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+  "default_branch": "main",
+  "commit": "a5c32d702f9569565d89a94de44b3af0020bcab0",
+  "commit_date": "2026-08-08T04:24:05Z",
+  "api_license": null,
+  "tree_truncated": false,
+  "tree_blob_count": 39,
+  "metric_inference_candidate_paths": [
+    "config/test.yaml",
+    "config/web.yaml",
+    "eval.py",
+    "measurements/chamfer_distance.py",
+    "measurements/f1_score.py",
+    "measurements/intersection_over_union.py",
+    "measurements/watertightness.py",
+    "metrics/criterion.py",
+    "metrics/metrics.py"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/README.md",
+      "status": 200,
+      "sha256": "7e26906e6b40e4eb009fafa796a2c86c4c2c566b54d6fa840b38949dd7a293b5",
+      "saved_path": "responses/pointercad_file_00.body"
+    },
+    {
+      "path": "eval.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/eval.py",
+      "status": 200,
+      "sha256": "5549d5d18533f352bb9184de7d7413c5f417e5e66ebe325637eb10ff128518b4",
+      "saved_path": "responses/pointercad_file_01.body"
+    },
+    {
+      "path": "config/test.yaml",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/config/test.yaml",
+      "status": 200,
+      "sha256": "db907124a5e66f4c5fd0d8ddba4bb3f3df719dd7e803bccc8136274664d5e6f2",
+      "saved_path": "responses/pointercad_file_02.body"
+    },
+    {
+      "path": "measurements/chamfer_distance.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/chamfer_distance.py",
+      "status": 200,
+      "sha256": "7d56fdbcef4a8ab4e27e5b9a4c2bb54fa0073dd92e13ee4c637bcb455a9d2525",
+      "saved_path": "responses/pointercad_file_03.body"
+    },
+    {
+      "path": "config/web.yaml",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/config/web.yaml",
+      "status": 200,
+      "sha256": "393c36f3a97cc00231b1e29d2499ce9ed8f22945d78b2ad4c41f9d07ae068d38",
+      "saved_path": "responses/pointercad_file_04.body"
+    },
+    {
+      "path": "metrics/metrics.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/metrics/metrics.py",
+      "status": 200,
+      "sha256": "8225fd29be809770d0021cdca087f7d8747824f3627e62d03f0ee70ceb2b9172",
+      "saved_path": "responses/pointercad_file_05.body"
+    },
+    {
+      "path": "metrics/criterion.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/metrics/criterion.py",
+      "status": 200,
+      "sha256": "9d90df49f1052cac6ce1049ae2bee50690970c4e7cbce1f31b4a3dd24af5bbb7",
+      "saved_path": "responses/pointercad_file_06.body"
+    },
+    {
+      "path": "measurements/f1_score.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/f1_score.py",
+      "status": 200,
+      "sha256": "34ca429c6433cff90cbb34c9e6ba9e52c43f772f79dfbbe5a5275a9d23936b8b",
+      "saved_path": "responses/pointercad_file_07.body"
+    },
+    {
+      "path": "measurements/watertightness.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/watertightness.py",
+      "status": 200,
+      "sha256": "cabe989fc5ab54985d2938e071b9ba4a229fb94507830543e4fa1fd4a550358f",
+      "saved_path": "responses/pointercad_file_08.body"
+    },
+    {
+      "path": "measurements/intersection_over_union.py",
+      "url": "https://raw.githubusercontent.com/Snitro/Pointer-CAD/a5c32d702f9569565d89a94de44b3af0020bcab0/measurements/intersection_over_union.py",
+      "status": 200,
+      "sha256": "f2540e5593cb599e9d68457a905908eba25e832a3a386beefafc531bdc438984",
+      "saved_path": "responses/pointercad_file_09.body"
+    }
+  ]
+}

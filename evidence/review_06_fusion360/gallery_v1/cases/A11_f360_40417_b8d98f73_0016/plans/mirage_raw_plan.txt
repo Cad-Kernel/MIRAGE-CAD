@@ -1,0 +1,5 @@
+PART flluma_0005001 CAT torus_stock UNITS mm SEED 20265515
+PARAM major_radius 10.18 MIN 3 MAX 18 SEM torus_major_radius
+PARAM minor_radius 3.13 MIN 0.4 MAX 5 SEM torus_minor_radius
+F torus_001 OP_TORUS SEM primitive_stock ROLE primary_body PARAMS major_radius=@major_radius minor_radius=@minor_radius
+END

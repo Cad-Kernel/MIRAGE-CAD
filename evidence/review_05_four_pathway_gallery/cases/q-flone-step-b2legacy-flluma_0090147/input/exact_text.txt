@@ -1,0 +1,2 @@
+A represented as a procedural feature tree, approximately 85.5 by 54.8 by 10.5 mm.
+Create a face feature service cover with an 85.5 by 54.8 mm base and 10.5 mm overall height, including 4 mounting holes and rounded edges.

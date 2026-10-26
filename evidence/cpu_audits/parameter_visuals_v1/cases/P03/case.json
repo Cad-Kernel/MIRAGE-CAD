@@ -1,0 +1,77 @@
+{
+  "case_id": "P03",
+  "bucket": "unreferenced_no_change",
+  "sample_id": "flluma_0090198",
+  "historical_result": {
+    "kind": "result",
+    "sample_id": "flluma_0090198",
+    "param": "clamp_length",
+    "delta": 0.25,
+    "from": 25.1,
+    "to": 31.375,
+    "clamped_to_bound": false,
+    "outcome": "rebuilt_no_change",
+    "error": ""
+  },
+  "historical_baseline": {
+    "kind": "row",
+    "sample_id": "flluma_0090198",
+    "modality": "step",
+    "coverage": {
+      "n_declared": 9,
+      "n_declared_referenced": 7,
+      "n_declared_unreferenced": 2,
+      "unreferenced_names": [
+        "clamp_length",
+        "hole_radius"
+      ],
+      "n_param_references": 7,
+      "n_inlined_literals": 9,
+      "parametric_coverage": 0.4375
+    },
+    "baseline": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true,
+      "error": ""
+    }
+  },
+  "before_sha256": "a970a87665ea7dd0a7a883891f87a97e01aebc4d93c29d18e28ba053e84a4319",
+  "after_sha256": "c9f2e80e8bccdf79baeb044943df381be287ab073b9bb899d9310b0b0e50d779",
+  "declared_parameter": {
+    "value": 25.1,
+    "min": 8.0,
+    "max": 40.0
+  },
+  "params_reference_lines": [],
+  "direct_literal_argument_examples": [
+    {
+      "line": 12,
+      "argument": "seed",
+      "source": "20265614",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 17,
+      "argument": "length",
+      "source": "22.94",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 17,
+      "argument": "width",
+      "source": "11.04",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 18,
+      "argument": "offset",
+      "source": "[19.344, 0.0, 20.345]",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    }
+  ],
+  "author_semantic_review": "PENDING",
+  "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+}

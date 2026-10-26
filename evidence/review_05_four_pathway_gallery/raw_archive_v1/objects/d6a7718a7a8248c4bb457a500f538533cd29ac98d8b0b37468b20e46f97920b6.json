@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0096700",
+  "part_name": "flluma_0096700",
+  "category": "rounded_slot_profile_plate",
+  "seed": 20357214,
+  "units": "mm",
+  "parameters": {
+    "chamfer_distance": {
+      "value": 0.15,
+      "min": 0.05,
+      "max": 0.8,
+      "semantic_type": "chamfer_distance"
+    },
+    "height": {
+      "value": 61.4,
+      "min": 18.0,
+      "max": 90.0,
+      "semantic_type": "overall_height"
+    },
+    "hole_radius": {
+      "value": 2.2,
+      "min": 0.8,
+      "max": 5.0,
+      "semantic_type": "hole_radius"
+    },
+    "slot_length": {
+      "value": 20.3,
+      "min": 6.0,
+      "max": 34.0,
+      "semantic_type": "pocket_length"
+    },
+    "slot_width": {
+      "value": 5.8,
+      "min": 2.0,
+      "max": 12.0,
+      "semantic_type": "pocket_width"
+    },
+    "thickness": {
+      "value": 6.7,
+      "min": 2.0,
+      "max": 12.0,
+      "semantic_type": "thickness"
+    },
+    "width": {
+      "value": 56.4,
+      "min": 24.0,
+      "max": 120.0,
+      "semantic_type": "overall_width"
+    }
+  },
+  "features": [
+    {
+      "id": "sketch_001",
+      "name": "rounded_octagon_outer_profile",
+      "type": "SketchFeature",
+      "category": "sketch",
+      "semantic_type": "extrude_profile",
+      "parameters": {
+        "profile_type": "polygon",
+        "points": [
+          [
+            -22.3,
+            -30.7
+          ],
+          [
+            22.3,
+            -30.7
+          ],
+          [
+            28.2,
+            -24.8
+          ],
+          [
+            28.2,
+            24.8
+          ],
+          [
+            22.3,
+            30.7
+          ],
+          [
+            -22.3,
+            30.7
+          ],
+          [
+            -28.2,
+            24.8
+          ],
+          [
+            -28.2,
+            -24.8
+          ]
+        ],
+        "closed": true
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "extrude_001",
+      "name": "extrude_rounded_slot_plate",
+      "type": "Extrude",
+      "category": "additive",
+      "semantic_type": "extruded_plate",
+      "parameters": {
+        "height": {
+          "parameter": "thickness",
+          "value": 6.7
+        },
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "dependencies": [
+        "sketch_001"
+      ],
+      "topology_references": {
+        "profile": {
+          "feature_id": "sketch_001"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "pocket_001",
+      "name": "center_long_slot_recess",
+      "type": "RectangularPocket",
+      "category": "subtractive",
+      "semantic_type": "slot",
+      "parameters": {
+        "length": {
+          "parameter": "slot_length",
+          "value": 20.3
+        },
+        "width": {
+          "parameter": "slot_width",
+          "value": 5.8
+        },
+        "depth": 2.68,
+        "center": [
+          0.0,
+          0.0
+        ],
+        "lowering": [
+          {
+            "op": "SketchRectangle",
+            "length": {
+              "parameter": "slot_length",
+              "value": 20.3
+            },
+            "width": {
+              "parameter": "slot_width",
+              "value": 5.8
+            },
+            "centered": true
+          },
+          {
+            "op": "ProfileCut",
+            "depth": 2.68,
+            "offset_mode": "face"
+          }
+        ]
+      },
+      "dependencies": [
+        "extrude_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "extrude_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "extrude_001:top_face:b9ec9b032ae6"
+        }
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "hole_001",
+      "name": "rounded_slot_plate_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "mounting_hole",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 2,
+        "positions": [
+          [
+            -18.05,
+            15.35
+          ],
+          [
+            18.05,
+            -15.35
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 2.2
+        }
+      },
+      "dependencies": [
+        "pocket_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "pocket_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "pocket_001:top_face:6bc5ae6c80c5"
+        }
+      },
+      "rebuild_order": 4
+    }
+  ]
+}

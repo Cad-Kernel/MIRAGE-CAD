@@ -1,0 +1,24 @@
+{
+  "status": "PASS_BOTH_CSVS_TYPED_AND_MULTILINE_ROUNDTRIP",
+  "files": [
+    {
+      "name": "fusion360_failure_taxonomy_v1.csv",
+      "rows": 1200,
+      "columns": 28,
+      "sha256": "b4caf5717a169ecf5dd6e8e23947002d2ad3507b353d950c56041e3c7886844c"
+    },
+    {
+      "name": "fusion360_case_registry_step2_v1.csv",
+      "rows": 400,
+      "columns": 94,
+      "sha256": "5bfeb14f269588f821370b0a51c731618c6c6d06a5f76c83de71ec0a95030b94"
+    }
+  ],
+  "source_sha256": "5cdde2f09ac4145ece5400bba707b76c3c08650359a7cb94ae9f31d2969df342",
+  "builder_sha256": "fb0e61d45c885be420bea3b4adb26f830f36871aaafa6e082beb20ad20e47769",
+  "original_67_columns_unchanged": true,
+  "original_step1_csv_overwritten": false,
+  "missing_is_blank_not_zero": true,
+  "selection_and_semantic_labels_all_null": true,
+  "engine": "@oai/artifact-tool"
+}

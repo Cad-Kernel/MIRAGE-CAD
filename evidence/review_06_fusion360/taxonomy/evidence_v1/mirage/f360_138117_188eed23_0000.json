@@ -1,0 +1,107 @@
+{
+  "sample_id": "f360_138117_188eed23_0000",
+  "method": "mirage",
+  "classification": {
+    "primary_outcome": "EXECUTION_FAILURE",
+    "verified_failure_class": "EXECUTION_FAILURE",
+    "reason_subtype": "MISSING_API_ATTRIBUTE",
+    "reason_detail": "Part / elliptical_ellipsoid",
+    "classification_rule": "FIRST_FALSE_NATIVE_GATE:exec_ok",
+    "reported_error": "exec error: 'Part' object has no attribute 'elliptical_ellipsoid'",
+    "native_traceback": null,
+    "cd_scoreable": false,
+    "iou_scoreable": false,
+    "CD": null,
+    "IoU": null,
+    "iou_outcome": "UNAVAILABLE_AFTER_PRIMARY_FAILURE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 391,
+    "json_pointer": "/rows/391/native_records/mirage"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_138117_188eed23_0000\\score_manifest.json",
+      "sha256": "70ba3a782e44bc05527dccf7662b86de964699b253fac7e58dda84e36a7e90e5",
+      "bytes": 481
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf",
+      "bytes": 72946
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+      "sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605",
+      "bytes": 175959
+    }
+  ],
+  "physical_JSONL_locators": {
+    "mirage_gate": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "line_1based": 392,
+      "line_bytes_sha256": "45407ed1149817de2695106f993701eff9bd7800ca1409e48c44f5270fee21e7",
+      "file_sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf"
+    },
+    "mirage_export": {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+      "line_1based": 392,
+      "line_bytes_sha256": "d08820436b6cc864b5d83f63ac898cc6efc41f5e78bc3463c52b135472eb79c0",
+      "file_sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605"
+    }
+  },
+  "original_native_record": {
+    "sample_id": "f360_138117_188eed23_0000",
+    "arm": "point_genplan",
+    "terminal": true,
+    "pipeline_status": "NO_GEOMETRY",
+    "reason": "this arm produced no STEP for this part: exec error: 'Part' object has no attribute 'elliptical_ellipsoid'",
+    "gt_verified": null,
+    "cd_status": null,
+    "iou_status": null,
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": false,
+      "build_ok": false,
+      "solid_valid": false,
+      "step_export_ok": false
+    },
+    "gate_check": "match"
+  },
+  "original_gate": {
+    "sample_id": "f360_138117_188eed23_0000",
+    "syntax_ok": true,
+    "exec_ok": false,
+    "build_ok": false,
+    "solid_valid": false,
+    "step_export_ok": false,
+    "error": "exec error: 'Part' object has no attribute 'elliptical_ellipsoid'"
+  },
+  "original_export_record": {
+    "sample_id": "f360_138117_188eed23_0000",
+    "arm": "point_genplan",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": false,
+      "build_ok": false,
+      "solid_valid": false,
+      "step_export_ok": false
+    },
+    "error": "exec error: 'Part' object has no attribute 'elliptical_ellipsoid'",
+    "status": "OK",
+    "seconds": 0.0,
+    "tempdir_calls": 0,
+    "step_path": null,
+    "gate_check": "match"
+  },
+  "original_CADR_execution_texts": {},
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

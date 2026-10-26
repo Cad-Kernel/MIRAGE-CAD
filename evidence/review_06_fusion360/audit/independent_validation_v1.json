@@ -1,0 +1,25 @@
+{
+  "status": "PASS_INDEPENDENT_STEP1_VALIDATION",
+  "CSV_rows": 400,
+  "CSV_columns": 67,
+  "master_order": "PASS",
+  "duplicate_ids": 0,
+  "all_physical_JSONL_locators": "PASS",
+  "existing_source_file_rehashes": 6653,
+  "expected_absent_prediction_STEP_files": 181,
+  "historical_file_hash_checks": 2219,
+  "historical_file_hash_mismatches": 0,
+  "CADR_retained_input_array_hash_checks": 400,
+  "fresh_native_metric_records_compared": 1200,
+  "taxonomy_and_selection_fields_blank": true,
+  "contract_tests": 8,
+  "contract_test_output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.005s\n\nOK\n",
+  "previous_evidence_seals_unchanged": {
+    "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\selection\\path_lock_manifest_v1.json": 385,
+    "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\rendering\\cpu_v1\\render_inventory_v1.json": 370,
+    "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\raw_archive_v1\\archive_manifest.json": 237,
+    "__EVIDENCE_SOURCE_ROOT__\\04\\execution\\final_evidence_inventory_20261022.json": 17
+  },
+  "models_CAD_metrics_or_rendering_executed": false,
+  "registry_sha256": "1e6788920f278f1f9c086ec61e1c3b40a623cfb6975e90811574fd02a6724ae4"
+}

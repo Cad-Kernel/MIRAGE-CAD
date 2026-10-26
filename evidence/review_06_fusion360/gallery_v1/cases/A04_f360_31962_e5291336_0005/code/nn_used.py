@@ -1,0 +1,20 @@
+params = Parameters()
+params.add('fin_height', 11.5, min=4.0, max=24.0, expression='thickness * 2.3', semantic_type='rib_height')
+params.add('fin_step', 9.49, min=3.0, max=24.0, semantic_type='rib_offset')
+params.add('fin_width', 2.94, min=1.0, max=5.0, semantic_type='rib_width')
+params.add('height', 35.1, min=12, max=80, semantic_type='overall_height')
+params.add('hole_offset_x', 19.43, min=4.0, max=45.0, expression='width * 0.28', semantic_type='hole_spacing')
+params.add('hole_offset_y', 8.78, min=3.0, max=35.0, expression='height * 0.25', semantic_type='hole_spacing')
+params.add('hole_radius', 1.91, min=1, max=8, semantic_type='hole_radius')
+params.add('thickness', 5, min=3, max=25, semantic_type='thickness')
+params.add('width', 69.4, min=20, max=120, semantic_type='overall_width')
+
+part = Part('flluma_0046934', category='heat_sink_base', parameters=params, seed=20307448, sample_id='flluma_0046934', units='mm')
+plate = part.plate(name='thermal_base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+box = part.box(name='fin_seed', length=params['fin_width'], width=params['height'], height=params['fin_height'], semantic_type='rib')
+moved = part.translate(name='place_first_fin', target=box, offset=[-33.23, 0.0, 8.05], semantic_type='placement')
+linear_pattern = part.linear_pattern(name='linear_fin_array', target=moved, count=8, step=[params['fin_step'], 0.0, 0.0], semantic_type='linear_pattern')
+join = part.boolean_join(name='join_fin_array', target=plate, tool=linear_pattern, semantic_type='support_rib')
+holes = part.hole_pattern(name='corner_mounting_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[-19.43, -8.78], [19.43, -8.78], [-19.43, 8.78], [19.43, 8.78]], semantic_type='mounting_hole')
+
+__all__ = ['part']

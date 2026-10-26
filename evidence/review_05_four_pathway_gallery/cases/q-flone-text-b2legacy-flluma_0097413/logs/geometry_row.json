@@ -1,0 +1,21 @@
+{
+  "sample_id": "flluma_0097413",
+  "modality": "text",
+  "has_target": true,
+  "candidate_results": [
+    {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true,
+      "error": "",
+      "cd": 51.920242102804636,
+      "bbox_err": 9.63500022922477,
+      "f_score_1pct": 0.03368432971014493,
+      "target_bbox_diag": 86.16600304813494,
+      "gen_bbox_diag": 106.84293907824214,
+      "bbox_ratio_to_gt": 1.2399662894721535
+    }
+  ]
+}

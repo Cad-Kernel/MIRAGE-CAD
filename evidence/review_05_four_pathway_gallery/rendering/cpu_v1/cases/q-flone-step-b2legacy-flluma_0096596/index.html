@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>q-flone-step-b2legacy-flluma_0096596</title><style>body{font:16px Arial,sans-serif;color:#202a32;margin:0 auto;padding:28px;max-width:1400px;background:#fff}h1{font-size:26px}h2{font-size:21px}h3{font-size:17px}a{color:#086b6a}nav{display:flex;gap:16px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #ccc}p{line-height:1.5}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:left;border-bottom:1px solid #ddd;overflow-wrap:anywhere}th{background:#eef1f3}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;background:#f7f8fa;padding:16px;border:1px solid #d9dfe2;font-size:13px}img.panel{width:100%;height:auto}img.input{max-width:640px;width:100%;height:auto}.warn{border-left:4px solid #a66b00;padding:8px 16px;background:#fff7e7}.views{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.views img{width:100%}details{margin:20px 0}summary{cursor:pointer;font-weight:bold}code{overflow-wrap:anywhere}@media(max-width:700px){body{padding:12px}.views{grid-template-columns:1fr}table{font-size:12px}td,th{padding:6px}}</style><body><nav><a href="../../index.html">All cases</a></nav><h1>STEP flluma_0096596</h1><p>high_complexity; L4; historical deployed repaired B2. Candidate status is unchanged.</p><p>Highest documented tier, largest reference feature count, then scoreable/median-F@1 preference and sample ID</p><p class="warn">These are new CPU exports of locked historical code, not newly generated model predictions or recovered original temporary STEP files. Executable does not mean semantically accurate. Historical seed/checkpoint-byte binding remains unresolved.</p><img class="panel" src="panel.png" alt="Matched-camera two-view reference and prediction comparison"><h2>Inputs and Original Evidence</h2><nav><a href="../../../../raw_archive_v1/objects/52c31386ae8333bb50095efb91d3f3f054364ac7a4c8d64dff3fb6beb95f4b8b.step">Reference STEP</a><a href="../../../../raw_archive_v1/objects/6ca810bae0f7d1d8f5a396bc02a0a70d9f975700a4621866bb99be86eceb9c76.npz">Reference point NPZ</a><a href="../../../../raw_archive_v1/objects/143e8b757e78d49abfd59347c7338d757e4514ff39d7c474105edb1a2b3649b6.json">Reference feature tree</a><a href="../../../../raw_archive_v1/objects/fc649c435d38b80f8fa0bfb433bf71029a337fdaed861d4020080fd5cb450a38.json">STEP descriptor</a><a href="prediction.step">New prediction STEP</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/plans/raw.txt">Raw plan</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/plans/canonicalized.txt">P1a plan</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/code/raw_prediction.py">Raw code</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/code/prediction.py">Executed repaired code</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/logs/gate_row.json">Historical gate row</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/logs/geometry_row.json">Historical geometry row</a></nav><p>Input asset: <a href="../../../../raw_archive_v1/objects/fc649c435d38b80f8fa0bfb433bf71029a337fdaed861d4020080fd5cb450a38.json">Kernel-derived50-global-statistic descriptor JSON; not a face/edge B-Rep graph</a>. CAD renders above show geometry, not a fabricated point-cloud or descriptor input.</p><details><summary>Dataset Text (not this modality input)</summary><pre>A built from 8 ordered CAD features, approximately 28.1 by 16.3 by 12.855 mm.
+Swept pipe bracket model with 2 bolt holes, chamfered edges, and a swept tube body.</pre></details><details open><summary>Generated Plan (P1a canonicalized)</summary><pre>PART flluma_0005000 CAT swept_pipe_bracket UNITS mm SEED 20265514
+PARAM chamfer_distance 0.1 MIN 0.05 MAX 1 SEM chamfer_distance
+PARAM flange_length 14.1 MIN 8 MAX 32 SEM primitive_length
+PARAM flange_thickness 3.7 MIN 2 MAX 12 SEM thickness
+PARAM flange_width 12.1 MIN 6 MAX 26 SEM primitive_width
+PARAM hole_radius 1.1 MIN 0.5 MAX 4 SEM hole_radius
+PARAM path_height 8.7 MIN 4 MAX 16 SEM path_height
+PARAM path_length 14.1 MIN 10 MAX 45 SEM path_length
+PARAM path_mid_length 8.1 MIN 5 MAX 35 SEM path_mid_length
+PARAM path_offset 5.4 MIN 2 MAX 18 SEM path_offset
+PARAM tube_radius 1.1 MIN 0.6 MAX 4 SEM sweep_radius
+F sweep_tube_001 OP_SWEEP_TUBE SEM sweep_tube ROLE primary_body PARAMS path_height=@path_height path_length=@path_length path_mid_length=@path_mid_length path_offset=@path_offset profile_segments=16 radius=@tube_radius
+F box_001 OP_BOX SEM flange ROLE secondary_feature PARAMS length=@flange_length width=@flange_width height=@flange_thickness
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,0,-0.55]
+F join_001 OP_BOOLEAN_JOIN SEM joined_tube ROLE secondary_feature DEP sweep_tube_001,translate_001 TARGET sweep_tube_001,translate_001
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=2 depth=THROUGH positions=[[-3.38,0],[3.38,0]] radius=@hole_radius
+F chamfer_001 OP_CHAMFER SEM outer_chamfer ROLE finishing_feature DEP hole_001 TARGET hole_001.top_face PARAMS distance=@chamfer_distance
+END</pre></details><details open><summary>Code Excerpt (literal first 40 lines, not a semantic summary)</summary><pre># Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add(&#x27;chamfer_distance&#x27;, 0.1, min=0.05, max=1.0, semantic_type=&#x27;chamfer_distance&#x27;)
+params.add(&#x27;flange_length&#x27;, 14.1, min=8.0, max=32.0, semantic_type=&#x27;primitive_length&#x27;)
+params.add(&#x27;flange_thickness&#x27;, 3.7, min=2.0, max=12.0, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;flange_width&#x27;, 12.1, min=6.0, max=26.0, semantic_type=&#x27;primitive_width&#x27;)
+params.add(&#x27;hole_radius&#x27;, 1.1, min=0.5, max=4.0, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;path_height&#x27;, 8.7, min=4.0, max=24.0, semantic_type=&#x27;path_height&#x27;)
+params.add(&#x27;path_length&#x27;, 14.1, min=10.0, max=45.0, semantic_type=&#x27;path_length&#x27;)
+params.add(&#x27;path_mid_length&#x27;, 8.1, min=5.0, max=35.0, semantic_type=&#x27;path_mid_length&#x27;)
+params.add(&#x27;path_offset&#x27;, 5.4, min=2.0, max=18.0, semantic_type=&#x27;path_offset&#x27;)
+params.add(&#x27;tube_radius&#x27;, 1.1, min=0.6, max=4.0, semantic_type=&#x27;sweep_radius&#x27;)
+
+part = Part(&#x27;flluma_0005000&#x27;, category=&#x27;swept_pipe_bracket&#x27;, parameters=params, seed=20265514, sample_id=&#x27;flluma_0005000&#x27;, units=&#x27;mm&#x27;)
+sweep_tube = part.sweep_tube(name=&#x27;swept_pipe_body&#x27;, radius=params[&#x27;tube_radius&#x27;], path_length=params[&#x27;path_length&#x27;], path_mid_length=params[&#x27;path_mid_length&#x27;], path_offset=params[&#x27;path_offset&#x27;], path_height=params[&#x27;path_height&#x27;], profile_segments=16, semantic_type=&#x27;sweep_tube&#x27;)
+box = part.box(name=&#x27;pipe_flange_seed&#x27;, length=params[&#x27;flange_length&#x27;], width=params[&#x27;flange_width&#x27;], height=params[&#x27;flange_thickness&#x27;], semantic_type=&#x27;flange&#x27;)
+moved = part.translate(name=&#x27;place_start_flange&#x27;, target=box, offset=[0.0, 0.0, -0.55], semantic_type=&#x27;placement&#x27;)
+moved_2 = part.translate(name=&#x27;place_end_flange&#x27;, target=box, offset=[14.1, 5.4, 8.7], semantic_type=&#x27;placement&#x27;)
+join = part.boolean_join(name=&#x27;join_start_flange&#x27;, target=sweep_tube, tool=moved, semantic_type=&#x27;flange&#x27;)
+join_2 = part.boolean_join(name=&#x27;join_end_flange&#x27;, target=join, tool=moved_2, semantic_type=&#x27;flange&#x27;)
+holes = part.hole_pattern(name=&#x27;pipe_flange_bolt_holes&#x27;, target=join_2.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-3.38, 0.0], [3.38, 0.0]], semantic_type=&#x27;bolt_hole_pattern&#x27;)
+chamfer = part.chamfer(name=&#x27;pipe_bracket_edge_chamfer&#x27;, target=holes.top_outer_edges(), distance=params[&#x27;chamfer_distance&#x27;], semantic_type=&#x27;outer_chamfer&#x27;)
+
+__all__ = [ &#x27;part&#x27; ]
+</pre></details><h2>Provenance</h2><nav><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/case.json">Locked case record</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0096596/provenance.json">Original source hashes</a><a href="render_manifest.json">New camera/pixel/hash manifest</a></nav></body></html>

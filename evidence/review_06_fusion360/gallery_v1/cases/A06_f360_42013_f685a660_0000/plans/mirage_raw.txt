@@ -1,0 +1,6 @@
+PART flluma_0005001 CAT ellipsoid_stock UNITS mm SEED 20265516
+PARAM radius_x 10.18 MIN 4 MAX 12 SEM radius_x
+PARAM radius_y 10.18 MIN 4 MAX 12 SEM radius_y
+PARAM radius_z 10.18 MIN 4 MAX 12 SEM radius_z
+F ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[radius_x,radius_y,radius_z]
+END

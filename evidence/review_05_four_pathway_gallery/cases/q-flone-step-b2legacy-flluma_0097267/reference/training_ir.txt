@@ -1,0 +1,10 @@
+PART flluma_0097267 CAT trapezoid_profile_foot UNITS mm SEED 20357781
+PARAM hole_radius 1.9 MIN 0.8 MAX 5 SEM hole_radius
+PARAM pocket_length 12.21 MIN 6 MAX 42 SEM pocket_length
+PARAM pocket_width 13.79 MIN 4 MAX 26 SEM pocket_width
+PARAM thickness 9.1 MIN 3 MAX 18 SEM thickness
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-25.65,-23.48],[25.65,-23.48],[19.57,23.48],[-19.57,23.48]] profile_type=polygon
+F extrude_001 OP_EXTRUDE SEM extruded_solid ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP extrude_001 TARGET extrude_001.top_face PARAMS count=2 depth=THROUGH positions=[[-12.31,-10.57],[12.31,-10.57]] radius=@hole_radius
+F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE functional_cut DEP hole_001 TARGET hole_001.top_face PARAMS depth=2.275 length=@pocket_length width=@pocket_width
+END

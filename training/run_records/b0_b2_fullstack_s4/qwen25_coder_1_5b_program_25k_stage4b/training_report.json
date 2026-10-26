@@ -1,0 +1,9 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+  "target": "program",
+  "seed": 4,
+  "train_rows": 3130,
+  "val_rows": 2500,
+  "max_length": 1536,
+  "output_dir": "outputs/b0_b2_fullstack_s4/qwen25_coder_1_5b_program_25k_stage4b"
+}

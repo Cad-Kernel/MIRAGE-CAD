@@ -1,0 +1,66 @@
+{
+  "status": "UNFILLED_TEMPLATE_COPY_TO_NEW_VERSION",
+  "instructions": "Confirm or revise each label/caption after checking the cited two-view panels. Save a separate response version; do not edit sealed evidence.",
+  "rows": [
+    {
+      "slot": "M01",
+      "sample_id": "f360_82203_8b9714ce_0000",
+      "label_confirmed": null,
+      "caption_confirmed": null,
+      "main_inclusion": null,
+      "revised_wording": null,
+      "reviewer_name": null,
+      "date": null
+    },
+    {
+      "slot": "M02",
+      "sample_id": "f360_43562_004c6cea_0003",
+      "label_confirmed": null,
+      "caption_confirmed": null,
+      "main_inclusion": null,
+      "revised_wording": null,
+      "reviewer_name": null,
+      "date": null
+    },
+    {
+      "slot": "M03",
+      "sample_id": "f360_34917_61633e20_0004",
+      "label_confirmed": null,
+      "caption_confirmed": null,
+      "main_inclusion": null,
+      "revised_wording": null,
+      "reviewer_name": null,
+      "date": null
+    },
+    {
+      "slot": "M04",
+      "sample_id": "f360_54501_96041527_0000",
+      "label_confirmed": null,
+      "caption_confirmed": null,
+      "main_inclusion": null,
+      "revised_wording": null,
+      "reviewer_name": null,
+      "date": null
+    },
+    {
+      "slot": "M05",
+      "sample_id": "f360_121262_f4a03dbc_0000",
+      "label_confirmed": null,
+      "caption_confirmed": null,
+      "main_inclusion": null,
+      "revised_wording": null,
+      "reviewer_name": null,
+      "date": null
+    },
+    {
+      "slot": "M06",
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "label_confirmed": null,
+      "caption_confirmed": null,
+      "main_inclusion": null,
+      "revised_wording": null,
+      "reviewer_name": null,
+      "date": null
+    }
+  ]
+}

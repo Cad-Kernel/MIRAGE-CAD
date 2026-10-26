@@ -1,0 +1,951 @@
+{
+  "purpose": "Review/04 pre-training mapping audit of historical checkpoints",
+  "created_utc": "2026-10-16T18:18:31.173052+00:00",
+  "source_root": "__RUN_SOURCE_ROOT__",
+  "training_started": false,
+  "scripts": {
+    "gen_scripts/train_soft_prefix_ir.py": {
+      "path": "__RUN_SOURCE_ROOT__/gen_scripts/train_soft_prefix_ir.py",
+      "exists": true,
+      "bytes": 29801,
+      "sha256": "20eea7454bed71fd405294f9e375fa7240f2e160a7a8c60b296c63dc28c473ac"
+    },
+    "train_program_lora.py": {
+      "path": "__RUN_SOURCE_ROOT__/train_program_lora.py",
+      "exists": true,
+      "bytes": 12149,
+      "sha256": "31b6cac1b84791f7a4ebadca583196abc7a4c6aa1c82893cffe2342dd1a4380d"
+    },
+    "training_25k/06_train_lora_ir.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/06_train_lora_ir.sh",
+      "exists": true,
+      "bytes": 2681,
+      "sha256": "2d8e092308f2f5ec36f6e175e323ef9bb9273a8b7f26feae4c5ddf81e5b643ba"
+    },
+    "training_25k/06b_train_lora_ir_stage3b.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/06b_train_lora_ir_stage3b.sh",
+      "exists": true,
+      "bytes": 3055,
+      "sha256": "72e6a9bbaa6f3e1677522d840614f26f0642fb6c5962bd9812d3cf9f69228761"
+    },
+    "training_25k/07_gen_predicted_ir_train_subset.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/07_gen_predicted_ir_train_subset.sh",
+      "exists": true,
+      "bytes": 1154,
+      "sha256": "4d5c1cc2bc5c311bdfc4afd824f421cba0f2c1faac6dfb42b3aee5efe84a2217"
+    },
+    "training_25k/08_build_stage4b_mix.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/08_build_stage4b_mix.sh",
+      "exists": true,
+      "bytes": 571,
+      "sha256": "68a595e03e7e8e332ef552178cd6407f5239b3e40499bcebf5b363c35b9b06be"
+    },
+    "training_25k/09_train_lora_code_stage4.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/09_train_lora_code_stage4.sh",
+      "exists": true,
+      "bytes": 1896,
+      "sha256": "e2ba1f28b89b6d29aecabce198c0b53bca410ae768766b0354f88903a053d934"
+    },
+    "training_25k/10_train_lora_code_stage4b.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/10_train_lora_code_stage4b.sh",
+      "exists": true,
+      "bytes": 1469,
+      "sha256": "ebaa047c270ea805b91738c52ebcf76251d542c0d3710a2023727e6e5b846ff0"
+    },
+    "training_25k/scripts/build_stage4b_mix.py": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/build_stage4b_mix.py",
+      "exists": true,
+      "bytes": 3253,
+      "sha256": "c29474a0595e70b2625ae7d0f07f401742eb8654f6a566504599e154d5b51101"
+    },
+    "training_25k/scripts/gen_predicted_ir.py": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_predicted_ir.py",
+      "exists": true,
+      "bytes": 17203,
+      "sha256": "a55651b96dc048aa72ff6cb262d8e4ae93ae3d0911674dd1dfb9ffa34edc7098"
+    },
+    "training_25k/scripts/gen_code_from_predicted_ir.py": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/gen_code_from_predicted_ir.py",
+      "exists": true,
+      "bytes": 8120,
+      "sha256": "d60e6031d9a2e1659d3a98c9af6c6715a8ae522df2158b33d5cc3b1085ca7dc3"
+    },
+    "training_25k/scripts/run_full_stage3b_pipeline.sh": {
+      "path": "__RUN_SOURCE_ROOT__/training_25k/scripts/run_full_stage3b_pipeline.sh",
+      "exists": true,
+      "bytes": 3943,
+      "sha256": "6bbb2f5ab7f188594582d8a66ad7d918465052a016f693ba5c770db0c6c81c5c"
+    }
+  },
+  "datasets": {
+    "data/25k/train.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/train.jsonl",
+      "exists": true,
+      "bytes": 64001980,
+      "sha256": "991e0a6d811b5927d9316fed50c7cc09472719af1726b8c92017c3fbb86906ca",
+      "rows": 25000,
+      "unique_ids": 25000,
+      "predicted_plan_rows": 0,
+      "id_sequence_sha256": "456e06a80bad5ffe160d28eda66cbf335e6f3c5b67f622ed196d7615b5863a7b"
+    },
+    "data/25k/val.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/val.jsonl",
+      "exists": true,
+      "bytes": 6403122,
+      "sha256": "4b76f8fec86f8fac7fbb9635542a924ccf3b91893115639d13ed79ada374a021",
+      "rows": 2500,
+      "unique_ids": 2500,
+      "predicted_plan_rows": 0,
+      "id_sequence_sha256": "96e784b903720dfc288246666cca58386fc3e4f238952004ee626e1a45e830ce"
+    },
+    "data/25k/test.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/test.jsonl",
+      "exists": true,
+      "bytes": 6400450,
+      "sha256": "248a032248d0d9e20b4474ee8adb705d74968a443b534cf51d96601eba0a019e",
+      "rows": 2500,
+      "unique_ids": 2500,
+      "predicted_plan_rows": 0,
+      "id_sequence_sha256": "b3f26ac9fc849dc2b9805357bd8bdb1766a982c184d5f02684a1e77755e81aaf"
+    },
+    "data/25k/train_stage4b_mix.jsonl": {
+      "path": "__RUN_SOURCE_ROOT__/data/25k/train_stage4b_mix.jsonl",
+      "exists": true,
+      "bytes": 9394355,
+      "sha256": "50450a75e20bf056fbc3aaa1542c316ffefaa66f0d7c9182358a9bad1a459fe2",
+      "rows": 3147,
+      "unique_ids": 3147,
+      "predicted_plan_rows": 944,
+      "id_sequence_sha256": "ebdef945fb841d6268e75fbb6d66d2d7ebcb771f1423754ac888687070ee87bc"
+    }
+  },
+  "components": {
+    "align_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/align_25k",
+      "files": {
+        "best.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/align_25k/best.pt",
+          "exists": true,
+          "bytes": 1152536579,
+          "sha256": "2f94736fe11cb9861ef919fd8c076c59af4943d1ccd5b392727800634b688bf6"
+        },
+        "last.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/align_25k/last.pt",
+          "exists": true,
+          "bytes": 1152536579,
+          "sha256": "c70c0710df517f60769b7635dfffd169b72eda7c2030bf98c6fb260d663af37b"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/align_25k/training_report.json",
+          "exists": true,
+          "bytes": 37262,
+          "sha256": "7fb00f759b3b175522ad39b80706e4e1e2fb57cdfae7f7c1149864278e821600",
+          "content": {
+            "args": {
+              "train_jsonl": "data/25k/train.jsonl",
+              "val_jsonl": "data/25k/val.jsonl",
+              "output_dir": "outputs/align_25k",
+              "modalities": [
+                "text",
+                "image",
+                "point",
+                "step",
+                "ir"
+              ],
+              "text_model": "distilbert-base-uncased",
+              "image_model": "openai/clip-vit-base-patch32",
+              "embed_dim": 512,
+              "max_text_length": 128,
+              "max_ir_length": 256,
+              "train_text_backbone": false,
+              "train_image_backbone": false,
+              "freeze_ir_backbone": false,
+              "image_mode": "iso",
+              "point_count": 1024,
+              "train_point_sampling": "hybrid",
+              "eval_point_sampling": "fps",
+              "epochs": 5,
+              "batch_size": 8,
+              "grad_accum": 4,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.0001,
+              "temperature": 0.07,
+              "num_workers": 0,
+              "bf16": true,
+              "fp16": false,
+              "log_steps": 20,
+              "eval_steps": 200,
+              "seed": 42,
+              "rare_op_boost": 2.0,
+              "rare_op_tokens": [
+                "OP_SWEEP_TUBE",
+                "OP_CIRCULAR_PATTERN",
+                "OP_SKETCH_ON_FACE",
+                "OP_FACE_EXTRUDE_ADD",
+                "OP_FACE_EXTRUDE_CUT",
+                "OP_PROFILE_CUT"
+              ]
+            },
+            "logged_evaluations": 83,
+            "last_evaluation": {
+              "loss": 0.1410635344463939,
+              "text_r@1": 0.9257188498402555,
+              "text_r@5": 0.9996006389776357,
+              "text_r@10": 1.0,
+              "point_r@1": 0.9233226837060703,
+              "point_r@5": 1.0,
+              "point_r@10": 1.0,
+              "step_r@1": 0.9305111821086262,
+              "step_r@5": 1.0,
+              "step_r@10": 1.0,
+              "image_r@1": 0.9345047923322684,
+              "image_r@5": 1.0,
+              "image_r@10": 1.0,
+              "step": 15625,
+              "epoch": 5
+            }
+          }
+        }
+      },
+      "checkpoints": {}
+    },
+    "prior_step_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/prior_step_25k",
+      "files": {
+        "best.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_step_25k/best.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "c3f240c7d4cf806fce1ad909e609c3f95a15cd8d0aa042382571eef79f3dffa2"
+        },
+        "last.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_step_25k/last.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "367e1709ed56f1bed6d60b0359d9553453474d82cac6f5a5b5d0ab015538ee06"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_step_25k/training_report.json",
+          "exists": true,
+          "bytes": 4833,
+          "sha256": "08c5356f613e4e1d659d5a8755270966141b019706b00e19ed765d77323ccb65",
+          "content": {
+            "args": {
+              "alignment_checkpoint": "outputs/align_25k/best.pt",
+              "train_jsonl": "data/25k/train.jsonl",
+              "val_jsonl": "data/25k/val.jsonl",
+              "output_dir": "outputs/prior_step_25k",
+              "modality": "step",
+              "epochs": 8,
+              "batch_size": 48,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.0001,
+              "temperature": 0.07,
+              "lambda_cos": 1.0,
+              "lambda_nce": 1.0,
+              "point_count": 1024,
+              "train_point_sampling": "hybrid",
+              "eval_point_sampling": "fps",
+              "num_workers": 0,
+              "limit_train": null,
+              "limit_val": null,
+              "seed": 42
+            },
+            "logged_evaluations": 8,
+            "last_evaluation": {
+              "loss": 0.4191763657584505,
+              "l2": 0.00017776293982092712,
+              "cosine": 0.04550726332192151,
+              "nce": 0.3734913394140642,
+              "direct_median_rank": 1.0,
+              "direct_mrr": 0.8315125535119254,
+              "direct_r@1": 0.6973270638933722,
+              "direct_r@10": 1.0,
+              "direct_r@5": 0.9980345930693284,
+              "pred_median_rank": 1.0,
+              "pred_mrr": 0.913325494190432,
+              "pred_r@1": 0.8352987631311957,
+              "pred_r@10": 1.0,
+              "pred_r@5": 1.0,
+              "epoch": 8,
+              "step": 4168
+            }
+          }
+        }
+      },
+      "checkpoints": {}
+    },
+    "prior_point_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/prior_point_25k",
+      "files": {
+        "best.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_point_25k/best.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "96ba0294ca13cc72b2a184028edc97b0fb7c94a9d294355172e63303946c2b5d"
+        },
+        "last.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_point_25k/last.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "ecc1c09a94f3f264f2904fd2fff4594a1f2180a9caf742fdb663e54fcaca90ac"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_point_25k/training_report.json",
+          "exists": true,
+          "bytes": 5005,
+          "sha256": "689895c1cf6563706468af230eeff24e525bed7348b2a87e5d70c96b347b20fb",
+          "content": {
+            "args": {
+              "alignment_checkpoint": "outputs/align_25k/best.pt",
+              "train_jsonl": "data/25k/train.jsonl",
+              "val_jsonl": "data/25k/val.jsonl",
+              "output_dir": "outputs/prior_point_25k",
+              "modality": "point",
+              "epochs": 8,
+              "batch_size": 48,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.0001,
+              "temperature": 0.07,
+              "lambda_cos": 1.0,
+              "lambda_nce": 1.0,
+              "point_count": 1024,
+              "train_point_sampling": "hybrid",
+              "eval_point_sampling": "fps",
+              "num_workers": 0,
+              "limit_train": null,
+              "limit_val": null,
+              "seed": 42
+            },
+            "logged_evaluations": 8,
+            "last_evaluation": {
+              "loss": 0.5719056949019432,
+              "l2": 0.00029786379309371114,
+              "cosine": 0.07625308225177369,
+              "nce": 0.4953547520324135,
+              "direct_median_rank": 1.0,
+              "direct_mrr": 0.8144050746593835,
+              "direct_r@1": 0.6757075640390504,
+              "direct_r@10": 0.9996069186138656,
+              "direct_r@5": 0.9952830233663883,
+              "pred_median_rank": 1.0,
+              "pred_mrr": 0.8678656018005227,
+              "pred_r@1": 0.7602201475287383,
+              "pred_r@10": 1.0,
+              "pred_r@5": 0.9996069186138656,
+              "epoch": 8,
+              "step": 4168
+            }
+          }
+        }
+      },
+      "checkpoints": {}
+    },
+    "prior_text_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/prior_text_25k",
+      "files": {
+        "best.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_text_25k/best.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "601b8fefb37937ede1d19dc2e525b94402ad89754ef7c50f846369af53a1c51b"
+        },
+        "last.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_text_25k/last.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "4abff1bdcff79e37258fc685fc20b5ad09f27d4c46f51ef9e420d1dba5960f79"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_text_25k/training_report.json",
+          "exists": true,
+          "bytes": 5115,
+          "sha256": "811ae4fb62e59ec9321a078550e687c99f3e4792c9bd9edfcc3e149e3f395e67",
+          "content": {
+            "args": {
+              "alignment_checkpoint": "outputs/align_25k/best.pt",
+              "train_jsonl": "data/25k/train.jsonl",
+              "val_jsonl": "data/25k/val.jsonl",
+              "output_dir": "outputs/prior_text_25k",
+              "modality": "text",
+              "epochs": 8,
+              "batch_size": 48,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.0001,
+              "temperature": 0.07,
+              "lambda_cos": 1.0,
+              "lambda_nce": 1.0,
+              "point_count": 1024,
+              "train_point_sampling": "hybrid",
+              "eval_point_sampling": "fps",
+              "num_workers": 0,
+              "limit_train": null,
+              "limit_val": null,
+              "seed": 42
+            },
+            "logged_evaluations": 8,
+            "last_evaluation": {
+              "loss": 0.5309420749545097,
+              "l2": 0.0002809503551721924,
+              "cosine": 0.07192324453367377,
+              "nce": 0.4587378812830825,
+              "direct_median_rank": 1.0,
+              "direct_mrr": 0.810988280008424,
+              "direct_r@1": 0.6674528504317662,
+              "direct_r@10": 0.9992138372277314,
+              "direct_r@5": 0.9921383700280819,
+              "pred_median_rank": 1.0,
+              "pred_mrr": 0.8787350553386616,
+              "pred_r@1": 0.7775157408894233,
+              "pred_r@10": 0.9992138372277314,
+              "pred_r@5": 0.9968553477863096,
+              "epoch": 8,
+              "step": 4168
+            }
+          }
+        }
+      },
+      "checkpoints": {}
+    },
+    "prior_image_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/prior_image_25k",
+      "files": {
+        "best.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_image_25k/best.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "88d7bdc7f8547d39d27172d2a99b4de95ad2cda1059b468b20e40f8d21f032a8"
+        },
+        "last.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_image_25k/last.pt",
+          "exists": true,
+          "bytes": 4219581,
+          "sha256": "54cd73f18a69772a46e80a94cb14457e4aa86ab57c0b69ab8bb532bdf5017fea"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/prior_image_25k/training_report.json",
+          "exists": true,
+          "bytes": 4879,
+          "sha256": "e5bc31f2564b8f9a9d1c9eaa57bfc25e8b859a3af06c7539702e69ad146de420",
+          "content": {
+            "args": {
+              "alignment_checkpoint": "outputs/align_25k/best.pt",
+              "train_jsonl": "data/25k/train.jsonl",
+              "val_jsonl": "data/25k/val.jsonl",
+              "output_dir": "outputs/prior_image_25k",
+              "modality": "image",
+              "epochs": 8,
+              "batch_size": 48,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.0001,
+              "temperature": 0.07,
+              "lambda_cos": 1.0,
+              "lambda_nce": 1.0,
+              "point_count": 1024,
+              "train_point_sampling": "hybrid",
+              "eval_point_sampling": "fps",
+              "num_workers": 0,
+              "limit_train": null,
+              "limit_val": null,
+              "seed": 42
+            },
+            "logged_evaluations": 8,
+            "last_evaluation": {
+              "loss": 0.5510179765241326,
+              "l2": 0.0002700092928826739,
+              "cosine": 0.06912232886226673,
+              "nce": 0.48162564035737887,
+              "direct_median_rank": 1.0,
+              "direct_mrr": 0.8266645512490902,
+              "direct_r@1": 0.691823921113644,
+              "direct_r@10": 1.0,
+              "direct_r@5": 0.9984276744554628,
+              "pred_median_rank": 1.0,
+              "pred_mrr": 0.8715867760046473,
+              "pred_r@1": 0.7641509591408495,
+              "pred_r@10": 1.0,
+              "pred_r@5": 0.998820755841597,
+              "epoch": 8,
+              "step": 4168
+            }
+          }
+        }
+      },
+      "checkpoints": {}
+    },
+    "lora_ir_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k",
+      "files": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/adapter_model.safetensors",
+          "exists": true,
+          "bytes": 36981072,
+          "sha256": "007cd8fb805453b98efe004935ea6a4617631e9bcd5be0ab1496ef1f5079c9a0"
+        },
+        "soft_prefix.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/soft_prefix.pt",
+          "exists": true,
+          "bytes": 40932549,
+          "sha256": "bbbce7031554067f21a01f0a3c610450dd3042bb51a73e0dee7ab84b1c9d2d83"
+        },
+        "adapter_config.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/adapter_config.json",
+          "exists": true,
+          "bytes": 1101,
+          "sha256": "1a6d919104963bd1cc4526272cee607fdc897e8e235df35aed5982cfd8d62bc3"
+        }
+      },
+      "reports": {},
+      "checkpoints": {
+        "checkpoint-4500": {
+          "state": {
+            "step": 4500,
+            "eval_loss": 0.12296564877033234
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/checkpoint-4500/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 36981072,
+              "sha256": "2570e4bfb0cf3a42256b309509eaf8164f73607e612a353089ee87c71237a4c3"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/checkpoint-4500/soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "bbbce7031554067f21a01f0a3c610450dd3042bb51a73e0dee7ab84b1c9d2d83"
+            }
+          }
+        },
+        "checkpoint-4689": {
+          "state": {
+            "step": 4689,
+            "eval_loss": 0.12318836897611618
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/checkpoint-4689/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 36981072,
+              "sha256": "007cd8fb805453b98efe004935ea6a4617631e9bcd5be0ab1496ef1f5079c9a0"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k/checkpoint-4689/soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "84dbf85f45341bc82ef1cbfb97decf6648ff3e6f6c51517367ba3d0172a48e81"
+            }
+          }
+        }
+      }
+    },
+    "lora_ir_25k_stage3b": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b",
+      "files": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/adapter_model.safetensors",
+          "exists": true,
+          "bytes": 36981072,
+          "sha256": "e7ea0acadc1c4225070dc0836de3bbdd55e1ba338a244ea789a666db6894632e"
+        },
+        "soft_prefix.pt": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix.pt",
+          "exists": true,
+          "bytes": 40932549,
+          "sha256": "13e457593dba6c3a51d726b121fb8e31ab993fe0544908577b25e20c0da8cf1b"
+        },
+        "adapter_config.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/adapter_config.json",
+          "exists": true,
+          "bytes": 1101,
+          "sha256": "f06d3e3dbb3b7f53fcf91d7775c104b4bbb9169500cd4e33dcfc975fcf56f53b"
+        }
+      },
+      "reports": {
+        "soft_prefix_training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/soft_prefix_training_report.json",
+          "exists": true,
+          "bytes": 438,
+          "sha256": "c1e571dfad8602be14a96629e24e2bc5c4198d0ad12b0a782745bcd8a454ac66",
+          "content": {
+            "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+            "modalities": [
+              "image",
+              "point",
+              "step",
+              "text"
+            ],
+            "init_lora_ir_dir": "outputs/lora_ir_25k",
+            "train_rows": 8000,
+            "val_rows": 800,
+            "prefix_len": 4,
+            "max_length": 1536,
+            "soft_prefix_eval": {
+              "normal_loss": 0.15475433628074825,
+              "zero_loss": 0.1895249249506742,
+              "shuffled_loss": 0.15475433628074825
+            },
+            "output_dir": "outputs/lora_ir_25k_stage3b"
+          }
+        }
+      },
+      "checkpoints": {
+        "checkpoint-450": {
+          "state": {
+            "step": 450,
+            "eval_loss": 0.15492768585681915
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/checkpoint-450/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 36981072,
+              "sha256": "c0db4bed8bcc22c22b45283d9989e73490b791e96b3690b75fb07ba6eea331cc"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/checkpoint-450/soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "4970c8ed42f6171f583ad8626ac9485333b70b9df44e8da3de42914a45d9e25e"
+            }
+          }
+        },
+        "checkpoint-500": {
+          "state": {
+            "step": 500,
+            "eval_loss": 0.15475434064865112
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/checkpoint-500/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 36981072,
+              "sha256": "e7ea0acadc1c4225070dc0836de3bbdd55e1ba338a244ea789a666db6894632e"
+            },
+            "soft_prefix.pt": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/checkpoint-500/soft_prefix.pt",
+              "exists": true,
+              "bytes": 40932549,
+              "sha256": "13e457593dba6c3a51d726b121fb8e31ab993fe0544908577b25e20c0da8cf1b"
+            }
+          }
+        }
+      }
+    },
+    "qwen25_coder_1_5b_program_25k": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k",
+      "files": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/adapter_model.safetensors",
+          "exists": true,
+          "bytes": 73911112,
+          "sha256": "ea70a898cb6e0fa50ec001553e1358d7c88d31e9674aaf9ae8e18319709875f7"
+        },
+        "adapter_config.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/adapter_config.json",
+          "exists": true,
+          "bytes": 1102,
+          "sha256": "7ffa5ef61b0ef5352286c402778d8c758941893cbe10d9c95fbac1402863dbbc"
+        },
+        "training_args.bin": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/training_args.bin",
+          "exists": true,
+          "bytes": 5201,
+          "sha256": "5fdb5e7580f7985566b0e89b800c51320563027503671ad0eac27499f749ef2f"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/training_report.json",
+          "exists": true,
+          "bytes": 190,
+          "sha256": "aa15e1c32516c420b297d2492a307fd357569e4f68b48e3b79104b1125f73d5c",
+          "content": {
+            "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+            "target": "program",
+            "train_rows": 25000,
+            "val_rows": 2500,
+            "max_length": 1536,
+            "output_dir": "outputs/qwen25_coder_1_5b_program_25k"
+          }
+        }
+      },
+      "checkpoints": {
+        "checkpoint-3000": {
+          "state": {
+            "global_step": 3000,
+            "max_steps": 3125,
+            "epoch": 0.96,
+            "num_train_epochs": 1,
+            "best_model_checkpoint": null
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/checkpoint-3000/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "10878ec184711ece1a9e734f9970c0562e23a3f02dbd59b8a48b91f2a61e62d9"
+            }
+          }
+        },
+        "checkpoint-3125": {
+          "state": {
+            "global_step": 3125,
+            "max_steps": 3125,
+            "epoch": 1.0,
+            "num_train_epochs": 1,
+            "best_model_checkpoint": null
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/checkpoint-3125/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "ea70a898cb6e0fa50ec001553e1358d7c88d31e9674aaf9ae8e18319709875f7"
+            }
+          }
+        }
+      },
+      "saved_training_args": {
+        "seed": 42,
+        "data_seed": null,
+        "num_train_epochs": 1.0,
+        "max_steps": -1,
+        "learning_rate": 0.0002,
+        "warmup_ratio": 0.03,
+        "lr_scheduler_type": "linear",
+        "optim": "adamw_torch_fused",
+        "gradient_accumulation_steps": 8,
+        "per_device_train_batch_size": 1,
+        "load_best_model_at_end": false
+      }
+    },
+    "qwen25_coder_1_5b_program_25k_stage4b": {
+      "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b",
+      "files": {
+        "adapter_model.safetensors": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/adapter_model.safetensors",
+          "exists": true,
+          "bytes": 73911112,
+          "sha256": "db0d88b6971b51f81d4e75dfa017feb669a24987b01b2f38b611c56a2442a1f6"
+        },
+        "adapter_config.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/adapter_config.json",
+          "exists": true,
+          "bytes": 1102,
+          "sha256": "440eabd15358618a8de34b2bef751d0c09006bf7e68f35d3b22cdca84e86e786"
+        },
+        "training_args.bin": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/training_args.bin",
+          "exists": true,
+          "bytes": 5201,
+          "sha256": "c0d22ca05aaf4bd9e211ef039320253a67bcb7e7abea50b2119b77428861162d"
+        }
+      },
+      "reports": {
+        "training_report.json": {
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/training_report.json",
+          "exists": true,
+          "bytes": 197,
+          "sha256": "5ec8e7c00e69ae758023f750b9988f20f9ed8428670c00aad751ff0cbb560dc3",
+          "content": {
+            "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+            "target": "program",
+            "train_rows": 3147,
+            "val_rows": 2500,
+            "max_length": 1536,
+            "output_dir": "outputs/qwen25_coder_1_5b_program_25k_stage4b"
+          }
+        }
+      },
+      "checkpoints": {
+        "checkpoint-1100": {
+          "state": {
+            "global_step": 1100,
+            "max_steps": 1182,
+            "epoch": 2.7931363203050523,
+            "num_train_epochs": 3,
+            "best_model_checkpoint": null
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/checkpoint-1100/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "1f6e7b3bd9e39f30aac8a7639c93f42b78d3b25acde1695a8febfca78af01200"
+            }
+          }
+        },
+        "checkpoint-1182": {
+          "state": {
+            "global_step": 1182,
+            "max_steps": 1182,
+            "epoch": 3.0,
+            "num_train_epochs": 3,
+            "best_model_checkpoint": null
+          },
+          "files": {
+            "adapter_model.safetensors": {
+              "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/checkpoint-1182/adapter_model.safetensors",
+              "exists": true,
+              "bytes": 73911112,
+              "sha256": "db0d88b6971b51f81d4e75dfa017feb669a24987b01b2f38b611c56a2442a1f6"
+            }
+          }
+        }
+      },
+      "saved_training_args": {
+        "seed": 42,
+        "data_seed": null,
+        "num_train_epochs": 3.0,
+        "max_steps": -1,
+        "learning_rate": 5e-05,
+        "warmup_ratio": 0.03,
+        "lr_scheduler_type": "linear",
+        "optim": "adamw_torch_fused",
+        "gradient_accumulation_steps": 8,
+        "per_device_train_batch_size": 1,
+        "load_best_model_at_end": false
+      }
+    }
+  },
+  "historical_evaluation_files": {
+    "step": {
+      "plan_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_step.jsonl",
+        "exists": true,
+        "bytes": 7890645,
+        "sha256": "bc9f76f80fcea23c10f40cf2b1702d3c105c51912cbb049c6a02b7fdf6fd80fb",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b.jsonl",
+        "exists": true,
+        "bytes": 16795880,
+        "sha256": "4b48a8706d0c5a82c387b24523c5e0bce5f56993733945735d751f3f18c1855d",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_repaired": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_step_stage3b_repaired_p0.jsonl",
+        "exists": true,
+        "bytes": 16795818,
+        "sha256": "23e362bb8bff75fb6caaea0d1d44a7f6c1b636a85d092fe00ae28c29413ba72b",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      }
+    },
+    "point": {
+      "plan_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_point.jsonl",
+        "exists": true,
+        "bytes": 8022161,
+        "sha256": "50921bd9fdcced935e37d3d7cf4a8aa108dfa361d237d0c8e9473436b8fe9670",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b.jsonl",
+        "exists": true,
+        "bytes": 17081521,
+        "sha256": "1c1af2e94403681c547e047744b394dd5cf5bbbe77940fd310d04b9461780697",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_repaired": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_point_stage3b_repaired_p0.jsonl",
+        "exists": true,
+        "bytes": 17081485,
+        "sha256": "efad38bcb8672a180919f1e474d206966b6e173b5da9ca8852d4f3afab2f4b22",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      }
+    },
+    "text": {
+      "plan_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_text.jsonl",
+        "exists": true,
+        "bytes": 7535755,
+        "sha256": "e936f2e18daf51553ab19152946f59e68939a5013bcec387443a5f195ce97aad",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b.jsonl",
+        "exists": true,
+        "bytes": 16196546,
+        "sha256": "f31c5a6f380e5f3e914b4d9af7f07486bca35dd391be6697b92c992b72de9115",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_repaired": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_text_stage3b_repaired_p0.jsonl",
+        "exists": true,
+        "bytes": 16196533,
+        "sha256": "3fe988be463ccb70215744d3c1b6be742923afb424223d6c92582ffacaa3ce87",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      }
+    },
+    "image": {
+      "plan_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/lora_ir_25k_stage3b/predicted_ir_test_image.jsonl",
+        "exists": true,
+        "bytes": 8011265,
+        "sha256": "1ae0d388818c6f9c81c41a1e1cef77d364e6e8b47a02137297440d116f61b08c",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_raw": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b.jsonl",
+        "exists": true,
+        "bytes": 17037955,
+        "sha256": "be126aecf11fb835582431b7ce8d015b0d3d99c4e7f1e17037f717e10e95e320",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      },
+      "code_stage3b_repaired": {
+        "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k_stage4b/gen_test_image_stage3b_repaired_p0.jsonl",
+        "exists": true,
+        "bytes": 17037940,
+        "sha256": "0e8d295f2e45f003ba88fb5d2963623b9a9bc5db313e9ce30c27196136cfd2c8",
+        "rows": 2500,
+        "ids_equal_frozen_test_order": true
+      }
+    }
+  },
+  "metadata_runtime": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.5.0"
+  },
+  "stage3_root_prefix_tensor_comparison": {
+    "checkpoint-4500": {
+      "tensor_count": 6,
+      "changed_tensors": [],
+      "all_tensors_equal_to_root": true
+    },
+    "checkpoint-4689": {
+      "tensor_count": 6,
+      "changed_tensors": [
+        "norm.weight",
+        "norm.bias",
+        "proj1.weight",
+        "proj1.bias",
+        "proj2.weight",
+        "proj2.bias"
+      ],
+      "all_tensors_equal_to_root": false
+    }
+  }
+}

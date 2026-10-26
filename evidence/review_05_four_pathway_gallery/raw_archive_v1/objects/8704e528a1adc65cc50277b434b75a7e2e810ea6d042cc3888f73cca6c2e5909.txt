@@ -1,0 +1,22 @@
+PART flluma_0090147 CAT face_feature_service_cover UNITS mm SEED 20350661
+PARAM boss_height 14.47 MIN 6 MAX 28 EXPR height*0.264 SEM boss_height
+PARAM boss_lift 3.5 MIN 1.5 MAX 8 SEM boss_height
+PARAM boss_width 24.37 MIN 8 MAX 44 EXPR width*0.285 SEM boss_width
+PARAM cut_depth 1.6 MIN 0.5 MAX 6 SEM pocket_depth
+PARAM fillet_radius 0.31 MIN 0.05 MAX 0.8 SEM fillet_radius
+PARAM height 54.8 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_x 27.36 MIN 4 MAX 42 EXPR width*0.32 SEM hole_spacing
+PARAM hole_offset_y 15.34 MIN 3 MAX 30 EXPR height*0.28 SEM hole_spacing
+PARAM hole_radius 1.82 MIN 1 MAX 8 SEM hole_radius
+PARAM slot_height 4.23 MIN 2 MAX 18 EXPR boss_height*0.292 SEM pocket_width
+PARAM slot_width 9.21 MIN 4 MAX 28 EXPR boss_width*0.378 SEM pocket_width
+PARAM thickness 7 MIN 3 MAX 25 SEM thickness
+PARAM width 85.5 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F face_sketch_001 OP_SKETCH_ON_FACE SEM boss_profile ROLE profile_definition DEP plate_001 TARGET plate_001.top_face PARAMS center=[0,0] centered=1 height=@boss_height profile_type=rectangle width=@boss_width workplane={feature_id:plate_001,selector:top_face,source:target_face}
+F face_add_001 OP_FACE_EXTRUDE_ADD SEM face_boss ROLE functional_feature DEP plate_001,face_sketch_001 TARGET face_sketch_001,plate_001.top_face PARAMS height=@boss_lift operation=join
+F face_sketch_002 OP_SKETCH_ON_FACE SEM pocket_profile ROLE profile_definition DEP face_add_001 TARGET face_add_001.top_face PARAMS center=[0,0] centered=1 height=@slot_height profile_type=rectangle width=@slot_width workplane={feature_id:face_add_001,selector:top_face,source:target_face}
+F face_cut_001 OP_FACE_EXTRUDE_CUT SEM face_cut ROLE functional_cut DEP face_add_001,face_sketch_002 TARGET face_sketch_002,face_add_001.top_face PARAMS depth=@cut_depth operation=cut
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP face_cut_001 TARGET face_cut_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS radius=@fillet_radius
+END

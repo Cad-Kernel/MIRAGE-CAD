@@ -1,0 +1,139 @@
+{
+  "sample_id": "f360_36088_1ea9c8a9_0008",
+  "method": "mirage",
+  "classification": {
+    "primary_outcome": "CD_SCOREABLE",
+    "verified_failure_class": null,
+    "reason_subtype": "NOT_APPLICABLE",
+    "reason_detail": null,
+    "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+    "reported_error": null,
+    "native_traceback": null,
+    "cd_scoreable": true,
+    "iou_scoreable": true,
+    "CD": 84.89458155886886,
+    "IoU": 0.1162607305205303,
+    "iou_outcome": "IOU_AVAILABLE",
+    "iou_failure_class": null,
+    "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+    "verified_semantic_failure": null,
+    "selection_bucket": null
+  },
+  "policy_sha256": "3c462a98500dda1aa154bf2851402be5450592d2b0543d28ec9feb13ee6935a1",
+  "classifier_sha256": "6451be88ca6a71e8277862107e197d4dee079ec0e4af4b5bf257b29f19f4975f",
+  "sealed_step1_master": {
+    "path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\audit\\master_records_v1.json",
+    "sha256": "e8666a3070f830af14a462d21b40ef3f95b7ad050917b48750bb5c5e049a1ec8",
+    "row_index_zero_based": 203,
+    "json_pointer": "/rows/203/native_records/mirage"
+  },
+  "source_files": [
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_36088_1ea9c8a9_0008\\score_manifest.json",
+      "sha256": "f9c70c829db03cf713496e1ca74cafe7d95497a4f87c0e723d012ca53462cddf",
+      "bytes": 1334
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf",
+      "bytes": 72946
+    },
+    {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+      "sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605",
+      "bytes": 175959
+    }
+  ],
+  "physical_JSONL_locators": {
+    "mirage_gate": {
+      "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "line_1based": 204,
+      "line_bytes_sha256": "d3cc1fd6863dd3dab088f8cb841cf96d9b8455cfbb1f3c6c5f93d449a41d2033",
+      "file_sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf"
+    },
+    "mirage_export": {
+      "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+      "line_1based": 204,
+      "line_bytes_sha256": "ab562336663b531c2e0ca11792bd787eb472a2483985f401882866d413423903",
+      "file_sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605"
+    }
+  },
+  "original_native_record": {
+    "sample_id": "f360_36088_1ea9c8a9_0008",
+    "arm": "point_genplan",
+    "terminal": true,
+    "memory_cap": "RLIMIT_AS=8192MB",
+    "gt_verified": true,
+    "cd_status": "ok",
+    "iou_status": "ok",
+    "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+    "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_36088_1ea9c8a9_0008/candidate.step",
+    "gt_mesh_triangles": 3972,
+    "prediction_step_diagnostics": {
+      "n_solids": 1,
+      "n_faces": 12,
+      "faces_per_solid": [
+        12
+      ],
+      "first_solid_bbox": [
+        10.10000038147,
+        21.950000286102,
+        19.555000305178087
+      ]
+    },
+    "evaluation": {
+      "pred_mesh_triangles": 36,
+      "pred_mesh_watertight": true,
+      "remesh_status": "ok",
+      "cd_x1000": 84.89458155886886,
+      "cd_floor_gt": 0.07384894628479054,
+      "cd_status": "ok",
+      "iou": 0.1162607305205303,
+      "iou_status": "ok",
+      "gt_self_iou": 1.0000000202964288,
+      "gt_self_iou_dev": 2.0296428759891683e-08,
+      "iou_eligible": true
+    },
+    "cd_floor_ratio": 1149.5706550975287,
+    "pipeline_status": "SUCCESS",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "gate_check": "match",
+    "seconds": 1.45
+  },
+  "original_gate": {
+    "sample_id": "f360_36088_1ea9c8a9_0008",
+    "syntax_ok": true,
+    "exec_ok": true,
+    "build_ok": true,
+    "solid_valid": true,
+    "step_export_ok": true,
+    "error": ""
+  },
+  "original_export_record": {
+    "sample_id": "f360_36088_1ea9c8a9_0008",
+    "arm": "point_genplan",
+    "gates": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true
+    },
+    "error": "",
+    "status": "OK",
+    "seconds": 0.02,
+    "tempdir_calls": 1,
+    "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_36088_1ea9c8a9_0008\\candidate.step",
+    "step_bytes": 40313,
+    "step_sha256": "6134df18a187fd1b16a2a743c21bcdf03afa13dcf363ffb3ea3d4e9802298b9f",
+    "gate_check": "match"
+  },
+  "original_CADR_execution_texts": {},
+  "scope": "Native error/evaluator evidence only; no figure or semantic inspection"
+}

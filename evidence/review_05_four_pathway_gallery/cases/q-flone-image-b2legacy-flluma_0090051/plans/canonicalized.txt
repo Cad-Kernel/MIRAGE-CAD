@@ -1,0 +1,20 @@
+PART flluma_0005000 CAT lofted_transition_profile_bracket UNITS mm SEED 20265514
+PARAM flange_height 13.1 MIN 4 MAX 24 EXPR height*0.77 SEM primitive_height
+PARAM flange_radius 7.04 MIN 3 MAX 18 SEM loft_radius
+PARAM flange_width 35.1 MIN 8 MAX 50 EXPR width*0.101 SEM primitive_width
+PARAM hole_radius 1.3 MIN 0.5 MAX 4 SEM hole_radius
+PARAM pocket_length 18.14 MIN 8 MAX 48 EXPR width*0.516 SEM pocket_length
+PARAM pocket_width 10.14 MIN 5 MAX 28 EXPR height*0.36 SEM pocket_width
+PARAM thickness 6 MIN 3 MAX 25 SEM thickness
+PARAM transition_height 4.7 MIN 3 MAX 18 EXPR thickness*0.78 SEM loft_height
+F sketch_001 OP_SKETCH SEM loft_profile ROLE profile_definition PARAMS points=[[-15.74,-6.25],[-3.73,-12.93],[13.97,-18.65],[17.91,1.44],[19.66,9.33],[6.45,15.56],[-10.6,11.31],[-18.45,3.94]] profile_type=polygon
+F sketch_002 OP_SKETCH SEM pocket ROLE profile_definition PARAMS points=[[5.73,2.9],[-4.73,8.79],[-1.9,13.92],[8.17,10.01],[11.5,3.22]] profile_type=polygon
+F boolean_cut_001 OP_FACE_EXTRUDE_CUT SEM pocket ROLE functional_feature DEP sketch_002 TARGET sketch_002
+F box_001 OP_BOX SEM flange ROLE secondary_feature PARAMS height=@flange_height length=@flange_width width=@flange_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,5.65,2.95]
+F loft_001 OP_LOFT SEM lofted_transition ROLE secondary_feature DEP sketch_001,translate_001 TARGET sketch_001,translate_001
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@thickness radius=@thickness
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,4.1,2.75]
+F boolean_join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP loft_001,translate_002 TARGET loft_001,translate_002
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP boolean_join_001 TARGET boolean_join_001.top_face PARAMS count=4 depth=THROUGH positions=[[5.73,2.9],[8.17,4.74],[5.73,6.28],[-8.17,4.74],[-5.73,2.9]] radius=@hole_radius
+END

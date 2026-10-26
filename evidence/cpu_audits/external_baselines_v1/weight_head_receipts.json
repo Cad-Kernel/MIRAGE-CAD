@@ -1,0 +1,52 @@
+[
+  {
+    "label": "gencad_Autoencoder.zip",
+    "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Autoencoder.zip",
+    "method": "HEAD",
+    "body_bytes_read": 0,
+    "status": 200,
+    "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/7fdfbd3de29c8c99048190165a7203ef04ac66442b13d05415dea22566f511da",
+    "headers": {
+      "Content-Length": "149267169",
+      "Content-Type": "application/zip",
+      "Content-Disposition": "inline; filename*=UTF-8''Autoencoder.zip; filename=\"Autoencoder.zip\";",
+      "ETag": "\"7fdfbd3de29c8c99048190165a7203ef04ac66442b13d05415dea22566f511da\""
+    }
+  },
+  {
+    "label": "gencad_Contrastive.zip",
+    "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Contrastive.zip",
+    "method": "HEAD",
+    "body_bytes_read": 0,
+    "status": 200,
+    "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/619e479a014cb693d62cfb453254a8bab6643b407df7247dc388e900b83e26d1",
+    "headers": {
+      "Content-Length": "513922220",
+      "Content-Type": "application/zip",
+      "Content-Disposition": "inline; filename*=UTF-8''Contrastive.zip; filename=\"Contrastive.zip\";",
+      "ETag": "\"619e479a014cb693d62cfb453254a8bab6643b407df7247dc388e900b83e26d1\""
+    }
+  },
+  {
+    "label": "gencad_Diffusion.zip",
+    "requested_url": "https://huggingface.co/yu-nomi/GenCAD_3D/resolve/5b7be2ff8c879b08744e8e55a0ca6457d5c77e4a/Diffusion.zip",
+    "method": "HEAD",
+    "body_bytes_read": 0,
+    "status": 200,
+    "final_url_without_query": "https://us.aws.cdn.hf.co/xet-bridge-us/68c45b577891117712920214/5e0d4d870432c6df44e41e0dad5a06b4abd5785bba4ec8688f623e8e4946659d",
+    "headers": {
+      "Content-Length": "4681412235",
+      "Content-Type": "application/zip",
+      "Content-Disposition": "inline; filename*=UTF-8''Diffusion.zip; filename=\"Diffusion.zip\";",
+      "ETag": "\"5e0d4d870432c6df44e41e0dad5a06b4abd5785bba4ec8688f623e8e4946659d\""
+    }
+  },
+  {
+    "label": "text2cad_v1_weight",
+    "requested_url": "https://huggingface.co/datasets/SadilKhan/Text2CAD/resolve/422d4c93198c3cd98d5c2092c0ab214b3a76a68d/text2cad_v1.0/Text2CAD_1.0.pth",
+    "method": "HEAD",
+    "body_bytes_read": 0,
+    "status": 401,
+    "error": "HTTPError: HTTP Error 401: Unauthorized"
+  }
+]

@@ -1,0 +1,22 @@
+params = Parameters()
+params.add('clamp_jaw_height', 10.1, min=3.0, max=24.0, expression='thickness * 1.15', semantic_type='clamp_jaw_height')
+params.add('clamp_jaw_width', 10.1, min=4.0, max=24.0, expression='width * 0.166', semantic_type='clamp_jaw_width')
+params.add('clamp_length', 16.1, min=8.0, max=50.0, expression='width * 0.206', semantic_type='overall_length')
+params.add('clamp_thickness', 5.1, min=2.0, max=14.0, expression='thickness * 0.82', semantic_type='thickness')
+params.add('clamp_width', 23.1, min=6.0, max=42.0, expression='height * 0.43', semantic_type='overall_width')
+params.add('height', 109.1, min=20.0, max=80.0, semantic_type='overall_height')
+params.add('hole_radius', 1.52, min=0.8, max=5.0, semantic_type='hole_radius')
+params.add('pocket_width', 26.1, min=16.0, max=80.0, expression='width * 0.238', semantic_type='pocket_width')
+params.add('thickness', 3, min=2, max=25, semantic_type='thickness')
+params.add('width', 253.1, min=20.0, max=120.0, semantic_type='overall_width')
+
+part = Part('flluma_0005000', category='pipe_clamp', parameters=params, seed=20265514, sample_id='flluma_0005000', units='mm')
+plate = part.plate(name='clamp_base', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')
+pocket = part.rectangular_pocket(name='pipe_clearance_channel', target=plate.top_face(), length=10.082, width=params['pocket_width'], depth=1.2, semantic_type='pocket')
+box = part.box(name='clamp_jaw_seed', length=params['clamp_jaw_width'], width=10.8, height=params['clamp_jaw_height'], semantic_type='clamp_jaw')
+moved = part.translate(name='place_clamp_jaw', target=box, offset=[0.0, 31.15, -10.05], semantic_type='placement')
+join = part.boolean_join(name='join_clamp_jaw', target=plate, tool=moved, semantic_type='joined_clamp_jaw')
+pocket_2 = part.rectangular_pocket(name='pipe_clearance_channel_2', target=join.top_face(), length=10.082, width=params['pocket_width'], depth=1.2, semantic_type='pocket')
+holes = part.hole_pattern(name='clamp_bolt_holes', target=pocket_2.top_face(), radius=params['hole_radius'], depth='through', positions=[[-6.126, -5.715], [6.126, -5.715], [-6.126, 5.715], [6.126, 5.715]], semantic_type='bolt_hole_pattern')
+
+__all__ = ['part']

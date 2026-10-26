@@ -1,0 +1,19 @@
+PART flluma_0098388 CAT lofted_transition_bracket UNITS mm SEED 20358902
+PARAM flange_length 36.25 MIN 16 MAX 48 EXPR lower_width*1.45 SEM primitive_length
+PARAM flange_thickness 3.7 MIN 1.5 MAX 7 SEM thickness
+PARAM flange_width 22.01 MIN 12 MAX 36 EXPR lower_height*1.55 SEM primitive_width
+PARAM hole_offset_x 15.22 MIN 4 MAX 24 EXPR flange_length*0.42 SEM hole_spacing
+PARAM hole_offset_y 8.36 MIN 3 MAX 18 EXPR flange_width*0.38 SEM hole_spacing
+PARAM hole_radius 0.89 MIN 0.5 MAX 4 SEM hole_radius
+PARAM lower_height 14.2 MIN 8 MAX 30 SEM primitive_height
+PARAM lower_width 25 MIN 10 MAX 40 SEM primitive_width
+PARAM upper_radius 7.89 MIN 3 MAX 14 SEM loft_upper_radius
+F sketch_001 OP_SKETCH SEM loft_profile ROLE profile_definition PARAMS height=@lower_height profile_type=rectangle width=@lower_width
+F sketch_002 OP_SKETCH SEM loft_profile ROLE profile_definition PARAMS profile_type=circle radius=@upper_radius segments=48
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP sketch_002 PARAMS offset=[0,0,15.6]
+F loft_001 OP_LOFT SEM lofted_solid ROLE secondary_feature DEP sketch_001,translate_001
+F box_001 OP_BOX SEM flange ROLE secondary_feature PARAMS height=@flange_thickness length=@flange_length width=@flange_width
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[0,0,-1.665]
+F join_001 OP_BOOLEAN_JOIN SEM flange ROLE secondary_feature DEP loft_001,translate_002 TARGET loft_001,translate_002
+F hole_001 OP_HOLE_PATTERN SEM bolt_hole_pattern ROLE functional_feature DEP join_001 TARGET join_001.top_face PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_x,-@hole_offset_y],[@hole_offset_x,-@hole_offset_y],[-@hole_offset_x,@hole_offset_y],[@hole_offset_x,@hole_offset_y]] radius=@hole_radius
+END

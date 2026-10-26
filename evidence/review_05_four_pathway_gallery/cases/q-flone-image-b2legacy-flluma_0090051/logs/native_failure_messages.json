@@ -1,0 +1,7 @@
+{
+  "sample_id": "flluma_0090051",
+  "modality": "image",
+  "gate_error": "exec error: Part.loft() got an unexpected keyword argument 'profile'",
+  "geometry_error": "exec error: Part.loft() got an unexpected keyword argument 'profile'",
+  "note": "Original native error summaries, not an invented full traceback or visual feature diagnosis"
+}

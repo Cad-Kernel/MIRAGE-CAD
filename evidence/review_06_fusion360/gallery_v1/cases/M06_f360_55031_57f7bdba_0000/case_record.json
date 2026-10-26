@@ -1,0 +1,713 @@
+{
+  "slot": "M06",
+  "case_id": "M06_f360_55031_57f7bdba_0000",
+  "sample_id": "f360_55031_57f7bdba_0000",
+  "placement": "main",
+  "selection_bucket": "nn_contrast",
+  "selection_rule": "Absolute MIRAGE/NN IoU gap q75, direction unconstrained",
+  "cohort_size": 207,
+  "selected_priority": {
+    "sample_id": "f360_55031_57f7bdba_0000",
+    "value": 0.16444556596336932,
+    "midrank_percentile": 0.751207729468599,
+    "priority_rank": 1
+  },
+  "master": {
+    "sample_id": "f360_55031_57f7bdba_0000",
+    "view": {
+      "master_index": 284,
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "external_id": "55031_57f7bdba_0000",
+      "source_split": "test",
+      "reference_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\55031_57f7bdba_0000.step",
+      "reference_sha256": "baa152a941f9acc4198b49b5e94abd73965eb02343ae2dc80c689131c3858724",
+      "point_input_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\55031_57f7bdba_0000.npz",
+      "point_input_sha256": "2654b880d537f64433c0eb2fb3ae6ca1f0f219923f733d51a925268e0b3c64ec",
+      "mirage_prediction_path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan_repaired_p0.jsonl",
+      "mirage_prediction_line_1based": 284,
+      "mirage_prediction_line_sha256": "0540add0698bc53d8265e9c784368ebde77050670b526206874a5cfabfad4377",
+      "mirage_step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_55031_57f7bdba_0000\\candidate.step",
+      "mirage_step_sha256": "be9250ad5b814a479e7981f78f4ab2d8cff7ca02069588e7bd2b264437fd88b7",
+      "mirage_log_path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+      "mirage_gate_line_1based": 284,
+      "mirage_metric_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_55031_57f7bdba_0000\\score_manifest.json",
+      "mirage_export_ok": true,
+      "mirage_step_exists_current": true,
+      "mirage_scoreable": true,
+      "mirage_iou_scoreable": true,
+      "mirage_CD": 35.962963713792206,
+      "mirage_IoU": 0.3655259587539846,
+      "mirage_pipeline_status": "SUCCESS",
+      "mirage_cd_status": "ok",
+      "mirage_iou_status": "ok",
+      "mirage_native_error": "",
+      "mirage_score_reason": null,
+      "nn_retrieved_training_sample_id": "flluma_0065632",
+      "nn_prediction_path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir_repaired_p0.jsonl",
+      "nn_prediction_line_1based": 284,
+      "nn_prediction_line_sha256": "0b679c79add3152b934025a427df97baaa7d6d1802a60263d9476567ccbd7c19",
+      "nn_step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_55031_57f7bdba_0000\\candidate.step",
+      "nn_step_sha256": "176d004e8e5e48641f91b8cf8948c888802ace78edde2c568da6304170eaf1d1",
+      "nn_log_path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+      "nn_gate_line_1based": 284,
+      "nn_metric_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_55031_57f7bdba_0000\\score_manifest.json",
+      "nn_export_ok": true,
+      "nn_step_exists_current": true,
+      "nn_scoreable": true,
+      "nn_iou_scoreable": true,
+      "nn_CD": 61.504872040273895,
+      "nn_IoU": 0.20108039279061526,
+      "nn_pipeline_status": "SUCCESS",
+      "nn_cd_status": "ok",
+      "nn_iou_status": "ok",
+      "nn_native_error": "",
+      "nn_score_reason": null,
+      "cadr_prediction_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\extracted_code.py",
+      "cadr_prediction_sha256": "a3bdb49c5b3465bcdd0a7c96893764ab692ce72e9acbaf9b58bceef2402325ee",
+      "cadr_raw_generation_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\raw_generation.txt",
+      "cadr_step_or_mesh_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\prediction.step",
+      "cadr_step_sha256": "99dc704721366585601bf41da0d9f0701ce822ac3f65aee7b76ca9652746042e",
+      "cadr_log_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\execution_result.json",
+      "cadr_metric_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\run_manifest.json",
+      "cadr_export_ok": true,
+      "cadr_step_exists_current": true,
+      "cadr_scoreable": true,
+      "cadr_iou_scoreable": true,
+      "cadr_CD": 0.2594876540235575,
+      "cadr_IoU": 0.9933291254535719,
+      "cadr_pipeline_status": "SUCCESS",
+      "cadr_cd_status": "ok",
+      "cadr_iou_status": "ok",
+      "verified_failure_class": null,
+      "failure_evidence": null,
+      "selection_bucket": null,
+      "notes": "Step 1 only; taxonomy and case selection not started"
+    },
+    "locators": {
+      "rows": {
+        "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "58df2c190c6d848c39d01e974c5132c99a9f95823509062efd729c6a428f3d5c",
+        "file_sha256": "9a3884c8da4d7a10c3057dc34d71c39f9485aa30410d5a26b85e1c22e8bc00db"
+      },
+      "queries": {
+        "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\queries.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "3ad18dc714c0214d81f47115293b756986de9f74e7fed66c4a3002b1022848bb",
+        "file_sha256": "26c53eb5b827e907fb5b6f8be15429e329adf2a53724a6e0419e8a246e337ef7"
+      },
+      "step_index": {
+        "path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_index.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "d01f58f017e19ecf0d51a7b6958375dbea3a3051b5a0b63ad7e8cff6315d20e7",
+        "file_sha256": "bbb2eeb0a3862ea727e26cec1ca0d580389091f10e1740103d608652eac2d13a"
+      },
+      "legacy_manifest": {
+        "path": "__DEV_ROOT__\\scratch\\external_manifest\\manifest.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "7f9955a8ca1f17c2fc6a0db0fa9177624e55c4c009790c232cdf6b9ff0b8ae97",
+        "file_sha256": "6bdbcf7a9576596a2b506c2431d630ce26151de95afd17342ffc1193091cf34a"
+      },
+      "plan": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\ir_point.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "e022cd40f6032ea6dbd43cc510ae4ee50fe6be19c321372e458441688eb525d1",
+        "file_sha256": "8c085d05c66e6d424622ff69b22a2b1c888a7450dedf7cdebe8915f47a1339f9"
+      },
+      "mirage_raw": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "0540add0698bc53d8265e9c784368ebde77050670b526206874a5cfabfad4377",
+        "file_sha256": "fbe38775f1fea43165b47cb26e00710fbb0db57899c6e958f5266caf932470b4"
+      },
+      "mirage_used": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_genplan_repaired_p0.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "0540add0698bc53d8265e9c784368ebde77050670b526206874a5cfabfad4377",
+        "file_sha256": "fbe38775f1fea43165b47cb26e00710fbb0db57899c6e958f5266caf932470b4"
+      },
+      "mirage_gate": {
+        "path": "__DEV_ROOT__\\scratch\\exec_ext_point_genplan\\execution_rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "cf8a127c055379e2ec05abf7da756f84a263957c192cbe1ec29475b6ce14e424",
+        "file_sha256": "4f43f6d6a7cc77eefedb21ba4be73eef454f600ed8ae51ed027e096b5f4d91cf"
+      },
+      "mirage_published_geom": {
+        "path": "__DEV_ROOT__\\scratch\\geom_ext_point_genplan\\geometry_nbest_rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "0a194340e6523049eef4b97bfba08a2f457df178a9188b36b950e5c443a540cd",
+        "file_sha256": "c964a27eb2aa8bdef5d721fea2ebe702c02e4da5120c388db34b8c2ba6af0cf7"
+      },
+      "mirage_geom_input": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_geometry\\geom_input_point_genplan.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "df9a75a47b435f10ae0d137766daa81b388c8c51d453fa7cc284bb6003a15910",
+        "file_sha256": "786de90832812427100c83fc3118e260398a8828f135c4dcb6bc7dda1970004c"
+      },
+      "mirage_export": {
+        "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\export_rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "b579a2f64a7c68082e7fd780e98610654d0f82033e1503bb497812560649bcdc",
+        "file_sha256": "c3fc74ade9fbabd173f51ed7000874b7855e20bd6ebec449ffe27a63d3670605"
+      },
+      "nn_raw": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "0b679c79add3152b934025a427df97baaa7d6d1802a60263d9476567ccbd7c19",
+        "file_sha256": "e417b54ec0ddca31ba60792a02f1dc9d9d50fbe2b018345cc77e58df91f7fba2"
+      },
+      "nn_used": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_fusion360\\gen_point_nnir_repaired_p0.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "0b679c79add3152b934025a427df97baaa7d6d1802a60263d9476567ccbd7c19",
+        "file_sha256": "e417b54ec0ddca31ba60792a02f1dc9d9d50fbe2b018345cc77e58df91f7fba2"
+      },
+      "nn_gate": {
+        "path": "__DEV_ROOT__\\scratch\\exec_ext_point_nnir\\execution_rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "cf8a127c055379e2ec05abf7da756f84a263957c192cbe1ec29475b6ce14e424",
+        "file_sha256": "63044e8ef41902f60fb6e3b3ec20b958dbd7bc9b1b53bade095269bb4a8fff32"
+      },
+      "nn_published_geom": {
+        "path": "__DEV_ROOT__\\scratch\\geom_ext_point_nnir\\geometry_nbest_rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "f7e5abe05691486ad1914d9ce10d050092b2d580f44b218da3d0f9c66df867ce",
+        "file_sha256": "07570d62825529e1b53cf382c601acc79207548715e12c24a69d8c8928180cd6"
+      },
+      "nn_geom_input": {
+        "path": "__RUN_SOURCE_ROOT__\\outputs\\external_geometry\\geom_input_point_nnir.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "2b679d94dda4a646eb33cb0a1737423e45c3bf9dd62cf3d5a840ef1dee4cd35c",
+        "file_sha256": "8ae0bbbb4a6e4dbee5ad05c53526c893c737431aac809e0125f90fb6644141a8"
+      },
+      "nn_export": {
+        "path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\export_rows.jsonl",
+        "line_1based": 284,
+        "line_bytes_sha256": "5c38cc53acb33949fe27d166ef6be2298fd1a78919595141374811e01dbd535e",
+        "file_sha256": "24bf68462b5fa07690e35cb2e2c6a57d520fe9a25320805bf012c254c833766c"
+      }
+    },
+    "assets": {
+      "reference": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\55031_57f7bdba_0000.step",
+      "point": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\55031_57f7bdba_0000.npz",
+      "step_descriptor": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\step_features\\f360_55031_57f7bdba_0000.json",
+      "step_descriptor_index_copy": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_55031_57f7bdba_0000.json",
+      "cadr_raw_generation.txt": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\raw_generation.txt",
+      "cadr_extracted_code.py": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\extracted_code.py",
+      "cadr_execution_result.json": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\execution_result.json",
+      "cadr_execution_stdout.txt": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\execution_stdout.txt",
+      "cadr_execution_stderr.txt": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\execution_stderr.txt",
+      "cadr_cloud_256.npy": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\cloud_256.npy",
+      "cadr_step": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\prediction.step",
+      "mirage_step": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_55031_57f7bdba_0000\\candidate.step",
+      "mirage_original_geometry_target_cloud": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\55031_57f7bdba_0000.npz",
+      "nn_step": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_55031_57f7bdba_0000\\candidate.step",
+      "nn_original_geometry_target_cloud": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\clouds\\55031_57f7bdba_0000.npz"
+    },
+    "native_records": {
+      "mirage": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "arm": "point_genplan",
+        "terminal": true,
+        "memory_cap": "RLIMIT_AS=8192MB",
+        "gt_verified": true,
+        "cd_status": "ok",
+        "iou_status": "ok",
+        "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+        "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_genplan/f360_55031_57f7bdba_0000/candidate.step",
+        "gt_mesh_triangles": 1948,
+        "prediction_step_diagnostics": {
+          "n_solids": 1,
+          "n_faces": 1,
+          "faces_per_solid": [
+            1
+          ],
+          "first_solid_bbox": [
+            20.20000096293667,
+            20.200000962938997,
+            8.200000009266002
+          ]
+        },
+        "evaluation": {
+          "pred_mesh_triangles": 474334,
+          "pred_mesh_watertight": false,
+          "remesh_status": "ok",
+          "cd_x1000": 35.962963713792206,
+          "cd_floor_gt": 0.25667525253802403,
+          "cd_status": "ok",
+          "iou": 0.3655259587539846,
+          "iou_status": "ok",
+          "gt_self_iou": 1.0000000463599934,
+          "gt_self_iou_dev": 4.635999339974717e-08,
+          "iou_eligible": true
+        },
+        "cd_floor_ratio": 140.11075613323737,
+        "pipeline_status": "SUCCESS",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "gate_check": "match",
+        "seconds": 18.27
+      },
+      "nn": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "arm": "point_nnir",
+        "terminal": true,
+        "memory_cap": "RLIMIT_AS=8192MB",
+        "gt_verified": true,
+        "cd_status": "ok",
+        "iou_status": "ok",
+        "evaluator": "cadrecode_stage2.evaluate, the identical function and frozen alpha = 1e-6 operator used for CAD-Recode",
+        "prediction_step": "__DEV_ROOT__/scratch/mirage_runs/point_nnir/f360_55031_57f7bdba_0000/candidate.step",
+        "gt_mesh_triangles": 1948,
+        "prediction_step_diagnostics": {
+          "n_solids": 1,
+          "n_faces": 1,
+          "faces_per_solid": [
+            1
+          ],
+          "first_solid_bbox": [
+            14.100000581469669,
+            4.980000219073249,
+            5.880000314440001
+          ]
+        },
+        "evaluation": {
+          "pred_mesh_triangles": 640106,
+          "pred_mesh_watertight": false,
+          "remesh_status": "ok",
+          "cd_x1000": 61.504872040273895,
+          "cd_floor_gt": 0.25667525253802403,
+          "cd_status": "ok",
+          "iou": 0.20108039279061526,
+          "iou_status": "ok",
+          "gt_self_iou": 1.0000000463599934,
+          "gt_self_iou_dev": 4.635999339974717e-08,
+          "iou_eligible": true
+        },
+        "cd_floor_ratio": 239.62135590443228,
+        "pipeline_status": "SUCCESS",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "gate_check": "match",
+        "seconds": 20.37
+      },
+      "cadr": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/55031_57f7bdba_0000.step",
+        "protocol": "frozen before any CAD-Recode output was seen; this sample's geometry quality must not change it",
+        "pipeline_status": "SUCCESS",
+        "terminal": true,
+        "cd_status": "ok",
+        "iou_status": "ok",
+        "input": {
+          "source_step_sha256": "baa152a941f9acc4198b49b5e94abd73965eb02343ae2dc80c689131c3858724",
+          "alpha": 1e-06,
+          "angular_deflection": 0.3,
+          "canonical_mesh_sha256": "75bff96cb0ecc0cf8d09832bc96c178d2478454d7f459392df41c459b7640517/4ca79d4002f8f2d594502df43eea39b26a94f09d26d5245f6f30ba84cfd50c4d",
+          "mesh_vertex_count": 976,
+          "mesh_triangle_count": 1948,
+          "mesh_watertight": true,
+          "bbox_before_normalization": [
+            110.0,
+            99.99396700012132,
+            100.0
+          ],
+          "normalization_target_extent": 2.0,
+          "normalization_scale": 0.01818181818181818,
+          "sampling_seed": 0,
+          "n_pre_points": 8192,
+          "cloud_8192_sha256": "7671f719ae7d41b161cca04debed159e81fe743951f1f539969bb5de2b947436",
+          "fps_indices_sha256": "bf6b7797a37a2dc573aa0e528bd0c8ecc96cd2e86f2db66d4d187ee89f931285",
+          "fps_implementation": "sample_farthest_points_np, start_index=0, squared euclidean, numpy argmax tie-breaking; COMPATIBLE with pytorch3d, not verified index-for-index against it",
+          "cloud_256_sha256": "4be0f385a04a6a78cd6ec7b7a96f14320778ca82623d677f6f3740bf3bfe7192"
+        },
+        "model": {
+          "checkpoint": "filapro/cad-recode-v1.5",
+          "tokenizer": "Qwen/Qwen2-1.5B",
+          "upstream_repo": "/mnt/c/Users/anonymous/Downloads/cad-recode-main/cad-recode-main",
+          "upstream_source_sha256": "049f025c840aae70abc3a9322ea230d5866310c8814ae4e5f80997784dcff7a7",
+          "demo_notebook_sha256": "0e7f29d23885aca46d6aa73fa0bee98b9bbb37745a01a8cfed706e83acd27e8f",
+          "torch": "2.7.0+cu128",
+          "device": "cuda",
+          "device_capability": "sm_120",
+          "n_parameters": 1543794176,
+          "generation": {
+            "strategy": "greedy",
+            "num_candidates": 1,
+            "max_new_tokens": 768
+          },
+          "transformers": "4.47.1"
+        },
+        "generation": {
+          "seconds": 1.18,
+          "raw_chars": 2740,
+          "raw_sha256": "b7ced4968557c6c8939f5784b96b7335cb65427a9189f13f7501bc2930c1039f"
+        },
+        "extraction_status": "ok",
+        "extracted_code_sha256": "a3bdb49c5b3465bcdd0a7c96893764ab692ce72e9acbaf9b58bceef2402325ee",
+        "extracted_code_lines": 3,
+        "unsafe_patterns_found": [],
+        "execution": {
+          "timeout_s": 60,
+          "wall_seconds": 0.88,
+          "timed_out": false,
+          "cwd": "__DEV_ROOT__/scratch/cadrecode_runs/f360_55031_57f7bdba_0000",
+          "return_code": 0,
+          "runner_result": {
+            "status": "SUCCESS",
+            "generated_stdout": "",
+            "shape_type": "Compound",
+            "is_valid": true,
+            "bbox": [
+              200.0,
+              182.0,
+              182.0
+            ],
+            "step_bytes": 9551
+          }
+        },
+        "artifacts": {
+          "prediction_step": "__DEV_ROOT__/scratch/cadrecode_runs/f360_55031_57f7bdba_0000/prediction.step",
+          "prediction_step_sha256": "99dc704721366585601bf41da0d9f0701ce822ac3f65aee7b76ca9652746042e",
+          "prediction_step_bytes": 9551
+        },
+        "evaluation": {
+          "pred_mesh_triangles": 1444,
+          "pred_mesh_watertight": true,
+          "remesh_status": "ok",
+          "cd_x1000": 0.2594876540235575,
+          "cd_floor_gt": 0.25667525253802403,
+          "cd_status": "ok",
+          "iou": 0.9933291254535719,
+          "iou_status": "ok",
+          "gt_self_iou": 1.0000000463599934,
+          "gt_self_iou_dev": 4.635999339974717e-08,
+          "iou_eligible": true
+        },
+        "cd_floor_ratio": 1.010957041856292
+      }
+    },
+    "source_records": {
+      "rows": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "external_id": "55031_57f7bdba_0000",
+        "dataset_root": "__LOCAL_WORKSPACE__/Project/FllumaOne/FllumaOne-100K",
+        "step_feature_path": "__RUN_SOURCE_ROOT__/data/external/fusion360/step_features/f360_55031_57f7bdba_0000.json",
+        "point_path": "__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/55031_57f7bdba_0000.npz",
+        "bbox_diag": 179.1646940940169,
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "split": "test"
+      },
+      "queries": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "external_id": "55031_57f7bdba_0000",
+        "split": "test",
+        "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\55031_57f7bdba_0000.step",
+        "step_path_wsl": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/55031_57f7bdba_0000.step",
+        "point_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\55031_57f7bdba_0000.npz",
+        "point_path_wsl": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/55031_57f7bdba_0000.npz",
+        "n_points": 8192,
+        "bbox_diag": 179.1646940940169,
+        "scale_applied": 1.0
+      },
+      "step_index": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "source_dataset": "fusion360_gallery_r1.0.1",
+        "external_id": "55031_57f7bdba_0000",
+        "split": "test",
+        "step_path": "__LOCAL_WORKSPACE__\\Project\\Dataset\\Fusion360Gallery\\r1.0.1\\reconstruction\\55031_57f7bdba_0000.step",
+        "step_path_wsl": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/55031_57f7bdba_0000.step",
+        "point_path": "__RUN_SOURCE_ROOT__\\data\\external\\fusion360\\clouds\\55031_57f7bdba_0000.npz",
+        "point_path_wsl": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/55031_57f7bdba_0000.npz",
+        "n_points": 8192,
+        "bbox_diag": 179.1646940940169,
+        "scale_applied": 1.0,
+        "step_feature_path": "__DEV_ROOT__\\scratch\\ext_step\\features\\f360_55031_57f7bdba_0000.json",
+        "success": true,
+        "error": ""
+      },
+      "legacy_manifest": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "gt_step_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/r1.0.1/reconstruction/55031_57f7bdba_0000.step",
+        "gt_mesh_path": "scratch\\external_gt_mesh\\f360_55031_57f7bdba_0000.stl",
+        "point_cloud_path": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/data/external/fusion360/clouds/55031_57f7bdba_0000.npz",
+        "mirage_prediction_path": "//wsl.localhost/Ubuntu__RUN_SOURCE_ROOT__/outputs/external_fusion360/gen_point_genplan.jsonl",
+        "mirage_exists": true,
+        "mirage_exec_status": "not_executed",
+        "mirage_mesh_path": "scratch\\external_mirage_mesh\\f360_55031_57f7bdba_0000.stl",
+        "cadrecode_prediction_path": "",
+        "cadrecode_exists": false,
+        "cadrecode_exec_status": "no_prediction",
+        "cadrecode_mesh_path": "scratch\\external_cadrecode_mesh\\f360_55031_57f7bdba_0000.stl",
+        "eligible_for_cd": false,
+        "eligible_for_iou": false,
+        "paired_valid_geometry": false,
+        "gt_normalized_area": "",
+        "expected_cd_floor_8192": "",
+        "notes": "gt_mesh_not_tessellated"
+      },
+      "plan": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0001001 CAT ellipsoid_stock UNITS mm SEED 20261516\nPARAM radius_x 10.1 MIN 1 MAX 12 SEM ellipsoid_radius_x\nPARAM radius_y 10.1 MIN 1 MAX 12 SEM ellipsoid_radius_y\nPARAM radius_z 4.1 MIN 1 MAX 8 SEM ellipsoid_radius_z\nF ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[radius_x,radius_y,radius_z]\nEND",
+        "reference_ir": "",
+        "program_path": ""
+      },
+      "mirage_raw": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0001001 CAT ellipsoid_stock UNITS mm SEED 20261516\nPARAM radius_x 10.1 MIN 1 MAX 12 SEM ellipsoid_radius_x\nPARAM radius_y 10.1 MIN 1 MAX 12 SEM ellipsoid_radius_y\nPARAM radius_z 4.1 MIN 1 MAX 8 SEM ellipsoid_radius_z\nF ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[radius_x,radius_y,radius_z]\nEND",
+        "reference_ir": "",
+        "reference": "",
+        "prediction": "params = Parameters()\nparams.add('radius_x', 10.1, min=1.0, max=12.0, semantic_type='ellipsoid_radius_x')\nparams.add('radius_y', 10.1, min=1.0, max=12.0, semantic_type='ellipsoid_radius_y')\nparams.add('radius_z', 4.1, min=1.0, max=8.0, semantic_type='ellipsoid_radius_z')\n\npart = Part('flluma_0001001', category='ellipsoid_stock', parameters=params, seed=20261516, sample_id='flluma_0001001', units='mm')\nellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')\n\n__all__ = ['part']"
+      },
+      "mirage_used": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "predicted_ir": "PART flluma_0001001 CAT ellipsoid_stock UNITS mm SEED 20261516\nPARAM radius_x 10.1 MIN 1 MAX 12 SEM ellipsoid_radius_x\nPARAM radius_y 10.1 MIN 1 MAX 12 SEM ellipsoid_radius_y\nPARAM radius_z 4.1 MIN 1 MAX 8 SEM ellipsoid_radius_z\nF ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[radius_x,radius_y,radius_z]\nEND",
+        "reference_ir": "",
+        "reference": "",
+        "prediction": "params = Parameters()\nparams.add('radius_x', 10.1, min=1.0, max=12.0, semantic_type='ellipsoid_radius_x')\nparams.add('radius_y', 10.1, min=1.0, max=12.0, semantic_type='ellipsoid_radius_y')\nparams.add('radius_z', 4.1, min=1.0, max=8.0, semantic_type='ellipsoid_radius_z')\n\npart = Part('flluma_0001001', category='ellipsoid_stock', parameters=params, seed=20261516, sample_id='flluma_0001001', units='mm')\nellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')\n\n__all__ = ['part']"
+      },
+      "mirage_gate": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "mirage_published_geom": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "has_target": true,
+        "candidate_results": [
+          {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true,
+            "error": "",
+            "cd": 2224.5763970718704,
+            "bbox_err": 87.15814596728842,
+            "f_score_1pct": 0.0,
+            "target_bbox_diag": 179.15743641378086,
+            "gen_bbox_diag": 29.66392284080582,
+            "bbox_ratio_to_gt": 0.1655746109935075
+          }
+        ]
+      },
+      "mirage_geom_input": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "point_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/clouds/55031_57f7bdba_0000.npz",
+        "all_candidates": [
+          "params = Parameters()\nparams.add('radius_x', 10.1, min=1.0, max=12.0, semantic_type='ellipsoid_radius_x')\nparams.add('radius_y', 10.1, min=1.0, max=12.0, semantic_type='ellipsoid_radius_y')\nparams.add('radius_z', 4.1, min=1.0, max=8.0, semantic_type='ellipsoid_radius_z')\n\npart = Part('flluma_0001001', category='ellipsoid_stock', parameters=params, seed=20261516, sample_id='flluma_0001001', units='mm')\nellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')\n\n__all__ = ['part']"
+        ]
+      },
+      "mirage_export": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "arm": "point_genplan",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "error": "",
+        "status": "OK",
+        "seconds": 0.03,
+        "tempdir_calls": 1,
+        "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_55031_57f7bdba_0000\\candidate.step",
+        "step_bytes": 5462,
+        "step_sha256": "be9250ad5b814a479e7981f78f4ab2d8cff7ca02069588e7bd2b264437fd88b7",
+        "gate_check": "match"
+      },
+      "nn_raw": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "baseline": "prior-nn-ir",
+        "nn_sample_id": "flluma_0065632",
+        "predicted_ir": "PART flluma_0065632 CAT ellipsoid_stock UNITS mm SEED 20326146\nPARAM radius_x 7.05 MIN 1 MAX 12 SEM ellipsoid_radius_x\nPARAM radius_y 2.49 MIN 1 MAX 12 SEM ellipsoid_radius_y\nPARAM radius_z 2.94 MIN 1 MAX 12 SEM ellipsoid_radius_z\nF ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[@radius_x,@radius_y,@radius_z]\nEND\n",
+        "reference_ir": "",
+        "prediction": "params = Parameters()\nparams.add('radius_x', 7.05, min=1.0, max=12.0, semantic_type='ellipsoid_radius_x')\nparams.add('radius_y', 2.49, min=1.0, max=12.0, semantic_type='ellipsoid_radius_y')\nparams.add('radius_z', 2.94, min=1.0, max=12.0, semantic_type='ellipsoid_radius_z')\n\npart = Part('flluma_0065632', category='ellipsoid_stock', parameters=params, seed=20326146, sample_id='flluma_0065632', units='mm')\nellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')\n\n__all__ = ['part']",
+        "reference": ""
+      },
+      "nn_used": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "baseline": "prior-nn-ir",
+        "nn_sample_id": "flluma_0065632",
+        "predicted_ir": "PART flluma_0065632 CAT ellipsoid_stock UNITS mm SEED 20326146\nPARAM radius_x 7.05 MIN 1 MAX 12 SEM ellipsoid_radius_x\nPARAM radius_y 2.49 MIN 1 MAX 12 SEM ellipsoid_radius_y\nPARAM radius_z 2.94 MIN 1 MAX 12 SEM ellipsoid_radius_z\nF ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[@radius_x,@radius_y,@radius_z]\nEND\n",
+        "reference_ir": "",
+        "prediction": "params = Parameters()\nparams.add('radius_x', 7.05, min=1.0, max=12.0, semantic_type='ellipsoid_radius_x')\nparams.add('radius_y', 2.49, min=1.0, max=12.0, semantic_type='ellipsoid_radius_y')\nparams.add('radius_z', 2.94, min=1.0, max=12.0, semantic_type='ellipsoid_radius_z')\n\npart = Part('flluma_0065632', category='ellipsoid_stock', parameters=params, seed=20326146, sample_id='flluma_0065632', units='mm')\nellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')\n\n__all__ = ['part']",
+        "reference": ""
+      },
+      "nn_gate": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "nn_published_geom": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "has_target": true,
+        "candidate_results": [
+          {
+            "syntax_ok": true,
+            "exec_ok": true,
+            "build_ok": true,
+            "solid_valid": true,
+            "step_export_ok": true,
+            "error": "",
+            "cd": 2455.1407237475037,
+            "bbox_err": 95.03172640728842,
+            "f_score_1pct": 0.0,
+            "target_bbox_diag": 179.15743641378086,
+            "gen_bbox_diag": 16.016405818000315,
+            "bbox_ratio_to_gt": 0.0893984985418575
+          }
+        ]
+      },
+      "nn_geom_input": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "modality": "point",
+        "point_path": "__LOCAL_WORKSPACE__/Project/Dataset/Fusion360Gallery/clouds/55031_57f7bdba_0000.npz",
+        "all_candidates": [
+          "params = Parameters()\nparams.add('radius_x', 7.05, min=1.0, max=12.0, semantic_type='ellipsoid_radius_x')\nparams.add('radius_y', 2.49, min=1.0, max=12.0, semantic_type='ellipsoid_radius_y')\nparams.add('radius_z', 2.94, min=1.0, max=12.0, semantic_type='ellipsoid_radius_z')\n\npart = Part('flluma_0065632', category='ellipsoid_stock', parameters=params, seed=20326146, sample_id='flluma_0065632', units='mm')\nellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')\n\n__all__ = ['part']"
+        ]
+      },
+      "nn_export": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "arm": "point_nnir",
+        "gates": {
+          "syntax_ok": true,
+          "exec_ok": true,
+          "build_ok": true,
+          "solid_valid": true,
+          "step_export_ok": true
+        },
+        "error": "",
+        "status": "OK",
+        "seconds": 0.02,
+        "tempdir_calls": 1,
+        "step_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_55031_57f7bdba_0000\\candidate.step",
+        "step_bytes": 5427,
+        "step_sha256": "176d004e8e5e48641f91b8cf8948c888802ace78edde2c568da6304170eaf1d1",
+        "gate_check": "match"
+      }
+    }
+  },
+  "taxonomy": {
+    "cadr": {
+      "master_index": 284,
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "method": "cadr",
+      "primary_outcome": "CD_SCOREABLE",
+      "verified_failure_class": null,
+      "reason_subtype": "NOT_APPLICABLE",
+      "reason_detail": null,
+      "classification_rule": "CADR_NATIVE_CD_OK",
+      "reported_error": null,
+      "native_traceback": null,
+      "cd_scoreable": true,
+      "iou_scoreable": true,
+      "CD": 0.2594876540235575,
+      "IoU": 0.9933291254535719,
+      "iou_outcome": "IOU_AVAILABLE",
+      "iou_failure_class": null,
+      "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+      "verified_semantic_failure": null,
+      "selection_bucket": null,
+      "historical_export_ok": true,
+      "prediction_step_exists": true,
+      "native_pipeline_status": "SUCCESS",
+      "native_cd_status": "ok",
+      "native_iou_status": "ok",
+      "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_55031_57f7bdba_0000.json",
+      "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\run_manifest.json",
+      "input_sample_id_unchanged": true,
+      "classification_version": "native-log-taxonomy-v1"
+    },
+    "mirage": {
+      "master_index": 284,
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "method": "mirage",
+      "primary_outcome": "CD_SCOREABLE",
+      "verified_failure_class": null,
+      "reason_subtype": "NOT_APPLICABLE",
+      "reason_detail": null,
+      "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+      "reported_error": null,
+      "native_traceback": null,
+      "cd_scoreable": true,
+      "iou_scoreable": true,
+      "CD": 35.962963713792206,
+      "IoU": 0.3655259587539846,
+      "iou_outcome": "IOU_AVAILABLE",
+      "iou_failure_class": null,
+      "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+      "verified_semantic_failure": null,
+      "selection_bucket": null,
+      "historical_export_ok": true,
+      "prediction_step_exists": true,
+      "native_pipeline_status": "SUCCESS",
+      "native_cd_status": "ok",
+      "native_iou_status": "ok",
+      "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_55031_57f7bdba_0000.json",
+      "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_55031_57f7bdba_0000\\score_manifest.json",
+      "input_sample_id_unchanged": true,
+      "classification_version": "native-log-taxonomy-v1"
+    },
+    "nn": {
+      "master_index": 284,
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "method": "nn",
+      "primary_outcome": "CD_SCOREABLE",
+      "verified_failure_class": null,
+      "reason_subtype": "NOT_APPLICABLE",
+      "reason_detail": null,
+      "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+      "reported_error": null,
+      "native_traceback": null,
+      "cd_scoreable": true,
+      "iou_scoreable": true,
+      "CD": 61.504872040273895,
+      "IoU": 0.20108039279061526,
+      "iou_outcome": "IOU_AVAILABLE",
+      "iou_failure_class": null,
+      "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+      "verified_semantic_failure": null,
+      "selection_bucket": null,
+      "historical_export_ok": true,
+      "prediction_step_exists": true,
+      "native_pipeline_status": "SUCCESS",
+      "native_cd_status": "ok",
+      "native_iou_status": "ok",
+      "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_55031_57f7bdba_0000.json",
+      "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_55031_57f7bdba_0000\\score_manifest.json",
+      "input_sample_id_unchanged": true,
+      "classification_version": "native-log-taxonomy-v1"
+    }
+  },
+  "visual_semantic_review": "PENDING_RENDERING",
+  "semantic_labels": null
+}

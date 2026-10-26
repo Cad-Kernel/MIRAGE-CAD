@@ -1,0 +1,1103 @@
+{
+  "status": "SIX_MAIN_VISUAL_RECHECKS_COMPLETE_AUTHOR_SIGNOFF_PENDING",
+  "created_utc": "2026-10-22T19:41:11.943209+00:00",
+  "client_date": "2026-10-22",
+  "reviewer_type": "AI_ASSISTANT",
+  "parent_seal_sha256": "0c9dc031ba49f8ae6eaadf8c7ca98679ada6d9761ef132576de2828eb631bb33",
+  "selection_sha256": "3d2a24ed81a6412c19702524e62f2cd8d3d95b16229340ec4ad5474b2a278529",
+  "all_original_main_ids_retained": true,
+  "recommend_main_case_count": 6,
+  "compact_four_case_option": [
+    "M01",
+    "M02",
+    "M04",
+    "M06"
+  ],
+  "compact_option_scope": "Page-limit-only display subset, not reselection or quality filtering; M03/M05 and all appendix data remain archived. Not author-final.",
+  "rows": [
+    {
+      "slot": "M01",
+      "sample_id": "f360_82203_8b9714ce_0000",
+      "case_id": "M01_f360_82203_8b9714ce_0000",
+      "label": "GLOBAL_SHAPE_AND_THICKNESS_PROFILE_MISMATCH",
+      "label_zh": "整体形状与厚度轮廓不匹配；仅有相对 IoU 优势",
+      "observations_zh": [
+        "Reference 在等轴图中是薄的开放框架，front 图呈窄条；MIRAGE 是带缺口和圆柱 boss 的厚块体，两视图均未复现原框架布局。",
+        "CAD-Recode 保留了薄框架式外观，但形状细节明显不同；NN 是扁平十字板状构形，不是目标框架。",
+        "原坐标共同画框中 reference/CAD-Recode 很小，MIRAGE/NN 较大。这是该坐标政策下的展示观察，不能独立解释成物理尺寸准确率。"
+      ],
+      "supported_terms": [
+        "global shape mismatch",
+        "frame layout not reproduced",
+        "thickness-profile mismatch",
+        "relative IoU advantage only"
+      ],
+      "unsupported_terms": [
+        "accurate success",
+        "MIRAGE wins both metrics",
+        "missing hole",
+        "wrong extrusion",
+        "proven topology failure"
+      ],
+      "caption_en": "MIRAGE produces a notched bossed block instead of the thin open-frame reference. Its IoU is higher than CAD-Recode's in this selected case, but both IoUs are low and its CD is worse. This is a relative IoU advantage, not an accurate-reconstruction success.",
+      "selection_caution": "Selected at the median positive MIRAGE-minus-CAD-Recode IoU difference among five eligible cases. It is not an absolute-success threshold or a joint CD/IoU win.",
+      "semantic_scope": "Visible global shape and aspect profile; no operation-level causal diagnosis.",
+      "additional_view_evidence": [],
+      "reviewer_type": "AI_ASSISTANT",
+      "review_status": "VISUAL_RECHECK_COMPLETE_AUTHOR_CONFIRMATION_PENDING",
+      "author_confirmed": false,
+      "author_confirmed_semantic_label": null,
+      "panels": {
+        "metric_space": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\metric_space_panel.png",
+        "reference_world": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\reference_world_panel.png"
+      },
+      "additional_inspected_views": [],
+      "native_metrics": {
+        "mirage": {
+          "master_index": 283,
+          "sample_id": "f360_82203_8b9714ce_0000",
+          "method": "mirage",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 51.52544804226313,
+          "IoU": 0.01773934723614021,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_82203_8b9714ce_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_82203_8b9714ce_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "cadr": {
+          "master_index": 283,
+          "sample_id": "f360_82203_8b9714ce_0000",
+          "method": "cadr",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "CADR_NATIVE_CD_OK",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 3.782453763684077,
+          "IoU": 0.00042700316347696733,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_82203_8b9714ce_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_82203_8b9714ce_0000\\run_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "nn": {
+          "master_index": 283,
+          "sample_id": "f360_82203_8b9714ce_0000",
+          "method": "nn",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 3.114782622139503,
+          "IoU": 0.18783877798089724,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_82203_8b9714ce_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_82203_8b9714ce_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        }
+      },
+      "mirage_gate": {
+        "sample_id": "f360_82203_8b9714ce_0000",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\code\\mirage_used.py",
+      "archived_assets_record": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\archived_asset_paths.json",
+      "predicted_plan_excerpt": [
+        "F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-12.18,-10.5],[12.18,-10.5],[12.18,10.5],[4.33,10.5],[4.33,-3.73],[-4.33,-3.73],[-4.33,10.5],[-12.18,10.5]] profile_type=polygon",
+        "F extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness",
+        "F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius",
+        "F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,4.955]",
+        "F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP extrude_001,translate_001 TARGET extrude_001,translate_001"
+      ],
+      "code_excerpt": [
+        {
+          "line_1based": 8,
+          "text": "sketch = part.sketch_polygon(name='cross_tab_profile', points=[[-12.18, -10.5], [12.18, -10.5], [12.18, 10.5], [4.33, 10.5], [4.33, -3.73], [-4.33, -3.73], [-4.33, 10.5], [-12.18, 10.5]], closed=True, semantic_type='extrude_profile')"
+        },
+        {
+          "line_1based": 9,
+          "text": "solid = part.extrude(name='extrude_cross_tab_mount', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')"
+        },
+        {
+          "line_1based": 10,
+          "text": "cylinder = part.cylinder(name='cross_tab_center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')"
+        },
+        {
+          "line_1based": 11,
+          "text": "moved = part.translate(name='place_cross_tab_center_boss', target=cylinder, offset=[0.0, 0.0, 4.955], semantic_type='placement')"
+        },
+        {
+          "line_1based": 12,
+          "text": "join = part.boolean_join(name='join_cross_tab_center_boss', target=solid, tool=moved, semantic_type='joined_boss')"
+        },
+        {
+          "line_1based": 13,
+          "text": "holes = part.hole_pattern(name='cross_tab_mount_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[0.0, -3.65], [4.37, 0.0], [0.0, 3.65], [-4.37, 0.0]], semantic_type='mounting_hole')"
+        }
+      ],
+      "selection_bucket": "relative_mirage_success",
+      "original_selection_rank": {
+        "sample_id": "f360_82203_8b9714ce_0000",
+        "value": 0.017312344072663244,
+        "midrank_percentile": 0.5,
+        "priority_rank": 1
+      },
+      "recommendation": "KEEP_IN_SIX_CASE_MAIN_DRAFT_AUTHOR_DECISION_PENDING",
+      "new_training_prediction_program_execution_scoring_rendering": false,
+      "source_hashes": {
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\code\\mirage_used.py": "d6b943c39b8afb5f9da7341a2db2c035543b8797487ad09f6ac4468931e27ac9",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\case_record.json": "4792b68bec202269ceafcfcf0e48ce54ea9b4ca8b8cb5cadb87521e06e1543a9",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\archived_asset_paths.json": "ffb5b4e2ec3aafc8fce766001bf09f83376f9b7a6b1021fb7fbf93bc0c3bae06",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\render_manifest.json": "9c8dfbf57c4efda0da3a64e5721230aac16b643589ef393fea1b4cddb278aae8",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\metric_space_panel.png": "b1acc5cca682685534f114d318ab175db6adfb6ebe9239563da55cdd1f0e4b5f",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M01_f360_82203_8b9714ce_0000\\reference_world_panel.png": "adaa1b837161697aee9cc136452fd22ef7b1504a5b051882079a9dce819d02f2"
+      }
+    },
+    {
+      "slot": "M02",
+      "sample_id": "f360_43562_004c6cea_0003",
+      "case_id": "M02_f360_43562_004c6cea_0003",
+      "label": "OPEN_FRAME_LAYOUT_NOT_REPRODUCED",
+      "label_zh": "开放框架布局未复现，输出为块状构形",
+      "observations_zh": [
+        "Reference 有开放三角框架、大面积贯通空区及圆形端部；MIRAGE 的双视图显示块状构形，没有对应的框架轮廓和开口布局。",
+        "CAD-Recode 保留部分板状/圆形端部母题，但可见轮廓和空区也不等同于 reference。圆片看起来分离不等于已证明 CAD 拓扑断开。",
+        "NN 是桥形/阶梯板式构形，也没有复现该框架。"
+      ],
+      "supported_terms": [
+        "open-frame layout not reproduced",
+        "global structural mismatch",
+        "block-like replacement"
+      ],
+      "unsupported_terms": [
+        "proven disconnected solids",
+        "missing exactly N holes",
+        "wrong extrusion",
+        "minor-detail-only error"
+      ],
+      "caption_en": "Near the paired median MIRAGE IoU, the reference's open triangular frame is not reproduced: MIRAGE returns block-like geometry. CAD-Recode retains more plate and circular-end structure but also differs in the visible openings and silhouette.",
+      "selection_caution": "Near-median refers to MIRAGE IoU within the 200-case MIRAGE/CAD-Recode jointly IoU-scoreable cohort, not to all 400 cases or an unconditional median.",
+      "semantic_scope": "Visible layout and silhouette; connectivity and internal topology unverified.",
+      "additional_view_evidence": [],
+      "reviewer_type": "AI_ASSISTANT",
+      "review_status": "VISUAL_RECHECK_COMPLETE_AUTHOR_CONFIRMATION_PENDING",
+      "author_confirmed": false,
+      "author_confirmed_semantic_label": null,
+      "panels": {
+        "metric_space": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\metric_space_panel.png",
+        "reference_world": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\reference_world_panel.png"
+      },
+      "additional_inspected_views": [],
+      "native_metrics": {
+        "mirage": {
+          "master_index": 141,
+          "sample_id": "f360_43562_004c6cea_0003",
+          "method": "mirage",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 16.900439836044796,
+          "IoU": 0.060460107717569246,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_43562_004c6cea_0003.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_43562_004c6cea_0003\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "cadr": {
+          "master_index": 141,
+          "sample_id": "f360_43562_004c6cea_0003",
+          "method": "cadr",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "CADR_NATIVE_CD_OK",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 1.1193201057678728,
+          "IoU": 0.3123051673978255,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_43562_004c6cea_0003.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_43562_004c6cea_0003\\run_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "nn": {
+          "master_index": 141,
+          "sample_id": "f360_43562_004c6cea_0003",
+          "method": "nn",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 27.732413364904886,
+          "IoU": 0.07153257863486917,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_43562_004c6cea_0003.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_43562_004c6cea_0003\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        }
+      },
+      "mirage_gate": {
+        "sample_id": "f360_43562_004c6cea_0003",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\code\\mirage_used.py",
+      "archived_assets_record": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\archived_asset_paths.json",
+      "predicted_plan_excerpt": [
+        "F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width",
+        "F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP plate_001 TARGET plate_001.top_face PARAMS count=4 depth=THROUGH positions=[[-10.428,-2.775],[10.428,-2.775],[-10.428,2.775],[10.428,2.775]] radius=@hole_radius",
+        "F box_001 OP_BOX SEM boss ROLE secondary_feature PARAMS height=@boss_height length=@pocket_width width=@boss_radius",
+        "F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP box_001 PARAMS offset=[14.55,0,5.45]",
+        "F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP hole_001,translate_001 TARGET hole_001,translate_001"
+      ],
+      "code_excerpt": [
+        {
+          "line_1based": 11,
+          "text": "plate = part.plate(name='base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')"
+        },
+        {
+          "line_1based": 12,
+          "text": "holes = part.hole_pattern(name='base_mounting_holes', target=plate.top_face(), radius=params['hole_radius'], depth='through', positions=[[-10.428, -2.775], [10.428, -2.775], [-10.428, 2.775], [10.428, 2.775]], semantic_type='mounting_hole')"
+        },
+        {
+          "line_1based": 13,
+          "text": "pocket = part.box(name='stepped_service_pocket', length=params['pocket_width'], width=params['boss_height'], height=params['boss_radius'], semantic_type='pocket')"
+        },
+        {
+          "line_1based": 14,
+          "text": "moved = part.translate(name='place_top_service_boss', target=pocket, offset=[14.55, 0.0, 5.45], semantic_type='placement')"
+        },
+        {
+          "line_1based": 15,
+          "text": "join = part.boolean_join(name='join_top_service_boss', target=holes, tool=moved, semantic_type='joined_boss')"
+        },
+        {
+          "line_1based": 16,
+          "text": "cylinder = part.cylinder(name='round_top_service_boss_seed', radius=params['boss_radius'], height=24.1, semantic_type='boss')"
+        }
+      ],
+      "selection_bucket": "near_median",
+      "original_selection_rank": {
+        "sample_id": "f360_43562_004c6cea_0003",
+        "value": 0.060460107717569246,
+        "midrank_percentile": 0.5025,
+        "priority_rank": 1
+      },
+      "recommendation": "KEEP_IN_SIX_CASE_MAIN_DRAFT_AUTHOR_DECISION_PENDING",
+      "new_training_prediction_program_execution_scoring_rendering": false,
+      "source_hashes": {
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\code\\mirage_used.py": "9c65a049fd619469ca0302354f5badd5a7c5f46501c77da2774088778d80f110",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\case_record.json": "b4892bc658b789d174dc995fecbcdcb978446c47a51b61786374ac70e5bb746f",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\archived_asset_paths.json": "8d47d2181e9de8abc24003c06fb8e2a1f47f935723c3f65f6fbcafa45988a611",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\render_manifest.json": "531f23d99992de808c2c7c5205b87fc9b9b36f0a77cb3c4a76574512e6409ccf",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\metric_space_panel.png": "09d2091122589371df8448cdc7dc9e2ee9d744cfd9d510e793dfa2b7b989f1f1",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M02_f360_43562_004c6cea_0003\\reference_world_panel.png": "08599c7ecbc676de2c4db3ea535713c109d994e6b945ccd84621d0ea62211bfd"
+      }
+    },
+    {
+      "slot": "M03",
+      "sample_id": "f360_34917_61633e20_0004",
+      "case_id": "M03_f360_34917_61633e20_0004",
+      "label": "THIN_PLANAR_PART_REPLACED_BY_CAPSULE",
+      "label_zh": "薄板被替换为胶囊状体；角部小开口仅作视图级说明",
+      "observations_zh": [
+        "Reference 是薄平面部件，在 front 图几乎为线；MIRAGE 与 NN 则是有圆头的厚柱/胶囊状体。主要错误是形状类别与厚度轮廓不匹配。",
+        "MIRAGE 的既有 predicted plan 明确含 OP_CAPSULE，既有代码调用 part.capsule()，与渲染外观一致；这不证明错误来自哪一训练组件。",
+        "CAD-Recode 保留薄板式外包络。放大查看原 640px 等轴视图，reference 右上角附近有可见小开口，CAD-Recode 对应位置未见同样开口。只能写 visible aperture not reproduced，不据此证明 STEP 中不存在任何内部孔。"
+      ],
+      "supported_terms": [
+        "thin planar part replaced by a capsule",
+        "global shape/thickness mismatch",
+        "reference corner aperture not visible in the CAD-Recode rendering"
+      ],
+      "unsupported_terms": [
+        "wrong extrusion direction",
+        "verified internal-hole count",
+        "CAD-Recode recovered every feature",
+        "MIRAGE only missed a hole"
+      ],
+      "caption_en": "In this lower-tail case, MIRAGE generates a capsule rather than the thin planar reference, consistent with its predicted OP_CAPSULE plan and capsule API call. CAD-Recode retains the plate-like envelope; the small reference corner aperture is not visible in its fixed isometric view.",
+      "selection_caution": "Selected near MIRAGE IoU q10 in the paired available-IoU cohort. The small-aperture remark is secondary to the global mismatch and is view-specific.",
+      "semantic_scope": "Global shape supported by two views and static generated code. Aperture remark is visual only, not a topology proof.",
+      "additional_view_evidence": [
+        "metric_space_reference_isometric.png",
+        "metric_space_cadr_isometric.png"
+      ],
+      "reviewer_type": "AI_ASSISTANT",
+      "review_status": "VISUAL_RECHECK_COMPLETE_AUTHOR_CONFIRMATION_PENDING",
+      "author_confirmed": false,
+      "author_confirmed_semantic_label": null,
+      "panels": {
+        "metric_space": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\metric_space_panel.png",
+        "reference_world": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\reference_world_panel.png"
+      },
+      "additional_inspected_views": [
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\metric_space_reference_isometric.png",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\metric_space_cadr_isometric.png"
+      ],
+      "native_metrics": {
+        "mirage": {
+          "master_index": 122,
+          "sample_id": "f360_34917_61633e20_0004",
+          "method": "mirage",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 50.571761632778944,
+          "IoU": 0.006213086217894026,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_34917_61633e20_0004.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_34917_61633e20_0004\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "cadr": {
+          "master_index": 122,
+          "sample_id": "f360_34917_61633e20_0004",
+          "method": "cadr",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "CADR_NATIVE_CD_OK",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 0.05682709621808598,
+          "IoU": 0.37458303638904766,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_34917_61633e20_0004.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_34917_61633e20_0004\\run_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "nn": {
+          "master_index": 122,
+          "sample_id": "f360_34917_61633e20_0004",
+          "method": "nn",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 11.923528722053428,
+          "IoU": 0.01911778114250653,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_34917_61633e20_0004.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_34917_61633e20_0004\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        }
+      },
+      "mirage_gate": {
+        "sample_id": "f360_34917_61633e20_0004",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\code\\mirage_used.py",
+      "archived_assets_record": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\archived_asset_paths.json",
+      "predicted_plan_excerpt": [
+        "F capsule_001 OP_CAPSULE SEM primitive_stock ROLE primary_body PARAMS height=@height radius=@radius"
+      ],
+      "code_excerpt": [
+        {
+          "line_1based": 6,
+          "text": "capsule = part.capsule(name='capsule_stock_body', radius=params['radius'], height=params['height'], semantic_type='primitive_stock')"
+        }
+      ],
+      "selection_bucket": "low_tail_scoreable",
+      "original_selection_rank": {
+        "sample_id": "f360_34917_61633e20_0004",
+        "value": 0.006213086217894026,
+        "midrank_percentile": 0.1025,
+        "priority_rank": 1
+      },
+      "recommendation": "KEEP_IN_SIX_CASE_MAIN_DRAFT_AUTHOR_DECISION_PENDING",
+      "new_training_prediction_program_execution_scoring_rendering": false,
+      "source_hashes": {
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\code\\mirage_used.py": "f64ae9f0de06785e499310327c5d1fc9c16ffbde249a848dc231d383ea4a7cab",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\case_record.json": "34518832618b7d280dff76ac723141e516c6e1c0e3c2b4b5c757f00fa1fdf64a",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\archived_asset_paths.json": "5ef343a4e4272234cfb60a0741251937f79461147973398a21cab478d000b317",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\render_manifest.json": "6861dd2b0873acbfbe5def7e8046af330cbcf99042acbf8b2332ec21d54b61ba",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\metric_space_panel.png": "7e9e2c6d4c109ae1f29f68f65dd7b24451d3031c5789f770d690acc726d31240",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\reference_world_panel.png": "0af64ff24d479cc92f57edfa6f137e2d777fa0177794767cee6a047954e857d6",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\metric_space_reference_isometric.png": "f4690aef2e2f531c37dbc4c7bd333e20cbb98e72b6f2d8243481f73275afd632",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M03_f360_34917_61633e20_0004\\metric_space_cadr_isometric.png": "243b827a1daad5009a4271ab724c34559b5a469f3cc9a1dbc04152a2a91e68d1"
+      }
+    },
+    {
+      "slot": "M04",
+      "sample_id": "f360_54501_96041527_0000",
+      "case_id": "M04_f360_54501_96041527_0000",
+      "label": "EXECUTION_FAILURE_UNEXPECTED_KEYWORD_ARGUMENT",
+      "label_zh": "API 参数合约执行失败；不存在可供几何分类的预测模型",
+      "observations_zh": [
+        "Reference 和 CAD-Recode 在两个视角均呈矩形板块状实体；NN 为不同的楔形/渐变块体。",
+        "MIRAGE syntax_ok=true，但 exec_ok/build/export=false；原生消息为 Part.wedge() got an unexpected keyword argument 'length'。",
+        "既有 mirage_used.py 第 7 行向 part.wedge() 传入 length。只记录该调用与异常相符，不修改参数、重新执行或推断修复后的形状。"
+      ],
+      "supported_terms": [
+        "execution failure",
+        "unexpected keyword argument",
+        "API/schema-pattern failure",
+        "no evaluated prediction geometry"
+      ],
+      "unsupported_terms": [
+        "syntax failure",
+        "wrong extrusion",
+        "missing hole",
+        "visually wrong MIRAGE solid",
+        "model hallucination proved",
+        "API-version mismatch proved"
+      ],
+      "caption_en": "MIRAGE fails before producing evaluated geometry: the recorded runtime rejects the length keyword passed to Part.wedge(). The failure is shown explicitly, while the reference and CAD-Recode outputs retain the slab-like geometry. No replacement geometry is rendered.",
+      "selection_caution": "A hash-ranked native API/schema-pattern execution failure with CAD-Recode CD available. This sample does not identify generation versus runtime API compatibility as the root cause.",
+      "semantic_scope": "Native error and static source call verified. Geometry label for the absent MIRAGE output is not applicable.",
+      "additional_view_evidence": [],
+      "reviewer_type": "AI_ASSISTANT",
+      "review_status": "VISUAL_RECHECK_COMPLETE_AUTHOR_CONFIRMATION_PENDING",
+      "author_confirmed": false,
+      "author_confirmed_semantic_label": null,
+      "panels": {
+        "metric_space": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\metric_space_panel.png",
+        "reference_world": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\reference_world_panel.png"
+      },
+      "additional_inspected_views": [],
+      "native_metrics": {
+        "mirage": {
+          "master_index": 32,
+          "sample_id": "f360_54501_96041527_0000",
+          "method": "mirage",
+          "primary_outcome": "EXECUTION_FAILURE",
+          "verified_failure_class": "EXECUTION_FAILURE",
+          "reason_subtype": "UNEXPECTED_KEYWORD_ARGUMENT",
+          "reason_detail": "Part.wedge / length",
+          "classification_rule": "FIRST_FALSE_NATIVE_GATE:exec_ok",
+          "reported_error": "exec error: Part.wedge() got an unexpected keyword argument 'length'",
+          "native_traceback": null,
+          "cd_scoreable": false,
+          "iou_scoreable": false,
+          "CD": null,
+          "IoU": null,
+          "iou_outcome": "UNAVAILABLE_AFTER_PRIMARY_FAILURE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": false,
+          "prediction_step_exists": false,
+          "native_pipeline_status": "NO_GEOMETRY",
+          "native_cd_status": null,
+          "native_iou_status": null,
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_54501_96041527_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_54501_96041527_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "cadr": {
+          "master_index": 32,
+          "sample_id": "f360_54501_96041527_0000",
+          "method": "cadr",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "CADR_NATIVE_CD_OK",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 0.19849327895832344,
+          "IoU": 0.9915640889695588,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_54501_96041527_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_54501_96041527_0000\\run_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "nn": {
+          "master_index": 32,
+          "sample_id": "f360_54501_96041527_0000",
+          "method": "nn",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 26.09449029621877,
+          "IoU": 0.38818492365897067,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_54501_96041527_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_54501_96041527_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        }
+      },
+      "mirage_gate": {
+        "sample_id": "f360_54501_96041527_0000",
+        "syntax_ok": true,
+        "exec_ok": false,
+        "build_ok": false,
+        "solid_valid": false,
+        "step_export_ok": false,
+        "error": "exec error: Part.wedge() got an unexpected keyword argument 'length'"
+      },
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\code\\mirage_used.py",
+      "archived_assets_record": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\archived_asset_paths.json",
+      "predicted_plan_excerpt": [
+        "F wedge_0005001 OP_WEDGE SEM primitive_stock ROLE primary_body PARAMS height=@height length=@length width=@width"
+      ],
+      "code_excerpt": [
+        {
+          "line_1based": 7,
+          "text": "wedge = part.wedge(name='wedge_stock_body', length=params['length'], width=params['width'], height=params['height'], semantic_type='primitive_stock')"
+        }
+      ],
+      "selection_bucket": "api_execution_failure",
+      "original_selection_rank": {
+        "sample_id": "f360_54501_96041527_0000",
+        "hash_priority": "03850099c9a39f60edb7d939b65a97cb43fcba38555785a36272b8a05e3d5c46",
+        "priority_rank": 1
+      },
+      "recommendation": "KEEP_IN_SIX_CASE_MAIN_DRAFT_AUTHOR_DECISION_PENDING",
+      "new_training_prediction_program_execution_scoring_rendering": false,
+      "source_hashes": {
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\code\\mirage_used.py": "6cf6cddadf03ef48cf3034ac5b3a18d43d4c38db83280001d78d8462cf23f699",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\case_record.json": "1693613e69a07b297712de2369e929e88722986aee7f4ca4424f9ad8d7878741",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\archived_asset_paths.json": "168fe2732ed840162e813c13a8688d695f5722cf36a43cd8297fa9ebf7efad6c",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\render_manifest.json": "752de8cfb52d9cd1cc3f0e083bf8f492e49fdd0e1d18583b8d62f131257d1bfa",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\metric_space_panel.png": "5c228e33e7a0f60d6101e7b28e152aa8ffecd36d8694a0d6481423e9d0238773",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M04_f360_54501_96041527_0000\\reference_world_panel.png": "cc564be31944c6e5901613ac38bbf6cbba5f4b3d2fd4452cfb0a6a05bdd8dd41"
+      }
+    },
+    {
+      "slot": "M05",
+      "sample_id": "f360_121262_f4a03dbc_0000",
+      "case_id": "M05_f360_121262_f4a03dbc_0000",
+      "label": "CIRCULAR_OUTLINE_AND_APERTURE_LAYOUT_NOT_REPRODUCED",
+      "label_zh": "圆盘轮廓及可见开口布局未复现，不能仅称缺孔",
+      "observations_zh": [
+        "Reference 是圆盘式部件；front 图有两个清晰的圆形通亮开口。MIRAGE 是带圆柱 boss 的块体，整体轮廓和开口布局都不同。",
+        "CAD-Recode 保留圆形外包络，但 front 图出现环状间隙和矩形开口，不能写成其精确复现了原圆孔。NN 是另一种圆端块体。",
+        "MIRAGE 原始 IoU=0 是可用的真实测量值，不是缺失指标或执行失败。"
+      ],
+      "supported_terms": [
+        "circular outline not reproduced",
+        "different visible aperture layout",
+        "global shape mismatch"
+      ],
+      "unsupported_terms": [
+        "MIRAGE only missed two holes",
+        "CAD-Recode exactly recovered the holes",
+        "wrong extrusion proved",
+        "IoU unavailable",
+        "execution failure"
+      ],
+      "caption_en": "CAD-Recode retains the circular envelope of the reference but differs in its visible openings. MIRAGE instead generates a bossed block with a different outline and aperture layout; its recorded IoU is zero. This is a global reconstruction mismatch, not an isolated missing-hole diagnosis.",
+      "selection_caution": "Selected at the median positive CAD-Recode-minus-MIRAGE IoU gap, not the largest gap. Preserve the measured zero rather than marking it unavailable.",
+      "semantic_scope": "View-level outline and aperture layout. Reference construction history and internal feature count are unavailable.",
+      "additional_view_evidence": [
+        "metric_space_reference_front.png",
+        "metric_space_cadr_front.png"
+      ],
+      "reviewer_type": "AI_ASSISTANT",
+      "review_status": "VISUAL_RECHECK_COMPLETE_AUTHOR_CONFIRMATION_PENDING",
+      "author_confirmed": false,
+      "author_confirmed_semantic_label": null,
+      "panels": {
+        "metric_space": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\metric_space_panel.png",
+        "reference_world": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\reference_world_panel.png"
+      },
+      "additional_inspected_views": [
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\metric_space_reference_front.png",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\metric_space_cadr_front.png"
+      ],
+      "native_metrics": {
+        "mirage": {
+          "master_index": 242,
+          "sample_id": "f360_121262_f4a03dbc_0000",
+          "method": "mirage",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 34.883661875874246,
+          "IoU": 0.0,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_121262_f4a03dbc_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_121262_f4a03dbc_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "cadr": {
+          "master_index": 242,
+          "sample_id": "f360_121262_f4a03dbc_0000",
+          "method": "cadr",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "CADR_NATIVE_CD_OK",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 1.0356490322704406,
+          "IoU": 0.7907791938176026,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_121262_f4a03dbc_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_121262_f4a03dbc_0000\\run_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "nn": {
+          "master_index": 242,
+          "sample_id": "f360_121262_f4a03dbc_0000",
+          "method": "nn",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 44.34060545918762,
+          "IoU": 0.16684112466759987,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_121262_f4a03dbc_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_121262_f4a03dbc_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        }
+      },
+      "mirage_gate": {
+        "sample_id": "f360_121262_f4a03dbc_0000",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\code\\mirage_used.py",
+      "archived_assets_record": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\archived_asset_paths.json",
+      "predicted_plan_excerpt": [
+        "F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width",
+        "F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius",
+        "F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE secondary_feature DEP cylinder_001 PARAMS count=4 depth=THROUGH positions=[[-@hole_offset_y,-@offset_y],[@hole_offset_y,-@offset_y],[-@hole_offset_y,@offset_y],[@hole_offset_y,@offset_y]] radius=@hole_radius",
+        "F pocket_001 OP_RECTANGULAR_POCKET SEM pocket ROLE secondary_feature DEP hole_001 PARAMS depth=2.6 length=@pocket_length width=@pocket_width",
+        "F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP pocket_001 PARAMS radius=@fillet_radius"
+      ],
+      "code_excerpt": [
+        {
+          "line_1based": 15,
+          "text": "plate = part.plate(name='base_plate', width=params['width'], height=params['height'], thickness=params['thickness'], semantic_type='base_plate')"
+        },
+        {
+          "line_1based": 16,
+          "text": "cylinder = part.cylinder(name='center_boss_seed', radius=params['boss_radius'], height=params['boss_height'], semantic_type='boss')"
+        },
+        {
+          "line_1based": 17,
+          "text": "moved = part.translate(name='place_center_boss', target=cylinder, offset=[0.0, 0.0, 10.5], semantic_type='placement')"
+        },
+        {
+          "line_1based": 18,
+          "text": "join = part.boolean_join(name='join_center_boss', target=plate, tool=moved, semantic_type='joined_boss')"
+        },
+        {
+          "line_1based": 19,
+          "text": "holes = part.hole_pattern(name='offset_mounting_holes', target=join.top_face(), radius=params['hole_radius'], depth='through', positions=[[-2.76, -1.8], [2.76, -1.8]], semantic_type='mounting_hole')"
+        },
+        {
+          "line_1based": 20,
+          "text": "pocket = part.rectangular_pocket(name='boss_recess', target=holes.top_face(), length=params['pocket_length'], width=params['pocket_width'], depth=2.6, semantic_type='pocket')"
+        }
+      ],
+      "selection_bucket": "cadr_advantage",
+      "original_selection_rank": {
+        "sample_id": "f360_121262_f4a03dbc_0000",
+        "value": 0.7907791938176026,
+        "midrank_percentile": 0.5,
+        "priority_rank": 1
+      },
+      "recommendation": "KEEP_IN_SIX_CASE_MAIN_DRAFT_AUTHOR_DECISION_PENDING",
+      "new_training_prediction_program_execution_scoring_rendering": false,
+      "source_hashes": {
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\code\\mirage_used.py": "6e1f74e3cbc1f51681a19cf336a180e623dab896ca94617107f3d17bcca92e9f",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\case_record.json": "2554bea7e31c2698d391d7a0c575172fb53373c884c550216a0d96a659fefaf9",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\archived_asset_paths.json": "b6e197938d66ce5c63dab570aa0f45d0550e3221842aa9404be1ee239b7a0bea",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\render_manifest.json": "e1ea3e18b77db3d6534b096585996f5ad1fb6e0163e303a68586455f19f6b129",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\metric_space_panel.png": "c6e2dccf9ebd32f10230b1ddb5e7d4e4895093b2dbea1ad32e0883f6f1e647ab",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\reference_world_panel.png": "ca18b1c66dca9262da5f2d4f604b1ebc34ba0185f8c9e1a8c9b6919db45d0e96",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\metric_space_reference_front.png": "cf51749ec80cca8be3c0729096199259cb9ef5a943bddb3f21925ad667f5623b",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M05_f360_121262_f4a03dbc_0000\\metric_space_cadr_front.png": "cf02ee5a3e4bb49ce0124cf9ac4be428437097619e96e712fdad84d295fc0dd4"
+      }
+    },
+    {
+      "slot": "M06",
+      "sample_id": "f360_55031_57f7bdba_0000",
+      "case_id": "M06_f360_55031_57f7bdba_0000",
+      "label": "STEPPED_SHAFT_PROFILE_REPLACED_BY_ELLIPSOID",
+      "label_zh": "阶梯轴/法兰轮廓被椭球体替代",
+      "observations_zh": [
+        "Reference 和 CAD-Recode 都有明显的同轴宽部与窄轴阶梯轮廓；MIRAGE 与 NN 在两视图中均为椭圆/椭球状体，没有复现可见的台阶轴轮廓。",
+        "MIRAGE 既有 plan 为 OP_ELLIPSOID，代码调用 part.ellipsoid()，支持将它描述为实际生成了椭球，而不是猜测 wrong extrusion。",
+        "MIRAGE 在本例的 CD 和 IoU 都优于 NN，但仍未恢复阶梯轴，并明显弱于 CAD-Recode。相对优势不等于任务准确。"
+      ],
+      "supported_terms": [
+        "stepped shaft profile not reproduced",
+        "ellipsoidal replacement",
+        "loss of visible multi-radius structure"
+      ],
+      "unsupported_terms": [
+        "accurate MIRAGE shaft reconstruction",
+        "wrong extrusion proved",
+        "only a small parameter error",
+        "missing hole"
+      ],
+      "caption_en": "The reference's stepped shaft-and-flange profile is closely retained by CAD-Recode. MIRAGE and NN instead produce ellipsoidal bodies without the visible stepped profile. MIRAGE improves both recorded geometry metrics over NN in this case, but this relative gain does not recover the target construction.",
+      "selection_caution": "Selected near q75 of the absolute MIRAGE/NN IoU gap with no direction constraint. This is a retrospective stratified example, not an estimate of how often MIRAGE beats retrieval.",
+      "semantic_scope": "Two-view stepped-profile loss; ellipsoid API independently present in the static prediction. No component-level causal claim.",
+      "additional_view_evidence": [],
+      "reviewer_type": "AI_ASSISTANT",
+      "review_status": "VISUAL_RECHECK_COMPLETE_AUTHOR_CONFIRMATION_PENDING",
+      "author_confirmed": false,
+      "author_confirmed_semantic_label": null,
+      "panels": {
+        "metric_space": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\metric_space_panel.png",
+        "reference_world": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\reference_world_panel.png"
+      },
+      "additional_inspected_views": [],
+      "native_metrics": {
+        "mirage": {
+          "master_index": 284,
+          "sample_id": "f360_55031_57f7bdba_0000",
+          "method": "mirage",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 35.962963713792206,
+          "IoU": 0.3655259587539846,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\mirage\\f360_55031_57f7bdba_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_genplan\\f360_55031_57f7bdba_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "cadr": {
+          "master_index": 284,
+          "sample_id": "f360_55031_57f7bdba_0000",
+          "method": "cadr",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "CADR_NATIVE_CD_OK",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 0.2594876540235575,
+          "IoU": 0.9933291254535719,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\cadr\\f360_55031_57f7bdba_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\cadrecode_runs\\f360_55031_57f7bdba_0000\\run_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        },
+        "nn": {
+          "master_index": 284,
+          "sample_id": "f360_55031_57f7bdba_0000",
+          "method": "nn",
+          "primary_outcome": "CD_SCOREABLE",
+          "verified_failure_class": null,
+          "reason_subtype": "NOT_APPLICABLE",
+          "reason_detail": null,
+          "classification_rule": "POST_EXPORT_NATIVE_STATUS:SUCCESS",
+          "reported_error": null,
+          "native_traceback": null,
+          "cd_scoreable": true,
+          "iou_scoreable": true,
+          "CD": 61.504872040273895,
+          "IoU": 0.20108039279061526,
+          "iou_outcome": "IOU_AVAILABLE",
+          "iou_failure_class": null,
+          "geometry_review_status": "NOT_VISUALLY_REVIEWED",
+          "verified_semantic_failure": null,
+          "selection_bucket": null,
+          "historical_export_ok": true,
+          "prediction_step_exists": true,
+          "native_pipeline_status": "SUCCESS",
+          "native_cd_status": "ok",
+          "native_iou_status": "ok",
+          "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\taxonomy\\evidence_v1\\nn\\f360_55031_57f7bdba_0000.json",
+          "native_manifest_path": "__DEV_ROOT__\\scratch\\mirage_runs\\point_nnir\\f360_55031_57f7bdba_0000\\score_manifest.json",
+          "input_sample_id_unchanged": true,
+          "classification_version": "native-log-taxonomy-v1"
+        }
+      },
+      "mirage_gate": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "syntax_ok": true,
+        "exec_ok": true,
+        "build_ok": true,
+        "solid_valid": true,
+        "step_export_ok": true,
+        "error": ""
+      },
+      "code_path": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\code\\mirage_used.py",
+      "archived_assets_record": "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\archived_asset_paths.json",
+      "predicted_plan_excerpt": [
+        "F ellipsoid_001 OP_ELLIPSOID SEM primitive_stock ROLE primary_body PARAMS radii=[radius_x,radius_y,radius_z]"
+      ],
+      "code_excerpt": [
+        {
+          "line_1based": 7,
+          "text": "ellipsoid = part.ellipsoid(name='ellipsoid_stock_body', radii=[params['radius_x'], params['radius_y'], params['radius_z']], semantic_type='primitive_stock')"
+        }
+      ],
+      "selection_bucket": "nn_contrast",
+      "original_selection_rank": {
+        "sample_id": "f360_55031_57f7bdba_0000",
+        "value": 0.16444556596336932,
+        "midrank_percentile": 0.751207729468599,
+        "priority_rank": 1
+      },
+      "recommendation": "KEEP_IN_SIX_CASE_MAIN_DRAFT_AUTHOR_DECISION_PENDING",
+      "new_training_prediction_program_execution_scoring_rendering": false,
+      "source_hashes": {
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\code\\mirage_used.py": "3c71409da452518f3b50f9a1bcc90e7b9d1f872ed383d241f28f51bec92e546e",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\case_record.json": "11a09ca18cad8f9dd8525c1b9c38e6a54a8dd81ebd090e8e689c08c147d9e42c",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\archived_asset_paths.json": "017684e00400f5f3f58ec0f5b22466e476b008e1f7efb2663b5f6b963cb85a8c",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\render_manifest.json": "320661145e31eeaa22cae7f8afed2ec0fff76ae86875ad41b1ebe8578bc6af2e",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\metric_space_panel.png": "91f466a2460b897e2590a489c1a21db2fbe1b760508ed4b7d06622c65e3e31e9",
+        "__EVIDENCE_SOURCE_ROOT__\\06_fusion360\\gallery_v1\\cases\\M06_f360_55031_57f7bdba_0000\\reference_world_panel.png": "23cf95c224531a2e97db6cac7bc6c274781e18958ce92a43103d872f5ed005ac"
+      }
+    }
+  ],
+  "author_signoff": null
+}

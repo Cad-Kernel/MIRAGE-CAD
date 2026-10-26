@@ -1,0 +1,55 @@
+{
+  "all_future_training_paths_absent": true,
+  "cache_entries_by_split_modality": {
+    "test/image": 2500,
+    "test/point": 2500,
+    "test/step": 2500,
+    "test/text": 2500,
+    "train/image": 15259,
+    "train/point": 15344,
+    "train/step": 25000,
+    "train/text": 15294,
+    "val/image": 200,
+    "val/point": 200,
+    "val/step": 2500,
+    "val/text": 200
+  },
+  "cache_output": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache",
+  "contract_tests": {
+    "count": 15,
+    "report": {
+      "bytes": 515,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/test_result_20261016T190456242957Z.json",
+      "sha256": "d3c5d3b5251941dd7b1f3e9ba83304eeea99c34133cce90a5f9704f316897ff9"
+    },
+    "status": "PASS"
+  },
+  "created_utc": "2026-10-16T19:05:22.364244+00:00",
+  "data_and_frozen_import_checkout": "__RUN_SOURCE_ROOT__",
+  "execution_hashes": {
+    "cag_exposure_policy.py": "7c8ba2081e837f2bcc808e55c3b49e0fdff4778cc883484220c798afcdcd92f4",
+    "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+    "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+  },
+  "exposure_manifests": "FROZEN_UNCHANGED",
+  "final_real_cache_preflight": "BLOCKED_SHARED_CACHE_NOT_BUILT",
+  "fingerprint": "905782583273b437e9e82d11882583d81167738baa4d988712c2263a2e643d73",
+  "full_cache_required_entries": 83997,
+  "gpu_training": "NOT_AUTHORIZED_NOT_STARTED",
+  "implementation_checkout": "__DEV_ROOT__/src/training_25k",
+  "next_operator_actions": [
+    "cache --device cuda: frozen inference only",
+    "preflight: real-cache CPU checks only"
+  ],
+  "real_cpu_encoding_smoke": {
+    "bytes": 2634,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/real_cpu_cache_smoke_v3.json",
+    "sha256": "e31c3eb39c20b542366062e1ac659418c02ef1f7664fdba523b697a43c7610dc"
+  },
+  "runtime_claim_boundary": "No CUDA training tested; cache smoke and adapter-only save are CPU checks, not training",
+  "scientific_protocol": "FROZEN_UNCHANGED",
+  "shared_cache": "NOT_BUILT",
+  "stage4b_roles": "FROZEN_UNCHANGED",
+  "training_command_released": false,
+  "training_implementation": "IMPLEMENTED_CPU_CONTRACTS_PASS"
+}

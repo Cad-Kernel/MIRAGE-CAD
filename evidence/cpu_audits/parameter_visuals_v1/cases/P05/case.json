@@ -1,0 +1,67 @@
+{
+  "case_id": "P05",
+  "bucket": "export_failure",
+  "sample_id": "flluma_0098828",
+  "historical_result": {
+    "kind": "result",
+    "sample_id": "flluma_0098828",
+    "param": "boss_radius",
+    "delta": 0.25,
+    "from": 10.14,
+    "to": 12.675,
+    "clamped_to_bound": false,
+    "outcome": "broke_at_step_export_ok",
+    "error": "STEP export error: OCCT build failed"
+  },
+  "historical_baseline": {
+    "kind": "row",
+    "sample_id": "flluma_0098828",
+    "modality": "step",
+    "coverage": {
+      "n_declared": 12,
+      "n_declared_referenced": 10,
+      "n_declared_unreferenced": 2,
+      "unreferenced_names": [
+        "hole_offset_x",
+        "hole_offset_y"
+      ],
+      "n_param_references": 10,
+      "n_inlined_literals": 12,
+      "parametric_coverage": 0.45454545454545453
+    },
+    "baseline": {
+      "syntax_ok": true,
+      "exec_ok": true,
+      "build_ok": true,
+      "solid_valid": true,
+      "step_export_ok": true,
+      "error": ""
+    }
+  },
+  "before_sha256": "ad8ccffbb5d4816f6ea009be823a244d6f729cfd0a1001b15329a4bf5260b5d1",
+  "after_sha256": "c5de0fef313fd9e61dec64d1a30010cc9f1f90c35278bac1793b6e72ebea3e90",
+  "declared_parameter": {
+    "value": 10.14,
+    "min": 3.0,
+    "max": 18.0
+  },
+  "params_reference_lines": [
+    17
+  ],
+  "direct_literal_argument_examples": [
+    {
+      "line": 15,
+      "argument": "seed",
+      "source": "20263515",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    },
+    {
+      "line": 18,
+      "argument": "offset",
+      "source": "[0.0, 0.0, 5.29]",
+      "classification": "direct_literal_argument_not_a_params_subscript"
+    }
+  ],
+  "author_semantic_review": "PENDING",
+  "historical_input_byte_binding": "Current original study subset matched by all IDs, coverage fields and 1608 declared value transformations; no retroactive checkpoint binding"
+}

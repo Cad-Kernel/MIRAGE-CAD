@@ -1,0 +1,12 @@
+PART flluma_0001001 CAT stepped_profile_mount UNITS mm SEED 20261516
+PARAM boss_height 13.1 MIN 3 MAX 24 EXPR thickness*0.91 SEM boss_height
+PARAM boss_radius 10.14 MIN 3 MAX 18 EXPR hole_radius*3.1 SEM boss_radius
+PARAM hole_radius 2.53 MIN 0.8 MAX 5.8 SEM hole_radius
+PARAM thickness 16 MIN 3 MAX 25 SEM thickness
+PARAM width 51.1 MIN 12 MAX 80 SEM overall_width
+F sketch_001 OP_SKETCH SEM extrude_profile ROLE profile_definition PARAMS points=[[-23.9,-25.5],[-5.47,-25.5],[-5.47,-9.12],[8.91,-9.12],[8.91,-25.5],[23.9,-25.5],[23.9,23.3],[10.18,23.3],[10.18,8.92],[-8.91,8.92],[-8.91,26.2],[-23.9,26.2]] profile_type=polygon SEM extrude_profile
+F extrude_001 OP_EXTRUDE SEM extruded_plate ROLE secondary_feature DEP sketch_001 TARGET sketch_001 PARAMS height=@thickness
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP extrude_001 TARGET extrude_001.top_face PARAMS count=2 depth=THROUGH positions=[[-15.5,-15.8],[16.5,13.1]] radius=@hole_radius
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_radius radius_unit=heights
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,11.1,10.1]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP hole_001,translate_001 TARGET hole_001,translate_001

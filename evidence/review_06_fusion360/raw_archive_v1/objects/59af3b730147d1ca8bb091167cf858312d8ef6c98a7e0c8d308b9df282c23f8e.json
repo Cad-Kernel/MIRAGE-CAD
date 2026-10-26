@@ -1,0 +1,12 @@
+{
+  "sample_id": "f360_31136_987852a4_0004",
+  "arm": "point_genplan",
+  "terminal": true,
+  "pipeline_status": "NO_GEOMETRY",
+  "reason": "this arm produced no STEP for this part: the process died building this candidate; recorded on resume and not retried, so the run advances",
+  "gt_verified": null,
+  "cd_status": null,
+  "iou_status": null,
+  "gates": null,
+  "gate_check": "published row was a kernel crash; nothing to compare"
+}

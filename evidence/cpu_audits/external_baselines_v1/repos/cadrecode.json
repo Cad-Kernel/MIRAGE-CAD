@@ -1,0 +1,33 @@
+{
+  "repo": "filapro/cad-recode",
+  "status": "METADATA_AND_PINNED_TEXT_CAPTURED",
+  "default_branch": "main",
+  "commit": "03e3262119b38939feaa44b8368ad8db99243d47",
+  "commit_date": "2025-11-16T14:34:14Z",
+  "api_license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "tree_truncated": false,
+  "tree_blob_count": 5,
+  "metric_inference_candidate_paths": [],
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/LICENSE.md",
+      "status": 200,
+      "sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+      "saved_path": "responses/cadrecode_file_00.body"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/filapro/cad-recode/03e3262119b38939feaa44b8368ad8db99243d47/README.md",
+      "status": 200,
+      "sha256": "f3da4d7994fe6090e8f5c82eaf29faea4afd984a8590fd9f5ade68fdc54b5c40",
+      "saved_path": "responses/cadrecode_file_01.body"
+    }
+  ]
+}

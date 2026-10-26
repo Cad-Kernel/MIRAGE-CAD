@@ -1,0 +1,108 @@
+{
+  "python_version": "3.11.11 (main, Jan 11 2026, 14:22:57) [MSC v.1950 64 bit (AMD64)]",
+  "reference_step": "__FLLUMA_ROOT__One\\FllumaOne-100K\\shard_0093\\flluma_0093014\\model.step",
+  "source_sha256": "dba162cf298571bd981bec02039da6a9b87ac0793a0f1ab2f04758aac8512bd6",
+  "model_inference_or_training": false,
+  "predicted_code_execution": false,
+  "flluma_module_path": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\__init__.py",
+  "api_module_path": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\__init__.py",
+  "evaluation_module_path": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\evaluation.py",
+  "status": "REFERENCE_STEP_NATIVE_MESH_UNAVAILABLE",
+  "error": "EvaluationError: CustomModel: Custom node has no geometry data Node diagnostics: - Custom(name=CustomModel, id=1): failed (node_count=0)",
+  "traceback": "Traceback (most recent call last):\n  File \"__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\render_support\\probe_native_mesh.py\", line 29, in main\n    mesh=evaluation.evaluate(node)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\evaluation.py\", line 175, in evaluate\n    _raise_evaluation_error(error, node)\n  File \"__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\evaluation.py\", line 159, in _raise_evaluation_error\n    raise EvaluationError(message)\nflluma.core.exceptions.EvaluationError: CustomModel: Custom node has no geometry data Node diagnostics: - Custom(name=CustomModel, id=1): failed (node_count=0)\n",
+  "occt_file_shape_info": {
+    "success": true,
+    "shape_type": "SOLID",
+    "brep_valid": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 86,
+    "wire_count": 90,
+    "edge_count": 226,
+    "vertex_count": 138,
+    "bbox": {
+      "min": [
+        -27.45000076293,
+        -27.89999971853,
+        -4.000000218894978
+      ],
+      "max": [
+        27.450000762939002,
+        27.89999971853,
+        14.040000180747978
+      ],
+      "size": [
+        54.900001525869,
+        55.79999943706,
+        18.040000399642956
+      ]
+    },
+    "surface_area": 18624.186684094755,
+    "volume": 33457.17777735164
+  },
+  "occt_file_brep_features": {
+    "success": true,
+    "shape_type": "SOLID",
+    "brep_valid": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 86,
+    "wire_count": 90,
+    "edge_count": 226,
+    "vertex_count": 138,
+    "bbox": {
+      "min": [
+        -27.45000076293,
+        -27.89999971853,
+        -4.000000218894978
+      ],
+      "max": [
+        27.450000762939002,
+        27.89999971853,
+        14.040000180747978
+      ],
+      "size": [
+        54.900001525869,
+        55.79999943706,
+        18.040000399642956
+      ]
+    },
+    "surface_area": 18624.186684094755,
+    "volume": 33457.17777735164,
+    "brep_feature_version": 1,
+    "brep_topology": {
+      "surface_type_counts": {
+        "cylinder": 4,
+        "plane": 82
+      },
+      "curve_type_counts": {
+        "bspline_curve": 8,
+        "circle": 16,
+        "line": 202
+      },
+      "edge_face_valence_counts": {
+        "2": 226
+      },
+      "face_area_stats": {
+        "count": 86,
+        "min": 0.36799965572319293,
+        "max": 3040.177283680812,
+        "mean": 216.56031028017156,
+        "sum": 18624.186684094755
+      },
+      "edge_length_stats": {
+        "count": 226,
+        "min": 0.02000051736800401,
+        "max": 55.79999923706,
+        "mean": 13.705285210608922,
+        "sum": 3097.3944575976166
+      },
+      "face_wire_incidence_count": 90,
+      "face_edge_incidence_count": 452,
+      "face_edge_adjacency_count": 452,
+      "boundary_edge_count": 0,
+      "manifold_edge_count": 226,
+      "non_manifold_edge_count": 0
+    }
+  }
+}

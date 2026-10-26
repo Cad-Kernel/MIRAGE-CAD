@@ -1,0 +1,13 @@
+{
+  "case_id": "q-flone-text-b2legacy-flluma_0090079",
+  "sample_id": "flluma_0090079",
+  "modality": "text",
+  "historical_scoreable": false,
+  "case_snapshot_sha256": "064d4c8629525fcd5fbd12c13b550fdf159d90d2b2d2dbc25ec67447805b6876",
+  "code_path": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\code\\prediction.py",
+  "code_sha256": "a1f7312a806eaa39aa1ef308f5a4076207c2f1b19a7f8dbe8e3719ebc7d7f1f4",
+  "reference_step_path": "__FLLUMA_ROOT__One\\FllumaOne-100K\\shard_0090\\flluma_0090079\\model.step",
+  "reference_step_sha256": "3dba9448277a34b292778a339e1e7513e46b50222c15650920095341f66e618e",
+  "output_dir": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\rendering\\cpu_v1\\cases\\q-flone-text-b2legacy-flluma_0090079",
+  "failure_evidence": "__EVIDENCE_SOURCE_ROOT__\\05_qualitative\\cases\\q-flone-text-b2legacy-flluma_0090079\\logs\\native_failure_messages.json"
+}

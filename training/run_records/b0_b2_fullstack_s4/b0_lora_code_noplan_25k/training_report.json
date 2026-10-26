@@ -1,0 +1,9 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B",
+  "target": "program",
+  "seed": 4,
+  "train_rows": 25000,
+  "val_rows": 2500,
+  "max_length": 2048,
+  "output_dir": "outputs/b0_b2_fullstack_s4/b0_lora_code_noplan_25k"
+}

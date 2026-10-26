@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>q-flone-step-b2legacy-flluma_0090147</title><style>body{font:16px Arial,sans-serif;color:#202a32;margin:0 auto;padding:28px;max-width:1400px;background:#fff}h1{font-size:26px}h2{font-size:21px}h3{font-size:17px}a{color:#086b6a}nav{display:flex;gap:16px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #ccc}p{line-height:1.5}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:left;border-bottom:1px solid #ddd;overflow-wrap:anywhere}th{background:#eef1f3}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;background:#f7f8fa;padding:16px;border:1px solid #d9dfe2;font-size:13px}img.panel{width:100%;height:auto}img.input{max-width:640px;width:100%;height:auto}.warn{border-left:4px solid #a66b00;padding:8px 16px;background:#fff7e7}.views{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.views img{width:100%}details{margin:20px 0}summary{cursor:pointer;font-weight:bold}code{overflow-wrap:anywhere}@media(max-width:700px){body{padding:12px}.views{grid-template-columns:1fr}table{font-size:12px}td,th{padding:6px}}</style><body><nav><a href="../../index.html">All cases</a></nav><h1>STEP flluma_0090147</h1><p>hard_failure; L2; historical deployed repaired B2. Candidate status is unchanged.</p><p>Dominant first-failure stage and exact native error; median reference feature count; sample-ID tie break</p><p class="warn">These are new CPU exports of locked historical code, not newly generated model predictions or recovered original temporary STEP files. Executable does not mean semantically accurate. Historical seed/checkpoint-byte binding remains unresolved.</p><img class="panel" src="panel.png" alt="Matched-camera two-view reference and prediction comparison"><h2>Inputs and Original Evidence</h2><nav><a href="../../../../raw_archive_v1/objects/5eb73008b32bc67ec5507c6950b128b3ffa33f192fc5e92e106e803cc59404f5.step">Reference STEP</a><a href="../../../../raw_archive_v1/objects/d5e15f0f6effd8f48da164ca1eac148333f8df87bf2d0ce819e1eed81f47659e.npz">Reference point NPZ</a><a href="../../../../raw_archive_v1/objects/a79a075872e32d59f50b264bea3cca732fbce467b43f73767f3964117cb5ba61.json">Reference feature tree</a><a href="../../../../raw_archive_v1/objects/63f7d00e50b1074bfd13a6f10254733f6eea4fe670aeb1ef3487ed410ca58d99.json">STEP descriptor</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/plans/raw.txt">Raw plan</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/plans/canonicalized.txt">P1a plan</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/code/raw_prediction.py">Raw code</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/code/prediction.py">Executed repaired code</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/logs/gate_row.json">Historical gate row</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/logs/geometry_row.json">Historical geometry row</a></nav><p>Input asset: <a href="../../../../raw_archive_v1/objects/63f7d00e50b1074bfd13a6f10254733f6eea4fe670aeb1ef3487ed410ca58d99.json">Kernel-derived50-global-statistic descriptor JSON; not a face/edge B-Rep graph</a>. CAD renders above show geometry, not a fabricated point-cloud or descriptor input.</p><details><summary>Dataset Text (not this modality input)</summary><pre>A represented as a procedural feature tree, approximately 85.5 by 54.8 by 10.5 mm.
+Create a face feature service cover with an 85.5 by 54.8 mm base and 10.5 mm overall height, including 4 mounting holes and rounded edges.</pre></details><details open><summary>Generated Plan (P1a canonicalized)</summary><pre>PART flluma_0005001 CAT face_feature_service_cover UNITS mm SEED 20265515
+PARAM boss_height 15.14 MIN 6 MAX 28 EXPR height*0.276 SEM boss_height
+PARAM boss_lift 2.5 MIN 1.5 MAX 8 SEM boss_height
+PARAM boss_width 25.1 MIN 8 MAX 44 EXPR width*0.298 SEM boss_width
+PARAM cut_depth 1.1 MIN 0.5 MAX 6 SEM pocket_depth
+PARAM fillet_radius 0.26 MIN 0.05 MAX 0.8 SEM fillet_radius
+PARAM height 54.8 MIN 12 MAX 80 SEM overall_height
+PARAM hole_offset_y 17.45 MIN 4 MAX 48 EXPR height*0.32 SEM hole_spacing
+PARAM hole_radius 1.34 MIN 1 MAX 8 SEM hole_radius
+PARAM slot_height 4.1 MIN 2 MAX 18 EXPR boss_height*0.272 SEM pocket_width
+PARAM slot_width 10.14 MIN 4 MAX 28 EXPR boss_width*0.401 SEM pocket_width
+PARAM thickness 7 MIN 3 MAX 25 SEM thickness
+PARAM width 85.5 MIN 20 MAX 120 SEM overall_width
+F plate_001 OP_PLATE SEM base_plate ROLE primary_body PARAMS height=@height thickness=@thickness width=@width
+F face_sketch_001 OP_SKETCH_ON_FACE SEM pocket_profile ROLE profile_definition DEP plate_001 TARGET plate_001.top_face PARAMS center=[0,0] centered=1 height=@slot_height profile_type=rectangle width=@slot_width workplane={feature_id:plate_001,selector:top_face,source:target}
+F profile_cut_001 OP_PROFILE_CUT SEM face_sketch ROLE secondary_feature DEP plate_001,face_sketch_001 TARGET face_sketch_001,plate_001.top_face PARAMS depth=@cut_depth workplane={feature_id:plate_001,selector:top_face,source:target}
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP profile_cut_001 TARGET profile_cut_001.top_outer_edges PARAMS count=4 depth=THROUGH positions=[[-24.03,-8.7],[24.03,-8.7],[-24.03,8.7],[24.03,8.7]] radius=@hole_radius
+F cylinder_001 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=@boss_height radius=@boss_width
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 TARGET cylinder_001.top_face PARAMS offset=[0,0,6.47]
+F join_001 OP_BOOLEAN_JOIN SEM joined_boss ROLE secondary_feature DEP hole_001,translate_001 TARGET hole_001,translate_001
+F hole_002 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP join_001 TARGET join_001.top_outer_edges PARAMS count=4 depth=THROUGH positions=[[0,0],[-25.59,-6.09],[25.59,-6.09],[-25.59,6.09],[25.59,6.09]] radius=@hole_radius
+F fillet_001 OP_FILLET SEM edge_break ROLE finishing_feature DEP hole_002 TARGET hole_002.top_outer_edges PARAMS radius=@fillet_radius
+END</pre></details><details open><summary>Code Excerpt (literal first 40 lines, not a semantic summary)</summary><pre># Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add(&#x27;boss_height&#x27;, 15.14, min=6.0, max=28.0, expression=&#x27;height * 0.276&#x27;, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_lift&#x27;, 2.5, min=1.5, max=8.0, semantic_type=&#x27;boss_height&#x27;)
+params.add(&#x27;boss_width&#x27;, 25.1, min=8.0, max=44.0, expression=&#x27;width * 0.298&#x27;, semantic_type=&#x27;boss_width&#x27;)
+params.add(&#x27;cut_depth&#x27;, 1.1, min=0.5, max=6.0, semantic_type=&#x27;pocket_depth&#x27;)
+params.add(&#x27;fillet_radius&#x27;, 0.26, min=0.05, max=0.8, semantic_type=&#x27;fillet_radius&#x27;)
+params.add(&#x27;height&#x27;, 54.8, min=12, max=80, semantic_type=&#x27;overall_height&#x27;)
+params.add(&#x27;hole_offset_y&#x27;, 17.45, min=4.0, max=48.0, expression=&#x27;height * 0.32&#x27;, semantic_type=&#x27;hole_spacing&#x27;)
+params.add(&#x27;hole_radius&#x27;, 1.64, min=1, max=8, semantic_type=&#x27;hole_radius&#x27;)
+params.add(&#x27;slot_height&#x27;, 4.1, min=2.0, max=18.0, expression=&#x27;boss_height * 0.272&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;slot_width&#x27;, 10.14, min=4.0, max=28.0, expression=&#x27;boss_width * 0.401&#x27;, semantic_type=&#x27;pocket_width&#x27;)
+params.add(&#x27;thickness&#x27;, 7, min=3, max=25, semantic_type=&#x27;thickness&#x27;)
+params.add(&#x27;width&#x27;, 85.5, min=20, max=120, semantic_type=&#x27;overall_width&#x27;)
+
+part = Part(&#x27;flluma_0005001&#x27;, category=&#x27;face_feature_service_cover&#x27;, parameters=params, seed=20265515, sample_id=&#x27;flluma_0005001&#x27;, units=&#x27;mm&#x27;)
+plate = part.plate(name=&#x27;service_cover_plate&#x27;, width=params[&#x27;width&#x27;], height=params[&#x27;height&#x27;], thickness=params[&#x27;thickness&#x27;], semantic_type=&#x27;base_plate&#x27;)
+boss_profile = part.sketch_on_face(name=&#x27;service_cover_boss_profile&#x27;, target=plate.top_face(), profile=&#x27;rectangle&#x27;, width=params[&#x27;boss_width&#x27;], height=params[&#x27;boss_height&#x27;], semantic_type=&#x27;boss_profile&#x27;)
+face_add = part.extrude_on_face(name=&#x27;face_service_cover_boss&#x27;, target=plate.top_face(), sketch=boss_profile, operation=&#x27;join&#x27;, semantic_type=&#x27;face_boss&#x27;)
+pocket_profile = part.sketch_on_face(name=&#x27;service_cover_window_profile&#x27;, target=face_add.top_face(), profile=&#x27;rectangle&#x27;, width=params[&#x27;slot_width&#x27;], height=params[&#x27;slot_height&#x27;], semantic_type=&#x27;pocket_profile&#x27;)
+face_cut = part.extrude_on_face(name=&#x27;service_cover_window_cut&#x27;, target=face_add.top_face(), sketch=pocket_profile, operation=&#x27;cut&#x27;, semantic_type=&#x27;face_cut&#x27;)
+holes = part.hole_pattern(name=&#x27;service_cover_holes&#x27;, target=face_cut.top_face(), radius=params[&#x27;hole_radius&#x27;], depth=&#x27;through&#x27;, positions=[[-24.03, -8.7], [24.03, -8.7], [-24.03, 8.7], [24.03, 8.7]], semantic_type=&#x27;mounting_hole&#x27;)
+fillet = part.fillet(name=&#x27;service_cover_edge_break&#x27;, target=holes.top_outer_edges(), radius=params[&#x27;fillet_radius&#x27;], semantic_type=&#x27;edge_break&#x27;)
+
+__all__ = [&#x27;part&#x27;]
+</pre></details><h2>Original Failure Evidence</h2><pre>{
+  &quot;sample_id&quot;: &quot;flluma_0090147&quot;,
+  &quot;modality&quot;: &quot;step&quot;,
+  &quot;gate_error&quot;: &quot;exec error: extrude_on_face join/add requires height&quot;,
+  &quot;geometry_error&quot;: &quot;exec error: extrude_on_face join/add requires height&quot;,
+  &quot;note&quot;: &quot;Original native error summaries, not an invented full traceback or visual feature diagnosis&quot;
+}
+</pre><h2>Provenance</h2><nav><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/case.json">Locked case record</a><a href="../../../../cases/q-flone-step-b2legacy-flluma_0090147/provenance.json">Original source hashes</a><a href="render_manifest.json">New camera/pixel/hash manifest</a></nav></body></html>

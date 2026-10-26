@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0.0",
+  "sample_id": "flluma_0090079",
+  "part_name": "flluma_0090079",
+  "category": "revolved_hub_mount",
+  "seed": 20350593,
+  "units": "mm",
+  "parameters": {
+    "bolt_circle_radius": {
+      "value": 12.66,
+      "min": 6.0,
+      "max": 34.0,
+      "expression": "flange_radius * 0.68",
+      "semantic_type": "hole_spacing"
+    },
+    "chamfer_distance": {
+      "value": 0.14,
+      "min": 0.1,
+      "max": 1.0,
+      "semantic_type": "chamfer_distance"
+    },
+    "flange_radius": {
+      "value": 18.62,
+      "min": 12.0,
+      "max": 44.0,
+      "expression": "outer_radius * 2.15",
+      "semantic_type": "primitive_radius"
+    },
+    "flange_thickness": {
+      "value": 5.2,
+      "min": 2.0,
+      "max": 8.0,
+      "semantic_type": "thickness"
+    },
+    "hole_radius": {
+      "value": 0.94,
+      "min": 0.5,
+      "max": 4.0,
+      "semantic_type": "hole_radius"
+    },
+    "hub_height": {
+      "value": 9.6,
+      "min": 6.0,
+      "max": 24.0,
+      "semantic_type": "profile_height"
+    },
+    "inner_radius": {
+      "value": 3.88,
+      "min": 2.0,
+      "max": 12.0,
+      "semantic_type": "inner_radius"
+    },
+    "outer_radius": {
+      "value": 8.66,
+      "min": 5.0,
+      "max": 18.0,
+      "expression": "inner_radius + 4.78",
+      "semantic_type": "outer_radius"
+    }
+  },
+  "features": [
+    {
+      "id": "sketch_001",
+      "name": "hub_revolve_profile",
+      "type": "SketchFeature",
+      "category": "sketch",
+      "semantic_type": "revolve_profile",
+      "parameters": {
+        "profile_type": "polygon",
+        "points": [
+          [
+            {
+              "parameter": "inner_radius",
+              "value": 3.88
+            },
+            -4.8
+          ],
+          [
+            {
+              "parameter": "outer_radius",
+              "value": 8.66
+            },
+            -4.8
+          ],
+          [
+            {
+              "parameter": "outer_radius",
+              "value": 8.66
+            },
+            4.8
+          ],
+          [
+            {
+              "parameter": "inner_radius",
+              "value": 3.88
+            },
+            4.8
+          ]
+        ],
+        "closed": true
+      },
+      "rebuild_order": 1
+    },
+    {
+      "id": "revolve_001",
+      "name": "revolved_hub_body",
+      "type": "Revolve",
+      "category": "additive",
+      "semantic_type": "revolved_solid",
+      "parameters": {
+        "angle_degrees": 360.0,
+        "axis_origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_direction": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "dependencies": [
+        "sketch_001"
+      ],
+      "topology_references": {
+        "profile": {
+          "feature_id": "sketch_001"
+        }
+      },
+      "rebuild_order": 2
+    },
+    {
+      "id": "cylinder_001",
+      "name": "hub_mount_flange_seed",
+      "type": "Cylinder",
+      "category": "additive",
+      "semantic_type": "flange",
+      "parameters": {
+        "radius": {
+          "parameter": "flange_radius",
+          "value": 18.62
+        },
+        "height": {
+          "parameter": "flange_thickness",
+          "value": 5.2
+        },
+        "segments": 96,
+        "centered": true
+      },
+      "rebuild_order": 3
+    },
+    {
+      "id": "join_001",
+      "name": "join_hub_to_flange",
+      "type": "BooleanJoin",
+      "category": "additive",
+      "semantic_type": "joined_boss",
+      "parameters": {},
+      "dependencies": [
+        "cylinder_001",
+        "revolve_001"
+      ],
+      "topology_references": {
+        "target": {
+          "feature_id": "cylinder_001"
+        },
+        "tool": {
+          "feature_id": "revolve_001"
+        }
+      },
+      "rebuild_order": 4
+    },
+    {
+      "id": "hole_001",
+      "name": "hub_flange_bolt_holes",
+      "type": "HolePattern",
+      "category": "subtractive",
+      "semantic_type": "bolt_hole_pattern",
+      "parameters": {
+        "depth": "through",
+        "resolved_depth": 1000000.0,
+        "count": 4,
+        "positions": [
+          [
+            12.66,
+            0.0
+          ],
+          [
+            0.0,
+            12.66
+          ],
+          [
+            -12.66,
+            0.0
+          ],
+          [
+            0.0,
+            -12.66
+          ]
+        ],
+        "segments": 96,
+        "radius": {
+          "parameter": "hole_radius",
+          "value": 0.94
+        }
+      },
+      "dependencies": [
+        "join_001"
+      ],
+      "topology_references": {
+        "target_face": {
+          "feature_id": "join_001",
+          "kind": "face",
+          "selector": "top_face",
+          "query": ">Z |Z",
+          "reference_id": "join_001:top_face:b9ce48e7f7b9"
+        }
+      },
+      "rebuild_order": 5
+    },
+    {
+      "id": "chamfer_001",
+      "name": "hub_mount_edge_chamfer",
+      "type": "Chamfer",
+      "category": "modification",
+      "semantic_type": "outer_chamfer",
+      "parameters": {
+        "distance": {
+          "parameter": "chamfer_distance",
+          "value": 0.14
+        }
+      },
+      "dependencies": [
+        "hole_001"
+      ],
+      "topology_references": {
+        "target_edges": {
+          "feature_id": "hole_001",
+          "kind": "edge_set",
+          "selector": "top_outer_edges",
+          "query": "outer top",
+          "reference_id": "hole_001:top_outer_edges:65ada682b55b"
+        }
+      },
+      "rebuild_order": 6
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ARCHIVE_SELECTION_SHARED_CAMERAS_TRANSFORMS_PIXELS_AND_CSV",
+  "created_utc": "2026-10-22T19:22:28.207848+00:00",
+  "selected_unique_cases": 18,
+  "main": 6,
+  "appendix": 12,
+  "meshes": 64,
+  "geometry_views": 256,
+  "historical_placeholder_views": 32,
+  "subpixel_views_explicit": 6,
+  "all_shared_cameras_equal": true,
+  "all_transforms_reversible": true,
+  "raw_mesh_geometry_preserved": true,
+  "source_paths_preserved": 6834,
+  "archive_objects_rehashed": 5039,
+  "archive_bytes": 170729801,
+  "prior_seals_unchanged": {
+    "step1": 20,
+    "step2": 1218
+  },
+  "case_csv_rows": 18,
+  "asset_csv_rows": 72,
+  "local_html_links_verified": 126,
+  "contract_tests": 14,
+  "historical_metrics_unchanged": true,
+  "author_semantic_confirmation": "PENDING",
+  "training_new_predictions_program_execution_or_metric_scoring": false
+}

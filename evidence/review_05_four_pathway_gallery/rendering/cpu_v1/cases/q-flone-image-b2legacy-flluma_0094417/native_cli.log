@@ -1,0 +1,33 @@
+
+============================================================
+  Flluma CLI
+  Hybrid CAD / Modeling Batch Runner
+============================================================
+  Version:        1.0.0
+  C++ Standard:   C++20
+  Python:         enabled
+  OpenCASCADE:    enabled
+  glTF Export:    enabled
+============================================================
+
+[1/4] Initializing embedded Python...
+      Python runtime: 3.11.11 (main, Jan 11 2026, 14:22:57) [MSC v.1950 64 bit (AMD64)]
+[2/4] Loading script:
+      __EVIDENCE_SOURCE_ROOT__\05_qualitative\render_support\export_native_one.py
+[3/4] Executing CAD script...
+
+
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : __EVIDENCE_SOURCE_ROOT__\05_qualitative\rendering\cpu_v1\cases\q-flone-image-b2legacy-flluma_0094417\prediction.step(11271 ents)  Write  Done
+
+[4/4] Finalizing...
+
+============================================================
+  Done. Script executed successfully.
+============================================================

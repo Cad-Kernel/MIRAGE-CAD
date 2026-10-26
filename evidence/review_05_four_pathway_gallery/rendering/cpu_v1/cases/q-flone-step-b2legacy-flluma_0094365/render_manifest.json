@@ -1,0 +1,252 @@
+{
+  "case_id": "q-flone-step-b2legacy-flluma_0094365",
+  "created_utc": "2026-10-22T17:48:38.797964+00:00",
+  "status": "RENDERED_CANDIDATE_NOT_FINAL_SELECTION",
+  "renders": [
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-step-b2legacy-flluma_0094365/reference_iso_pos.png",
+        "bytes": 10853,
+        "sha256": "d89ff881451cc9d10f4974e15caee734aaa5320dc9e509a500efc307a68c1aab"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          4.4995118742008344e-12,
+          0.0,
+          6.110000134174122
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -3.1687384804968133e-07
+        ],
+        "span_mm": 77.21606104504326,
+        "pixels_per_mm": 6.796513483041602,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 138423,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 440,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        110,
+        582,
+        530
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-step-b2legacy-flluma_0094365/prediction_iso_pos.png",
+        "bytes": 9846,
+        "sha256": "0bad7f502f556b3b5fc9700894c9f653567c39227bd6425f900167433b3d4f0b"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_pos",
+          "azimuth": 45.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          4.4995118742008344e-12,
+          0.0,
+          6.110000134174122
+        ],
+        "basis": [
+          [
+            -0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.7071067811865476,
+            -0.408248290463863,
+            0.5773502691896258
+          ],
+          [
+            0.0,
+            0.8164965809277261,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -3.1687384804968133e-07
+        ],
+        "span_mm": 77.21606104504326,
+        "pixels_per_mm": 6.796513483041602,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 136046,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 236,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        106,
+        583,
+        528
+      ],
+      "blank": false,
+      "kind": "prediction"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-step-b2legacy-flluma_0094365/reference_iso_neg.png",
+        "bytes": 10727,
+        "sha256": "dde2048980370ebe528ae63b7bca24577ea26524a8fb8d5ddc196147321dfb8a"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          4.4995118742008344e-12,
+          0.0,
+          6.110000134174122
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -0.0020412157107312368
+        ],
+        "span_mm": 77.21606104504326,
+        "pixels_per_mm": 6.796513483041602,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 138395,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 440,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        58,
+        110,
+        582,
+        530
+      ],
+      "blank": false,
+      "kind": "reference"
+    },
+    {
+      "image": {
+        "path": "rendering/cpu_v1/cases/q-flone-step-b2legacy-flluma_0094365/prediction_iso_neg.png",
+        "bytes": 9335,
+        "sha256": "da91f101a64294841df1bbc4a7f4ad0ddc1e1408ff6ebd64a0f4a427d0138dda"
+      },
+      "camera": {
+        "frame": "reference_frame",
+        "view": {
+          "name": "iso_neg",
+          "azimuth": 225.0,
+          "elevation": 35.264389682754654
+        },
+        "center": [
+          4.4995118742008344e-12,
+          0.0,
+          6.110000134174122
+        ],
+        "basis": [
+          [
+            0.7071067811865475,
+            0.408248290463863,
+            -0.5773502691896258
+          ],
+          [
+            -0.7071067811865476,
+            0.40824829046386296,
+            -0.5773502691896257
+          ],
+          [
+            0.0,
+            0.816496580927726,
+            0.5773502691896257
+          ]
+        ],
+        "projected_midpoint": [
+          0.0,
+          -0.0020412157107312368
+        ],
+        "span_mm": 77.21606104504326,
+        "pixels_per_mm": 6.796513483041602,
+        "size": 640
+      },
+      "width": 640,
+      "height": 640,
+      "foreground_pixels": 125751,
+      "out_of_frame_vertices": 0,
+      "mesh_vertex_count": 236,
+      "border_foreground_pixels": 0,
+      "foreground_bbox_px": [
+        57,
+        126,
+        582,
+        528
+      ],
+      "blank": false,
+      "kind": "prediction"
+    }
+  ],
+  "historical_scoreable": true,
+  "supplemental_union_frame": false,
+  "protocol_sha256": "e31082441244ea5dca021a66e8a054f2bafbea21730e83d9dda3f0d0a4733250",
+  "adapter_sha256": "d2e72fc361a364ea7c5f9f9a53d35ac4a034893a9b8d2531d82e0b1ad2f067e8",
+  "rasterizer_path": "__FLLUMA_ROOT__\\build\\Desktop_Qt_6_8_3_MSVC2022_64bit-Release\\bin\\python\\flluma\\api\\image_export.py",
+  "rasterizer_sha256": "2a61e3597b53a06fa48c2698274e68f99287cff45c172cb22fbaf7f45cfb6099",
+  "failure_evidence_path": null,
+  "metrics": "unchanged historical values in locked case.json",
+  "panel": {
+    "path": "rendering/cpu_v1/cases/q-flone-step-b2legacy-flluma_0094365/panel.png",
+    "bytes": 74723,
+    "sha256": "ab67ef828ed51e8a26fe11bc6cc6712cdd728cb8c0fc6410cb6e1c7e0bbee2b1"
+  }
+}

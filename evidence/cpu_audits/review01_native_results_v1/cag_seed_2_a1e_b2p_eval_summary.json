@@ -1,0 +1,94 @@
+{
+  "purpose": "CAG frozen A1E/B2P seed evaluation summary",
+  "created_utc": "2026-09-27T07:34:16.511533+00:00",
+  "seed": 2,
+  "expected_rows": 500,
+  "arms": {
+    "A1E": {
+      "execution": {
+        "path": "__DEV_ROOT__\\scratch\\exec_e1_step_A1E_s2\\execution_rows.jsonl",
+        "sha256": "fd70e9f48bca73c64a03361a260afe1e911eddb546708648375c945f163a0cc7",
+        "n": 500,
+        "syntax_ok": 475,
+        "syntax_ok_pct": 95.0,
+        "exec_ok": 377,
+        "exec_ok_pct": 75.4,
+        "build_ok": 377,
+        "build_ok_pct": 75.4,
+        "solid_valid": 377,
+        "solid_valid_pct": 75.4,
+        "step_export_ok": 374,
+        "step_export_ok_pct": 74.8
+      },
+      "geometry": {
+        "path": "__DEV_ROOT__\\scratch\\geom_e1_step_A1E_s2\\geometry_nbest_rows.jsonl",
+        "sha256": "3496ee7433737f390fcf239a8ecfe1695928da6ddf0baa70da23a79b7b810aea",
+        "n": 500,
+        "syntax_ok": 475,
+        "exec_ok": 377,
+        "build_ok": 377,
+        "solid_valid": 377,
+        "step_export_ok": 374,
+        "pointcloud_scored": 370,
+        "syntax_ok_pct": 95.0,
+        "exec_ok_pct": 75.4,
+        "build_ok_pct": 75.4,
+        "solid_valid_pct": 75.4,
+        "step_export_ok_pct": 74.8,
+        "pointcloud_scored_pct": 74.0,
+        "median_cd": 2.4357895106664724,
+        "median_f1": 0.20165424485472155,
+        "unconditional_f1_mean": 0.1523086280644732,
+        "unconditional_f1_median": 0.16449137611275966
+      }
+    },
+    "B2P": {
+      "execution": {
+        "path": "__DEV_ROOT__\\scratch\\exec_e1_step_B2P_s2\\execution_rows.jsonl",
+        "sha256": "550a89ad911cc56423b6c30c46ca84a1cd826c768ae3bb4d87ed111d519f1b06",
+        "n": 500,
+        "syntax_ok": 480,
+        "syntax_ok_pct": 96.0,
+        "exec_ok": 469,
+        "exec_ok_pct": 93.8,
+        "build_ok": 469,
+        "build_ok_pct": 93.8,
+        "solid_valid": 469,
+        "solid_valid_pct": 93.8,
+        "step_export_ok": 465,
+        "step_export_ok_pct": 93.0
+      },
+      "geometry": {
+        "path": "__DEV_ROOT__\\scratch\\geom_e1_step_B2P_s2\\geometry_nbest_rows.jsonl",
+        "sha256": "8b027f23f320707ca7814f744c6ce632f830b666055d796b7442726ad92e3e79",
+        "n": 500,
+        "syntax_ok": 480,
+        "exec_ok": 469,
+        "build_ok": 469,
+        "solid_valid": 469,
+        "step_export_ok": 465,
+        "pointcloud_scored": 462,
+        "syntax_ok_pct": 96.0,
+        "exec_ok_pct": 93.8,
+        "build_ok_pct": 93.8,
+        "solid_valid_pct": 93.8,
+        "step_export_ok_pct": 93.0,
+        "pointcloud_scored_pct": 92.4,
+        "median_cd": 2.281077669530475,
+        "median_f1": 0.19895963654580381,
+        "unconditional_f1_mean": 0.19100960886939344,
+        "unconditional_f1_median": 0.1940395311333114
+      }
+    }
+  },
+  "paired": {
+    "jointly_scoreable_n": 351,
+    "A1E_paired_median_cd": 2.4463025602745705,
+    "B2P_paired_median_cd": 2.3380258252819535,
+    "A1E_paired_median_f1": 0.20197860054347827,
+    "B2P_paired_median_f1": 0.2099609375,
+    "A1E_cd_wins": 142,
+    "non_tied_pairs": 351,
+    "sign_test_p": 0.00041167192542713733
+  }
+}

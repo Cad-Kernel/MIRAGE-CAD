@@ -1,0 +1,57 @@
+{
+  "args": {
+    "train_jsonl": "data/smoke500/train.jsonl",
+    "val_jsonl": "data/smoke500/val.jsonl",
+    "output_dir": "outputs/align_smoke500",
+    "modalities": [
+      "text",
+      "image",
+      "point",
+      "step",
+      "ir"
+    ],
+    "text_model": "distilbert-base-uncased",
+    "image_model": "openai/clip-vit-base-patch32",
+    "embed_dim": 512,
+    "max_text_length": 128,
+    "max_ir_length": 256,
+    "train_text_backbone": false,
+    "train_image_backbone": false,
+    "freeze_ir_backbone": false,
+    "image_mode": "iso",
+    "point_count": 1024,
+    "train_point_sampling": "hybrid",
+    "eval_point_sampling": "fps",
+    "epochs": 1,
+    "batch_size": 8,
+    "grad_accum": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "temperature": 0.07,
+    "num_workers": 0,
+    "bf16": true,
+    "fp16": false,
+    "log_steps": 20,
+    "eval_steps": 200,
+    "seed": 42
+  },
+  "steps": [
+    {
+      "loss": 1.119389987908877,
+      "text_r@1": 0.6346153846153846,
+      "text_r@5": 0.9807692307692307,
+      "text_r@10": 1.0,
+      "point_r@1": 0.47115384615384615,
+      "point_r@5": 1.0,
+      "point_r@10": 1.0,
+      "step_r@1": 0.4807692307692308,
+      "step_r@5": 0.9519230769230769,
+      "step_r@10": 1.0,
+      "image_r@1": 0.6538461538461539,
+      "image_r@5": 1.0,
+      "image_r@10": 1.0,
+      "step": 63,
+      "epoch": 1
+    }
+  ]
+}

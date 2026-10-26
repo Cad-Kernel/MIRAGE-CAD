@@ -1,0 +1,16 @@
+PART flluma_0005000 CAT revolved_hub_mount UNITS mm SEED 20265514
+PARAM chamfer_distance 0.14 MIN 0.1 MAX 1 SEM edge_break
+PARAM flange_radius 18.55 MIN 12 MAX 50 SEM primitive_radius
+PARAM flange_thickness 3.1 MIN 2 MAX 14 SEM thickness
+PARAM hole_radius 1.14 MIN 0.5 MAX 4 SEM hole_radius
+PARAM thickness 9.6 MIN 2 MAX 18 SEM thickness
+F sketch_001 OP_SKETCH SEM primitive_profile ROLE profile_definition PARAMS points=[[-6.48,-18.13],[6.48,-18.13],[6.48,16.35],[22.03,16.35],[22.03,-8.41],[-22.03,-8.41],[-22.03,16.35],[-6.48,16.35]] profile_type=polygon
+F cylinder_001 OP_CYLINDER SEM flange ROLE secondary_feature PARAMS height=@thickness radius=@flange_radius
+F translate_001 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_001 PARAMS offset=[0,0,4.65]
+F cylinder_002 OP_CYLINDER SEM boss ROLE secondary_feature PARAMS height=4.65 radius=8.18
+F translate_002 OP_TRANSLATE SEM placement ROLE secondary_feature DEP cylinder_002 PARAMS offset=[25.15,0,4.575]
+F boolean_cut_001 OP_BOOLEAN_CUT SEM boolean_cut ROLE secondary_feature DEP sketch_001,translate_001,target=cylinder_001
+F boolean_cut_002 OP_BOOLEAN_CUT SEM boolean_cut ROLE secondary_feature DEP boolean_cut_001,translate_002,target=cylinder_002
+F hole_001 OP_HOLE_PATTERN SEM mounting_hole ROLE functional_feature DEP boolean_cut_002 TARGET boolean_cut_002.top_face PARAMS count=4 depth=THROUGH positions=[[0,-11.56],[14.98,0],[0,11.56],[-14.98,0]] radius=@hole_radius
+F chamfer_001 OP_CHAMFER SEM edge_break ROLE finishing_feature DEP hole_001 TARGET hole_001.top_outer_edges PARAMS distance=@chamfer_distance
+END

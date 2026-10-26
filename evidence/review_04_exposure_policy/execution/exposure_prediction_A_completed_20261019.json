@@ -1,0 +1,639 @@
+{
+  "A_prediction_root": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A",
+  "B_manual_command": "bash __DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh run --arm B --confirm-generation",
+  "B_prediction_root": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_B",
+  "B_prediction_status_at_audit": "NOT_STARTED",
+  "arm": "A",
+  "audit_implementation_note": "Initial CPU prompt reconstruction was invoked outside SOURCE and stopped on relative STEP-resource evidence; corrected the registrar cwd only, without modifying generation/model artifacts",
+  "audit_scope": "CPU file/hash/native-input verification with actual tokenizer; no model loading/forward",
+  "audit_working_directory": "__RUN_SOURCE_ROOT__",
+  "checks": {
+    "B_output_absent_and_generation_startup_gate": "PASS",
+    "all10000_actual_code_inputs_reconstructed_without_reference_targets": "PASS",
+    "all14_output_hashes_and_fixed_ids": "PASS",
+    "both_training_arm_snapshots_unchanged": "PASS",
+    "current_inference_sources_models_dependencies": "PASS",
+    "exact_plan_code_linkage": "PASS",
+    "final_same_arm_plan_prefix_code_models": "PASS",
+    "full_and_per_modality_exports_match": "PASS",
+    "geometry_inputs_match": "PASS",
+    "original_frozen_seal": "PASS"
+  },
+  "code_checkout": "__DEV_ROOT__",
+  "completion": {
+    "bytes": 3872,
+    "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/COMPLETE.json",
+    "sha256": "d01a7a1fabb781da654b30cc7daffdbed737f340878f6356d15d0e3223b6d074"
+  },
+  "created_utc": "2026-10-19T16:44:25.759696+00:00",
+  "dependencies": {
+    "canonicalizer": {
+      "bytes": 8937,
+      "path": "__RUN_SOURCE_ROOT__/scratch/repair_face_extrude_alias.py",
+      "sha256": "baeedbec121bc2cea3888fc15256c0fa739273440b325479992362883c01ec75"
+    },
+    "generation": {
+      "P1a_plan_canonicalization": true,
+      "batch_size": 8,
+      "do_sample": false,
+      "evaluation_manifest": "manifests/evaluation_shared.jsonl",
+      "max_length": 1536,
+      "max_new_tokens": 1536,
+      "modalities": [
+        "step",
+        "point",
+        "text",
+        "image"
+      ],
+      "num_beams": 1,
+      "num_return_sequences": 1,
+      "point_plan_evidence": "off",
+      "preserve_query_evidence_in_code_prompt": true,
+      "program_code_repair": false,
+      "retrieval": false,
+      "rows_per_modality": 2500
+    },
+    "paired_training_registration": {
+      "bytes": 60783,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_B_and_paired_training_completed_20261018.json",
+      "sha256": "e2b91acb081781011c1b4abdcee05972c4f919c01565d3aa999ceacf4a4beb24"
+    },
+    "prefix_source": {
+      "bytes": 2626,
+      "path": "__RUN_SOURCE_ROOT__/miragecad/soft_prefix.py",
+      "sha256": "ee797ee46d2c82ce8522180a0e30b0896f51ded47ca208e79d92c6dbdb363678"
+    },
+    "prompt_source": {
+      "bytes": 11008,
+      "path": "__RUN_SOURCE_ROOT__/miragecad/gen_prompts.py",
+      "sha256": "cd0d7769aabe5017e1bc7907b41a5a34a07f0e46957267cb6b6d523eff73c03e"
+    },
+    "seed": 42,
+    "sources": {
+      "cag_exposure_inference.py": {
+        "bytes": 27205,
+        "path": "__DEV_ROOT__/src/training_25k/cag_exposure_inference.py",
+        "sha256": "852abdde1542b16a0c330723a469cb70b995d5dd053ac81425057c561229e02e"
+      },
+      "cag_run_exposure_inference.sh": {
+        "bytes": 692,
+        "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh",
+        "sha256": "0af2dd8b39e67cdd980e603b37b5f988237e98ac25a8ed59ec6b756bfbf7bde6"
+      }
+    },
+    "stage4b_finals": {
+      "A": {
+        "bytes": 2190,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/stage4b/COMPLETE.json",
+        "sha256": "56c306887a4f689b3b6adbe7c29296f1f86e1d8769d26478fc6466b8189849e9"
+      },
+      "B": {
+        "bytes": 2190,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/stage4b/COMPLETE.json",
+        "sha256": "2b3780effef828d98e56e5145e2ee09c4472e8e842c0362a6ca5001ee0d2bee4"
+      }
+    },
+    "tests": {
+      "bytes": 906,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_inference_contract_tests_v1.json",
+      "sha256": "3e604ca8b881f4f5dc100434b6a5683f7ea0499fa349a12208e4ab607cad0e4a"
+    },
+    "training_dependencies": {
+      "branches": {
+        "A": {
+          "actual_steps": [
+            4689,
+            500
+          ],
+          "completion": {
+            "bytes": 592,
+            "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.complete.json",
+            "sha256": "7fbcafb883162c98fa52eb1cb46e6002d931c5b816e3292ff0550745bca97fe4"
+          },
+          "finals": {
+            "phase1": {
+              "bytes": 1946,
+              "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/plan_phase1/COMPLETE.json",
+              "sha256": "e6f44352e7e4815cd08f70c51caa428ecd83e24bdd1ba8047126f90d773073a5"
+            },
+            "phase2": {
+              "bytes": 1945,
+              "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/plan_phase2/COMPLETE.json",
+              "sha256": "a178eec3b479bfbf894514072a0d132e08eec14be42e52d511dffe7b19ae6f49"
+            }
+          },
+          "p1a_log": {
+            "bytes": 45827,
+            "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.p1a_log.json",
+            "sha256": "f425d75c2093b07c413365c56f68792c2e8fefbf82c9316657252a37c06bd346"
+          },
+          "predictions": {
+            "bytes": 3198217,
+            "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/predictions/train_roles_plans.jsonl",
+            "sha256": "f542921ef1986e09e16658f25d1b9dc93ca5eb8390e24f471f691d82f655a780"
+          },
+          "rows": 945
+        },
+        "B": {
+          "actual_steps": [
+            4689,
+            500
+          ],
+          "completion": {
+            "bytes": 592,
+            "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/predictions/train_roles_plans.complete.json",
+            "sha256": "f4b33918f65e0a559480b0ef385828d2dd38c1f1d9efffbe64b564e2b81d929d"
+          },
+          "finals": {
+            "phase1": {
+              "bytes": 1946,
+              "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase1/COMPLETE.json",
+              "sha256": "bda92b2782f6bca1ff321359f1889068728603d1b2ba4fe3bb9ec38a215eded4"
+            },
+            "phase2": {
+              "bytes": 1945,
+              "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/plan_phase2/COMPLETE.json",
+              "sha256": "21f5fa13a4b6b0dd37caf119d2e8015655770b432ce40f8545df04e246fa3d24"
+            }
+          },
+          "p1a_log": {
+            "bytes": 15805,
+            "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/predictions/train_roles_plans.p1a_log.json",
+            "sha256": "baf555ccc89659a6a823ddb9fe0d9a869e785aa0734733b0e2d5c4e370ebfbe9"
+          },
+          "predictions": {
+            "bytes": 3226708,
+            "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_B/predictions/train_roles_plans.jsonl",
+            "sha256": "dfa4061ec8c00d7d94667d7ef248c0656d49a7d21edc1a05338e858cda61ea66"
+          },
+          "rows": 945
+        }
+      },
+      "common": {
+        "cache_complete": {
+          "bytes": 325,
+          "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/COMPLETE.json",
+          "sha256": "d8ef8c2f538451d8ed1cfcbf13403c4af2eccb8536679c0a4c73037e4a07b715"
+        },
+        "cache_index": {
+          "bytes": 37902450,
+          "path": "__RUN_SOURCE_ROOT__/data/exposure_policy_s42/frozen_query_cache/index.jsonl",
+          "sha256": "93e0060b697ccb98c0be3af51db70bb60ae0babbe294224ee9c7b3cf60718441"
+        },
+        "checked_component_and_initialization_files": 36,
+        "continuation_sources": {
+          "cag_exposure_policy_b_only.py": {
+            "bytes": 19230,
+            "path": "__DEV_ROOT__/src/training_25k/cag_exposure_policy_b_only.py",
+            "sha256": "3d2a3e193dc0451d35a49ae9481d506bf7bb49d0f19f2d070501d5a0bb7293e9"
+          },
+          "cag_run_exposure_policy_b_only.sh": {
+            "bytes": 695,
+            "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_policy_b_only.sh",
+            "sha256": "b194b9e244058e1b2100ddd74f81269d6f4d49d81dc2643a72da1ddcffae1294"
+          }
+        },
+        "initialization_files": {
+          "A": {
+            "README.md": {
+              "bytes": 5392,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/README.md",
+              "sha256": "d75c9510285b5f4d31ac8495ab4c083c9d1abdfb2ceb20f5e29885e85cda44ce"
+            },
+            "adapter_config.json": {
+              "bytes": 1197,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/adapter_config.json",
+              "sha256": "3987bc2f96eb4e1f21c873cfe01761fd0d80b7964f2aa0e3ffbfee9d6ffd90ed"
+            },
+            "adapter_model.safetensors": {
+              "bytes": 36981072,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/adapter_model.safetensors",
+              "sha256": "54586081a12f2f5c88ae9577045a5130368102992e047cc536450e3dd302a078"
+            },
+            "chat_template.jinja": {
+              "bytes": 2507,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/chat_template.jinja",
+              "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+            },
+            "soft_prefix.pt": {
+              "bytes": 40932485,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/soft_prefix.pt",
+              "sha256": "91c3cee8d61d408d42bfec3725d335b94e29a93d0be0e2252b6cbc9e24f3ebe1"
+            },
+            "tokenizer.json": {
+              "bytes": 11421892,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer.json",
+              "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+            },
+            "tokenizer_config.json": {
+              "bytes": 666,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_A/tokenizer_config.json",
+              "sha256": "8bf20d1ba8531aff9e2eac813845e87f07cb2684b68e1de521ca84871f24cdbe"
+            }
+          },
+          "B": {
+            "README.md": {
+              "bytes": 5392,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/README.md",
+              "sha256": "d75c9510285b5f4d31ac8495ab4c083c9d1abdfb2ceb20f5e29885e85cda44ce"
+            },
+            "adapter_config.json": {
+              "bytes": 1197,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/adapter_config.json",
+              "sha256": "3987bc2f96eb4e1f21c873cfe01761fd0d80b7964f2aa0e3ffbfee9d6ffd90ed"
+            },
+            "adapter_model.safetensors": {
+              "bytes": 36981072,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/adapter_model.safetensors",
+              "sha256": "54586081a12f2f5c88ae9577045a5130368102992e047cc536450e3dd302a078"
+            },
+            "chat_template.jinja": {
+              "bytes": 2507,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/chat_template.jinja",
+              "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+            },
+            "soft_prefix.pt": {
+              "bytes": 40932485,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/soft_prefix.pt",
+              "sha256": "91c3cee8d61d408d42bfec3725d335b94e29a93d0be0e2252b6cbc9e24f3ebe1"
+            },
+            "tokenizer.json": {
+              "bytes": 11421892,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/tokenizer.json",
+              "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+            },
+            "tokenizer_config.json": {
+              "bytes": 666,
+              "path": "__EVIDENCE_SOURCE_ROOT__/04/artifacts/initialization/arm_B/tokenizer_config.json",
+              "sha256": "8bf20d1ba8531aff9e2eac813845e87f07cb2684b68e1de521ca84871f24cdbe"
+            }
+          }
+        },
+        "manifests": {
+          "evaluation_shared": {
+            "bytes": 1069450,
+            "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/evaluation_shared.jsonl",
+            "sha256": "da83c46de184a1fff8b30222d23ec7e637ff5c0e7526ff7f1c39ff77a3f6f1d0"
+          },
+          "phase1_A": {
+            "bytes": 8208189,
+            "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/phase1_A.jsonl",
+            "sha256": "f5896b3e055e72bf17548525563c54152b6dafb2ecd5763da743226842bf9ba7"
+          },
+          "phase1_B": {
+            "bytes": 8245701,
+            "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/phase1_B.jsonl",
+            "sha256": "0cef5ee7dc56a0cb9a781155f8c90ed1e559b351fd4482d2da0aea6b137ce005"
+          },
+          "phase2_shared": {
+            "bytes": 862450,
+            "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/phase2_shared.jsonl",
+            "sha256": "832b1a42c5cb9b3916bd6388b32b98ed7ab64edb6db7a7eb915238e3719589e9"
+          },
+          "stage4b_roles": {
+            "bytes": 385255,
+            "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/stage4b_roles.jsonl",
+            "sha256": "0dbdfb9a02e89195a37804529cc4670cf665f21b7f5cf5da08f069b87e172b67"
+          },
+          "validation_shared": {
+            "bytes": 83050,
+            "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/validation_shared.jsonl",
+            "sha256": "9bc61b951ccca84504074165c6ad557c265509bb5d53e0173804b7c88bd26755"
+          }
+        },
+        "original_execution": {
+          "cag_exposure_policy.py": "7c8ba2081e837f2bcc808e55c3b49e0fdff4778cc883484220c798afcdcd92f4",
+          "cag_exposure_policy_core.py": "d81bb9edc7438f959f2c7e704ea81473cad370916dd3f3c5e61e80bcf88dfcfa",
+          "cag_run_exposure_policy.sh": "8e0467b346a9b7b1538cc2051d02168935c8847365e4e86d4cee673a698661fc"
+        },
+        "tests": {
+          "bytes": 887,
+          "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/b_only_contract_tests_v2.json",
+          "sha256": "e35024538501dd6e5d704487edcb32795725cd6730224e6431fe6f6e5731813d"
+        }
+      },
+      "execution_spec": {
+        "bytes": 7264,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/05_execution_spec.json",
+        "sha256": "b8f3f6538de096745abb03858e85ed7aa0f9c2b4188ce94a8d47ac592cd43d23"
+      },
+      "lr_vectors": {
+        "bytes": 142706,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/manifests/lr_vectors.json",
+        "sha256": "f502ba809ed878af7f7073cbd3229faa5e4fb4d9075eb18eff642c379e901692"
+      },
+      "paired_packing": {
+        "bytes": 7458,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_packing_v1_preflight_after_B/preflight_actuals.json",
+        "sha256": "0357f731b99e891fe12b7b27e22979cf905591c362ca2ac90f1c5617b02e3cc4"
+      },
+      "policy_lock": {
+        "bytes": 1675,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_policy_lock_v1.json",
+        "sha256": "1efa3d6e218f47ab6fc2ad67fa0fe9f1b11384276b68774291915eaaf6e47faa"
+      },
+      "registered_plan_branches": {
+        "bytes": 171096,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/plan_branches_and_paired_preflight_20261018/actuals.json",
+        "sha256": "d42792082ab7e70eda84c80633cba446046a3621862ef7ff254a09b23dd51d65"
+      },
+      "shared_stage4": {
+        "adapter_config.json": {
+          "bytes": 1102,
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/adapter_config.json",
+          "sha256": "7ffa5ef61b0ef5352286c402778d8c758941893cbe10d9c95fbac1402863dbbc"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 73911112,
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/adapter_model.safetensors",
+          "sha256": "ea70a898cb6e0fa50ec001553e1358d7c88d31e9674aaf9ae8e18319709875f7"
+        },
+        "tokenizer.json": {
+          "bytes": 11421892,
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/tokenizer.json",
+          "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+        },
+        "tokenizer_config.json": {
+          "bytes": 667,
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/tokenizer_config.json",
+          "sha256": "5cd411bca7352ae85967c70310bd2396b331ba78b96381f99ecfe48dda38b5f5"
+        },
+        "training_args.bin": {
+          "bytes": 5201,
+          "path": "__RUN_SOURCE_ROOT__/outputs/qwen25_coder_1_5b_program_25k/training_args.bin",
+          "sha256": "5fdb5e7580f7985566b0e89b800c51320563027503671ad0eac27499f749ef2f"
+        }
+      },
+      "sources": {
+        "cag_run_stage4b_only.sh": {
+          "bytes": 687,
+          "path": "__DEV_ROOT__/src/training_25k/cag_run_stage4b_only.sh",
+          "sha256": "71f9a883aecd815b084b4c99959cf8759e3c24f51b3b20be93c7dcdd33ecee23"
+        },
+        "cag_stage4b_execution.py": {
+          "bytes": 27597,
+          "path": "__DEV_ROOT__/src/training_25k/cag_stage4b_execution.py",
+          "sha256": "12871f780608950b9524c99aaa2effe9dfb430f37b394ae7e6a1d1b9ba7b205b"
+        }
+      },
+      "tests": {
+        "bytes": 867,
+        "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/stage4b_execution_contract_tests_v2.json",
+        "sha256": "99b74a7fb61dd12eaf279a81006e0abb70e52719791cc1893502a4d03c7120a6"
+      }
+    }
+  },
+  "gate_geometry_status": "NOT_RUN_BY_GENERATION_OR_THIS_AUDIT",
+  "inference_fingerprint": "191cdcd6571ba58887f9d193a874613823ee71a8bc64e13bec211229e81acba9",
+  "limitations": [
+    "Plan grammar and empty-output counts are not CAD Syntax/Build/Scoreable/geometry results",
+    "Code prompt truncation follows the frozen whole-prompt policy; no target-aware packing or row filtering",
+    "Single paired seed exposure-policy diagnostic; downstream evaluation pending"
+  ],
+  "model_hashes": {
+    "code_adapter": "d6be94e295ff8373994a0c21e52d420d51feb2a907860e5fe92d4d2e8026003a",
+    "plan_adapter": "fe84daa1861646736919c038279f73a08936605f0da8812498b2ce976a388d44",
+    "plan_prefix": "2f89934a9d310e5aa5fdb099631c2625a20229d2a410a8c33df3c58f81393ba4"
+  },
+  "native_completion": {
+    "arm": "A",
+    "code_prompt_truncations": {
+      "image": 42,
+      "point": 22,
+      "step": 49,
+      "text": 30
+    },
+    "created_utc": "2026-10-19T15:14:52.000311+00:00",
+    "evaluation_run": false,
+    "files": {
+      "STARTED.json": {
+        "bytes": 1136,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/STARTED.json",
+        "sha256": "d6f67ea9affc0586571fc4e475f5fdf708d90631c81cd45503b737e7f3cca54b"
+      },
+      "code_input_audit.jsonl": {
+        "bytes": 5764967,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/code_input_audit.jsonl",
+        "sha256": "69aafe25e5e8132817f9a4eed8fe6f1ebe6e768c361a7bc4d46d93ae55f4209a"
+      },
+      "geom_input_image.jsonl": {
+        "bytes": 5256038,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_image.jsonl",
+        "sha256": "51347a9e8d69c9fa1452d73d0ee1cbd45e3a5da5b6fc7bf9c26fda7fd5eecc9e"
+      },
+      "geom_input_point.jsonl": {
+        "bytes": 5005635,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_point.jsonl",
+        "sha256": "d5c282cc0dc64414b0ec3b682033c8c2f8471d6c04b5a97a2504a8a278a8fc80"
+      },
+      "geom_input_step.jsonl": {
+        "bytes": 5252501,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_step.jsonl",
+        "sha256": "fe03807fb515d2dd78afe81b772df229d08b8fd27ceec36ee14613011013a3bb"
+      },
+      "geom_input_text.jsonl": {
+        "bytes": 4850350,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_text.jsonl",
+        "sha256": "926bd854352114ecc1bf9c05fa3236f30bc926beff75f523bd201608fe94e18a"
+      },
+      "plan_input_audit.jsonl": {
+        "bytes": 5751384,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/plan_input_audit.jsonl",
+        "sha256": "9a4349d4340be16e733d9f28cbcfae333e8dbe0833fbd1ea23811941f1cff0f5"
+      },
+      "test_code.jsonl": {
+        "bytes": 85322900,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code.jsonl",
+        "sha256": "712f489d3d7b4c993e3799bfb8801eab2b9537808e4809599309c128a4b7650f"
+      },
+      "test_code_image.jsonl": {
+        "bytes": 21817515,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_image.jsonl",
+        "sha256": "1c9b50eba659ab569c66b7dd4e0d0ea319d5627c587a9773e677bfd84e802ad8"
+      },
+      "test_code_point.jsonl": {
+        "bytes": 21030900,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_point.jsonl",
+        "sha256": "8f120d97ea32db147479e8041de66dc66e6b1d4b7109c04c1672e0bbdd1825dc"
+      },
+      "test_code_step.jsonl": {
+        "bytes": 21788653,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_step.jsonl",
+        "sha256": "4d0aacc5020cd9c159f50c2d91ff8683b6bb0b2889b0f9f180ce93382619354b"
+      },
+      "test_code_text.jsonl": {
+        "bytes": 20685832,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_text.jsonl",
+        "sha256": "451dda600e579d82d65c7f01e09256c6d2dc4b4d67fcac307f612338457968cc"
+      },
+      "test_plans.jsonl": {
+        "bytes": 33305744,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_plans.jsonl",
+        "sha256": "7a0a4b62228e66236d4b3a54d69abb7734253cd3287c15a96b550ee5ed34a6e9"
+      },
+      "test_plans.p1a_log.json": {
+        "bytes": 486154,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_plans.p1a_log.json",
+        "sha256": "941efcaeda901a7bcca4cc0b8caeaa0a8537588739d0bc572a6d0319b98130ce"
+      }
+    },
+    "inference_fingerprint": "191cdcd6571ba58887f9d193a874613823ee71a8bc64e13bec211229e81acba9",
+    "plan_canonicalization": "P1a",
+    "preflight": {
+      "bytes": 22607,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_inference_preflight_v1.json",
+      "sha256": "6be9b6b310150fb717fa7189cdf14d41237c789005d381be520f8bb481a8469a"
+    },
+    "program_code_repair": false,
+    "rows": 10000,
+    "rows_per_modality": 2500,
+    "status": "GENERATION_COMPLETE_NEEDS_GATE_AND_GEOMETRY",
+    "training_run": false,
+    "version": "review04_evaluation_only_v1"
+  },
+  "predictions_by_modality": {
+    "image": 2500,
+    "point": 2500,
+    "step": 2500,
+    "text": 2500
+  },
+  "preflight": {
+    "bytes": 22607,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_inference_preflight_v1.json",
+    "sha256": "6be9b6b310150fb717fa7189cdf14d41237c789005d381be520f8bb481a8469a"
+  },
+  "real_prediction_run_by": "human_operator",
+  "registration_script": {
+    "bytes": 9413,
+    "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/register_exposure_A_prediction_result.py",
+    "sha256": "b78229c507efd27b92dd31b03521bbddef13413449b053935c6295e93e9a9783"
+  },
+  "review04_status": "OPEN",
+  "rows": 10000,
+  "seed": 42,
+  "source_data_checkout": "__RUN_SOURCE_ROOT__",
+  "startup": {
+    "arm": "A",
+    "code_model_completion": {
+      "bytes": 2190,
+      "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/arm_A/stage4b/COMPLETE.json",
+      "sha256": "56c306887a4f689b3b6adbe7c29296f1f86e1d8769d26478fc6466b8189849e9"
+    },
+    "created_utc": "2026-10-18T15:08:36.650760+00:00",
+    "implicit_resume": false,
+    "inference_fingerprint": "191cdcd6571ba58887f9d193a874613823ee71a8bc64e13bec211229e81acba9",
+    "preflight": {
+      "bytes": 22607,
+      "path": "__EVIDENCE_SOURCE_ROOT__/04/execution/exposure_inference_preflight_v1.json",
+      "sha256": "6be9b6b310150fb717fa7189cdf14d41237c789005d381be520f8bb481a8469a"
+    },
+    "reference_dependent_packing": false,
+    "sources": {
+      "cag_exposure_inference.py": {
+        "bytes": 27205,
+        "path": "__DEV_ROOT__/src/training_25k/cag_exposure_inference.py",
+        "sha256": "852abdde1542b16a0c330723a469cb70b995d5dd053ac81425057c561229e02e"
+      },
+      "cag_run_exposure_inference.sh": {
+        "bytes": 692,
+        "path": "__DEV_ROOT__/src/training_25k/cag_run_exposure_inference.sh",
+        "sha256": "0af2dd8b39e67cdd980e603b37b5f988237e98ac25a8ed59ec6b756bfbf7bde6"
+      }
+    },
+    "training_allowed": false,
+    "version": "review04_evaluation_only_v1"
+  },
+  "status": "A_PREDICTION_COMPLETE_VERIFIED_B_MANUAL_READY",
+  "summaries": {
+    "image": {
+      "code_prompt_truncations": 42,
+      "empty_code": 0,
+      "empty_plan": 0,
+      "geometry_input": {
+        "bytes": 5256038,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_image.jsonl",
+        "sha256": "51347a9e8d69c9fa1452d73d0ee1cbd45e3a5da5b6fc7bf9c26fda7fd5eecc9e"
+      },
+      "id_order_sha256": "d902a194c8b00140258b8001df1e1083082f6478aa098cab574f0ebb188117ab",
+      "max_original_code_prompt_tokens": 1597,
+      "plan_grammar_valid": 2392,
+      "plan_prompt_truncations": 0,
+      "plan_text_changed_by_P1a": 46,
+      "prediction_file": {
+        "bytes": 21817515,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_image.jsonl",
+        "sha256": "1c9b50eba659ab569c66b7dd4e0d0ea319d5627c587a9773e677bfd84e802ad8"
+      },
+      "rows": 2500,
+      "unique_sample_ids": 2500
+    },
+    "point": {
+      "code_prompt_truncations": 22,
+      "empty_code": 0,
+      "empty_plan": 0,
+      "geometry_input": {
+        "bytes": 5005635,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_point.jsonl",
+        "sha256": "d5c282cc0dc64414b0ec3b682033c8c2f8471d6c04b5a97a2504a8a278a8fc80"
+      },
+      "id_order_sha256": "d902a194c8b00140258b8001df1e1083082f6478aa098cab574f0ebb188117ab",
+      "max_original_code_prompt_tokens": 1714,
+      "plan_grammar_valid": 2424,
+      "plan_prompt_truncations": 0,
+      "plan_text_changed_by_P1a": 62,
+      "prediction_file": {
+        "bytes": 21030900,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_point.jsonl",
+        "sha256": "8f120d97ea32db147479e8041de66dc66e6b1d4b7109c04c1672e0bbdd1825dc"
+      },
+      "rows": 2500,
+      "unique_sample_ids": 2500
+    },
+    "step": {
+      "code_prompt_truncations": 49,
+      "empty_code": 0,
+      "empty_plan": 0,
+      "geometry_input": {
+        "bytes": 5252501,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_step.jsonl",
+        "sha256": "fe03807fb515d2dd78afe81b772df229d08b8fd27ceec36ee14613011013a3bb"
+      },
+      "id_order_sha256": "d902a194c8b00140258b8001df1e1083082f6478aa098cab574f0ebb188117ab",
+      "max_original_code_prompt_tokens": 1690,
+      "plan_grammar_valid": 2414,
+      "plan_prompt_truncations": 0,
+      "plan_text_changed_by_P1a": 85,
+      "prediction_file": {
+        "bytes": 21788653,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_step.jsonl",
+        "sha256": "4d0aacc5020cd9c159f50c2d91ff8683b6bb0b2889b0f9f180ce93382619354b"
+      },
+      "rows": 2500,
+      "unique_sample_ids": 2500
+    },
+    "text": {
+      "code_prompt_truncations": 30,
+      "empty_code": 0,
+      "empty_plan": 0,
+      "geometry_input": {
+        "bytes": 4850350,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/geom_input_text.jsonl",
+        "sha256": "926bd854352114ecc1bf9c05fa3236f30bc926beff75f523bd201608fe94e18a"
+      },
+      "id_order_sha256": "d902a194c8b00140258b8001df1e1083082f6478aa098cab574f0ebb188117ab",
+      "max_original_code_prompt_tokens": 1675,
+      "plan_grammar_valid": 2348,
+      "plan_prompt_truncations": 0,
+      "plan_text_changed_by_P1a": 101,
+      "prediction_file": {
+        "bytes": 20685832,
+        "path": "__RUN_SOURCE_ROOT__/outputs/exposure_policy_s42/evaluation_v1/arm_A/test_code_text.jsonl",
+        "sha256": "451dda600e579d82d65c7f01e09256c6d2dc4b4d67fcac307f612338457968cc"
+      },
+      "rows": 2500,
+      "unique_sample_ids": 2500
+    }
+  },
+  "training_prediction_or_evaluation_run_by_audit": false,
+  "training_status": "COMPLETE_READ_ONLY"
+}

@@ -1,0 +1,13 @@
+# Literal first40 lines of executed prediction; full program is prediction.py
+params = Parameters()
+params.add('center_hole_radius', 5.12, min=3.0, max=16.0, semantic_type='inner_radius')
+params.add('hole_radius', 1.43, min=0.8, max=5.0, semantic_type='hole_radius')
+params.add('thickness', 7.1, min=2.0, max=14.0, semantic_type='thickness')
+
+part = Part('flluma_0005710', category='crescent_lug_profile', parameters=params, seed=20266224, sample_id='flluma_0005710', units='mm')
+sketch = part.sketch_polygon(name='crescent_lug_outer_profile', points=[[-27.36, -1.2], [-19.34, -5.7], [1.12, -7.2], [24.88, -2.9], [29.52, 0.9], [21.5, 5.4], [4.76, 7.2], [-12.44, 2.7], [-24.88, 0.4]], closed=True, semantic_type='extrude_profile')
+solid = part.extrude(name='extrude_crescent_lug', profile=sketch, height=params['thickness'], semantic_type='extruded_plate')
+holes = part.hole_pattern(name='crescent_lug_mounting_holes', target=solid.top_face(), radius=params['hole_radius'], depth='through', positions=[[-16.68, 1.2], [17.84, -1.05]], semantic_type='mounting_hole')
+holes_2 = part.hole_pattern(name='crescent_center_hole', target=holes.top_face(), radius=params['center_hole_radius'], depth='through', positions=[[0.0, 0.0]], semantic_type='clearance_hole')
+
+__all__ = ['part']
