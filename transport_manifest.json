@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "archive_filename": "MIRAGE-CAD-anonymous-review-snapshot-v4.zip",
+  "archive_bytes": 161847470,
+  "archive_sha256": "14aa7db14cc33943a25539d7f75e15bf13d9c6a9555d697e055e7c1e668036e4",
+  "distributed_file_count": 9980,
+  "parts": [
+    {
+      "file": "bundle-01.zip",
+      "sha256": "c611f3577e9c399dcca0011dccea09a8f26a86658b94d4cb7a9d0ca14a9ec5f6",
+      "payload_bytes": 41943040,
+      "payload_sha256": "2b5837427e0e4afc364d2d8bd4a0770285ee0fb2913cf38fc11837082a02323a"
+    },
+    {
+      "file": "bundle-02.zip",
+      "sha256": "bcf369631e211c9a07f57270a2bb9738d68a46eaedbe5f458c1b64a3a9af20b9",
+      "payload_bytes": 41943040,
+      "payload_sha256": "f159da76da0a73600bc42369d2d54753e465d4ea637553eb175977251b6842e3"
+    },
+    {
+      "file": "bundle-03.zip",
+      "sha256": "c2f3f62904ccf39d5096db58852afcb913ea5cdf814f663b6a1e9a37847ec8e5",
+      "payload_bytes": 41943040,
+      "payload_sha256": "9edeea52e91c6e4b482d0b1734424b878048af5aeabe23793248f104a581044f"
+    },
+    {
+      "file": "bundle-04.zip",
+      "sha256": "9f76b2b87a6f8d1da3ac09fe6ae39421cd331bdd2e78e2e40eb2291f176dcdd4",
+      "payload_bytes": 36018350,
+      "payload_sha256": "76c9f53fc3b83a2b56e336cbb5818d2ffd22ccb120ed97f8f538fef6494a0ef5"
+    }
+  ]
+}
